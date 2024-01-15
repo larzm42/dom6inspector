@@ -1,0 +1,763 @@
+id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffectalways	rcost	weapon	end
+1	Spear	1	0	0	3	1	0	0	0	1	1	
+2	Pike	2	0	-1	5	1	0	0	0	2	2	
+3	Trident	3	0	1	3	1	0	0	0	2	3	
+4	Lance	4	1	0	3	1	1	0	0	2	4	
+5	Halberd	5	-1	1	3	1	0	0	0	4	5	
+6	Short Sword	6	1	1	1	1	0	0	0	2	6	
+7	Quarterstaff	7	1	3	3	1	0	0	0	0	7	
+8	Broad Sword	8	1	1	1	1	0	0	0	3	8	
+9	Dagger	9	1	0	0	1	0	0	0	0	9	
+10	Falchion	10	0	0	1	1	0	0	0	4	10	
+11	Great Sword	11	1	2	2	1	0	0	0	5	11	
+12	Mace	12	0	0	1	1	0	0	0	1	12	
+13	Hammer	13	0	-1	1	1	0	0	0	2	13	
+14	Maul	14	0	-1	2	1	0	0	0	1	14	
+15	Morningstar	15	1	-2	1	1	0	0	0	2	15	
+16	Flail	16	1	-2	2	2	0	0	0	3	16	
+17	Axe	17	0	-1	1	1	0	0	0	1	17	
+18	Battleaxe	18	1	0	2	1	0	0	0	3	18	
+19	Bite	19	1	0	2	1	0	0	0	0	19	
+20	Bite	20	0	-1	0	1	0	0	0	0	20	
+21	Javelin	21	-2	0	0	1	2	0	0	1	21	
+22	Sling	22	-2	0	0	1	15	0	0	0	22	
+23	Short Bow	23	0	0	0	1	12	0	0	2	23	
+24	Long Bow	24	0	0	0	1	12	0	0	3	24	
+25	Crossbow	25	2	0	0	-2	12	0	0	3	25	
+26	Arbalest	26	2	0	0	-3	10	0	0	4	26	
+27	Boulder	27	0	0	0	1	2	0	0	0	27	
+28	Long Spear	28	0	-1	4	1	0	0	0	2	28	
+29	Claw	29	0	0	-1	1	0	0	0	0	29	
+30	Venomous Bite	30	0	-1	0	3	0	51	0	0	30	
+31	Coral Spear	31	0	0	3	1	0	50	0	1	31	
+32	Coral Knife	32	0	0	0	1	0	50	0	0	32	
+33	Claws	33	0	0	-1	2	0	0	0	0	33	
+34	Blow Pipe	34	2	0	0	1	15	54	0	1	34	
+35	Ice Knife	35	2	0	0	1	0	0	0	1	35	
+36	Ice Lance	36	1	0	3	1	0	0	0	2	36	
+37	Ice Blade	37	1	1	1	1	0	0	0	4	37	
+38	Snake Hair	38	-2	0	0	5	0	50	0	0	38	
+39	Free	39	0	0	0	1	0	0	0	0	39	
+40	Whip	40	-1	0	4	1	0	0	0	1	40	
+41	Bane Blade	41	2	3	2	1	0	64	0	8	41	
+42	Bane Blade	42	1	2	1	1	0	64	0	5	42	
+43	Poisoned Claw	43	0	0	-1	1	0	54	0	0	43	
+44	Ice Mace	44	2	0	1	1	0	0	0	2	44	
+45	Coral Club	45	0	0	1	1	0	50	0	1	45	
+46	Coral Glaive	46	-1	1	3	1	0	50	0	4	46	
+47	Lobster Claw	47	-4	0	0	1	0	0	0	0	47	
+48	Fire Flare	48	0	0	5	1	0	0	0	0	48	
+49	Iron Prod	49	-2	-1	2	1	0	0	0	4	49	
+50	Weak Poison	50	0	0	0	1	0	0	0	0	50	
+51	Strong Poison	51	0	0	0	1	0	0	0	0	51	
+52	Death Poison	52	0	0	0	1	0	0	0	0	52	
+53	Debilitative Poison	53	0	0	0	1	0	0	0	0	53	
+54	Paralyzing Poison	54	0	0	0	1	0	0	0	0	54	
+55	Hoof	55	0	0	0	1	0	0	0	0	55	
+56	Hoof	56	0	0	0	1	0	0	0	0	56	
+57	Sickle	57	0	0	1	1	0	0	0	2	57	
+58	Wail	58	10	0	5	1	0	0	60	0	58	
+59	Rod of Death	59	2	0	1	1	0	0	0	0	59	
+60	Fear	60	0	0	0	1	0	0	0	0	60	
+61	Fire Breath	61	0	0	0	1	5	0	0	0	61	
+62	Bile	62	0	0	0	1	5	0	0	0	62	
+63	Life Drain	63	0	0	0	1	0	0	0	0	63	
+64	Decay	64	0	0	0	1	0	0	0	0	64	
+65	Venomous Fangs	65	0	-1	0	1	0	52	0	0	65	
+66	Jotun Axe	66	0	-1	1	1	0	0	0	1	66	
+67	Phantasmal Weapon	67	0	0	0	1	0	0	0	0	67	
+68	Barbed Tail	68	-1	0	0	1	0	54	0	0	68	
+69	Icicle Fist	69	0	0	0	1	0	222	0	0	69	
+70	Astral Claw	70	0	0	-1	1	0	367	0	0	70	
+71	Sleep Vines	71	-1	0	3	3	0	0	0	0	71	
+72	Sun Slayer	72	5	6	2	1	0	0	73	0	72	
+73	Area Death	73	0	0	0	1	0	0	0	0	73	
+74	Sword of Sharpness	74	2	2	1	1	0	0	0	0	74	
+75	Enchanted Sword	75	1	2	1	1	0	0	0	0	75	
+76	Fire Sword	76	1	1	1	1	0	0	0	0	76	
+77	Ice Sword	77	1	3	1	1	0	0	0	0	77	
+78	Stinger	78	2	1	3	1	0	0	0	0	78	
+79	Thorn Spear	79	2	2	3	1	0	51	0	0	79	
+80	Fire Brand	80	3	0	1	1	0	0	171	0	80	
+81	Thorn Staff	81	3	5	3	1	0	51	0	0	81	
+82	Frost Brand	82	1	2	1	1	0	0	409	0	82	
+83	Wave Breaker	83	3	3	3	3	0	0	0	0	83	
+84	Unquenched Sword	84	4	1	1	1	0	0	171	0	84	
+85	Tentacle	85	0	0	0	1	0	0	0	0	85	
+86	Mind Blast	86	100	0	0	1	10	293	0	0	86	
+87	Mage Bane	87	5	6	1	1	0	88	0	0	87	
+88	Unconsciousness	88	0	0	0	1	0	247	0	0	88	
+89	Snake Staff	89	3	5	4	1	0	51	0	0	89	
+90	Crush	90	0	0	0	1	0	0	0	0	90	
+91	Fatigue	91	0	0	0	1	0	0	0	0	91	
+92	Fist	92	-1	-1	-1	1	0	0	0	0	92	
+93	Cold Breath	93	0	0	0	1	5	0	0	0	93	
+94	Spear	94	0	0	3	1	0	0	0	1	94	
+95	Flambeau	95	4	2	2	1	0	0	221	0	95	
+96	Spear	96	0	0	3	1	0	0	0	1	96	
+97	Woundflame	97	4	5	1	1	0	98	0	0	97	
+98	Plague	98	0	0	0	1	0	0	0	0	98	
+99	Main Gauche of Parrying	99	2	6	0	1	0	0	0	0	99	
+100	Standard	100	-2	-3	4	1	0	0	0	3	100	
+101	Athame	101	2	0	0	1	0	0	0	0	101	
+102	Faithful	102	2	4	1	1	0	0	0	0	102	
+103	Stone Sword	103	4	7	2	1	0	0	104	0	103	
+104	Area Petrification	104	0	0	0	1	0	0	0	0	104	
+105	Staff of Storms	105	2	4	3	1	0	0	232	0	105	
+106	Sword of Swiftness	106	2	4	1	2	0	0	0	0	106	
+107	Halberd of Might	107	2	3	3	1	0	0	0	0	107	
+108	Greatsword of Sharpness	108	4	4	2	1	0	0	0	0	108	
+109	Herald Lance	109	1	1	3	1	0	0	0	0	109	
+110	Wraith Sword	110	2	3	2	1	0	0	0	0	110	
+111	Heart Finder Sword	111	4	2	1	1	0	112	0	0	111	
+112	Heart Finding	112	0	0	0	1	0	0	0	0	112	
+113	Tempest	113	5	6	2	1	0	0	114	0	113	
+114	Chain Lightning	114	0	0	0	1	0	0	0	0	114	
+115	Dwarven Hammer	115	0	-1	1	1	0	0	0	0	115	
+116	Strangulation	116	0	-1	0	1	0	91	0	0	116	
+117	Knife of the Damned	117	4	1	0	1	0	694	0	0	117	
+118	Curse	118	0	0	0	1	0	0	0	0	118	
+119	Hammer of the Cyclops	119	0	-1	2	1	0	0	0	0	119	
+120	Enchanted Spear	120	2	2	3	1	0	0	0	0	120	
+121	Dancing Trident	121	0	1	5	1	0	0	0	0	121	
+122	Harvest Blade	122	10	-5	0	1	0	0	125	0	122	
+123	Javelin of Flight	123	0	0	0	1	30	0	0	0	123	
+124	Ice Rod	124	2	4	3	1	0	0	0	0	124	
+125	Leg Chop	125	0	0	0	1	0	0	0	0	125	
+126	Poison Dagger	126	1	0	0	1	0	51	0	0	126	
+127	Venomous Bite	127	0	-1	0	1	0	50	0	0	127	
+128	Gloves of the Gladiator	128	2	1	0	4	0	0	0	0	128	
+129	Duskdagger	129	3	1	0	1	0	690	0	10	129	
+130	Hammer of the Mountains	130	-1	-3	3	1	0	0	699	0	130	
+131	Frost Blast	131	0	0	0	1	6	0	0	0	131	
+132	Shortsword	132	3	4	1	1	0	0	0	0	132	
+133	Midget Masher	133	3	1	2	1	0	0	0	0	133	
+134	Chain Shock	134	0	0	0	1	0	0	0	0	134	
+135	Champion's Trident	135	3	6	3	2	0	0	0	0	135	
+136	Vine Whip	136	3	0	4	1	0	0	137	0	136	
+137	Entanglement	137	0	0	0	1	0	0	0	0	137	
+138	Rat Tail	138	2	0	4	1	0	0	139	0	138	
+139	Greater Fear	139	0	0	0	1	0	0	0	0	139	
+140	Whip of Command	140	3	0	4	1	0	0	0	0	140	
+141	Poison Spit	141	0	0	0	1	5	0	0	0	141	
+142	Touch of Leprosy	142	0	0	0	1	0	143	0	0	142	
+143	Disease	143	0	0	0	1	0	0	0	0	143	
+144	Stinger	144	5	0	2	1	0	52	0	0	144	
+145	Heavenly Horn	145	0	0	0	1	15	0	0	0	145	
+146	Venomous Claw	146	0	0	-1	1	0	52	0	0	146	
+147	Spray Poison	147	0	0	0	1	5	0	0	0	147	
+148	Spider Claw	148	0	0	-1	1	0	0	0	0	148	
+149	Flesh Eater	149	4	-1	1	1	0	150	0	0	149	
+150	Chest Wound	150	0	0	0	1	0	0	0	0	150	
+151	Wand	151	-2	0	0	1	0	0	0	0	151	
+152	Trueshot Longbow	152	30	0	0	1	12	0	0	0	152	
+153	Stick	153	0	1	1	1	0	0	0	0	153	
+154	Bow of War	154	0	0	0	13	7	0	0	0	154	
+155	Black Bow	155	5	0	0	1	12	156	0	0	155	
+156	Feeblemind	156	0	0	0	1	0	0	0	0	156	
+157	Oath Rod	157	3	5	3	1	0	156	0	0	157	
+158	Flailing Hands	158	4	-1	2	2	0	0	159	0	158	
+159	Fear and Cold	159	0	0	0	1	0	160	0	0	159	
+160	Cold	160	0	0	0	1	0	0	0	0	160	
+161	Just Man's Cross	161	4	0	0	-2	12	0	0	0	161	
+162	The Summit	162	12	6	1	1	0	0	0	0	162	
+163	Thistle Mace	163	-1	-1	1	1	0	51	0	0	163	
+164	unused	164	0	0	0	1	0	0	0	0	164	
+165	Great Club	165	0	1	2	1	0	0	0	0	165	
+166	Golden Claw	166	0	0	-1	1	0	0	0	0	166	
+167	Poison Sling	167	-4	0	0	1	12	0	0	5	167	
+168	Piercer	168	10	0	0	-2	12	0	0	0	168	
+169	Gate Cleaver	169	-1	-1	2	1	0	0	0	0	169	
+170	Sword of Justice	170	3	4	2	1	0	0	171	0	170	
+171	Small Area Fire	171	0	0	0	1	0	0	0	0	171	
+172	Magic Sceptre	172	1	0	1	1	0	0	0	0	172	
+173	Star of Heroes	173	4	-2	1	1	0	174	0	0	173	
+174	Break Armor	174	0	0	0	1	0	0	0	0	174	
+175	Chi Kick	175	0	0	0	1	0	0	0	0	175	
+176	Stone Bird	176	0	2	5	4	0	0	0	0	176	
+177	Astral Serpent	177	3	0	2	1	0	52	0	0	177	
+178	Summer Sword	178	1	2	1	1	0	0	0	0	178	
+179	Sword of Aurgelmer	179	2	2	1	1	0	694	0	0	179	
+180	Ethereal Crossbow	180	5	0	0	-2	12	0	0	0	180	
+181	Implementor Axe	181	2	0	2	1	0	0	0	0	181	
+182	Trunk	182	0	0	0	1	0	0	0	0	182	
+183	Snake Bladder Stick	183	0	1	2	1	0	0	0	0	183	
+184	Hammer of the Forge Lord	184	1	0	2	1	0	0	171	0	184	
+185	Lightning Swarm	185	0	0	2	1	0	0	0	0	185	
+186	The Admiral's Sword	186	5	2	1	1	0	694	0	0	186	
+187	Pain Sickle	187	4	4	1	1	0	64	0	0	187	
+188	Tartarian Chains	188	3	-2	2	2	0	0	189	0	188	
+189	Enslavement	189	0	0	0	1	0	0	0	0	189	
+190	Phantasmal Claw	190	0	0	-1	1	0	0	0	0	190	
+191	Ember	191	5	4	1	1	0	0	192	0	191	
+192	Small Area Frost and Fire	192	0	0	0	1	0	0	171	0	192	
+193	Trident from Beyond	193	2	3	3	1	0	194	0	0	193	
+194	Soul Slay	194	0	0	0	1	0	0	0	0	194	
+195	Sword of Many Colors	195	3	5	2	1	0	0	196	0	195	
+196	Killing Light	196	0	0	0	1	0	0	0	0	196	
+197	Gaze of Death	197	100	0	0	1	10	0	0	0	197	
+198	Flame Burst	198	0	0	1	1	0	0	0	0	198	
+199	Banefire Bow	199	0	0	0	1	12	64	0	0	199	
+200	Bane Burst	200	0	0	1	1	0	0	0	0	200	
+201	Magic Spear	201	2	0	4	1	0	0	0	0	201	
+202	Magic Sword	202	2	2	1	1	0	0	0	0	202	
+203	Barbed Tail	203	0	0	0	1	0	54	0	0	203	
+204	Shark Bite	204	1	-1	4	1	0	0	0	0	204	
+205	Sword of Injustice	205	3	2	1	1	0	64	0	0	205	
+206	Ballista	206	-2	0	0	-3	10	0	0	0	206	
+207	Venomous Claw	207	0	0	-1	1	0	50	0	0	207	
+208	Thunder Whip	208	0	0	4	1	0	0	134	0	208	
+209	Fire Javelin	209	-2	0	0	1	2	0	216	0	209	
+210	Fire Sling	210	-3	0	0	1	15	0	216	0	210	
+211	Fire Short Bow	211	0	0	0	1	12	0	216	0	211	
+212	Fire Long Bow	212	0	0	0	1	12	0	216	0	212	
+213	Fire Crossbow	213	2	0	0	-2	12	0	216	0	213	
+214	Fire Arbalest	214	2	0	0	-3	10	0	216	0	214	
+215	Fire Boulder	215	0	0	0	1	2	0	171	0	215	
+216	Fire	216	0	0	0	1	0	0	0	0	216	
+217	Fire Bow of War	217	0	0	0	13	7	0	216	0	217	
+218	Star of Thraldom	218	6	-2	1	1	0	0	219	0	218	
+219	False Fetters	219	0	0	0	1	0	0	0	0	219	
+220	Enchanted Pike	220	3	1	5	1	0	0	0	0	220	
+221	Fire	221	0	0	0	1	0	0	0	0	221	
+222	Cold	222	0	0	0	1	0	0	0	0	222	
+223	Venomous Bite	223	0	-1	0	1	0	50	0	0	223	
+224	Poison Spit	224	0	0	0	1	5	0	0	0	224	
+225	Fire Breath	225	0	0	0	1	5	0	0	0	225	
+226	Frost Breath	226	0	0	0	1	5	0	0	0	226	
+227	Divine Armament	227	0	0	0	1	0	0	0	0	227	
+228	Elf Shot	228	0	0	0	1	20	0	0	0	228	
+229	Flame Strike	229	0	0	2	1	0	0	0	0	229	
+230	Owl	230	0	0	5	1	0	0	0	0	230	
+231	Thunder Fist	231	0	0	-1	1	0	0	232	0	231	
+232	Shock	232	0	0	0	1	0	0	0	0	232	
+233	Rune Smasher	233	2	1	1	1	0	0	0	0	233	
+234	Jotun Spear	234	0	0	3	1	0	0	0	1	234	
+235	Pincer	235	0	0	0	1	0	0	0	0	235	
+236	Claw	236	0	0	-1	1	0	0	0	0	236	
+237	Bite	237	0	0	0	1	0	0	0	0	237	
+238	Magic Staff	238	2	4	3	1	0	0	0	0	238	
+239	Venomous Fangs	239	0	-1	0	1	0	51	0	0	239	
+240	Branch	240	0	0	0	1	0	0	0	0	240	
+241	Hell Sword	241	5	1	2	1	0	0	0	0	241	
+242	Hunter's Knife	242	2	1	0	1	0	0	0	0	242	
+243	Lightning	243	3	0	0	1	10	0	704	0	243	
+244	Dark Fire Sword	244	4	2	2	1	0	0	221	0	244	
+245	Axe of Sharpness	245	2	0	1	1	0	0	0	0	245	
+246	Elf Bane	246	3	0	1	1	0	247	0	0	246	
+247	Slay Magic	247	0	0	0	1	0	0	0	0	247	
+248	Venomous Claw	248	0	0	-1	1	0	50	0	0	248	
+249	Venomous Claw	249	0	0	-1	1	0	51	0	0	249	
+250	Poisoned Claw	250	0	0	-1	1	0	53	0	0	250	
+251	Venomous Fangs	251	0	-1	0	1	0	54	0	0	251	
+252	Club	252	0	0	1	1	0	0	0	0	252	
+253	Hatchet	253	1	0	1	1	0	0	0	1	253	
+254	Plague Breath	254	0	0	0	1	5	0	255	0	254	
+255	Area Fear	255	0	0	0	1	0	0	0	0	255	
+256	Kryss	256	0	0	1	1	0	0	0	1	256	
+257	Bardiche	257	0	-1	4	1	0	0	0	4	257	
+258	Claymore	258	1	1	2	1	0	0	0	5	258	
+259	Executioner's Axe	259	1	-1	2	1	0	0	0	4	259	
+260	Throwing Axe	260	-4	0	0	1	2	0	0	2	260	
+261	Web	261	0	0	0	1	0	0	0	0	261	
+262	Web Spit	262	0	0	0	1	4	0	0	0	262	
+263	Net	263	0	0	4	1	1	0	0	1	263	
+264	Composite Bow	264	1	0	0	1	12	0	0	3	264	
+265	Spiked Club	265	0	0	1	1	0	0	0	1	265	
+266	Great Bow	266	0	0	0	1	12	0	0	4	266	
+267	Pick Axe	267	-2	-2	1	1	0	0	0	3	267	
+268	Jotun Longsword	268	0	1	1	1	0	0	0	3	268	
+269	Soul Leech	269	0	0	0	1	0	0	0	0	269	
+270	Consume Soul	270	0	0	0	1	0	0	0	0	270	
+271	Life Drain Tentacle	271	0	0	0	1	0	0	0	0	271	
+272	Claw of Kurgi	272	5	0	-1	1	0	0	0	0	272	
+273	Pincer	273	0	0	0	1	0	0	0	0	273	
+274	Enslave Mind	274	100	0	0	1	5	0	0	0	274	
+275	Sun Sword	275	3	3	1	1	0	0	276	0	275	
+276	Small Area Holyfire	276	0	0	0	1	0	0	0	0	276	
+277	Demon Whip	277	4	0	4	1	0	0	171	0	277	
+278	Lightning Spear	278	2	2	3	1	0	0	232	0	278	
+279	Spectral Javelin	279	-2	0	0	1	2	0	0	0	279	
+280	Spectral Spear	280	0	0	3	1	0	0	0	0	280	
+281	Spectral Sword	281	0	1	1	1	0	0	0	0	281	
+282	Paralyze	282	0	0	0	1	0	0	0	0	282	
+283	Paralyze	283	0	0	0	1	0	0	0	0	283	
+284	Steal Strength	284	0	0	0	1	0	285	0	0	284	
+285	Additional Weakness	285	0	0	0	1	0	0	0	0	285	
+286	Touch of Leprosy	286	0	0	0	1	0	143	0	0	286	
+287	Phantasmal Bow	287	0	0	0	1	12	0	0	0	287	
+288	Obsidian Club Sword	288	0	1	2	1	0	0	0	2	288	
+289	Moon Blade	289	4	5	2	1	0	0	0	0	289	
+290	Moon Lance	290	1	1	3	1	0	0	0	0	290	
+291	unused	291	0	0	4	1	0	0	0	0	291	
+292	Fire Blessing	292	0	0	0	1	0	0	0	0	292	
+293	Psychic Damage	293	0	0	0	1	0	0	0	0	293	
+294	Weakness	294	100	0	0	1	10	0	0	0	294	
+295	Twin Spear	295	2	2	3	1	0	0	0	0	295	
+296	Twin Spear	296	2	2	3	1	0	0	0	0	296	
+297	Serpent Kryss	297	2	1	0	1	0	52	0	0	297	
+298	Tartarian Chains	298	3	-2	4	1	0	0	0	0	298	
+299	Enchanted Sickle	299	2	1	1	1	0	0	0	0	299	
+300	Head Butt	300	1	-1	0	1	0	0	0	0	300	
+301	Fire Bola	301	2	0	0	1	50	0	302	0	301	
+302	Fire Bonds	302	0	0	0	1	0	0	0	0	302	
+303	Vine Bow	303	0	0	0	1	12	0	137	0	303	
+304	Evening Star	304	6	-2	1	1	0	0	305	0	304	
+305	Fire and Weakness	305	0	0	0	1	0	0	306	0	305	
+306	Weakness	306	0	0	0	1	0	0	0	0	306	
+307	Jotun Battleaxe	307	1	0	2	1	0	0	0	3	307	
+308	Glaive	308	-1	1	3	1	0	0	0	4	308	
+309	Jade Knife	309	1	0	0	1	0	0	0	0	309	
+310	Infernal Scythe	310	-1	-2	3	1	0	441	0	0	310	
+311	Mind Blast	311	100	0	0	1	10	293	0	0	311	
+312	Bane Dagger	312	2	0	0	1	0	64	0	1	312	
+313	Spider Fangs	313	0	-1	0	1	0	52	0	0	313	
+314	Spider Fangs	314	0	-1	0	1	0	52	0	0	314	
+315	Machaka Spear	315	-1	-1	4	1	0	0	0	3	315	
+316	Obsolete --- Death Poison and Web	316	0	0	0	1	0	261	0	0	316	
+317	Rake	317	-1	-1	4	1	0	0	0	1	317	
+318	Snake Staff	318	1	3	3	1	0	51	0	1	318	
+319	Bite	319	0	-1	0	1	0	0	0	0	319	
+320	Flaming Fist	320	0	0	-1	1	0	0	221	0	320	
+321	Flaming Wheel	321	0	0	0	1	10	0	0	0	321	
+322	Bite	322	0	-1	0	1	0	0	0	0	322	
+323	Venomous Bite	323	0	-1	0	1	0	50	0	0	323	
+324	Poison Spit	324	0	0	0	1	5	0	0	0	324	
+325	Venomous Fangs	325	0	-1	0	1	0	51	0	0	325	
+326	Iron Crutch	326	-1	-1	2	1	0	0	0	2	326	
+327	Smasher	327	2	0	1	1	0	0	328	0	327	
+328	Shatter	328	0	0	0	1	0	0	0	0	328	
+329	Slime	329	5	0	3	1	0	0	0	0	329	
+330	Alicorn	330	0	0	1	1	0	0	0	0	330	
+331	Gore	331	-1	-1	0	1	0	0	0	0	331	
+332	Vision's Foe	332	10	0	0	-3	10	0	333	0	332	
+333	Eyeloss	333	0	0	0	1	0	0	0	0	333	
+334	Gore	334	-1	-1	0	1	0	0	0	0	334	
+335	Armloss	335	0	0	0	1	0	0	0	0	335	
+336	The Sharpest Tooth	336	2	0	0	1	0	337	0	0	336	
+337	The Deadliest Poison	337	0	0	0	1	0	0	0	0	337	
+338	Hoof	338	0	0	0	1	0	0	0	0	338	
+339	Cornucopia	339	0	0	2	1	0	0	0	0	339	
+340	Procas's Axe of Rulership	340	3	-2	1	1	0	0	335	0	340	
+341	Picus's Axe of Rulership	341	5	-2	1	1	0	0	335	0	341	
+342	Poison Ink	342	0	1	0	1	0	0	0	0	342	
+343	Blade Hand	343	0	0	1	1	0	0	0	0	343	
+344	Demon-Slayer	344	2	2	1	1	0	0	0	0	344	
+345	Fly Whisk	345	0	0	1	1	0	0	0	0	345	
+346	Useless Kick	346	-4	-2	0	1	0	0	0	0	346	
+347	Flail	347	1	-2	2	2	0	0	0	3	347	
+348	Banefire Strike	348	0	0	2	1	0	0	349	0	348	
+349	Decay	349	0	0	0	1	0	0	0	0	349	
+350	Fire Flare	350	0	0	2	1	0	0	0	0	350	
+351	Pitchfork	351	-1	-1	3	1	0	0	0	1	351	
+352	Gore	352	1	-1	1	1	0	0	0	0	352	
+353	Moose Kick	353	0	0	1	1	0	0	0	0	353	
+354	Antlers	354	-1	0	0	1	0	0	0	0	354	
+355	Sting	355	0	0	0	1	0	50	0	0	355	
+356	Fire Composite Bow	356	1	0	0	1	12	0	216	0	356	
+357	Light Lance	357	0	0	3	1	0	0	0	1	357	
+358	Snake Hair	358	-2	0	0	3	0	50	0	0	358	
+359	Venomous Bites	359	0	-1	0	2	0	51	0	0	359	
+360	Sticks and Stones	360	-2	0	0	2	30	0	0	0	360	
+361	...	361	0	0	0	1	8	0	0	1	361	
+362	Chakram	362	0	0	0	1	2	0	0	2	362	
+363	Iron Cudgel	363	0	0	2	1	0	0	0	2	363	
+364	Curse Luck	364	0	0	0	1	0	0	0	0	364	
+365	Flail of Misfortune	365	3	-3	2	2	0	0	366	0	365	
+366	Curse Luck	366	0	0	4	1	0	0	0	0	366	
+367	Horror Mark	367	0	0	0	1	0	0	0	0	367	
+368	Horror Mark	368	100	0	0	1	30	0	0	0	368	
+369	Curse	369	100	0	0	1	30	0	0	0	369	
+370	Theft of Reason	370	100	0	0	1	30	0	0	0	370	
+371	Theft of Life	371	100	0	0	1	30	0	0	0	371	
+372	Poison Bow	372	1	0	0	1	12	50	0	4	372	
+373	Stone Spear	373	0	0	3	1	0	0	0	0	373	
+374	Flint Sword	374	1	1	3	1	0	0	0	0	374	
+375	Dogs	375	-2	0	0	3	0	0	0	0	375	
+376	Yari	376	1	0	4	1	0	0	0	1	376	
+377	Wakizashi	377	2	1	1	1	0	0	0	4	377	
+378	Katana	378	3	2	1	1	0	0	0	7	378	
+379	No-Dachi	379	2	2	2	1	0	0	0	6	379	
+380	Naginata	380	-1	1	3	1	0	0	0	4	380	
+381	Ninjato	381	2	0	1	1	0	0	0	3	381	
+382	Shuriken	382	0	0	0	2	4	51	0	1	382	
+383	Throw Flames	383	0	0	0	1	3	0	0	0	383	
+384	Minor Life Drain	384	0	0	0	1	0	0	0	0	384	
+385	Major Life Drain	385	0	0	0	1	0	0	0	0	385	
+386	Sceptre of Dark Regency	386	1	0	1	1	0	385	0	0	386	
+387	Sleep Touch	387	0	0	0	1	0	0	0	0	387	
+388	Pearl Spear	388	0	0	3	1	0	0	0	2	388	
+389	Pearl Trident	389	-1	0	4	1	0	0	0	4	389	
+390	Scourge of Vengeance	390	2	0	1	2	0	64	0	2	390	
+391	Serpent	391	4	0	2	1	0	52	0	2	391	
+392	Torch of Strife	392	2	0	1	1	0	622	0	2	392	
+393	Touch of Tisiphone	393	0	0	0	1	0	394	0	0	393	
+394	Curse of Tisiphone	394	0	0	0	1	0	0	0	0	394	
+395	Shadow Brand	395	4	1	1	1	0	0	396	0	395	
+396	Leeching Darkness	396	0	0	0	1	0	0	285	0	396	
+397	Kick	397	0	0	0	1	0	0	0	0	397	
+398	Venomous Fangs	398	0	-1	0	1	0	52	0	0	398	
+399	Gore	399	1	-1	0	1	0	0	0	0	399	
+400	Devour Soul	400	0	-1	0	1	0	401	0	0	400	
+401	Soul Death	401	0	0	0	1	0	0	0	0	401	
+402	Holy Scourge	402	5	-2	2	2	0	0	0	3	402	
+403	Mesmerize	403	100	0	0	1	5	0	0	0	403	
+404	Beak	404	0	-1	-1	1	0	0	0	0	404	
+405	...	405	0	0	0	1	8	0	216	1	405	
+406	Fire Chakram	406	0	0	0	1	2	0	216	2	406	
+407	Fire Shuriken	407	0	0	0	2	4	0	216	1	407	
+408	Talons	408	0	0	-1	1	0	0	0	0	408	
+409	Small Area Cold	409	0	0	0	1	0	0	0	0	409	
+410	O'al Kan's Sceptre	410	0	0	1	1	0	0	411	0	410	
+411	Small Area Fatigue	411	0	0	0	1	0	0	0	0	411	
+412	Axe of Hate	412	4	0	1	1	0	413	0	0	412	
+413	Fatigue and Disease	413	0	0	1	1	0	414	0	0	413	
+414	Disease	414	0	0	1	1	0	0	0	0	414	
+415	Astral Hooks	415	0	0	0	3	0	367	0	0	415	
+416	False Fetters	416	0	0	0	1	0	0	0	0	416	
+417	Bite	417	0	0	0	1	0	0	0	0	417	
+418	Horror Claw	418	0	0	-1	1	0	0	0	0	418	
+419	Lightning Strike	419	0	0	0	1	1	0	704	0	419	
+420	Koppo	420	-2	0	0	1	0	421	0	0	420	
+421	Limp	421	0	0	0	1	0	0	0	0	421	
+422	Stellar Bolt	422	0	0	0	1	10	0	0	0	422	
+423	Scorpion Tail	423	0	0	2	1	0	52	0	0	423	
+424	Boulder	424	0	0	0	1	5	0	0	0	424	
+425	Fire Boulder	425	0	0	0	1	5	0	171	0	425	
+426	Obsidian Glaive	426	1	1	3	1	0	0	0	8	426	
+427	Granite Glaive	427	-1	0	3	1	0	0	0	0	427	
+428	Granite Sword	428	-1	0	1	1	0	0	0	0	428	
+429	Stone Club	429	-1	0	2	1	0	0	0	0	429	
+430	Doom Glaive	430	2	2	3	1	0	0	431	5	430	
+431	Small Area Curse and Decay	431	0	0	0	1	0	0	432	0	431	
+432	Small Area Decay	432	0	0	0	1	0	0	0	0	432	
+433	Shadow Spear	433	2	0	3	1	0	0	0	3	433	
+434	Banefire Crossbow	434	2	0	0	-2	14	0	435	0	434	
+435	Area Decay	435	0	0	0	1	0	0	0	0	435	
+436	Demon Bane	436	5	2	2	1	0	0	0	0	436	
+437	Long Spear	437	0	0	4	1	0	0	0	2	437	
+438	Plague Bow	438	5	0	0	1	12	143	0	0	438	
+439	Howling Bow	439	2	0	0	1	12	440	0	5	439	
+440	Lesser Fear	440	0	0	0	1	0	0	0	0	440	
+441	Banish to Inferno	441	0	0	0	1	0	0	0	0	441	
+442	Dimensional Shift	442	0	0	0	1	0	0	0	0	442	
+443	Dimensional Rod	443	1	1	1	1	0	0	442	0	443	
+444	Infernal Sword	444	4	4	2	1	0	441	0	0	444	
+445	Spear of the Dragon King	445	2	1	4	1	0	0	0	0	445	
+446	Sceptre	446	0	0	1	1	0	0	0	1	446	
+447	Venomous Bite	447	1	0	2	1	0	50	0	0	447	
+448	Death Blessing	448	0	0	5	1	0	143	0	0	448	
+449	Life Drain	449	5	0	0	1	0	0	0	0	449	
+450	Tiny Bite	450	0	0	0	1	0	0	0	0	450	
+451	Obsidian Club Sword	451	0	0	1	1	0	0	0	2	451	
+452	Harpoon	452	-2	0	0	1	1	453	0	1	452	
+453	Harpooning	453	0	0	0	1	0	0	0	0	453	
+454	Ice Glaive	454	0	-1	3	1	0	0	0	6	454	
+455	Bone Glaive	455	0	-1	3	1	0	285	0	5	455	
+456	Gaze of Fear	456	100	0	0	1	12	0	0	0	456	
+457	Spectral Axe	457	1	0	2	1	0	458	0	0	457	
+458	Spectral Fire	458	0	0	5	1	0	0	0	0	458	
+459	Thrown Sutra	459	0	0	0	1	5	460	0	0	459	
+460	Stop the Dead	460	0	0	0	1	0	0	0	0	460	
+461	Swallow	461	0	-2	0	1	0	0	0	0	461	
+462	Venomous Bite	462	0	-1	0	1	0	52	0	0	462	
+463	Agarthan Steel Crossbow	463	2	-2	0	-2	12	0	0	5	463	
+464	Basalt Spear	464	1	-1	3	1	0	0	0	6	464	
+465	Basalt Club	465	-1	-1	2	1	0	0	0	0	465	
+466	Apotropaic Sword	466	1	1	2	1	0	0	0	0	466	
+467	Apotropaic Trident	467	0	0	3	1	0	468	0	0	467	
+468	Halt Demon	468	0	0	0	1	0	0	0	0	468	
+469	Ancestor Sword	469	3	3	2	1	0	440	0	0	469	
+470	Spirit Club	470	1	0	1	1	0	0	0	0	470	
+471	Boulder	471	0	0	0	1	5	0	0	0	471	
+472	Flame Sword	472	3	1	1	1	0	0	171	0	472	
+473	Golden Spear	473	1	0	3	1	0	0	0	5	473	
+474	Golden Sword	474	1	1	1	1	0	0	0	8	474	
+475	Golden Lance	475	1	0	3	1	0	0	0	5	475	
+476	Moon Blade	476	2	0	1	1	0	0	0	0	476	
+477	Unholy Sword	477	3	1	2	1	0	480	0	0	477	
+478	Unholy Spear	478	3	0	3	1	0	480	0	0	478	
+479	Unholy Axe	479	3	-1	1	1	0	480	0	0	479	
+480	Halt Sacred	480	0	0	0	1	0	0	0	0	480	
+481	Touch of Madness	481	-3	0	0	1	0	156	0	0	481	
+482	Spectral Club	482	0	0	1	1	0	0	0	0	482	
+483	Gae Bulga	483	2	0	0	1	1	453	0	1	483	
+484	Wail of Doom	484	100	0	0	1	1	0	0	0	484	
+485	Fomorian Bronze Spear	485	0	0	3	1	0	0	0	1	485	
+486	Gae Assail	486	0	1	5	1	0	0	171	0	486	
+487	Spear of the Morrigan	487	3	2	3	1	0	64	0	5	487	
+488	Great Head	488	1	0	0	1	0	51	0	0	488	
+489	Immortal Head	489	1	0	0	1	0	52	0	0	489	
+490	Lesser Head	490	0	0	0	1	0	50	0	0	490	
+491	Lesser Heads	491	0	0	0	2	0	50	0	0	491	
+492	Rainbow	492	2	0	0	1	10	0	333	0	492	
+493	Sickle Staff	493	0	1	3	1	0	0	0	2	493	
+494	Poisonous Bite	494	1	0	2	1	0	53	0	0	494	
+495	Poisonous Bite	495	0	-1	2	1	0	53	0	0	495	
+496	Sacred Pitcher	496	0	0	1	1	1	0	497	0	496	
+497	Sacred Water	497	0	0	0	1	0	0	0	0	497	
+498	Twig	498	0	0	1	1	0	0	0	0	498	
+499	Pestle	499	-1	0	0	1	0	0	0	0	499	
+500	Poison Darts	500	0	0	0	2	6	54	0	1	500	
+501	Bamboo Rod	501	1	2	1	1	0	0	0	0	501	
+502	Yak Tail Fly Whisk	502	0	0	1	1	0	0	0	1	502	
+503	Theft of Strength	503	100	0	0	1	30	0	285	0	503	
+504	Gaze of Death	504	100	0	0	1	30	0	0	0	504	
+505	Devour	505	0	0	0	1	0	0	0	0	505	
+506	Plague Scythe	506	1	-2	3	1	0	143	0	0	506	
+507	Giant Pestle	507	-1	-1	0	1	0	0	0	0	507	
+508	Black Halberd	508	1	2	3	1	0	0	509	9	508	
+509	Bane of Heresy	509	0	0	0	1	0	0	0	0	509	
+510	Divine Grasp	510	0	0	0	1	0	0	509	0	510	
+511	Stump	511	-2	-1	0	1	0	0	0	0	511	
+512	Fossilized Sword	512	0	1	1	1	0	0	0	2	512	
+513	Kopesh	513	0	0	1	1	0	0	0	2	513	
+514	Vitriol Breath	514	0	0	0	1	7	0	515	0	514	
+515	Corrosion	515	0	0	0	1	0	0	0	0	515	
+516	Censer	516	-1	-1	1	1	0	0	517	2	516	
+517	Incense	517	0	0	0	1	0	0	0	0	517	
+518	Anakite Sword	518	1	2	1	1	0	0	0	8	518	
+519	Poison Tipped Spear	519	0	0	3	1	0	51	0	4	519	
+520	Dawn Blade	520	2	2	1	1	0	0	0	8	520	
+521	The First Sword	521	7	7	2	1	0	0	0	0	521	
+522	Golden Horns	522	-1	-1	1	1	0	0	0	0	522	
+523	Golden Sickle	523	2	2	1	1	0	0	0	2	523	
+524	Pillar of Laws	524	-3	-5	2	1	0	0	411	0	524	
+525	...	525	0	0	0	1	12	0	0	5	525	
+526	Soul Catcher	526	1	0	3	1	0	528	0	0	526	
+527	Enchanted Katana	527	4	3	1	1	0	0	0	7	527	
+528	Trap Soul	528	0	0	0	1	0	0	0	0	528	
+529	Ghost Rending Claw	529	0	0	-1	1	0	460	0	0	529	
+530	Enchanted Net	530	0	0	3	1	1	0	0	1	530	
+531	Mighty Yari	531	1	0	4	1	0	0	0	1	531	
+532	Tail Sweep	532	0	0	0	1	0	0	0	0	532	
+533	Dragon Fire	533	0	0	0	1	4	0	0	0	533	
+534	Dragon Frost	534	0	0	0	1	5	0	0	0	534	
+535	Dragon Gas	535	0	0	0	1	6	0	0	0	535	
+536	Mind Blast	536	100	0	0	1	10	293	0	0	536	
+537	Flick Barbs	537	-4	0	0	3	3	51	0	1	537	
+538	Head Butt	538	-4	-4	0	1	0	0	0	0	538	
+539	Copper Feathers	539	0	0	5	1	1	0	0	5	539	
+540	The Staff from the Sun	540	3	3	3	1	0	0	541	0	540	
+541	Area Fire	541	0	0	0	1	0	0	0	0	541	
+542	Acid	542	0	0	0	1	0	0	0	0	542	
+543	Slap	543	0	0	-1	1	0	544	0	0	543	
+544	Shrink	544	0	0	0	1	0	0	0	0	544	
+545	Slap	545	0	0	-1	1	0	544	0	0	545	
+546	Boulder	546	0	0	0	1	15	0	0	0	546	
+547	Buff	547	0	0	0	1	0	0	0	0	547	
+548	Eyecatcher	548	-2	0	0	1	0	333	0	0	548	
+549	Mantis Claw	549	0	0	-1	1	0	0	0	0	549	
+550	Weakness Tentacle	550	0	0	0	1	0	285	0	0	550	
+551	Soul Rending Claw	551	0	0	-1	1	0	0	552	0	551	
+552	Soul Rend	552	0	0	0	1	0	367	0	0	552	
+553	Rock	553	-1	-1	0	1	0	0	0	0	553	
+554	Lictor Axe	554	2	0	1	1	0	460	0	8	554	
+555	Dawn Fang	555	3	3	2	1	0	0	0	0	555	
+556	Belly Maw	556	0	0	0	1	0	0	0	0	556	
+557	Stinger	557	0	0	2	1	0	52	0	0	557	
+558	Distorted Claw	558	0	0	-1	1	0	0	0	0	558	
+559	Brass Claw	559	0	0	-1	1	0	0	232	0	559	
+560	Venomous Bite	560	0	-1	0	1	0	51	0	0	560	
+561	Gore Tide	561	0	0	0	1	0	0	0	0	561	
+562	Stone Fist	562	-1	-1	-1	1	0	0	0	0	562	
+563	Spirit Club	563	1	0	2	1	0	564	0	7	563	
+564	Spirit Strike	564	0	0	0	1	0	0	0	0	564	
+565	Golden Arbalest	565	10	0	0	2	12	0	0	0	565	
+566	Ivory Bow	566	2	0	0	3	12	64	0	0	566	
+567	Drake Fire	567	0	0	0	1	4	0	0	0	567	
+568	Drake Frost	568	0	0	0	1	5	0	0	0	568	
+569	Drake Gas	569	0	0	0	1	6	0	0	0	569	
+570	Carmine Cleaver	570	4	1	2	1	0	571	0	0	570	
+571	Burn Flesh	571	0	0	0	1	0	0	0	0	571	
+572	Spectral Long Spear	572	0	-1	4	1	0	0	0	0	572	
+573	Poisonous Gore	573	-1	-1	0	1	0	51	0	0	573	
+574	Shatterfist	574	0	0	-1	1	0	0	328	0	574	
+575	Tiny Slap	575	0	0	0	1	0	0	0	0	575	
+576	Weak Bite	576	0	0	0	1	0	0	0	0	576	
+577	Coral Lance	577	0	0	3	1	0	50	0	1	577	
+578	Sting	578	0	0	0	1	0	50	0	0	578	
+579	Skull Club	579	1	0	1	1	0	0	0	0	579	
+580	Coral Long Spear	580	0	-1	4	1	0	50	0	2	580	
+581	Bident	581	0	1	3	1	0	0	0	2	581	
+582	Snake Skirt	582	-2	0	0	5	0	50	0	0	582	
+583	Taloned Kick	583	0	0	0	1	0	0	0	0	583	
+584	Lightning	584	3	0	0	1	3	0	704	0	584	
+585	Serpent Club	585	2	0	1	1	0	50	0	0	585	
+586	Reanimating Bite	586	0	-1	0	1	0	0	0	0	586	
+587	Torc	587	0	0	1	1	0	0	0	0	587	
+588	Champion's Gladius	588	2	4	1	1	0	0	0	0	588	
+589	Tail Slap	589	-2	0	0	1	0	0	0	0	589	
+590	Short Pike	590	0	-1	4	1	0	0	0	2	590	
+591	Cod	591	0	0	1	1	0	0	0	0	591	
+592	Stinger	592	2	0	0	1	0	51	0	0	592	
+593	Spiked Club	593	0	0	1	1	0	0	0	0	593	
+594	Poison Bow	594	1	0	0	1	12	50	0	3	594	
+595	Hypnotize	595	100	0	5	1	0	0	0	0	595	
+596	Light Lance	596	1	0	3	1	1	0	0	2	596	
+597	Life Drain	597	2	0	0	1	0	0	0	0	597	
+598	Shard Glaive	598	1	0	3	1	0	118	0	8	598	
+599	Corrosive Spit	599	0	0	0	1	5	0	515	0	599	
+600	Crab Claw	600	0	0	-1	1	0	0	0	0	600	
+601	Cave Fire Bottle	601	-1	0	0	1	1	0	0	0	601	
+602	Fossilized Hatchet	602	1	0	1	1	0	0	0	2	602	
+603	Corrosive Bite	603	0	-1	0	1	0	0	604	0	603	
+604	Corrosion	604	0	0	0	1	0	0	0	0	604	
+605	Throw Rocks	605	-2	0	0	1	2	0	0	0	605	
+606	Frost Bow	606	0	0	0	1	12	0	607	5	606	
+607	Freeze	607	0	0	0	1	0	0	0	0	607	
+608	Sword of Oaths	608	1	1	1	1	0	0	0	0	608	
+609	Grab and Swallow	609	0	-2	0	1	0	0	0	0	609	
+610	Sacred Circlet	610	0	0	1	1	0	0	0	0	610	
+611	Ice Spear	611	1	0	3	1	0	0	0	2	611	
+612	Ice Blade	612	1	2	1	1	0	0	0	4	612	
+613	Enchanted Bow	613	2	0	0	1	12	0	0	0	613	
+614	Tusk	614	0	0	0	1	0	0	0	0	614	
+615	Hoof	615	0	0	0	1	0	0	0	0	615	
+616	The Bloody Mace	616	5	0	2	1	0	564	0	0	616	
+617	Sun Mace	617	1	0	1	1	0	0	0	1	617	
+618	Sun Spear	618	0	2	3	1	0	0	0	0	618	
+619	Obsidian Dart	619	1	0	0	1	4	0	0	1	619	
+620	Poison Dart	620	1	0	0	1	4	624	0	1	620	
+621	Obsidian Shard Blade	621	2	1	2	1	0	0	0	9	621	
+622	Maddening Rage	622	0	0	0	1	0	0	0	0	622	
+623	Poisoned Obsidian Blade	623	1	0	1	1	0	624	0	7	623	
+624	Paralyzing Poison	624	0	0	0	1	0	0	0	0	624	
+625	Obsidian Blade	625	1	0	1	1	0	0	0	7	625	
+626	Thunder Axe	626	2	0	1	1	0	0	232	0	626	
+627	Death Blessing Disease	627	0	0	5	1	0	0	0	0	627	
+628	Tentacle	628	0	0	0	1	0	0	0	0	628	
+629	Sting	629	-3	0	0	1	0	51	0	0	629	
+630	Ghost Rending Bite	630	0	-1	0	1	0	460	0	0	630	
+631	Serpent Tail	631	0	-1	0	1	0	51	0	0	631	
+632	Serpent Mane	632	-2	0	0	5	0	50	0	0	632	
+633	Obsidian Dart	633	1	0	0	1	4	0	0	1	633	
+634	Antlers	634	-1	0	1	1	0	0	0	0	634	
+635	Magic Lance	635	2	0	3	1	0	0	0	1	635	
+636	Life Drain Tentacle	636	0	0	0	1	0	0	0	0	636	
+637	Tool	637	-1	0	1	1	0	0	0	2	637	
+638	Instrument	638	-1	0	1	1	0	0	0	2	638	
+639	Spetum	639	0	0	3	1	0	0	0	2	639	
+640	Coral Tipped Javelin	640	-2	0	0	1	2	50	0	1	640	
+641	Bronze Trident	641	0	1	3	1	0	0	0	3	641	
+642	Meteorite Trident	642	0	1	3	1	0	0	0	5	642	
+643	Bronze Spear	643	0	0	3	1	0	0	0	1	643	
+644	Bronze Long Spear	644	0	-1	4	1	0	0	0	2	644	
+645	Bronze Sword	645	1	1	1	1	0	0	0	3	645	
+646	Bronze Hatchet	646	1	0	1	1	0	0	0	1	646	
+647	Spectral Bow	647	0	0	0	1	12	0	0	0	647	
+648	Enchanted Hammer	648	1	-1	1	1	0	0	0	3	648	
+649	Crab Claw	649	-2	0	-1	1	0	0	0	0	649	
+650	Torch of Unquenchable Flame	650	2	0	1	1	0	0	171	2	650	
+651	Bronze Lance	651	0	0	3	1	0	0	0	1	651	
+652	Flame Sting Tentacles	652	0	0	0	1	0	0	0	0	652	
+653	Anemone Mace	653	4	1	1	1	0	0	654	0	653	
+654	Anemone Poison	654	0	0	1	1	0	655	0	0	654	
+655	Anemone Paralyze	655	0	0	1	1	0	0	0	0	655	
+656	Jellyberd	656	2	3	3	1	0	0	657	0	656	
+657	Jellyberd Poison	657	0	0	1	1	0	0	658	0	657	
+658	Jellyberd Paralyze	658	0	0	1	1	0	0	0	0	658	
+659	Cockerel Sceptre	659	2	1	1	1	0	0	660	0	659	
+660	Cockerel Blindness	660	0	0	1	1	0	0	0	0	660	
+661	Mercybrand	661	1	1	1	1	0	662	0	0	661	
+662	Flames of Mercy	662	1	1	1	1	0	0	0	0	662	
+663	Rudder	663	2	-1	3	1	0	0	0	0	663	
+664	Sistrum	664	1	0	1	1	0	0	0	0	664	
+665	Pearl Blade	665	1	1	1	1	0	0	0	4	665	
+666	Torch	666	0	0	1	1	0	0	216	1	666	
+667	Extinguished Torch	667	0	0	1	1	0	0	0	1	667	
+668	Metal Glaive	668	-1	1	3	1	0	0	0	5	668	
+669	Metal Yari	669	1	0	4	1	0	0	0	2	669	
+670	Bone Trident	670	0	1	3	1	0	0	0	1	670	
+671	Stone Dagger	671	1	0	0	1	0	0	0	0	671	
+672	Tiny Tentacle	672	0	0	0	1	0	0	0	0	672	
+673	Bronze Glaive	673	-1	1	3	1	0	0	0	5	673	
+674	Bronze Dagger	674	1	0	0	1	0	0	0	0	674	
+675	Bronze Axe	675	0	-1	1	1	0	0	0	2	675	
+676	Fiery Breath	676	0	0	2	1	0	0	0	0	676	
+677	Wing Buff	677	-1	-1	0	1	0	0	0	0	677	
+678	Bow of the Titans	678	100	0	0	-2	10	0	0	0	678	
+679	Short Trident	679	-1	0	3	1	0	0	0	2	679	
+680	Short Bronze Trident	680	-1	0	3	1	0	0	0	3	680	
+681	Burning Blade	681	2	1	1	1	0	0	684	0	681	
+682	Mace of Eruption	682	2	0	1	1	0	683	0	1	682	
+683	Flame Eruption	683	0	0	0	1	0	0	0	0	683	
+684	Flames	684	0	0	0	1	0	0	0	0	684	
+685	Ice Mist Scimitar	685	2	3	1	1	0	0	686	0	685	
+686	Ice Mist	686	0	0	0	1	0	0	0	0	686	
+687	Rime Hammer	687	5	1	3	1	0	0	688	0	687	
+688	Freezing Mist	688	0	0	0	1	0	0	0	0	688	
+689	Coral Blade	689	2	2	1	1	0	690	0	0	689	
+690	Draw Blood	690	0	0	0	1	0	0	0	0	690	
+691	Blacksteel Sword	691	2	2	1	1	0	0	0	0	691	
+692	Hardwood Club	692	1	1	1	1	0	0	0	0	692	
+693	Ice Lance	693	1	2	3	1	0	0	0	2	693	
+694	Curse	694	0	0	0	1	0	0	366	0	694	
+695	Belch Flames	695	0	0	2	1	0	0	0	0	695	
+696	Petrifying Gas	696	0	0	0	1	5	0	0	0	696	
+697	Sling of Accuracy	697	5	0	0	1	15	0	0	0	697	
+698	Bronze Battleaxe	698	1	0	2	1	0	0	0	3	698	
+699	Small Area Stun	699	0	0	0	1	0	0	0	0	699	
+700	Sword of the Five Elements	700	3	4	1	1	0	0	0	0	700	
+701	Shillelagh	701	1	1	1	1	0	0	0	0	701	
+702	Gore	702	1	-1	0	1	0	0	0	0	702	
+703	Claw	703	0	0	-1	1	0	0	0	0	703	
+704	Small Area Shock	704	0	0	0	1	0	0	0	0	704	
+705	Vajra	705	2	0	0	1	0	0	232	0	705	
+706	Gastraphetes	706	2	0	0	-2	12	0	0	3	706	
+707	Hand Axe	707	0	0	0	1	0	0	0	1	707	
+708	Stone Lance	708	0	0	3	1	0	0	0	1	708	
+709	Water Breath	709	0	0	0	1	6	0	699	0	709	
+710	Flaming Breath	710	0	0	0	1	4	0	0	0	710	
+711	Spectral Axe	711	1	0	2	1	0	0	0	0	711	
+712	Apotropaic Spear	712	1	0	3	1	0	468	0	0	712	
+713	Wheel of the Turning Year	713	-2	2	1	1	0	0	0	0	713	
+714	Tremor	714	0	0	0	1	0	0	715	0	714	
+715	Tremor Stun	715	0	0	0	1	0	0	0	0	715	
+716	Apotropaic Dagger	716	2	0	0	1	0	0	0	0	716	
+717	Shatter Souls	717	100	0	0	1	10	367	0	0	717	
+718	Apotropaic Mace	718	1	1	1	1	0	468	0	0	718	
+719	Life Drain	719	0	0	0	1	0	0	0	0	719	
+720	Ritual Baton	720	0	1	1	1	0	0	0	0	720	
+721	Short Bow	721	0	0	0	1	12	0	0	2	721	
+722	God-Slayer Spear	722	2	0	3	1	0	0	509	7	722	
+723	Bronze Discus	723	-3	0	0	1	4	0	0	3	723	
+724	Orichalcum Sword	724	1	2	1	1	0	0	0	2	724	
+725	Brass Hoof	725	0	0	0	1	0	0	0	0	725	
+726	Brass Horns	726	-1	-1	1	1	0	0	0	0	726	
+727	Fiery Breath	727	0	0	0	1	4	0	0	0	727	
+728	Double Axe	728	1	0	2	1	0	0	0	4	728	
+729	Banefire Torch	729	1	0	1	1	0	0	730	2	729	
+730	Banefire	730	0	0	0	1	0	0	64	0	730	
+731	Key to Every Entrance	731	1	0	1	1	0	0	0	0	731	
+732	Head Butt	732	0	0	0	1	0	0	0	0	732	
+733	Cyclope Spear	733	1	0	3	1	0	0	0	4	733	
+734	Cyclope Sword	734	1	1	1	1	0	0	0	6	734	
+735	Serpent Leg	735	-1	0	0	1	0	51	0	0	735	
+736	Snake Tresses	736	-2	0	0	5	0	50	0	0	736	
+737	Spark Bite	737	0	0	-1	1	0	0	738	0	737	
+738	Shock	738	0	0	0	1	0	0	0	0	738	
+739	Tiny Sting	739	0	0	0	1	0	0	0	0	739	
+740	Tiny Bite	740	0	0	0	1	0	0	0	0	740	
+741	Poisoned Bronze Spear	741	0	0	3	1	0	51	0	1	741	
+742	Mantis Claw	742	0	0	-1	1	0	0	0	0	742	
+743	Spider Claw	743	0	0	-1	1	0	0	0	0	743	
+744	Enchanted No-Dachi	744	3	3	2	1	0	0	0	7	744	
+745	Baculus	745	2	3	3	1	0	0	509	7	745	
+746	Scimitar	746	1	0	1	1	0	0	0	3	746	
+747	Golden Fist	747	0	0	-1	1	0	0	748	0	747	
+748	Petrify	748	0	0	0	1	0	0	0	0	748	
+749	Enchanted Scimitar	749	3	1	1	1	0	0	0	8	749	
+750	Bronze Falchion	750	0	0	1	1	0	0	0	6	750	
+751	Bronze Sword	751	1	1	1	1	0	0	0	3	751	
+752	Frost Breath	752	0	0	0	1	0	0	0	0	752	
+753	Dive attack	753	4	0	0	1	1	0	0	0	753	
+754	Razor Wings	754	0	0	0	1	0	0	0	0	754	
+755	Burning Beak	755	0	0	-1	1	0	0	221	0	755	
+756	Burning Claw	756	0	0	-1	1	0	0	221	0	756	
+757	Bronze Scimitar	757	1	0	1	1	0	0	0	5	757	
+758	Silver Horns	758	-1	-1	1	1	0	0	0	0	758	
+759	Crossbow	759	2	0	0	-2	12	0	0	3	759	
+760	Scourge of Power	760	2	0	1	2	0	0	0	2	760	
+761	Throw Salt	761	0	0	5	1	0	0	0	1	761	
+762	Death Explosion	762	0	0	0	1	0	0	0	0	762	

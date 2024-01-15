@@ -1,0 +1,1 @@
+All units on the battlefield occasionally take 10 AN fatigue dmg. Undead and inanimates are immune to the effect.

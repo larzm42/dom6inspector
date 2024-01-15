@@ -1,0 +1,1 @@
+Nearby enemies start to jerk and move in an uncontrolled manner. They will become exhausted and will eventually fall unconscious unless the musician stops playing.

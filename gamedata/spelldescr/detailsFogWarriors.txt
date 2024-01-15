@@ -1,0 +1,1 @@
+Any damage is reduced to 1 (max 25 points of reduction). A hit that would have dealt 25+ in damage, or a hit from any magical source, cancels the mistform after the damage reduction. There is also a 1% chance that the enchantment will expire whenever protecting against an attack.

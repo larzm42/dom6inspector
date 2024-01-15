@@ -1,0 +1,1 @@
+All enemies passing through the flames will suffer 10 AP fire dmg.

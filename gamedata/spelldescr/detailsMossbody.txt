@@ -1,0 +1,1 @@
+Moss coverage: 75%. Moss reduces damage by 15. Moss explosion: 1 AN poison dmg, 4 AoE.

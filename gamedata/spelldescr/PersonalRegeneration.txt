@@ -1,0 +1,1 @@
+Gives the caster regenerative powers. However inanimate mages are not affected by regeneration spells.

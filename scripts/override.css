@@ -1,0 +1,7 @@
+.dataTables_wrapper .dataTables_length {
+  float: right;
+}
+.dataTables_wrapper .dataTables_filter {
+  float: left;
+  text-align: right;
+}

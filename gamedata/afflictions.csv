@@ -1,0 +1,52 @@
+bit_value	bit_name	test
+1	disease
+2	curse
+4	starving
+8	plague
+16	lost weapon
+32	curse of stones
+64	entangle
+128	rage
+256	decay
+512	burn
+1024	sleep
+2048	Unknown
+4096	blind
+8192	bleed
+16384	earth grip
+32768	cursed item
+65536	fire bonds
+131072	false fetters
+262144	limp
+524288	lost eye
+1048576	weakness
+2097152	battle fright
+4194304	mute
+8388608	chest wound
+16777216	crippled
+33554432	feeble minded
+67108864	never healing wound
+134217728	slime
+268435456	frozen
+536870912	webbed
+1073741824	arm loss
+2147483648	lost head
+4294967296	shrunken
+8589934592	flesh eater
+17179869184	confused
+34359738368	Unknown
+68719476736	slowed
+137438953472	dementia
+274877906944	Unknown
+549755813888	tainted presence
+1099511627776	Unknown - 1 health loss per round with 20% per turn to end; undead take double and it never ends
+2199023255552	Rusted equipment
+4398046511104	Damaged weapon
+8796093022208	Damaged armor
+17592186044416	Broken armor
+35184372088832	Damaged helmet
+70368744177664	Broken helmet
+140737488355328	Damaged shield
+281474976710656	Broken shield
+562949953421312	Soul Slayed
+1125899906842624	Netted

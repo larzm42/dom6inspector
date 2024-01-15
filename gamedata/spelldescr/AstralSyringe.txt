@@ -1,0 +1,1 @@
+Works as paralyze for the moment. Supposed to decrease the targets MR for the duration of the battle.

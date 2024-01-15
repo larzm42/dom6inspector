@@ -1,0 +1,1072 @@
+id	name	rarity	loc	level	path	F	A	W	E	S	D	N	B	gold	res	sup	unr	exp	lab	fort	scale1	scale2	domspread	turmoil	sloth	cold	death	misfortune	drain	fireres	coldres	shockres	poisonres	str	prec	mor	undying	att	darkvision	aawe	rit	ritrng	hmon1	hmon2	hmon3	hmon4	hmon5	voidgate	sum1	n_sum1	sum2	n_sum2	sum3	n_sum3	conj	alter	evo	const	ench	thau	blood	heal	disease	curse	horror	holyfire	holypow	scry	adventure	other	sum4	n_sum4	hcom1	hcom2	hcom3	hcom4	hcom5	mon1	mon2	mon3	mon4	mon5	com1	com2	com3	com4	com5	reveal	provdef1	provdef2	def	F2	A2	W2	E2	S2	D2	N2	B2	awe	reinvigoration	airshield	provdefcom	domconflict	sprite	nationalrecruits	natmon	natcom	throneclustering	wilddefenders	domconflict	rituallevelmodifier	callgodbonus	magicresistancebonus	bringgold	scorch	evil	scryrange	addtolimitedrecruitment	ageratereduction	dragonlord	corpselord	ivylord	maximizeorder	end
+1	The Smouldercone	5	0	0	Fire	4															Heat																																																				923	89	87																														0																				
+2	The Coral Towers	5	0	0	Water			5																																			209																														104																																23																				
+3	Cathedral of the Spheres	5	0	0	Astral		2	1		5																																	51																														41																																40																				
+4	Swamps of Pythia	5	0	0	Nature																																						1831																														296					1840																											52																				
+5	Forest of Avalon	5	0	0	Nature							3																															65	64																													212	2128																															50																				
+6	Tower of Avalon	5	0	0	Nature		2																																																																		153																																53																				
+7	The Keep of Ulm	5	0	0	Earth																																						66																														748	1973	1982	113																													29																				
+8	The Forges of Ulm	5	0	0	Earth				5																																																																																																29																				
+9	The Temple City	5	0	0	Death						4	2																															783																														177	1366																															47																				
+10	Tower of a Thousand Stars	5	0	0	Astral					4		1																															747																														301																																38																				
+11	The Citadel of Frozen Crystal	5	0	0	Water		3	2													Cold																						2547	358																																																													23																				
+12	Empoisoners Guild	5	0	0	Nature																																						503																														502																																55																				
+13	The House of Fiery Justice	5	0	0	Holy	4				1																																																								50%							222	223																															76																				
+14	The Grove of Gaia	5	0	0	Nature							5																															769																																																														50																				
+15	The Halls of Andvare	5	0	0	Earth				3																																		463																														323																																34																				
+16	Iron Woods	5	0	0	Nature					1	2	1																															1310																														3398																																51																				
+17	The Sunken City	5	0	0	Astral			2		3																																																																																															40																				
+18	Ravens Vale	5	0	0	Death																																						414																																																														42																				
+19	Hidden Grove	5	0	0	Nature																																																																				516																																50																				
+20	Surakid's Tower	5	0	1	Astral					4	2																																																																																														38																				
+21	Mine of the Cyclops	5	0	0	Earth				2		2																																																																																														25																				
+22	Bolivar's Tower of Reflections	5	0	3	Air		4																																																																												341																						12																				
+23	The Unholy Sepulchre	5	0	0	Death						5																																																																																														47																				
+24	The Unholy Sepulchre	5	0	0	Death						9																																																																																														47																				
+25	The Unholy Sepulchre	5	0	0	Death						13																																																																																														47																				
+26	Starke's Ice Cave	5	0	1	Water			4													Cold																																																																																				24																				
+27	The Queen's Galley	5	0	1	Death						3																																																																																														41																				
+28	Hoburg	5	0	0	Nature							1				50																																																																																									49																				
+29	The Ruined Keep	5	0	0	Death						2																																1020																														2477																																41																				
+30	Temple of the Land	5	0	0	Blood							1																															726																														732																																67																				
+31	Temple of the Rain	5	0	0	Blood			1																																																																	733																																67																				
+32	Temple of the Moon	5	0	0	Blood					1																																																															734																																67																				
+33	High Temple of the Sun	5	0	0	Blood	2							3																														725																														735																																67																				
+34	House of Fiery Justice	5	0	0	Holy	4				1																																	135																								50%																																						76																				
+35	Vanhalla	5	0	0	Air		2																																				262	261																													948																																17																				
+36	Oleg's Alchemical Device	5	0	1	Fire									100																																																																																											6																				
+37	The Deepest Cave of the Province	5	0	2	Earth				1																																																																																																32																				
+38	Temple of the Everburning Pyre	5	0	0	Fire	1																																					990																														1970	1966																															6																				
+39	The Smouldercone	5	0	0	Fire	3															Heat																																																				923	89																															1																				
+40	The Citadel of Frozen Crystal	5	0	0	Water		1	1																																			2576																														1004																																23																				
+41	Ravens Vale	5	0	0	Earth				1		1																																2548	1280																													1003																																27																				
+42	Black Forest	5	0	0	Nature					1		1																																																													1028	1011																															50																				
+43	The Sacred Swamp	5	0	1	Nature							3																															1859	1850																													761																																52																				
+44	The Black Temple	5	0	0	Holy																																						738																														1237																																76																				
+45	The Void Gate	5	0	0	Astral																																											20%																									332																																39																				
+46	Niefelheim	5	0	2	Air			4			2																																845																														844																																17														999						
+47	Well of Urd	5	0	0	Astral					2	1	1																															784																														281																																35																				
+48	The Grove of Gaia	5	0	0	Nature							5																															787																																																														50																				
+49	The Grove of Gaia	5	0	0	Nature				1			3																															704																																																														50																				
+50	The Heavenly Gate	5	0	0	Astral		1			2																															S	1																															803																																39																				
+51	The Celestial City	5	0	0	Holy			1	1																																		791																														793	1892																															69																				
+52	The Celestial City	5	0	0	Holy				1		1																																1577																																																														69																				
+53	The Bamboo Grove	5	0	0	Nature																																						1544																														940																																50																				
+54	The Gate of Spring and Autumn	5	0	0	Astral	1		2		2	1																														S	1																															941																																39																				
+55	Temple of the Dead	5	0	0	Death						3																																1654																														1655																																47																				
+56	Forest of Avalon	5	0	0	Nature							2																															851																																																														50																				
+57	Avalon	5	0	0	Nature		3																																				849																														850	848	856																														53																				
+58	Vanhalla	5	0	0	Air		3		1																																		262																														263	264																															17																				
+59	Helhalla	5	0	0	Death		1																																				855	1503																													1507	847																															45																				
+60	God Forest	5	0	0	Nature	1						2																															889	3097																													890																																50																				
+61	God Mountain	5	0	0	Earth				2																																FAWESDNB	1	876																														894	891	877																														26																				
+62	The Temple Marsh	5	0	0	Nature			1			2	2																															164	2236	2237																												2238																																55																				
+63	The City of Tombs	5	0	0	Death	1					3																																1166																														1095																																47																				
+64	Temple of the Spheres	5	0	0	Astral					1																																																															670																																40																				
+65	The Desert Eye	5	0	0	Astral					3																																																	40%																																														35																				
+66	Gold Mine	5	0	0	Earth																																																																																																				26										60										
+67	Silver Mine	5	0	0	Earth																																																																																																				26										40										
+68	Copper Mine	5	0	0	Earth																																																																																																				26										20										
+69	Iron Mine	5	0	0	Earth										40																																																																																										26																				
+70	The Royal Academy	5	0	0	Earth		1			2																																																															3011	1030	1032																														29																				
+71	House of Justice	5	0	0	Holy	1																																					2114																								25%						2199	745																															76																				
+72	Palace of Pearls	5	0	0	Water			4				2																															2387																														2397	2805																															23																				
+73	Mount Cephalos	5	0	0	Air		2			2																																	1074																														1650	1075																															9																				
+74	Lykeion	5	0	0	Earth				2																																																																1606																																25																				
+75	Akademeia	5	0	0	Earth																																																																				1070																																25																				
+76	Temple Sanguine	5	0	0	Blood																																																																				1967																																64																				
+77	Temple of the Shroud	5	0	0	Holy	3				3																																	1108																														1112	1111																															68																				
+78	The Lotus Gardens	5	0	0	Nature					3		2																															1141																														1144																																50																				
+79	The Carrion Grove	5	0	0	Nature						1	4																															787																																																														51																				
+80	The Carrion Grove	5	0	0	Nature						1	6																															787																																																														51																				
+81	The Carrion Grove	5	0	0	Nature						1	9																															787																																																														51																				
+82	The Wheel of Pain	5	0	0	Earth																																						1157																																																														28																				
+83	Irminsul	5	0	0	Nature				3		1	2																																																													1161																																54																				
+84	The Great Cauldron	5	0	0	Blood								2																														1183	1176																													1177	1178																															63																				
+85	The Bitter Stream	5	0	0	Death			1			3																																1185																																																														43																				
+86	Steppes of Sauromatia	5	0	0	Death																																						1185																																																														43																				
+87	High Temple of the Land	5	0	0	Nature							1																															727																														1190	1194																															55																				
+88	High Temple of the Sky and the Rain	5	0	0	Water		1	1																																																																	1191	1907																															23																				
+89	Temple of the Moon	5	0	0	Astral					1																																																															1192																																40																				
+90	Temple of the Sun	5	0	0	Fire	1																																					725																														1193																																6																				
+91	Carnutes	5	0	0	Nature				2	3		1																															1222																														1223	1204																															50																				
+92	Temple of the Pure War	5	0	0	Holy		1																																				1247																																																														69																				
+93	Mountain of the Mystics	5	0	0	Earth	1			1			1																															1248																																																														26																				
+94	Palace of the Eagle Kings	5	0	0	Air		3	1																																			127	1289																													1286																																14																				
+95	Mountain of the Oni Kings	5	0	0	Earth	1	1		1		3																																																														1316																																26																				
+96	Patala	5	0	0	Earth			2	1																																		1318	1319																																																													32																				
+97	The Jeweled City	5	0	0	Earth					1																																																															1320	1321	1322																														34																				
+98	Mount Kailasa	5	0	0	Earth				2																																		1327	1328																																																													25																				
+99	The Lotus Garden	5	0	0	Nature					2		2																																																													1329	1330																															50																				
+100	Augurs' Circle	5	0	0	Death						1																																																														1115																																41																				
+101	The Grove of Aphros	5	0	0	Nature			2				4																															2401																														2399																																51																				
+102	Temple of the Land	5	0	0	Blood							1																															726																														732																																67																				
+103	High Temple of the Rain	5	0	0	Blood			1																																			1423																														1421	1420																															67																				
+104	Temple of the Moon	5	0	0	Blood					1																																																															734																																67																				
+105	Temple of the Sun	5	0	0	Blood	1							1																																																												1424																																67																				
+106	Mount Shinuyama	5	0	0	Earth	1		1	1		2																																																																																														26																				
+107	Tombs of the Oracles	5	0	3	Death						2																																																														1438																																48																				
+108	Mines of the Pale Ones	5	0	3	Earth	1			1						50																																																																																										32																				
+109	Halls of the Oracles	5	0	3	Earth																																																															1					1457	1467	1468																														32																				
+110	Roots of the Earth	5	0	0	Earth	1			3																																																																																																32																				
+111	Halls of the Oracles	5	0	0	Earth																																						2189	2188																								1					2506	1459																															32																				
+112	The Chamber of the Seal	5	0	0	Death						1																																1456																																																														48																				
+113	Gnipahålan	5	0	0	Death				1		4																																																														1010																																48																				
+114	Vanhalla	5	0	0	Air		3																																				1513																														948																																17																				
+115	The Halls of Andvare	5	0	0	Earth				3																																		463																														323																																34																				
+116	The Gorge of Ancient Cities	5	0	0	Water			2	1	3																																	1522																														1521	2883																															24																				
+117	The Carrion Grove	5	0	0	Nature						1																																787																														901	709																															51																				
+118	The Grove of Gaia	5	0	0	Nature							6																															769																																																														50																				
+119	The Smouldercone	5	0	0	Fire	5															Heat																						1661																														1542	1538	1537																														1																				
+120	Temple of the All-Consuming Flame	5	0	0	Fire	1																																					1543																														1536																																6																				
+121	Temple of the All-Consuming Flame	5	0	0	Fire	1																																					90																																																														6																				
+122	The Sibylline Caves	5	0	0	Astral					3		1																																																								1					1557																																41																				
+123	The Cerulean Tower	5	0	0	Water																																						1556																														3172																																21																				
+124	Gymnasium	5	0	0	Water																																						747																																																														21																				
+125	The Enchanted Isle	5	0	0	Nature							1																																																																																													57																				
+126	The Coast of Ice and Bones	5	0	0	Water			3			1																																1630																														1618																																18																				
+127	The Forest of Avalon	5	0	0	Nature		2					2																															1648																														1666																																50																				
+128	The Basalt City	5	0	0	Earth	1			3																																		1690																														1695																																34																				
+129	The Dark Crystal	5	0	0	Water			2																																																																	1702																																24																				
+130	The Heavenly Gate	5	0	0	Astral		1			1																																																															1712																																39																				
+131	Sri Pada	5	0	0	Air		1				3																																																														1739	1738																															9																				
+132	Lanka	5	0	0	Blood							2																															1745	1746	1747																																																												60																				
+133	Tir na n'Og	5	0	0	Air		3																																				1753																														1754	1773																															9																				
+134	Mag Mor	5	0	0	Nature				1			2																																																																																													53																				
+135	Mound of Ancient Kings	5	0	0	Nature		3					2																															849																														856	1774																															53																				
+136	Isle of Balor	5	0	0	Water		2	1																																			1817	1801																													1802																																25																				
+137	Rath Chimbaith	5	0	0	Air		1				2																																1790																														1791	1792																															12																				
+138	The Imperial Capital	5	0	0	Holy																																						763																														765																																68																				
+139	Temple of the Spheres	5	0	0	Astral					1																																																															1874																																40																				
+140	Grand Cathedral	5	0	0	Holy					1																																																															1961																																76																				
+141	Hall of Elders	5	0	0	Astral	1	1			1																																																															1937																																40																				
+142	Palace of the Sage King	5	0	0	Holy																																						2000																														2001																																68																				
+143	Temple of the Sage King	5	0	0	Holy	1			1	2																																																															1987																																70																				
+144	The Twin Cities	5	0	0	Holy						1																																2025	2026																													2011	2027	2028																														68																				
+145	Mount Seir	5	0	0	Earth	1			2	1																																																																																															25																				
+146	Gomorrah	5	0	0	Blood								2																														2030																														2031	2032																															62																				
+147	Mount Hermon	5	0	0	Earth	2			2	1																																																																																															25																				
+148	Campus Sceleris	5	0	0	Death						1																																809																																																														41																				
+149	The House of Water	5	0	0	Water			2	1																																		2176																																																														23																				
+150	The First City	5	0	0	Holy																																																																				2269	2181																															68																				
+151	The Swamps of Ur	5	0	0	Nature							3																															2962																																																														52																				
+152	Temple of Storms and Flames	5	0	0	Blood	2	3						2																														2262																														2266																																64																				
+153	Forest of Spider	5	0	0	Nature						1	2																															2301	2302	2308																												2295																																50																				
+154	Great Mababwe	5	0	0	Holy	1			2																																		2309																														2297	2296																															71																				
+155	Novgård	5	0	0	Air	1	2																																				2349																														2342																																17																				
+156	Pine of Skulls	5	0	0	Nature						1	1																															2352																																																														54																				
+157	Campus Sceleris	5	0	0	Holy						5																																																																																														70																				
+158	Campus Sceleris	5	0	0	Holy						9																																																																																														70																				
+159	Campus Sceleris	5	0	0	Holy						13																																																																																														70																				
+160	Palace of Pearls	5	0	0	Water			4				1																															1059	2863																													1061	1088	2865																														23																				
+161	Palace of the Setting Sun	5	0	0	Holy	1				1																																																															3043	3045																															68																				
+162	The Grove of Aphros	5	0	0	Nature			2				3																															2401																														2399																																51																				
+163	The Grove of Aphros	5	0	0	Nature			2				2																															2401																														2399																																51																				
+164	The City of Unfullfilled Dreams	5	0	0	Astral			1		3																																																																																															40																				
+165	The Chamber of the Broken Seal	5	0	0	Death						5										Death																																																																																				48																				
+166	The Chamber of the Broken Seal	5	0	0	Death						1																																2508																																																														48																				
+167	The Womb of the Earth	5	0	0	Earth			1																																			2492																														2493																																32																				
+168	Spire Horn Mountain	5	0	0	Air		1																																				2558																																																														8																				
+169	Ravens Vale	5	0	0	Earth				1																																		2559																														2560																																25																				
+170	Lake Urmia	5	0	0	Water		1	1		1																																	2592																																																														18																				
+171	Mountain of the Everburning Caverns	5	0	0	Fire	1																																					2587																														2629																																1																				
+172	Palace of the Sun Kings	5	0	0	Holy	1	1			1																																	2653																														2658	2659																															69																				
+173	Tombs of the Sun Kings	5	0	0	Death				1		1																																2667																														2663																																47																				
+174	Cavern of the Sun	5	0	0	Fire	3			1																																		2672																														2684																																7																				
+175	House of Knives	5	0	0	Blood						2																																																														2736																																67																				
+176	House of Jaguars	5	0	0	Blood																																																																				2736																																67																				
+177	The Sacred Cenote	5	0	0	Water			1																																			2730	2731																													2732																																22																				
+178	The Flooded City	5	0	0	Water			2	1																																		2729																														2714																																23																				
+179	The Cave of Perpetual Darkness	5	0	0	Death						1																																																														2719																																48																				
+180	The Flooded City	5	0	0	Water			1	1																																		2747																														2749																																23																				
+181	The Obsidian Cavern	5	0	0	Death						2																																2743																														2754																																48																				
+182	Telkhinis	5	0	0	Earth		1	1	3		1																																2839																														2833	2834	2836																														33																				
+183	Telkhinis	5	0	0	Earth		1	1	6		1																																2839																														2833	2834	2836																														33																				
+184	Telkhinis	5	0	0	Earth		1	1	9		1																																2839																														2833	2834	2836																														33																				
+185	Ker-Ys	5	0	0	Water		2	2	1																																		2915																														2917	2919	2921																														24																				
+186	Great Temple of the Moon	5	0	0	Holy					2																																	2953																														2948	2952																															69																				
+187	The Swamps of Ur	5	0	0	Nature							1																															2963																																																														52																				
+188	The House of Water	5	0	0	Water			1	1																																																																																																23																				
+189	Pine of Skulls	5	0	0	Nature					1		1																															2992	2997																																																													54																				
+190	Oak of Storms	5	0	0	Air		1					1																																																													2999																																13																				
+191	Hall of the Dawn	5	0	0	Air	1	1																																																																		3000	3001																															17																				
+192	The Royal Academy	5	0	0	Earth																																																																				3010																																29																				
+193	The Red River	5	0	0	Fire	1		1																																			3052																																																														5																				
+194	City of Gold and Marble	5	0	0	Holy		1		1																																																																3112	3117																															68														3						
+195	Forge of the Cyclopes	5	0	0	Fire	2			2						100																																																										3118																																1																				
+196	The Burning Fields	5	0	0	Fire	1			1		1																																																														3139																																2														2						
+197	Fortress of the Cyclopes	5	0	0	Earth	1			1																																																																3138																																29																				
+198	The Orichalcum Palace	5	0	0	Holy		1			1																																	3159																														3158	3157																															68																				
+199	Black Korkyra	5	0	0	Water			1	1																																																																																																25																				
+200	Gold Apple Tree	5	0	0	Fire	1											-5																																																																																								10															50					
+201	Orichalcum Mine	5	516	0	Fire										100																																																																																										1										150										
+202	Shattered Volcano	5	0	0	Fire	1					1																																																																																														2	102	3227	3226																	
+203	Telepylos	5	0	0	Earth				1																																		3216																														3225	3228																															29																				
+204	The Burning Mountain	5	223	0	Fire	3															Heat																																																																																				1																				
+205	Sublime Palace	5	0	0	Holy	1				1																																	3281																														3289																																68																			0	
+206	The Great Mirror	5	0	0	Astral					1																																	3280																									1					3286	3285																															40													3							
+207	The Onyx Court	5	0	0	Holy				1									4																									3282	3283																													3288	3287																															69																				
+208	Fountain of Youth	5	0	0	Water			1									-5																																																																																								22															50					
+209	Jannah	5	0	0	Nature	1	1		1	1																																	3342																														3341																																50																				
+210	Great Dam	5	0	0	Water			1													Growth																																																																																				18																				
+211	The Vault of Incense and Marvels	5	0	0	Air									100																																																																																											9																				
+212	Thrymsheim	5	0	2	Air			1																																			3400																														3399																																17														1						
+213	The Iron Wood	5	0	0	Nature					1	1	2																															3406	3421	3422																												3409	3414																															51																				
+214	The Three Deserts	5	0	0	Fire	1	1				1										Heat																																																																																				2											2									
+215	Iram of a Thousand Pillars	5	0	0	Holy	1	1																																				3463	3477																													3468	3469																															68																				
+216	Jannah	5	0	0	Nature							1									Growth																						3467																														3466																																50																				
+217	City of Brass	5	0	0	Fire	1																																					3464																														3465	3472																															4																				
+310	Tar Pits	0	219	1	Fire	1																																																																																																			5																				
+311	Sun Ridge	0	223	1	Fire	2																																																																																																			3																				
+312	Gold-Leafed Tree	1	223	2	Fire	2																																																																																																			10																				
+313	Bronze Pillar	0	735	3	Fire	1																																																																																																			3																				
+314	Plain of Perpetual Drought	0	8	0	Fire	1															Heat																																																																																				2																				
+315	Magus Temple	1	223	1	Fire	1				1									lab																																																																480																						4																				
+316	Alchemists Guild	1	223	1	Fire	1			1																																																																										551																						4																				
+317	Smoke Forest	1	2	1	Fire	1	1																																																																																																		3																				
+318	Rage Wind Heath	1	9	1	Fire	1	1																																																																																																		2																				
+319	Bog of Strange Lights	1	134	1	Fire	1		1																																																																																																	3																				
+320	Copper Cliff	1	197631	1	Fire	1			1																																																																																																0																				
+321	Stargazers Cliff	1	223	1	Fire	1				1																																																																																															0																				
+322	Desert of Bones	0	8	1	Fire	1					1										Heat																																																														2245																						2																				
+323	Lantern Forest	1	2	1	Fire	1						1																																																																																													3																				
+324	Orichalcum Mine	1	516	2	Fire										100																																																																																										1	70	3159								150										
+325	Volcano	2	223	0	Fire	3															Heat																																																																																				1																				
+326	Solar Lens	2	223	1	Fire	1																																			F	3																																																															5																				
+327	Solar Circle	2	223	2	Fire	1																																																			20%																																																5																				
+328	Tower of the Golden Order	2	223	1	Fire	3				2									lab																																																																101																						4																				
+329	Tower of the Golden Order	2	223	1	Fire	2				3									lab																																																																101																						4																				
+330	Tower of the Golden Order	2	223	1	Fire	2				2									lab																																																																101																						4																				
+331	Academy of High Magics	2	223	1	Fire	1				1									lab																																																																312	302																					4																				
+332	Ashen Fields	2	9	1	Fire	1																																																	20%																																																		2																				
+333	Fountain of Fire	2	735	1	Fire	3															Heat																																																																																				5																				
+334	The Steel Ovens	1	17119	0	Fire										75																																											20%																																															1																				
+335	High Temple of the Magii	1	16607	1	Fire	2				2									lab																																																																480	481																					4																				
+336	The Citadel of Pyriphlegeton	1	17119	2	Fire	4													lab																																																																98	99																					4																				
+337	The Glowing Hill	1	16607	2	Fire																																																																									849																											3																				
+338	The Fire Prison	1	17119	2	Fire	4																																																					20%																																														7																				
+339	The Temple of the Raging God	1	16607	2	Fire	2															Turmoil																																																														389	98	241																				6																				
+340	The Brass Door Hill	1	16607	3	Fire	3																																																																																																			3																				
+341	Prison of the Desert Sun	2	16392	4	Fire	5															Heat	Heat																																																																																			6																				
+342	The Desert of Ptah	5	16392	0	Fire	2			2		2																																																																																														2																				
+343	Fountain of Rubies	2	735	2	Fire	3								200																																																																																											5																				
+344	Dragon Forest	2	16386	2	Fire	2	1																																																																																																		3																				
+345	Enchanted Pyre	0	223	1	Fire	1																																																																																																			5																				
+346	Rageflame Tower	1	223	1	Fire	1																																																																																																			4																				
+347	Steam Swamp	1	128	2	Fire	1		1																																																																																																	5																				
+348	Smoke Gorge	1	8	2	Fire	1	1																																																																																																		5																				
+349	Magma Pit	1	516	2	Fire	1			1																																																																																																5																				
+350	Starfire Crystals	1	4	2	Fire	1				1																																																																																															0																				
+351	Ash Valley	1	8	2	Fire	1					1																																																																																														2																				
+352	Flame Forest	1	2	2	Fire	1						1																																																																																													3																				
+353	City of Ashes	2	16392	2	Fire	1					1																																																																								2245																						6																				
+354	Temple of the Solar Bull	2	223	2	Fire	2																																																																													1873																						6																				
+355	Smoulderstone	0	223	1	Fire	1																																																																																																			5																				
+356	Wildfire Glade	0	2	1	Fire	1																																																																																																			3																				
+357	Caverns of Glowing Moss	0	516	1	Fire	1																																																																																																			7																				
+358	Glowing Fissure	1	4	1	Fire	1																																																																																																			5																				
+359	Smouldering Maze	1	223	1	Fire	1																																			F	2																																																															5																				
+360	Scorched Tower	2	16607	2	Fire	2																																																											3%																																								4																				
+361	House of Embers	2	16607	1	Fire	1																																																																																																			4																				
+362	Heart of the Desert	2	16392	3	Fire	2															Heat																				F	2																																																															5																				
+363	Egg of the Phoenix	2	223	3	Fire	2																																																																																																			3																				
+364	House of Aratron	2	16607	2	Fire	2			1																																																																										551																						6																				
+365	Rune of Fire	1	223	2	Fire																																				F	2																																																															5																				
+366	Maze of Frozen Flames	2	16591	2	Fire																																				FW	2																																																															5																				
+367	Devil's Furnace	1	16607	3	Fire	1																																											2286	2																																																							1																				
+368	Isle of Rebirth	2	16416	3	Fire	1					1																																																			10%																																											0																				
+369	Dragon Lair	2	16388	3	Fire	2																																																																																																			7																				
+370	Altar of Catharsis	5	16607	4	Fire																																												594	1																																																							6																				
+371	Thunder Oak	0	223	1	Air		1																																																																																																		13	24		2988																	
+372	Canyon of Wild Winds	0	95	1	Air		2																																																																																																		9																				
+373	Blasted Heath	1	223	2	Air		2																																																																																																		10																				
+374	Cave of Clouds	0	524	3	Air		1																																																																																																		15																				
+375	Mist Covered Highlands	0	4	0	Air		1																																																																																																		9																				
+376	Desert of Sighs	0	8	1	Air		1				1																																																																								2245																						10																				
+377	Cypress Forest	0	32770	1	Air		1					1																																																																																													13																				
+378	Howling Gorge	1	223	1	Air		1																																																																																																		15																				
+379	Canyon of Playful Winds	1	95	1	Air		1																																																																																																		8																				
+380	Cracked Tower	1	223	1	Air		2																																																																																																		12																				
+381	Elusive Lights	1	735	1	Air	1	1																																																																																																		10																				
+382	Ice Mists	1	223	1	Air		1	1																																																																																																	9																				
+383	Singing Stones	1	735	1	Air		1		1																																																																																																10																				
+384	Cloud Pillars	1	223	1	Air		1			1																																																																																															11																				
+385	Mirrorlake	1	223	2	Air		1	2																																																																											341																						10																				
+386	Dragon Cliff	2	223	1	Air		1																																																20%																																																		9																				
+387	Tower of the Silver Order	2	223	1	Air		3			2									lab																																																																100																						12																				
+388	Tower of the Silver Order	2	223	1	Air		2			3									lab																																																																100																						12																				
+389	Tower of the Silver Order	2	223	1	Air		2			2									lab																																																																100																						12																				
+390	Academy of High Magics	2	223	1	Air		1				1								lab																																																																312	302																					12																				
+391	Cloud Abode	2	223	2	Air		2												lab																																																																93	92																					11																				
+392	Ivory Tower	2	223	2	Air		3			1									lab																																																																343																						12																				
+393	Twin Spire Tower	2	223	1	Air		1			1																																																																									343																						12																				
+394	Stone Spires	2	8	1	Air		2																																		A	2																																																															12																				
+395	Tempest Spire	2	4	1	Air		1																																																		20%																										93																						12																				
+396	Blizzard Valley	2	4	1	Air		1	1													Cold																																				20%																																																9																				
+397	Forest of Joy	1	49154	1	Air		1										-5																																																																																								13																				
+398	The Cloven Mountain	1	16388	1	Air		3		1																																																																																																9																				
+399	Stairway Mountain	1	16388	1	Air		2		1																																																																																																9																				
+400	Mirror Wall Palace	1	16607	1	Air		3																																																																												343																						12																				
+401	The Flailing Forest	1	16386	2	Air		2					1																																																																																													13																				
+402	The Whirlwind of Cyclon	1	16607	2	Air		4																																																																																																		11																				
+403	The Doom Cloud	1	16607	2	Air		2				2										Misfortune																																																																																				14																				
+404	The Inverted Tower	1	17119	3	Air		4												lab																																																																341																						12																				
+405	The Rainbow Shroud	1	16607	3	Air		2					2																																																							20%																																						10																				
+406	Palace of Dreams	2	16385	4	Air		4			1																																																																																															12																				
+407	Dragon Mountain	2	16388	0	Air		1																																										593	1																																																							9																				
+408	Silver Forest	2	2	1	Air		1		1					40																																																																																											13																				
+409	Valley of the Roc	2	16388	3	Air	1	1		1					200																																																																																											9																				
+410	Enchanted Windmill	0	223	1	Air		1									50																																																																																									10																				
+411	Whisperwind Tower	1	223	1	Air		1																																																																																																		12																				
+412	Scorchwind Waste	1	8	2	Air	1	1																																																																																																		10																				
+413	Saltspray Cliffs	1	64	2	Air		1	1																																																																																																	9																				
+414	Copper Mists	1	8	2	Air		1		1																																																																																																9																				
+415	Moonwind Marsh	1	128	2	Air		1			1																																																																																															13																				
+416	Plaguewind Waste	1	8	2	Air		1				1																																																																																														10																				
+417	Thunder Woods	1	223	2	Air		1					1																																																																																													13																				
+418	Dragon Jaws	2	16388	0	Air	1	1		1																																								593	1																																																							9																				
+419	Tempest Hall	2	223	2	Air		3																																																																																																		12																				
+420	Copper Idol	0	223	2	Air		1																																																																																																		10																				
+421	Sparkling Fields	0	223	1	Air		1																																																																																																		10																				
+422	Skysplit Oak	0	87	1	Air		1																																																																																																		13																				
+423	Wailing Woods	1	16386	1	Air		1				1						3																																																																																								13																				
+424	Nest of Obsidian Snakes	1	223	3	Air		2																																																																																																		15																				
+425	Black Hawk Nest	1	6	2	Air		1																																										517	2																																																							13																				
+426	Ziggurat of Thunder	2	223	1	Air		2																																																																																																		12																	1			
+427	The Highest Peak	1	16388	2	Air		1																																		A	2																																																															9	56		1286																	
+428	Pinnacle of Power	2	16607	3	Air		1																																		A	3																																														0																	12																				
+429	Rune of Air	1	255	2	Air																																				A	2																																																															11																				
+430	Mirage	0	8	1	Air		1																																																																																																		10																				
+431	Translucent Tower	5	16607	3	Air														lab																						A	2																																									93																						12																				
+432	Well of White Water	0	735	1	Water			1																																																																																																	22																				
+433	Mercury Pond	0	735	1	Water			2																																																																																																	22																				
+434	Singing Stream	1	735	2	Water			2																																																																																																	19																				
+435	Weeping Stone	0	735	3	Water			1																																																																																																	19																				
+436	Boiling Bog	0	134	1	Water	1		1																																																																																																	20																				
+437	Lake of Mists	1	223	0	Water			1																																																																																																	18																				
+438	Sinkmarsh	0	130	1	Water			1																																																																																																	20																				
+439	Lantern Fens	0	130	1	Water	1																																																																																																			20																				
+440	Geyser	1	223	1	Water	1		1																																																																																																	22																				
+441	Pearl Beach	1	64	1	Water					1				50																																																																																											18																				
+442	Waterfall	1	735	1	Water		1	1																																																																																																	19																				
+443	Rockside Spring	0	4	1	Water			1	1																																																																																																19																				
+444	Well of Yesterdays Waters	1	735	1	Water			1		1																																																																																															22																				
+445	Corpse Candles' Marsh	0	130	1	Water			1			1																																																																																														20																				
+446	Overgrown Lake	1	223	1	Water			1				1																																																																																													20																				
+447	Lifeless Lake	1	735	1	Water						1																																																																																														18																				
+448	River Fortress	2	223	1	Water			1												3																																																																																					21																				
+449	Bottomless Lake	2	735	1	Water			1																																															20%																																																		18																				
+450	Mist Swamps	1	130	1	Water		1	1																																																																																																	20																				
+451	Academy of High Magics	2	223	1	Water			1					1						lab																																																																312	302																					21																				
+452	Frost Vale	2	4	2	Water			1													Cold																																																														309																						22																				
+453	Azure Academy	1	16607	1	Water			1											lab	3																																																															97	96																					21																				
+454	Rustwater	1	16607	1	Water	1		2	2																																																																																																20																				
+455	The Ferry	1	16607	1	Water			1			1																																																																																														18																				
+456	Mount Frost	1	16388	1	Water			2													Cold																												511	2																																																							22																				
+457	The Forest of the Lake	1	16386	1	Water			2				1																																																																																													20																				
+458	Stony Swamps	1	16514	1	Water				1																																																																																																20																				
+459	The Frozen Forest	1	16386	2	Water			3				1									Cold																																																														309																						20																				
+460	The Sea of the Tears of Men	2	16607	2	Water			2			2																																																																																														18																				
+461	The Water Sphere	1	16607	3	Water			3																																	W	2																																																															22																				
+462	The Great Mirror of Maaki	2	16607	3	Water		1	1		1																															FAWESDNB	1																																																															22																				
+463	The Sea Underneath	2	17119	4	Water			5																																																																																																	24																				
+464	Temple of the Turning Tide	2	64	1	Water			1																																																20%																											529																						23																				
+465	Black Ice Valley	2	4	1	Water			1			1																																														20%																																																18																				
+466	Frozen Fountain	2	735	2	Water			3																																																																																																	19																				
+467	Frozen Lands	2	223	0	Water			1													Cold																																																																																				22																				
+468	Academy of the Crescent Moon	2	16607	3	Water			2		2									lab																																																																999																						21																				
+469	Well of All Waters	2	16607	3	Water			3																																																												1																																					22																				
+470	The Swamp of Dread	2	16512	1	Water			1			2																																																																																														20																				
+471	The Sunless Sea	2	16904	3	Water			3																																																																																																	24																				
+472	Healing Spring	2	223	2	Water			1				1																																																		10%																																											22																				
+473	Enchanted Well	0	735	1	Water			1																																																																																																	22																				
+474	Icebrick Tower	1	223	1	Water			1																																																																																																	21																				
+475	Steam Fountain	1	16	2	Water	1		1																																																																																																	22																				
+476	Rain Ridge	1	4	2	Water		1	1																																																																																																	18																				
+477	Meltwater Stream	1	4	2	Water			1	1																																																																																																19																				
+478	Moonlit Lake	1	4	2	Water			1		1																																																																																															18																				
+479	Oasis of the Dead	1	8	2	Water			1			1																																																																																														18																				
+480	Double Bottom Lake	1	2	2	Water			1				1																																																																																													18																				
+481	Merman Village	0	64	0	Water																																																																									1065					1067																						18																				
+482	Temple of the Sacred River	2	223	2	Water			1			1																																																																								1877	1878																					23																				
+483	Garden of Frozen Flowers	0	223	1	Water			1																																																																																																	20	56		204																	
+484	Wellspring of Secrets	0	223	3	Water			1																																																																																																	19																				
+485	Lake of Living Water	0	223	3	Water			1																																																																																																	18																				
+486	Subterranean Lake	1	512	1	Water			1																																																																																																	24																				
+487	Forgotten Oasis	1	8	1	Water			1								10																																																																																									17																				
+488	Plaguewater Oasis	1	8	1	Water						1																																																				5%																																										17																				
+489	Frozen Glen	1	2	1	Water			1																																																																																																	20																				
+490	Melting Cliffs	1	223	2	Water			1	1																																																																																																19																				
+491	Pool of Perpetual Night	1	16607	3	Water			1																																																																																																	18																				
+492	Enchanted Glacier	1	4	1	Water			1																																									2231	1																																																							18																				
+493	Wellspring of the Virgins	2	16607	1	Water			1																																																						3%																																											19																				
+494	Sign of Nodens	2	16450	3	Water			2																																																						3%																																											22																				
+495	Rune of Water	1	255	2	Water																																				W	2																																																															22																				
+496	Pharos	2	16448	1	Water																																				FAWESDNB	2																										2																																					21													8							
+497	Tower of Ice	2	16396	3	Water			2											lab																						W	2																																																															24																				
+498	Tomb of Ice	5	16607	3	Water			1													Cold																																																																																				24																				
+499	Wellspring of Abundance	5	16607	5	Water			2						20	20						Growth																																																																																				19																				
+500	The Golden City	2	17440	0	Water									50	10																																																															1056																											23																				
+501	Mineral Cave	0	607	1	Earth				1																																																																																																32																				
+502	Earth Blood Seepage	0	735	1	Earth				2																																																																																																32																				
+503	Firbolg Fortress	1	223	2	Earth				2											4																																																																																					29																				
+504	Iron Cliff	0	197631	3	Earth				1																																																																																																26																				
+505	Canyon of Sand	1	197631	0	Earth				1																																																																																																30																				
+506	Mine of Superior Iron	0	4	0	Earth										60																																																																																										26																				
+507	Great Iron Mine	0	516	0	Earth										100																																																																																										26																				
+508	Great Gold Mine	0	516	0	Earth																																																																																																				26										100										
+509	Great Silver Mine	0	516	0	Earth																																																																																																				26										60										
+510	Hidden Gold Mine	0	516	1	Earth																																																																																																				26										100										
+511	Gem Deposits	0	735	1	Earth									75																																																																																											26																				
+512	Gorge	0	516	1	Earth				1																																																																																																30																				
+513	Magma Cave	0	516	1	Earth	1			1																																																																																																32																				
+514	Standing Stones	1	223	1	Earth		1		1																																																																																																27																				
+515	Water Filled Cave	1	223	1	Earth			1	1																																																																																																32																				
+516	Chasm of Strange Lights	0	516	1	Earth				1	1																																																																																															30																				
+517	Cave of the Pale Ones	1	735	1	Earth				1		1																																																																			1465																											32																				
+518	Forest of Truffles	0	2	1	Earth				1			1																																																																																													28																				
+519	Entrance	2	735	1	Earth				1																																														20%																																																		30																				
+520	Tower of the Iron Order	2	223	1	Earth				3	2									lab																																																																477																						29																				
+521	Tower of the Iron Order	2	223	1	Earth				2	3									lab																																																																477																						29																				
+522	Tower of the Iron Order	2	223	1	Earth				2	2									lab																																																																477																						29																				
+523	Academy of High Magics	2	223	1	Earth				1			1							lab																																																																312	302																					29																				
+524	Twice Walled Tower	2	223	1	Earth				1	1																																																																									344																						29																				
+525	Archaic Fortress	2	223	1	Earth															3																																																																																					29																				
+526	Lost Vale of the Elders	2	4	2	Earth				1			1																																																																							345																						28																				
+527	Troll Pit	2	735	2	Earth																																																																									518																											32																				
+528	Troglodyte Den	2	735	3	Earth				1																																																																					447																											32																				
+529	Runaway Pit	2	735	3	Earth				1	2																																																																																															32																				
+530	Steel Swamps	1	16512	0	Earth			1	1						30																																																																																										28																				
+531	White Man Hill	1	16607	0	Earth							1				100					Growth																																																																																				27																				
+532	The Forgotten Fortress	1	16607	2	Earth				3		1									3																																																																																					29																				
+533	The Jervellan Wall	1	16607	1	Earth															3																																																																																					29																				
+534	Ten Thousand Things	1	735	1	Earth	1	1	1	1			1																																																																																													28																				
+535	The Broken Maze	1	16607	2	Earth				2	1																																																																																															30																				
+536	The Labyrinth	1	16607	2	Earth				2	2																																																																				234																											30																				
+537	The Chasm of Black Roses	1	16388	3	Earth				1		2	1																																																																																													30																				
+538	The Underworld	1	17119	3	Earth				3																																																																					447					345																						32																				
+539	The Statues of the Overlords	2	16607	0	Earth																Order	Productivity																			E	2																																																															27																				
+540	The Cornerstone	2	16607	3	Earth				4	1											Order																																																																																				31																				
+541	The Factory	2	16607	4	Earth				3																																								532	1																																																							29																				
+542	Castle Arcanum	1	16477	1	Earth	1			1											4																																																															312	875																					29																				
+543	Ancient Forge	2	735	1	Earth				1																																																	20%																																															26																				
+544	Chamber of Changes	2	735	1	Earth				1																																															20%																																																	32																				
+545	Circle of Standing Stones	2	735	1	Earth				1																																																		20%																																														27																				
+546	Conjurer's Cave	2	516	3	Earth				1																																														30%																																																		32																				
+547	The Statue of the Sitting God	0	16607	2	Earth					1											Order																																						20%																																														31																				
+548	The Jade Pagoda	2	16607	1	Earth			1	1	1																																																																									1894	808																					29																				
+549	The Imperial Quarry	0	214015	1	Earth				1																																																																																																26																				
+550	Dolmen	1	17119	1	Earth				1																																																																																																27																				
+551	Forest of Golden Leaves	2	16386	0	Earth	1			1			1																																																																																													28																				
+552	The Vaults Beneath	2	16607	3	Earth				1						150																																																																																										32																				
+553	The Deepest Mine	2	16900	2	Earth				4																																																																																																32																				
+554	The Sun Below	2	16904	4	Earth	4																																																																																																			32	31	2672																		
+555	Endless Caverns	2	516	2	Earth			1	1																																																																																																32																				
+556	Glowing Caverns	2	516	2	Earth			1				2																																																																																													32																				
+557	The Mosaic Desert	2	16392	2	Earth	1	1		1																																																																										2245																						27																				
+558	Villa of Ever Changing Fresques	2	16400	2	Earth	1	1		1	1		1																																																																																													29																				
+559	Bear Mountain	2	16388	0	Earth				2																																																																																																26																				
+560	The Cliff of Seven Directions	2	16388	3	Earth				1	1											Magic																																																																																				31																				
+561	Enchanted Tower	0	223	1	Earth				1																																																																																																29																				
+562	Earthroot Tower	1	223	1	Earth				1																																																																																																29																				
+563	Sulphur Cliffs	1	8	2	Earth	1			1																																																																																																27																				
+564	Snowcap Mountain	1	4	2	Earth			1	1																																																																																																26																				
+565	Thundertop Mountain	1	4	2	Earth		1		1																																																																																																26																				
+566	Meteorite Cliffs	1	223	2	Earth				1	1																																																																																															26																				
+567	Iron Tomb	1	516	2	Earth				1		1																																																																																														31																				
+568	Rock Forest	1	2	2	Earth				1			1																																																																																													28																				
+569	Ctonian Gate	2	735	2	Earth				3																																																																																																30																				
+570	Deep Crevasse	0	255	1	Earth				1																																																																																																30																				
+571	Mud Field	0	223	1	Earth				1																																																																																																27																				
+572	Quicksand	0	223	1	Earth				1																																																																																																27																				
+573	Stone Tree Grove	1	18	2	Earth				1																																																																																																28																				
+574	Flooded Mines	2	215	1	Earth				1		1																																																																																														25																				
+575	Underworld Entrance	2	223	3	Earth				2						20																																																																																										30																				
+576	Abyss	2	255	1	Earth				1																																																																																																32																				
+577	Heart of the Mountain	2	16388	3	Earth				2																																E	3																																																															32																				
+578	Basilisk Cave	2	223	2	Earth				1																																															20%																																																	32																				
+579	Rune of Earth	1	255	2	Earth																																				E	2																																																															31																				
+580	Halls of the Mountain King	5	16388	4	Earth				1																																																																																																32										50										
+581	Ruined Halls of the Mountain King	5	16388	4	Earth																																																																																																				32																				
+582	City of the Ancients	5	16607	2	Earth																																																																10																																				29																				
+583	The World Pillar	2	16388	0	Earth		1		4																																																																																																31																				
+584	Library	1	223	0	Astral																																																																														478																						38																				
+585	Painted Cave	0	735	1	Astral					1																																																																																															41																				
+586	Maze	0	735	1	Astral					2																																																																																															41																				
+587	Monolith	1	223	2	Astral					2																																																																																															36																				
+588	Crystal Garden	0	735	3	Astral					1																																																																																															36																				
+589	Lake of Reflected Time	1	223	0	Astral					1																																																																																															37																				
+590	Strange Opening	1	735	1	Astral					2											Misfortune																																																																																				39																				
+591	Sages Guild	1	223	1	Astral					1									lab																																																																478																						38																				
+592	Abandoned Laboratory	1	735	1	Astral														lab																																																																																						38																				
+593	Crystal Flames	1	735	1	Astral	1				1																																																																																															36																				
+594	Mirror Palace	1	16607	1	Astral		1			1				25		25																																																																																									38																				
+595	Caves of Passing Time	1	735	1	Astral				1	1																																																																																															41																				
+596	Scrying Pool	2	735	1	Astral			1		1																																																										1																																					37													4							
+597	Pyramid of Life	1	223	1	Astral					1	1																																																																																														40																				
+598	Totem Collection	1	223	1	Astral					1		1									Luck																																																																																				36																				
+599	Gateway	2	735	1	Astral					1																																													20%																																																		39																				
+600	Distortion	2	735	1	Astral					1																															FAWESDNB	2																		20%																																													36																				
+601	Nexus	2	735	1	Astral					1																															S	1																	20%																																														36																				
+602	Village of Strange Men	2	223	1	Astral					1																																														20%																																																	35																				
+603	The Ancient Master	1	16607	1	Astral													8																																																																																							35																				
+604	The Crystal Citadel	1	16607	2	Astral				1	1									lab	29																																																															340																						40																				
+605	Citadel of the Lore Masters	1	16607	2	Astral					2									lab																																																																479	478																					40																				
+606	The Metal Spires	2	16607	3	Astral					3									lab																																																																101	100	477																				36																				
+607	The Council of Sages	2	16607	1	Astral		1	1	1	1																																																																									479																						40																				
+608	Moon Mages Circle	2	16607	2	Astral					2	1																																																																								342																						35																				
+609	The Hidden Kingdom of Elludia	2	16607	2	Astral					3	1																																																																								630	629																					40																				
+610	The Grey Tower of Nexus	2	16607	3	Astral					3																																																																				390					391	106																					38																				
+611	The Ultimate Gateway	2	17119	3	Astral																																																		40%																																																		39																				
+612	Library of Time	2	16607	4	Astral					4																																																																									106					999																	40																				
+613	The Crystal Academy	2	17119	3	Astral				1	1									lab																																																																340																						38																				
+614	Temple of the All-Seeing Eye	2	17119	3	Astral																																																															1																																					40																				
+615	Hall of Enlightenment	2	16388	4	Astral					2																																																	30%																																														40																				
+616	Moonlit Pond of Pearls	2	223	2	Astral					3																																																																																															37																				
+617	Strange House in the Mist	2	16607	3	Astral					1																																						20%																																																									36																				
+618	The Cave of Souls	2	16900	1	Astral					2	1																																																																																														41																				
+619	The Mountain of the Past	2	16392	4	Astral					4																																																																																															36																				
+620	The Endless Field of Cubes	2	16392	4	Astral					4																																																							2%																																								36																				
+621	Enchanted Gate	0	735	1	Astral					1																																																																																															39																				
+622	Skywatch Tower	1	223	1	Astral					1																																																																																															38																				
+623	Nightlight Fen	1	128	2	Astral	1				1																																																																																															36																				
+624	Moon Mirror	1	223	2	Astral		1			1																																																																																															35																				
+625	Mooncatch Lake	1	223	2	Astral			1		1																																																																																															37																				
+626	Mountain Crater	1	4	2	Astral				1	1																																																																																															34																				
+627	Painted Crypt	1	735	2	Astral					1	1																																																																																														40																				
+628	Moonvine Forest	1	2	2	Astral					1		1																																																																																													37																				
+629	Huge Crater	5	197119	0	Astral				1	1																																																																																															36																				
+630	The Forgotten City	2	16607	3	Astral																																																												2%				10																																				40																				
+631	Unfound Door	0	255	4	Astral					1																																																																																															39																				
+632	Starlit Pond	0	215	1	Astral					1																																																																																															37																				
+633	Garden of Pearls	0	215	2	Astral					2																																																																																															34																				
+634	Impossible Angle	1	223	2	Astral					1																																																							4%																																								39																				
+635	Moonlit Halls	1	223	1	Astral					1																																																																																															35																				
+636	Brook of Glimmering Pearls	1	215	1	Astral			1		1																																																																																															37																				
+637	Seer's Grave	2	767	2	Astral					1																																																																														3																	36																				
+638	Dreaming Stone	2	767	2	Astral																																				S	2																																														3																	36																				
+639	Sorcerer's Circle	2	223	2	Astral																																				SDNB	2																		20%																																													38																				
+640	Archaic Diagram	2	255	2	Astral																																																				20%																																																36																				
+641	Chamber of Enchantment	2	223	2	Astral														lab																																								20%																																														39																				
+642	Unsettling Pattern	2	255	2	Astral																																																							20%					5%																																								36																				
+643	Basalt Mirror	2	255	2	Astral																																																															1																																					36																				
+644	Cave of the Sleepers	2	16607	4	Astral					1																																																																																															41																				
+645	The Gnomon	2	16607	2	Astral					1																															S	3																																																															36																				
+646	Seventh House on the Left	2	16607	3	Astral						1																																																		20%																																												36																				
+647	The Halfway Inn	1	16607	0	Astral									10																																																																																											43																				
+648	Citadel of the Mage King	2	16398	6	Astral					1									lab	1																					SDNB	2																																																															40																				
+649	Horror Cult	5	223	5	Astral																																																												3%																																								39																				
+650	Ancient Scriptorium	5	16607	2	Astral														lab																																																																																						38																				
+651	Secluded Village	5	223	1	Astral																																												971	1	970	2	968	1																	969	1																																	35																				
+652	Guild of the Merchant Princes	2	17472	0	Astral									30																																																																										0																	35																				
+653	Battlefield	0	735	1	Death						1																																																																																														43																				
+654	Burial Mound	0	223	1	Death						1																																																																																														41																				
+655	Graveyard of the Damned	0	223	1	Death						2																																																																																														41																				
+656	Cave of Ghouls	1	735	2	Death						2																																						198	3																																																							48																				
+657	Well of Pestilence	0	223	3	Death						1										Death																				D	2																					5%																																										48																				
+658	Haunted Village	1	223	0	Death						1																																																																																														42																				
+659	Gallows	1	223	1	Death						1																																																																																														42																				
+660	Broken Tower	1	223	1	Death						2																																																																																														45																				
+661	Forest of the Dead	0	2	1	Death						1																																																																																														44																				
+662	Ashen Forest	1	10	2	Death						1																																																																																														44																				
+663	Banefire Braziers	1	735	1	Death	1					1										Heat	Death																																																																																			47	93		1095																	
+664	Windswept Catacombs	1	223	1	Death		1				1																																																																																														41																				
+665	Crypt in the Sand	1	223	1	Death				1		1																																																																																														47																				
+666	Witches Bog	0	134	1	Death			1			1																																																																																														44																				
+667	Catacombs	1	735	1	Death					1	1																																																																																														47																				
+668	Overgrown Graveyard	1	223	1	Death						1	1																																																																																													47																				
+669	Marble Mausoleum	2	735	1	Death						1																																												20%																																																		47																				
+670	Raven Oak	2	223	1	Death						1	1																																																																																													41																				
+671	Black Tower	2	223	2	Death						3								lab																																																																95	94																					45																				
+672	Death Mound Downs	2	223	2	Death						2																																																																								310																						47																				
+673	Statue of Death	2	735	3	Death						2																																																																																														41																				
+674	Chillsick Swamp	1	16514	1	Death			1			1	1																																																			5%																																										44																				
+675	Leper Fens	1	16513	1	Death			1			2																																																				10%																																										44																				
+676	Grayshade Forest	1	16386	1	Death						3																																																																								310																						44																				
+677	Litter Skull	1	17119	2	Death						4																																						197	3																																	310																						43																				
+678	The Crypt Underneath	1	17119	2	Death						3																																												20%																																																		48																				
+679	Flesh Garden of Mortal Remains	1	16607	3	Death						2	1																																																																																													43																				
+680	The Bowl of the Lost	1	16607	3	Death						1																																						185	1																																																							47																				
+681	Skull Temple	2	16607	0	Death						1																																						535	1	189	1																																																					47																				
+682	Tomb of the Ancients	2	16388	3	Death						4																																																																																														48																				
+683	The Shaded Lands	2	16607	0	Death						3						10																																676	1																																																							46																				
+684	The City of a Thousand Wonders	2	16607	1	Death	1					2									4	Death																																																10																																				47																				
+685	The Mausoleum of the Great Sarlah	2	16607	2	Death						3																																						433	2																																																							47																				
+686	The Charnel House	2	16607	3	Death		1			1	2										Turmoil																																																																																				47																				
+687	The Shadow Furnace	2	17119	4	Death	1					4																																																																																														47																				
+688	Halls of the Dead	2	735	1	Death						1																																																20%																																														47																				
+689	Banefire Forge	2	735	1	Death	1					1																																															20%																																															47																				
+690	Crown of Darkness	2	16388	4	Death						3																																																	40%			10%																																										45																				
+691	The Obsidian Sphere	2	16396	3	Death																																																															1																																					45																				
+692	The Draining Stone	2	16392	3	Death				1		3										Drain	Death																																																																																			46																				
+693	Well of Darkness	2	735	2	Death						3																																																																																														46																				
+694	Enchanted Tomb	0	735	1	Death						1																																																																																														47																				
+695	Bonedoor Tower	1	223	1	Death						1																																																																																														45																				
+696	Flaming Tomb	1	735	2	Death	1					1																																																																																														47																				
+697	Shademist Swamp	1	128	2	Death		1				1																																																																																														44																				
+698	Plaguewater Stream	1	735	2	Death			1			1																																																				3%																																										44																				
+699	Valley of the Dead	1	8	2	Death				1		1																																						625	1																																																							43																				
+700	Silver Sarcophagus	1	735	2	Death					1	1																																																																																														47																				
+701	Carrion Thicket	1	2	2	Death						1	1																																					715	1	716	1																																																					43																				
+702	The City of the Damned	2	16607	2	Death																																																											1%					7																																				47																				
+703	Labyrinth of Skulls	0	223	1	Death						1																																																																																														47																				
+704	Garden of Bones	0	223	1	Death						1																																																																																														43																				
+705	Lilium Vale	0	95	2	Death						1																																																																																														44																				
+706	Murder Bog	1	130	2	Death						1																																																																																														44																				
+707	Swamp of Shadows	1	128	1	Death						1																																																																																														44																				
+708	Murdering Mire	1	223	2	Death						1																																																																																														44																				
+709	Animal Cemetery	1	219	2	Death																																												715	2	716	1																																																					43																				
+710	Gloom Gate	1	255	3	Death						2																														D	2																																																															48																				
+711	Tomb of the Grand Thaumathurg	2	16479	3	Death						1																														D	2																																																															47																				
+712	Sigil of the Ancients	2	16639	3	Death																																				D	3																																																															46																				
+713	Circle of Sending	2	223	2	Death																																				FAWESDNB	2																							2%																																								41																				
+714	Nidus of Power	2	255	2	Death																																																							20%																																													41																				
+715	Conjurer's Circle	2	223	2	Death																																																		20%																																																		41																				
+716	Plague Barrow	2	223	1	Death						1																																																				2%																																										43																				
+717	Pit of Despair	2	16607	1	Death						1						-5																																																																																								48																				
+718	Imperial Tomb	5	1247	2	Death						1																																																																																														47																				
+719	Blackrose Tower	1	16386	1	Death						1	1																																																																							2362																						45																				
+720	Dusk Spiral	1	16386	1	Death						1	1																																																																							2361																						45																				
+721	Necromancer's Lair	2	16398	3	Death						2								lab																						D	2																																																															45																				
+722	Oath Stone	2	16607	2	Death																																																																																				2190																48																				
+723	Withered Land	5	16607	1	Death						1										Death																																																																																				44																				
+724	Hall of the Draugadrott	5	223	2	Death																																																																																																				47																				
+725	Cult of Death	5	16607	5	Death																Death																																																																																				42																				
+726	Spirit Pact	5	223	3	Death																																																																																				674	675															48																				
+727	Ruins of the Old Empire	1	1247	0	Death						1																																																																																														47																				
+728	Ancient Temple of C'tis	1	1152	0	Death						1																																																																																														47																				
+729	Cave of Dark Rites	1	735	2	Death						2																																																																																														48																				
+730	Temple of Darkness	1	735	2	Death						1																																						675	1	676	1																																																					47																				
+731	Inkpot End	1	16607	0	Death												5																																														5%																																										44																				
+732	Flesh Eater's Isle	1	16607	2	Death																																												198	5																																																							49																				
+733	Tower of Seven Tombs	1	16607	3	Death						2																																						1981	1																																																							45																				
+734	Glen of Verdant Greenery	0	223	1	Nature							1																																																																																													50																				
+735	Forest of Delights	0	2	1	Nature							2																																																																																													50																				
+736	Farm of Plenty	0	223	1	Nature											50																																																																																									51																				
+737	Garden of Weeping Roses	1	223	2	Nature							2																																																																																													50																				
+738	Grove of Evergreens	0	223	3	Nature							1																																																																																													50																				
+739	Wild Forest	0	2	0	Nature							1																																																																																													50																				
+740	Bile Marsh	0	128	1	Nature																																																																									1840																											52	81	1859																		
+741	Hidden Forest	1	2	1	Nature							1																																																																							154																						51																				
+742	Stone Circle	0	223	1	Nature							1																																																																							105																						51																				
+743	Woodhenge	1	223	1	Nature							1																																																																							105																						51																				
+744	Animist's Hut	1	2	1	Nature							1																																																																							552																						58																				
+745	Fields of the Fire Flies	1	223	1	Nature	1						1																																																																																													51																				
+746	Whispering Woods	0	2	1	Nature		1					1																																																																							364																						51																				
+747	Hidden Valley	1	223	1	Nature				1			1																																																																																													51																				
+748	Forest of a Thousand Streams	1	223	1	Nature			1				1																																																																							364																						50																				
+749	Endless Forest	0	2	1	Nature					1		1																																																																																													50																				
+750	Dying Forest	0	2	1	Nature						1	1									Death																																																																																				51																				
+751	Cottage in the Woods	1	2	2	Nature							1																																																																							1182																						58																				
+752	Wormwood Marsh	1	130	0	Nature							1																																																																																													52																				
+753	Hall of Ancient Oaks	2	223	1	Nature							1																																															20%																																														54																				
+754	Flower Swamp	1	128	1	Nature							1																																																																							363																						52																				
+755	Mandrake Gallows	2	223	2	Nature						1	2																																																																																													54																				
+756	Jungle Temple	2	2	2	Nature				1			2																																					394	1																																																							55																				
+757	Maze of Thorn Hedges	2	223	3	Nature					2		1																																																																																													51																				
+758	Horses Vale	1	49375	0	Nature																																																																									450					451						450																50																				
+759	The Cedar Pillars	1	16607	1	Nature		1					2																																															30%																																														50																				
+760	The Mammoth Forest	1	16386	0	Nature							3																																																																																													50																				
+761	The Flowering Forest	1	16386	1	Nature							1				100																																																																			363																						50																				
+762	The Cedar Forest	1	49154	1	Nature							2			40																																																																																										50																				
+763	Moonvine Circle	1	16607	1	Nature					1		1																																																																							338																						58																				
+764	The Crown Woods	1	16386	1	Nature							1			40																																																																																										50																				
+765	Gateward Valley	1	16607	1	Nature																																																														10%											365																											50																				
+766	The Motheroak	1	16607	1	Nature							2																													N	2																																									154																						54																				
+767	Forest of Avendron	1	16386	2	Nature				2			3																																																																							154																						50																				
+768	Animist's Tower	1	16386	2	Nature							2																																																																							552																						53																				
+769	Vale of the Silver Cattle	1	16607	2	Nature									40		200					Growth																																																																																				51																				
+770	Forest of the Ape King	1	16386	3	Nature							1		50																																																																																											50																				
+771	The Sacred Glen	1	16607	3	Nature							1																																																						20%																																							51																				
+772	The Shrouded Lands	1	16607	3	Nature		2			2		2				100					Growth																																																																																				58																				
+773	The Gate of Deeper Slumber	2	16607	1	Nature							2									Sloth																																																																																				51																				
+774	The Land of Pleasures Unattained	2	16607	3	Nature		1		1			1									Turmoil																																																																																				51																				
+775	Soul of the Wild	2	16607	4	Nature							5																																																20%																																													51																				
+776	Wolven Gate	2	223	1	Nature							1																																											20%																																																		51																				
+777	Twisting Woods	2	2	1	Nature							1																																												20%																																																	51																				
+778	Ancient Forest	2	2	1	Nature							2																																																																																													50																				
+779	The Vale of Unicorns	2	16386	4	Nature							3																																																																																													51	47	64	2128																	
+780	Forest of Splendor	2	16386	2	Nature		1					1					-5																																																																																								50																				
+781	The Snake Collector	2	16512	3	Nature						1	1																																																																																													55																				
+782	Shrine of the Wild	2	223	2	Nature							3																																																																																													55																				
+783	Oak of Ages	2	16607	3	Nature							3																																															40%																																														54																				
+784	The Valley of Shame	2	16607	1	Nature							1									Turmoil	Sloth																																																																																			51																				
+785	The Previous Forest	2	16392	4	Nature							4																																																																																													51																				
+786	Thorn Wood Heights	1	16386	1	Nature							2																																																																							1182																						51																				
+787	Poison Glades	1	16386	1	Nature						2	1																																																																							1182	310																					52																				
+788	Lyfjaberg	5	16388	0	Nature				1			1																																																		50%																																											51																				
+789	Enchanted Field	0	223	1	Nature							1				50																																																																																									51																				
+790	Oakwood Tower	1	223	1	Nature							1																																																																																													53																				
+791	Grove of Revelry	2	2	2	Nature							1																																																																							1880																						51																				
+792	Tinderwood Forest	1	2	2	Nature	1						1																																																																																													50																				
+793	Mist Forest	1	2	2	Nature		1					1																																																																																													51																				
+794	Flowering Bog	1	128	2	Nature			1				1																																																																																													52																				
+795	Evergreen Mountain	1	4	2	Nature				1			1																																																																																													51																				
+796	Oak of Memories	1	2	2	Nature					1		1																																																																																													54																				
+797	Maggot Woods	1	2	2	Nature						1	1																																																																																													51																				
+798	Telesterion	2	2	2	Nature				1			1																																																																							1875	1876																					55																				
+799	Wolf Oak	0	223	1	Nature							1																																																																																													54																				
+800	Grove of Fertility	0	215	1	Nature							1																																																																																													51																				
+801	Druid's Grave	0	223	2	Nature							1																																																																																													54																				
+802	Lair of Spiders	2	2	1	Nature							1																																					782	2																																																							55																				
+803	Skin Shifter's Barrow	2	223	1	Nature							1																																																																																													58																				
+804	The Frogmarch	1	16512	1	Nature							1																																					2222	2																																																							52																				
+805	Heart of the Forest	2	16386	3	Nature							2																													N	3																																																															54																				
+806	Field of Golden Rye	1	16	1	Nature							1		20																																																																																											51																				
+807	Withering Woods	2	2	1	Nature						1	1																																																																																													52																				
+808	Grove of Hooded Spirits	2	2	3	Nature							1									Growth																																									3%																																											54																				
+809	Fungus Forest	1	719	1	Nature							1																																																																																													56																				
+810	Birdsong Tower	2	17119	1	Nature																																				N	2																																														0																	53																				
+811	The Crone	2	16607	2	Nature																																																											10%																								0																	58																				
+812	Thorn Maze	1	95	2	Nature							1																													N	2																																																															51																				
+813	Earthroot Grove	2	18	1	Nature							1																													N	2																																																															56																				
+814	Starsong Grove	2	16386	3	Nature					1																															S	3																																																															51																				
+815	Tree of Life	2	16599	2	Nature																																																									3%																																											54																				
+816	Tree of Knowledge	2	16607	2	Nature													8																																														4%																																									54																				
+817	Tower of the Moon	2	16607	2	Nature																																												1224	1																																																							53																				
+818	Vale of Healing Herbs	2	199	2	Nature																																																									2%																																											51																				
+819	Hoburg Holdfast	2	3088	0	Nature																																																																									271	273				272						273																49																				
+820	Hoburg Settlement	2	16	0	Nature																Growth																																																									483					1198																						49																				
+821	Barbarian Warcamp	5	14	0	Nature																																																																									139	140				147	141																					49																				
+822	Ancient Ruin	1	223	0	Nature																																												2223	2																																																							58																				
+823	The Wormwood Tower	1	16386	3	Nature		1				1	1																																																																							2358																						53																				
+824	Dusk Spiral	1	16386	1	Nature						1	1																																																																							2361																						53																				
+825	Tower of Thorns	2	16386	3	Nature							2							lab																						N	2																																																															58																				
+826	Toad Tribe Settlement	5	128	0	Nature																																																																									1613					1614						1613																55																				
+827	The Primal Forest	5	16386	0	Nature							3																																					932	1																																																							51																				
+828	Grove Unpleasant	2	223	2	Nature						1	1																																					716	1	715	1	313	1																																																			51																				
+829	Cursed Land	5	223	0	Nature																Magic																																											2%																																									52																				
+830	Arena	0	223	0	Blood									25																																																																																											59																				
+831	Brigand Lair	0	223	1	Blood												5																																																													482																											59																				
+832	Academy of War	1	223	0	Blood													4																																																																																							64																				
+833	Damned Merchant	1	223	1	Blood								1																																																																																												59																				
+834	Fields of Blood	1	1	1	Blood						1																																																																																														63																				
+835	Blood Henge	2	223	1	Blood							1																																																																							122																						63																				
+836	Ebony Tower	2	223	2	Blood					1	3								lab																																																																339																						62																				
+837	Summoning Circle	2	735	3	Blood																																																								30%																																												63																				
+838	Gore Swamps	1	16512	1	Blood						1	1																																																																																													61																				
+839	Mount Chaining	1	16607	1	Blood																																																								30%																																												60																				
+840	The Vale of Infinite Horror	1	16607	1	Blood												5				Misfortune																																												1%																																								60																				
+841	The Blood Keep	1	16388	1	Blood								1							4																																																										1353					1389																						62																				
+842	Devil's Den	1	16607	2	Blood												15																																304	1																																																							65																				
+843	The Ebony Circle	2	16607	2	Blood					1	3								lab																						B	2																																									339																						62																				
+844	The Demon Gate	1	16607	3	Blood												10																																88	1																																																							65																				
+845	The Prison of Hearts	1	16607	3	Blood									40			5																																																																																								62																				
+846	The Mountain of Power	2	16392	2	Blood								3																												FAWESDNB	2							403	1							30%																																																60																				
+847	Hall of Flayed Skins	2	16607	4	Blood					2	2																																																						5%																																								62																				
+848	Assassins Guild	2	223	1	Blood																																																																														428																						62																				
+849	Haunted Torture Chamber	2	735	2	Blood						1																																																					5%																																									62																				
+850	The Blood Rock	2	16388	3	Blood																																																								30%																																												60																				
+851	Forest of Pain	2	16386	2	Blood							1					5																																																1%																																								61																				
+852	Red Forest	2	16386	1	Blood	1						1																																																																																													61																				
+853	Bloodleaf Forest	1	2	1	Blood							1																																																																																													61																				
+854	Bloodstone Mountain	1	4	1	Blood				1																																																																																																60																				
+855	Bloodwind Waste	1	8	1	Blood		1																																																																																																		63																				
+856	Bloodsucker Fens	1	128	1	Blood			1																																																																																																	61																				
+857	Bloodmarble Mausoleum	1	735	1	Blood						1																																																																																														64																				
+858	Bloodsplatter Pattern	1	735	1	Blood					1																																																																																															63																				
+859	Torture Tower	1	16	1	Blood															2																																													3%																																								62																				
+860	Bloodshade Glen	2	16514	2	Blood							1																																											15%						20%																																												61																				
+861	The Slaughterhouse	2	16607	2	Blood																																												460	1	198	1	435	1																																																			59																				
+862	The Lodge	2	16607	2	Blood								1																																																																						428	94	95																				59																				
+863	Pool of Unhealthy Rites	2	735	2	Blood			1			1																																													20%							3%																																										63																				
+864	Bloodstone Mirror	2	223	2	Blood																																																							20%								1																																					63																				
+865	Tower of the Devil's Bride	1	16607	1	Blood												5																																303	1	2286	1	2287	1																																																			62																				
+866	Slave Market	1	735	0	Blood								3				2																																																																																								59																				
+867	Forgotten Village	0	2	1	Blood								1																																																																																												59																				
+868	Sacrificial Grove	1	18	1	Blood																																																								20%																																												61																				
+869	Bleeding Tree	2	2	1	Blood							1																																																																																													61																				
+870	Stained Altar	2	16607	1	Blood																																												1736	1											20%																																												63																				
+871	Pentagram	1	223	2	Blood																																				B	2																																																															63																				
+872	The First Gate	1	17119	1	Blood																																																								10%																																												65																				
+873	The Second Gate	1	17119	2	Blood																																																								15%																																												65																				
+874	The Third Gate	2	17119	4	Blood																																																								25%																																												65																				
+875	Tower of the Deformer	2	16607	2	Blood																																												468	1	460	1	455	1		20%																																																	62																				
+876	House of Disfigurement	2	16607	2	Blood																																												460	1						20%																																																	59																				
+877	Statue of Hideous Visage	5	223	1	Blood																																																							5%					4%																																								62																				
+878	Demon Gate	5	223	0	Blood												10																																88	1																																																							65																				
+879	Ancient Temple	0	735	1	Holy					1																																																																																															70																				
+880	Pool of Sanctity	1	735	2	Holy			1																																																										5%																																							72																				
+881	Hidden Monastery	1	223	3	Holy												-5																																																																		240																						73																				
+882	Monastery of Light	2	223	0	Holy												-5																																																																		240	241																					73																				
+883	Convent	1	223	1	Holy												-5																																																																		2248	2249																					73																				
+884	Abbey	2	223	1	Holy												-5																																																																		2248	2249	2250																				73																				
+885	Temple of Time	2	223	4	Holy					2																																																																									240	241																					72																				
+886	The Marble Temple	1	16607	2	Holy									50			-5																																																																		241																						68																				
+887	The Empty Grave	1	17119	3	Holy						1						-5																																																																																								74																				
+888	The Forgotten Crypt	1	17119	3	Holy		1	1	1								-5																																																																																								74																				
+889	The Ward	2	16607	4	Holy												-10																																																	30%																																							72																				
+890	The Records of Mankind	2	16607	3	Holy																																																																														479					999																	69																				
+891	Order of the Secret Light	2	17631	1	Holy					1																																																																				22					478	23					22																72																				
+892	Order of the Undying	2	17631	1	Holy																																												189	3																																																							73																				
+893	Shrine of the Outcast	1	735	1	Holy																																												456	1	459	1																																																					70																				
+894	Temple of the Spider God	2	735	1	Holy																																												782	3	2223	1																																																					71	53	889	890																	
+895	Temple of the Hidden Flame	2	735	2	Holy	1																																											527	1																																																							70																				
+896	Temple of Flying Monkeys	2	16607	1	Holy																																												1199	1																																																							69																				
+897	The Martyr's Grave	2	767	1	Holy																		1																																																																																		74																				
+898	Cradle of Faith	2	767	1	Holy																		2																																																																																		72																				
+899	Pillar of Life	2	17151	1	Holy																																																														10%																																						72																				
+900	The Prophet's Sigil	2	767	1	Holy																																																																																			5																	72																				
+901	Oracle's Lair	2	767	1	Holy																																																																																			3																	74																				
+902	Mountain of Revelation	2	4	1	Holy																																																															1																				0																	73																				
+903	Place of Prophecy	2	767	1	Holy																																																																																			5																	73																				
+904	Stele of Law	2	255	1	Holy												-10																																																																																								71																				
+905	Temple of Life and Death	2	16607	1	Holy						1	1																																																																																													69																				
+906	Garden of Longevity	2	16599	2	Holy																																																									7%																																											73																				
+907	The Holy Crypt of Anre	5	16607	0	Holy	1	1					1					-10																																																																																								74	50	366																		
+908	Knightly Order	5	223	0	Holy																Order																																																									22					23						22																76																				
+909	Gorge of Glowing Fish	0	32	1	Fire	1																																																																																																			7																				
+910	Glowing Sands	0	256	1	Fire	1																																																																																																			5																				
+911	Sparkling Current	0	32	1	Fire	1																																																																																																			5																				
+912	Crust of Molten Sulphur	0	256	1	Fire	1																																																																																																			5																				
+913	Underwater Volcano	0	256	1	Fire	1																																																																																																			1																				
+914	Smoldering Starfish Colony	0	32	1	Fire	1																																																																																																			5																				
+915	Pond of Lava	1	256	1	Fire	1																																																																																																			5																				
+916	Steaming Stone	1	256	1	Fire	1	1																																																																																																		5																				
+917	Boiling Current	1	32	1	Fire	1	1														Heat																																																																																				5																				
+918	Fire Rift	1	256	1	Fire	2																																																																																																			5																				
+919	Magma River	2	768	1	Fire	3																																																																																																			5																				
+920	Thermal Vent	0	256	1	Fire	1																																																																																																			5																				
+921	Underwater Cave	1	32	1	Air		1																																																																																																		15																				
+922	Imprisoned Zephyr	2	32	3	Air		2																																																																																																		15																				
+923	Pocket of Air	2	32	1	Air		2																																																																																																		15																				
+924	Diamond Corals	2	32	2	Air		2																																																																																																		15																				
+925	Floating Rock	0	131072	1	Air		1																																																																																																		11																				
+926	Bubbling Fissure	0	32	1	Air		1																																																																																																		15																				
+927	Foaming Waves	1	64	1	Air		1																																																																																																		15																				
+928	Island of Floating Stone	1	131072	1	Air		1		1																																																																																																8																				
+929	Scoriatic Cliffs	2	256	1	Air		1																																																																																																		15																				
+930	Coral Reef	0	131072	0	Water			1							25																																																																																										26																				
+931	Clam Field	0	32	1	Water					1				30																																																																																											26																				
+932	Coral Statue	1	32	1	Water			1																																																																																																	26																				
+933	Sunken Island	2	32	2	Water			2	2																																																																																																25																				
+934	Man'o'War Breeding Ground	2	32	2	Water			2																																																																																																	26																				
+935	Sunken Tower	1	32	2	Water			1																																																																																																	21																				
+936	Troll Pit	2	32	2	Water																																																																									564																											24																				
+937	Shrine of the Shark Lords	2	32	0	Water																																																																									545																											23																				
+938	Tower of Pearls	2	32	3	Water			1		2																																																																				545					103																						23																				
+939	Isle of Ice	1	16416	1	Water			3																																																																																																	25																				
+940	Academy Underneath	1	16416	1	Water			2											lab	6																					W	1																																				577					103	529																					23																				
+941	The Hippocampoi Fields	2	16416	2	Water			1				1																																					1058	1																																																							18																				
+942	Sentient Current	2	32	2	Water			1																																															20%																																																		26																				
+943	Kraken Pit	2	256	2	Water																																												438	1																																																							24																				
+944	Cold Currents	0	256	0	Water			1																																																																																																	26																				
+945	Depths Unnamed	0	256	1	Water			2																																																																																																	26																				
+946	Whispering Waters	1	256	1	Water			1																																																																																																	18																				
+947	Glowing Depths	1	256	1	Water	1		1																																																																																																	24																				
+948	Falling Depths	1	256	1	Water			2																																																																																																	26																				
+949	Dark Waters	1	256	1	Water			1			1																																																																																														26																				
+950	The Darkness	2	16640	2	Water			1	1																																																			20%																																													24																				
+951	The Gate in the Deep	2	16640	2	Water			2																																															20%																																																		24																				
+952	Cavern of Underwater Ice	0	256	1	Water			1																																																																																																	24																				
+953	Charmed Current	0	32	1	Water			1																																																																																																	24																				
+954	Sweet Water Current	0	32	1	Water			1																																																																																																	24																				
+955	Frozen Deeps	0	256	1	Water			1													Cold																																																																																				24																				
+956	Tears of the Ancients	1	256	2	Water			1		1																																																																																															24																				
+957	Ridge of Ice	0	288	1	Water			1																																																																																																	24																				
+958	Fathoms Deep	0	16640	1	Water			1													Magic																																																																																				24																				
+959	Maelstrom	1	32	1	Water			2																																																																																																	24																				
+960	Underwater Cliff	0	288	1	Earth				1																																																																																																37																				
+961	Moving Sand Banks	0	32	1	Earth				1																																																																																																36																				
+962	Basalt Statue	1	288	2	Earth				2																																																																																																37																				
+963	Isle of the Sea Fathers	1	147456	2	Earth			2																																																																											529																						33																				
+964	Basalt Halls	2	256	2	Earth				3																																																																																																37																				
+965	City of Stones	1	16640	2	Earth				4																																																																																																37																				
+966	Caves in the Deep	0	256	0	Earth				1																																																																																																32																				
+967	Mineral Fingers	1	256	1	Earth				2																																																																																																28																				
+968	Plateau of Shards	1	256	1	Earth				2																																																																																																36																				
+969	Long Lost Circle	2	256	2	Earth				1	1																																																																																															25																				
+970	The Basalt Forge	2	16640	2	Earth				1																																																	20%																																															25																				
+971	Rock Crab Colony	0	32	1	Earth				1																																																																																																36																				
+972	Underwater Stalagmite	0	256	1	Earth				1																																																																																																37																				
+973	Ridge of Volcanic Glass	0	256	1	Earth				1					30																																																																																											37																				
+974	Meteorite Rock	0	256	1	Earth				1																																																																																																37																				
+975	Basalt Plateau	0	256	1	Earth				1																																																																																																37																				
+976	Mountain Underneath	1	256	1	Earth				1						30																																																																																										37																				
+977	Fossilized Conch	1	32	1	Earth				1																																																																																																36																				
+978	Forgotten Crevasse	1	256	2	Earth				1																																																																																																36																				
+979	Glowing Kelp Forest	0	65536	0	Nature							1																																																																																													60																				
+980	Kelp Fortress	0	131072	1	Nature							1								6																																																																																					59																				
+981	Amber Beach Island	2	131072	1	Nature				1			1		50																																																																																											57																				
+982	Floating Forest	2	131072	1	Nature							2																																																																																													60																				
+983	Kelp Grove	0	131072	2	Nature							1																																																																																													60																				
+984	Coral Garden	1	32	1	Nature							1																																																																																													59																				
+985	Sea Oak	1	32	2	Nature		1					2																																																																																													59																				
+986	The Amber Halls	2	16416	2	Nature	1						2																																																																		573					575	576																					60																				
+987	The Forest Beneath the Waves	2	16416	2	Nature							2																																					1062	1																																																							60																				
+988	Kelp Sea	2	65536	0	Nature			1				2																																					1062	1																																																							60																				
+989	Forest of Amber Kelp	2	81920	2	Nature	1		1				1																																																																							575																						60																				
+990	Fields of Glowing Algae	0	32	1	Nature							1																																																																																													59																				
+991	Giant Anemone	0	32	1	Nature							1																																																																																													59																				
+992	Ridge of Empty Shells	0	256	1	Nature							1																																																																																													59																				
+993	Wall of Living Kelp	0	65536	1	Nature							1																																																																																													60																				
+994	Monstrous Conch	0	32	1	Nature							1																																																																																													59																				
+995	Living Sediment	0	32	1	Nature							1																																																																																													59																				
+996	Lair of the Eel-King	1	256	1	Nature							1																																																																																													60																				
+997	Breeding Ground of Eels	1	256	1	Nature							1																																																																																													59																				
+998	Sunken Galley	0	32	1	Death						1																																																																																														50																				
+999	Reef of Sunken Ships	1	131072	1	Death						2																																																																																														50																				
+1000	Dying Ground of the Whales	1	16416	2	Death			2			1	1																																																																																													50																				
+1001	Isle of Death	1	16416	1	Death						3																																																																																														49																				
+1002	Dark Depths	1	256	1	Death			1			1																																																																																														48																				
+1003	Ghoul Fish Cave	1	256	1	Death			1			1																																																																																														48																				
+1004	The Wasted Sea	1	16640	0	Death						2																																						318	4																																																							50																				
+1005	The Sea of Dead Memories	1	16640	1	Death			1		1	1																																						676	1																																																							50																				
+1006	Black Sands	0	32	1	Death						1																																																																																														43																				
+1007	Basalt Ruins	0	256	1	Death						1																																																																																														45																				
+1008	Submerged Catacombs	0	32	1	Death						1																																																																																														48																				
+1009	Stale Current	0	32	1	Death						1										Death																																																																																				48																				
+1010	Black Coral Reef	0	32	1	Death						1																																																																																														50																				
+1011	Field of Undead Clams	1	32	1	Death						1																																																																																														50																				
+1012	Halls of the Drowned	1	16416	1	Death						1																																						619	1	618	1																																																					41																				
+1013	Sunken Ship of Dread	2	17440	2	Death						1																																						2241	5																																																							50																				
+1014	Pearl Stairway	2	32	1	Astral					1																																																																																															36																				
+1015	Arcane Gateway	2	288	3	Astral					1																																													20%																																																		39																				
+1016	The Water Solstice	2	16416	2	Astral			4		2																																																	40%																																														36																				
+1017	Basalt Pillars	1	256	1	Astral					1																																																																																															36																				
+1018	Labyrinth of the Deeps	2	256	2	Astral					3																																																																																															36																				
+1019	Gorge of Mystery	2	256	2	Astral					1																																														20%																																																	41																				
+1020	The Crater	1	16640	3	Astral					2																																																																				331					445																						36																				
+1021	The Last Void	2	16640	3	Astral					2											Magic																																							30%																																													36																				
+1022	The Iron Caverns	1	17152	2	Astral			1	1	1																																																																																															41																				
+1023	Submerged Labyrinth	0	32	1	Astral					1																																																																																															41																				
+1024	Displaced Tunnel	0	256	1	Astral					1																																																																																															41																				
+1025	Arcane Vent	0	256	1	Astral					1																																																																																															41																				
+1026	Shimmering Conchs	0	32	1	Astral					1																																																																																															35																				
+1027	Pearl Farm	0	32	1	Astral					1																																																																																															35																				
+1028	Eye Pebble Plain	1	32	1	Astral					1																																																																																															35																				
+1029	Abyss to the Beyond	1	256	2	Astral					2																																																																																															36																				
+1030	Blasphemous Presence	1	256	1	Astral					1																																																																																															36																				
+1031	Enchanted Current	1	16416	1	Astral					2											Magic																																																																																				36																				
+1032	Ancient Temple of the Deeps	0	288	1	Holy			1		1																																																																																															72																				
+1033	Knightly Order of the Deep	5	32	0	Holy																Order																																																									1060					406						1060																72																				
+1034	Shambler Reef	0	64	0	Water																																																																									206																											18																				
+1035	Navigators Guild	2	64	0	Water			2																																																																											869																						23																				
+1036	Rain Forest	5	2	0	Nature																Heat	Growth																																																																																			50																				
+1037	Tundra	5	8	0	Water																Cold																																																																																				17																				
+1038	Desert	5	8	0	Fire																Heat	Death																																																																																			2																				
+1039	Oasis	0	8	1	Water			1								50																																																																																									17																				
+1040	Great Oasis	2	8	1	Water			1				1				75																																																																																									17																				
+1041	Date Oasis	1	8	1	Nature							1		25		50																																																																																									49																				
+1042	City of Dates	2	16392	0	Nature			1				1		50		150				1																																																																																					49																				
+1043	Oasis of Verdant Greenery	2	16392	3	Nature			1				2				100																																																																																									49																				
+1044	Chitterpalm Oasis	0	8	1	Water			1								50																																																														1116																											17																				
+1045	Cavern of Flames	1	512	0	Fire	1																																																																																																			7																				
+1046	Underground Lake	1	512	0	Water			1																																																																																																	24																				
+1047	Air Shaft	1	512	0	Air		1																																																																																																		15																				
+1048	Basalt Wall	1	512	0	Earth				1																																																																																																32																				
+1049	Painted Cavern	1	512	0	Astral					1																																																																																															41																				
+1050	Bone Filled Cave	1	512	0	Death						1																																																																																														48																				
+1051	Mushroom Forest	1	512	0	Nature							1																																																																																													56																				
+1052	Trapped Lights	0	512	1	Fire	1																																																																																																			7																				
+1053	Dripping Stones	0	512	1	Water			1																																																																																																	24																				
+1054	Trapped Wind	0	512	1	Air		1																																																																																																		15																				
+1055	Mineral Deposit	0	512	1	Earth				1																																																																																																32																				
+1056	Spiral Shaft	0	512	1	Astral					1																																																																																															41																				
+1057	Cavern Tomb	0	512	1	Death						1																																																																																														48																				
+1058	Moss Covered Cavern	0	512	1	Nature							1																																																																																													56																				
+1059	Cavern of Rubies	2	512	1	Fire	1			1																																																																																																7										100										
+1060	Cavern of Magma	1	512	1	Fire	1			1												Heat																																																																																				7																				
+1061	Magma Halls	2	512	2	Fire	2			1																																																																																																7																				
+1062	Dripping Caverns	1	512	1	Water			1																																																																																																	24																				
+1063	Mud Caverns	1	512	1	Water			1	1																																																																																																24																				
+1064	Ice Caverns	2	512	0	Water			1													Cold																																																																																				24																				
+1065	Stalagmite Cavern	1	512	1	Water			1	1																																																																																																24																				
+1066	Mist Caverns	1	512	1	Water		1	1																																																																																																	24																				
+1067	Gold Deposit	0	512	0	Earth																																																																																																				32										60										
+1068	Silver Deposit	0	512	0	Earth																																																																																																				32										40										
+1069	Copper Deposit	0	512	0	Earth										20																																																																																										32										20										
+1070	Iron Deposit	0	512	0	Earth										40																																																																																										32																				
+1071	Hidden Gold Deposit	0	512	1	Earth																																																																																																				32										100										
+1072	Hidden Gem Deposits	0	512	1	Earth																																																																																																				32										75										
+1073	Mammoth Cave	2	512	0	Earth				2																																																																																																32																				
+1074	Earth Blood Vein	1	512	2	Earth				2																																																																																																32																				
+1075	Crystal Cavern	0	512	1	Earth				1	1																																																																																															32										25										
+1076	Glittering Cavern	1	512	2	Earth				1																																																																																																32										75										
+1077	Buried Temple	2	512	2	Earth					1																																																																																															35																				
+1078	Gemwall Cavern	2	512	3	Earth				2																																																																																																32										100										
+1079	Troglodyte Cave	2	512	3	Earth				1																																																																					447																											32																				
+1080	The Storm Underneath	2	16896	3	Air		3																																																																																																		15																				
+1081	Ancient Tomb	1	512	1	Death						1																																																																																														47																				
+1082	Opulent Tomb	2	512	2	Death						2																																																																																														47																				
+1083	Umbral Cave	2	512	3	Death						1																																																																																														48																				
+1084	Caveman Cavern	1	512	1	Nature											25																																																														1615																											56																				
+1085	Cavern of Ancient Mushrooms	0	512	0	Nature				1			1																																																																																													56																				
+1086	Nest of Bats	2	512	1	Blood						1																																						1357	1																																																							65																				
+1087	The Lesser Abyss	2	16896	1	Blood												10																																88	1																																																							65																				
+1088	Splattermaid Gorge	2	16896	2	Blood		1																																										1357	1																																																							65																				
+1089	Tomb of Seven Oracles	2	16896	3	Death				1		2																																						1501	1																																																							47																				
+1090	Infinite Cavern	2	16896	3	Earth				2																																														20%																																																		32																				
+1091	Riddle Dark	2	16896	3	Earth				2		2																																																																																														32																				
+1092	The Umbral Conclave	2	16896	3	Death						3																																												20%																																																		48																				
+1093	Subterranean City	2	17920	0	Earth									30	20																																																																																										32																				
+1094	The Silent Sea	2	16896	2	Water			3																																																																																																	24																				
+1095	The Olm Cavern	2	16896	2	Water			1	1			1																																																																																													24																				
+1096	Halls of Stalagmitic Splendor	2	512	2	Water			2	1																																																																																																24																				
+1097	Halls of Imprisoned Sunlight	2	16896	3	Fire	3				1																																																																																															7																				
+1098	Undermirks	2	16896	2	Nature						1	2																																																																																													56																				
+1099	Turtle Village	0	64	0	Water																																																																									1292					1294																						18																				
+1100	Ichtyid Enclave	2	96	1	Astral			1		1																																																																				974					2805																						35																				
+1101	Mermage Coven	2	96	1	Water			2																																																																						1065					2815																						18																				
+1102	Isle of the Saoi	2	32	1	Earth			1	1																																																																					2838					2832																						33																				
+1103	The Throne of the Second Age	11	214015	0	Holy																		2											1																																																																							72				3																
+1104	The Throne of War	11	214015	0	Holy																		1													1		1																																																																			72																				
+1105	The Throne of Night	11	214015	0	Holy																		1																50																																																																		72												1								
+1106	The Throne of Beasts	11	214015	0	Holy							2											1																	1																																																																	72					1															
+1107	The Throne of Thorns	11	214015	0	Holy							2											1										10																																																																								72					1															
+1108	The Throne of Flames	11	214015	0	Holy	1																	1							5																																																																											72																				
+1109	The Throne of Ice	11	214015	0	Holy			1															1								5																																																																										72																				
+1110	The Throne of Storms	11	16607	0	Holy		1																1									5																																																																									72					1															
+1111	The Throne of Might	11	214015	0	Holy																		1											2																																																																							72																				
+1112	The Throne of the Stars	11	214015	0	Holy					2													1																		S	1																																																															72				4																
+1113	The Throne of Stability	11	214015	0	Holy																		1																																																																																		72									1											
+1114	The Throne of the Deeps	11	16640	0	Holy																		1																50										438	1																																																							72																				
+1115	The Throne of Pearls	11	16640	0	Holy					3													1																																																												2805																						72																				
+1116	The Throne of Bones	11	214015	0	Holy																		1														3																																																																				72												1								
+1117	The High Throne	11	214015	0	Holy																		3																																																																																		72																				
+1118	The Throne of Law	11	214015	0	Holy																Order		1	-1																																																																																	72																				
+1119	The Throne of Zeal	11	214015	0	Holy																		2													1																																																																					72																				
+1120	The Brass Throne	11	214015	0	Holy	1			1					50									1																																																																																		72																				
+1121	The Coral Throne	11	16640	0	Holy			1				1		50	50								1																																																							577																											72																				
+1122	The Throne of Pestilence	11	214015	0	Holy						3										Death		1				1																																																																														72												1								
+1123	The Lower Throne	11	16607	0	Holy								5										1																																																																																		72												1								
+1124	The Throne of Spring	11	16607	0	Holy		1														Growth		1				-1																																																								2543																						72				1																
+1125	The Throne of Summer	11	16607	0	Holy	1															Heat		1			-1																																																									2544																						72				1																
+1126	The Throne of Autumn	11	16607	0	Holy				1												Death		1				1																																																								2545																						72				1																
+1127	The Throne of Winter	11	16607	0	Holy			1													Cold		1			1																																																									2546																						72				1																
+1128	The Throne of the First Age	12	214015	0	Holy																Magic		3																																																																																		72				3					1											
+1129	The Throne of Gaia	12	214015	0	Holy							2											2				-2																																																																														72																				
+1130	The Crystal Throne	12	16607	0	Holy				1	1													2																																																												340																						72																				
+1131	The Iron Throne	12	16607	0	Holy										100								2																																																												477																						72																				
+1132	The Silver Throne	12	16607	0	Holy									100									2																																																												100																						72																				
+1133	The Golden Throne	12	16607	0	Holy									200									2																																																												101																						72																				
+1134	The Throne of Bureaucracy	12	214015	0	Holy									-100									5	-1																																																																																1	72						1														
+1135	The Throne of Knowledge	12	16607	0	Holy																		2																																																												479	478																					72																				
+1136	The Throne of Life	12	214015	0	Holy							3									Growth		2				-1																																																																														72																				
+1137	The Throne of Death	12	214015	0	Holy						5										Death		2				1																																																																														72												1								
+1138	The Throne of Fortune	12	214015	0	Holy					2											Luck		2					-1																																																																													72																				
+1139	The Throne of Misfortune	12	214015	0	Holy					4											Misfortune		2					1																																																																													72																				
+1140	The Inner Throne	12	16607	0	Holy				1				3										2	-1																																																																																	72																				
+1141	The Outer Throne	12	214015	0	Holy					3													2						-1																																																																												72																				
+1142	The Throne of the Moon	12	214015	0	Holy			1		1													2				-1								3																																																																						72				4																
+1143	The Throne of Fire	12	16607	0	Holy	1																	2															3			F	1																																									99																						72				2	1															
+1144	The Throne of Earth	12	16607	0	Holy				1														2																		E	1																																									345																		1				72				2	1															
+1145	The Throne of Water	12	214015	0	Holy			1															2																		W	1																																									103								3														72				2	1															
+1146	The Throne of Air	12	16607	0	Holy		1																2																		A	1																																									93																			40			72				2	1															
+1147	The Throne of the Churning Ocean	12	16416	0	Holy		1	3													Turmoil		2																																20%																																																		72					1															
+1148	The Throne of Splendour	13	214015	0	Holy																		3																																																																													1					72																				
+1149	The Throne of the Pantokrator	13	214015	0	Holy																		7																																																																																	2	72						2		2												
+1150	The Throne of Abundance	13	214015	0	Holy	1	1	1	1	2	1	1		150									3		2																																																																																72																				
+1151	The Throne of Eternal Suffering	13	214015	0	Holy																		3	-1	-1			1																																																																													72												1								
+1152	The Throne of the Sun	13	214015	0	Holy	3																	5	-1		-1	-1			5																																																																											72				4																
+1153	The Throne of Sorcery	13	214015	0	Holy					2	1	1									Magic		3																		SDNB	2																		30%																																													72																				
+1154	The Throne of Elements	13	214015	0	Holy	1	1	1	1														3																		FAWE	2															30%																																																72																				
+1155	The Shattered Throne	13	214015	0	Holy					2			4				10				Magic	Misfortune	3					1																																	30%			1%	5%																																								72												1								
+1156	The Throne of Creation	13	214015	0	Holy										100						Turmoil		3	3																															30%			20%																																															72							1													
+1157	The Throne of Destiny	13	214015	0	Holy																		3	-1				-2																																																																													72																				
+1158	Wind Spire	0	223	0	Air		1																																																																																																		12																				
+1159	Lava Lake	0	735	0	Fire	1		1																																																																																																	5																				
+1160	Cliffside Abattoir	1	16388	1	Blood		1																																																																																																		60																	2			
+1161	Dragon Rune	2	16639	2	Astral					1																																																																																															39																1				
+1162	Ivy Grove	1	2	2	Nature							1																																																																																													52																		1		
+1163	Hall of the Ivy King	2	16386	3	Nature							2									Growth																																																																																				58																		2		

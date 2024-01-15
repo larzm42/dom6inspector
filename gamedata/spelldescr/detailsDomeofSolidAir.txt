@@ -1,0 +1,1 @@
+Dome Protection 80%. Destroyed if it fails to block a spell. Friendly spells will also be blocked.

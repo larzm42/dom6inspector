@@ -1,0 +1,1 @@
+The bodies of all friendly troops become misty and almost impossible to damage. A unit's mistform will end if it is hit by an exceptionally hard blow or by a magic weapon.

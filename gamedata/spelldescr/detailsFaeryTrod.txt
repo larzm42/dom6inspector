@@ -1,0 +1,1 @@
+Chance of ending up in a neighboring forest province: 50% if completely surrounded by forests, 0% if no neighboring forest provinces. Will never cross water boundary.

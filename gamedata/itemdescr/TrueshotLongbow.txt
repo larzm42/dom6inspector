@@ -1,0 +1,1 @@
+Arrows fired from this bow will find their intended target, regardless of distance.

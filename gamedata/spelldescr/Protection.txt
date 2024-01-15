@@ -1,0 +1,1 @@
+This spell works just like the Barkskin spell, except that it affects all units in an area and can be cast from long distance.

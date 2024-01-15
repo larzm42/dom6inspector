@@ -1,0 +1,3 @@
+Increasing chance of Hurricanes devastating provinces for each Dwarf summoned.
+If all four Dwarves are summoned the world is cast in Darkness and a Perpetual Storm will cover the world.
+Killing a Dwarf will return it to its task of holding up the Sky.

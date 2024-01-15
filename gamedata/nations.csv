@@ -1,0 +1,95 @@
+id	name	epithet	abbreviation	file_name_base	era	end
+5	Arcoscephale	Golden Era	Arc	early_arcoscephale	1	
+6	Ermor	New Faith	Er	early_ermor	1	
+7	Ulm	Enigma of Steel	Ul	early_ulm	1	
+8	Marverni	Time of Druids	Mav	early_marverni	1	
+9	Sauromatia	Amazon Queens	Sa	early_sauromatia	1	
+10	T'ien Ch'i	Spring and Autumn	Ti	early_tienchi	1	
+11	Machaka	Lion Kings	Mac	early_machaka	1	
+12	Mictlan	Reign of Blood	Mi	early_mictlan	1	
+13	Abysia	Children of Flame	Aby	early_abysia	1	
+14	Caelum	Eagle Kings	Ca	early_caelum	1	
+15	C'tis	Lizard Kings	Ct	early_ctis	1	
+16	Pangaea	Age of Revelry	Pa	early_pangaea	1	
+17	Agartha	Pale Ones	Ag	early_agartha	1	
+18	Tir na n'Og	Land of the Ever Young	Tir	early_tirnanog	1	
+19	Fomoria	The Cursed Ones	Fom	early_fomoria	1	
+20	Vanheim	Age of Vanir	Va	early_vanheim	1	
+21	Helheim	Dusk and Death	He	early_helheim	1	
+22	Niefelheim	Sons of Winter	Ni	early_niefelheim	1	
+24	Rus	Sons of Heaven	Rus	early_bogarus	1	
+25	Kailasa	Rise of the Ape Kings	Ka	early_kailasa	1	
+26	Lanka	Land of Demons	La	early_lanka	1	
+27	Yomi	Oni Kings	Yom	early_yomi	1	
+28	Hinnom	Sons of the Fallen	Hi	early_gath	1	
+29	Ur	The First City	Ur	early_ur	1	
+30	Berytos	The Phoenix Empire	Be	early_berytos	1	
+31	Xibalba	Vigil of the Sun	Xi	early_xibalba	1	
+32	Mekone	Brazen Giants	Mek	early_mekone	1	
+33	Ubar	Kingdom of the Unseen	Ub	early_ubar	1	
+36	Atlantis	Emergence of the Deep Ones	Atl	early_atlantis	1	
+37	R'lyeh	Time of Aboleths	Rl	early_rlyeh	1	
+38	Pelagia	Pearl Kings	Pe	early_pelagia	1	
+39	Oceania	Coming of the Capricorns	Oc	early_oceania	1	
+40	Therodos	Telkhine Spectre	Ther	early_therodos	1	
+43	Arcoscephale	The Old Kingdom	Arc	mid_arcoscephale	2	
+44	Ermor	Ashen Empire	Ash	mid_ermor	2	
+45	Sceleria	The Reformed Empire	Sc	mid_sceleria	2	
+46	Pythium	Emerald Empire	Py	mid_pythium	2	
+47	Man	Tower of Avalon	Man	mid_man	2	
+48	Eriu	Last of the Tuatha	Er	mid_eriu	2	
+49	Ulm	Forges of Ulm	Ul	mid_ulm	2	
+50	Marignon	Fiery Justice	Mar	mid_marignon	2	
+51	Mictlan	Reign of the Lawgiver	Mi	mid_mictlan	2	
+52	T'ien Ch'i	Imperial Bureaucracy	Ti	mid_tienchi	2	
+53	Machaka	Reign of Sorcerors	Mac	mid_machaka	2	
+54	Agartha	Golem Cult	Ag	mid_agartha	2	
+55	Abysia	Blood and Fire	Aby	mid_abysia	2	
+56	Caelum	Reign of the Seraphim	Ca	mid_caelum	2	
+57	C'tis	Miasma	Ct	mid_ctis	2	
+58	Pangaea	Age of Bronze	Pa	mid_pangaea	2	
+59	Asphodel	Carrion Woods	CW	mid_asphodel	2	
+60	Vanheim	Arrival of Man	Va	mid_vanheim	2	
+61	Jotunheim	Iron Woods	Jo	mid_jotunheim	2	
+62	Vanarus	Land of the Chuds	Rus	mid_rus	2	
+63	Bandar Log	Land of the Apes	Ba	mid_bandarlog	2	
+64	Shinuyama	Land of the Bakemono	shi	mid_bakemono	2	
+65	Ashdod	Reign of the Anakim	As	mid_gath	2	
+66	Uruk	City States	Uru	mid_ur	2	
+67	Nazca	Kingdom of the Sun	Naz	mid_nazca	2	
+68	Xibalba	Flooded Caves	Xi	mid_xibalba	2	
+69	Phlegra	Deformed Giants	Phl	mid_phlegra	2	
+70	Phaeacia	Isle of the Dark Ships	Pha	mid_phaeacia	2	
+71	Ind	Magnificent Kingdom of Exalted Virtue	Ind	mid_ind	2	
+72	Na'Ba	Queens of the Desert	Nab	mid_naba	2	
+73	Atlantis	Kings of the Deep	Atl	mid_atlantis	2	
+74	R'lyeh	Fallen Star	Rl	mid_rlyeh	2	
+75	Pelagia	Triton Kings	Pe	mid_pelagia	2	
+76	Oceania	Mermidons	Oc	mid_oceania	2	
+77	Ys	Morgen Queens	Ys	mid_ys	2	
+80	Arcoscephale	Sibylline Guidance	Arc	late_arcoscephale	3	
+81	Pythium	Serpent Cult	Py	late_pythium	3	
+82	Lemuria	Soul Gates	Lem	late_lemur	3	
+83	Man	Towers of Chelms	Che	late_chelms	3	
+84	Ulm	Black Forest	BF	late_ulm	3	
+85	Marignon	Conquerors of the Sea	CoS	late_marignon	3	
+86	Mictlan	Blood and Rain	Mi	late_mictlan	3	
+87	T'ien Ch'i	Barbarian Kings	BK	late_tienchi	3	
+89	Jomon	Human Daimyos	Jom	late_jomon	3	
+90	Agartha	Ktonian Dead	KD	late_agartha	3	
+91	Abysia	Blood of Humans	BoH	late_abysia	3	
+92	Caelum	Return of the Raptors	Rap	late_caelum	3	
+93	C'tis	Desert Tombs	DT	late_ctis	3	
+94	Pangaea	New Era	NE	late_pangaea	3	
+95	Midgård	Age of Men	Mid	late_midgard	3	
+96	Utgård	Well of Urd	Ut	late_utgard	3	
+97	Bogarus	Age of Heroes	Bog	late_rus	3	
+98	Patala	Reign of the Nagas	Pa	late_patala	3	
+99	Gath	Last of the Giants	Ga	late_gath	3	
+100	Ragha	Dual Kingdom	Rag	late_ragha	3	
+101	Xibalba	Return of the Zotz	Xi	late_xibalba	3	
+102	Phlegra	Sleeping Giants	Phl	late_phlegra	3	
+103	Vaettiheim	Wolf Kin Jarldom	Va	late_vaetti	3	
+106	Atlantis	Frozen Sea	Atl	late_atlantis	3	
+107	R'lyeh	Dreamlands	Rl	late_rlyeh	3	
+108	Erytheia	Kingdom of Two Worlds	Ery	late_erytheia	3	

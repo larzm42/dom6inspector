@@ -1,0 +1,1 @@
+Resources: +20% * dominion (max +100%). Province Income: +4% * resource value * dominion (max dominion 5). Income from mines + 20% * dominion (max +100%).

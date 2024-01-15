@@ -1,0 +1,1 @@
+Allows all troops in the world to enter the sea and breathe under water. Fighting below the surface will still be a little awkward for those not used to it, but at least it will be doable.

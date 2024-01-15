@@ -1,0 +1,1 @@
+When a charged body is struck in melee combat, electricity will strike both combatants. The damage caused by the electrical charge is deadly and bypasses the protection of armor. Once hit, the mage's body will become discharged and, if the mage survives, will need to be recharged.

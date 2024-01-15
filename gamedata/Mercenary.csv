@@ -1,0 +1,77 @@
+id	name	bossname	com	unit	nrunits	level	minmen	minpay	xp	randequip	recrate	item1	item2	eramask	end
+1	Dante's Stingers	Dante	291	285	30	0	15	150	20	1	100			7	
+2	Quickspears	Aimery	291	285	20	0	15	150	50	1	100			7	
+3	Günter Blukraft's Sonnenkinder	Günter Blukraft	291	286	30	0	15	150	15	1	100			7	
+4	The Black Fists	Sir Edward Blackfist	293	286	20	0	10	150	50	1	100			7	
+5	Ferdinando's Footmen	Ferdinando	291	287	30	0	15	160	12	1	100			6	
+6	Guifre's Swordsmen	'Sir' Guifre	291	287	30	0	15	180	15	1	100			7	
+7	Arnaud's Archers	Arnaud	291	33	30	0	15	150	15	1	100			3	
+8	The Bowmen	Lothar	291	17	20	0	10	100	10	1	100			3	
+9	Fritjof's Archers	Fritjof	291	17	20	0	10	100	10	1	100			3	
+10	Magnus's Crossbows	Rolf Magnus	291	290	20	0	10	120	12	1	100			6	
+11	William's Boys	William	293	288	30	0	15	200	50	1	100			4	
+12	Brave Breakers	Grom Brave Breaker	293	288	30	0	15	150	20	1	100			4	
+13	Farstrikers	Guillaume	291	55	30	0	15	160	20	1	100			7	
+14	Hector's Heavy Horsemen	Hector Stark	292	292	15	0	7	220	20	1	25			6	
+15	Durand's Cavalry	Durand the Great	292	292	10	0	5	200	50	1	25			6	
+16	Bernard's Brave Men	Bernard the Brave	293	289	30	0	15	220	50	1	100			7	
+17	The Armored Fist of God	Guiseppe del Migo	149	289	25	0	12	200	25	1	100			6	
+18	Burelk's City Guard	Burelk	35	18	60	0	30	140	0	1	200			7	
+19	Elephant Corps	Hannibal	150	150	5	0	2	80	10	1	10			7	
+20	Black Bone's Pirates	Black Bone	870	871	25	0	15	180	0	2	100			7	
+21	Rexor's Barbarians	Rexor	141	140	40	0	5	150	3	0	200			3	
+22	Victor's Villains	Victor	482	482	10	0	5	30	20	1	300			7	
+23	The Archers in White	Sanne	367	348	20	0	15	100	20	1	50			3	
+24	Raiders of the Silver Steppe	Xenos	1169	1168	20	0	10	150	15	1	100			3	
+25	Fordo Boggit's Elite Warriors	Fordo Boggit	272	271	40	0	10	220	16	1	50			6	
+26	Urgek Beast Brother	Urgek	458	457	20	0	10	30	0	0	100			7	
+27	Bindar's Mighty Markatas	Bindar	1127	1120	40	0	20	30	0	0	300			7	
+28	Abhiraja's Archers	Abhiraja	1127	1121	30	0	15	120	10	0	200			7	
+29	The Bandar Band	Mahapindar	1135	1132	20	0	10	150	15	0	100			6	
+30	Ship Wreckers	Y'gologna	441	208	20	0	10	150	20	1	100	Sword of Sharpness		7	
+31	The Fishermen	Sho'guu	976	974	25	0	15	120	0	1	100			7	
+32	The Wet Ones	Napa Tua	1637	1635	30	0	15	150	15	1	100			7	
+33	Melkorka's Green Men	Melkorka	2905	2903	25	0	10	150	15	1	100			7	
+34	Swimming Men	Pau Pau	577	577	25	0	15	120	15	1	100			7	
+35	Dagan, the Renegade Sage	Dagan	478	287	0	0	5	40	10	1	0			7	
+36	Obscuro, the Hidden Master	Obscuro	341	287	0	0	5	50	10	1	0			7	
+37	Madam Fortuna	Madam Fortuna	1011	50	10	0	5	40	10	2	100	Pendant of Luck		4	
+38	The Lions	Louis	291	285	50	1	25	350	50	1	100			7	
+39	Hornets	Mortada	293	288	40	1	20	300	50	1	100			4	
+40	Miguel's Sons	Miguel	293	288	20	1	10	150	50	1	100			4	
+41	Iron Men	Clovis	293	287	40	1	15	300	50	1	100			7	
+42	The Merry Men	Rivaude	2107	32	30	0	15	100	15	1	200			4	
+43	Poignant Pikes	Salvatore	293	289	40	1	20	300	50	1	100			4	
+44	God's Justice	Guiseppe II	149	289	50	1	25	400	35	2	100			6	
+45	Master Gibur	Gibur	103	408	1	1	0	80	20	2	0			7	
+46	Fish Master Sogg	Sogg	103	1664	1	1	0	120	20	2	0			7	
+47	Istana's Warriors	Istana	353	354	40	1	20	160	0	2	50			7	
+48	The Green Horde	Murong Chui	930	938	40	1	20	300	0	2	100			7	
+49	The Master Assassin	Terminus	428	0	0	1	0	25	50	2	0	Duskdagger	Robe of Shadows	7	
+50	Eternal Knights	Orion	366	366	8	1	0	100	500	1	0	Flambeau	Amulet of Missile Protection	4	
+51	Helmut's Sappers	Helmut	748	749	20	1	10	200	0	1	100			7	
+52	The Snake Charmer	Putin	403	18	50	0	1	150	10	1	200			6	
+53	Stroumsa's Freaks	Stroumsa	150	455	50	1	25	200	0	1	100			7	
+54	The Lost Legion	The Lost One	443	337	20	1	10	30	0	1	100			7	
+55	Skull Smashers	Gryf	518	518	10	1	5	150	10	1	50			7	
+56	Wolfkin Reavers	Uttumvirke	283	541	50	1	25	300	0	1	100			7	
+57	Rozul's Red Raptors	Rozul	205	205	30	1	15	120	0	2	100			7	
+58	Mighty Pak-ur	Pak-ur	488	0	0	1	0	80	0	3	0			1	
+59	Otto the Great	Otto	1333	1124	75	1	10	250	10	2	100	Crown of Command		2	
+60	Nergash's Damned Legion	Nergash	310	195	80	1	20	240	10	1	10			7	
+61	Ghoul Father	Yazrid ibn Hassar	481	198	50	1	25	200	10	1	100	Lifelong Protection		7	
+62	Mamor, the White Wizard	Mamor	100	287	5	1	0	80	10	1	50	Lightweight Scale Mail		7	
+63	Göte	Göte	95	433	20	1	10	160	5	2	20			7	
+64	The Master Druid	Erbum	105	361	25	1	10	200	0	1	100			7	
+65	Ferrus, the Iron Wizard	Ferrus	477	532	5	1	0	110	0	1	50	Amulet of Antimagic		7	
+66	The Boar Mage	Baratus	552	549	40	1	10	160	0	2	50			7	
+67	Reavers of the Deep	Gladd Yog	976	975	50	1	25	300	0	1	100			7	
+68	God's Enforcers	Guiseppe IV	149	289	100	2	50	600	75	2	100	Sceptre of Authority	Crown of Command	6	
+69	Knight Errants	Sir Perceville	23	22	12	2	6	200	20	3	50			6	
+70	Agyraspides	Seleucus	13	14	40	2	20	200	30	2	100			7	
+71	The Feathered Serpent	Omecoatl	525	423	50	2	25	350	0	2	100			7	
+72	The Dragon Tamer	Choznar	214	523	4	2	0	80	0	2	20			7	
+73	The Wind Lord	Tempestus	93	562	30	2	15	240	0	3	100	Crown of Command		7	
+74	The Whispering Legion	Saladaar	329	566	15	2	5	400	0	2	200			7	
+75	Celestial Apostates	Bajie	903	902	10	2	2	350	0	2	100			7	
+76	The Whisperer	Urvikel	2220	541	50	1	15	300	0	2	50	Skull Staff	Lodestone Amulet	7	

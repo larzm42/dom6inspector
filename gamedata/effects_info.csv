@@ -1,0 +1,321 @@
+number	name	test
+0	Nothing
+1	Summon Units
+2	Damage {Wpn: #dt_normal}
+3	Fatigue  {Wpn: #dt_stun}
+4	Cause Fear (Type I)
+7	Poison (HP damage) {Wpn: #dt_poison}
+8	Remove Fatigue (?)
+10	Bless/Buff (Type I)
+11	Cause Affliction
+13	Heal
+15	Return Home
+16	Unknown
+17	Temporary Morale Boost
+19	Teleport
+20	Blink
+21	Summon Commander
+22	Fate of Oedipus
+23	Bless/Buff (Type II)
+24	Damage (x3 vs Undead/Demon) {Wpn: #dt_holy}
+25	Wish
+26	Ritual of Rebirth
+27	Magic Duel
+28	Enslave
+29	Charm
+30	Dispel
+31	Call Horror
+32	Damage (x3 vs Large Creatures) {Wpn: #dt_large}
+33	Damage (x2 vs Small Creatures) {Wpn: #dt_small}
+35	Cross Breeding
+37	Remote Summon (Permanent Units)
+38	Remote Summon (Temporary units)
+39	Gift of Reason
+40	Seeking Arrow
+41	Affect Half of Army in Province
+42	Affect Province with Anonymous Event
+43	Edge of Battlefield Summon
+44	Transformation
+46	Poison (Stun)
+48	Remote Site Search
+49	Wind Ride
+50	Remote Summon - Assassination
+52	? Remote Assassination - Unknown Effects
+53	Vengeance of the Dead
+54	Polymorph
+56	Damage, Blind and Disease all except friendly sacreds (The Ark)
+57	Mind Hunt
+62	Manifestation
+63	Remote Fort Construction
+64	Leprosy
+66	Paralyze {Wpn: #dt_paralyze}
+67	Weaken {Wpn: #dt_weakness}
+68	Summon Animals
+70	Crumble
+72	Stream of Life
+73	Damage (x2 vs Magic Beings) {Wpn: #dt_magic}
+74	Unlife Damage {Wpn: #dt_raise}
+75	? Unlife Damage (x2 vs Magic Beings)
+76	Tartarian Gate
+77	Astral Travel
+79	Faery Trod
+80	Gateway
+81	Enchant Battlefield | Enchant World
+82	Local Enchant Province - Gem Duration
+83	Local Enchant Province - Single Turn
+84	Local Enchant Province - Permanent Duration
+85	Remote Enchant Province - Gem Duration
+86	Remote Enchant Province - Single turn
+89	Ritual Summon Unique Commander
+90	Stygian Paths
+91	Fires from Afar
+92	Imprint Souls
+93	Ritual Summon Unique Unit
+94	Beckoning
+95	Cloud Trapeze
+96	Shatter {Wpn: #dt_constructonly}
+97	Cause Fear (Type II)
+98	Winged Monkeys
+99	Petrify
+100	Terrain-Specific Ritual Summon
+101	Age Caster
+102	Horror Seed
+103	Drain Life {Wpn: #dt_drain}
+104	Partial Life Drain {Wpn: #dt_weapondrain}
+105	Disbelieve
+106	Damage Demon (?)
+107	Damage (x2 vs Demon) {Wpn: #dt_demon}
+108	Planeshift Other
+109	Capped Damage {Wpn: #dt_cap}
+110	Dreams of R'lyeh
+111	Internal Alchemy
+112	Attack Caster
+113	Astral Harpoon
+114	Awaken Treelord
+115	Acashic Record
+116	Swallow if Smaller
+117	Alchemize Gems
+118	Blood Feast
+119	Remote Summon Stealthy Commander
+120	Unleash Imprisoned Ones
+121	Swallow (Size 1 and 2 only)
+122	Swallow if Smaller, else Damage
+123	Damage Armor (can destroy magic items)
+125	Mind Vessel
+126	Call Horror
+127	Infernal Breeding
+128	Stun/Fascinate
+129	Interrupt Damage
+130	Polymorph Caster
+131	Cure Affliction on Others
+132	Cure Affliction on Self
+133	Time Stop
+134	Chaining Damage
+135	Raven Feast
+136	Remote Curse
+137	Summon if not dead
+138	Damage Armor (no effect on magic items)
+139	Capped Poison Damage
+140	? Enchant until Spring
+141	Call the Birds of Splendour
+142	Salt Damage
+500	Set Effect Value (1) if lower
+501	Set Effect Value (2) if lower
+502	Set Effect Value (3) if lower
+503	Set Effect Value (4) if lower
+504	Set Effect Value (5) if lower
+505	Set Effect Value (6) if lower
+506	Set Effect Value (7) if lower
+507	Set Effect Value (8) if lower
+508	Set Effect Value (9) if lower
+509	Set Effect Value (10) if lower
+510	Set Effect Value (11) if lower
+511	Set Effect Value (12) if lower
+512	Set Effect Value (13) if lower
+513	Set Effect Value (14) if lower
+514	Set Effect Value (15) if lower
+515	Set Effect Value (16) if lower
+516	Set Effect Value (17) if lower
+517	Set Effect Value (18) if lower
+518	Set Effect Value (19) if lower
+519	Set Effect Value (20) if lower
+520	Set Effect Value (21) if lower
+521	Set Effect Value (22) if lower
+522	Set Effect Value (23) if lower
+523	Set Effect Value (24) if lower
+524	Set Effect Value (25) if lower
+525	Set Effect Value (26) if lower
+526	Set Effect Value (27) if lower
+527	Set Effect Value (28) if lower
+528	Set Effect Value (29) if lower
+529	Set Effect Value (30) if lower
+530	Set Effect Value (31) if lower
+531	Set Effect Value (32) if lower
+532	Set Effect Value (33) if lower
+533	Set Effect Value (34) if lower
+534	Set Effect Value (35) if lower
+535	Set Effect Value (36) if lower
+536	Set Effect Value (37) if lower
+537	Set Effect Value (38) if lower
+538	Set Effect Value (39) if lower
+539	Set Effect Value (40) if lower
+540	Set Effect Value (41) if lower
+541	Set Effect Value (42) if lower
+542	Set Effect Value (43) if lower
+543	Set Effect Value (44) if lower
+544	Set Effect Value (45) if lower
+545	Set Effect Value (46) if lower
+546	Set Effect Value (47) if lower
+547	Set Effect Value (48) if lower
+548	Set Effect Value (49) if lower
+549	Set Effect Value (50) if lower
+550	Set Effect Value (51) if lower
+551	Set Effect Value (52) if lower
+552	Set Effect Value (53) if lower
+553	Set Effect Value (54) if lower
+554	Set Effect Value (55) if lower
+555	Set Effect Value (56) if lower
+556	Set Effect Value (57) if lower
+557	Set Effect Value (58) if lower
+558	Set Effect Value (59) if lower
+559	Set Effect Value (60) if lower
+560	Set Effect Value (61) if lower
+561	Set Effect Value (62) if lower
+562	Set Effect Value (63) if lower
+563	Set Effect Value (64) if lower
+564	Set Effect Value (65) if lower
+565	Set Effect Value (66) if lower
+566	Set Effect Value (67) if lower
+567	Set Effect Value (68) if lower
+568	Set Effect Value (69) if lower
+569	Set Effect Value (70) if lower
+570	Set Effect Value (71) if lower
+571	Set Effect Value (72) if lower
+572	Set Effect Value (73) if lower
+573	Set Effect Value (74) if lower
+574	Set Effect Value (75) if lower
+575	Set Effect Value (76) if lower
+576	Set Effect Value (77) if lower
+577	Set Effect Value (78) if lower
+578	Set Effect Value (79) if lower
+579	Set Effect Value (80) if lower
+580	Set Effect Value (81) if lower
+581	Set Effect Value (82) if lower
+582	Set Effect Value (83) if lower
+583	Set Effect Value (84) if lower
+584	Set Effect Value (85) if lower
+585	Set Effect Value (86) if lower
+586	Set Effect Value (87) if lower
+587	Set Effect Value (88) if lower
+588	Set Effect Value (89) if lower
+589	Set Effect Value (90) if lower
+590	Set Effect Value (91) if lower
+591	Set Effect Value (92) if lower
+592	Set Effect Value (93) if lower
+593	Set Effect Value (94) if lower
+594	Set Effect Value (95) if lower
+595	Set Effect Value (96) if lower
+596	Set Effect Value (97) if lower
+597	Set Effect Value (98) if lower
+598	Set Effect Value (99) if lower
+599	Set Effect Value (100) if lower
+600	Add To Effect Value (1)
+601	Add To Effect Value (2)
+602	Add To Effect Value (3)
+603	Add To Effect Value (4)
+604	Add To Effect Value (5)
+605	Add To Effect Value (6)
+606	Add To Effect Value (7)
+607	Add To Effect Value (8)
+608	Add To Effect Value (9)
+609	Add To Effect Value (10)
+610	Add To Effect Value (11)
+611	Add To Effect Value (12)
+612	Add To Effect Value (13)
+613	Add To Effect Value (14)
+614	Add To Effect Value (15)
+615	Add To Effect Value (16)
+616	Add To Effect Value (17)
+617	Add To Effect Value (18)
+618	Add To Effect Value (19)
+619	Add To Effect Value (20)
+620	Add To Effect Value (21)
+621	Add To Effect Value (22)
+622	Add To Effect Value (23)
+623	Add To Effect Value (24)
+624	Add To Effect Value (25)
+625	Add To Effect Value (26)
+626	Add To Effect Value (27)
+627	Add To Effect Value (28)
+628	Add To Effect Value (29)
+629	Add To Effect Value (30)
+630	Add To Effect Value (31)
+631	Add To Effect Value (32)
+632	Add To Effect Value (33)
+633	Add To Effect Value (34)
+634	Add To Effect Value (35)
+635	Add To Effect Value (36)
+636	Add To Effect Value (37)
+637	Add To Effect Value (38)
+638	Add To Effect Value (39)
+639	Add To Effect Value (40)
+640	Add To Effect Value (41)
+641	Add To Effect Value (42)
+642	Add To Effect Value (43)
+643	Add To Effect Value (44)
+644	Add To Effect Value (45)
+645	Add To Effect Value (46)
+646	Add To Effect Value (47)
+647	Add To Effect Value (48)
+648	Add To Effect Value (49)
+649	Add To Effect Value (50)
+650	Add To Effect Value (51)
+651	Add To Effect Value (52)
+652	Add To Effect Value (53)
+653	Add To Effect Value (54)
+654	Add To Effect Value (55)
+655	Add To Effect Value (56)
+656	Add To Effect Value (57)
+657	Add To Effect Value (58)
+658	Add To Effect Value (59)
+659	Add To Effect Value (60)
+660	Add To Effect Value (61)
+661	Add To Effect Value (62)
+662	Add To Effect Value (63)
+663	Add To Effect Value (64)
+664	Add To Effect Value (65)
+665	Add To Effect Value (66)
+666	Add To Effect Value (67)
+667	Add To Effect Value (68)
+668	Add To Effect Value (69)
+669	Add To Effect Value (70)
+670	Add To Effect Value (71)
+671	Add To Effect Value (72)
+672	Add To Effect Value (73)
+673	Add To Effect Value (74)
+674	Add To Effect Value (75)
+675	Add To Effect Value (76)
+676	Add To Effect Value (77)
+677	Add To Effect Value (78)
+678	Add To Effect Value (79)
+679	Add To Effect Value (80)
+680	Add To Effect Value (81)
+681	Add To Effect Value (82)
+682	Add To Effect Value (83)
+683	Add To Effect Value (84)
+684	Add To Effect Value (85)
+685	Add To Effect Value (86)
+686	Add To Effect Value (87)
+687	Add To Effect Value (88)
+688	Add To Effect Value (89)
+689	Add To Effect Value (90)
+690	Add To Effect Value (91)
+691	Add To Effect Value (92)
+692	Add To Effect Value (93)
+693	Add To Effect Value (94)
+694	Add To Effect Value (95)
+695	Add To Effect Value (96)
+696	Add To Effect Value (97)
+697	Add To Effect Value (98)
+698	Add To Effect Value (99)
+699	Add To Effect Value (100)

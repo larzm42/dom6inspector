@@ -1,0 +1,1 @@
+The mage projects an illusionary army at a province far away. The mage is able to guide the army into killing any enemies located there. The illusionary army will dissolve once the attack has been completed or if there are no enemies in the targeted province.

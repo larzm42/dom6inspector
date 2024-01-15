@@ -1,0 +1,1 @@
+Affected units get 2d8 fatigue dmg each turn. MR +DRN vs 22 negates the effect.

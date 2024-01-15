@@ -1,0 +1,1 @@
+Water in friendly dominion will animate and try to kill enemy commanders whenever possible. The elemental is stronger in provinces with a rich water supply than in dry provinces.

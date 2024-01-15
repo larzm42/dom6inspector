@@ -1,0 +1,1 @@
+Scale of Sloth is set to 3. Dominion is reduced by 1-2. All units in the province must make a MR check vs 10 and a morale check vs 10. If they fail both they desert.

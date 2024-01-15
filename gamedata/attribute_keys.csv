@@ -1,0 +1,219 @@
+number	name	test
+35	<Unknown Attribute>
+36	<Unknown Attribute>
+41	<Unknown Attribute>
+43	<Unknown Attribute>
+46	<Unknown Attribute>
+47	<Unknown Attribute>
+52	Capital Magic Site {Ntn: #startsite}
+59	<Unknown Attribute>
+69	<Unknown Attribute>
+73	<Unknown Attribute>
+74	<Unknown Attribute>
+75	<Unknown Attribute>
+76	<Unknown Attribute>
+77	<Unknown Attribute>
+78	<Unknown Attribute>
+79	<Unknown Attribute>
+80	<Unknown Attribute>
+81	<Unknown Attribute>
+82	<Unknown Attribute>
+83	<Unknown Attribute>
+84	<Unknown Attribute>
+85	<Unknown Attribute>
+90	<Unknown Attribute>
+91	<Unknown Attribute>
+92	<Unknown Attribute>
+93	<Unknown Attribute>
+94	<Unknown Attribute>
+95	<Unknown Attribute>
+100	Capital Magic Site (Unholy?) {Ntn: #startsite}
+122	<Unknown Attribute>
+123	<Unknown Attribute>
+124	<Unknown Attribute>
+125	<Unknown Attribute>
+126	<Unknown Attribute>
+127	<Unknown Attribute>
+128	<Unknown Attribute>
+129	<Unknown Attribute>
+131	<Unknown Attribute>
+132	<Unknown Attribute>
+133	<Unknown Attribute>
+134	<Unknown Attribute>
+136	<Unknown Attribute>
+137	<Unknown Attribute>
+138	<Unknown Attribute>
+139	National Unique Hero {Ntn: #hero1}
+140	National Unique Hero {Ntn: #hero2}
+141	National Unique Hero {Ntn: #hero3}
+142	National Unique Hero {Ntn: #hero4}
+143	National Unique Hero {Ntn: #hero5}
+144	National Unique Hero {Ntn: #hero6}
+145	National Generic Hero {Ntn: #multihero1}
+146	National Generic Hero {Ntn: #multihero2}
+149	<Unknown Attribute>
+156	<Unknown Attribute>
+157	<Unknown Attribute>
+158	Coastal Fort Commander {Ntn: #coastcom1}
+159	Coastal Fort Commander {Ntn: #coastcom2}
+160	Coastal Fort Troop {Ntn: #coastunit1}
+161	Coastal Fort Troop {Ntn: #coastunit2}
+162	Coastal Fort Troop {Ntn: #coastunit3}
+163	Non-Coastal Land Troop
+167	<Unknown Attribute>
+168	<Unknown Attribute>
+169	<Unknown Attribute>
+170	<Unknown Attribute>
+171	<Unknown Attribute>
+172	Underwater Fort Commander {Ntn: #uwcom}
+173	<Unknown Attribute>
+174	<Unknown Attribute>
+175	<Unknown Attribute>
+176	<Unknown Attribute>
+177	<Unknown Attribute>
+178	<Unknown Attribute>
+179	<Unknown Attribute>
+180	<Unknown Attribute>
+185	<Unknown Attribute>
+186	Underwater Fort Commander {Ntn: #uwcom}
+187	Underwater Fort Commander {Ntn: #uwcom}
+188	Underwater Fort Commander {Ntn: #uwcom}
+189	Underwater Fort Troop {Ntn: #uwunit}
+190	Underwater Fort Troop {Ntn: #uwunit}
+191	Underwater Fort Troop {Ntn: #uwunit}
+193	<Unknown Attribute>
+194	<Unknown Attribute>
+195	<Unknown Attribute>
+196	<Unknown Attribute>
+197	<Unknown Attribute>
+198	<Unknown Attribute>
+199	<Unknown Attribute>
+200	<Unknown Attribute>
+205	<Unknown Attribute>
+207	<Unknown Attribute>
+210	<Unknown Attribute>
+211	<Unknown Attribute>
+213	Underwater Fort Troop {Ntn: #uwunit}
+217	<Unknown Attribute>
+220	<Unknown Attribute>
+221	<Unknown Attribute>
+222	<Unknown Attribute>
+223	<Unknown Attribute>
+261	<Unknown Attribute>
+262	<Unknown Attribute>
+263	<Unknown Attribute>
+264	<Unknown Attribute>
+265	<Unknown Attribute>
+266	Material Composition: Ferrous
+267	Material Composition: Ferrous
+268	Material Composition: Flammable
+269	Material Composition: Flammable
+270	<Unknown Attribute>
+271	<Unknown Attribute>
+272	<Unknown Attribute>
+273	<Unknown Attribute>
+274	<Unknown Attribute>
+275	<Unknown Attribute>
+278	Restrict to Nation {Spl: #restricted}
+279	<Unknown Attribute>
+280	<Unknown Attribute>
+281	<Unknown Attribute>
+287	<Unknown Attribute>
+288	<Unknown Attribute>
+289	Home Realm {Ntn: #homerealm}
+290	<Unknown Attribute>
+293	<Unknown Attribute>
+294	Terrain-Specific Recruit: Forest {Ntn: #forestrec}
+295	Terrain-Specific Commander: Forest {Ntn: #forestcom}
+296	Terrain-Specific Recruit: Swamp {Ntn: #swamprec}
+297	Terrain-Specific Commander: Swamp {Ntn: #swampcom}
+298	Terrain-Specific Recruit: Mountain {Ntn: #mountainrec}
+299	Terrain-Specific Commander: Mountain {Ntn: #mountaincom}
+300	Terrain-Specific Recruit: Waste {Ntn: #wasterec}
+301	Terrain-Specific Commander: Waste {Ntn: #wastecom}
+302	Terrain-Specific Recruit: Cave {Ntn: #caverec}
+303	Terrain-Specific Commander: Cave {Ntn: #cavecom}
+304	<Unknown Attribute>
+305	<Unknown Attribute>
+306	<Unknown Attribute>
+307	<Unknown Attribute>
+308	<Unknown Attribute>
+309	<Unknown Attribute>
+310	<Unknown Attribute>
+311	<Unknown Attribute>
+312	<Unknown Attribute>
+313	<Unknown Attribute>
+314	Cheap God 20 {Ntn: #cheapgod20}
+315	Cheap God 40 {Ntn: #cheapgod40}
+317	<Unknown Attribute>
+318	<Unknown Attribute>
+319	<Unknown Attribute>
+320	<Unknown Attribute>
+321	<Unknown Attribute>
+322	<Unknown Attribute>
+324	<Unknown Attribute>
+325	<Unknown Attribute>
+404	Cannot be cast by mindless
+405	Only affects creatures with astral magic
+426	<Unknown Attribute>
+477	Increase province magic scale by 3
+482	Not Effected by Fire Bless
+495	<Unknown Attribute>
+557	Magic
+579	Gifts from Heaven
+582	Map Move Penalty
+599	Soul Slay
+602	Restricted to Realm
+603	<Unknown Attribute>
+611	Weapon affected by penetration bonus
+617	Number of chain lightning bounces {Spl: #maxbounces}
+619	<Unknown Attribute>
+657	<Unknown Attribute>
+700	Map Range {Spl: #provrange}
+701	Destination Terrain {Spl: #onlygeodst}
+702	Source Terrain {Spl: #onlygeosrc}
+703	Cannot target geo mask {Spl: #nogeodst}
+704	<Unknown Attribute>
+705	Cannot trace range through seas {Spl: #nowatertrace}
+706	No Path over Land {Spl: #nolandtrace}
+707	<Unknown Attribute>
+708	Hidden Enchantment {Spl: #hiddenench}
+709	<Unknown Attribute>
+710	Does not affect floating commanders
+711	Site Required
+713	Only cast at coast {Spl: #onlycoastsrc}
+715	Caster must be flying
+716	Remote summon commander {Spl: #farsumcom}
+717	Record global enchantment cast location
+718	Requires specific unit ability to cast
+719	Specific unit ability prevents casting
+720	Projectile falls vertically
+721	Sound file played on projectile impact
+722	God Path Restriction {Spl: #godpathspell}
+723	Casting Time {Spl: #casttime}
+724	Extra effect in geo {Spl: #extraeffectgeo}
+725	Can't target same province more than once/turn {Spl: #uniquetarget}
+726	Override percent of units affected in target province
+727	<Unknown Attribute>
+728	Adds AN lingering heat {Spl: #anlingeringheat}
+729	Dispelled if province changes owners {Spl: #friendlyench}
+730	Only castable in forted province
+731	Can only be cast by {Spl: #onlymnr}
+732	Unit gets magic of target {Spl: #polygetmagic}
+733	Sets current province as home {Spl: #sethome}
+734	Curses random commander in caster's province
+735	AI will not cast unless path level lower than {Spl: #aibadlvl}
+736	Cannot be cast on unit with effect
+737	Opens target prompt, can only target a unit of type
+738	Only target friendly provinces {Spl: #onlyowndst}
+739	Do not anticipate target's movement regardless of flysprite
+740	<Unknown Attribute>
+741	Requires sun presence
+742	AInocast
+743	<Unknown Attribute>
+744	<Unknown Attribute>
+745	Will not be cast against small numbers of enemies
+746	Requires enchantment
+747	Cost is multiplied by size
+748	Percent to horror mark caster
+900	<Unknown Attribute>

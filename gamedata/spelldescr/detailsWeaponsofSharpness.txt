@@ -1,0 +1,1 @@
+Targets' melee attacks deal AP damage.

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51174963-1"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-51174963-1');
+   </script>
+   <meta charset="utf-8">
+   <title>Dom6 Mod Inspector</title>
+
+   <!-- ?v=30 -->
+   
+   	<link rel="shortcut icon" href="favicon.ico" />
+   	<link rel="stylesheet" type="text/css" href="scripts/slickgrid/slick.grid.css" />
+	<link rel="stylesheet" type="text/css" href="scripts/slickgrid/css/smoothness/jquery-ui-1.8.16.custom.css" />
+	<link rel="stylesheet" type="text/css" href="scripts/slickgrid/examples/examples.css" />
+	<link rel="stylesheet" type="text/css" href="scripts/master.css?v=30"  />
+	
+</head>
+<body>
+	<script type="text/javascript">var versionCode='?v=30';</script>
+	<script type="text/javascript" src="scripts/slickgrid/lib/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="scripts/slickgrid/lib/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="scripts/slickgrid/lib/jquery.event.drag-2.2.js"></script>
+	
+	<!-- % SCRIPTS TO COMPILE % -->
+	<script type="text/javascript" src="scripts/slickgrid/slick.core.js"></script>
+	<script type="text/javascript" src="scripts/slickgrid/slick.grid.js?v=2"></script>
+	<script type="text/javascript" src="scripts/slickgrid/slick.dataview.js"></script>
+	<script type="text/javascript" src="scripts/ParsedQueryString.js"></script>
+	<script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+
+	<script type="text/javascript" src="scripts/PaneManager.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/Utils.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/Format.js?v=30"></script>
+	<script type="text/javascript" src="scripts/modconstants.js?v=30"></script>
+	<script type="text/javascript" src="scripts/parsemod.js?v=30"></script>
+	<script type="text/javascript" src="scripts/loaddata.js?v=30"></script>
+	
+	<script type="text/javascript" src="scripts/DMI/CGrid.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/MAffliction.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/MWpn.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/MArmor.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/MItem.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/SpellTables.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/MSpell.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/MUnit.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/MNation.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/MSite.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/MMerc.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/MEvent.js?v=30"></script>
+	<script type="text/javascript" src="scripts/DMI/bitfields.js?v=30"></script>
+	
+	<script type="text/javascript" src="scripts/main.js?v=30"></script>
+	<!-- /% SCRIPTS TO COMPILE % -->
+
+
+	<script>
+	function insertParam(key, value)
+	{
+		key = encodeURI(key); value = encodeURI(value);
+    	var kvp = document.location.search.substr(1).split('&');
+
+    	var i=kvp.length; var x; while(i--) 
+    	{
+        	x = kvp[i].split('=');
+
+        	if (x[0]==key)
+        	{
+            	x[1] = value;
+            	kvp[i] = x.join('=');
+            	break;
+        	}
+    	}
+
+		if(i<0) {kvp[kvp.length] = [key,value].join('=');}
+
+    	//this will reload the page, it's likely better to store this until finished
+    	document.location.search = kvp.join('&'); 
+	}
+	
+	function gup( name, url ) {
+  		if (!url) url = location.href;
+  		name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  		var regexS = "[\\?&]"+name+"=([^&#]*)";
+  		var regex = new RegExp( regexS );
+  		var results = regex.exec( url );
+  		return results == null ? null : results[1];
+	}
+	</script>
+
+	<!-- SHARED -->
+	<div id="primary-details">
+	<div id="primary-header">
+
+        <!-- GLOBAL INTERFACE -->
+		<div id="global-tiny-buttons" class="primary-panel">
+			<div style="float:right; clear:right">				
+				<a style="display:block; float:right; clear:right" href="?selectmods=1" id="select-mods-link" class="tinylink" title="select mods from a list or load from the local filesystem (reloads page)">[load mods]</a>
+					<br />
+				<a style="display:block; float:right; clear:right"href="" id="permalink" class="tinylink" title="link to this page state (use right click > copy link address to share). Pinned details and search setting are encoded in the url.">[permalink]</a>
+			</div>
+		</div>
+		
+		<h3 id="page-status">Javascript error!?</h3>
+		
+        <!-- /GLOBAL INTERFACE -->       
+
+		<div id="spacer" style="height:10px"></div>
+	
+ 		<div id="global-buttons" class="primary-panel">
+			<input id="global-clear-filters-btn" type="button" value="X" title="clear all filters" style="clear:none;" />
+			<input id="global-unpin-all-btn" type="image" src="images/PinPageTrnsClose.png" title="unpin all" style="clear:none;" />
+		</div>
+       <!-- PAGE TABS -->
+		<div id="page-tabs" class="primary-panel">
+			<button id="item-page-button"  class="page-button" value="items">Item</button>
+			<button id="spell-page-button" class="page-button" value="spells">Spell</button>
+			<button id="unit-page-button"  class="page-button" value="units">Unit</button>
+			<button id="site-page-button"  class="page-button" value="sites">Site</button>
+			<button id="merc-page-button"  class="page-button" value="mercs">Merc</button>
+			<button id="event-page-button"  class="page-button" value="event">Event</button>
+            <button id="wpn-page-button"  class="page-button hidden-inline" value="wpns">Wp</button>
+            <button id="armor-page-button"  class="page-button hidden-inline" value="armor">Ar</button>
+		</div>
+        <!-- /PAGE TABS -->
+	</div>
+	<div id="primary-filters">
+	
+		<!-- STARTUP MOD SELECTION -->
+		<form id="mod-selection" action="" style="display:none;">
+			<input type="button" value="X" id="clear-mods-btn" class="clear-filters-btn" title="clear selection" style="float:left;"/>
+			
+			<div id="mod-selection-list" ></div>
+				
+			<hr style="clear:both; padding-top:0.8em" />
+			
+			<p>
+			<input type="button" value="X" id="clear-custom-mods-btn" class="clear-filters-btn" title="clear selection" style="float:left;"/>
+				&nbsp;&nbsp;
+				<b>Local filesystem:</b>
+				<input type="file" id="load-custom-mod" name="file" multiple="multiple" />
+				(use ctrl to select multiple files)
+			</p>
+			<ul id="custom-mod-list" style="display:none; color:#AA0000; font-weight:bold;"></ul>
+	
+			<hr style="clear:both;" />
+			
+			<p><input type="submit" id="submit-mod-selection" value=" LOAD " name="submit" /></p>
+		</form>	
+
+        	<!-- TEXT SEARCH -->
+		<div class="filters-text  panel itemview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+		
+			search Items: <input type="text" class="search-box" title="filter by name or find id" id="itemq" />
+		</div>
+		<div class="hidden-block">
+			<div class="filters-text properties">
+				<div class = "property panel itemview">
+					<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+					property (key):<input size="5" type="text" class="search-key" title="search for any named key" id="propkeyitem"/>
+					!<input tabindex="-1" type="checkbox" class="search-not" title="not (opposite results)"  id="propnotitem">
+					<select tabindex="-1" class="search-comp" id="propcompitem">
+						<option title="regular expression match" class="default" selected="selected" value="=~">=~</option>
+						<option title="equals" value="==">==</option>
+						<option title="greater than or equal (int)" value=">=">&gt;=</option>
+						<option title="less than or equal (int)" value="<=">&lt;=</option>
+					</select>
+					<input size="5" type="text" class="search-val" title="search for any named key=~value" id="propvalitem"/>
+					<textarea class="customjs" style="width:95%; height:100;" ></textarea>
+				</div>
+				<div class = "panel itemview">
+					<input type="button" value="+" class="add-property-filter-btn" title="add property filter" />
+				</div>
+			</div>
+		</div>
+        
+		
+		<div class="filters-text  panel spellview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			search Spells: <input type="text" class="search-box" title="filter by name or find id" id="spellq" />
+		</div>
+		<div class="hidden-block">
+			<div class="filters-text properties">
+				<div class = "property panel spellview">
+					<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+					property (key):<input size="5" type="text" class="search-key" title="search for any named key" id="propkeyspell"/>
+					!<input tabindex="-1" type="checkbox" class="search-not" title="not (opposite results)" id="propnotspell">
+					<select tabindex="-1" class="search-comp" id="propcompspell">
+						<option title="regular expression match" class="default" selected="selected" value="=~">=~</option>
+						<option title="equals" value="==">==</option>
+						<option title="greater than or equal (int)" value=">=">&gt;=</option>
+						<option title="less than or equal (int)" value="<=">&lt;=</option>
+					</select>
+					<input size="5" type="text" class="search-val" title="search for any named key=~value" id="propvalspell"/>
+					<textarea class="customjs" style="width:95%; height:100;" ></textarea>
+				</div>
+				<div class = "panel spellview">
+					<input type="button" value="+" class="add-property-filter-btn" title="add property filter" />
+				</div>
+			</div>
+		</div>
+		<div class="modding-block">
+			<div class="filters-text panel spellview">
+				<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+				effect no:<input size="5" type="text" class="spell-effect-number" title="find spells that use a specific effect" id="spelleff" />
+				mask:<input size="5" type="text" class="effect-mask" title="match masks on damage (use effect no 10 / 11 / 23)"  id="spellmask" />
+				spec:<input size="5" type="text" class="special-mask" title="match masks on special"  id="spellspec" />
+			</div>
+		</div>
+		
+        
+		<div class="filters-text panel unitview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			Search Units: <input type="text" class="search-box" title="filter by name or find id" id="unitq" //>
+		</div>
+		<div class="hidden-block">
+			<div class="filters-text properties">
+				<div class = "property panel unitview">
+					<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+					property (key):<input size="5" type="text" class="search-key" title="search for any named key" id="propkeyunit"/>
+					!<input tabindex="-1" type="checkbox" class="search-not" title="not (opposite results)"  id="propnotunit">
+					<select tabindex="-1" class="search-comp" id="propcompunit">
+						<option title="regular expression match" class="default" selected="selected" value="=~">=~</option>
+						<option title="equals" value="==">==</option>
+						<option title="greater than or equal (int)" value=">=">&gt;=</option>
+						<option title="less than or equal (int)" value="<=">&lt;=</option>
+					</select>
+					<input size="5" type="text" class="search-val" title="search for any named key=~value" id="propvalunit"/>
+					<textarea class="customjs" style="width:95%; height:100;" ></textarea>
+				</div>
+				<div class="panel unitview">
+					<input type="button" value="+" class="add-property-filter-btn" title="add property filter" />
+				</div>
+			</div>
+		</div>
+			
+
+		<div class="filters-text  panel siteview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			search Sites: <input type="text" class="search-box" title="filter by name or find id" id="siteq" />
+		</div>
+		<div class="hidden-block">
+			<div class="filters-text properties">
+				<div class = "property panel siteview">
+					<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+					property (key):<input size="5" type="text" class="search-key" title="search for any named key" id="propkeysite"/>
+					!<input tabindex="-1" type="checkbox" class="search-not" title="not (opposite results)"  id="propnotsite">
+					<select tabindex="-1" class="search-comp" id="propcompsite">
+						<option title="regular expression match" class="default" selected="selected" value="=~">=~</option>
+						<option title="equals" value="==">==</option>
+						<option title="greater than or equal (int)" value=">=">&gt;=</option>
+						<option title="less than or equal (int)" value="<=">&lt;=</option>
+					</select>
+					<input size="5" type="text" class="search-val" title="search for any named key=~value" id="propvalsite"/>
+					<textarea class="customjs" style="width:95%; height:100;" ></textarea>
+				</div>
+				<div class = "property panel siteview">
+					<input type="button" value="+" class="add-property-filter-btn" title="add property filter" />
+				</div>
+			</div>
+		</div>
+
+		<div class="filters-text  panel mercview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			search Mercs: <input type="text" class="search-box" title="filter by name or find id" id="mercq" />
+		</div>
+		<div class="hidden-block">
+			<div class="filters-text properties">
+				<div class = "property panel mercview">
+					<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+					property (key):<input size="5" type="text" class="search-key" title="search for any named key" id="propkeymerc"/>
+					!<input tabindex="-1" type="checkbox" class="search-not" title="not (opposite results)"  id="propnotmerc">
+					<select tabindex="-1" class="search-comp" id="propcompmerc">
+						<option title="regular expression match" class="default" selected="selected" value="=~">=~</option>
+						<option title="equals" value="==">==</option>
+						<option title="greater than or equal (int)" value=">=">&gt;=</option>
+						<option title="less than or equal (int)" value="<=">&lt;=</option>
+					</select>
+					<input size="5" type="text" class="search-val" title="search for any named key=~value" id="propvalmerc"/>
+					<textarea class="customjs" style="width:95%; height:100;" ></textarea>
+				</div>
+				<div class = "panel mercview">
+					<input type="button" value="+" class="add-property-filter-btn" title="add property filter" />
+				</div>
+			</div>
+		</div>
+
+		<div class="filters-text  panel eventview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			search Events: <input type="text" class="search-box" title="filter by name or find id" id="eventq" />
+			<br/>
+			
+			<label for="loadEvents"><input class="load-events" type='checkbox' value='loadEvents' id='loadEvents' onclick='if (this.checked) insertParam("loadEvents","1"); else insertParam("loadEvents","0");'
+        	/>Load Events</label>
+			
+		</div>
+		<script>
+			if (gup("loadEvents") == "1") {
+				document.getElementById("loadEvents").checked = true;
+			} else {
+				document.getElementById("loadEvents").checked = false;
+			}
+		</script>
+		<div class="hidden-block">
+			<div class="filters-text properties">
+				<div class = "property panel eventview">
+					<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+					property (key):<input size="5" type="text" class="search-key" title="search for any named key" id="propkeyevent"/>
+					!<input tabindex="-1" type="checkbox" class="search-not" title="not (opposite results)"  id="propnotevent">
+					<select tabindex="-1" class="search-comp" id="propcompevent">
+						<option title="regular expression match" class="default" selected="selected" value="=~">=~</option>
+						<option title="equals" value="==">==</option>
+						<option title="greater than or equal (int)" value=">=">&gt;=</option>
+						<option title="less than or equal (int)" value="<=">&lt;=</option>
+					</select>
+					<input size="5" type="text" class="search-val" title="search for any named key=~value" id="propvalevent"/>
+					<textarea class="customjs" style="width:95%; height:100;" ></textarea>
+				</div>
+				<div class = "panel eventview">
+					<input type="button" value="+" class="add-property-filter-btn" title="add property filter" />
+				</div>
+			</div>
+		</div>
+
+		<div class="filters-text  panel wpnview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			Search Wpns: <input type="text" class="search-box" title="filter by name or find id" id="wpnq" //>
+		</div>
+		<div class="hidden-block">
+			<div class="filters-text properties">
+				<div class = "property panel wpnview">
+					<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+					property (key):<input size="5" type="text" class="search-key" title="search for any named key" id="propkeywpn"/>
+					!<input tabindex="-1" type="checkbox" class="search-not" title="not (opposite results)"  id="propnotwpn">
+					<select tabindex="-1" class="search-comp" id="propcompwpn">
+						<option title="regular expression match" class="default" selected="selected" value="=~">=~</option>
+						<option title="equals" value="==">==</option>
+						<option title="greater than or equal (int)" value=">=">&gt;=</option>
+						<option title="less than or equal (int)" value="<=">&lt;=</option>
+					</select>
+					<input size="5" type="text" class="search-val" title="search for any named key=~value" id="propvalwpn"/>
+					<textarea class="customjs" style="width:95%; height:100;" ></textarea>
+				</div>
+				<div class = "property panel wpnview">
+					<input type="button" value="+" class="add-property-filter-btn" title="add property filter" />
+				</div>
+			</div>
+		</div>
+
+        
+		<div class="filters-text  panel armorview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			Search Armor: <input type="text" class="search-box" title="filter by name or find id" id="armorq" //>
+		</div>
+		<div class="hidden-block">
+			<div class="filters-text properties">
+				<div class = "property panel armorview">
+					<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+					property (key):<input size="5" type="text" class="search-key" title="search for any named key" id="propkeyarmor"/>
+					!<input tabindex="-1" type="checkbox" class="search-not" title="not (opposite results)"  id="propnotarmor">
+					<select tabindex="-1" class="search-comp" id="propcomparmor">
+						<option title="regular expression match" class="default" selected="selected" value="=~">=~</option>
+						<option title="equals" value="==">==</option>
+						<option title="greater than or equal (int)" value=">=">&gt;=</option>
+						<option title="less than or equal (int)" value="<=">&lt;=</option>
+					</select>
+					<input size="5" type="text" class="search-val" title="search for any named key=~value" id="propvalarmor"/>
+					<textarea class="customjs" style="width:95%; height:100;" ></textarea>
+				</div>
+				<div class = "property panel armorview">
+					<input type="button" value="+" class="add-property-filter-btn" title="add property filter" />
+				</div>
+			</div>
+		</div>
+
+		<!-- /TEXT SEARCH -->
+
+        
+        <!-- SELECT NATION -->
+		<div class="filters-nation  panel itemview unitview spellview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			<select class="nation" id="nation">
+				<option class="default" selected="selected" value="">any nation</option>
+				<option disabled=disabled>------------------</option>
+				<option value="EA">Early era</option>
+				<option value="MA">Middle era</option>
+				<option value="LA">Late era</option>
+				<!-- list of nations filled dynamically -->
+			</select>
+		</div>
+        <!-- /SELECT NATION -->
+
+
+        <!-- SELECT UNIT TYPE -->
+		<div class="filters-units  panel unitview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			<select class="typechar" id="unittype">
+				<option class="default" selected="selected" value="">all units</option>
+				<option class="available"   value="cmdr (cap only),cmdr (future cap only),cmdr (foreign),cmdr (forest),cmdr (mountain),cmdr (swamp),cmdr (waste),cmdr (plains), cmdr (cave),cmdr (coast),cmdr (land),commander,Commander,cmdr (Magic site),cmdr (Summon),cmdr (Battle Summon),cmdr (u-water),Mage (Magic site),Mage (Summon),Mage,Priest (Magic site),Priest (Summon),Scout (Summon),unit (cap only),unit (future cap only),unit,Unit,unit (u-water),unit (Summon),Unit (Battle Summon),Unit (Magic site),unit (foreign),unit (forest),unit (mountain),unit (swamp),unit (waste),unit (plains),unit (cave),unit (coast),unit (land)"
+					title="units available via recruitment/summoning"
+					>available</option>
+				<option class="recruitable" value="cmdr (cap only),cmdr (future cap only),cmdr (foreign),cmdr (forest),cmdr (mountain),cmdr (swamp),cmdr (waste),cmdr (plains),cmdr (cave),cmdr (coast),cmdr (land),commander,Commander,cmdr (u-water),unit (cap only),unit (future cap only),unit,Unit,unit (u-water),unit (foreign),unit (forest),unit (mountain),unit (swamp),unit (waste),unit (plains),unit (cave),unit (coast),unit (land)"
+					title="units recruitable in capital or provinces"
+					>recruitable</option>
+				<option disabled=disabled>--------------</option>
+				<option value="cmdr (cap only),cmdr (future cap only),cmdr (foreign),cmdr (forest),cmdr (mountain),cmdr (swamp),cmdr (waste),cmdr (plains),cmdr (cave),cmdr (coast),commander,Commander,cmdr (Recruitment),cmdr (Magic site),cmdr (Prophetization),cmdr (Special),cmdr (Summon),cmdr (Wish),cmdr (item),cmdr (Mercenary),cmdr (mercenary),cmdr (Battle Summon),cmdr (Event),cmdr (?),cmdr (u-water),Mage (Recruitment),Mage (Magic site),Mage (Prophetization),Mage (Special),Mage (Summon),Mage (item),Mage (Event),Mage (ritual),Mage (?),Mage,Priest (Event),Priest (Freespawn),Priest (Magic site),Priest (Recruitment),Priest (Summon),priest (Prophetization),Scout (Recruitment),Scout (Summon)">Commanders</option>
+				<option value="unit (cap only),unit (future cap only),unit (foreign),unit (forest),unit (mountain),unit (swamp),unit (waste),unit (plains),unit (cave),unit (coast),unit,Unit,unit (u-water),Unit (Recruitment),Unit (Summon),Unit (Battle Summon),Unit (Event),Unit (Freespawn),Unit (Magic site),Unit (Mercenary),Unit (mercenary),Unit (Special),Unit (?)">Units</option>
+				<option value="Commander (Summon),Mage (Summon),Priest (Summon),Scout (Summon),Unit (Summon),Horror (Summon),horror (Summon),cmdr (Summon),unit (Summon)">Summoned</option>
+				<option disabled=disabled>--------------</option>
+				<option value="Pretender">Pretenders</option>
+				<option value="hero (unique),hero (multi),Hero (Event),Hero (item)">Heroes</option>
+			</select>
+		
+			<label for="unitnat"><input class="national" id="unitnat" type="checkbox" 
+			/>national only</label>
+			
+			<label for="unitgen"><input class="generic" id="unitgen" type="checkbox" 
+			/>generic only</label>
+				
+		</div>
+        <!-- /SELECT UNIT TYPE -->
+		
+
+        <!-- PATH CHECKBOXES LINE1 -->
+		<div class="filters-paths  panel spellview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			<label for="pathF"><input class="toggle-path" type='checkbox' value='F' id="pathF" 
+			/><img alt="F" class="Path_F pathicon" src="images/magicicons/Path_F.png" /></label>
+			
+			<label for="pathA"><input class="toggle-path" type='checkbox' value='A' id="pathA" 
+			/><img alt="A" class="Path_A pathicon" src="images/magicicons/Path_A.png" /></label>
+			
+			<label for="pathW"><input class="toggle-path" type='checkbox' value='W' id="pathW" 
+			/><img alt="W" class="Path_W pathicon" src="images/magicicons/Path_W.png" /></label>
+			
+			<label for="pathE"><input class="toggle-path" type='checkbox' value='E' id="pathE" 
+			/><img alt="E" class="Path_E pathicon" src="images/magicicons/Path_E.png" /></label>
+			
+			<label for="pathS"><input class="toggle-path" type='checkbox' value='S' id="pathS" 
+			/><img alt="S" class="Path_S pathicon" src="images/magicicons/Path_S.png" /></label>
+			
+			<label for="pathD"><input class="toggle-path" type='checkbox' value='D' id="pathD" 
+			/><img alt="D" class="Path_D pathicon" src="images/magicicons/Path_D.png" /></label>
+			
+			<label for="pathN"><input class="toggle-path" type='checkbox' value='N' id="pathN" 
+			/><img alt="N" class="Path_N pathicon" src="images/magicicons/Path_N.png" /></label>
+			
+			<label for="pathB"><input class="toggle-path" type='checkbox' value='B' id="pathB" 
+			/><img alt="B" class="Path_B pathicon" src="images/magicicons/Path_B.png" /></label>
+		
+			<label for="pathH"><input class="toggle-path" type='checkbox' value='H' id="pathH" 
+			/><img alt="H" class="Path_H pathicon" src="images/magicicons/Path_H.png" /></label>		
+		</div>
+        <!-- /PATH CHECKBOXES LINE1 -->
+
+		<!-- PATH CHECKBOXES LINE1 -->
+		<div class="filters-paths  panel itemview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			<label for="pathF"><input class="toggle-path" type='checkbox' value='F' id="pathF"
+			/><img alt="F" class="Path_F pathicon" src="images/magicicons/Path_F.png" /></label>
+
+			<label for="pathA"><input class="toggle-path" type='checkbox' value='A' id="pathA"
+			/><img alt="A" class="Path_A pathicon" src="images/magicicons/Path_A.png" /></label>
+
+			<label for="pathW"><input class="toggle-path" type='checkbox' value='W' id="pathW"
+			/><img alt="W" class="Path_W pathicon" src="images/magicicons/Path_W.png" /></label>
+
+			<label for="pathE"><input class="toggle-path" type='checkbox' value='E' id="pathE"
+			/><img alt="E" class="Path_E pathicon" src="images/magicicons/Path_E.png" /></label>
+
+			<label for="pathS"><input class="toggle-path" type='checkbox' value='S' id="pathS"
+			/><img alt="S" class="Path_S pathicon" src="images/magicicons/Path_S.png" /></label>
+
+			<label for="pathD"><input class="toggle-path" type='checkbox' value='D' id="pathD"
+			/><img alt="D" class="Path_D pathicon" src="images/magicicons/Path_D.png" /></label>
+
+			<label for="pathN"><input class="toggle-path" type='checkbox' value='N' id="pathN"
+			/><img alt="N" class="Path_N pathicon" src="images/magicicons/Path_N.png" /></label>
+
+			<label for="pathB"><input class="toggle-path" type='checkbox' value='B' id="pathB"
+			/><img alt="B" class="Path_B pathicon" src="images/magicicons/Path_B.png" /></label>
+		</div>
+		<!-- /PATH CHECKBOXES LINE1 -->
+		
+		<!-- PATH CHECKBOXES LINE1 -->
+		<div class="filters-paths  panel siteview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			<label for="pathF"><input class="toggle-path" type='checkbox' value='F' id="pathF"
+			/><img alt="F" class="Gem_F pathicon" src="images/magicicons/Gem_F.png" /></label>
+
+			<label for="pathA"><input class="toggle-path" type='checkbox' value='A' id="pathA"
+			/><img alt="A" class="Gem_A pathicon" src="images/magicicons/Gem_A.png" /></label>
+
+			<label for="pathW"><input class="toggle-path" type='checkbox' value='W' id="pathW"
+			/><img alt="W" class="Gem_W pathicon" src="images/magicicons/Gem_W.png" /></label>
+
+			<label for="pathE"><input class="toggle-path" type='checkbox' value='E' id="pathE"
+			/><img alt="E" class="Gem_E pathicon" src="images/magicicons/Gem_E.png" /></label>
+
+			<label for="pathS"><input class="toggle-path" type='checkbox' value='S' id="pathS"
+			/><img alt="S" class="Gem_S pathicon" src="images/magicicons/Gem_S.png" /></label>
+
+			<label for="pathD"><input class="toggle-path" type='checkbox' value='D' id="pathD"
+			/><img alt="D" class="Gem_D pathicon" src="images/magicicons/Gem_D.png" /></label>
+
+			<label for="pathN"><input class="toggle-path" type='checkbox' value='N' id="pathN"
+			/><img alt="N" class="Gem_N pathicon" src="images/magicicons/Gem_N.png" /></label>
+
+			<label for="pathB"><input class="toggle-path" type='checkbox' value='B' id="pathB"
+			/><img alt="B" class="Gem_B pathicon" src="images/magicicons/Gem_B.png" /></label>
+		</div>
+		<!-- /PATH CHECKBOXES LINE1 -->
+
+
+        <!-- PATH CHECKBOXES LINE2 -->
+        <div class="filters-paths  panel itemview spellview">
+        	<label for="pathInclusion"><input class="inclusive-search" type='checkbox' value='inclusion' id='pathInclusion'
+        	/>inclusive search</label>
+        </div>
+        <!-- /PATH CHECKBOXES LINE2 -->
+
+
+        <!-- ITEM FILTERS LINE1 -->
+		<div class="filters-items  panel itemview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			<select class="type" id="itemtype">
+				<option class="default" value="misc,1-h wpn,2-h wpn,helm,armor,shield,boots,crown"
+					> all item types </option>
+				<option disabled="disabled"> -------------- </option>
+				<option value="misc"> Miscellaneous </option>
+				<option value="helm"> Helmets </option>
+				<option value="crown"> Crowns </option>
+				<option value="armor"> Armor </option>
+				<option value="shield"> Shields </option>
+				<option value="boots"> Boots </option>
+				<option value="1-h wpn"> 1-h weapons </option>
+				<option value="2-h wpn"> 2-h weapons </option>
+				<option disabled="disabled"> -------------- </option>
+				<option value="melee"> All melee weaps </option>
+				<option value="missile"> All missile weaps </option>
+									</select>
+			<select class="constlevel" id="itemlvl">
+				<option class="default" value="8"> Construction 8 </option>
+				<option value="6"> Construction 6 </option>
+				<option value="4"> Construction 4 </option>
+				<option value="2"> Construction 2 </option>
+				<option value="0"> Construction 0 </option>
+				<option disabled="disabled"> -------------- </option>
+				<option value="14"> Unforgeable items</option>
+			</select>
+
+			<br>
+
+			<label for="itemnat"><input class="national" id="itemnat" type="checkbox"
+			/>national only</label>
+
+			<label for="itemgen"><input class="generic" id="itemgen" type="checkbox"
+			/>generic only</label>
+		</div>
+		<!-- /ITEM FILTERS LINE1 -->
+
+
+        <!-- SPELL FILTERS LINE1 -->
+		<div class="filters-spells  panel spellview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			<select class="school" id="spellschool">
+				<option class="default" value="0,1,2,3,4,5,6,7">all schools</option>
+				<option disabled=disabled>-------------</option>
+				<option value="0">Conjuration</option>
+				<option value="1">Alteration</option>
+				<option value="2">Evocation</option>
+				<option value="3">Construction</option>
+				<option value="4">Enchantment</option>
+				<option value="5">Thaumaturgy</option>
+				<option value="6">Blood</option>
+				<option value="7">Divine</option>
+				<option disabled=disabled>-------------</option>
+				<option value="-1">unresearchable</option>
+				<option value="-1,0,1,2,3,4,5,6,7">any</option>
+			</select>
+
+			<label for="spellnat"><input class="national" id="spellnat" type="checkbox" 
+			/>national only</label>
+			
+			<label for="spellgen"><input class="generic" id="spellgen" type="checkbox" 
+			/>generic only</label>
+				
+		</div>
+        <!-- /SPELL FILTERS LINE1 -->
+
+
+        <!-- SPELL FILTERS LINE2 -->
+		<div class="filters-spells  panel spellview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+		<!--
+			<select class="result" id="select-spell-result">
+				<option class="default" value="0,1,2,3,4,5,6,7">any effect</option>
+				<option disabled=disabled>-----------</option>
+				<option value="1">summon</option>
+				<option value="2">damage</option>
+				<option value="4">healing</option>
+				<option value="8">buff</option>
+				<option value="16">nerf</option>
+				<option value="32">disable</option>
+				<option value="64">command</option>
+				<option disabled=disabled>-----------</option>
+			</select>
+			-->
+			<select class="type" id="spelltype">
+				<option class="default" value="">ritual / combat</option>
+				<option disabled=disabled>-------------</option>
+				<option value="Ritual">Rituals</option>
+				<option value="Combat">Combat spells</option>
+			</select>
+		
+			<select class="aquatic" id="spellaqua">
+				<option class="default" value="">uw / land</option>
+				<option disabled=disabled>-----------</option>
+				<option value="uw">Underwater</option>
+				<option value="land">Dry land</option>
+			</select>
+			
+		</div>
+		
+        <!-- /SPELL FILTERS LINE2 -->
+
+		<!--
+		<div class="filters-spells  panel spellview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+		
+			<select class="dmg-type" id="select-spell-dmg-type">
+				<option class="default" value="">any damage type</option>
+				<option disabled=disabled>-----------</option>
+				<option value="1">affects demons</option>
+				<option value="2">affects undead</option>
+				<option value="4">affects mindless</option>
+				<option value="8">affects magic beings</option>
+				<option disabled=disabled>-----------</option>
+				<option value="16">powerful vs demons</option>
+				<option value="32">powerful vs undead</option>
+				<option value="64">powerful vs mindless</option>
+				<option value="128">powerful vs magic beings</option>
+				<option disabled=disabled>-----------</option>
+				<option value="256">fire damage</option>
+				<option value="512">cold damage</option>
+				<option value="1024">poison damage</option>
+				<option value="2048">shock damage</option>
+				<option disabled=disabled>-----------</option>
+				<option value="1">not fire damage</option>
+				<option value="2">not cold damage</option>
+				<option value="2">not poison damage</option>
+				<option value="2">not shock damage</option>
+				<option disabled=disabled>-----------</option>
+			</select>
+			
+			<select class="penetration" id="select-spell-penetration">
+				<option class="default" value="">any penetration</option>
+				<option disabled=disabled>-----------</option>
+				<option value="2">armor negating</option>
+				<option value="2">armor piercing</option>
+				<option disabled=disabled>-----------</option>
+				<option value="2">not resistable (MR)</option>
+				<option value="2">not easily resistable</option>
+			</select>
+		</div>
+		-->
+		
+		<!-- SITE FILTERS LINE1 -->
+		<div class="filters-sites  panel siteview">
+			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+
+			<select class="sitepath" id="sitepathid">
+				<option class="default" value=""> all paths </option>
+				<option disabled="disabled"> -------------- </option>
+				<option value="Fire"> Fire </option>
+				<option value="Air"> Air </option>
+				<option value="Water"> Water </option>
+				<option value="Earth"> Earth </option>
+				<option value="Astral"> Astral </option>
+				<option value="Death"> Death </option>
+				<option value="Nature"> Nature </option>
+				<option value="Blood"> Blood </option>
+				<option value="Holy"> Holy </option>
+			</select>
+			<select class="sitescale" id="sitescaleid">
+				<option class="default" value=""> all scales </option>
+				<option disabled="disabled"> -------------- </option>
+				<option value="Turmoil"> Turmoil </option>
+				<option value="Order"> Order </option>
+				<option value="Sloth"> Sloth </option>
+				<option value="Productivity"> Productivity </option>
+				<option value="Cold"> Cold </option>
+				<option value="Heat"> Heat </option>
+				<option value="Death"> Death </option>
+				<option value="Growth"> Growth </option>
+				<option value="Misfortune"> Misfortune </option>
+				<option value="Luck"> Luck </option>
+				<option value="Drain"> Drain </option>
+				<option value="Magic"> Magic </option>
+			</select>
+			<select class="siteterrain" id="siteterrainid">
+				<option class="default" value="0"> all terrains </option>
+				<option disabled="disabled"> -------------- </option>
+				<option value="1"> Plain </option>
+				<option value="2"> Forest </option>
+				<option value="4"> Mountain </option>
+				<option value="8"> Waste </option>
+				<option value="16"> Farm </option>
+				<option value="32"> Sea </option>
+				<option value="64"> Coast </option>
+				<option value="128"> Swamp </option>
+				<option value="256"> Deep sea </option>
+				<option value="512"> Cave </option>
+				<option value="16384"> Unique </option>
+			</select>
+			<select class="sitetype" id="sitetypeid">
+				<option value=""> all types </option>
+				<option disabled="disabled"> -------------- </option>
+				<option class="default" value="Normal"> Normal </option>
+				<option value="Capitals"> Capitals </option>
+				<option value="Thrones"> Thrones </option>
+			</select>
+		</div>
+				
+	</div>
+	
+	
+	<div id="advanced-options" style="display:none;">
+
+		<!--<a href="" class="hidden-inline" id="ignoremodurl" title="link to this page state without mods (middle click for easy comparison of stats pre/post mod)" />[no mods]</a>
+		<div id="display-ids">-->
+				<label for="showids" title="show #s, some hidden details and further options for modders"
+				><input id="showids" type='checkbox' name="id" value="id" title="show ids and other hidden details. useful for modders" 
+				/>advanced</label>
+		<!--</div>-->
+		
+		<span class="hidden-inline" style="float:right;" id="count-results"></span>
+		
+		<div class="hidden-inline">
+		&nbsp;
+		<label for="showmodcmds" title="toggles display of all mod commands"
+		><input id="showmodcmds" type='checkbox' name="modcmds" value="modcmds" title="toggles display of all mod commands" 
+		/>mod cmds</label>
+		
+		<label for="showmoddinginfo" title="reveals additional hidden info. only useful for modders"
+		><input id="showmoddinginfo" type='checkbox' name="showmoddinginfo" value="showmoddinginfo" title="reveals additional hidden info. only useful for modders" 
+		/>more info</label>
+				
+		<label for="showkeys" title="shows searchable keys. generally these correspond to mod command names"
+		><input id="showkeys" type='checkbox' name="keys" value="keys" title="shows searchable keys. generally these correspond to mod command names" 
+		/>show keys</label>
+		</div>
+
+	</div>
+	
+	
+
+	</div>
+	<!-- /SHARED -->
+	
+	<!-- PAGE CONTAINERS -->
+	<div id="spell-page" class="page" style="display:none;">
+		<div class="grid-container"></div>
+		<div class="static-overlay-container">
+			<div class="primary-overlay"></div>
+			<div class="fixed-overlay overlay"></div>
+		</div>
+	</div>
+
+    <div id="unit-page" class="page" style="display:none;">
+		<div class="grid-container"></div>
+		<div class="static-overlay-container">
+			<div class="primary-overlay"></div>
+			<div class="fixed-overlay overlay"></div>
+		</div>
+	</div>
+
+    <div id="item-page" class="page" style="display:none;">
+		<div class="grid-container"></div>
+		<div class="static-overlay-container">
+			<div class="primary-overlay"></div>
+			<div class="fixed-overlay overlay"></div>
+		</div>
+	</div>
+
+	<div id="site-page" class="page" style="display:none;">
+		<div class="grid-container"></div>
+		<div class="static-overlay-container">
+			<div class="primary-overlay"></div>
+			<div class="fixed-overlay overlay"></div>
+		</div>
+	</div>
+
+	<div id="merc-page" class="page" style="display:none;">
+		<div class="grid-container"></div>
+		<div class="static-overlay-container">
+			<div class="primary-overlay"></div>
+			<div class="fixed-overlay overlay"></div>
+		</div>
+	</div>
+
+	<div id="event-page" class="page" style="display:none;">
+		<div class="grid-container"></div>
+		<div class="static-overlay-container">
+			<div class="primary-overlay"></div>
+			<div class="fixed-overlay overlay"></div>
+		</div>
+	</div>
+
+    <div id="wpn-page" class="page" style="display:none;">
+		<div class="grid-container"></div>
+		<div class="static-overlay-container">
+			<div class="primary-overlay"></div>
+			<div class="fixed-overlay overlay"></div>
+		</div>
+	</div>
+
+    <div id="armor-page" class="page" style="display:none;">
+		<div class="grid-container"></div>
+		<div class="static-overlay-container">
+			<div class="primary-overlay"></div>
+			<div class="fixed-overlay overlay"></div>
+		</div>
+	</div>
+	<!-- /PAGE CONTAINERS -->
+
+	<!-- MOUSEOVER PANE -->
+	<div id="floating-overlay-child" class="overlay" style="position:absolute; display:none; top:0px; left:0px; z-index:3000;"></div>
+	
+	<!-- UNUSED -->
+	<textarea id="modtext" style="display:none;">
+	</textarea>
+	
+	
+	<!-- TAIL -->
+	<p id="page-tail">
+		<br/>
+		<a href="http://www.illwinter.com/dom6/index.html" target="_blank">[ver 6.00]</a>
+		<br/>
+		<a href="https://github.com/larzm42/dom6inspector/wiki" target="_blank">[About]</a>
+		<br/>
+		<a href="http://steamcommunity.com/app/722060/discussions/0/1500126447384353349/" target="_blank">[Feedback]</a>
+	</p>
+</body>
+</html>
+

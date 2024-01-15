@@ -1,0 +1,34 @@
+bit_value	bit_name	test
+0	Plains
+1	Small Province
+2	Large Province
+4	Sea
+8	Freshwater
+16	Mountains
+32	Swamp
+64	Waste
+128	Forest
+256	Farm
+512	Invalid Starting Position
+1024	Many Magic Sites
+2048	Deep Sea
+4096	Cave
+8192	<Unknown Terrain Type>
+16384	<Unknown Terrain Type>
+32768	<Unknown Terrain Type>
+65536	<Unknown Terrain Type>
+131072	<Unknown Terrain Type>
+262144	<Unknown Terrain Type>
+524288	<Unknown Terrain Type>
+1048576	<Unknown Terrain Type>
+2097152	<Unknown Terrain Type>
+4194304	Border Mountains
+8388608	(Internal) Darkness
+16777216	Recommended Throne Position
+33554432	Recommended Starting Position
+67108864	<Unknown Terrain Type>
+134217728	? 50% to be set in arena ?coast
+268435456	(Internal) Assassination battle
+536870912	<Unknown Terrain Type>
+1073741824	<Unknown Terrain Type>
+2147483648	<Unknown Terrain Type>

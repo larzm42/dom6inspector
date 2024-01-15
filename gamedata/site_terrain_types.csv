@@ -1,0 +1,15 @@
+bit_value	bit_name	test
+1	Plain
+2	Forest
+4	Mountain
+8	Waste
+16	Farm
+32	Sea
+64	Coast
+128	Swamp
+256	Deep sea
+512	Cave
+16384	Unique
+32768	Underwater Mountain
+65536	Underwater Forest
+131072	Underwater Coastal

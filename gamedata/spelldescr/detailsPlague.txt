@@ -1,0 +1,1 @@
+Plague effect per round: 1d2 dmg + 1d4 fatigue

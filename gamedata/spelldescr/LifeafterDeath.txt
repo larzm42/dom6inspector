@@ -1,0 +1,1 @@
+This spell gives all friendly units a second chance to live. An affected unit that dies will rise again as a soulless being and continue to fight. Undead units are not affected by this spell.

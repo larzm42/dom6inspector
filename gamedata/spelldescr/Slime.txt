@@ -1,0 +1,1 @@
+The caster hurls a ball of sticky goo at his enemies. Enemies stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance.

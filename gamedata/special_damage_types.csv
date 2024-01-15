@@ -1,0 +1,64 @@
+bit_value	bit_name	test
+1	Disease
+2	Curse
+4	Starve (?, Dominions 3)
+8	Carry Plague
+16	<Unknown>
+32	Rapidly Fatigue
+64	Entangle
+128	Enrage (Dominions 3: Cause Confusion)
+256	Decay
+512	Immolate
+1024	Sleep
+2048	Rust Armor
+4096	Blind
+8192	Bleed
+16384	Earth Grip
+32768	<Unknown>
+65536	Bonds of Fire
+131072	False Fetters
+262144	Cause Limp
+524288	Remove Eye (?, Dominions 3)
+1048576	Weaken (?, Dominions 3)
+2097152	Cause Battle Fright
+4194304	Mute (?, Dominions 3)
+8388608	Wound Chest
+16777216	Cripple
+33554432	Enfeeble Mind
+67108864	Permanently Wound (?, Dominions 3)
+134217728	Slime
+268435456	Freeze
+536870912	Web (?, Dominions 3)
+1073741824	Remove Arm (?, Dominions 3)
+2147483648	<Unknown>
+4294967296	Diminuition
+8589934592	<Unknown>
+17179869184	Cause Confusion (?)
+34359738368	<Unknown>
+68719476736	Slow
+137438953472	<Unknown>
+274877906944	<Unknown>
+549755813888	<Unknown>
+1099511627776	<Unknown>
+2199023255552	<Unknown>
+4398046511104	<Unknown>
+8796093022208	<Unknown>
+17592186044416	<Unknown>
+35184372088832	<Unknown>
+70368744177664	<Unknown>
+140737488355328	<Unknown>
+281474976710656	<Unknown>
+562949953421312	<Unknown>
+1125899906842624	<Unknown>
+2251799813685248	<Unknown>
+4503599627370496	<Unknown>
+9007199254740992	<Unknown>
+18014398509481984	<Unknown>
+36028797018963968	<Unknown>
+72057594037927936	<Unknown>
+144115188075855872	<Unknown>
+288230376151711744	<Unknown>
+576460752303423488	<Unknown>
+1152921504606846976	<Unknown>
+2305843009213693952	<Unknown>
+4611686018427387904	<Unknown>

@@ -1,0 +1,1 @@
+The illusionist creates a Phantasmal Warrior who attacks the enemy. These warriors move spasmodically, sometimes moving far and sometimes not moving at all.

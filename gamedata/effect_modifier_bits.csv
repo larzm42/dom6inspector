@@ -1,0 +1,64 @@
+bit_value	bit_name	test
+1	Adds Strength of Wielder {Wpn: not #nostr}
+2	Requires Two Hands {Wpn: #twohanded}
+4	+2 Attack vs Shields {Wpn: #flail}
+8	Affects Demons and Undead {Wpn: #demonundead}
+16	Affects Magic Beings Only {Wpn: #magiconly}
+32	Heat/Fire {Wpn: #fire}
+64	Armor Piercing {Wpn: #armorpiercing}
+128	Armor Negating {Wpn: #armornegating}
+256	Soul Slaying {Wpn: #soulslaying}
+512	Chill/Cold {Wpn: #cold}
+1024	? Unknown Modifier {Wpn: #1024}
+2048	Shock {Wpn: #shock}
+4096	Magic Resistance Negates {Wpn: #mrnegates}
+8192	Poison {Wpn: #poison}
+16384	Ignores Shields {Wpn: #ignoreshield}
+32768	Affects Sacreds Only {Wpn: #sacredonly}
+65536	Affects Air Breathers Only {Wpn: #aironly}
+131072	No Effect on Mindless {Wpn: #mind}
+262144	Affects Enemies Only {Wpn: #friendlyimmune}
+524288	No Effect on Undead {Wpn: #undeadimmune}
+1048576	Defense Negate {Wpn: #defnegate}
+2097152	Nonmagical {Wpn: not #magic}
+4194304	Affects Friendlies Only {Wpn: #enemyimmune}
+8388608	May Use Underwater {Wpn: #uwok}
+16777216	Magic Resistance Negates Easily {Wpn: #mrnegateseasily}
+33554432	Use Underwater Only {Wpn: #uwonly}
+67108864	Iron Attack {Wpn: #ironweapon}
+134217728	Intrinsic Weapon {Wpn: #bonus}
+268435456	No effect on Demons {Wpn: #demonimmune}
+536870912	No effect on Inanimate {Wpn: #inanimateimmune}
+1073741824	Internally added to all spells {Wpn: #1073741824}
+2147483648	Damage Bonus on 1st Attack {Wpn: #charge}
+4294967296	Beam/Breath {Wpn: #beam}
+8589934592	Used in melee too {#usedinmelee}
+17179869184	50% chance to be used in melee too {Wpn: #range050}
+34359738368	Bypasses mirror image, internally added to spells with aoe 1+ {Wpn: #hasaoe}
+68719476736	Higher charge bonus cap {Wpn: #heavyweapon}
+137438953472	Cannot be used for repelling {Wpn: #norepel}
+274877906944	Piercing Damage {Wpn: #pierce}
+549755813888	Bludgeoning Damage {Wpn: #blunt}
+1099511627776	Slashing Damage {Wpn: #slash}
+2199023255552	Acid Damage {Wpn: #acid}
+4398046511104	Size or Strength negates {Wpn: #sizeresist}
+8796093022208	Only 50% chance of this being used {Wpn: #melee50}
+17592186044416	Magic Resistance Hard to Negate {Wpn: #hardmrneg}
+35184372088832	Cannot be repelled {Wpn: #unrepel}
+70368744177664	No Effect on Fliers/Floaters {Wpn: #flyingimmune}
+140737488355328	Does not affect user unless hitting x% of battlefield {Wpn: #userimmune}
+281474976710656	Affects Animals Only {Wpn: #animalonly}
+562949953421312	More likely to hit head {#hithead}
+1125899906842624	Size negates (bugged, is never checked) {Wpn: #fivegates}
+2251799813685248	? Adds fire particles (weapon projectiles only) {Wpn: #fireparticles}
+4503599627370496	Creatures with Void Sanity immune {Wpn: #voidsanityimmune}
+9007199254740992	Natural Ranged Weapon {Wpn: #natural}
+18014398509481984	"True" Damage {Wpn: #true}
+36028797018963968	Internal Damage {Wpn: #internal}
+72057594037927936	Magic Damage {Wpn: #dt_magic}
+144115188075855872	Projectiles fly along ground {Wpn: #groundprojectile}
+288230376151711744	Half Strength added {Wpn: #halfstr}
+576460752303423488	Extra Effect {Wpn: #extraeffect}
+1152921504606846976	Extra Effect on Damage {Wpn: #extraeffectondmg}
+2305843009213693952	MR check for Half Damage {Wpn: #mrcheckhalfdmg}
+4611686018427387904	One Third Strength added {Wpn: #bowstr}

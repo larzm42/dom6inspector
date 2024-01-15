@@ -1,0 +1,1 @@
+By touching a target, the magician can poison him. A successful attack roll is required to hit the target, but armor offers no protection.

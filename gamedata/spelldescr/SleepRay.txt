@@ -1,0 +1,1 @@
+The sleep ray will affect a small number of enemies right in front of the mage. Those who fail to resist will instantly fall into a magical slumber.

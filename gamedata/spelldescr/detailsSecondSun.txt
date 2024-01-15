@@ -1,0 +1,1 @@
+Each turn increases heat scales throughout the world. Death scales are also increased, but at a slower rate.

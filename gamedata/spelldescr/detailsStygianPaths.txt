@@ -1,0 +1,1 @@
+Spirit attacks: 1 AN dmg + death MR attack. Stealthy units have only 20% chance of being attacked. Caster can not take advantage of stealth.

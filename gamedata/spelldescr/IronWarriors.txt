@@ -1,0 +1,1 @@
+The skins of some soldiers are transformed into hard, metallic hides. These hides give a basic Protection of 20, or increase Protection by 3 if it is already 20 or above. As a side effect the targets will take additional damage from lightning.

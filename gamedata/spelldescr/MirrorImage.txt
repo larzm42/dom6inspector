@@ -1,0 +1,1 @@
+This spell creates illusionary images of the caster. A skilled Air mage will get more images than a less skilled one. The images will surround the mage and make it harder for enemies to figure out which one to strike.  A strike will have an equal chance of hitting each image and the mage and the spell ends as soon as the mage is hit by an attack.

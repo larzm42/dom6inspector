@@ -1,0 +1,1 @@
+The caster transforms the water surrounding some enemies into ice. The encased targets are protected from strikes, but must break free to be able to move or defend themselves. While encased they will become chilled and numbed and suffer fatigue.

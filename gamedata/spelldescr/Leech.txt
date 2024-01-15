@@ -1,0 +1,1 @@
+The mage drains the life force of a small group of enemies. The life force drained will be used to heal and reinvigorate the mage.

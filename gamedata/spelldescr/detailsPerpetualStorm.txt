@@ -1,0 +1,1 @@
+All battles are affected by storm. Income -20%. Map movement costs are increased by 2. Far-attack spells such as Fires from Afar have a 25% chance of missing their targets. Seeking Arrow has a 75% chance of missing its target. Underwater and cave provinces are not affected.

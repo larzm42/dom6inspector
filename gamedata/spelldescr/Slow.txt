@@ -1,0 +1,1 @@
+This spell will slow down a small group of enemies. The slowed units will require twice as long time to move, attack or cast spells. The effect will last for the entire battle.

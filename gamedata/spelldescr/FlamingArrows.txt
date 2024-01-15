@@ -1,0 +1,1 @@
+The mage enchants the arrows of all friendly archers on the battlefield. The arrows burst into flame as they are fired, doing considerable damage to their targets. The flaming arrow spell will not affect magical weapons. The fire damage of the arrow is magic and will affect ethereal and invulnerable creatures even if the arrow itself doesn't.

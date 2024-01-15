@@ -1,0 +1,1 @@
+The walls will take 250 points of damage +25 points for each additional Earth skill level. 50% of the defenders must roll for defence or get 3 AP blunt damage.

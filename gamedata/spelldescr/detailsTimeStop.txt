@@ -1,0 +1,1 @@
+Time Slow: 90%. Duration: about 5 rounds of combat. There can only be one time stop in effect at once, a new one will replace an ongoing one.

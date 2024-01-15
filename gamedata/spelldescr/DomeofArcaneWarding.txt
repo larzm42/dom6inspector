@@ -1,0 +1,1 @@
+An astral dome is created over the entire province that the mage is located in. The dome will protect the province from many spells that originate from outside the warded province. The more magic gems put into the spell, the longer it will last. If the mage dies, the dome dissolves instantly. The dome has a 50 percent chance of stopping each spell that tries to pass through it.

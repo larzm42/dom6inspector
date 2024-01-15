@@ -1,0 +1,1 @@
+Astral cord detection chance = 40% * enemy mage's astral level.

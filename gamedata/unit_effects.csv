@@ -1,0 +1,568 @@
+number	name	test
+10	Magicboost F
+11	Magicboost A
+12	Magicboost W
+13	Magicboost E
+14	Magicboost S
+15	Magicboost D
+16	Magicboost N
+17	?Magicboost B
+22	Magicboost All
+23	Elementrange
+24	Sorceryrange
+25	Allrange
+30	Gemprod Fire
+31	Gemprod Air
+32	Gemprod Water
+33	Gemprod Earth
+34	Gemprod Astral
+35	Gemprod Death
+36	Gemprod Nature
+37	Gemprod Blood
+40	Firerange
+41	Airrange
+42	Waterrange
+43	Earthrange
+44	Astralrange
+45	Deathrange
+46	Naturerange
+47	Bloodrange
+50	Pathboost Uw
+51	Pathboost Land
+52	Foreignpathboost
+71	No Move Pen From Armor
+101	Ivy Lord
+103	Standard
+104	Petrify Attackers
+105	Awe
+106	Poison Aura
+107	Dom Monster Autosum?
+108	Stealthy
+110	Item Waterbreathing
+111	Gift of Water Breathing
+112	Sailing Ship Size
+115	Extra Life
+116	Blood Searcher
+117	Reinvigoration
+118	Forge Bonus Percentile
+120	Item Lesser Horror Attack Chance
+121	Adept Researcher
+122	Supply Bonus
+123	Item Chance to Become Werewolf
+124	Reaper
+125	Siege Bonus
+126	Eyeloss
+127	Horror Mark Melee Attackers
+128	Vine Shield Effect
+131	Pillager
+132	Alchemist
+133	Autospell Repeat
+135	Death Explosion
+139	Monster Summoner 1?
+140	Monster Summoner 2?
+141	Monster Summoner 3?
+142	Monster Summoner 4?
+143	Autosum
+146	Coldsummon
+147	Immortal Timer?
+149	?Immortality Reform Time Scale with Dist
+150	Item Att Skill Bonus
+151	Stolen Strength
+152	Item Warning
+153	?Immortality Spring
+154	Corpselord
+156	Dominion Spreader
+157	Additional Leadership
+158	Additional Ldr Magic
+159	Additional Ldr Undead
+161	Item Mr Bonus
+162	?Item Pen Bonus
+164	Summon Allies 1?
+165	Summon Allies 2?
+166	Summon Allies 3?
+167	Summon Allies 4?
+168	Summon Allies 5?
+169	Lamiabonus
+170	Patrol Bonus
+171	Blind
+172	Plague Carrier
+173	Turmoilsummon
+174	Storm Power
+175	Storm Immunity
+176	Cold Power
+177	Fire Power
+178	Eyes
+181	Item Prec Bonus
+182	Itemslots
+183	Fear
+184	Heretic
+185	Start Affliction
+186	Paralyzed
+187	Percent Path Reducton
+188	Poison Barbs
+189	Regeneration
+190	Berserker
+191	Ice Protection
+192	?Shapechance
+193	Shapechange
+194	Secondshape
+195	Firstshape
+196	Secondtmpshape
+197	Secondshape Type2
+198	Fire Resistance
+199	Shock Resistance
+200	Poison Resistance
+201	Cold Resistance
+202	Damage Reversal
+204	Deathwail
+205	Patience
+206	Summoning Skill
+208	Air Shield
+209	Onebattlespell
+210	Dream Seduction
+211	Inquisitor
+212	Army Healer
+213	Assassin 2?
+214	Spy
+215	Castle Defence Bonus
+216	Adept Sacrificer
+217	Ambidextrous
+218	??Change Gender for Seduction
+219	Domsummon20
+220	Chill Aura
+221	Regen Uw
+222	Banefire Shield
+223	Cause Unrest
+224	Corruptor
+225	Item Curse Random Units in Province
+226	Startingafflictions
+227	Picus Procas Axe
+228	Bringer of Fortune
+231	Spring Power
+232	Summer Power
+233	Autumn Power
+234	Winter Power
+235	Fortune Teller
+236	Corpse Eater
+237	Corpse Eater Hp Per Corpse
+238	Corpse Eater Num Corpses Eaten
+239	Item Champprize
+240	Flies When Blessed
+241	Domsummon
+242	Startdom
+243	Pathcost
+244	Sight Vengeance
+245	Landshape
+246	Watershape
+247	Beckon
+248	Fixed Research
+249	Clockwork Lord
+250	Desiccation
+251	Nametype
+253	Homesick
+255	Cursed Luck
+258	Uwdamage
+260	Upgrade Ethereal to True
+261	Horror Mark
+262	Item Effect Tainted
+264	Deserter
+265	Resource Size
+270	Dragon Master
+271	Curse Bestower
+272	Philosopher
+273	Mundane Researcher
+274	Doom Greater Horror Desertion
+275	Unique
+277	Void Sanity
+278	Item Nation Restricted
+279	Spell Notfornation
+280	Stone Being
+281	Darkvision
+284	Maxage
+285	Startage
+286	Start Age Modifier
+288	Population Killer
+289	Horror Seed
+291	Wish Strength Bonus
+292	Item Noforgebonus
+293	Dark Power
+294	Is Illusion
+295	Disbelieve
+297	Explode On Death
+298	??Seduction Ability?
+299	Encase in Ice
+300	Land Reinvigoration
+301	% More Likely to Cause Afflictions
+303	Item Yearaging
+304	Reincarnation
+305	Item Hp Bonus
+306	Sleep Aura
+307	Supplysize
+308	Item Morale Bonus
+309	Insanity
+310	Insane Shattered Soul Command Block
+311	Item Chance to be Sent to Void
+313	Inferno Returning
+314	Kokytos Returning
+315	Insanify
+316	Heat Aura
+317	Addrandomage
+320	??Defiler?
+321	Astral Shield
+322	Forest Shape
+323	Plain Shape
+324	Magic Power
+325	?Percent Max Hp Damage Every Turn
+326	Fatigue Sacred Aura
+327	Halt Heretic
+328	Shattered Soul
+330	Speciallook
+331	Ai Single Rec
+332	???Nowish
+333	Void Returning
+334	Innate Caster
+335	Growhp
+336	Shrinkhp
+337	Reforming
+338	Swarm Body
+339	??Used By Swarm Body Reforming
+341	Inspiring Researcher
+342	Tax Collector
+343	Gem Collector
+344	Immune to Armor Mapmove Penalty
+345	Temp Air Gems
+346	Temp Water Gems
+347	Temp Earth Gems
+348	Temp Astral Gems
+349	Temp Death Gems
+350	Temp Nature Gems
+351	Temp Blood Slaves
+352	Defence Organizer
+354	Healer Auto
+355	Disease Healer
+356	Disease Grinder
+357	Noagingland
+361	Extra Arms
+363	Master Smith
+364	Reanimation Bonus Divine
+365	Reanimation Bonus Arcane
+366	Formation Fighter
+367	Undisciplined
+368	Inspirational
+369	Beastmaster
+370	Item Loseeye
+372	Graphicsize
+373	Swallow On Trample
+374	Digest
+375	Incorporate
+376	Unteleportable
+377	Item Def Skill Bonus
+379	Taskmaster
+380	Slave
+381	Recruitment Limit
+382	Invulnerability
+383	Protective Force
+384	Item Minsize
+385	Item Maxsize
+388	Offscript Research Level
+389	Randomspell
+390	Item Stealthboost
+391	Horror
+392	Alternative Firstshape Eater of Dead
+393	Returning On Damage
+394	Reform
+395	Battlesum1
+396	Battlesum2
+397	Battlesum3
+398	Battlesum4
+399	Battlesum5
+401	Disease Explosion
+402	Mind Slimer
+404	Spell Nocastmindless
+406	Affliction Resistance
+407	Resource Bonus
+408	Bodyguard
+409	Leaves After Battle If Wounded Or Has Killed
+410	Sailing Max Unit Size
+411	Elegist
+412	Slimer
+413	Death Curse
+414	Blood Vengeance
+415	Undying
+416	Chaos Power
+417	Dom Monster Summon Rare
+418	Cannot Pass Rivers
+419	Obfuscate
+420	Foolscouts
+421	Mountain Survival
+422	Forest Survival
+423	Waste Survival
+424	Swamp Survival
+426	Item Mapspeed
+427	Bug
+428	Bug Uw
+429	Ai No Recruit
+430	Pearl Cultivator
+431	Adept Crossbreeder
+432	Auto Comslave
+433	Unknown Effect That Targets Killer
+434	Deathbanish
+435	All Plane Returning
+436	Batstartsum1
+437	Batstartsum2
+438	Batstartsum3
+439	Batstartsum4
+440	Batstartsum5
+441	Batstartsum1D6
+442	Batstartsum2D6
+443	Batstartsum3D6
+444	Batstartsum4D6
+445	Batstartsum5D6
+446	Batstartsum6D6
+447	Batstartsum7D6
+448	Batstartsum8D6
+449	Batstartsum9D6
+450	Divine Insights
+451	Research Without Magic
+452	Gold Maker
+453	Forge Bonus Fixed
+454	Item Reqeyes
+455	Item Unusable By Unit Type Mask
+456	Item Only Usable By Unit Type Mask
+457	Item Only Usable By Fliers Or Mounted
+458	Chaos Recruitment
+459	Must Fight in Arena
+460	Is Adventurer
+461	Assassin
+462	Regeneration Limited
+463	Master Ritualist
+465	Cleanshape
+466	??Special Passive Reanimator
+467	Defector
+468	No Hof
+469	Req Lab to Recruit
+470	Req Temple to Recruit
+471	Starts Horrormarked
+472	Spread Negative Scale
+473	Spread Positive Scale
+478	Overcharged
+479	Noaging
+480	Indep Spell Level Plus One
+481	Dungeon Creature
+483	Scale Walls
+484	Death Power
+485	Death Recruitment
+486	Guardian Spirit Modifier
+487	Restricteditem
+488	Use Restricted Item
+489	Ice Forging
+490	Heat Rec
+491	Cold Rec
+492	Is Yazad
+493	Is Daeva
+494	Startitem
+496	Acid Digest
+497	Acid Shield
+498	Drake
+500	Plant
+501	Fireattuned
+502	Airattuned
+503	Waterattuned
+504	Earthattuned
+505	Astralattuned
+506	Deathattuned
+507	Natureattuned
+508	Bloodattuned
+509	Transformation
+510	Promotion
+511	Mummify
+512	Mummify Partner
+513	Disease Resistance
+514	Reanimate On Kill
+515	Reanimate On Kill Shape
+516	Prophet Shape
+517	Send Lesser Horror Mult
+518	Poison Skin
+519	Xploss On Shape Change
+520	Theft of Sun Awe
+521	Supaya Reanimation Count
+522	Hpoverflow
+523	Hpoverslow
+524	Domrec
+525	Berserk While Blessed
+526	Land Damage
+527	Heat Aura Uw
+529	Sloth Power
+530	Aboleth
+531	Mind Vessel
+532	Is Slave Vessel
+533	Commands Slave Vessel
+534	Hero Turn Arrival Limit
+535	Sailsize
+537	?Neednoteat
+538	Poison Weapons
+539	Withering Weapons
+540	Death Weapons
+541	Bless Twist Fate
+542	Magic Weapons
+543	Solar Weapons
+544	Unholy Weapons
+545	Flaming Weapons
+546	Thunder Weapons
+547	Charge Body 10An
+548	Farshot Bless
+549	Cold Weapons
+554	Blood Surge Magnitude
+555	Blood Bond
+556	Combat Far Caster
+558	Tattoo Bear
+559	Tattoo Horse
+560	Tattoo Wolf
+561	Tattoo Boar
+562	Tattoo Snake
+563	Astral Fetters
+564	Temple Trainer
+565	Start Item
+568	Recuperation
+570	??Gives Death Gems After Battle
+571	Swimming
+573	Unsurroundable
+574	Item Nationrebate
+575	Itemdrawsize
+577	Unhindered
+578	Stun
+580	Petrified
+581	Combat Caster
+583	No Armor Mapmove Penalty
+584	Foreignshape
+585	Homeshape
+586	Monpresentrec
+587	Ownsmonrec
+588	No Wish
+589	Addupkeep
+590	Springshape
+591	Summershape
+592	Autumnshape
+593	Wintershape
+594	Mason
+595	Swiftness
+596	Itemcost1
+597	Itemcost2
+598	Oni Summoner
+600	Min Imprisonment
+601	Fateweaving
+602	Realm
+605	Sun Awe
+606	Floating
+607	Spirit Sight
+608	Invisible
+609	Startaffliction
+610	Startmajoraff
+612	Item Autobless
+613	Fast Casting
+614	Never Heals
+615	Uw Regen
+616	Spellsinger
+617	Spell Maxbounces
+618	Magic Attuned Researcher
+621	Item Islance
+622	Trinity
+623	Trinity Mag
+624	Unify
+625	Triple3Mon
+626	Power of The Turning Year
+627	Fortkill
+628	Thronekill
+629	Far Thronekill
+630	Indepmove
+631	Indepstay
+632	Reanimator Priest
+634	Norange
+635	Polymorph Immune
+636	Pretender Original Form
+637	Montag
+638	Stun Immune
+639	Mounted Berserker
+641	Skirmisher
+642	Slaver
+643	Slaver Bonus
+644	Min Size Leader
+645	Dark Vessels
+646	Animal Awe
+647	Auto Com Slave 2
+648	Auto Com Master
+649	Farsail
+651	Taurobolium
+652	Fire Shield
+653	Fire Shield Uw
+654	Blessing of God Slayer
+655	?Light On Unit
+656	Twiceborn Shape
+658	Carcass Collector
+659	Wolf
+660	Uncurable Affliction
+662	Start Effect Value 1
+663	Start Effect Value 2
+664	Stygian Guide
+665	Immortality Dominion
+666	Mind Collar Magnitude
+667	Mind Collar Activated
+668	Lab Promotion
+669	Islance
+670	Can Use Lances
+671	?Winter Summon 1D3
+672	Starts with Heroic Ability
+676	??Mountain Recruit
+677	Enchrebate 25Percent
+678	Enchrebate 50Percent
+680	?Land Reinvigoration
+681	Land Encumbrance
+683	Notsacred
+684	Ind Autobless
+685	Counts as Sun
+686	Lord over Heathen Tribes
+687	Unknown Involved in Blood Slave Usage
+688	Unseen
+689	Iron Vuln
+690	Batstartsum 1D3
+692	Domshape
+693	Notdomshape
+694	Dominion Power
+695	Plague Doctor
+698	Salt Vuln
+699	Montagweight
+700	Spell Provrange
+701	Spell Onlygeodst
+702	Spell Onlygeosrc
+703	Spell Nogeosrc
+705	Spell Nowatertrace
+706	Spell Nolandtrace
+707	Spell Walkable
+708	Spell Hiddenench
+709	Spell Onlyowndst
+711	Spell Onlyatsite
+713	Spell Onlycoastsrc
+715	Spell Reqfly
+716	Spell Farsummoncom
+718	Spell Req Unitability
+719	Spell Req No Ability
+721	Spell Strikesound
+722	Spell Godpathspell
+723	Spell Casttime
+724	Spell Nextingeo
+729	Spell Friendly Enchantment
+731	Spell Onlymnr
+732	Spell Polygetmagic
+733	Spell Sethome
+735	Spell Aibadlvl
+738	Spell Onlyfriendlydst
+741	Spell Reqsun
+742	Spell Ainocast
+743	Spell Aispellmod
+744	Spell Notmnr
+800	Number of Lost Arms
+802	Lost X Eyes
+1000	Enchrebate 10Gold
+1001	Enchrebate 20Gold
+1002	Enchrebate 50Gold
+1003	Maxprison

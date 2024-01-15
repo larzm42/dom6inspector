@@ -1,0 +1,1 @@
+This enchantment enables a mage to destroy an active global enchantment. The power of global enchantments is often boosted with the use of additional gems. This number of gems must be matched in order for the dispel to work.

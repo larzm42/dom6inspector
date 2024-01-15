@@ -1,0 +1,1 @@
+This spell creates a cloud of sedative spores. Units caught in the cloud will fall asleep if they remain there for too long.

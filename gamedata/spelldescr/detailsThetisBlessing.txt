@@ -1,0 +1,1 @@
+Poor Amphibian penalty: CS -half, Att -3, Def -3, Enc +1

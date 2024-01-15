@@ -1,0 +1,1 @@
+Gold gained: 15 gold per gem spent after the initial cost (increased by two for every extra mage level).

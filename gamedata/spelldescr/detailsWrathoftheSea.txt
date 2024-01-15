@@ -1,0 +1,1 @@
+Coastal provinces and provinces with lakes will get income -30%
