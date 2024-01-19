@@ -354,7 +354,7 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 	//customise sort
 	this.preSort = function(){
 		//bound scope
-		var boosterSortPriority = ['F', 'A', 'W', 'E', 'S', 'D', 'N', 'B', 'H'];
+		var boosterSortPriority = ['F', 'A', 'W', 'E', 'S', 'D', 'N', 'G', 'B', 'H'];
 		var isSortedOnBoosters = false;
 		var data = modctx.itemdata;
 
@@ -821,7 +821,7 @@ var ignorekeys = {
 	armor:1,
 	constlevel:1,
 	mainpath:1, mainlevel:1, secondarypath:1, secondarylevel:1,
-	A:1, B:1, D:1, E:1, F:1, N:1, S:1, W:1, H:1,
+	A:1, B:1, D:1, E:1, F:1, N:1, S:1, W:1, H:1, G:1,
 	animalawe2:1,iceprot2:1,
 
 	gemcost:1,

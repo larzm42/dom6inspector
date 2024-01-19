@@ -49,7 +49,7 @@ id	name	type	def	enc	rcost	end
 48	Silver Hauberk	5	-1	1	0	
 49	Lightweight Scale Mail	5	0	1	12	
 50	Weightless Scale	5	0	0	0	
-51	Bone Armor	5	-3	3	0	
+51	Bone Armor	5	-2	2	0	
 52	Ice Studded Armor	5	-1	0	6	
 53	Meteorite Armor	5	-2	4	25	
 54	Shroud of the Battle Saint	5	0	0	0	
@@ -199,7 +199,7 @@ id	name	type	def	enc	rcost	end
 198	Raptorian Plate Cuirass	5	-1	1	17	
 199	Turan Plated Mail	5	-3	4	17	
 200	Champion's Cuirass	5	-1	3	20	
-201	Armor of Knights	5	-1	2	20	
+201	Armor of Knights	5	-2	3	20	
 202	Cloth Armor	5	0	0	1	
 203	Reinforced Cloth Armor	5	0	1	4	
 204	Armor of the Sun	5	-2	3	20	
@@ -213,9 +213,9 @@ id	name	type	def	enc	rcost	end
 212	Magic Crown	6	0	0	0	
 213	Golden Helmet	6	0	0	0	
 214	Golden Armor	5	-2	4	0	
-215	Full Plate of Ulm	5	-3	4	28	
-216	Full Chain of Ulm	5	-3	3	19	
-217	Plate Cuirass of Ulm	5	-1	2	17	
+215	Full Plate of Ulm	5	-3	4	30	
+216	Full Chain of Ulm	5	-3	3	21	
+217	Plate Cuirass of Ulm	5	-1	2	19	
 218	Full Helmet of Ulm	6	-1	0	6	
 219	Half Helmet of Ulm	6	0	0	4	
 220	Tower Shield of Ulm	4	5	2	4	
@@ -249,3 +249,44 @@ id	name	type	def	enc	rcost	end
 248	Cyclope Helmet	6	0	0	6	
 249	Cloth Headpiece	6	0	0	0	
 250	Shield of Wisdom	4	5	1	0	
+251	Leather Barding	5	0	0	3	
+252	Light Scale Barding	5	0	1	6	
+253	Cataphract Barding	5	-1	2	10	
+254	Plate Barding	5	-2	3	15	
+255	Silver Barding	5	-1	2	20	
+256	Rusty Scale Barding	5	0	1	0	
+257	Rusty Cataphract Barding	5	-1	2	0	
+258	Bloodstone Armor	5	-3	6	0	
+259	Gossamer Vest	5	0	0	0	
+260	Twilight Shield	4	4	1	0	
+261	Fay Cap	6	0	0	0	
+262	Mirror Shield	4	6	2	0	
+263	Bronze Barding	5	-2	3	14	
+264	Light Bronze Barding	5	0	1	8	
+265	Brightmail Hauberk	5	0	0	0	
+266	War Crown	6	0	0	0	
+267	Heavenly Shield	4	4	1	8	
+268	Heavenly Plate	5	-2	3	25	
+269	Fur Mask	6	0	0	0	
+270	Enchanted Leather Barding	5	0	0	3	
+271	Boar Leather Barding	5	0	0	3	
+272	Enchanted Plate Barding	5	-1	2	15	
+273	Blacksteel Barding	5	-2	3	15	
+274	Gossamer Barding	5	0	0	3	
+275	Fay Steed Barding	5	-1	2	15	
+276	Lightweight Cataphract Barding	5	0	1	10	
+277	Golden Barding	5	-2	3	15	
+278	Magic Crown	6	0	0	0	
+279	Armor of Meteoritic Iron	5	-3	5	0	
+280	Plate Barding of Ulm	5	-2	3	15	
+281	Gossamer Mail	5	-1	1	13	
+282	Fay Plate Armor	5	-2	3	25	
+283	Fay Cap	6	0	0	2	
+284	Fay Helmet	6	-1	0	5	
+285	Gossamer Shield	4	4	0	6	
+286	Bone Mask	6	-1	0	0	
+287	Cat Barding	5	-1	1	10	
+288	Charred Shield	4	4	1	0	
+289	Lizard Barding	5	-1	2	12	
+290	King's Barding	5	0	1	15	
+291	Icicle Dress	5	0	0	1	

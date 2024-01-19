@@ -1,1 +1,0 @@
-Unrest +20, Income -50%. Reported as a random event.

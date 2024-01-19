@@ -1,1 +1,0 @@
-Size +1, HP +30%, Str +3, Def -1, Map move +2.

@@ -1,1 +1,0 @@
-Doubles the supply loss in a besieged castle.

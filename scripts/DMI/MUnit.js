@@ -188,7 +188,7 @@ MUnit.prepareData_PreMod = function() {
 		//random magic paths
 		o.randompaths = [];
 		var pmasks = {
-			128:'F',  256:'A',  512:'W',  1024:'E',  2048:'S',  4096:'D',  8192:'N',  16384:'B',  32768:'H'
+			128:'F',  256:'A',  512:'W',  1024:'E',  2048:'S',  4096:'D',  8192:'N',  16384:'G',  32768:'B', 65536: 'H'
 		};
 		for (var i=1, bf;  bf= o['mask'+i];  i++) {
 			bf = parseInt(bf);			delete o['mask'+i];
@@ -398,6 +398,12 @@ MUnit.prepareData_PostMod = function() {
 				if (k == 'N') {
 					plevel = parseInt(plevel) + parseInt(o.magicboostN);
 					o.pathboost += (parseInt(o.magicboostN) > 0 ? '+' + parseInt(o.magicboostN) : parseInt(o.magicboostN)) + 'N ';
+				}
+			}
+			if (o.magicboostG) {
+				if (k == 'G') {
+					plevel = parseInt(plevel) + parseInt(o.magicboostG);
+					o.pathboost += (parseInt(o.magicboostG) > 0 ? '+' + parseInt(o.magicboostG) : parseInt(o.magicboostG)) + 'G ';
 				}
 			}
 			if (o.magicboostALL) {
@@ -787,11 +793,18 @@ MUnit.buildRandomArrays = function (o, i, arr, baseM) {
 					newM[6] = parseInt(r.levels);
 				}
 			}
-			if (letter.indexOf('B') != -1) {
+			if (letter.indexOf('G') != -1) {
 				if (newM[7]) {
 					newM[7] = parseInt(newM[7])+parseInt(r.levels);
 				} else {
 					newM[7] = parseInt(r.levels);
+				}
+			}
+			if (letter.indexOf('B') != -1) {
+				if (newM[8]) {
+					newM[8] = parseInt(newM[8])+parseInt(r.levels);
+				} else {
+					newM[8] = parseInt(r.levels);
 				}
 			}
 			if (o.randompaths.length > i+1) {
@@ -1159,7 +1172,7 @@ MUnit.prepareForRender = function(o) {
 
 		//item slots
 		var slotwords = [];
-		var slotorder = ['hand','hands',  'head','heads',  'body','bodies',  'foot','feet',  'misc','misc'];
+		var slotorder = ['hand','hands',  'bow','bows',  'head','heads',  'body','bodies',  'foot','feet',  'misc','misc'];
 		for (var j=0; j<slotorder.length; j+=2) {
 			var t = slotorder[j];
 			var n = parseInt(o[t]);
@@ -1499,7 +1512,7 @@ MUnit.CGrid = Utils.Class( DMI.CGrid, function() {
 	//customise sort
 	this.preSort = function(){
 		//bound scope
-		var boosterSortPriority = ['F', 'A', 'W', 'E', 'S', 'D', 'N', 'B', 'H', 'U', 'R'];
+		var boosterSortPriority = ['F', 'A', 'W', 'E', 'S', 'D', 'N', 'G', 'B', 'H', 'U', 'R'];
 		var isSortedOnBoosters = false;
 		var data = modctx.unitdata;
 
@@ -2014,6 +2027,10 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'monpresentrec',	'recruit when present',	function(v,o){ //TODO: reverse lookup
 		return Utils.unitRef(v);
 	},
+	'mountmnr',	'mount',	function(v,o){
+		return Utils.unitRef(v);
+	},
+	'skilledrider', 'skilled rider',
 
 	'heretic',		'heretic',
 	'shatteredsoul',	'shattered soul', 	Format.Percent, //tartarian
@@ -2296,9 +2313,9 @@ var ignorekeys = {
 	researchbonus:1, listed_mpath:1, fixedresearch:1,
 	n_domsummon:1, n_makemonster:1, n_autosum:1, n_summon:1,
 
-	hand:1, head:1, body:1, foot:1, misc:1, crownonly:1,
+	hand:1, bow:1, head:1, body:1, foot:1, misc:1, crownonly:1,
 
-	A:1, B:1, D:1, E:1, F:1, N:1, S:1, W:1, H:1, randompaths:1,
+	A:1, B:1, D:1, E:1, F:1, N:1, S:1, W:1, G:1, H:1, randompaths:1,
 	magicboost_A:1, magicboost_B:1, magicboost_D:1, magicboost_E:1, magicboost_F:1, magicboost_N:1, magicboost_S:1, magicboost_W:1, magicboost_H:1,
 	magicboost_all:1,
 

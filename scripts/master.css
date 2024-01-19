@@ -93,6 +93,7 @@ body {overflow:hidden;}
 .gemicon.Gem_B { background-image:url('../images/magicicons/Gem_B.png'); width:12px; }
 .gemicon.Gem_S { background-image:url('../images/magicicons/Gem_S.png'); }
 .gemicon.Gem_H { background-image:url('../images/magicicons/Gem_H.png'); }
+.gemicon.Gem_G { background-image:url('../images/magicicons/Gem_G.png'); }
 div.slick-cell .gemicon {
 	top:3px;
 }
@@ -116,6 +117,7 @@ div.slick-cell .gemicon {
 .pathicon.Path_B { background-image:url('../images/magicicons/Path_B.png'); }
 .pathicon.Path_S { background-image:url('../images/magicicons/Path_S.png'); }
 .pathicon.Path_H { background-image:url('../images/magicicons/Path_H.png'); }
+.pathicon.Path_G { background-image:url('../images/magicicons/Path_G.png'); }
 
 .pathicon.Path_R { background-image:url('../images/magicicons/Path_R.png'); width:13px; margin:0px 1px 0px 0px; }
 .pathicon.Path_U { background-image:url('../images/magicicons/Path_U.png'); width:12px; margin:0px 1px 0px 1px; }

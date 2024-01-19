@@ -1,1 +1,0 @@
-Confusion check 50% every turn. Confused targets move randomly and might attack friend or foe.

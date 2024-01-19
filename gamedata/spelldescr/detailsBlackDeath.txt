@@ -1,1 +1,0 @@
-Population -50%, Unrest +10

@@ -6,7 +6,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 4	Mark	-1	1	-1	0	-1	0	4	1	0	0	0	0	261	
 5	Thunder Shock	-1	1	-1	0	-1	0	5	1	0	0	0	0	2	
 6	rain stone	-1	1	-1	0	-1	0	6	1	0	0	0	0	5	
-7	Minor Fear	-1	1	-1	0	-1	0	7	1	0	0	0	0	2	
+7	Minor Fear	-1	1	-1	0	-1	0	7	1	0	0	0	0	1	
 8	Area Weak Poison	-1	1	-1	0	-1	0	8	1	0	0	0	0	1004	
 9	Minor Chill Stun	-1	1	-1	0	-1	0	9	1	0	0	0	0	2010	
 10	Army of Zombies	-1	1	-1	0	-1	0	10	2010	0	0	0	0	-2	
@@ -20,33 +20,33 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 18	Summon Devil	-1	1	-1	0	-1	0	18	1	0	0	0	0	304	
 19	Fire Resistance	-1	1	-1	0	-1	0	19	1	0	0	0	0	1024	
 20	Large Area Decay	-1	1	-1	0	-1	0	20	1	0	0	0	0	256	
-21	Major Fear	-1	1	-1	0	-1	0	21	1	0	0	0	0	4	
-22	Summon 2 Imps	-1	1	-1	0	-1	0	22	2	0	0	0	0	303	
+21	Major Fear	-1	1	-1	0	-1	0	21	1	0	0	0	0	3	
+22	...	-1	1	-1	0	-1	0	22	1	0	0	0	0	0	
 23	Summon Vine Man	-1	1	-1	0	-1	0	23	1	0	0	0	0	361	
 24	Area Feeble Mind	-1	1	-1	0	-1	0	24	1	0	0	0	0	33554432	
-25	10 Trolls	-1	1	-1	0	-1	0	25	10	0	0	0	60	518	
-26	20 imps	-1	1	-1	0	-1	0	26	20	0	0	0	0	303	
-27	Strength, Barkskin and Regeneration	-1	1	-1	0	-1	0	27	1	0	0	0	0	176	
+25	10 Trolls	-1	1	-1	0	-1	0	25	10	0	0	0	0	518	
+26	40 imps	-1	1	-1	0	-1	0	26	40	0	0	0	0	303	
+27	"Strength, Barkskin and Regeneration"	-1	1	-1	0	-1	0	27	1	0	0	0	0	176	
 28	Court of Gnomes	-1	1	-1	0	-1	0	28	15	0	0	0	0	561	
 29	Court of Sylphs	-1	1	-1	0	-1	0	29	15	0	0	0	0	562	
-30	Phantasmal Archers	-1	1	-1	0	-1	0	30	20	0	0	0	0	3233	
+30	Archer Illusions	-1	1	-1	0	-1	0	30	40	0	0	0	0	3233	
 31	Meteor Shower	-1	1	-1	0	-1	0	31	1	0	0	0	0	150	
 32	Mummification	-1	1	-1	0	-1	0	32	1	0	0	0	0	625	
 33	Summon Jinn	-1	1	-1	0	-1	0	33	1	0	0	0	0	490	
 34	Ark	-1	1	-1	0	-1	0	34	1	0	0	0	0	58	
 35	Area Chest Wound	-1	1	-1	0	-1	0	35	1	0	0	0	0	8388608	
-36	15 Sea Trolls	-1	1	-1	0	-1	0	36	15	0	0	0	72	564	
-37	15 Draconians	-1	1	-1	0	-1	0	37	15	0	0	0	0	593	
-38	Court of Sprites	-1	1	-1	0	-1	0	38	15	0	0	0	0	592	
+36	15 Sea Trolls	-1	1	-1	0	-1	0	36	15	0	0	0	0	564	
+37	30 Draconians	-1	1	-1	0	-1	0	37	30	0	0	0	0	593	
+38	Court of Sprites	-1	1	-1	0	-1	0	38	10	0	0	0	0	592	
 39	Heat Stun	-1	1	-1	0	-1	0	39	1	0	0	0	0	2010	
 40	Extra feeble mind battle field	-1	1	-1	0	-1	0	40	1	0	0	0	0	33554432	
-41	Extra cold immunity	-1	1	-1	0	-1	0	41	1	0	0	0	0	201	
+41	Extra cold immunity	-1	1	-1	0	-1	0	41	1	0	0	0	0	2305843009213693952	
 42	Minor Paralysis	-1	1	-1	0	-1	0	42	1	0	0	0	0	5	
-43	extra limp	-1	1	-1	0	-1	0	43	1	0	0	0	44	262144	
+43	extra limp	-1	1	-1	0	-1	0	43	1	0	0	0	0	262144	
 44	extra cripple	-1	1	-1	0	-1	0	44	1	0	0	0	0	16777216	
 45	15 Ether Warriors	-1	1	-1	0	-1	0	45	15	0	0	0	0	736	
-46	Extra Soulless	-1	1	-1	0	-1	0	46	20	0	0	0	0	-3	
-47	Entangle	-1	1	-1	0	-1	0	47	1	0	0	0	0	64	
+46	Extra Soulless	-1	1	-1	0	-1	0	46	150	0	0	0	0	-3	
+47	Entangle	-1	1	-1	0	-1	0	47	1	0	0	0	4	64	
 48	ormflock	-1	1	-1	0	-1	0	48	5	0	0	0	0	403	
 49	impflock	-1	1	-1	0	-1	0	49	10	0	0	0	0	303	
 50	7 shades	-1	1	-1	0	-1	0	50	7	0	0	0	0	676	
@@ -59,23 +59,24 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 57	Scrying	-1	1	-1	0	-1	0	57	1	0	0	0	0	0	
 58	Summon Qarin	-1	1	-1	0	-1	0	58	1	0	0	0	0	3471	
 59	Grow Headless Hoburg	-1	1	-1	0	-1	0	59	1	0	0	0	0	1139	
-60	5 War Trolls	-1	1	-1	0	-1	0	60	5	0	0	0	61	1037	
+60	5 War Trolls	-1	1	-1	0	-1	0	60	5	0	0	0	0	1037	
 61	2 Troll Moose Knights	-1	1	-1	0	-1	0	61	2	0	0	0	0	1086	
 62	Telkhine Malediction	-1	1	-1	0	-1	0	62	1	0	0	0	0	45	
 63	Minor Paralysis	-1	1	-1	0	-1	0	63	1	0	0	0	0	5	
+64	1 Ether Lord	-1	1	-1	0	-1	0	64	1	0	0	0	0	737	
 65	Wolves	-1	1	-1	0	-1	0	65	3	0	0	0	0	284	
 66	Battle Darkness	-1	1	-1	0	-1	0	66	1	0	0	0	0	77	
 67	Beast Bats	-1	1	-1	0	-1	0	67	8	0	0	0	0	1357	
-68	Angels of the Choir	-1	1	-1	0	-1	0	68	9	0	0	0	69	1367	
-69	Harbingers of the Choir	-1	1	-1	0	-1	0	69	3	0	0	0	0	464	
+68	Angels of the Choir	-1	1	-1	0	-1	0	68	9	0	0	0	0	1367	
+69	Harbingers of the Choir	-1	1	-1	0	-1	0	69	3	0	0	0	0	3869	
 70	Heat of Buer	-1	1	-1	0	-1	0	70	1	0	0	2	0	6	
 71	Disbelieve	-1	1	-1	0	-1	0	71	1	0	0	0	0	999	
 72	5 Troll Guards	-1	1	-1	0	-1	0	72	5	0	0	0	0	1425	
-73	Gate Summon Fire	-1	1	-1	0	-1	0	73	1	0	0	0	74	304	
-74	Gate Summon Ice	-1	1	-1	0	-1	0	74	1	0	0	0	75	449	
-75	Gate Summon Storm	-1	1	-1	0	-1	0	75	1	0	0	0	76	632	
+73	Gate Summon Fire	-1	1	-1	0	-1	0	73	1	0	0	0	0	304	
+74	Gate Summon Ice	-1	1	-1	0	-1	0	74	1	0	0	0	0	449	
+75	Gate Summon Storm	-1	1	-1	0	-1	0	75	1	0	0	0	0	632	
 76	Gate Summon Iron	-1	1	-1	0	-1	0	76	1	0	0	0	0	489	
-77	10 Tengu Warriors	-1	1	-1	0	-1	0	77	10	0	0	0	78	1481	
+77	10 Tengu Warriors	-1	1	-1	0	-1	0	77	10	0	0	0	0	1481	
 78	15 Karasu Tengus	-1	1	-1	0	-1	0	78	15	0	0	0	0	1478	
 79	Natural Rain	-1	1	2	0	-1	0	79	1	0	0	0	0	7	
 80	Open Soul Trap	-1	1	-1	0	-1	0	80	4	0	0	0	0	-18	
@@ -88,7 +89,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 87	6 Maenads	-1	1	-1	0	-1	0	87	6	0	0	0	0	435	
 88	10 False Horrors	-1	1	-1	0	-1	0	88	10	0	0	0	0	448	
 89	4 Wheels	-1	1	-1	0	-1	0	89	4	0	0	0	0	2051	
-90	4 Ditanu	-1	1	-1	0	-1	0	90	4	0	0	0	91	2045	
+90	4 Ditanu	-1	1	-1	0	-1	0	90	4	0	0	0	0	2045	
 91	Kill Caster	-1	1	-1	0	-1	0	91	1	0	0	0	0	9999	
 92	1 Horse-face	-1	1	-1	0	-1	0	92	1	0	0	0	0	2090	
 93	Natural Storm	-1	1	2	0	-1	0	93	1	0	0	0	0	1	
@@ -98,1037 +99,1360 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 97	Pack of Wolves	-1	1	-1	0	-1	0	97	5	0	0	0	0	1224	
 98	Grow Monster	-1	1	-1	0	-1	0	98	1	0	0	0	0	-5	
 99	15 Forest Trolls	-1	1	-1	0	-1	0	99	15	0	0	0	0	2219	
-100	earth grip	-1	1	-1	0	-1	0	100	1	0	0	0	0	16384	
+100	earth grip	-1	1	-1	0	-1	0	100	1	0	0	0	4	16384	
 101	Disease	-1	1	-1	0	-1	0	101	1	0	0	0	0	1	
 102	Disease All Friendly	-1	1	-1	0	-1	0	102	1	0	0	0	0	1	
-103	Area Cripple	-1	1	-1	0	-1	0	103	1	0	0	0	0	16777216	
+103	Cripple	-1	1	-1	0	-1	0	103	1	0	0	0	0	16777216	
+104	Earthquake Knockdown Stun	-1	1	-1	0	-1	0	104	1	0	0	0	4	0	
+105	Entrancement	-1	1	7	1	-1	0	105	1	100	0	0	0	100	
 106	Record of Creation	-1	1	-1	0	-1	0	106	1	0	0	0	0	55	
-108	Battlefield Limp	-1	1	-1	0	-1	0	108	1	0	0	0	109	262144	
+107	Area Fire	-1	1	-1	0	-1	0	107	1	0	0	0	0	10	
+108	Battlefield Limp	-1	1	-1	0	-1	0	108	1	0	0	0	0	262144	
 109	Battlefield Cripple	-1	1	-1	0	-1	0	109	1	0	0	0	0	16777216	
-110	10 Great Olms	-1	1	-1	0	-1	0	110	10	0	0	0	0	2528	
+110	15 Great Olms	-1	1	-1	0	-1	0	110	15	0	0	0	0	2528	
 111	Summon Predatory Birds	-1	1	-1	0	-1	0	111	3	0	0	0	0	517	
 112	Burning	-1	1	-1	0	-1	0	112	1	0	0	0	0	512	
-150	Blessing	7	0	8	1	-1	0	150	1	100	0	0	0	1	
-151	Banishment	7	0	8	1	-1	0	151	1	0	0	0	0	3001	
-152	Ashes to Ashes	7	0	8	1	-1	0	152	1	0	0	0	0	3001	
-153	Burning	0	0	-1	0	-1	0	153	1	0	0	0	0	512	
-154	Purifying Water	7	0	8	1	-1	0	154	1	0	0	0	0	1001	
-155	Cleansing	0	0	-1	0	-1	0	155	1	0	0	0	0	3001	
-156	Pull from the Grave	7	0	8	1	-1	0	156	1	0	0	0	0	3001	
-157	Grip	0	0	-1	0	-1	0	157	1	0	0	0	0	16384	
-158	Wind of Memories	7	0	8	1	-1	0	158	1	0	0	0	0	1001	
-159	Memories of Death	0	0	-1	0	-1	0	159	1	0	0	0	0	3003	
-160	Final Rest	7	0	8	1	-1	0	160	1	0	0	0	0	999	
-161	Decree of the Underworld	7	0	8	1	-1	0	161	1	0	0	0	0	3001	
-162	Bewilderment	0	0	-1	0	-1	0	162	1	0	0	0	0	17179869184	
-163	Stellar Decree	7	0	8	1	-1	0	163	1	0	0	0	0	1001	
-164	Halt	0	0	-1	0	-1	0	164	1	0	0	0	0	100	
-165	Sermon of Courage	7	0	8	2	-1	0	165	1	100	0	0	0	32768	
-166	Smite Demon	7	0	8	2	-1	0	166	1	100	0	0	0	5005	
-167	Holy Word	7	0	8	2	-1	0	167	1	100	0	0	0	100	
-168	Holy Avenger	7	0	8	2	-1	0	168	1	0	0	0	0	4194304	
-169	Divine Blessing	7	0	8	3	-1	0	169	1	100	0	0	0	1	
-170	Smite	7	0	8	3	-1	0	170	1	100	0	0	0	10	
-171	Heavenly Fire	7	0	8	3	-1	0	171	1	100	0	0	0	10	
-172	Fiery Death	0	0	-1	0	-1	0	172	1	100	0	0	0	10	
-173	Watery Death	7	0	8	3	-1	0	173	1	100	0	0	0	10	
-174	Drowning	0	0	-1	0	-1	0	174	1	100	0	0	0	10	
-175	Word of Stone	7	0	8	3	-1	0	175	1	100	0	0	0	10	
-176	Petrification	0	0	-1	0	-1	0	176	1	100	0	0	0	999	
-177	Heavenly Strike	7	0	8	3	-1	0	177	1	100	0	0	0	10	
-178	Lightning Death	0	0	-1	0	-1	0	178	1	100	0	0	0	5	
-179	Word of Power	7	0	8	3	-1	0	179	1	100	0	0	0	10	
-180	Paralyzation	0	0	-1	0	-1	0	180	1	100	0	0	0	10	
-181	Syllable of Death	7	0	8	3	-1	0	181	1	100	0	0	0	10	
-182	Death	0	0	-1	0	-1	0	182	1	100	0	0	0	999	
-183	Exhaustion	0	0	-1	0	-1	0	183	1	100	0	0	0	20	
-184	Word of Thorns	7	0	8	3	-1	0	184	1	100	0	0	0	5	
-185	Tangles	0	0	-1	0	-1	0	185	1	100	0	0	0	64	
-186	Bleeding	0	0	-1	0	-1	0	186	1	100	0	0	0	8192	
-187	Claim Life	7	0	8	3	-1	0	187	1	100	0	0	0	20	
-188	Chestwound	0	0	-1	0	-1	0	188	1	100	0	0	0	8388608	
-189	Fanaticism	7	0	8	4	-1	0	189	1	0	0	0	0	32768	
-190	Divine Channeling	7	0	8	5	-1	0	190	1	0	90	0	0	91	
-191	Fire Flies	2	0	0	1	-1	0	191	6	-1	20	0	0	6	
-192	Air Shield	1	0	1	1	-1	0	192	1	0	10	0	0	8	
-193	Freezing Touch	2	0	2	1	-1	0	193	1	0	10	0	0	1008	
-194	Flying Shards	2	0	3	1	-1	0	194	2002	0	30	0	0	10	
-195	Twist Fate	1	0	4	1	-1	0	195	1	0	10	0	0	1	
-196	Hand of Dust	1	0	5	1	-1	0	196	1	0	10	0	0	1005	
-197	Sleep Ray	5	0	6	1	-1	0	197	1	0	20	0	0	1024	
-198	Bleed	6	0	7	1	-1	0	198	1	0	0	1	0	8192	
-199	Monster Boar	0	5	6	3	-1	0	199	1	0	0	10	0	11	
-200	Orgy	6	1	7	1	6	1	200	1	0	0	1	87	1881	
-201	Daughter of Typhon	0	9	6	5	5	2	201	1	0	0	30	0	1822	
-202	Gift of the Sacred Swamp	4	2	6	1	8	1	202	1	0	20	0	0	16777216	
-203	Awaken Hamadryad	4	5	6	4	-1	0	203	1	0	0	25	0	3066	
-204	Contact Lar	0	5	6	1	-1	0	204	1	-2	0	16	0	3087	
-205	Awaken Tattoos	4	3	6	1	8	1	205	1	100	20	0	0	549755813888	
-206	Sounder of Boars	0	3	6	1	8	1	206	20	0	0	20	0	1807	
-207	Contact Boar of Carnutes	0	5	6	1	3	1	207	1	0	0	7	0	1809	
-208	Contact Huli Jing	0	6	6	2	-1	0	208	1	0	0	30	0	1908	
-209	Thousand Year Ginseng	3	5	6	1	-1	0	209	1	0	0	8	0	-5	
-210	Internal Alchemy	1	5	2	2	4	1	210	1	0	0	10	0	15	
-211	Hannya Pact	0	0	5	1	-1	0	211	1	0	0	6	0	3070	
-212	Greater Hannya Pact	0	0	5	2	-1	0	212	1	0	0	12	0	1432	
-213	End of Culture	5	6	0	5	-1	0	213	1	0	0	60	0	106	
-214	End of Weakness	1	6	3	2	-1	0	214	1	0	0	1	0	16	
-215	Teaching Sign	7	0	8	1	6	1	215	1	0	0	0	0	128	
-216	Fear-not Sign	7	0	8	1	1	1	216	1	100	0	0	0	32776	
-217	Welcome Sign	7	0	8	1	0	1	217	1	100	0	0	0	999	
-218	Earth-touching Sign	7	0	8	1	3	1	218	1	100	0	0	0	999	
-219	Meditation Sign	7	0	8	1	2	1	219	1	0	0	0	0	15	
-220	Summon Shikome	0	4	5	2	-1	0	220	8	0	0	8	0	2100	
-221	Contact Jigami	0	4	6	1	-1	0	221	1	0	0	10	0	2089	
-222	Contact Mori-no-kami	0	5	6	3	-1	0	222	1	0	0	21	0	2093	
-223	Summon Ujigami	0	5	3	1	4	1	223	1	0	0	8	0	2095	
-224	Contact Kaijin	0	5	2	3	-1	0	224	1	0	0	25	0	2106	
-225	Contact Tatsu	0	6	3	3	-1	0	225	1	0	0	19	0	2099	
-226	Summon Kenzoku	0	6	4	1	3	1	226	1	0	0	9	0	2096	
-227	Summon Gozu Mezu	0	6	5	3	-1	0	227	1	0	0	7	92	2091	
-228	Contact Yama-no-kami	0	7	3	4	-1	0	228	1	0	0	28	0	2097	
-229	Summon Abysian Ancestors	0	2	5	1	0	1	229	5	0	0	5	0	1971	
-230	Reawaken Fossil	4	5	3	2	5	1	230	505	0	0	10	0	1977	
-231	Summon Spectral Infantry	0	2	5	1	0	1	231	5	0	0	5	0	1656	
-232	Contact Scorpion Man	0	8	3	1	0	1	232	1	0	0	12	0	1649	
-233	Inner Furnace	4	5	0	3	-1	0	233	1	0	0	1	0	16384	
-234	Infernal Breeding	6	3	7	2	-1	0	234	1009	0	0	25	0	1	
-235	Summon Bears	0	3	6	1	8	1	235	7	0	0	8	0	3003	
-236	Summon Simargl	0	2	1	1	-1	0	236	1	0	0	1	0	1947	
-237	Summon Firebird	0	3	0	1	4	1	237	1	0	0	2	0	1946	
-238	Send Lady Midday	0	5	1	1	5	1	238	1	0	0	10	0	1956	
-239	Contact Sirin	0	3	4	2	-1	0	239	1	0	0	8	0	1945	
-240	Send Vodyanoy	0	4	2	2	-1	0	240	1	0	0	20	0	1953	
-241	Summon Rusalka	0	4	2	1	5	1	241	1	0	0	16	0	1954	
-242	Summon Likho	0	4	5	1	-1	0	242	1	0	0	10	0	1952	
-243	Contact Alkonost	0	4	4	2	-1	0	243	1	0	0	15	0	1943	
-244	Summon Zmey	0	5	0	2	-1	0	244	1	0	0	5	0	1940	
-245	Send Bukavac	0	5	2	4	-1	0	245	1	0	0	5	0	1948	
-246	Contact Gamayun	0	5	4	3	-1	0	246	1	0	0	25	0	1944	
-247	Contact Beregina	0	6	2	3	3	1	247	1	0	0	35	0	1955	
-248	Contact Mountain Vila	0	7	6	4	-1	0	248	1	0	0	40	0	1942	
-249	Contact Cloud Vila	0	7	1	4	-1	0	249	1	0	0	40	0	1941	
-250	Contact Leshiy	0	8	6	6	-1	0	250	1	0	0	60	0	1949	
-251	Grow Fortress	1	0	6	4	-1	0	251	1	0	0	35	0	10	
-252	Fort of the Ancients	1	5	6	4	-1	0	252	1	0	0	35	0	10	
-253	Sacred Crocodile	0	4	6	2	2	2	253	1	0	0	3	0	2186	
-254	Herd of Elephants	0	3	6	2	-1	0	254	505	0	0	25	0	2398	
-255	Call Melqart	6	6	7	3	0	2	255	1	0	0	99	0	2267	
-256	Strange Fire	2	4	4	2	0	1	256	1	1	20	0	0	1006	
-257	Memories of Stone	4	5	5	2	3	1	257	505	0	0	10	0	1998	
-258	Dirge for the Dead	0	6	5	3	8	1	258	1	0	0	25	0	2045	
-259	Banquet for the Dead	0	8	5	4	8	1	259	1	0	0	55	90	2039	
-260	Scapegoats	6	3	7	1	-1	0	260	2	0	0	8	0	2074	
-261	Summon Se'irim	6	3	7	2	-1	0	261	5	0	0	23	0	2074	
-262	Summon Shedim	6	4	7	3	1	1	262	3	0	0	28	0	2073	
-263	Call Malakh	0	4	4	2	-1	0	263	1	0	0	9	0	2056	
-264	Call Hashmal	0	6	4	3	0	1	264	1	0	0	21	0	2057	
-265	Call Arel	0	7	4	4	6	1	265	1	0	0	39	0	2058	
-266	Call Ophan	0	8	4	5	0	2	266	1	0	0	49	0	2051	
-267	Call Merkavah	0	9	4	7	0	3	267	1	0	0	222	89	2052	
-268	Release Lord of Civilization	6	9	7	8	-1	0	268	1	0	0	177	85	14	
-269	Summon Mazzikim	0	3	6	1	-1	0	269	8	0	0	3	0	2072	
-270	Summon Lilot	0	5	6	4	-1	0	270	1	0	0	15	0	2071	
-271	Summon Kusarikkus	0	4	3	1	-1	0	271	2	0	0	6	0	3068	
-272	Summon Ugallu	0	5	1	3	-1	0	272	1	0	0	24	0	3095	
-273	Call Anzu	0	7	1	4	-1	0	273	1	0	0	4	0	3064	
-274	Call Apkallu	0	8	4	5	-1	0	274	1	0	0	60	0	2966	
-275	Call Ephor	0	0	5	1	-1	0	275	1	0	0	7	0	2845	
-276	Call Spectral Philosopher	0	0	5	1	-1	0	276	1	0	0	11	0	2846	
-277	Summon Telkhine	0	8	2	5	1	2	277	1	0	0	69	0	2874	
-278	Summon Hekateride	0	5	6	3	2	1	278	1	0	0	30	0	2834	
-279	Summon Daktyl	0	6	3	3	1	1	279	1	0	0	30	0	2836	
-280	Summon Monster Fish	0	6	2	3	-1	0	280	1	0	0	6	0	1664	
-281	Send Tupilak	4	5	5	3	2	1	281	1	0	0	5	0	1624	
-282	Unholy Command	7	0	8	1	-1	0	282	1	0	0	0	0	999	
-283	Unholy Protection	7	0	8	1	-1	0	283	1	100	0	0	0	67108864	
-284	Unholy Blessing	7	0	8	1	-1	0	284	1	100	0	0	0	1	
-285	Unholy Power	7	0	8	1	-1	0	285	1	100	0	0	0	33554432	
-286	Unholy Protection	7	0	8	2	-1	0	286	1	100	0	0	0	67108864	
-287	Unholy Blessing	7	0	8	2	-1	0	287	1	100	0	0	0	1	
-288	Apostasy	7	0	8	3	-1	0	288	1	100	0	0	0	999	
-289	Unholy Power	7	0	8	3	-1	0	289	1	100	0	0	0	33554432	
-290	Unholy Blessing	7	0	8	3	-1	0	290	1	100	0	0	0	1	
-291	Protection of the Sepulchre	7	0	8	3	-1	0	291	1	100	0	0	0	67108864	
-292	Power of the Sepulchre	7	0	8	4	-1	0	292	1	0	0	0	0	33554432	
-293	Revive Lictor	0	0	5	2	-1	0	293	1	0	0	3	0	259	
-294	Revive Censor	0	0	5	2	-1	0	294	1	0	0	4	0	260	
-295	Revive Acolyte	0	0	5	2	-1	0	295	1	0	0	10	0	256	
-296	Revive Bishop	0	0	5	2	-1	0	296	1	0	0	16	0	257	
-297	Revive Arch Bishop	0	0	5	3	-1	0	297	1	0	0	23	0	258	
-298	Revive Spectator	0	0	5	2	-1	0	298	1	0	0	12	0	254	
-299	Revive Dusk Elder	0	0	5	3	-1	0	299	1	0	0	20	0	253	
-300	Revive Wailing Lady	0	2	5	2	-1	0	300	1	0	0	8	0	255	
-301	Lictorian Guard	0	3	5	2	-1	0	301	5	0	0	10	0	259	
-302	Lamentation	0	5	5	3	-1	0	302	5	0	0	25	0	255	
-303	Great Lamentation	0	7	5	5	-1	0	303	14	0	0	33	0	255	
-304	Lictorian Legion	0	8	5	4	-1	0	304	25	0	0	35	0	259	
-305	Ermorian Legion	4	6	5	4	-1	0	305	50	0	0	15	0	187	
-306	Revive Shadow Tribune	0	0	5	1	-1	0	306	1	0	0	8	0	681	
-307	Revive Lemur Centurion	0	0	5	1	-1	0	307	1	0	0	5	0	678	
-308	Revive Lemur Senator	0	0	5	2	-1	0	308	1	0	0	15	0	680	
-309	Revive Lemur Consul	0	0	5	3	-1	0	309	1	0	0	25	0	679	
-310	Revive Lemur Acolyte	0	0	5	2	-1	0	310	1	0	0	11	0	2333	
-311	Revive Lemur Thaumaturg	0	0	5	3	-1	0	311	1	0	0	20	0	2334	
-312	Revive Grand Lemur	0	0	5	3	-1	0	312	1	0	0	50	0	2335	
-313	Unholy Command	7	0	8	1	-1	0	313	1	0	0	0	0	999	
-314	Unholy Protection	7	0	8	1	-1	0	314	1	100	0	0	0	67108864	
-315	Unholy Blessing	7	0	8	1	-1	0	315	1	100	0	0	0	1	
-316	Unholy Power	7	0	8	1	-1	0	316	1	100	0	0	0	33554432	
-317	Anathema	7	0	8	2	-1	0	317	1	100	0	0	0	2	
-318	Unholy Protection	7	0	8	2	-1	0	318	1	100	0	0	0	67108864	
-319	Unholy Blessing	7	0	8	2	-1	0	319	1	100	0	0	0	1	
-320	Apostasy	7	0	8	3	-1	0	320	1	100	0	0	0	999	
-321	Unholy Power	7	0	8	3	-1	0	321	1	100	0	0	0	33554432	
-322	Unholy Blessing	7	0	8	3	-1	0	322	1	100	0	0	0	1	
-323	Protection of the Shadelands	7	0	8	3	-1	0	323	1	100	0	0	0	67108864	
-324	Power of the Shadelands	7	0	8	4	-1	0	324	1	0	0	0	0	33554432	
-325	Revive Grave Consort	4	0	5	1	-1	0	325	1	0	0	10	0	690	
-326	Revive Tomb Priest	4	0	5	2	-1	0	326	1	0	0	16	0	691	
-327	Revive Tomb King	4	0	5	3	-1	0	327	1	0	0	23	0	692	
-328	Protection of the Grave	7	0	8	1	-1	0	328	1	100	0	0	0	67108864	
-329	Power of the Grave	7	0	8	1	-1	0	329	1	100	0	0	0	33554432	
-330	Protection of the Grave	7	0	8	2	-1	0	330	1	100	0	0	0	67108864	
-331	Royal Power	7	0	8	3	-1	0	331	1	100	0	0	0	33554432	
-332	Royal Protection	7	0	8	3	-1	0	332	1	100	0	0	0	67108864	
-333	Power of the Reborn King	7	0	8	4	-1	0	333	1	0	0	0	0	33554432	
-334	Divination	-1	1	8	3	-1	0	334	1	0	0	0	0	36	
-335	Tune of Fear	4	0	6	1	-1	0	335	1	0	5	0	0	5	
-336	Tune of Growth	4	0	6	1	-1	0	336	1	0	5	0	0	64	
-337	Tune of Dancing Death	4	0	6	1	-1	0	337	1	0	5	0	0	1030	
-338	Carrion Centaur	4	0	6	1	5	1	338	1	0	0	8	0	714	
-339	Carrion Lady	4	0	6	1	5	1	339	1	0	0	16	0	711	
-340	Carrion Lord	4	0	6	3	5	2	340	1	0	0	35	0	710	
-341	Quick Roots	4	0	8	1	-1	0	341	1	100	0	0	0	4	
-342	Regrowth	4	0	8	2	-1	0	342	1	100	0	0	0	536870912	
-343	Mend the Dead	4	0	8	3	-1	0	343	1	100	0	0	0	10020	
-344	Puppet Mastery	4	0	8	3	-1	0	344	1	100	0	0	0	4	
-345	Carrion Growth	4	0	8	4	-1	0	345	1	100	0	0	0	536870912	
-346	Dark Slumber	4	4	6	4	5	2	346	1	0	0	15	0	17	
-347	Summon Black Dogs	0	2	5	2	-1	0	347	20	0	0	8	0	1769	
-348	Summon Cu Sidhe	0	3	6	2	-1	0	348	7	0	0	6	0	1770	
-349	Contact Cu Sidhe	0	3	6	2	-1	0	349	7	0	0	6	0	1770	
-350	Summon Barghests	0	4	5	2	-1	0	350	9	0	0	7	0	1768	
-351	Summon Bean Sidhe	0	5	5	1	-1	0	351	1	0	0	25	0	1776	
-352	Summon Morrigan	0	6	5	2	1	1	352	1	0	0	5	0	1821	
-353	Dance of the Morrigans	0	8	5	5	1	2	353	1	0	0	4	0	86	
-354	Iron Darts	2	3	3	1	8	1	354	2001	5	10	0	0	13	
-355	Iron Blizzard	2	6	3	1	8	1	355	5025	3	50	0	0	10	
-356	Contact Iron Angel	0	8	3	5	4	2	356	1	0	0	25	0	1975	
-357	Tempering the Will	5	5	3	3	-1	0	357	1	100	20	0	0	67108864	
-358	Gift of the Moon	4	4	4	1	-1	0	358	1	100	20	0	0	1099511627776	
-359	Sanguine Heritage	6	0	7	3	5	3	359	1	0	0	44	0	19	
-360	Summon Monster Toads	0	5	6	2	-1	0	360	3	0	0	8	0	1358	
-362	Contact Couatl	0	7	6	1	4	1	362	1	0	0	40	0	525	
-363	Parting of the Soul	5	6	5	1	1	1	363	1	100	40	0	111	5010	
-364	Call Ahurani	0	5	4	2	2	1	364	1	-2	0	12	0	2637	
-365	Call Celestial Yazad	0	6	4	4	-1	0	365	1	0	0	40	0	-16	
-366	Call Fravashi	0	7	4	3	-1	0	366	1	0	0	30	0	2563	
-367	Call Amesha Spenta	0	8	4	5	-1	0	367	1	0	0	60	0	12	
-368	Summon Yazatas	0	5	4	2	-1	0	368	6	0	0	15	0	1607	
-369	Call Daevas	0	5	5	2	0	1	369	6	0	0	15	0	2630	
-370	Call Jahi	0	5	5	3	0	1	370	1	-2	0	15	0	2631	
-371	Call Yata	0	6	5	3	0	2	371	1	0	0	40	0	-17	
-372	Call of the Drugvant	5	7	5	4	0	1	372	1	0	0	15	0	15	
-373	Call Greater Daeva	0	8	5	4	0	2	373	1	0	0	60	0	16	
-374	Geoglyphs	4	5	4	3	3	2	374	1	0	0	18	0	100	
-375	Eyes of the Condors	4	2	1	2	-1	0	375	1	0	0	1	0	36	
-376	Summon Condors	0	3	1	2	-1	0	376	1008	0	0	9	0	2694	
-377	Summon Huacas	0	5	4	2	-1	0	377	5	0	0	15	0	2697	
-378	Summon Supayas	0	5	5	2	-1	0	378	5	0	0	10	0	2700	
-379	Contact Harbinger	0	6	4	4	-1	0	379	1	0	0	25	0	464	
-380	Angelic Host	0	7	4	5	-1	0	380	6	0	0	50	0	543	
-381	Heavenly Wrath	0	7	4	3	0	1	381	1	0	0	35	0	1369	
-382	Heavenly Choir	0	9	4	7	0	2	382	1	0	0	144	68	1368	
-383	Bind Harlequin	6	1	7	1	-1	0	383	1	0	0	1	0	1000	
-384	Reascendance	6	7	7	4	4	1	384	1	0	0	88	0	626	
-385	Summon Valkyries	0	6	1	3	5	1	385	7	0	0	1	0	261	
-386	Awaken Draugar	0	4	5	2	-1	0	386	3	0	0	12	0	2190	
-387	Summon Glosos	0	3	5	2	-1	0	387	9	0	0	13	0	2363	
-388	Brood of Garm	0	4	6	2	-1	0	388	5	0	0	10	0	1309	
-389	Illwinter	6	6	7	5	2	3	389	1	0	0	120	0	44	
-390	Summon Jaguar Toads	0	1	6	1	8	1	390	2	0	0	2	0	1359	
-391	Summon Jaguars	0	3	6	2	8	1	391	17	0	0	25	0	859	
-392	Summon Jade Serpent	0	4	2	2	-1	0	392	1	0	0	3	0	1889	
-393	Summon Monster Toad	0	5	6	2	-1	0	393	1	0	0	2	0	1358	
-394	Contact Couatl	0	6	6	1	4	1	394	1	0	0	40	0	525	
-395	Summon Tlaloque	0	7	2	4	-1	0	395	1	0	0	60	0	13	
-396	Bind Beast Bats	6	2	7	1	-1	0	396	3	0	0	8	0	1357	
-397	Bind Jaguar Fiends	6	4	7	1	0	1	397	3	0	0	16	0	1356	
-398	Contact Civateteo	6	5	7	2	5	2	398	1	0	0	36	0	1422	
-399	Bind Tzitzimitl	6	6	7	2	4	2	399	1	0	0	10	0	1483	
-400	Contact Tlahuelpuchi	6	6	7	3	-1	0	400	1	0	0	42	0	1558	
-401	Contact Onaqui	6	7	7	4	-1	0	401	1	0	0	101	67	1360	
-402	Rain of Jaguars	6	8	7	6	0	2	402	1008	0	0	40	0	1356	
-403	Theft of the Sun	4	8	5	6	0	3	403	1	0	0	70	0	101	
-404	Summon Sacred Scorpion	0	3	3	1	5	1	404	1	0	0	2	0	2690	
-405	Break the First Soul	6	2	7	1	-1	0	405	1	5	20	0	101	8192	
-406	Break the Second Soul	5	2	3	1	-1	0	406	1	5	20	0	0	262144	
-407	Break the Third Soul	5	2	1	1	-1	0	407	1	5	20	0	0	5015	
-408	Break the Fourth Soul	5	2	5	1	-1	0	408	1	5	20	0	0	2	
-409	Gift of the First Soul	6	3	7	1	-1	0	409	1	0	20	0	0	32	
-410	Gift of the Second Soul	5	3	3	1	-1	0	410	1	0	20	0	0	137438953472	
-411	Gift of the Third Soul	5	3	1	1	-1	0	411	1	0	20	0	0	68719476736	
-412	Gift of the Fourth Soul	5	3	5	1	-1	0	412	1	2	20	0	0	2	
-413	Summon Balam	0	7	6	4	-1	0	413	1	0	0	60	0	17	
-414	Summon Chaac	0	8	1	4	-1	0	414	1	0	0	75	0	18	
-415	Celestial Servant	0	1	3	1	4	1	415	1	0	0	1	0	903	
-416	Heavenly Rivers	0	3	2	1	4	1	416	3	0	0	12	0	904	
-417	Celestial Hounds	0	4	1	1	4	1	417	2	0	0	4	0	1338	
-418	Heavenly Fires	0	5	0	1	4	1	418	3	0	0	6	0	926	
-419	Call Celestial Soldiers	0	6	1	2	4	1	419	5	0	0	15	0	902	
-420	Call Ancestor	0	1	5	1	-1	0	420	1	0	20	0	0	1363	
-421	Wrath of the Ancestors	0	7	5	1	-1	0	421	2018	0	0	1	0	1363	
-422	Summon Nagas	0	3	2	2	3	1	422	6	0	0	15	0	1319	
-423	Summon Apsaras	0	3	4	2	-1	0	423	3	0	0	2	0	1332	
-424	Contact Yaksha	0	4	6	2	3	1	424	1	0	0	25	0	1329	
-425	Contact Yakshini	0	4	6	2	2	1	425	1	0	0	25	0	1330	
-426	Contact Nagini	0	4	2	2	3	1	426	1	0	0	25	0	1322	
-427	Summon Gandharvas	0	5	4	2	-1	0	427	6	0	0	18	0	1335	
-428	Contact Nagaraja	0	5	2	2	3	2	428	1	0	0	30	0	1320	
-429	Summon Kinnara	0	6	4	3	-1	0	429	1	0	0	25	0	1331	
-430	Contact Nagarishi	0	6	2	3	3	3	430	1	0	0	40	0	1321	
-431	Summon Siddha	0	7	4	4	-1	0	431	1	0	0	35	0	1337	
-432	Summon Devata	0	8	4	5	-1	0	432	1	0	0	45	0	1336	
-433	Summon Devala	0	9	4	5	-1	0	433	1	0	0	55	0	1713	
-434	Summon Rudra	0	9	4	5	-1	0	434	1	0	0	55	0	1906	
-435	Celestial Music	5	6	4	3	-1	0	435	1	0	0	1	0	262144	
-436	Summon Rakshasas	6	1	7	1	-1	0	436	3	0	0	10	0	1736	
-437	Feast of Flesh	6	2	7	1	6	1	437	15	0	0	50	0	1742	
-438	Summon Asrapas	6	3	7	2	-1	0	438	3	0	0	11	0	1741	
-439	Summon Rakshasa Warriors	6	4	7	2	-1	0	439	5	0	0	25	0	1737	
-440	Summon Sandhyabalas	6	5	7	2	5	1	440	3	0	0	30	0	1743	
-441	Summon Dakini	6	6	7	4	1	1	441	1	0	0	81	0	1714	
-442	Summon Samanishada	6	7	7	3	5	1	442	1	0	0	35	0	1744	
-443	Summon Mandeha	6	8	7	5	5	2	443	1	0	0	133	0	1748	
-444	Summon Danavas	6	8	7	5	-1	0	444	3	0	0	75	0	1767	
-445	Host of Ganas	0	2	5	1	-1	0	445	20	0	0	12	0	1764	
-446	Summon Vetalas	0	5	5	2	-1	0	446	10	0	0	10	0	1765	
-447	Summon Ko-Oni	0	1	5	1	-1	0	447	505	0	0	7	0	1260	
-448	Summon Kappa	0	1	2	1	6	1	448	3	0	0	3	0	1482	
-449	Summon Ao-Oni	0	2	2	1	5	1	449	505	0	0	10	0	1264	
-450	Summon Karasu Tengus	0	2	6	1	1	1	450	3	0	0	3	0	1478	
-451	Summon Aka-Oni	0	3	0	1	5	1	451	505	0	0	10	0	1266	
-452	Summon Konoha Tengus	0	3	1	1	3	1	452	505	0	0	5	0	1479	
-453	Ghost General	0	4	5	3	-1	0	453	1	0	0	10	0	1256	
-454	Summon Oni	0	4	3	1	5	1	454	505	0	0	12	0	1272	
-455	Contact Dai Tengu	0	5	1	2	3	1	455	1	0	0	55	77	1480	
-456	Contact Nushi	0	5	2	2	6	1	456	1	0	0	25	0	1431	
-457	Summon Kuro-Oni	0	5	5	2	0	1	457	4	0	0	10	0	1274	
-458	Summon Oni General	0	6	5	2	0	1	458	1	0	0	20	0	1276	
-459	Contact Kitsune	0	6	6	2	-1	0	459	1	0	0	30	0	1434	
-460	Summon Dai Oni	0	8	5	4	0	1	460	1	0	0	45	0	1316	
-461	Bind Penumbral	0	3	5	1	3	1	461	1	0	0	1	0	2497	
-462	Summon Penumbrals	0	3	5	1	3	1	462	4	0	0	6	0	2497	
-463	Summon Umbrals	0	5	5	2	3	1	463	4	0	0	8	0	1490	
-464	Olm Conclave	0	4	2	1	3	1	464	1	0	0	20	110	2527	
-465	Hall of Statues	4	8	3	5	-1	0	465	4000	0	0	30	0	1496	
-466	Revive Cavern Wights	0	3	5	1	3	1	466	3	0	0	8	0	1501	
-467	Bind Umbral	0	5	5	2	3	1	467	1	0	0	2	0	1490	
-468	Unleash Imprisoned Ones	1	9	3	6	5	4	468	1	0	0	100	0	1	
-469	Rhuax Pact	0	3	0	1	3	1	469	5	0	0	2	0	640	
-470	Barathrus Pact	0	3	3	2	-1	0	470	1	0	0	2	0	495	
-471	Mirror of Earths Memories	5	4	2	2	3	2	471	1	0	0	5	0	5760	
-472	Attentive Statues	4	1	3	2	-1	0	472	2	0	0	4	0	1497	
-473	Enliven Sentinel	4	3	3	2	-1	0	473	1	0	0	3	0	1496	
-474	Enliven Granite Guard	4	5	3	3	-1	0	474	1	0	0	12	0	1498	
-475	Enliven Marble Oracle	4	6	3	3	5	1	475	1	0	0	35	0	1499	
-476	Animate Mercury	-1	1	-1	0	-1	0	476	1	0	0	0	0	2515	
-477	Living Mercury	4	5	2	1	3	1	477	1	0	0	7	0	2515	
-478	Nightmare Construction	4	5	0	1	5	1	478	1	0	0	2	0	2520	
-479	Iron Corpse Reanimation	4	2	3	1	5	1	479	505	0	0	2	0	1439	
-480	Reanimate Ancestor	4	2	3	2	5	2	480	1	0	0	3	0	1440	
-481	Flame Corpse Construction	4	4	0	1	5	1	481	1	0	0	1	0	1441	
-482	Ktonian Legion	4	6	3	2	5	2	482	5020	0	0	15	0	1439	
-483	Awaken Shard Wights	0	3	5	1	3	1	483	505	0	0	15	0	2509	
-484	Awaken Sepulchral	0	5	5	2	3	1	484	1	0	0	4	0	1500	
-485	Awaken Tomb Oracle	0	6	5	3	3	2	485	1	0	0	30	0	1476	
-486	Hall of the Dead	0	8	5	5	3	1	486	4000	0	0	25	0	2509	
-487	Iron Marionettes	1	5	3	3	-1	0	487	1	100	0	1	0	33554432	
-488	Contact Void Spectre	0	6	4	3	-1	0	488	1	0	0	25	0	1562	
-489	Mind Vessel	5	3	4	3	-1	0	489	1	0	0	15	0	100	
-490	Enslave Sea Trolls	5	5	4	3	2	2	490	505	0	0	15	0	1529	
-491	Dreams of R'lyeh	5	6	4	4	-1	0	491	1	-1	0	4	0	2052	
-494	Burning Hands	2	1	0	1	-1	0	494	1	0	5	0	0	1012	
-495	Fire Darts	2	1	0	1	-1	0	495	1002	4	20	0	0	10	
-496	Flame Bolt	2	1	0	2	-1	0	496	1	2	20	0	0	2018	
-497	Shocking Grasp	2	1	1	1	-1	0	497	1	0	3	0	1	3015	
-498	Slime	2	1	2	1	-1	0	498	1	2	20	0	0	134217728	
-499	Cold Bolt	2	1	2	2	-1	0	499	1	3	20	0	0	1017	
-500	Geyser	2	1	2	1	0	1	500	1	3	5	0	0	1005	
-501	Acid Spray	2	1	2	2	0	1	501	1	0	20	0	13	10	
-502	Astral Projection	2	1	4	1	-1	0	502	1	0	0	2	0	37	
-503	Star Fires	2	1	4	1	-1	0	503	2	2	20	0	0	1004	
-504	Arcane Bolt	2	1	4	2	-1	0	504	1	3	20	0	0	1008	
-505	Vine Arrow	2	1	6	1	-1	0	505	1	0	20	0	47	1013	
-506	Fire Blast	2	2	0	2	-1	0	506	1	0	20	0	3	2010	
-507	Flare	2	2	0	3	-1	0	507	1	1	50	0	3	2013	
-508	Sulphur Haze	2	2	0	2	1	1	508	1	0	20	0	39	1	
-509	Cold Blast	2	2	2	2	-1	0	509	1	0	20	0	0	2015	
-510	Rain	2	2	2	2	-1	0	510	1	0	0	1	0	7	
-511	Lightning Bolt	2	2	1	2	-1	0	511	1	4	10	0	1	1012	
-512	Shock Wave	2	2	1	2	-1	0	512	1	0	10	0	0	1007	
-513	Rust Mist	2	2	3	2	2	1	513	1	0	30	0	0	2199023255552	
-514	Solar Rays	2	2	4	2	-1	0	514	1	100	20	0	0	1010	
-515	Web	2	2	6	1	-1	0	515	1	2	20	0	0	536870912	
-516	Fireball	2	3	0	2	-1	0	516	1	1	20	0	3	2012	
-517	Fires from Afar	2	3	0	3	-1	0	517	1007	0	0	10	0	15	
-518	Mist	2	3	1	3	-1	0	518	1	0	0	1	0	70	
-519	Freezing Mist	2	3	2	3	1	1	519	1	1	20	0	9	1	
-520	Acid Bolt	2	3	2	2	0	1	520	1	3	30	0	13	1014	
-521	Magma Bolts	2	3	3	1	0	1	521	3	2	20	0	112	2023	
-522	Arcane Probing	2	3	4	1	-1	0	522	1	0	0	3	0	4	
-523	Magic Duel	2	3	4	1	-1	0	523	1	100	0	1	0	999	
-524	Healing Light	2	3	4	1	6	1	524	1	100	20	0	0	10	
-525	Shadow Bolt	2	3	5	2	-1	0	525	1	3	20	0	63	1008	
-526	Sleep Cloud	2	3	6	2	-1	0	526	1	3	20	0	0	1024	
-527	Holy Pyre	2	4	0	2	-1	0	527	1	1	20	0	0	1005	
-528	Fire Cloud	2	4	0	3	-1	0	528	1	1	20	0	0	6	
-529	Fate of Oedipus	2	4	0	4	-1	0	529	1	0	0	75	0	0	
-530	Breath of the Desert	2	4	0	3	1	1	530	1	0	0	5	0	13	
-531	Thunder Strike	2	4	1	3	-1	0	531	1	2	50	0	5	2020	
-532	Hurricane	2	4	1	3	-1	0	532	1	0	0	5	0	7	
-533	Water Strike	2	1	2	1	-1	0	533	1	2	20	0	0	2011	
-534	Acid Rain	2	4	2	3	0	1	534	1	3	30	0	13	12	
-535	Blade Wind	2	4	3	3	-1	0	535	3031	0	80	0	0	14	
-536	Nether Bolt	2	4	4	1	5	1	536	1	2	15	0	24	1019	
-537	Bolt of Unlife	2	4	5	2	-1	0	537	1	1	20	0	0	1018	
-538	Bane Fire Dart	2	4	5	1	0	1	538	1	4	20	0	11	2013	
-539	Breath of the Dragon	2	4	6	2	-1	0	539	1	-1	20	0	0	2001	
-540	Falling Fires	2	5	0	3	-1	0	540	1	1	20	0	0	15	
-541	Liquid Flames of Rhuax	2	5	0	3	3	1	541	1	0	20	0	0	2018	
-542	Splash of Molten Metal	-1	1	-1	0	-1	0	542	1	0	0	0	0	10	
-543	Falling Frost	2	5	2	3	-1	0	543	1	0	20	0	0	1014	
-544	Orb Lightning	2	5	1	2	-1	0	544	1	0	20	0	0	5	
-545	Storm	2	5	1	4	-1	0	545	1	0	0	1	0	1	
-546	Earthquake	2	5	3	4	-1	0	546	1	0	0	3	0	8	
-547	Cave Collapse	0	0	-1	0	-1	0	547	1	0	0	0	0	20	
-548	Gifts from Heaven	2	5	3	3	4	1	548	3	-3	50	0	0	150	
-549	Stellar Cascades	2	5	4	2	-1	0	549	1	100	20	0	0	25	
-550	Astral Geyser	2	5	4	3	-1	0	550	1	0	20	0	83	261	
-551	Celestial Chastisement	2	5	4	3	-1	0	551	1	100	20	0	84	1005	
-552	Shadow Blast	2	5	5	2	-1	0	552	1	0	0	1	42	1018	
-553	Poison Cloud	2	5	6	3	-1	0	553	1	-1	20	0	0	1	
-554	Healing Mists	2	5	6	3	1	1	554	1	3	20	0	0	2	
-555	Flame Eruption	2	6	0	2	-1	0	555	1	0	30	0	0	1012	
-556	Wrathful Skies	2	6	1	5	-1	0	556	1	0	0	2	0	34	
-557	Perpetual Storm	2	6	1	5	-1	0	557	1	0	0	70	0	16	
-558	Cleansing Water	2	6	2	2	-1	0	558	1	0	20	0	0	1003	
-559	Magma Eruption	2	6	3	2	0	2	559	1	0	50	0	0	1020	
-560	Mind Hunt	2	6	4	4	-1	0	560	1	0	0	2	0	999	
-561	Astral Fires	2	6	4	3	0	1	561	1	100	20	0	0	10	
-562	The Wrath of God	2	6	4	5	1	3	562	1	0	0	70	0	14	
-563	Blast of Unlife	2	6	5	3	-1	0	563	1	0	20	0	0	1012	
-564	Bane Fire	2	6	5	3	0	1	564	1	1	30	0	20	1052	
-565	Wailing Winds	2	6	5	4	1	1	565	1	0	0	2	0	12	
-566	Stream of Life	2	6	6	3	-1	0	566	1	2	20	0	0	5025	
-567	Fire Storm	2	7	0	5	-1	0	567	1	0	0	3	0	25	
-568	Ice Strike	2	7	2	2	-1	0	568	1	1	20	0	0	18	
-569	Murdering Winter	2	7	2	5	-1	0	569	1	0	0	40	0	8	
-570	Acid Storm	2	7	2	4	0	1	570	1	0	0	3	0	11	
-571	Shimmering Fields	2	7	1	6	-1	0	571	1	0	0	2	0	1004	
-572	Rain of Stones	2	7	3	3	1	1	572	1	0	0	1	0	102	
-573	Storm of Thorns	2	7	6	2	-1	0	573	2003	0	20	0	47	1013	
-574	Nether Darts	2	7	4	1	5	1	574	1014	0	15	0	24	1014	
-575	Cloud of Death	2	7	5	4	-1	0	575	1	-3	10	0	0	1002	
-576	Wind of Death	2	7	5	4	1	1	576	1	0	0	1	0	256	
-577	Stygian Rains	2	7	5	3	2	2	577	1	0	0	2	79	17179869184	
-578	Pillar of Fire	2	8	0	2	-1	0	578	1	0	20	0	3	2030	
-579	Second Sun	2	8	0	8	-1	0	579	1	0	0	80	0	41	
-580	Maelstrom	2	8	2	6	-1	0	580	1	0	0	80	0	47	
-581	Astral Tempest	2	8	4	5	-1	0	581	1	0	0	2	0	3	
-582	Vortex of Unlife	2	8	5	5	-1	0	582	1	0	20	0	0	1011	
-583	Flames from the Sky	2	9	0	5	-1	0	583	1	0	0	30	0	1010	
-584	Flame Storm	2	9	0	5	-1	0	584	1	0	0	1	0	2005	
-585	Volcanic Eruption	2	9	0	4	3	3	585	1	0	0	15	0	4	
-586	Chain Lightning	2	9	1	3	-1	0	586	3	0	30	0	0	1002	
-587	Niefel Flames	2	9	2	5	-1	0	587	1	0	0	2	0	10	
-588	Tidal Wave	2	9	2	5	-1	0	588	1	0	0	15	0	10	
-589	Meteor Shower	2	9	3	5	4	4	589	1	0	0	3	0	103	
-590	Strands of Arcane Power	2	9	4	7	-1	0	590	1	0	0	70	0	79	
-591	Distill Gold	1	1	0	1	-1	0	591	1	0	0	1	0	1014	
-592	Charge Body	1	1	1	1	-1	0	592	1	0	5	0	0	16384	
-593	Aim	1	1	1	1	-1	0	593	1	5	5	0	0	4	
-594	False Fetters	1	1	1	2	-1	0	594	1	0	10	0	0	131072	
-595	Fists of Iron	1	1	3	1	-1	0	595	1000	5	30	0	0	1015	
-596	Earth Grip	1	1	3	1	-1	0	596	1	5	10	0	0	16384	
-597	Earth Might	1	1	3	2	-1	0	597	1	0	20	0	0	128	
-598	Hand of Death	1	1	5	2	-1	0	598	1	0	5	0	0	5030	
-599	Skeletal Body	1	1	5	1	-1	0	599	1	0	20	0	0	274877906944	
-600	Eagle Eyes	1	1	6	1	-1	0	600	1	0	5	0	0	4	
-601	Poison Touch	1	1	6	1	-1	0	601	1	0	5	0	0	5005	
-602	Resist Poison	1	1	6	1	-1	0	602	1	0	5	0	0	200	
-603	Barkskin	1	1	6	1	-1	0	603	1	0	5	0	0	16	
-604	Personal Luck	1	1	4	1	-1	0	604	1	0	20	0	0	2	
-605	Combustion	1	2	0	1	-1	0	605	1	100	10	0	0	512	
-606	Resist Cold	1	2	0	1	-1	0	606	1	0	10	0	0	201	
-607	Phantasmal Warrior	1	2	1	1	-1	0	607	1	0	10	0	0	297	
-608	Mirror Image	1	2	1	1	-1	0	608	1	0	10	0	0	16777216	
-609	Resist Fire	1	2	2	1	-1	0	609	1	0	10	0	0	198	
-610	Quicken Self	1	2	2	1	-1	0	610	1	0	20	0	0	262144	
-611	Ice Shield	1	2	2	1	-1	0	611	1	0	20	0	0	549755813888	
-612	Resist Lightning	1	2	3	1	-1	0	612	1	0	10	0	0	199	
-613	Alchemical Transmutation	1	2	3	1	-1	0	613	1	0	0	1	0	1009	
-614	Stoneskin	1	2	3	1	-1	0	614	1	0	10	0	0	65536	
-615	Armor of Achilles	1	2	3	1	-1	0	615	1	3	40	0	0	10	
-616	Earth Meld	1	2	3	2	-1	0	616	1	3	60	0	0	16384	
-617	Cheat Fate	1	2	4	1	-1	0	617	1	0	20	0	0	1	
-618	Weakness	1	2	5	1	-1	0	618	1	3	20	0	0	3	
-619	Enlarge	1	2	6	2	-1	0	619	1	0	20	0	0	2147483648	
-620	Immolation	1	3	0	2	-1	0	620	1	0	20	0	0	1010	
-621	Inner Sun	1	3	0	1	4	1	621	1	0	0	1	0	67108864	
-622	Mistform	1	3	1	2	-1	0	622	1	0	10	0	0	65536	
-623	Ghost Wolves	1	3	1	3	-1	0	623	2	0	10	0	0	298	
-624	Numbness	1	3	2	2	-1	0	624	1	100	20	0	0	268435456	
-625	Ironskin	1	3	3	1	-1	0	625	1	0	20	0	0	268435456	
-626	Protection	1	3	6	1	-1	0	626	1	100	20	0	0	16	
-627	Mossbody	1	3	6	1	2	1	627	1	0	20	0	0	8	
-628	Luck	1	3	4	1	-1	0	628	1	2	20	0	0	2	
-629	Wind Guide	1	4	1	2	-1	0	629	1	0	0	1	0	4	
-630	Liquid Body	1	4	2	1	-1	0	630	1	0	20	0	0	2680059592704	
-631	Quickness	1	4	2	2	-1	0	631	1	1	20	0	0	262144	
-632	Slow	1	4	2	2	-1	0	632	1	100	20	0	0	68719476736	
-633	Encase in Ice	1	4	2	2	-1	0	633	1	100	20	0	0	299	
-634	Wolven Winter	1	4	2	3	-1	0	634	1	0	0	5	0	3	
-635	Temper Flesh	1	4	3	1	-1	0	635	1	0	20	0	0	481036338176	
-636	Destruction	1	4	3	3	-1	0	636	1	3	40	0	0	5	
-637	Curse of Stones	1	4	3	3	-1	0	637	1	0	0	3	0	32	
-638	Blight	1	4	3	2	5	1	638	1	0	0	5	0	9	
-639	Arouse Hunger	1	4	5	3	-1	0	639	3021	0	0	8	0	-4	
-640	Elemental Fortitude	1	4	6	1	-1	0	640	1	0	10	0	0	7168	
-641	Swarm	1	4	6	1	-1	0	641	2018	0	0	1	0	-9	
-642	Body Ethereal	1	4	4	1	-1	0	642	1	0	30	0	0	134217728	
-643	Stygian Skin	1	4	5	1	2	1	643	1	0	20	0	0	17179869184	
-644	Shrink	1	4	6	2	-1	0	644	1	0	20	0	0	4294967296	
-645	Transmute Fire	1	5	0	2	-1	0	645	1	0	0	1	0	2016	
-646	Cold Resistance	1	5	0	3	-1	0	646	1	0	0	1	0	4096	
-647	Incinerate	1	5	0	3	-1	0	647	1	100	20	0	0	2012	
-648	Solar Eclipse	1	5	0	3	4	1	648	1	0	0	1	0	97	
-649	Phantasmal Army	1	5	1	4	-1	0	649	5005	0	0	1	0	297	
-650	Fire Resistance	1	5	2	3	-1	0	650	1	0	0	1	0	1024	
-651	Bone Melter	1	5	2	3	6	2	651	1	3	20	0	0	999	
-652	Lightning Resistance	1	5	3	3	-1	0	652	1	0	0	1	0	2048	
-653	Maws of the Earth	1	5	3	3	-1	0	653	1	3	0	1	100	1012	
-654	Iron Warriors	1	5	3	2	-1	0	654	1	2	40	0	0	268435456	
-655	Shatter	1	5	3	3	-1	0	655	1	100	20	0	43	5020	
-656	Baleful Star	1	5	4	3	-1	0	656	1	0	0	7	0	5	
-657	Enfeeble	1	5	5	2	-1	0	657	1	3	0	1	0	2	
-658	Invulnerability	1	5	5	3	-1	0	658	1	0	20	0	0	2	
-659	Drain Life	1	5	5	4	-1	0	659	1	25	10	0	0	1010	
-660	Wooden Warriors	1	5	6	2	-1	0	660	1	0	50	0	0	16	
-661	Mother Oak	1	5	6	5	-1	0	661	1	0	0	50	0	46	
-662	Blindness	1	6	0	1	-1	0	662	1	100	20	0	0	4096	
-663	Hellscape	1	6	0	4	-1	0	663	1	0	0	10	0	16	
-664	Boil	1	6	0	3	2	1	664	1	100	20	0	0	1006	
-665	False Horror	1	6	1	3	-1	0	665	1	0	10	0	0	448	
-666	Frozen Heart	1	6	2	1	-1	0	666	1	100	20	0	0	2008	
-667	Wave Warriors	1	6	2	3	-1	0	667	1	0	0	1	0	2680059592704	
-668	Manifest Vitriol	1	6	2	2	0	1	668	1	0	0	3	0	1983	
-669	Earth Gem Alchemy	1	6	3	2	-1	0	669	1	0	0	1	0	2011	
-670	Iron Bane	1	6	3	3	-1	0	670	1	0	0	1	0	2199023255552	
-671	Petrify	1	6	3	5	-1	0	671	1	100	40	0	0	999	
-672	Iron Pigs	1	6	3	3	6	1	672	7	0	0	9	0	924	
-673	Control	1	6	4	3	-1	0	673	1	100	0	1	0	999	
-674	Battle Fortune	1	6	4	3	-1	0	674	1	5	0	1	0	2	
-675	Skeletal Legion	1	6	5	4	-1	0	675	1	0	0	1	102	274877906944	
-676	Soul Vortex	1	6	5	3	-1	0	676	1	0	40	0	0	2048	
-677	Darkness	1	6	5	4	-1	0	677	1	0	0	4	0	77	
-678	Army of Giants	1	6	6	3	-1	0	678	1	0	0	1	0	2147483648	
-679	Phoenix Pyre	1	7	0	2	-1	0	679	1	0	20	0	0	134217728	
-680	Phantasmal Attack	1	7	1	4	-1	0	680	5005	0	0	8	30	297	
-681	Fog Warriors	1	7	1	5	-1	0	681	1	0	0	3	0	65536	
-682	Liquify	1	8	2	4	-1	0	682	1	100	20	0	103	999	
-683	Prison of Sedna	1	7	2	3	-1	0	683	1	100	0	1	0	299	
-684	Sea of Ice	1	7	2	6	-1	0	684	1	0	0	80	0	28	
-685	Marble Warriors	1	7	3	3	-1	0	685	1	0	0	1	0	65536	
-686	Iron Walls	1	7	3	5	-1	0	686	1	0	0	10	0	69	
-687	Doom	1	7	4	4	-1	0	687	1	0	0	1	0	2	
-688	Bone Grinding	1	7	5	7	-1	0	688	1	0	0	1	108	3	
-689	Curse of the Frog Prince	1	7	6	2	-1	0	689	1	100	20	0	0	2222	
-690	Creeping Doom	1	7	6	3	-1	0	690	5055	0	0	1	0	-9	
-691	Transformation	1	6	6	2	-1	0	691	1	0	0	8	0	1	
-692	Mass Protection	1	7	6	3	-1	0	692	1	0	0	1	0	16	
-693	Conflagration	1	8	0	2	-1	0	693	1	100	20	0	0	512	
-694	Warriors of Muspelheim	1	8	0	4	-1	0	694	1	0	0	2	0	4096	
-695	Fata Morgana	1	8	1	7	-1	0	695	1	0	0	90	0	53	
-696	Quickening	1	8	2	2	-1	0	696	1	0	0	1	0	262144	
-697	Warriors of Niefelheim	1	8	2	4	-1	0	697	1	0	0	2	0	1024	
-698	Wizard's Tower	1	8	3	4	-1	0	698	1	0	0	50	0	24	
-699	Crumble	1	6	3	5	-1	0	699	1	0	0	20	0	-25125	
-700	Ground Army	1	8	3	4	-1	0	700	1	0	0	2	0	2048	
-701	Will of the Fates	1	8	4	4	-1	0	701	1	0	0	4	0	2	
-702	Time Stop	1	8	4	6	-1	0	702	1	0	0	1	0	104	
-703	Disintegrate	1	8	5	2	-1	0	703	1	100	10	0	0	999	
-704	Polymorph	1	8	6	3	-1	0	704	1	5	0	2	0	549	
-705	Army of Gold	1	9	3	5	-1	0	705	1	0	0	3	0	268436480	
-706	Army of Lead	1	9	3	5	-1	0	706	1	0	0	3	0	335544320	
-707	Arcane Domination	1	9	4	7	-1	0	707	1	0	0	7	0	999	
-708	Wish	1	9	4	9	-1	0	708	1	0	0	100	0	0	
-709	Utterdark	1	9	5	9	-1	0	709	1	0	0	100	0	56	
-710	Army of Rats	1	9	6	7	-1	0	710	1	0	0	5	0	4297064448	
-711	Summon Cave Grubs	0	1	3	1	-1	0	711	505	0	0	6	0	2526	
-712	Tangle Vines	0	1	6	1	-1	0	712	1	2	20	0	0	64	
-713	Summon Animals	0	1	6	2	-1	0	713	2011	0	0	10	0	403	
-714	Summon Sea Dogs	0	1	6	1	2	1	714	505	0	0	2	0	1064	
-715	Summon Crocodiles	0	1	6	1	2	1	715	505	0	0	4	0	2185	
-716	Spirit Curse	0	1	5	1	-1	0	716	1	100	0	1	0	2	
-717	Black Servant	0	1	5	2	-1	0	717	1	0	0	5	0	434	
-718	Summon Fire Ants	0	2	0	2	6	1	718	1008	0	0	10	0	2225	
-719	Summon Storm Power	0	2	1	1	-1	0	719	1	0	10	0	0	8192	
-720	Summon Water Power	0	2	2	1	-1	0	720	1	0	20	0	0	524288	
-721	Summon Ogres	0	2	3	1	-1	0	721	505	0	0	10	0	2135	
-722	Summon Shades	0	2	5	2	-1	0	722	505	0	0	8	0	676	
-723	Summon Killer Mantis	0	2	6	2	-1	0	723	505	0	0	4	0	2226	
-724	Pack of Wolves	0	2	6	1	-1	0	724	1009	0	0	2	0	284	
-725	Summon Horned Serpents	0	2	6	1	-1	0	725	505	0	0	4	0	403	
-726	Phoenix Power	0	3	0	2	-1	0	726	1	0	20	0	19	262144	
-727	Summon Lesser Fire Elemental	0	3	0	1	-1	0	727	1	0	0	1	0	597	
-728	Bind Scorpion Beast	0	3	0	1	3	1	728	1	0	0	2	0	524	
-729	Summon Lesser Air Elemental	0	3	1	1	-1	0	729	1	0	0	1	0	570	
-730	Call of the Winds	0	3	1	2	-1	0	730	41	0	0	10	0	517	
-731	Summon Amphiptere	0	3	1	2	6	1	731	1	0	0	3	0	1412	
-732	Summon Lesser Water Elemental	0	3	2	1	-1	0	732	1	0	0	1	0	411	
-733	Call Kraken	0	3	2	3	-1	0	733	1	0	0	1	0	438	
-734	Summon Yetis	0	3	2	2	1	1	734	505	0	0	13	0	2231	
-735	Summon Cave Cows	0	3	2	2	3	2	735	505	0	0	3	0	2512	
-736	Summon Earthpower	0	3	3	2	-1	0	736	1	0	20	0	0	4096	
-737	Summon Lesser Earth Elemental	0	3	3	1	-1	0	737	1	0	0	1	0	496	
-738	Summon Cave Crab	0	3	3	1	2	1	738	1	0	0	4	0	2514	
-739	Power of the Spheres	0	3	4	1	-1	0	739	1	0	0	1	0	128	
-740	Dark Knowledge	0	3	5	1	-1	0	740	1	0	0	4	0	5	
-741	Revive Wights	0	3	5	2	-1	0	741	5	0	0	20	0	533	
-742	Revive Bane	0	3	5	2	-1	0	742	1	0	0	7	0	185	
-743	Sloth of Bears	0	3	6	2	-1	0	743	1008	0	0	8	0	694	
-744	Pride of Lions	0	3	6	2	-1	0	744	1008	0	0	10	0	628	
-745	Ambush of Tigers	0	3	6	2	-1	0	745	1008	0	0	10	0	1140	
-746	Awaken Vine Men	0	3	6	1	-1	0	746	3	0	0	1	0	361	
-747	Awaken Algae Men	0	3	6	1	-1	0	747	3	0	0	1	0	2976	
-748	Herd of Buffaloes	0	3	6	2	-1	0	748	505	0	0	10	0	3009	
-749	Call of the Wild	0	3	6	4	-1	0	749	30	0	0	12	0	284	
-750	Summon Sea Lions	0	3	6	2	2	1	750	1008	0	0	10	0	1063	
-751	Summon Bog Beasts	0	3	6	2	2	2	751	505	0	0	7	0	578	
-752	Summon Fire Drake	0	4	0	2	-1	0	752	1	0	0	6	0	523	
-753	Summon Flame Jelly	0	4	0	2	-1	0	753	1008	0	0	6	0	2854	
-754	Summon Wyverns	0	4	1	2	-1	0	754	2	0	0	3	0	520	
-755	Summon Gryphons	0	4	1	2	-1	0	755	505	0	0	9	0	2131	
-756	School of Sharks	0	4	2	2	-1	0	756	2006	0	0	1	0	815	
-757	Voice of Apsu	0	4	2	2	-1	0	757	1	0	0	2	0	2	
-758	Summon Ice Drake	0	4	2	2	-1	0	758	1	0	0	7	0	579	
-759	Summon Sea Serpent	0	4	2	2	-1	0	759	1	0	0	4	0	565	
-760	Summon Cave Drake	0	4	3	2	-1	0	760	1	0	0	4	0	522	
-761	Light of the Northern Star	0	4	4	3	-1	0	761	1	0	0	2	0	40	
-762	Summon Shade Beasts	0	4	5	3	-1	0	762	2009	0	0	15	0	442	
-763	Summon Lammashtas	0	4	5	2	-1	0	763	2	0	0	1	0	393	
-764	Maggots	0	4	6	1	-1	0	764	1	100	0	1	0	50	
-765	Awaken Vine Ogres	0	4	6	3	-1	0	765	2	0	0	3	0	362	
-766	Summon Leogryphs	0	4	6	2	-1	0	766	1008	0	0	12	0	2132	
-767	Summon Swamp Drake	0	4	6	2	2	1	767	1	0	0	7	0	2196	
-768	Summon Kithaironic Lion	0	4	6	3	3	1	768	1	0	0	5	0	514	
-769	Strength of Gaia	0	4	6	3	3	1	769	1	0	20	0	27	1048576	
-770	Will o' the Wisp	0	5	0	1	-1	0	770	2	0	0	1	0	527	
-771	Summon Fire Elemental	0	5	0	3	-1	0	771	1	0	0	1	0	594	
-772	Summon Summer Lions	0	5	0	3	-1	0	772	505	0	0	20	0	515	
-773	Summon Air Elemental	0	5	1	3	-1	0	773	1	0	0	1	0	567	
-774	Summon Spring Hawks	0	5	1	3	-1	0	774	505	0	0	20	0	513	
-775	Wind Ride	0	5	1	5	-1	0	775	1	0	0	10	0	100	
-776	Raven Feast	0	5	1	4	-1	0	776	1	0	0	3	0	100	
-777	Contact Draconians	0	5	1	3	-1	0	777	1	0	0	30	37	620	
-778	Voice of Tiamat	0	5	2	2	-1	0	778	1	0	0	8	0	51	
-779	Summon Water Elemental	0	5	2	3	-1	0	779	1	0	0	1	0	408	
-780	Contact Sea Trolls	0	5	2	3	-1	0	780	505	0	0	15	0	564	
-781	Summon Winter Wolves	0	5	2	3	-1	0	781	505	0	0	8	0	511	
-782	Contact Naiad	0	5	2	3	6	1	782	1	0	0	35	0	1226	
-783	Naiad Warriors	0	5	2	3	6	1	783	15	0	0	18	0	1227	
-784	Summon Earth Elemental	0	5	3	3	-1	0	784	1	0	0	1	0	493	
-785	Summon Fall Bears	0	5	3	3	-1	0	785	505	0	0	12	0	512	
-786	Contact Trolls	0	5	3	3	-1	0	786	505	0	0	15	0	518	
-787	Spirit Mastery	0	5	5	1	-1	0	787	1014	0	0	4	0	674	
-788	Ghost Grip	0	5	5	1	-1	0	788	5	3	10	0	0	2023	
-789	Corpse Candle	0	5	5	1	0	1	789	3	0	0	1	0	528	
-790	Revive Bane Lord	0	5	5	4	-1	0	790	1	0	0	12	0	998	
-791	Acashic Record	0	5	4	2	-1	0	791	1	0	0	10	0	999	
-792	Howl	0	5	6	3	-1	0	792	1	0	0	3	0	88	
-793	Spirits of the Wood	0	5	6	3	-1	0	793	1007	0	0	8	0	932	
-794	Contact Forest Trolls	0	5	6	3	-1	0	794	505	0	0	10	0	2219	
-795	Awaken Sleeper	0	5	6	4	-1	0	795	1	0	0	10	0	559	
-796	Winged Monkeys	0	5	6	3	4	2	796	1	0	0	10	0	1	
-797	Summon Manticore	0	5	6	2	3	2	797	1	0	0	5	0	2130	
-798	Vermin Feast	0	5	6	4	-1	0	798	1	0	0	6	0	99	
-799	Summon Fire Snakes	0	6	0	2	-1	0	799	505	0	0	7	0	814	
-800	Summon Flame Spirit	0	6	0	3	-1	0	800	1	0	0	30	0	2626	
-801	Summon Great Eagles	0	6	1	3	-1	0	801	505	0	0	8	0	1381	
-802	Summon Bishop Fish	0	6	2	3	-1	0	802	1	0	0	15	0	1040	
-803	Shark Attack	0	6	2	3	-1	0	803	1	0	0	3	0	78	
-804	Sea King's Court	0	6	2	3	-1	0	804	1	0	0	55	36	580	
-805	Streams from Hades	0	6	2	4	5	1	805	1	0	0	40	0	1477	
-806	Contact Hill Giant	0	6	3	3	-1	0	806	1	0	0	3	0	2230	
-807	Troll King's Court	0	6	3	3	-1	0	807	1	0	0	55	25	519	
-808	Acashic Knowledge	0	6	4	3	-1	0	808	1	0	0	25	0	55	
-809	Ether Gate	0	6	4	4	5	1	809	1	0	0	90	45	737	
-810	Summon Spectre	0	6	5	3	-1	0	810	1	0	0	22	0	329	
-811	Summon Ghosts	0	6	5	2	-1	0	811	505	0	0	14	0	566	
-812	Forest Troll Tribe	0	6	6	3	-1	0	812	1	0	0	37	99	2220	
-813	Contact Forest Giant	0	6	6	3	-1	0	813	1	0	0	2	0	2229	
-814	Summon Sprites	0	6	6	1	1	1	814	6	0	0	1	0	592	
-815	Contact Lamias	0	6	6	3	-1	0	815	505	0	0	5	0	394	
-816	Locust Swarms	0	6	6	3	-1	0	816	1	0	0	8	0	8	
-817	Contact Lamia Queen	0	6	6	5	5	2	817	1	0	0	25	0	609	
-818	Living Fire	0	7	0	4	-1	0	818	1000	0	0	2	0	596	
-819	Living Clouds	0	7	1	4	-1	0	819	1000	0	0	2	0	569	
-820	Summon Asp Turtle	0	7	2	3	-1	0	820	1	0	0	13	0	1234	
-821	Living Water	0	7	2	4	-1	0	821	1000	0	0	2	0	410	
-822	Summon Catoblepas	0	7	2	3	5	2	822	1	0	0	15	0	1290	
-823	Living Earth	0	7	3	4	-1	0	823	1000	0	0	2	0	495	
-824	Summon Mound Fiend	0	7	5	3	-1	0	824	1	0	0	28	0	439	
-825	Harvester of Sorrows	0	7	5	4	-1	0	825	1	0	0	20	0	491	
-826	Call Wraith Lord	0	7	5	5	-1	0	826	1	0	0	40	0	181	
-827	Animal Horde	0	7	6	4	-1	0	827	100	0	0	15	0	403	
-828	Awaken Ivy King	0	7	6	4	-1	0	828	1	0	0	30	0	931	
-829	Living Castle	0	7	6	4	2	1	829	1	0	0	40	0	9	
-830	King of Elemental Fire	0	8	0	5	-1	0	830	1	0	0	50	0	8	
-831	Queen of Elemental Air	0	8	1	5	-1	0	831	1	0	0	50	0	7	
-832	Queen of Elemental Water	0	8	2	5	-1	0	832	1	0	0	50	0	6	
-833	Guardians of the Deep	0	8	2	6	-1	0	833	1	0	0	60	0	52	
-834	Earth Attack	0	8	3	5	-1	0	834	1	0	0	5	0	493	
-835	King of Elemental Earth	0	8	3	5	-1	0	835	1	0	0	50	0	4	
-836	Manifestation	0	8	5	5	-1	0	836	1	0	0	4	0	392	
-837	Well of Misery	0	8	5	6	-1	0	837	1	0	0	80	0	33	
-838	King of Banefires	0	8	5	3	0	4	838	1	0	0	50	0	9	
-839	Call the Eater of the Dead	0	8	4	4	5	4	839	1	0	0	50	0	994	
-840	Dragon Master	4	8	6	3	-1	0	840	1	0	0	30	0	1073741824	
-841	Wild Growth	0	8	6	4	-1	0	841	1	0	40	0	0	64	
-842	Faerie Court	0	8	6	5	-1	0	842	1	0	0	40	38	627	
-843	The Kindly Ones	0	8	0	6	6	4	843	1	0	0	40	0	80	
-844	Celestial Rainbow	2	9	2	7	6	5	844	1	0	0	80	0	90	
-845	Call Ancient Presence	0	9	2	6	6	4	845	1	0	0	25	0	2251	
-846	Call Abomination	0	9	4	5	2	2	846	1	0	0	25	0	521	
-847	Ghost Riders	0	9	5	6	-1	0	847	33	0	0	5	0	189	
-848	Legion of Wights	0	9	5	6	-1	0	848	3002	0	0	30	0	533	
-849	Tartarian Gate	0	9	5	7	-1	0	849	1	0	0	10	0	10	
-850	Awaken Tarrasque	0	9	6	6	-1	0	850	1	0	0	25	0	925	
-851	Wild Hunt	0	7	6	6	-1	0	851	1	0	0	50	0	75	
-852	Enchanted Forests	0	9	6	7	-1	0	852	1	0	0	90	0	24	
-853	Corpse Man Construction	3	1	1	1	5	1	853	1	0	0	1	0	534	
-854	Clockwork Soldiers	3	3	3	2	-1	0	854	505	0	0	5	0	2321	
-855	Legions of Steel	3	3	3	3	-1	0	855	1	0	40	0	0	64	
-856	Construct Manikin	3	3	6	1	5	1	856	2008	0	0	9	0	313	
-857	Clockwork Horrors	3	5	3	2	-1	0	857	1008	0	0	9	0	982	
-858	Crusher Construction	3	5	3	3	-1	0	858	1	0	0	15	0	475	
-859	Wooden Construction	3	5	6	3	-1	0	859	1	0	0	3	0	476	
-860	Construct Mandragora	3	5	6	2	5	1	860	2001	0	0	10	0	314	
-861	Weapons of Sharpness	3	7	3	5	-1	0	861	1	0	20	0	0	524288	
-862	Forge of the Ancients	3	7	3	5	-1	0	862	1	0	0	80	0	20	
-863	Mechanical Men	3	7	3	2	-1	0	863	1008	0	0	15	0	532	
-864	Golem Construction	3	7	4	3	3	2	864	1	0	0	30	0	471	
-865	Siege Golem	3	9	3	3	-1	0	865	1	0	0	20	0	760	
-866	Iron Dragon	3	9	3	4	0	2	866	1	0	0	30	0	531	
-867	Mechanical Militia	3	9	3	5	-1	0	867	1	0	0	80	0	51	
-868	Juggernaut Construction	3	9	4	5	-1	0	868	1	0	0	25	0	781	
-869	Poison Golem	3	9	5	4	3	2	869	1	0	0	35	0	1099	
-870	Protection from Fire	4	1	0	1	-1	0	870	1	0	5	0	0	198	
-871	Windrunner	4	1	1	1	-1	0	871	1	0	10	0	0	4	
-872	Protection from Lightning	4	1	1	1	-1	0	872	1	0	5	0	0	199	
-873	Protection from Cold	4	1	2	1	-1	0	873	1	0	5	0	0	201	
-874	Resist Magic	4	1	4	1	-1	0	874	1	0	20	0	0	67108864	
-875	Animate Skeleton	4	1	5	1	-1	0	875	1	-2	30	0	0	-2	
-876	Animate Dead	4	1	5	1	-1	0	876	1	-2	20	0	0	-3	
-877	Reanimation	4	1	5	1	-1	0	877	10	0	0	3	0	-2	
-878	Poison Resistance	4	1	6	1	-1	0	878	1	0	5	0	0	200	
-879	Healing Touch	4	1	6	1	-1	0	879	1	1	20	0	0	10020	
-880	Flight	4	2	1	1	-1	0	880	1	0	20	0	0	131072	
-881	Water Shield	4	2	2	1	-1	0	881	1	0	20	0	0	32	
-882	Breath of Winter	4	2	2	1	-1	0	882	1	0	20	0	0	8192	
-883	Flying Shield	4	2	3	1	1	1	883	1	0	20	0	0	549755813888	
-884	Revive King	4	2	5	1	-1	0	884	1	0	0	3	0	188	
-885	Gift of the Hare	4	2	6	1	-1	0	885	1	0	20	0	0	4	
-886	Personal Regeneration	4	2	6	2	-1	0	886	1	0	20	0	0	32	
-887	Fire Shield	4	3	0	1	-1	0	887	1	0	20	0	0	32768	
-888	Gift of Flight	4	3	1	2	-1	0	888	1	0	20	0	0	131072	
-889	Seeking Arrow	4	3	1	3	-1	0	889	1	0	0	4	0	8	
-890	Claymen	4	3	2	1	3	1	890	505	0	0	5	0	817	
-891	Strength of Giants	4	3	3	3	-1	0	891	1	0	40	0	0	128	
-892	Astral Shield	4	3	4	1	-1	0	892	1	0	20	0	0	268435456	
-893	Raise Skeletons	4	3	5	2	-1	0	893	3	-2	40	0	0	-2	
-894	Create Revenant	4	3	5	2	-1	0	894	1	0	0	9	0	396	
-895	Regeneration	4	3	6	3	-1	0	895	1	0	40	0	0	32	
-896	Heal	4	3	6	1	-1	0	896	1	5	20	0	0	10020	
-897	Flaming Arrows	4	4	0	4	-1	0	897	1	0	0	1	0	8388608	
-898	Terracotta Army	4	4	0	1	3	1	898	1009	0	0	10	0	2134	
-899	Cloud Trapeze	4	4	1	2	-1	0	899	1	0	0	3	0	1	
-900	Vile Water	4	4	2	2	-1	0	900	1	0	0	2	0	2159	
-901	Astral Healing	4	4	4	3	-1	0	901	1	0	0	1	0	2	
-902	Antimagic	4	4	4	3	-1	0	902	1	0	0	1	0	67108864	
-903	Raise Dead	4	4	5	2	-1	0	903	2006	-2	40	0	0	-3	
-904	Twiceborn	4	4	5	2	-1	0	904	1	0	0	5	0	4194304	
-905	Behemoth	4	4	5	3	-1	0	905	1	0	0	7	0	452	
-906	Haste	4	4	6	3	-1	0	906	1	0	0	1	0	4	
-907	Poison Ward	4	4	6	2	-1	0	907	1	0	0	1	0	16777216	
-908	Flame Ward	4	5	0	2	-1	0	908	1	0	0	1	0	1024	
-909	Thunder Ward	4	5	1	2	-1	0	909	1	0	0	1	0	2048	
-910	Watcher	4	5	1	3	3	1	910	1	0	0	5	0	768	
-911	Trade Wind	4	5	1	4	-1	-1	911	1	0	0	10	0	95	
-912	Winter Ward	4	5	2	2	-1	0	912	1	0	0	1	0	4096	
-913	Friendly Currents	4	5	2	3	-1	0	913	1	0	0	1	0	2	
-914	Quagmire	4	5	2	4	-1	0	914	1	0	0	1	0	85	
-915	Enliven Gargoyles	4	5	3	3	1	1	915	505	0	0	10	0	2368	
-916	Ritual of Returning	4	5	4	2	-1	0	916	1	0	0	3	0	8388608	
-917	Dispel	4	5	4	3	-1	0	917	1	0	0	30	0	1	
-918	The Eyes of God	4	5	4	5	-1	0	918	1	0	0	50	0	15	
-919	Pale Riders	4	5	5	3	-1	0	919	2014	-2	0	10	0	189	
-920	Horde of Skeletons	4	5	5	2	-1	0	920	505	-2	40	0	0	-2	
-921	Faery Trod	4	5	6	5	-1	0	921	1	0	0	20	0	1	
-922	Gift of Health	4	7	6	6	-1	0	922	1	0	0	50	0	30	
-923	Foul Vapors	4	5	6	3	2	1	923	1	0	0	1	0	45	
-924	Eternal Pyre	4	6	0	6	-1	0	924	1	0	0	80	0	17	
-925	Heat from Hell	4	6	0	4	-1	0	925	1	0	0	2	0	6	
-926	Vafur Flames	4	6	0	5	-1	0	926	1	0	0	10	0	73	
-927	Arrow Fend	4	6	1	3	-1	0	927	1	0	0	1	0	8	
-928	Dome of Solid Air	4	6	1	5	-1	0	928	1	0	0	20	0	61	
-929	Water Ward	4	6	2	1	-1	0	929	1	0	0	1	0	32	
-930	Grip of Winter	4	6	2	4	-1	0	930	1	0	0	2	0	9	
-931	Frost Dome	4	6	2	5	-1	0	931	1	0	0	15	0	62	
-932	Hidden in Snow	4	6	2	3	5	1	932	1	0	0	75	0	1	
-933	Riches from Beneath	4	6	3	5	-1	0	933	1	0	0	70	0	35	
-934	Enliven Statues	4	6	3	3	-1	0	934	1007	0	0	20	0	474	
-935	Hidden in Sand	4	6	3	3	5	1	935	1	0	0	75	0	2	
-936	Hidden Underneath	4	6	3	3	5	1	936	1	0	0	75	0	3	
-937	Opposition	4	6	4	3	-1	0	937	1	100	20	0	0	999	
-938	Dome of Arcane Warding	4	6	4	4	-1	0	938	1	0	0	10	0	64	
-939	Rigor Mortis	4	6	5	4	-1	0	939	1	0	0	3	0	4	
-940	Reanimate Archers	4	6	5	2	0	1	940	10	0	0	5	0	535	
-941	Ziz	4	6	5	3	1	2	941	1	0	0	4	0	1388	
-942	Relief	4	6	6	5	-1	0	942	1	0	0	1	0	84	
-943	Dome of Flaming Death	4	7	0	4	-1	0	943	1	0	0	8	0	60	
-944	Mass Flight	4	7	1	4	-1	0	944	1	0	0	2	0	131072	
-945	Ghost Ship Armada	4	7	2	4	5	3	945	1	0	0	60	0	43	
-946	Lion Sentinels	4	7	3	5	-1	0	946	1	0	0	30	0	105	
-947	Earth Blood Deep Well	4	7	3	6	-1	0	947	1	0	0	80	0	48	
-948	Solar Brilliance	4	7	4	5	-1	0	948	1	0	0	3	0	21	
-949	Stellar Focus	4	7	4	5	-1	0	949	1	0	0	30	0	54	
-950	Carrion Reanimation	4	7	5	3	-1	0	950	100	0	0	10	0	-3	
-951	Life after Death	4	7	5	4	-1	0	951	1	0	0	4	0	2097152	
-952	Ritual of Rebirth	4	7	5	4	-1	0	952	1	0	0	15	0	398	
-953	Leviathan	4	7	5	3	2	1	953	1	0	0	12	0	1235	
-954	Serpent's Blessing	4	7	6	4	-1	0	954	1	0	0	1	0	16777216	
-955	Awaken Treelord	4	7	6	5	-1	0	955	1	0	0	35	0	11	
-956	Forest Dome	4	6	6	5	-1	0	956	1	0	0	10	0	66	
-957	Fire Fend	4	8	0	4	-1	0	957	1	0	0	1	0	1024	
-958	Frost Fend	4	8	2	4	-1	0	958	1	0	0	1	0	4096	
-959	Thunder Fend	4	8	1	4	-1	0	959	1	0	0	1	0	2048	
-960	Mists of Deception	4	8	1	6	-1	0	960	1	0	0	2	0	71	
-961	Wrath of the Sea	4	8	2	5	-1	0	961	1	0	0	70	0	18	
-962	Lichcraft	4	8	5	5	-1	0	962	1	0	0	30	0	178	
-963	Unraveling	4	8	4	6	-1	0	963	1	0	0	6	40	256	
-964	Mass Regeneration	4	8	6	4	-1	0	964	1	0	0	2	0	32	
-965	Haunted Forest	4	8	6	5	5	1	965	1	0	0	60	0	55	
-966	Thetis' Blessing	4	7	2	5	-1	0	966	1	0	0	50	0	59	
-967	Demon Cleansing	4	9	2	5	-1	0	967	1	0	0	1	0	83	
-968	Arcane Nexus	4	9	4	8	-1	0	968	1	0	0	150	0	19	
-969	Fields of the Dead	4	9	5	5	3	2	969	1	0	0	1	0	96	
-970	Army of the Dead	4	9	5	5	-1	0	970	5015	0	0	10	46	-2	
-971	Gaia's Blessing	4	9	6	5	3	2	971	1	0	0	3	0	16784384	
-972	Gift of Nature's Bounty	4	9	6	7	-1	0	972	1	0	0	70	0	27	
-973	Desiccation	5	1	2	2	-1	0	973	1	100	20	0	0	250	
-974	Farstrike	5	1	3	2	4	1	974	1	5	5	0	0	1015	
-975	Blink	5	1	4	1	-1	0	975	1	0	10	0	0	30	
-976	Communion Master	5	1	4	1	-1	0	976	1	0	20	0	0	536870912	
-977	Communion Slave	5	1	4	1	-1	0	977	1	0	20	0	0	1073741824	
-978	Horror Mark	5	1	4	2	-1	0	978	1	100	20	0	0	261	
-979	Dust to Dust	5	1	5	1	-1	0	979	1	0	20	0	0	2020	
-980	Decay	5	1	5	1	-1	0	980	1	3	20	0	0	256	
-981	Frighten	5	1	5	1	-1	0	981	1	5	5	0	0	6	
-982	Fascination	5	1	6	1	-1	0	982	1	100	20	0	0	100	
-983	Seven Year Fever	5	1	6	1	0	1	983	1	2	30	0	0	1	
-984	Curse	5	1	6	1	4	1	984	1	100	30	0	0	2	
-985	Bonds of Fire	5	2	0	1	-1	0	985	1	3	20	0	0	65536	
-986	Steal Breath	5	2	1	1	-1	0	986	1	5	20	0	0	5035	
-987	Scrying Pool	5	2	2	2	-1	0	987	1	0	0	2	0	36	
-988	Returning	5	2	4	2	-1	0	988	1	0	0	2	0	1	
-989	Mind Burn	5	2	4	2	-1	0	989	1	100	20	0	0	1010	
-990	Sleep	5	2	6	2	-1	0	990	1	100	20	0	0	1024	
-991	Rage	5	3	0	2	-1	0	991	1	100	20	0	0	128	
-992	Augury	5	3	0	2	-1	0	992	1	0	0	2	0	0	
-993	Sailors' Death	5	3	2	3	-1	0	993	1	1	20	0	0	3005	
-994	Iron Will	5	3	3	1	-1	0	994	1	100	20	0	0	67108864	
-995	Astral Window	5	3	4	2	-1	0	995	1	0	0	3	0	36	
-996	Teleport	5	3	4	3	-1	0	996	1	0	0	2	0	1	
-997	Haruspex	5	3	6	2	-1	0	997	1	0	0	2	0	6	
-998	Panic	5	3	6	2	-1	0	998	1	1	20	0	0	3	
-999	Prison of Fire	5	4	0	3	-1	0	999	1	2	30	0	0	65536	
-1000	Auspex	5	4	1	2	-1	0	1000	1	0	0	2	0	1	
-1001	Curse of the Desert	5	4	2	3	-1	0	1001	1	100	30	0	0	250	
-1002	Gnome Lore	5	4	3	2	-1	0	1002	1	0	0	3	0	3	
-1003	Paralyze	5	4	4	2	-1	0	1003	1	100	20	0	0	9042	
-1004	Vengeance of the Dead	5	4	4	3	5	1	1004	1	0	0	3	0	999	
-1005	Terror	5	4	5	3	-1	0	1005	1	1	10	0	0	5	
-1006	Touch of Madness	5	4	6	1	-1	0	1006	1	0	30	0	0	256	
-1007	Rage of the Cornered Rat	5	4	6	2	-1	0	1007	1	0	20	0	0	256	
-1008	Wildness	5	4	6	3	-1	0	1008	1	3	20	0	0	17179869184	
-1009	Cure Disease	5	4	6	4	-1	0	1009	1	0	0	5	0	1	
-1010	Raging Hearts	5	5	0	4	-1	0	1010	1	0	0	10	0	2	
-1011	Pyre of Catharsis	5	5	0	3	-1	0	1011	1	0	0	4	0	1	
-1012	Purifying Flames	-1	1	-1	0	-1	0	1012	1	0	0	0	0	20	
-1013	Confusion	5	5	1	3	-1	0	1013	1	3	10	0	0	17179869184	
-1014	Soul Slay	5	5	4	3	-1	0	1014	1	100	20	0	0	999	
-1015	Telestic Animation	5	5	4	3	-1	0	1015	1	0	0	5	0	473	
-1016	Gateway	5	5	4	4	-1	0	1016	1	0	0	10	0	1	
-1017	Leeching Darkness	5	5	5	3	-1	0	1017	1	1	20	0	0	6	
-1018	Burden of Time	5	5	5	5	-1	0	1018	1	0	0	70	0	29	
-1019	Control the Dead	5	5	5	2	-1	0	1019	1	0	20	0	0	999	
-1020	Charm Animal	5	5	6	2	-1	0	1020	1	100	20	0	0	999	
-1021	The Ravenous Swarm	5	5	6	3	-1	0	1021	1	0	0	1	0	92	
-1022	Growing Fury	5	5	6	4	-1	0	1022	1	0	0	1	0	13	
-1023	Gift of Reason	5	5	6	4	-1	0	1023	1	0	0	20	0	1	
-1024	Melancholia	5	6	3	5	-1	0	1024	1	0	0	20	0	72	
-1025	Enslave Mind	5	6	4	4	-1	0	1025	1	100	20	0	0	999	
-1026	Imprint Souls	5	6	4	4	-1	0	1026	1	-1	0	25	0	2052	
-1027	Wither Bones	5	6	5	3	-1	0	1027	1	-1	50	0	0	2010	
-1028	Leprosy	5	6	5	5	-1	0	1028	1	-1	0	10	0	1	
-1029	Foul Air	5	6	5	5	1	1	1029	1	0	0	75	0	10	
-1030	Syllable of Sleep	5	6	6	5	-1	0	1030	1	0	20	0	0	1024	
-1031	Beckoning	5	6	6	5	-1	0	1031	5025	0	0	20	0	999	
-1032	Purgatory	5	7	0	6	-1	0	1032	1	0	0	60	0	26	
-1033	Dark Skies	5	7	1	5	-1	0	1033	1	0	0	50	0	32	
-1034	Vengeful Water	5	7	2	7	-1	0	1034	1	0	0	70	0	93	
-1035	Divine Name	5	7	4	5	-1	0	1035	1	0	0	25	0	1	
-1036	Vortex of Returning	5	7	4	4	-1	0	1036	1	0	0	3	0	1	
-1037	Plague	5	7	5	4	-1	0	1037	1	0	0	1	0	8	
-1038	Charm	5	7	6	3	-1	0	1038	1	100	30	0	0	999	
-1039	Hydrophobia	5	8	0	2	-1	0	1039	1	100	0	1	0	128	
-1040	Gale Gate	5	8	1	5	-1	0	1040	1	0	0	60	0	49	
-1041	Lure of the Deep	5	8	2	6	-1	0	1041	1	0	0	70	0	50	
-1042	Soul Drain	5	8	4	5	5	5	1042	1	0	0	5	0	5	
-1043	Stygian Paths	5	8	5	5	-1	0	1043	1	0	0	15	0	1	
-1044	Black Death	5	8	5	5	-1	0	1044	1	0	0	15	0	1	
-1045	Call the Worm That Walks	5	8	6	5	-1	0	1045	1	0	0	30	0	2217	
-1046	Beast Mastery	5	8	6	6	-1	0	1046	1	0	0	4	0	999	
-1047	Astral Travel	5	9	4	5	-1	0	1047	1	0	0	25	0	1	
-1048	Master Enslave	5	9	4	8	-1	0	1048	1	0	0	8	0	999	
-1049	Undead Mastery	5	9	5	7	-1	0	1049	1	0	0	7	0	999	
-1050	Blood Burst	6	1	7	1	-1	0	1050	1	5	0	2	0	1010	
-1051	Blood Heal	6	1	7	1	-1	0	1051	1	3	0	1	0	50	
-1052	Sabbath Master	6	1	7	1	-1	0	1052	1	0	0	1	0	536870912	
-1053	Sabbath Slave	6	1	7	1	-1	0	1053	1	0	0	1	0	1073741824	
-1054	Reinvigoration	6	1	7	1	-1	0	1054	1	0	0	1	0	200	
-1055	Bind Shadow Imp	6	1	7	1	-1	0	1055	1	0	0	4	0	2287	
-1056	Summon Imps	6	1	7	1	-1	0	1056	5	0	0	1	0	303	
-1057	Bind Fiery Imps	6	1	7	1	0	1	1057	505	0	0	6	0	2286	
-1058	Blood Boil	6	1	7	1	0	1	1058	1	3	50	0	0	1010	
-1059	Bowl of Blood	6	2	7	1	-1	0	1059	1	0	0	5	0	7	
-1060	Agony	6	2	7	2	-1	0	1060	1	2	0	1	21	1	
-1061	Banish Demon	6	2	7	1	-1	0	1061	1	100	0	1	0	999	
-1062	Bind Spine Devil	6	2	7	2	-1	0	1062	1	0	0	3	0	638	
-1063	Bind Fiend	6	2	7	2	-1	0	1063	1	-2	0	5	0	88	
-1064	Bind Bone Fiends	6	2	7	1	5	1	1064	505	0	0	5	0	433	
-1065	Hell Power	6	2	7	3	-1	0	1065	1	0	0	3	4	131072	
-1066	Leeching Touch	6	3	7	1	-1	0	1066	1	0	20	0	0	1014	
-1067	Pain Transfer	6	3	7	2	-1	0	1067	1	0	20	0	0	512	
-1068	Infernal Circle	6	3	7	5	-1	0	1068	1	0	0	5	0	89	
-1069	Bind Devil	6	3	7	2	0	2	1069	1	0	0	7	0	304	
-1070	Bind Frost Fiend	6	3	7	2	2	2	1070	1	0	0	8	0	449	
-1071	Cross Breeding	6	3	7	1	6	1	1071	1019	0	0	15	0	1	
-1072	Blood Feast	6	3	7	2	-1	0	1072	1	0	0	5	0	50	
-1073	Bind Serpent Fiend	6	4	7	1	-1	0	1073	1	0	0	2	0	526	
-1074	Blood Lust	6	4	7	2	-1	0	1074	1	0	0	1	0	128	
-1075	Hellfire	6	4	7	1	0	2	1075	2	0	0	1	0	1008	
-1076	Bind Storm Demon	6	4	7	2	1	2	1076	1	0	0	10	0	632	
-1077	Call Lesser Horror	6	4	7	2	4	2	1077	1	-2	0	2	0	-6	
-1078	Rain of Toads	6	5	7	3	6	1	1078	1	0	0	20	0	6	
-1079	Blood Fecundity	6	4	7	2	6	2	1079	1	0	0	10	0	94	
-1080	Hellbind Heart	6	5	7	2	-1	0	1080	1	100	0	1	0	999	
-1081	Horde from Hell	6	5	7	4	-1	0	1081	25	0	0	44	0	303	
-1082	Bloodletting	6	5	7	4	-1	0	1082	1	0	0	4	0	1	
-1083	Bind Succubus	6	5	7	4	-1	0	1083	1	-2	0	66	0	811	
-1084	Wrath of Pazuzu	6	5	7	1	1	3	1084	1	0	0	15	0	14	
-1085	Bind Demon Knight	6	5	7	2	3	2	1085	1	-2	0	15	0	489	
-1086	Awaken Dark Vines	6	5	7	1	6	3	1086	2	0	0	12	0	330	
-1087	Send Lesser Horror	6	5	7	2	4	3	1087	1	0	0	9	0	-6	
-1088	Summon Illearth	6	5	7	2	3	2	1088	1	0	0	2	0	2280	
-1089	Harm	6	6	7	2	-1	0	1089	1	5	0	1	35	1000	
-1090	Rejuvenate	6	6	7	1	-1	0	1090	1	0	0	10	0	-10	
-1091	Infernal Disease	6	6	7	5	-1	0	1091	1	0	0	5	0	1662	
-1092	Ritual of Five Gates	6	6	7	5	-1	0	1092	1	0	0	39	73	88	
-1093	Bind Ice Devil	6	6	7	3	2	3	1093	1	-2	0	88	0	1	
-1094	Call Horror	6	6	7	3	4	3	1094	1	-2	0	3	0	-7	
-1095	Leech	6	7	7	1	-1	0	1095	1	25	0	1	0	1024	
-1096	Blood Rain	6	7	7	3	-1	0	1096	1	0	0	3	0	68	
-1097	Plague of Locusts	6	7	7	5	-1	0	1097	9	0	0	88	0	2794	
-1098	Bind Arch Devil	6	7	7	4	0	2	1098	1	0	0	99	0	2	
-1099	Father Illearth	6	7	7	3	3	4	1099	1	0	0	105	0	5	
-1100	Send Dream Horror	6	7	7	3	4	4	1100	1	0	0	15	0	12	
-1101	Dome of Corruption	6	7	7	4	4	4	1101	1	0	0	20	0	67	
-1102	Astral Corruption	6	7	7	6	4	6	1102	1	0	0	166	0	57	
-1103	Curse of Blood	6	7	7	3	5	4	1103	1	0	0	77	0	404	
-1104	Blood Rite	6	7	7	2	5	2	1104	1	-2	0	11	0	405	
-1105	Purify Blood	6	7	7	4	6	1	1105	1	0	0	3	0	16777216	
-1106	Rush of Strength	6	8	7	3	-1	0	1106	1	0	0	1	0	128	
-1107	Life for a Life	6	8	7	3	-1	0	1107	1	100	99	1	0	5025	
-1108	Bind Heliophagus	6	8	7	5	-1	0	1108	1	0	0	111	0	3	
-1109	Three Red Seconds	6	8	7	5	-1	0	1109	1	0	0	120	0	25	
-1110	Blood Vortex	6	8	7	7	-1	0	1110	1	0	0	166	0	87	
-1111	Improved Cross Breeding	6	8	7	2	6	2	1111	3034	0	0	20	0	1	
-1112	Horror Seed	6	8	7	3	4	4	1112	1	0	0	25	0	9	
-1113	Damage Reversal	6	9	7	1	-1	0	1113	1	0	0	1	0	202	
-1114	Forces of Darkness	6	9	7	6	-1	0	1114	1008	0	0	50	0	88	
-1115	The Looming Hell	6	9	7	8	-1	0	1115	1	0	0	150	0	42	
-1116	Bind Demon Lord	6	9	7	8	-1	0	1116	1	0	0	150	85	10	
-1117	Infernal Prison	6	9	7	3	0	1	1117	1	100	0	2	0	-12	
-1118	Infernal Forces	6	9	7	5	0	2	1118	1002	0	0	50	26	304	
-1119	Infernal Tempest	6	9	7	5	1	2	1119	1002	0	0	50	0	632	
-1120	Claws of Kokytos	6	9	7	3	2	1	1120	1	100	0	2	0	-13	
-1121	Forces of Ice	6	9	7	5	2	2	1121	1003	0	0	50	0	449	
-1122	Infernal Crusade	6	9	7	5	3	2	1122	1005	0	0	50	0	489	
-1123	Send Horror	6	9	7	4	4	5	1123	1	0	0	30	0	-7	
-1124	Chorus Master	5	1	6	1	-1	0	1124	1	0	20	0	0	536870912	
-1125	Chorus Slave	5	1	6	1	-1	0	1125	1	0	20	0	0	35433480192	
-1126	Sow Dragon Teeth	4	6	3	2	-1	0	1126	10	0	0	1	0	3119	
-1127	Gigantomachia	5	7	3	4	0	4	1127	1	0	0	60	0	107	
-1128	Bind Keres	0	6	5	2	-1	0	1128	3	0	0	12	0	3127	
-1129	Curse Tablet	0	3	5	1	-1	0	1129	1	0	0	3	0	2	
-1130	Seith Curse	5	5	5	1	4	1	1130	1	0	0	3	0	2	
-1131	Contact Hesperide	0	6	0	3	4	1	1131	1	0	0	35	0	3160	
-1132	Call Ladon	0	6	0	3	6	2	1132	1	0	0	15	0	3167	
-1133	Summon Hound of Twilight	0	5	3	2	5	1	1133	1	0	0	4	0	3168	
-1134	Dogs of Gold and Silver	3	5	3	1	-1	0	1134	1	0	0	7	0	3169	
-1135	Dog of Gold	-1	1	-1	0	-1	0	1135	1	0	0	0	0	3170	
-1136	Craft Keledone	3	7	3	2	4	2	1136	1	0	0	5	0	3164	
-1137	Forge Brass Bull	3	7	0	3	3	3	1137	1	0	0	30	0	3171	
-1138	Taurobolium	5	3	6	1	0	1	1138	1	0	0	6	0	651	
-1139	Blessing of the God-slayer	4	0	2	1	8	1	1139	1	0	0	5	0	654	
-1140	Awaken Jotun Draugar	0	4	5	2	-1	0	1140	3	0	0	15	0	3193	
-1141	From Death Comes Life	1	3	5	1	6	1	1141	1	0	0	3	0	94	
-1142	Rhapsody of the Dead	5	3	5	1	-1	0	1142	1	0	20	0	0	1003	
-1143	Scare Spirits	-1	1	-1	0	-1	0	1143	1	0	0	0	0	3	
-1144	Rhapsody of Life	5	3	6	1	-1	0	1144	1	5	20	0	0	1009	
-1145	Minor Reinvigoration	-1	1	-1	0	-1	0	1145	1	0	0	0	0	10	
-1146	Procession of the Underworld	0	5	5	3	-1	0	1146	12	0	0	13	0	3210	
-1147	Summon Okami	0	3	6	1	-1	0	1147	1009	0	0	6	0	3264	
-1148	Contact Bakeneko	0	3	6	2	-1	0	1148	1	0	0	8	0	3268	
-1149	Summon Omukade	0	4	3	2	5	1	1149	1	0	0	6	0	3269	
-1150	Contact Mujina	0	5	6	2	-1	0	1150	1	0	0	21	0	3273	
-1151	Contact Tanuki	0	5	6	2	-1	0	1151	1	0	0	26	0	3266	
-1152	Contact Jorogumo	0	6	6	2	5	1	1152	1	0	0	32	0	3263	
-1153	Summon Araburu-kami	0	7	5	1	0	1	1153	1	0	0	5	0	3270	
-1154	Katabasis	4	3	5	1	2	1	1154	1	0	0	8	0	2199023255552	
-1155	Epopteia	4	3	6	1	-1	0	1155	1	0	0	12	0	94	
-1156	Contact Jinn	0	4	0	2	1	1	1156	1	0	0	18	0	3353	
-1157	Summon Jinn Warriors	0	5	0	2	1	1	1157	3	0	0	18	0	3354	
-1158	Contact Houri	0	6	1	2	6	1	1158	1	0	0	26	0	3375	
-1159	Summon Hinn	0	6	1	1	0	1	1159	505	0	0	6	0	3367	
-1160	Summon Ifrit	6	5	7	1	0	3	1160	1	0	0	58	0	3372	
-1161	Summon Shaytan	6	6	7	1	0	3	1161	1	0	0	73	0	3373	
-1162	Summon Marid	0	8	0	4	1	2	1162	1	0	0	66	0	3374	
-1163	Contact Marid	0	8	2	2	0	4	1163	1	0	0	60	0	3376	
-1164	Smokeless Flame	2	6	0	3	1	1	1164	1	1	30	0	0	1042	
-1165	Large Area Combustion	-1	1	-1	0	-1	0	1165	1	0	0	0	0	512	
-1166	Scorching Wind	2	4	1	2	0	1	1166	1	0	30	0	0	250	
-1167	Call Cyclops Tribe	0	3	3	2	-1	0	1167	505	0	0	12	0	3381	
-1168	Call the Birds of Splendour	0	6	0	2	6	1	1168	1	0	0	9	0	3382	
-1169	Awaken Jinn Block	5	5	3	1	8	1	1169	1	0	0	5	0	3389	
-1170	Winter's Call	6	6	7	3	2	2	1170	1	0	0	86	0	844	
-1171	Summon Rimvaettir	0	5	2	2	-1	0	1171	1003	0	0	5	0	3420	
-1172	Summon Dwarf of the Four Directions	0	8	1	4	3	3	1172	1	0	0	62	0	-21	
-1173	Feast for Ghuls	6	4	7	1	-1	0	1173	505	0	0	21	0	3479	
-1174	Summon Ghulah	6	5	7	1	-1	0	1174	1	0	0	31	0	3481	
-1175	Summon Binn	0	6	2	1	1	1	1175	505	0	0	6	0	3476	
-1176	Summon Si'lat	0	6	1	2	-1	0	1176	1	0	0	21	0	3483	
+113	Large Fireball	-1	1	-1	0	-1	0	113	1	0	0	0	0	16	
+114	Decay	-1	1	-1	0	-1	0	114	1	0	0	0	0	256	
+115	Area Flames	-1	1	-1	0	-1	0	115	1	0	0	0	0	6	
+116	Acid Splash	-1	1	-1	0	-1	0	116	1	0	0	0	0	6	
+117	Bane Flame Area	-1	1	-1	0	-1	0	117	1	0	0	0	0	8	
+118	Astral Fires Area	-1	1	-1	0	-1	0	118	1	0	0	0	0	10	
+119	The Missing Tune	-1	1	-1	0	-1	0	119	1	0	0	0	0	127	
+120	Minor Blunt Damage	-1	1	-1	0	-1	0	120	1	0	0	0	0	8	
+121	15 Giants of the Lost Tribe	-1	1	-1	0	-1	0	121	15	0	0	0	0	3878	
+122	Area False Flames	-1	1	-1	0	-1	0	122	1	0	0	0	0	8	
+123	Stun Magic Being	-1	1	4	1	-1	0	123	1	100	0	0	0	100	
+124	Fay Folk Court	-1	1	-1	0	-1	0	124	10	0	0	0	0	-26	
+125	Fay Folk Court Soldiers	-1	1	-1	0	-1	0	125	3	0	0	0	0	3903	
+126	Fay Folk Court Knights	-1	1	-1	0	-1	0	126	2	0	0	0	0	3901	
+127	...	-1	1	-1	0	-1	0	127	1	0	0	0	0	0	
+128	...	-1	1	-1	0	-1	0	128	1	0	0	0	0	0	
+129	...	-1	1	-1	0	-1	0	129	1	0	0	0	0	0	
+130	...	-1	1	-1	0	-1	0	130	1	0	0	0	0	0	
+131	...	-1	1	-1	0	-1	0	131	1	0	0	0	0	0	
+132	...	-1	1	-1	0	-1	0	132	1	0	0	0	0	0	
+133	...	-1	1	-1	0	-1	0	133	1	0	0	0	0	0	
+134	...	-1	1	-1	0	-1	0	134	1	0	0	0	0	0	
+135	...	-1	1	-1	0	-1	0	135	1	0	0	0	0	0	
+136	...	-1	1	-1	0	-1	0	136	1	0	0	0	0	0	
+137	...	-1	1	-1	0	-1	0	137	1	0	0	0	0	0	
+138	...	-1	1	-1	0	-1	0	138	1	0	0	0	0	0	
+139	...	-1	1	-1	0	-1	0	139	1	0	0	0	0	0	
+140	...	-1	1	-1	0	-1	0	140	1	0	0	0	0	0	
+141	...	-1	1	-1	0	-1	0	141	1	0	0	0	0	0	
+142	...	-1	1	-1	0	-1	0	142	1	0	0	0	0	0	
+143	...	-1	1	-1	0	-1	0	143	1	0	0	0	0	0	
+144	...	-1	1	-1	0	-1	0	144	1	0	0	0	0	0	
+145	...	-1	1	-1	0	-1	0	145	1	0	0	0	0	0	
+146	...	-1	1	-1	0	-1	0	146	1	0	0	0	0	0	
+147	...	-1	1	-1	0	-1	0	147	1	0	0	0	0	0	
+148	...	-1	1	-1	0	-1	0	148	1	0	0	0	0	0	
+149	...	-1	1	-1	0	-1	0	149	1	0	0	0	0	0	
+150	...	-1	1	-1	0	-1	0	150	1	0	0	0	0	0	
+151	...	-1	1	-1	0	-1	0	151	1	0	0	0	0	0	
+152	...	-1	1	-1	0	-1	0	152	1	0	0	0	0	0	
+153	...	-1	1	-1	0	-1	0	153	1	0	0	0	0	0	
+154	...	-1	1	-1	0	-1	0	154	1	0	0	0	0	0	
+155	...	-1	1	-1	0	-1	0	155	1	0	0	0	0	0	
+156	...	-1	1	-1	0	-1	0	156	1	0	0	0	0	0	
+157	...	-1	1	-1	0	-1	0	157	1	0	0	0	0	0	
+158	...	-1	1	-1	0	-1	0	158	1	0	0	0	0	0	
+159	...	-1	1	-1	0	-1	0	159	1	0	0	0	0	0	
+160	...	-1	1	-1	0	-1	0	160	1	0	0	0	0	0	
+161	...	-1	1	-1	0	-1	0	161	1	0	0	0	0	0	
+162	...	-1	1	-1	0	-1	0	162	1	0	0	0	0	0	
+163	...	-1	1	-1	0	-1	0	163	1	0	0	0	0	0	
+164	...	-1	1	-1	0	-1	0	164	1	0	0	0	0	0	
+165	...	-1	1	-1	0	-1	0	165	1	0	0	0	0	0	
+166	...	-1	1	-1	0	-1	0	166	1	0	0	0	0	0	
+167	...	-1	1	-1	0	-1	0	167	1	0	0	0	0	0	
+168	...	-1	1	-1	0	-1	0	168	1	0	0	0	0	0	
+169	...	-1	1	-1	0	-1	0	169	1	0	0	0	0	0	
+170	...	-1	1	-1	0	-1	0	170	1	0	0	0	0	0	
+171	...	-1	1	-1	0	-1	0	171	1	0	0	0	0	0	
+172	...	-1	1	-1	0	-1	0	172	1	0	0	0	0	0	
+173	...	-1	1	-1	0	-1	0	173	1	0	0	0	0	0	
+174	...	-1	1	-1	0	-1	0	174	1	0	0	0	0	0	
+175	...	-1	1	-1	0	-1	0	175	1	0	0	0	0	0	
+176	...	-1	1	-1	0	-1	0	176	1	0	0	0	0	0	
+177	...	-1	1	-1	0	-1	0	177	1	0	0	0	0	0	
+178	...	-1	1	-1	0	-1	0	178	1	0	0	0	0	0	
+179	...	-1	1	-1	0	-1	0	179	1	0	0	0	0	0	
+180	...	-1	1	-1	0	-1	0	180	1	0	0	0	0	0	
+181	...	-1	1	-1	0	-1	0	181	1	0	0	0	0	0	
+182	...	-1	1	-1	0	-1	0	182	1	0	0	0	0	0	
+183	...	-1	1	-1	0	-1	0	183	1	0	0	0	0	0	
+184	...	-1	1	-1	0	-1	0	184	1	0	0	0	0	0	
+185	...	-1	1	-1	0	-1	0	185	1	0	0	0	0	0	
+186	...	-1	1	-1	0	-1	0	186	1	0	0	0	0	0	
+187	...	-1	1	-1	0	-1	0	187	1	0	0	0	0	0	
+188	...	-1	1	-1	0	-1	0	188	1	0	0	0	0	0	
+189	...	-1	1	-1	0	-1	0	189	1	0	0	0	0	0	
+190	...	-1	1	-1	0	-1	0	190	1	0	0	0	0	0	
+191	...	-1	1	-1	0	-1	0	191	1	0	0	0	0	0	
+192	...	-1	1	-1	0	-1	0	192	1	0	0	0	0	0	
+193	...	-1	1	-1	0	-1	0	193	1	0	0	0	0	0	
+194	...	-1	1	-1	0	-1	0	194	1	0	0	0	0	0	
+195	...	-1	1	-1	0	-1	0	195	1	0	0	0	0	0	
+196	...	-1	1	-1	0	-1	0	196	1	0	0	0	0	0	
+197	...	-1	1	-1	0	-1	0	197	1	0	0	0	0	0	
+198	...	-1	1	-1	0	-1	0	198	1	0	0	0	0	0	
+199	...	-1	1	-1	0	-1	0	199	1	0	0	0	0	0	
+200	Blessing	7	0	9	1	-1	0	200	1	100	0	0	0	1	
+201	Banishment	7	0	9	1	-1	0	201	1	0	0	0	0	3001	
+202	Ashes to Ashes	7	0	9	1	-1	0	202	1	0	0	0	0	3001	
+203	Burning	-1	0	-1	0	-1	0	203	1	0	0	0	0	512	
+204	Purifying Water	7	0	9	1	-1	0	204	1	0	0	0	0	1001	
+205	Cleansing	-1	0	-1	0	-1	0	205	1	0	0	0	0	3001	
+206	Pull from the Grave	7	0	9	1	-1	0	206	1	0	0	0	0	3001	
+207	Grip	-1	0	-1	0	-1	0	207	1	0	0	0	0	16384	
+208	Sacred Wind	7	0	9	1	-1	0	208	1	0	0	0	0	1	
+209	Final Rest	7	0	9	1	-1	0	209	1	0	0	0	0	999	
+210	Decree of the Underworld	7	0	9	1	-1	0	210	1	0	0	0	0	3001	
+211	Bewilderment	-1	0	-1	0	-1	0	211	1	0	0	0	0	17179869184	
+212	Stellar Decree	7	0	9	1	-1	0	212	1	0	0	0	0	1001	
+213	Halt	-1	0	-1	0	-1	0	213	1	0	0	0	0	100	
+214	Return of the Past	7	0	9	1	-1	0	214	1	0	0	0	0	1001	
+215	Memories of Life	-1	0	-1	0	-1	0	215	1	0	0	0	0	3003	
+216	Sermon of Courage	7	0	9	2	-1	0	216	1	100	0	0	0	1	
+217	Smite Demon	7	0	9	2	-1	0	217	1	100	0	0	0	5005	
+218	Holy Word	7	0	9	2	-1	0	218	1	100	0	0	0	100	
+219	Holy Avenger	7	0	9	2	-1	0	219	1	0	0	0	0	4194304	
+220	Divine Blessing	7	0	9	3	-1	0	220	1	100	0	0	0	1	
+221	Smite	7	0	9	3	-1	0	221	1	100	0	0	0	10	
+222	Heavenly Fire	7	0	9	3	-1	0	222	1	100	0	0	0	10	
+223	Fiery Death	-1	0	-1	0	-1	0	223	1	100	0	0	0	10	
+224	Watery Death	7	0	9	3	-1	0	224	1	100	0	0	0	10	
+225	Drowning	-1	0	-1	0	-1	0	225	1	100	0	0	0	10	
+226	Word of Stone	7	0	9	3	-1	0	226	1	100	0	0	0	10	
+227	Petrification	-1	0	-1	0	-1	0	227	1	100	0	0	0	999	
+228	Heavenly Strike	7	0	9	3	-1	0	228	1	100	0	0	0	10	
+229	Lightning Death	-1	0	-1	0	-1	0	229	1	100	0	0	0	5	
+230	Word of Power	7	0	9	3	-1	0	230	1	100	0	0	0	10	
+231	Paralyzation	-1	0	-1	0	-1	0	231	1	100	0	0	0	10	
+232	Syllable of Death	7	0	9	3	-1	0	232	1	100	0	0	0	10	
+233	Death	-1	0	-1	0	-1	0	233	1	100	0	0	0	999	
+234	Exhaustion	-1	0	-1	0	-1	0	234	1	100	0	0	0	20	
+235	Word of Thorns	7	0	9	3	-1	0	235	1	100	0	0	0	5	
+236	Tangles	-1	0	-1	0	-1	0	236	1	100	0	0	4	64	
+237	Bleeding	-1	0	-1	0	-1	0	237	1	100	0	0	0	8192	
+238	Word of Bewilderment	7	0	9	3	-1	0	238	1	100	0	0	0	10	
+239	Confusion	-1	0	-1	0	-1	0	239	1	100	0	0	0	17179869184	
+240	Claim Life	7	0	9	3	-1	0	240	1	100	0	0	0	20	
+241	Chestwound	-1	0	-1	0	-1	0	241	1	100	0	0	0	8388608	
+242	Fanaticism	7	0	9	4	-1	0	242	1	0	0	0	0	1	
+243	Divine Channeling	7	0	9	5	-1	0	243	1	0	90	0	0	91	
+244	Fire Flies	2	0	0	1	-1	0	244	6	-1	20	0	0	8	
+245	Air Shield	1	0	1	1	-1	0	245	1	0	10	0	0	8	
+246	Freezing Touch	2	0	2	1	-1	0	246	1	1	10	0	0	1008	
+247	Flying Shards	2	0	3	1	-1	0	247	2002	0	30	0	0	1006	
+248	Twist Fate	1	0	4	1	-1	0	248	1	0	10	0	0	1	
+249	Hand of Dust	1	0	5	1	-1	0	249	1	0	10	0	0	1005	
+250	Poison Touch	1	0	6	1	-1	0	250	1	0	5	0	0	5005	
+251	Sleep Ray	5	0	7	1	-1	0	251	1	0	20	0	0	1024	
+252	Bleed	6	0	8	1	-1	0	252	1	0	0	1	0	8192	
+253	Monster Boar	0	5	6	3	-1	0	253	1	0	0	10	0	11	
+254	Summon Hound of Twilight	0	5	3	2	5	1	254	1	0	0	3	0	3168	
+255	Sow Dragon Teeth	4	6	3	2	-1	0	255	10	0	0	1	0	3119	
+256	Bind Keres	0	6	5	2	-1	0	256	3	0	0	12	0	3127	
+257	Rhapsody of Life	5	3	6	1	-1	0	257	1	5	20	0	0	1009	
+258	Minor Reinvigoration	-1	1	-1	0	-1	0	258	1	0	0	0	0	10	
+259	Rhapsody of the Dead	5	3	5	1	-1	0	259	1	0	20	0	0	1003	
+260	Scare Spirits	-1	1	-1	0	-1	0	260	1	0	0	0	0	2	
+261	From Death Comes Life	1	3	5	1	6	1	261	1	0	0	3	0	94	
+262	Curse Tablet	0	3	5	1	-1	0	262	1	0	0	3	0	2	
+263	Blessing of the God-slayer	4	0	2	1	9	1	263	1	0	0	5	0	654	
+264	Gigantomachia	5	7	3	4	0	4	264	1	0	0	60	0	107	
+265	Contact Hesperide	0	6	0	3	4	1	265	1	0	0	35	0	3160	
+266	Call Ladon	0	6	0	3	6	2	266	1	0	0	15	0	3167	
+267	Dogs of Gold and Silver	3	4	3	1	-1	0	267	1	0	0	7	0	3169	
+268	Dog of Gold	-1	1	-1	0	-1	0	268	1	0	0	0	0	3170	
+269	Craft Keledone	3	6	3	2	4	2	269	1	0	0	5	0	3164	
+270	Forge Brass Bull	3	6	0	3	3	3	270	1	0	0	25	0	3171	
+271	Orgy	6	1	8	1	6	1	271	1	0	0	1	0	1881	
+272	Daughter of Typhon	0	8	6	5	5	2	272	1	0	0	30	0	1822	
+273	Gift of the Sacred Swamp	4	2	6	1	9	1	273	1	0	20	0	0	288230376151711744	
+274	Awaken Hamadryad	4	5	6	4	-1	0	274	1	0	0	25	0	3066	
+275	Contact Lar	0	5	6	1	-1	0	275	1	-2	0	16	0	3087	
+276	Katabasis	4	3	5	1	2	1	276	1	0	0	8	0	2199023255552	
+277	Epopteia	4	3	6	1	-1	0	277	1	0	0	12	0	94	
+278	Taurobolium	5	3	6	1	0	1	278	1	0	0	6	0	651	
+279	xxx	-1	1	8	1	6	1	279	1	0	0	1	0	1881	
+280	Awaken Tattoos	4	3	6	1	9	1	280	1	100	20	0	0	549755813888	
+281	Sounder of Boars	0	3	6	1	9	1	281	20	0	0	15	0	1807	
+282	Contact Boar of Carnutes	0	5	6	1	3	1	282	1	0	0	7	0	1809	
+283	Herd of Unicorns	0	4	7	2	6	1	283	10	0	0	10	0	3899	
+284	Chorus Master	5	1	7	1	-1	0	284	1	0	20	0	0	2305843009213693952	
+285	Chorus Slave	5	1	7	1	-1	0	285	1	0	20	0	0	4611686018427387904	
+286	Celestial Chastisement	2	5	4	3	-1	0	286	1	100	20	0	0	1005	
+287	Contact Huli Jing	0	6	6	2	-1	0	287	1	0	0	30	0	1908	
+288	Thousand Year Ginseng	3	4	6	1	-1	0	288	1	0	0	4	0	-5	
+289	Internal Alchemy	1	5	2	2	4	1	289	1	0	0	5	0	15	
+290	Hannya Pact	0	0	5	1	-1	0	290	1	0	0	6	0	3070	
+291	Greater Hannya Pact	0	0	5	2	-1	0	291	1	0	0	12	0	1432	
+292	End of Culture	5	6	0	5	-1	0	292	1	0	0	60	0	106	
+293	End of Weakness	1	6	3	2	-1	0	293	1	0	0	1	0	17179869184	
+294	Teaching Sign	7	0	9	1	6	1	294	1	0	0	0	0	128	
+295	Fear-not Sign	7	0	9	1	1	1	295	1	100	0	0	0	32776	
+296	Welcome Sign	7	0	9	1	0	1	296	1	100	0	0	0	999	
+297	Earth-touching Sign	7	0	9	1	3	1	297	1	100	0	0	0	999	
+298	Meditation Sign	7	0	9	1	2	1	298	1	0	0	0	0	15	
+299	Summon Okami	0	3	6	1	-1	0	299	1009	0	0	6	0	3264	
+300	Contact Bakeneko	0	3	6	2	-1	0	300	1	0	0	8	0	3268	
+301	Summon Shikome	0	4	5	2	-1	0	301	8	0	0	8	0	2100	
+302	Contact Jigami	0	4	6	1	-1	0	302	1	0	0	10	0	2089	
+303	Summon Omukade	0	4	3	2	5	1	303	1	0	0	6	0	3269	
+304	Contact Mori-no-kami	0	5	6	3	-1	0	304	1	0	0	21	0	2093	
+305	Summon Ujigami	0	5	3	1	4	1	305	1	0	0	8	0	2095	
+306	Contact Kaijin	0	5	2	3	-1	0	306	1	0	0	25	0	2106	
+307	Contact Mujina	0	5	6	2	-1	0	307	1	0	0	21	0	3273	
+308	Contact Tanuki	0	5	6	2	-1	0	308	1	0	0	26	0	3266	
+309	Contact Tatsu	0	6	3	3	-1	0	309	1	0	0	19	0	2099	
+310	Summon Kenzoku	0	6	4	1	3	1	310	1	0	0	9	0	2096	
+311	Summon Gozu Mezu	0	6	5	3	-1	0	311	1	0	0	7	0	2091	
+312	Contact Jorogumo	0	6	6	2	5	1	312	1	0	0	32	0	3263	
+313	Summon Araburu-kami	0	7	5	1	0	1	313	1	0	0	5	0	3270	
+314	Contact Yama-no-kami	0	7	3	4	-1	0	314	1	0	0	28	0	2097	
+315	Summon Abysian Ancestors	0	2	5	1	0	1	315	5	0	0	5	0	1971	
+316	Reawaken Fossil	4	5	3	2	5	1	316	505	0	0	10	0	1977	
+317	Summon Spectral Infantry	0	2	5	1	0	1	317	5	0	0	5	0	1656	
+318	Contact Scorpion Man	0	8	3	1	0	1	318	1	0	0	12	0	1649	
+319	Inner Furnace	4	5	0	3	-1	0	319	1	0	0	1	16	16384	
+320	Infernal Breeding	6	3	8	2	-1	0	320	1009	0	0	25	0	1	
+321	Summon Bears	0	3	6	1	9	1	321	15	0	0	8	0	3003	
+322	Summon Simargl	0	2	1	1	-1	0	322	1	0	0	1	0	1947	
+323	Summon Firebird	0	3	0	1	4	1	323	1	0	0	2	0	1946	
+324	Send Lady Midday	0	5	1	1	5	1	324	1	0	0	10	0	1956	
+325	Contact Sirin	0	3	4	2	-1	0	325	1	0	0	8	0	1945	
+326	Send Vodyanoy	0	4	2	2	-1	0	326	1	0	0	20	0	1953	
+327	Summon Rusalka	0	4	2	1	5	1	327	1	0	0	16	0	1954	
+328	Summon Likho	0	4	5	1	-1	0	328	1	0	0	10	0	1952	
+329	Contact Alkonost	0	4	4	2	-1	0	329	1	0	0	15	0	1943	
+330	Summon Zmey	0	5	0	2	-1	0	330	1	0	0	5	0	1940	
+331	Send Bukavac	0	5	2	4	-1	0	331	1	0	0	5	0	1948	
+332	Contact Gamayun	0	5	4	3	-1	0	332	1	0	0	25	0	1944	
+333	Contact Beregina	0	6	2	3	3	1	333	1	0	0	35	0	1955	
+334	Contact Mountain Vila	0	7	6	4	-1	0	334	1	0	0	40	0	1942	
+335	Contact Cloud Vila	0	7	1	4	-1	0	335	1	0	0	40	0	1941	
+336	Contact Leshiy	0	8	6	6	-1	0	336	1	0	0	60	0	1949	
+337	Grow Fortress	1	0	6	4	-1	0	337	1	0	0	35	0	10	
+338	Fort of the Ancients	1	5	6	4	-1	0	338	1	0	0	35	0	10	
+339	Sacred Crocodile	0	4	6	2	2	2	339	1	0	0	3	0	2186	
+340	Herd of Elephants	0	3	6	2	-1	0	340	505	0	0	20	0	2398	
+341	God Brood	0	4	6	2	5	1	341	6	0	0	12	0	888	
+342	xxx	-1	4	7	2	5	1	342	10	0	0	12	0	3980	
+343	Weavers of the Wood	4	5	6	4	-1	0	343	1	0	0	6	0	119	
+344	Call Melqart	6	6	8	3	0	2	344	1	0	0	99	0	2267	
+345	Strange Fire	2	4	4	2	0	1	345	1	1	20	0	0	1006	
+346	Memories of Stone	4	5	5	2	3	1	346	505	0	0	10	0	1998	
+347	Dirge for the Dead	0	6	5	3	9	1	347	1	0	0	25	0	2045	
+348	Banquet for the Dead	0	8	5	4	9	1	348	1	0	0	55	0	2039	
+349	Scapegoats	6	3	8	1	-1	0	349	2	0	0	8	0	2074	
+350	Summon Se'irim	6	3	8	2	-1	0	350	5	0	0	23	0	2074	
+351	Summon Shedim	6	4	8	3	1	1	351	3	0	0	28	0	2073	
+352	Call Malakh	0	4	4	2	-1	0	352	1	0	0	9	0	2056	
+353	Call Hashmal	0	6	4	3	0	1	353	1	0	0	21	0	2057	
+354	Call Arel	0	7	4	4	6	1	354	1	0	0	39	0	2058	
+355	Call Ophan	0	8	4	5	0	2	355	1	0	0	49	0	2051	
+356	Call Merkavah	0	9	4	7	0	3	356	1	0	0	222	0	2052	
+357	Release Lord of Civilization	6	9	8	8	-1	0	357	1	0	0	177	0	14	
+358	Summon Mazzikim	0	3	6	1	-1	0	358	8	0	0	3	0	2072	
+359	Summon Lilot	0	5	6	4	-1	0	359	1	0	0	15	0	2071	
+360	Summon Kusarikkus	0	4	3	1	-1	0	360	2	0	0	6	0	3068	
+361	Summon Ugallu	0	5	1	3	-1	0	361	1	0	0	24	0	3095	
+362	Call Anzu	0	7	2	2	3	2	362	1	0	0	4	0	3064	
+363	Call Apkallu	0	8	4	5	-1	0	363	1	0	0	60	0	2966	
+364	Call Ephor	0	0	5	1	-1	0	364	1	0	0	7	0	2845	
+365	Call Spectral Philosopher	0	0	5	1	-1	0	365	1	0	0	11	0	2846	
+366	Summon Telkhine	0	8	2	5	1	2	366	1	0	0	69	0	2874	
+367	Summon Hekateride	0	5	6	3	2	1	367	1	0	0	30	0	2834	
+368	Summon Daktyl	0	6	3	3	1	1	368	1	0	0	30	0	2836	
+369	Procession of the Underworld	0	5	5	3	-1	0	369	15	0	0	13	0	3210	
+370	Summon Monster Fish	0	6	2	3	-1	0	370	1	0	0	6	0	1664	
+371	Send Tupilak	4	5	5	3	2	1	371	1	0	0	5	0	1624	
+372	Unholy Command	7	0	9	1	-1	0	372	1	0	0	0	0	999	
+373	Unholy Protection	7	0	9	1	-1	0	373	1	100	0	0	0	67108864	
+374	Unholy Blessing	7	0	9	1	-1	0	374	1	100	0	0	0	1	
+375	Unholy Power	7	0	9	1	-1	0	375	1	100	0	0	0	33554432	
+376	Unholy Protection	7	0	9	2	-1	0	376	1	100	0	0	0	67108864	
+377	Unholy Blessing	7	0	9	2	-1	0	377	1	100	0	0	0	1	
+378	Apostasy	7	0	9	3	-1	0	378	1	100	0	0	0	999	
+379	Unholy Power	7	0	9	3	-1	0	379	1	100	0	0	0	33554432	
+380	Unholy Blessing	7	0	9	3	-1	0	380	1	100	0	0	0	1	
+381	Protection of the Sepulchre	7	0	9	3	-1	0	381	1	100	0	0	0	67108864	
+382	Power of the Sepulchre	7	0	9	4	-1	0	382	1	0	0	0	0	33554432	
+383	Revive Lictor	0	0	5	2	-1	0	383	1	0	0	3	0	259	
+384	Revive Censor	0	0	5	2	-1	0	384	1	0	0	4	0	260	
+385	Revive Acolyte	0	0	5	2	-1	0	385	1	0	0	10	0	256	
+386	Revive Bishop	0	0	5	2	-1	0	386	1	0	0	16	0	257	
+387	Revive Arch Bishop	0	0	5	3	-1	0	387	1	0	0	23	0	258	
+388	Revive Spectator	0	0	5	2	-1	0	388	1	0	0	12	0	254	
+389	Revive Dusk Elder	0	0	5	3	-1	0	389	1	0	0	20	0	253	
+390	Revive Wailing Lady	0	2	5	2	-1	0	390	1	0	0	8	0	255	
+391	Lictorian Guard	0	3	5	2	-1	0	391	5	0	0	10	0	259	
+392	Lamentation	0	5	5	3	-1	0	392	5	0	0	25	0	255	
+393	Great Lamentation	0	7	5	5	-1	0	393	14	0	0	33	0	255	
+394	Lictorian Legion	0	8	5	4	-1	0	394	25	0	0	35	0	259	
+395	Ermorian Legion	4	6	5	4	-1	0	395	50	0	0	15	0	187	
+396	Revive Shadow Tribune	0	0	5	1	-1	0	396	1	0	0	8	0	681	
+397	Revive Lemur Centurion	0	0	5	1	-1	0	397	1	0	0	5	0	678	
+398	Revive Lemur Senator	0	0	5	2	-1	0	398	1	0	0	15	0	680	
+399	Revive Lemur Consul	0	0	5	3	-1	0	399	1	0	0	25	0	679	
+400	Revive Lemur Acolyte	0	0	5	2	-1	0	400	1	0	0	11	0	2333	
+401	Revive Lemur Thaumaturg	0	0	5	3	-1	0	401	1	0	0	20	0	2334	
+402	Revive Grand Lemur	0	0	5	3	-1	0	402	1	0	0	50	0	2335	
+403	Unholy Command	7	0	9	1	-1	0	403	1	0	0	0	0	999	
+404	Unholy Protection	7	0	9	1	-1	0	404	1	100	0	0	0	67108864	
+405	Unholy Blessing	7	0	9	1	-1	0	405	1	100	0	0	0	1	
+406	Unholy Power	7	0	9	1	-1	0	406	1	100	0	0	0	33554432	
+407	Anathema	7	0	9	2	-1	0	407	1	100	0	0	0	2	
+408	Unholy Protection	7	0	9	2	-1	0	408	1	100	0	0	0	67108864	
+409	Unholy Blessing	7	0	9	2	-1	0	409	1	100	0	0	0	1	
+410	Apostasy	7	0	9	3	-1	0	410	1	100	0	0	0	999	
+411	Unholy Power	7	0	9	3	-1	0	411	1	100	0	0	0	33554432	
+412	Unholy Blessing	7	0	9	3	-1	0	412	1	100	0	0	0	1	
+413	Protection of the Shadelands	7	0	9	3	-1	0	413	1	100	0	0	0	67108864	
+414	Power of the Shadelands	7	0	9	4	-1	0	414	1	0	0	0	0	33554432	
+415	Revive Grave Consort	4	0	5	1	-1	0	415	1	0	0	10	0	690	
+416	Revive Tomb Priest	4	0	5	2	-1	0	416	1	0	0	16	0	691	
+417	Revive Tomb King	4	0	5	3	-1	0	417	1	0	0	23	0	692	
+418	Protection of the Grave	7	0	9	1	-1	0	418	1	100	0	0	0	67108864	
+419	Power of the Grave	7	0	9	1	-1	0	419	1	100	0	0	0	33554432	
+420	Protection of the Grave	7	0	9	2	-1	0	420	1	100	0	0	0	67108864	
+421	Royal Power	7	0	9	3	-1	0	421	1	100	0	0	0	33554432	
+422	Royal Protection	7	0	9	3	-1	0	422	1	100	0	0	0	67108864	
+423	Power of the Reborn King	7	0	9	4	-1	0	423	1	0	0	0	0	33554432	
+424	Tune of Fear	4	0	6	1	-1	0	424	1	0	5	0	0	3	
+425	Tune of Growth	4	0	6	1	-1	0	425	1	0	5	0	4	64	
+426	Tune of Dancing Death	4	0	6	1	-1	0	426	1	0	5	0	0	1030	
+427	Carrion Centaur	4	0	6	1	5	1	427	1	0	0	8	0	714	
+428	Carrion Lady	4	0	6	1	5	1	428	1	0	0	16	0	711	
+429	Carrion Lord	4	0	6	3	5	2	429	1	0	0	35	0	710	
+430	Quick Roots	4	0	9	1	-1	0	430	1	100	0	0	0	4	
+431	Regrowth	4	0	9	2	-1	0	431	1	100	0	0	0	536870912	
+432	Mend the Dead	4	0	9	2	-1	0	432	1	100	0	0	0	10020	
+433	Puppet Mastery	4	0	9	3	-1	0	433	1	100	0	0	0	4	
+434	Carrion Growth	4	0	9	4	-1	0	434	1	100	0	0	0	536870912	
+435	Dark Slumber	4	4	6	4	5	2	435	1	0	0	15	0	17	
+436	...	-1	1	-1	0	-1	0	436	1	0	0	0	0	0	
+437	...	-1	1	-1	0	-1	0	437	1	0	0	0	0	0	
+438	Summon Black Dogs	0	2	5	2	-1	0	438	20	0	0	5	0	1769	
+439	Summon Cu Sidhe	0	3	7	2	-1	0	439	10	0	0	5	0	1770	
+440	Summon Barghests	0	4	5	2	-1	0	440	14	0	0	7	0	1768	
+441	Summon Bean Sidhe	0	5	5	1	-1	0	441	1	0	0	25	0	1776	
+442	Summon Morrigan	0	6	5	2	1	1	442	1	0	0	5	0	1821	
+443	Dance of the Morrigans	0	8	5	5	1	2	443	1	0	0	4	0	86	
+444	Curse of Balor	4	7	7	3	5	1	444	1	100	0	1	0	4096	
+445	xxx	-1	4	2	2	6	1	445	10	0	0	10	0	3899	
+446	xxx	-1	4	3	2	6	1	446	10	0	0	10	0	3899	
+447	Herd of Morvarc'h	0	4	7	2	2	1	447	10	0	0	12	0	3980	
+448	Holy Pyre	2	4	0	2	-1	0	448	1	1	20	0	0	1005	
+449	Send Aatxe	0	6	1	3	-1	0	449	1	0	0	6	0	3629	
+450	...	-1	1	-1	0	-1	0	450	1	0	0	0	0	0	
+451	...	-1	1	-1	0	-1	0	451	1	0	0	0	0	0	
+452	...	-1	1	-1	0	-1	0	452	1	0	0	0	0	0	
+453	Iron Darts	2	3	3	1	9	1	453	2001	5	10	0	0	13	
+454	Iron Blizzard	2	6	3	1	9	1	454	2018	3	50	0	0	10	
+455	Contact Iron Angel	0	8	3	5	4	2	455	1	0	0	25	0	1975	
+456	Tempering the Will	5	5	3	3	-1	0	456	1	100	20	0	0	67108864	
+457	Gift of the Moon	4	4	4	1	-1	0	457	1	100	20	0	0	1099511627776	
+458	Sanguine Heritage	6	0	8	3	5	3	458	1	0	0	44	0	19	
+459	Summon Monster Toads	0	5	6	2	-1	0	459	3	0	0	8	0	1358	
+460	Contact Couatl	0	7	6	1	4	1	460	1	0	0	40	0	525	
+461	Parting of the Soul	5	6	5	1	1	1	461	1	100	40	0	0	5010	
+462	Call Ahurani	0	5	4	2	2	1	462	1	-2	0	12	0	2637	
+463	Call Celestial Yazad	0	6	4	4	-1	0	463	1	0	0	40	0	-16	
+464	Call Fravashi	0	7	4	3	-1	0	464	1	0	0	30	0	2563	
+465	Call Amesha Spenta	0	8	4	5	-1	0	465	1	0	0	60	0	12	
+466	Summon Yazatas	0	5	4	2	-1	0	466	6	0	0	15	0	1607	
+467	Call Daevas	0	5	5	2	0	1	467	6	0	0	15	0	2630	
+468	Call Jahi	0	5	5	3	0	1	468	1	-2	0	15	0	2631	
+469	Call Yata	0	6	5	3	0	2	469	1	0	0	40	0	-17	
+470	Call of the Drugvant	5	7	5	4	0	1	470	1	0	0	15	0	15	
+471	Call Greater Daeva	0	8	5	4	0	2	471	1	0	0	60	0	16	
+472	Geoglyphs	4	5	4	3	3	2	472	1	0	0	18	0	100	
+473	Eyes of the Condors	4	2	1	2	-1	0	473	1	0	0	1	0	36	
+474	Summon Condors	0	3	1	2	-1	0	474	1008	0	0	9	0	2694	
+475	Summon Huacas	0	5	4	2	-1	0	475	5	0	0	15	0	2697	
+476	Summon Supayas	0	5	5	2	-1	0	476	5	0	0	10	0	2700	
+477	Contact Angel of the Host	0	5	4	3	-1	0	477	1	0	0	7	0	3870	
+478	Contact Harbinger	0	6	4	4	-1	0	478	1	0	0	25	0	464	
+479	Angelic Choir	0	6	4	3	-1	0	479	3	0	0	15	0	1367	
+480	Angelic Host	0	7	4	5	-1	0	480	6	0	0	50	0	3870	
+481	Heavenly Wrath	0	7	4	3	0	1	481	1	0	0	35	0	1369	
+482	Heavenly Choir	0	9	4	7	0	2	482	1	0	0	144	0	1368	
+483	Bind Harlequin	6	1	8	1	-1	0	483	1	0	0	1	0	1000	
+484	...	-1	1	-1	0	-1	0	484	1	0	0	0	0	0	
+485	Reascendance	6	7	8	4	4	1	485	1	0	0	88	0	626	
+486	Amalgamation of Fire and Flesh	1	4	0	2	4	1	486	505	0	0	10	0	3864	
+487	Amalgamation of Air and Flesh	1	4	1	2	4	1	487	505	0	0	10	0	3865	
+488	Amalgamation of Water and Flesh	1	4	2	2	4	1	488	505	0	0	10	0	3866	
+489	Amalgamation of Earth and Flesh	1	4	3	2	4	1	489	505	0	0	10	0	3867	
+490	Mirror Walk	5	4	7	1	4	1	490	1	0	0	1	0	1	
+491	Summon Dwarf of the Four Directions	0	8	1	4	3	3	491	1	0	0	62	0	-21	
+492	Summon Valkyries	0	6	1	3	5	1	492	7	0	0	1	0	261	
+493	Awaken Draugar	0	4	5	2	-1	0	493	4	0	0	12	0	2190	
+494	Seith Curse	5	5	5	1	4	1	494	1	0	0	3	0	2	
+495	Summon Glosos	0	3	5	2	-1	0	495	9	0	0	13	0	2363	
+496	Brood of Garm	0	4	6	2	-1	0	496	5	0	0	10	0	1309	
+497	Awaken Jotun Draugar	0	4	5	2	-1	0	497	3	0	0	15	0	3193	
+498	Summon Rimvaettir	0	5	2	2	-1	0	498	1003	0	0	5	0	3420	
+499	Winter's Call	6	6	8	3	2	2	499	1	0	0	86	0	844	
+500	Illwinter	6	6	8	5	2	3	500	1	0	0	120	0	44	
+501	Summon Glosos	0	3	5	2	-1	0	501	9	0	0	10	0	2363	
+502	xxx	-1	6	8	5	2	3	502	1	0	0	120	0	44	
+503	Command Draugar	0	4	5	2	-1	0	503	4	0	0	12	0	2190	
+504	Summon Jaguar Toads	0	1	6	1	9	1	504	3	0	0	2	0	1359	
+505	Summon Jaguars	0	3	6	2	9	1	505	25	0	0	20	0	859	
+506	Summon Jade Serpent	0	4	2	2	-1	0	506	1	0	0	3	0	1889	
+507	Summon Monster Toad	0	5	6	2	-1	0	507	1	0	0	2	0	1358	
+508	Contact Couatl	0	6	6	1	4	1	508	1	0	0	40	0	525	
+509	Summon Tlaloque	0	7	2	4	-1	0	509	1	0	0	60	0	13	
+510	Bind Beast Bats	6	2	8	1	-1	0	510	3	0	0	8	0	1357	
+511	Bind Jaguar Fiends	6	4	8	1	0	1	511	3	0	0	16	0	1356	
+512	Contact Civateteo	6	5	8	2	5	2	512	1	0	0	36	0	1422	
+513	Bind Tzitzimitl	6	6	8	2	4	2	513	1	0	0	10	0	1483	
+514	Contact Tlahuelpuchi	6	6	8	3	-1	0	514	1	0	0	42	0	1558	
+515	Contact Onaqui	6	7	8	4	-1	0	515	1	0	0	101	0	1360	
+516	Rain of Jaguars	6	8	8	6	0	2	516	1008	0	0	40	0	1356	
+517	Theft of the Sun	4	8	5	6	0	3	517	1	0	0	70	0	101	
+518	Summon Sacred Scorpion	0	3	3	1	5	1	518	1	0	0	2	0	2690	
+519	Break the First Soul	6	2	8	1	-1	0	519	1	5	20	0	0	8192	
+520	Break the Second Soul	5	2	3	1	-1	0	520	1	5	20	0	0	262144	
+521	Break the Third Soul	5	2	1	1	-1	0	521	1	5	20	0	0	5015	
+522	Break the Fourth Soul	5	2	5	1	-1	0	522	1	5	20	0	0	2	
+523	Gift of the First Soul	6	3	8	1	-1	0	523	1	0	20	0	0	32	
+524	Gift of the Second Soul	5	3	3	1	-1	0	524	1	0	20	0	0	137438953472	
+525	Gift of the Third Soul	5	3	1	1	-1	0	525	1	0	20	0	0	68719476736	
+526	Gift of the Fourth Soul	5	3	5	1	-1	0	526	1	2	20	0	0	2	
+527	Summon Balam	0	7	6	4	-1	0	527	1	0	0	60	0	17	
+528	Summon Chaac	0	8	1	4	-1	0	528	1	0	0	75	0	18	
+529	Celestial Servant	0	1	3	1	4	1	529	1	0	0	1	0	903	
+530	Heavenly Rivers	0	3	2	1	4	1	530	3	0	0	12	0	904	
+531	Celestial Hounds	0	4	1	1	4	1	531	2	0	0	4	0	1338	
+532	Heavenly Fires	0	5	0	1	4	1	532	3	0	0	6	0	926	
+533	Call Celestial Soldiers	0	6	1	2	4	1	533	5	0	0	15	0	902	
+534	Call Ancestor	0	1	5	1	-1	0	534	1	0	20	0	0	1363	
+535	Wrath of the Ancestors	0	7	5	1	-1	0	535	2018	0	0	1	0	1363	
+536	Call Cyclops Tribe	0	3	3	2	-1	0	536	505	0	0	12	0	3381	
+537	Call the Birds of Splendor	0	6	0	2	6	1	537	1	0	0	9	0	3382	
+538	Deceive the Decree of the Lost	5	6	7	3	4	1	538	1	0	0	45	0	3879	
+539	Contact Jinn	0	4	0	2	1	1	539	1	0	0	18	0	3353	
+540	Summon Jinn Warriors	0	5	0	2	1	1	540	3	0	0	18	0	3354	
+541	Contact Houri	0	6	1	2	7	1	541	1	0	0	26	0	3375	
+542	Summon Hinn	0	6	1	1	0	1	542	505	0	0	4	0	3367	
+543	Summon Ifrit	6	5	8	1	0	3	543	1	0	0	58	0	3372	
+544	Summon Shaytan	6	6	8	1	0	3	544	1	0	0	73	0	3373	
+545	Summon Marid	0	8	0	4	1	2	545	1	0	0	66	0	3374	
+546	Contact Marid	0	8	2	2	0	4	546	1	0	0	60	0	3376	
+547	Scorching Wind	2	4	1	2	0	1	547	1	0	30	0	0	250	
+548	Smokeless Flame	2	6	0	3	1	1	548	1	1	30	0	0	1042	
+549	Large Area Combustion	-1	1	-1	0	-1	0	549	1	0	0	0	0	512	
+550	Awaken Jinn Block	5	5	3	1	9	1	550	1	0	0	5	0	3389	
+551	Feast for Ghuls	6	4	8	1	-1	0	551	505	0	0	21	0	3479	
+552	Summon Ghulah	6	5	8	1	-1	0	552	1	0	0	31	0	3481	
+553	Summon Binn	0	6	2	1	1	1	553	505	0	0	4	0	3476	
+554	Summon Si'lat	0	6	1	2	-1	0	554	1	0	0	21	0	3483	
+555	Summon Angiri	0	3	0	2	-1	0	555	3	0	0	5	0	3666	
+556	Summon Nagas	0	3	2	2	3	1	556	6	0	0	15	0	1319	
+557	Summon Apsaras	0	3	4	2	-1	0	557	3	0	0	2	0	1332	
+558	Summon Vidyadhara	0	4	4	2	-1	0	558	1	0	0	15	0	3668	
+559	Contact Yaksha	0	4	6	2	3	1	559	1	0	0	25	0	1329	
+560	Contact Yakshini	0	4	6	2	2	1	560	1	0	0	25	0	1330	
+561	Contact Nagini	0	4	2	2	3	1	561	1	0	0	25	0	1322	
+562	Summon Gandharvas	0	5	4	2	-1	0	562	6	0	0	18	0	1335	
+563	Summon Kimpurushas	0	5	6	2	4	1	563	6	0	0	18	0	3665	
+564	Contact Nagaraja	0	5	2	2	3	1	564	1	0	0	30	0	1320	
+565	Summon Garudas	0	6	4	2	-1	0	565	6	0	0	21	0	3664	
+566	Summon Maruts	0	6	4	2	-1	0	566	3	0	0	18	0	3667	
+567	Summon Kinnara	0	6	4	3	-1	0	567	1	0	0	25	0	1331	
+568	Contact Nagarishi	0	6	2	3	3	1	568	1	0	0	40	0	1321	
+569	Summon Siddha	0	7	4	4	-1	0	569	1	0	0	35	0	1337	
+570	Summon Devata	0	8	4	5	-1	0	570	1	0	0	45	0	1336	
+571	Summon Devala	0	9	4	5	-1	0	571	1	0	0	55	0	1713	
+572	Summon Rudra	0	9	4	5	-1	0	572	1	0	0	55	0	1906	
+573	Celestial Music	5	6	4	3	-1	0	573	1	0	0	1	0	262144	
+574	Summon Rakshasas	6	1	8	1	-1	0	574	3	0	0	10	0	1736	
+575	Feast of Flesh	6	2	8	1	6	1	575	15	0	0	50	0	1742	
+576	Summon Asrapas	6	3	8	2	-1	0	576	3	0	0	11	0	1741	
+577	Summon Rakshasa Warriors	6	4	8	2	-1	0	577	5	0	0	25	0	1737	
+578	Summon Sandhyabalas	6	5	8	2	5	1	578	3	0	0	30	0	1743	
+579	Summon Dakini	6	6	8	4	1	1	579	1	0	0	81	0	1714	
+580	Summon Samanishada	6	7	8	3	5	1	580	1	0	0	35	0	1744	
+581	Summon Mandeha	6	8	8	5	5	2	581	1	0	0	133	0	20	
+582	Summon Danavas	6	8	8	5	-1	0	582	3	0	0	75	0	1767	
+583	Summon Daitya	6	8	8	5	-1	0	583	3	0	0	75	0	3663	
+584	Host of Ganas	0	2	5	1	-1	0	584	20	0	0	12	0	1764	
+585	Summon Vetalas	0	5	5	2	-1	0	585	10	0	0	10	0	1765	
+586	Summon Ko-Oni	0	1	5	1	-1	0	586	505	0	0	7	0	1260	
+587	Summon Kappa	0	1	2	1	6	1	587	3	0	0	3	0	1482	
+588	Summon Ao-Oni	0	2	2	1	5	1	588	505	0	0	10	0	1264	
+589	Summon Karasu Tengus	0	2	6	1	1	1	589	3	0	0	3	0	1478	
+590	Summon Aka-Oni	0	3	0	1	5	1	590	505	0	0	10	0	1266	
+591	Summon Konoha Tengus	0	3	1	1	3	1	591	505	0	0	5	0	1479	
+592	Ghost General	0	4	5	3	-1	0	592	1	0	0	10	0	1256	
+593	Summon Oni	0	4	3	1	5	1	593	505	0	0	12	0	1272	
+594	Contact Dai Tengu	0	5	1	2	3	1	594	1	0	0	55	0	1480	
+595	Contact Nushi	0	5	2	2	6	1	595	1	0	0	25	0	1431	
+596	Summon Kuro-Oni	0	5	5	2	0	1	596	4	0	0	10	0	1274	
+597	Summon Oni General	0	6	5	2	0	1	597	1	0	0	20	0	1276	
+598	Contact Kitsune	0	6	6	2	-1	0	598	1	0	0	30	0	1434	
+599	Summon Dai Oni	0	8	5	4	0	1	599	1	0	0	45	0	1316	
+600	Bind Penumbral	0	3	5	1	3	1	600	1	0	0	1	0	2497	
+601	Summon Penumbrals	0	3	5	1	3	1	601	6	0	0	6	0	2497	
+602	Summon Umbrals	0	5	5	2	3	1	602	6	0	0	8	0	1490	
+603	Olm Conclave	0	4	2	1	3	1	603	1	0	0	20	0	2527	
+604	Hall of Statues	4	8	3	5	-1	0	604	4000	0	0	30	0	1496	
+605	Revive Cavern Wights	0	3	5	1	3	1	605	5	0	0	8	0	1501	
+606	Bind Umbral	0	5	5	2	3	1	606	1	0	0	2	0	1490	
+607	Unleash Imprisoned Ones	1	8	3	6	5	4	607	1	0	0	100	0	1	
+608	Rhuax Pact	0	3	0	1	3	1	608	3	0	0	2	0	640	
+609	Barathrus Pact	0	3	3	2	-1	0	609	2	0	0	3	0	3741	
+610	Mirror of Earth's Memories	5	4	2	2	3	2	610	1	0	0	5	0	5760	
+611	Attentive Statues	4	1	3	2	-1	0	611	2	0	0	3	0	1497	
+612	Enliven Sentinel	4	3	3	2	-1	0	612	1	0	0	2	0	1496	
+613	Enliven Granite Guard	4	5	3	3	-1	0	613	1	0	0	10	0	1498	
+614	Enliven Marble Oracle	4	6	3	3	5	1	614	1	0	0	35	0	1499	
+615	Animate Mercury	-1	1	-1	0	-1	0	615	1	0	0	0	0	2515	
+616	Living Mercury	4	5	2	1	3	1	616	1	0	0	6	0	3762	
+617	Nightmare Construction	4	5	0	1	5	1	617	1	0	0	2	0	2520	
+618	Iron Corpse Reanimation	4	2	3	1	5	1	618	505	0	0	2	0	1439	
+619	Reanimate Ancestor	4	2	3	2	5	2	619	1	0	0	3	0	1440	
+620	Flame Corpse Construction	4	4	0	1	5	1	620	1	0	0	1	0	1441	
+621	Ktonian Legion	4	6	3	2	5	2	621	5020	0	0	15	0	1439	
+622	Awaken Shard Wights	0	3	5	1	3	1	622	505	0	0	10	0	2509	
+623	Awaken Sepulchral	0	5	5	2	3	1	623	1	0	0	3	0	1500	
+624	Awaken Tomb Oracle	0	6	5	3	3	2	624	1	0	0	30	0	1476	
+625	Hall of the Dead	0	8	5	5	3	1	625	4000	0	0	25	0	2509	
+626	Iron Marionettes	1	5	3	3	-1	0	626	1	100	0	1	0	33554432	
+627	Contact Void Spectre	0	6	4	3	-1	0	627	1	0	0	25	0	1562	
+628	Mind Vessel	5	3	4	3	-1	0	628	1	0	0	15	0	100	
+629	Enslave Sea Trolls	5	5	4	3	2	2	629	505	0	0	15	0	1529	
+630	Dreams of R'lyeh	5	6	4	3	7	1	630	1	-1	0	4	0	2052	
+631	...	-1	1	-1	0	-1	0	631	1	0	0	0	0	0	
+632	...	-1	1	-1	0	-1	0	632	1	0	0	0	0	0	
+633	Burning Hands	2	1	0	1	-1	0	633	1	0	5	0	0	1014	
+634	Fire Darts	2	1	0	1	-1	0	634	1003	1	20	0	0	10	
+635	Flame Bolt	2	1	0	2	-1	0	635	1	2	20	0	0	2011	
+636	Shocking Grasp	2	1	1	1	-1	0	636	1	0	3	0	0	3015	
+637	Gust of Winds	2	1	1	1	-1	0	637	1	2	10	0	0	2013	
+638	Slime	2	1	2	1	-1	0	638	1	2	20	0	0	134217728	
+639	Water Strike	2	1	2	1	-1	0	639	1	2	20	0	0	2011	
+640	Cold Bolt	2	1	2	2	-1	0	640	1	3	20	0	0	1011	
+641	Geyser	2	1	2	1	0	1	641	1	3	10	0	0	1005	
+642	Acid Spray	2	1	2	2	0	1	642	1	0	20	0	0	10	
+643	Astral Projection	2	1	4	1	-1	0	643	1	0	0	2	0	37	
+644	Star Fires	2	1	4	1	-1	0	644	3	2	20	0	0	1004	
+645	Arcane Bolt	2	1	4	2	-1	0	645	1	3	20	0	0	1008	
+646	Vine Arrow	2	1	6	1	-1	0	646	1	0	20	0	0	1013	
+647	Bewitching Lights	2	1	7	1	-1	0	647	1	1	20	0	0	100	
+648	Fire Blast	2	2	0	2	-1	0	648	1	0	20	0	0	2011	
+649	Flare	2	2	0	3	-1	0	649	1	1	50	0	0	2016	
+650	Sulphur Haze	2	2	0	2	1	1	650	1	0	20	0	0	4096	
+651	Cold Blast	2	2	2	2	-1	0	651	1	0	20	0	0	2008	
+652	Lightning Bolt	2	2	1	2	-1	0	652	1	4	10	0	0	1012	
+653	Shock Wave	2	2	1	2	-1	0	653	1	0	10	0	0	1007	
+654	Rust Mist	2	2	3	2	2	1	654	1	0	30	0	0	32768	
+655	Solar Rays	2	2	4	2	-1	0	655	1	100	20	0	0	1012	
+656	Web	2	2	6	1	-1	0	656	1	2	20	0	0	536870912	
+657	Ephemeral Bolt	2	2	7	2	-1	0	657	1	2	10	0	0	1002	
+658	Warrior Illusion	2	2	7	1	-1	0	658	1	0	10	0	0	297	
+659	Fireball	2	3	0	2	-1	0	659	1	1	20	0	0	2012	
+660	Storm Wind	2	3	1	2	-1	0	660	1	3	10	0	0	2013	
+661	Rain	2	3	2	3	-1	0	661	1	0	0	1	0	7	
+662	Freezing Mist	2	3	2	3	1	1	662	1	1	20	0	0	1	
+663	Acid Bolt	2	3	2	2	0	1	663	1	3	30	0	0	1014	
+664	Magma Bolts	2	3	3	1	0	1	664	5	2	20	0	0	2023	
+665	Arcane Probing	2	3	4	1	-1	0	665	1	0	0	3	0	4	
+666	Magic Duel	2	3	4	1	-1	0	666	1	100	0	1	0	999	
+667	Healing Light	2	3	4	1	6	1	667	1	100	20	0	0	15	
+668	Shadow Bolt	2	3	5	2	-1	0	668	1	3	20	0	0	1005	
+669	Poison Darts	2	3	6	1	-1	0	669	1004	3	20	0	0	9	
+670	False Fire	2	3	7	1	0	1	670	1	1	20	0	0	2012	
+671	Elf Shot	2	3	7	1	6	1	671	1	4	20	0	0	100	
+672	Dance of Ephemeral Swords	2	3	7	2	-1	0	672	1	0	10	0	0	72057594037927936	
+673	Cloud of Dreamless Slumber	2	3	7	2	1	1	673	1	3	20	0	0	2097152	
+674	Fire Cloud	2	4	0	3	1	1	674	1	1	20	0	0	8	
+675	Fate of Oedipus	2	4	0	4	-1	0	675	1	0	0	75	0	0	
+676	Breath of the Desert	2	4	0	3	1	1	676	1	0	0	5	0	13	
+677	Thunder Strike	2	4	1	3	-1	0	677	1	-2	50	0	0	2020	
+678	Hurricane	2	4	1	3	-1	0	678	1	0	0	5	0	7	
+679	Acid Rain	2	4	2	3	0	1	679	1	-1	30	0	0	12	
+680	Blade Wind	2	4	3	3	-1	0	680	3041	0	80	0	0	14	
+681	Nether Bolt	2	4	4	1	5	1	681	1	2	15	0	0	1019	
+682	Bolt of Unlife	2	4	5	2	-1	0	682	1	1	20	0	0	1018	
+683	Bane Fire Dart	2	4	5	1	0	1	683	1	4	20	0	0	2013	
+684	Breath of the Dragon	2	4	6	2	-1	0	684	1	-1	20	0	0	2003	
+685	Ephemeral Blast	2	4	7	3	-1	0	685	1	2	10	0	0	2001	
+686	Ghost Wolves	2	4	7	3	-1	0	686	2	0	10	0	0	298	
+687	Falling Fires	2	5	0	3	-1	0	687	1	-3	20	0	0	15	
+688	Fires from Afar	2	5	0	4	-1	0	688	20	0	0	10	0	2012	
+689	farkill: Fires from Afar	-1	1	0	4	-1	0	689	1	1	20	0	0	2012	
+690	Liquid Flames of Rhuax	2	5	0	3	3	1	690	1	0	20	0	0	2018	
+691	Splash of Molten Metal	-1	1	-1	0	-1	0	691	1	0	0	0	0	10	
+692	Hidden Flame	2	5	0	3	4	1	692	1	0	20	0	0	3016	
+693	Astral Conflagration	-1	1	-1	0	-1	0	693	1	0	0	0	0	1	
+694	Falling Frost	2	5	2	3	-1	0	694	1	-2	20	0	0	1007	
+695	Orb Lightning	2	5	1	2	-1	0	695	1	0	20	0	0	5	
+696	Earthquake	2	5	3	4	-1	0	696	1	0	0	3	4	8	
+697	Cave Collapse	0	0	-1	0	-1	0	697	1	0	0	0	0	20	
+698	Gifts from Heaven	2	5	3	3	4	1	698	3	-3	50	0	0	150	
+699	Stellar Cascades	2	5	4	2	-1	0	699	1	100	20	0	0	25	
+700	Astral Geyser	2	5	4	3	-1	0	700	1	0	20	0	0	261	
+701	Shadow Blast	2	5	5	2	-1	0	701	1	0	0	1	0	1006	
+702	Poison Arrows	2	5	6	2	-1	0	702	1002	3	20	0	0	1013	
+703	Poison Cloud	2	5	6	3	1	1	703	1	-1	20	0	0	64	
+704	Illusory Army	2	5	7	3	-1	0	704	5005	0	0	1	0	297	
+705	Project Self	2	5	7	3	4	1	705	1	0	0	5	0	10	
+706	Flame Eruption	2	6	0	2	-1	0	706	1	0	30	0	0	1011	
+707	Wrathful Skies	2	6	1	5	-1	0	707	1	0	0	2	0	34	
+708	Perpetual Storm	2	6	1	5	-1	0	708	1	0	0	70	0	16	
+709	Cleansing Water	2	6	2	2	-1	0	709	1	0	20	0	0	1003	
+710	Magma Eruption	2	6	3	2	0	2	710	1	0	50	0	0	1020	
+711	Mind Hunt	2	6	4	4	-1	0	711	1	0	0	2	0	999	
+712	Astral Fires	2	6	4	4	0	1	712	1	100	20	0	0	10	
+713	The Wrath of God	2	6	4	5	1	3	713	1	0	0	70	0	14	
+714	Blast of Unlife	2	6	5	3	-1	0	714	1	0	20	0	0	1012	
+715	Bane Fire	2	6	5	3	0	1	715	1	1	20	0	0	1052	
+716	Stream of Life	2	6	6	3	-1	0	716	1	2	20	0	0	5025	
+717	False Horror	2	6	7	3	-1	0	717	1	0	10	0	0	448	
+718	Fire Storm	2	7	0	5	-1	0	718	1	0	0	3	0	25	
+719	Elemental Opposition of Water	2	7	0	5	-1	0	719	1	0	0	60	0	1	
+720	Thunderstorm	2	7	1	4	-1	0	720	5020	0	0	30	0	2020	
+721	farkill: Thunderstorm	-1	1	1	4	-1	0	721	1	0	0	0	0	2020	
+722	Elemental Opposition of Earth	2	7	1	5	-1	0	722	1	0	0	60	0	1	
+723	Ice Strike	2	7	2	2	-1	0	723	1	1	20	0	0	18	
+724	Murdering Winter	2	7	2	5	-1	0	724	1	0	0	40	0	8	
+725	Elemental Opposition of Fire	2	7	2	5	-1	0	725	1	0	0	60	0	1	
+726	Acid Storm	2	7	2	4	0	1	726	1	0	0	3	0	11	
+727	Elemental Opposition of Air	2	7	3	5	-1	0	727	1	0	0	60	0	1	
+728	Rain of Stones	2	7	3	3	1	1	728	1	0	0	1	0	102	
+729	Nether Darts	2	7	4	1	5	1	729	1014	0	15	0	0	1014	
+730	Cloud of Death	2	7	5	4	1	1	730	1	-3	20	0	0	262144	
+731	Wind of Death	2	7	5	4	1	1	731	1	0	0	1	0	256	
+732	Stygian Rains	2	7	5	3	2	2	732	1	0	0	2	0	17179869184	
+733	Storm of Thorns	2	7	6	2	-1	0	733	2006	0	20	0	0	1013	
+734	Poison Mist	2	7	6	3	1	1	734	1	-1	40	0	0	64	
+735	Miasma	2	7	6	4	-1	0	735	150	0	0	25	0	1001	
+736	farkill: Miasma	-1	1	6	4	-1	0	736	1	0	0	0	0	1001	
+737	Illusory Attack	2	7	7	4	-1	0	737	10015	0	0	8	0	297	
+738	Shimmering Fields	2	7	7	5	-1	0	738	1	0	0	2	0	1004	
+739	Wailing Winds	2	7	7	4	1	1	739	1	0	0	2	0	12	
+740	Pillar of Fire	2	8	0	2	-1	0	740	1	0	20	0	0	3029	
+741	Second Sun	2	8	0	8	-1	0	741	1	0	0	80	0	41	
+742	Maelstrom	2	8	2	6	-1	0	742	1	0	0	80	0	47	
+743	Chain Lightning	2	8	1	3	-1	0	743	1	0	30	0	0	1003	
+744	Meteor Shower	2	8	3	5	4	4	744	1	0	0	3	0	103	
+745	Astral Tempest	2	8	4	5	-1	0	745	1	0	0	2	0	3	
+746	Vortex of Unlife	2	8	5	5	-1	0	746	1	0	20	0	0	1011	
+747	Aurora Borealis	2	8	7	5	4	1	747	1	-1	0	2	0	122	
+748	Flames from the Sky	2	9	0	5	-1	0	748	1	0	0	30	0	1015	
+749	farkill: Flames from the Sky	-1	1	0	5	-1	0	749	1	0	20	0	0	1015	
+750	Flame Storm	2	9	0	5	-1	0	750	1	0	0	1	0	2005	
+751	Volcanic Eruption	2	9	0	4	3	3	751	1	0	0	25	0	4	
+752	Lightning Field	2	9	1	6	-1	0	752	1	0	0	1	0	1	
+753	Niefel Flames	2	9	2	5	-1	0	753	1	0	0	1	0	1007	
+754	Tidal Wave	2	8	2	5	-1	0	754	1	0	0	15	0	10	
+755	Lost Land	2	9	3	6	2	5	755	1	0	0	100	0	20	
+756	Strands of Arcane Power	2	9	4	7	-1	0	756	1	0	0	70	0	79	
+757	Stellar Strike	2	9	4	5	3	3	757	40	0	0	20	0	150	
+758	farkill: Stellar Strike	-1	1	4	3	3	1	758	3	-3	50	0	0	150	
+759	Distill Gold	1	1	0	1	-1	0	759	1	0	0	10	0	250	
+760	Charge Body	1	1	1	1	-1	0	760	1	0	5	0	0	16384	
+761	Fists of Iron	1	1	3	1	-1	0	761	1000	100	20	0	0	15	
+762	Earth Grip	1	1	3	1	-1	0	762	1	5	10	0	4	16384	
+763	Hand of Death	1	1	5	2	-1	0	763	1	0	5	0	0	5030	
+764	Skeletal Body	1	1	5	1	-1	0	764	1	0	20	0	0	274877906944	
+765	Eagle Eyes	1	1	6	1	-1	0	765	1	0	5	0	0	4	
+766	Cat Eyes	1	1	6	1	-1	0	766	1	0	5	0	0	35184372088832	
+767	Personal Poison Resistance	1	1	6	1	-1	0	767	1	0	5	0	0	288230376151711744	
+768	Personal Barkskin	1	1	6	1	-1	0	768	1	0	5	0	0	16	
+769	Blurred Body	1	1	7	1	-1	0	769	1	0	10	0	0	4398046511104	
+770	Burn	1	2	0	1	-1	0	770	1	100	10	0	0	512	
+771	Resist Cold	1	2	0	1	-1	0	771	1	0	10	0	0	4096	
+772	Resist Fire	1	2	2	1	-1	0	772	1	0	10	0	0	1024	
+773	Quicken Self	1	2	2	1	-1	0	773	1	0	20	0	0	262144	
+774	Ice Shield	1	2	2	1	-1	0	774	1	0	20	0	0	549755813888	
+775	Gooey Water	1	2	2	2	-1	0	775	1	2	20	0	0	134217728	
+776	Personal Mistform	1	2	1	2	-1	0	776	1	0	10	0	0	65536	
+777	Resist Lightning	1	2	3	1	-1	0	777	1	0	10	0	0	2048	
+778	Alchemical Transmutation	1	2	3	1	-1	0	778	1	0	0	10	0	200	
+779	Personal Stoneskin	1	2	3	1	-1	0	779	1	0	10	0	0	65536	
+780	Armor of Achilles	1	2	3	1	-1	0	780	1	3	40	0	0	10	
+781	Gift of Cheated Fate	1	2	4	1	-1	0	781	1	0	20	0	0	1	
+782	Weakness	1	2	5	1	-1	0	782	1	3	20	0	0	3	
+783	Enlarge	1	2	6	2	-1	0	783	1	0	20	0	0	2147483648	
+784	Mirror Image	1	2	7	1	-1	0	784	1	0	10	0	0	2000	
+785	Blur	1	2	7	1	-1	0	785	1	0	20	0	0	4398046511104	
+786	Fire Resistance	1	3	2	2	-1	0	786	1	0	20	0	0	1024	
+787	Immolation	1	3	0	2	-1	0	787	1	0	20	0	0	1010	
+788	Inner Sun	1	3	0	1	4	1	788	1	0	0	1	0	67108864	
+789	Protective Winds	1	3	1	2	-1	0	789	1	0	40	0	0	8	
+790	Mist	1	3	1	3	-1	0	790	1	0	0	1	0	71	
+791	Cold Resistance	1	3	0	2	-1	0	791	1	0	20	0	0	4096	
+792	Freeze	1	3	2	2	-1	0	792	1	100	20	0	0	268435456	
+793	Lightning Resistance	1	3	3	2	-1	0	793	1	0	20	0	0	2048	
+794	Personal Ironskin	1	3	3	1	-1	0	794	1	0	20	0	0	268435456	
+795	Earth Meld	1	3	3	2	-1	0	795	1	3	60	0	4	16384	
+796	Body Ethereal	1	3	4	1	-1	0	796	1	0	30	0	0	134217728	
+797	Gift of Cat Eyes	1	3	6	1	-1	0	797	1	0	20	0	0	35184372088832	
+798	Barkskin	1	3	6	1	-1	0	798	1	100	20	0	0	16	
+799	Animate Tree	1	3	6	1	-1	0	799	1	100	20	0	64	361	
+800	Torpor	1	3	6	2	-1	0	800	1	100	20	0	0	5010	
+801	Mossbody	1	3	6	1	2	1	801	1	0	20	0	0	8	
+802	Displace Body	1	3	7	2	-1	0	802	1	0	10	0	0	8796093022208	
+803	Group Blur	1	3	7	2	-1	0	803	1	0	40	0	0	4398046511104	
+804	Combustion	1	4	0	1	-1	0	804	1	100	20	0	0	512	
+805	Lacerating Winds	1	4	1	2	-1	0	805	1	1	20	0	0	1003	
+806	Liquid Body	1	4	2	1	-1	0	806	1	0	20	0	0	2680059592704	
+807	Quickness	1	4	2	2	-1	0	807	1	1	20	0	0	262144	
+808	Slow	1	4	2	2	-1	0	808	1	100	20	0	0	68719476736	
+809	Encase in Ice	1	4	2	2	-1	0	809	1	100	20	0	0	299	
+810	Wolven Winter	1	4	2	3	-1	0	810	1	0	0	5	0	3	
+811	Mistform	1	4	1	2	-1	0	811	1	0	20	0	0	65536	
+812	Stoneskin	1	4	3	2	-1	0	812	1	0	20	0	0	65536	
+813	Temper Flesh	1	4	3	1	-1	0	813	1	0	20	0	0	481036338180	
+814	Destruction	1	4	3	3	-1	0	814	1	3	40	0	0	5	
+815	Curse of Stones	1	4	3	3	-1	0	815	1	0	0	3	0	32	
+816	Blight	1	4	3	2	5	1	816	1	0	0	5	0	9	
+817	Arouse Hunger	1	4	5	3	-1	0	817	5025	0	0	8	0	-4	
+818	Elemental Fortitude	1	4	6	1	-1	0	818	1	0	10	0	0	7168	
+819	Group Barkskin	1	4	6	2	-1	0	819	1	100	40	0	0	16	
+820	Swarm	1	4	6	2	-1	0	820	2016	0	0	1	0	-9	
+821	Stygian Skin	1	4	5	1	2	1	821	1	0	20	0	0	17179869184	
+822	Shrink	1	4	6	2	-1	0	822	1	0	20	0	0	4294967296	
+823	Eagle-eyed Warriors	1	6	6	3	-1	0	823	1	0	0	1	0	4	
+824	Twilight	1	4	7	3	-1	0	824	1	0	0	1	0	115	
+825	Transmute Fire	1	5	0	2	-1	0	825	1	0	0	10	0	350	
+826	Cold Resistant Warriors	1	5	0	3	-1	0	826	1	0	0	1	0	4096	
+827	Incinerate	1	5	0	3	-1	0	827	1	100	20	0	0	2012	
+828	Solar Eclipse	1	5	0	3	4	1	828	1	0	0	1	0	97	
+829	Arrow Ward	1	5	1	3	-1	0	829	1	0	0	1	0	8	
+830	Storm	1	5	1	4	-1	0	830	1	0	0	1	0	1	
+831	Gift of Formlessness	1	5	2	2	-1	0	831	1	0	40	0	0	2680059592704	
+832	Winter's Chill	1	5	2	3	-1	0	832	1	100	20	0	0	268435456	
+833	Fire Resistant Warriors	1	5	2	3	-1	0	833	1	0	0	1	0	1024	
+834	Bone Melter	1	5	2	3	6	2	834	1	3	20	0	0	999	
+835	Group Stoneskin	1	5	3	3	-1	0	835	1	0	40	0	0	65536	
+836	Lightning Resistant Warriors	1	5	3	3	-1	0	836	1	0	0	1	0	2048	
+837	Maws of the Earth	1	5	3	3	-1	0	837	1	3	0	1	0	1012	
+838	Ironskin	1	5	3	2	-1	0	838	1	2	40	0	0	268435456	
+839	Shatter	1	5	3	3	-1	0	839	1	100	20	0	0	5020	
+840	Baleful Star	1	5	4	3	-1	0	840	1	0	0	7	0	5	
+841	Enfeeble	1	5	5	2	-1	0	841	1	3	0	1	0	2	
+842	Invulnerability	1	5	5	3	-1	0	842	1	0	20	0	0	2	
+843	Drain Life	1	5	5	4	-1	0	843	1	100	10	0	0	1010	
+844	Blood Poisoning	1	5	6	2	-1	0	844	1	100	20	0	0	2011	
+845	Cat-eyed Warriors	1	5	6	3	-1	0	845	1	0	0	1	0	35184372088832	
+846	Mother Oak	1	5	6	5	-1	0	846	1	0	0	50	0	46	
+847	Nightfall	1	5	7	3	-1	0	847	1	0	0	1	0	97	
+848	Shadow Warriors	1	5	7	3	-1	0	848	1	0	0	1	0	4398046511104	
+849	Blindness	1	6	0	1	-1	0	849	1	100	20	0	0	4096	
+850	Hellscape	1	6	0	4	-1	0	850	1	0	0	10	0	16	
+851	Boil	1	6	0	3	2	1	851	1	100	20	0	0	1006	
+852	Blizzard	1	6	1	4	2	3	852	1	0	0	1	0	1	
+853	Frozen Heart	1	6	2	1	-1	0	853	1	100	20	0	0	2008	
+854	Manifest Vitriol	1	6	2	2	0	1	854	1	0	0	3	0	1983	
+855	Group Ironskin	1	6	3	3	-1	0	855	1	2	60	0	0	268435456	
+856	Earth Gem Alchemy	1	6	3	2	-1	0	856	1	0	0	10	0	300	
+857	Iron Bane	1	6	3	3	-1	0	857	1	0	0	1	0	2199023255552	
+858	Petrify	1	6	3	5	-1	0	858	1	100	40	0	0	999	
+859	Iron Pigs	1	6	3	3	6	1	859	510	0	0	9	0	924	
+860	Rewrite Fate	1	6	4	4	-1	0	860	1	5	0	1	0	1	
+861	Control	1	6	4	3	-1	0	861	1	100	0	1	0	999	
+862	Skeletal Legion	1	6	5	4	-1	0	862	1	0	0	1	0	274877906944	
+863	Soul Vortex	1	6	5	3	-1	0	863	1	0	40	0	0	2048	
+864	Darkness	1	6	5	4	-1	0	864	1	0	0	4	0	77	
+865	Wooden Warriors	1	6	6	3	-1	0	865	1	0	0	1	0	16	
+866	Transformation	1	6	6	2	-1	0	866	1	0	0	8	0	1	
+867	Giant Warriors	1	6	6	3	-1	0	867	1	0	0	1	0	2147483648	
+868	Venomous Death	1	6	6	2	5	1	868	1	100	20	0	0	3019	
+869	Gift of Displacement	1	6	7	2	-1	0	869	1	0	20	0	0	8796093022208	
+870	Invisibility	1	6	7	3	-1	0	870	1	0	10	0	0	1073741824	
+871	Fay-eyed Warriors	4	6	7	3	-1	0	871	1	0	0	1	0	70368744177664	
+872	Mirage	1	6	7	4	-1	-1	872	1	0	0	20	0	139	
+873	Phoenix Pyre	1	7	0	2	-1	0	873	1	0	20	0	256	134217728	
+874	Arrow Fend	1	7	1	4	-1	0	874	1	0	0	1	0	8	
+875	Fog Warriors	1	7	1	4	-1	0	875	1	0	0	1	0	65536	
+876	Prison of Sedna	1	7	2	3	-1	0	876	1	100	0	1	0	299	
+877	Crawl	1	7	2	3	-1	0	877	1	100	0	1	0	68719476736	
+878	Wave Warriors	1	7	2	3	-1	0	878	1	0	0	1	0	2680059592708	
+879	Ice Walls	1	7	2	5	-1	0	879	1	0	0	15	0	129	
+880	Sea of Ice	1	7	2	6	-1	0	880	1	0	0	80	0	28	
+881	Marble Warriors	1	7	3	3	-1	0	881	1	0	0	1	0	65536	
+882	Iron Walls	1	7	3	5	-1	0	882	1	0	0	10	0	113	
+883	Doom	1	7	4	4	-1	0	883	1	0	0	1	0	2	
+884	Will of the Fates	1	7	4	5	-1	0	884	1	0	0	2	0	1	
+885	Enchanted Walls	1	7	4	5	-1	0	885	1	0	0	10	0	142	
+886	Bone Grinding	1	7	5	7	-1	0	886	1	0	0	1	0	3	
+887	Curse of the Frog Prince	1	7	6	2	-1	0	887	1	100	20	0	0	2222	
+888	Creeping Doom	1	7	6	3	-1	0	888	5055	0	0	1	0	-9	
+889	Oaken Army	1	7	6	4	-1	0	889	1	0	0	3	0	16	
+890	Army of Shades	1	7	7	4	-1	0	890	1	0	0	2	0	4398046511104	
+891	Immaculate Fort	1	7	7	5	-1	0	891	1	0	0	10	0	130	
+892	Conflagration	1	8	0	2	-1	0	892	1	100	20	0	0	512	
+893	Flameflesh Army	1	8	0	4	-1	0	893	1	0	0	2	0	4096	
+894	All-consuming Pyre	1	8	0	5	-1	0	894	1	0	0	1	0	2010	
+895	Army of Mist	1	8	1	5	-1	0	895	1	0	0	3	0	65536	
+896	Quickening	1	8	2	2	-1	0	896	1	0	0	1	0	262144	
+897	Liquify	1	8	2	4	-1	0	897	1	100	20	0	0	999	
+898	Frostflesh Army	1	8	2	4	-1	0	898	1	0	0	2	0	1024	
+899	Iron Warriors	1	8	3	4	-1	0	899	1	2	0	2	0	268435456	
+900	Marble Army	1	8	3	4	-1	0	900	1	0	0	3	0	65536	
+901	Wizard's Tower	1	8	3	4	-1	0	901	1	0	0	50	0	24	
+902	Crumble	1	6	3	5	-1	0	902	1	0	0	20	0	-25175	
+903	Ground Army	1	8	3	4	-1	0	903	1	0	0	2	0	2048	
+904	Arcane Domination	1	8	4	7	-1	0	904	1	0	0	7	0	999	
+905	Disintegrate	1	8	5	2	-1	0	905	1	100	10	0	0	999	
+906	Polymorph	1	8	6	3	-1	0	906	1	5	0	2	0	549	
+907	Army of Giants	1	8	6	5	-1	0	907	1	0	0	3	0	2147483648	
+908	Eternal Twilight	1	8	7	8	-1	0	908	1	0	0	90	0	118	
+909	Displaced Warriors	1	8	7	4	-1	0	909	1	0	0	1	0	8796093022208	
+910	Army of Bronze	1	9	3	6	-1	0	910	1	0	0	3	0	268435584	
+911	Army of Gold	1	9	3	5	0	1	911	1	0	0	3	0	268436480	
+912	Army of Lead	1	9	3	5	4	1	912	1	0	0	3	0	335544320	
+913	Arcane Decree	1	9	4	6	-1	0	913	1	0	0	60	0	126	
+914	Time Stop	1	9	4	6	-1	0	914	1	0	0	1	0	104	
+915	Wish	1	9	4	9	-1	0	915	1	0	0	100	0	0	
+916	Utterdark	1	9	5	9	-1	0	916	1	0	0	100	0	56	
+917	Army of Rats	1	9	6	5	-1	0	917	1	0	0	4	0	4297064448	
+918	Awaken Forest	1	9	6	5	-1	0	918	1	100	0	1	64	361	
+919	Summon Cave Grubs	0	1	3	1	-1	0	919	510	0	0	5	0	2526	
+920	Tangle Vines	0	1	6	1	-1	0	920	1	2	20	0	4	64	
+921	Summon Animals	0	1	6	2	-1	0	921	2026	0	0	10	0	403	
+922	Summon Sea Dogs	0	1	6	1	2	1	922	510	0	0	2	0	1064	
+923	Summon Crocodiles	0	1	6	1	2	1	923	510	0	0	4	0	2185	
+924	Spirit Curse	0	1	5	1	-1	0	924	1	100	0	1	0	2	
+925	Black Servant	0	1	5	2	-1	0	925	1	0	0	5	0	434	
+926	Summon Fire Ants	0	2	0	2	6	1	926	1008	0	0	9	0	2225	
+927	Summon Hawk	0	2	1	1	-1	0	927	1	0	20	0	0	517	
+928	Summon Storm Power	0	2	1	1	-1	0	928	1	0	10	0	256	8192	
+929	Summon Water Power	0	2	2	1	-1	0	929	1	0	20	0	256	524288	
+930	Summon Ogres	0	2	3	1	-1	0	930	505	0	0	7	0	2135	
+931	Summon Shades	0	2	5	2	-1	0	931	505	0	0	5	0	676	
+932	Awaken Vine Men	0	2	6	1	-1	0	932	4	0	0	1	0	361	
+933	Awaken Algae Men	0	2	6	1	-1	0	933	4	0	0	1	0	2976	
+934	Summon Killer Mantis	0	2	6	2	-1	0	934	510	0	0	5	0	2226	
+935	Pack of Wolves	0	2	6	1	-1	0	935	1014	0	0	2	0	284	
+936	Summon Horned Serpents	0	2	6	1	-1	0	936	510	0	0	4	0	403	
+937	Tapestry of Dreams	0	2	7	2	-1	0	937	1	0	0	4	0	138	
+938	Phoenix Power	0	3	0	2	-1	0	938	1	0	20	0	256	262144	
+939	Summon Lesser Fire Elemental	0	3	0	1	-1	0	939	1	0	0	1	0	3719	
+940	Bind Scorpion Beast	0	3	0	1	3	1	940	1	0	0	2	0	524	
+941	Summon Lesser Air Elemental	0	3	1	1	-1	0	941	1	0	0	1	0	3727	
+942	Call of the Winds	0	3	1	2	-1	0	942	51	0	0	8	0	517	
+943	Summon Amphiptere	0	3	1	2	6	1	943	1	0	0	3	0	1412	
+944	Summon Lesser Water Elemental	0	3	2	1	-1	0	944	1	0	0	1	0	3735	
+945	Call Krakens	0	3	2	3	-1	0	945	505	0	0	4	0	438	
+946	Summon Yetis	0	3	2	2	1	1	946	505	0	0	8	0	2231	
+947	Summon Cave Cows	0	3	2	2	3	2	947	510	0	0	3	0	2512	
+948	Summon Earthpower	0	3	3	2	-1	0	948	1	0	20	0	256	4096	
+949	Summon Lesser Earth Elemental	0	3	3	1	-1	0	949	1	0	0	1	0	3743	
+950	Summon Cave Crab	0	3	3	1	2	1	950	1	0	0	4	0	2514	
+951	Power of the Spheres	0	3	4	1	-1	0	951	1	0	0	1	0	128	
+952	Dark Knowledge	0	3	5	1	-1	0	952	1	0	0	4	0	5	
+953	Revive Wights	0	3	5	2	-1	0	953	5	0	0	20	0	533	
+954	Revive Bane	0	3	5	2	-1	0	954	1	0	0	7	0	185	
+955	Sloth of Bears	0	3	6	2	-1	0	955	1013	0	0	6	0	694	
+956	Pride of Lions	0	3	6	2	-1	0	956	1013	0	0	9	0	628	
+957	Ambush of Tigers	0	3	6	2	-1	0	957	1013	0	0	9	0	1140	
+958	Herd of Buffaloes	0	3	6	2	-1	0	958	505	0	0	8	0	3009	
+959	Call of the Wild	0	3	6	4	-1	0	959	40	0	0	9	0	284	
+960	Summon Sea Lions	0	3	6	2	2	1	960	1014	0	0	10	0	1063	
+961	Summon Bog Beasts	0	3	6	2	2	2	961	505	0	0	5	0	578	
+962	Summon Fay Folk	0	3	7	2	6	1	962	10	0	0	5	0	-26	
+963	Conjure Phantasmal Wolves	0	3	7	1	-1	0	963	2	0	0	1	0	3625	
+964	Nest of Salamanders	0	4	0	2	-1	0	964	1008	0	0	1	0	3658	
+965	Summon Fire Drake	0	4	0	2	-1	0	965	1	0	0	6	0	523	
+966	Summon Flame Jellies	0	4	0	2	-1	0	966	1008	0	0	6	0	2854	
+967	Summon Wyverns	0	4	1	2	-1	0	967	2	0	0	3	0	520	
+968	Summon Storm Drake	0	4	1	2	-1	0	968	1	0	0	5	0	3991	
+969	Summon Gryphons	0	4	1	2	-1	0	969	510	0	0	9	0	2131	
+970	School of Sharks	0	4	2	2	-1	0	970	2006	0	0	1	0	815	
+971	Voice of Apsu	0	4	2	2	-1	0	971	1	0	0	2	0	2	
+972	Summon Ice Drake	0	4	2	2	-1	0	972	1	0	0	7	0	579	
+973	Summon Sea Serpent	0	4	2	2	-1	0	973	1	0	0	4	0	565	
+974	Summon Cave Drake	0	4	3	2	-1	0	974	1	0	0	4	0	522	
+975	Light of the Northern Star	0	4	4	3	-1	0	975	1	0	0	2	0	40	
+976	Summon Shade Beasts	0	4	5	3	-1	0	976	3021	0	0	15	0	442	
+977	Summon Lammashtas	0	4	5	2	-1	0	977	2	0	0	1	0	393	
+978	Maggots	0	4	6	1	-1	0	978	1	100	0	1	0	50	
+979	Summon Spine Frog	0	4	6	2	2	1	979	1	0	0	1	0	3712	
+980	Summon Leogryphs	0	4	6	2	-1	0	980	2016	0	0	12	0	2132	
+981	Awaken Vine Ogres	0	4	6	3	-1	0	981	3	0	0	3	0	362	
+982	Summon Swamp Drake	0	4	6	2	2	1	982	1	0	0	5	0	2196	
+983	Summon Kithaironic Lion	0	4	6	3	3	1	983	1	0	0	5	0	514	
+984	Strength of Gaia	0	4	6	3	3	1	984	1	0	20	0	0	1048576	
+985	Nest of Asps	0	4	6	2	5	1	985	1008	0	0	1	0	3657	
+986	At the End of the Rainbow	0	4	7	2	-1	0	986	1	0	0	3	0	7	
+987	Conjure Phantasmal Warriors	0	4	7	2	-1	0	987	2	0	0	1	0	3624	
+988	Summon Water Kobold	0	4	7	1	2	1	988	1	0	0	12	0	3911	
+989	Summon Cave Kobolds	0	4	7	1	3	1	989	505	0	0	5	0	3890	
+990	Summon Fay Footfolk	0	4	7	2	6	1	990	505	0	0	12	0	3903	
+991	Will o' the Wisp	0	5	0	1	-1	0	991	2	0	0	1	0	527	
+992	Summon Fire Elemental	0	5	0	3	-1	0	992	1	0	0	1	0	3716	
+993	Summon Summer Lions	0	5	0	3	-1	0	993	505	0	0	13	0	515	
+994	Summon Air Elemental	0	5	1	3	-1	0	994	1	0	0	1	0	3724	
+995	Summon Spring Hawks	0	5	1	3	-1	0	995	505	0	0	13	0	513	
+996	Wind Ride	0	5	1	5	-1	0	996	1	0	0	10	0	100	
+997	Raven Feast	0	5	1	4	-1	0	997	1	0	0	3	0	100	
+998	Contact Draconians	0	5	1	3	-1	0	998	1	0	0	20	0	620	
+999	Voice of Tiamat	0	5	2	2	-1	0	999	1	0	0	8	0	51	
+1000	Summon Water Elemental	0	5	2	3	-1	0	1000	1	0	0	1	0	3732	
+1001	Contact Sea Trolls	0	5	2	3	-1	0	1001	510	0	0	10	0	564	
+1002	Summon Winter Wolves	0	5	2	3	-1	0	1002	505	0	0	6	0	511	
+1003	Contact Naiad	0	5	2	3	6	1	1003	1	0	0	35	0	1226	
+1004	Naiad Warriors	0	5	2	3	6	1	1004	25	0	0	18	0	1227	
+1005	Summon Earth Elemental	0	5	3	3	-1	0	1005	1	0	0	1	0	3740	
+1006	Summon Fall Bears	0	5	3	3	-1	0	1006	505	0	0	13	0	512	
+1007	Contact Trolls	0	5	3	3	-1	0	1007	505	0	0	10	0	518	
+1008	Spirit Mastery	0	5	5	1	-1	0	1008	1024	0	0	4	0	674	
+1009	Ghost Grip	0	5	5	1	-1	0	1009	5	3	10	0	0	2023	
+1010	Corpse Candle	0	5	5	1	0	1	1010	3	0	0	1	0	528	
+1011	Revive Bane Lord	0	5	5	4	-1	0	1011	1	0	0	12	0	998	
+1012	Acashic Record	0	5	4	2	-1	0	1012	1	0	0	10	0	999	
+1013	Summon Ether Warriors	0	5	4	3	5	1	1013	3	0	0	15	0	736	
+1014	Howl	0	5	6	3	-1	0	1014	1	0	0	3	0	88	
+1015	Spirits of the Wood	0	5	6	3	-1	0	1015	1012	0	0	8	0	932	
+1016	Contact Forest Trolls	0	5	6	3	-1	0	1016	510	0	0	10	0	2219	
+1017	Winged Monkeys	0	5	6	3	4	2	1017	1	0	0	10	0	1	
+1018	Summon Manticores	0	5	6	2	3	2	1018	3	0	0	10	0	2130	
+1019	Vermin Feast	0	5	6	4	-1	0	1019	1	0	0	6	0	99	
+1020	Messenger Crows	0	5	1	4	-1	0	1020	1	0	0	6	0	120	
+1021	Conjure Phantasmal Beast	0	5	7	3	-1	0	1021	1	0	0	1	0	3626	
+1022	Summon Bluecap	0	5	7	2	3	1	1022	1	0	0	20	0	3891	
+1023	Summon Fay Knights	0	5	7	3	6	1	1023	3	0	0	15	0	3901	
+1024	Awaken Sleeper	0	5	7	4	-1	0	1024	1	0	0	10	0	559	
+1025	Summon Fire Snakes	0	6	0	2	-1	0	1025	510	0	0	8	0	814	
+1026	Summon Flame Spirit	0	6	0	3	-1	0	1026	1	0	0	30	0	2626	
+1027	Summon Great Eagles	0	6	1	3	-1	0	1027	510	0	0	8	0	1381	
+1028	Summon Bishop Fish	0	6	2	3	-1	0	1028	1	0	0	15	0	1040	
+1029	Shark Attack	0	6	2	3	-1	0	1029	1	0	0	3	0	78	
+1030	Sea King's Court	0	6	2	4	-1	0	1030	1	0	0	55	0	580	
+1031	Streams from Hades	0	6	2	4	5	1	1031	1	0	0	40	0	1477	
+1032	Contact Hill Giant	0	6	3	3	-1	0	1032	1	0	0	3	0	2230	
+1033	Troll King's Court	0	6	3	4	-1	0	1033	1	0	0	65	0	519	
+1034	Acashic Knowledge	0	6	4	3	-1	0	1034	1	0	0	25	0	55	
+1035	Ether Gate	0	6	4	4	5	1	1035	1	0	0	90	0	117	
+1036	Summon Spectre	0	6	5	3	-1	0	1036	1	0	0	22	0	329	
+1037	Summon Ghosts	0	6	5	2	-1	0	1037	505	0	0	10	0	566	
+1038	Forest Troll Tribe	0	6	6	3	-1	0	1038	1	0	0	37	0	2220	
+1039	Contact Forest Giants	0	6	6	3	-1	0	1039	2	0	0	2	0	2229	
+1040	Summon Sprites	0	6	7	1	6	1	1040	6	0	0	1	0	592	
+1041	Contact Lamias	0	6	6	3	-1	0	1041	510	0	0	5	0	394	
+1042	Locust Swarms	0	6	6	3	-1	0	1042	1	0	0	8	0	8	
+1043	Contact Lamia Queen	0	6	6	5	5	2	1043	1	0	0	25	0	609	
+1044	Summon Fay Prince	0	6	7	4	6	1	1044	1	0	0	30	0	3904	
+1045	Summon Gnome	0	6	7	2	3	2	1045	1	0	0	30	0	345	
+1046	Living Fire	0	7	0	4	-1	0	1046	1000	0	0	2	0	3717	
+1047	Living Clouds	0	7	1	4	-1	0	1047	1000	0	0	2	0	3725	
+1048	Summon Asp Turtle	0	7	2	3	-1	0	1048	1	0	0	10	0	1234	
+1049	Living Water	0	7	2	4	-1	0	1049	1000	0	0	2	0	3733	
+1050	Summon Catoblepas	0	7	2	3	5	2	1050	1	0	0	12	0	1290	
+1051	Living Earth	0	7	3	4	-1	0	1051	1000	0	0	2	0	3741	
+1052	Summon Mound Fiend	0	7	5	3	-1	0	1052	1	0	0	28	0	439	
+1053	Harvester of Sorrows	0	7	5	4	-1	0	1053	1	0	0	20	0	491	
+1054	Call Wraith Lord	0	8	5	5	-1	0	1054	1	0	0	40	0	181	
+1055	Animal Horde	0	7	6	4	-1	0	1055	100	0	0	10	0	403	
+1056	Awaken Ivy King	0	7	6	4	-1	0	1056	1	0	0	30	0	931	
+1057	Summon Calydonian Boar	0	7	6	5	-1	0	1057	1	0	0	9	0	3684	
+1058	Wild Hunt	0	7	7	5	6	3	1058	1	0	0	50	0	75	
+1059	Living Castle	0	7	6	4	2	1	1059	1	0	0	40	0	9	
+1060	Conjure Phantasmal Knight	0	7	7	2	-1	0	1060	1	0	0	1	0	3627	
+1061	Lore of Legends	0	7	7	4	-1	0	1061	1	0	0	20	0	1086	
+1062	King of Elemental Fire	0	8	0	5	-1	0	1062	1	0	0	50	0	8	
+1063	The Kindly Ones	0	8	0	6	6	4	1063	1	0	0	40	0	80	
+1064	Queen of Elemental Air	0	8	1	5	-1	0	1064	1	0	0	50	0	7	
+1065	Queen of Elemental Water	0	8	2	5	-1	0	1065	1	0	0	50	0	6	
+1066	Guardians of the Deep	0	8	2	6	-1	0	1066	1	0	0	60	0	52	
+1067	Earth Attack	0	8	3	5	-1	0	1067	1	0	0	5	0	3741	
+1068	King of Elemental Earth	0	8	3	5	-1	0	1068	1	0	0	50	0	4	
+1069	Manifestation	0	8	5	5	-1	0	1069	1	0	0	4	0	392	
+1070	Well of Misery	0	8	5	6	-1	0	1070	1	0	0	80	0	33	
+1071	King of Banefires	0	8	5	3	0	4	1071	1	0	0	50	0	9	
+1072	Call the Eater of the Dead	0	8	4	4	5	4	1072	1	0	0	50	0	994	
+1073	Dragon Master	4	8	7	3	-1	0	1073	1	0	0	30	0	1073741824	
+1074	Wild Growth	0	8	6	4	-1	0	1074	1	0	40	0	4	64	
+1075	Faerie Court	0	8	7	4	6	1	1075	1	0	0	60	0	627	
+1076	Call Ancient Presence	0	9	2	5	6	4	1076	1	0	0	15	0	2251	
+1077	Call Abomination	0	9	4	5	2	2	1077	1	0	0	15	0	521	
+1078	Ghost Riders	0	9	5	5	-1	0	1078	75	0	0	5	0	189	
+1079	Legion of Wights	0	9	5	5	-1	0	1079	3002	0	0	20	0	533	
+1080	Tartarian Gate	0	9	5	7	-1	0	1080	1	0	0	7	0	10	
+1081	Awaken Tarrasque	0	9	6	5	-1	0	1081	1	0	0	15	0	925	
+1082	Enchanted Forests	0	9	6	7	-1	0	1082	1	0	0	90	0	24	
+1083	Celestial Rainbow	2	9	7	7	2	5	1083	1	0	0	80	0	90	
+1084	Corpse Man Construction	3	2	1	1	5	1	1084	1	0	0	1	0	534	
+1085	Clockwork Soldiers	3	2	3	2	-1	0	1085	510	0	0	4	0	2321	
+1086	Temper Armors	3	2	3	2	-1	0	1086	1	0	30	0	0	64	
+1087	Construct Manikin	3	2	6	1	5	1	1087	2014	0	0	7	0	313	
+1088	Clockwork Horrors	3	4	3	2	-1	0	1088	1013	0	0	9	0	982	
+1089	Crusher Construction	3	4	3	3	-1	0	1089	1	0	0	10	0	475	
+1090	Soldiers of Steel	3	4	3	3	-1	0	1090	1	0	60	0	0	64	
+1091	Wooden Construction	3	4	6	3	-1	0	1091	4	0	0	6	0	476	
+1092	Construct Mandragora	3	4	6	2	5	1	1092	2006	0	0	10	0	314	
+1093	Iron Gryphon	3	6	0	3	3	1	1093	1	0	0	6	0	3831	
+1094	Legions of Steel	3	6	3	4	-1	0	1094	1	0	0	1	0	64	
+1095	Forge of the Ancients	3	6	3	5	-1	0	1095	1	0	0	80	0	20	
+1096	Mechanical Men	3	6	3	2	-1	0	1096	1013	0	0	15	0	532	
+1097	Golem Construction	3	6	4	3	3	2	1097	1	0	0	35	0	471	
+1098	Siege Golem	3	8	3	3	-1	0	1098	1	0	0	15	0	760	
+1099	Iron Dragon	3	8	3	4	0	2	1099	1	0	0	25	0	531	
+1100	Mechanical Militia	3	8	3	5	-1	0	1100	1	0	0	80	0	51	
+1101	Juggernaut Construction	3	8	4	5	-1	0	1101	1	0	0	25	0	781	
+1102	Poison Golem	3	8	5	4	3	2	1102	1	0	0	35	0	1099	
+1103	Protection from Fire	4	1	0	1	-1	0	1103	1	0	5	0	0	36028797018963968	
+1104	Levitate	4	1	1	1	-1	0	1104	1	0	20	0	0	4503599627370496	
+1105	Trueshot	4	1	1	1	-1	0	1105	1	5	5	0	0	4	
+1106	Windrunner	4	1	1	1	-1	0	1106	1	0	10	0	0	4	
+1107	Protection from Lightning	4	1	1	1	-1	0	1107	1	0	5	0	0	72057594037927936	
+1108	Protection from Cold	4	1	2	1	-1	0	1108	1	0	5	0	0	144115188075855872	
+1109	Strength of Giants	4	1	3	2	-1	0	1109	1	0	20	0	0	128	
+1110	Resist Magic	4	1	4	1	-1	0	1110	1	0	20	0	0	67108864	
+1111	Animate Skeleton	4	1	5	1	-1	0	1111	1	-2	30	0	0	-2	
+1112	Animate Dead	4	1	5	1	-1	0	1112	1	-2	20	0	0	-3	
+1113	Reanimation	4	1	5	1	-1	0	1113	1009	0	0	3	0	-2	
+1114	Protection from Poison	4	1	6	1	-1	0	1114	1	0	5	0	0	4611686018427387904	
+1115	Healing Touch	4	1	6	1	-1	0	1115	1	1	20	0	0	10020	
+1116	True Sight	4	1	7	1	-1	0	1116	1	0	5	0	0	70368744177664	
+1117	False Fetters	4	1	7	2	-1	0	1117	1	0	10	0	0	131072	
+1118	Ignite Arrows	4	2	0	2	-1	0	1118	1	0	20	0	0	8388608	
+1119	Personal Flight	4	2	1	1	-1	0	1119	1	0	20	0	0	131072	
+1120	Water Shield	4	2	2	1	-1	0	1120	1	0	20	0	0	32	
+1121	Breath of Winter	4	2	2	1	-1	0	1121	1	0	20	0	0	8192	
+1122	Flying Shield	4	2	3	1	1	1	1122	1	0	20	0	0	549755813888	
+1123	Revive King	4	2	5	1	-1	0	1123	1	0	0	3	0	188	
+1124	Proud Steed	4	2	6	1	-1	0	1124	1	2	20	0	0	536870912	
+1125	Gift of the Hare	4	2	6	1	-1	0	1125	1	0	20	0	0	4	
+1126	Personal Regeneration	4	2	6	2	-1	0	1126	1	0	20	0	0	32	
+1127	Envenom Arrows	4	2	6	1	-1	0	1127	1	0	20	0	0	1125899906842624	
+1128	Gift of the Serpent	4	2	6	1	-1	0	1128	1	0	20	0	0	288230376151711744	
+1129	Shroud of Splendor	4	2	7	1	0	1	1129	1	0	10	0	0	36028797018963968	
+1130	Lesser Flame Ward	4	3	0	2	-1	0	1130	1	0	20	0	0	1024	
+1131	Fire Shield	4	3	0	1	-1	0	1131	1	0	20	0	0	32768	
+1132	Arrow of the Western Wind	4	3	1	2	-1	0	1132	1	25	20	0	0	1018	
+1133	Farflight	4	3	1	1	-1	0	1133	1	0	20	0	0	562949953421312	
+1134	Gift of Flight	4	3	1	2	-1	0	1134	1	0	20	0	0	131072	
+1135	Lesser Thunder Ward	4	3	1	2	-1	0	1135	1	0	20	0	0	2048	
+1136	Seeking Arrow	4	3	1	3	-1	0	1136	1	0	0	4	0	8	
+1137	Lesser Winter Ward	4	3	2	2	-1	0	1137	1	0	20	0	0	4096	
+1138	Claymen	4	3	2	1	3	1	1138	510	0	0	7	0	817	
+1139	Gift of Giant Strength	4	3	3	2	-1	0	1139	1	0	40	0	0	128	
+1140	Astral Shield	4	3	4	1	-1	0	1140	1	0	20	0	0	268435456	
+1141	Second Sight	4	3	4	1	5	1	1141	1	0	20	0	0	137438953472	
+1142	Raise Skeletons	4	3	5	2	-1	0	1142	3	-2	40	0	0	-2	
+1143	Create Revenant	4	3	5	2	-1	0	1143	1	0	0	9	0	396	
+1144	Regeneration	4	3	6	3	-1	0	1144	1	0	40	0	0	32	
+1145	Heal	4	3	6	1	-1	0	1145	1	5	20	0	0	10020	
+1146	Gift of True Sight	4	3	7	1	-1	0	1146	1	0	20	0	0	70368744177664	
+1147	Shroud of Bewilderment	4	3	7	2	-1	0	1147	1	0	20	0	0	16777216	
+1148	Horrible Visage	4	3	7	2	5	1	1148	1	0	10	0	0	16	
+1149	Terracotta Army	4	4	0	1	3	1	1149	1014	0	0	9	0	2134	
+1150	Levitate Soldiers	4	4	1	2	-1	0	1150	1	0	40	0	0	4503599627370496	
+1151	Trueshot Warriors	4	4	1	2	-1	0	1151	1	0	0	1	0	4	
+1152	Cloud Trapeze	4	4	1	2	-1	0	1152	1	0	0	3	0	1	
+1153	Earth Shatter Hammers	4	4	3	2	-1	0	1153	1	0	40	0	0	2251799813685248	
+1154	Shroud of Flying Shards	4	4	3	2	1	1	1154	1	0	20	0	0	18014398509481984	
+1155	Vile Water	4	4	2	2	-1	0	1155	1	0	0	2	0	2159	
+1156	Spell Ward	4	4	4	2	-1	0	1156	1	0	0	1	0	67108864	
+1157	Astral Healing	4	4	4	3	-1	0	1157	1	0	0	1	0	2	
+1158	Raise Dead	4	4	5	2	-1	0	1158	2006	-2	40	0	0	-3	
+1159	Twiceborn	4	4	5	2	-1	0	1159	1	0	0	10	0	4194304	
+1160	Behemoth	4	4	5	3	-1	0	1160	1	0	0	7	0	452	
+1161	Immaculate Mounts	4	4	6	2	-1	0	1161	1	2	20	0	0	536870912	
+1162	Haste	4	4	6	3	-1	0	1162	1	0	0	1	0	4	
+1163	Poison Ward	4	4	6	2	-1	0	1163	1	0	0	1	0	288230376151711744	
+1164	Serpent Fang Arrows	4	4	6	3	-1	0	1164	1	0	0	1	0	1125899906842624	
+1165	Simulacrum	4	4	7	3	-1	0	1165	1	0	0	20	0	9007199254740992	
+1166	Gift of Splendor	4	4	7	2	0	1	1166	1	0	20	0	0	36028797018963968	
+1167	Flaming Arrows	4	5	0	3	-1	0	1167	1	0	0	1	0	8388608	
+1168	Flame Ward	4	5	0	2	-1	0	1168	1	0	0	1	0	1024	
+1169	Farflight Arrows	4	5	1	2	-1	0	1169	1	0	0	1	0	562949953421312	
+1170	Thunder Ward	4	5	1	2	-1	0	1170	1	0	0	1	0	2048	
+1171	Watcher	4	5	1	3	3	1	1171	1	0	0	5	0	768	
+1172	Trade Wind	4	5	1	4	-1	-1	1172	1	0	0	10	0	95	
+1173	Winter Ward	4	5	2	2	-1	0	1173	1	0	0	1	0	4096	
+1174	Friendly Currents	4	5	2	3	-1	0	1174	1	0	0	1	0	2	
+1175	Quagmire	4	5	2	4	-1	0	1175	1	0	0	1	0	85	
+1176	Giant Strength Warriors	4	5	3	3	-1	0	1176	1	0	0	1	0	128	
+1177	Weapons of Sharpness	4	5	3	3	-1	0	1177	1	0	40	0	0	524288	
+1178	Enliven Gargoyles	4	5	3	3	1	1	1178	510	0	0	12	0	2368	
+1179	Ritual of Returning	4	5	4	2	-1	0	1179	1	0	0	3	0	8388608	
+1180	Dispel	4	5	4	3	-1	0	1180	1	0	0	30	0	1	
+1181	The Eyes of God	4	5	4	5	-1	0	1181	1	0	0	50	0	15	
+1182	Gift of Spirit Sight	4	5	4	3	5	1	1182	1	0	20	0	0	137438953472	
+1183	Pale Riders	4	5	5	3	-1	0	1183	2019	-2	0	10	0	189	
+1184	Horde of Skeletons	4	5	5	2	-1	0	1184	505	-2	40	0	0	-2	
+1185	Group Regeneration	4	5	6	3	-1	0	1185	1	0	60	0	0	32	
+1186	Faery Trod	4	5	6	4	7	1	1186	1	0	0	20	0	1	
+1187	Dreamwild Demesne	4	5	7	5	-1	0	1187	1	0	0	10	0	140	
+1188	Eternal Pyre	4	6	0	6	-1	0	1188	1	0	0	80	0	17	
+1189	Heat from Hell	4	6	0	4	-1	0	1189	1	0	0	2	0	6	
+1190	Vafur Flames	4	6	0	5	-1	0	1190	1	0	0	10	0	73	
+1191	Wind Guide	4	6	1	3	-1	0	1191	1	0	0	1	0	256	
+1192	Greater Farflight	4	6	1	4	-1	0	1192	1	0	0	1	0	562949953421312	
+1193	Dome of Solid Air	4	6	1	5	-1	0	1193	1	0	0	20	0	61	
+1194	Water Ward	4	6	2	1	-1	0	1194	1	0	0	1	0	32	
+1195	Grip of Winter	4	6	2	4	-1	0	1195	1	0	0	2	0	9	
+1196	Frost Dome	4	6	2	5	-1	0	1196	1	0	0	15	0	62	
+1197	Hidden in Snow	4	6	2	3	5	1	1197	1	0	0	65	0	1	
+1198	Earthquake Warriors	4	6	3	4	-1	0	1198	1	0	0	1	0	2251799813685248	
+1199	Riches from Beneath	4	6	3	5	-1	0	1199	1	0	0	70	0	35	
+1200	Enliven Statues	4	6	3	3	-1	0	1200	1007	0	0	20	0	474	
+1201	Hidden in Sand	4	6	3	3	5	1	1201	1	0	0	65	0	2	
+1202	Hidden Underneath	4	6	3	3	5	1	1202	1	0	0	65	0	3	
+1203	Opposition	4	6	4	3	-1	0	1203	1	100	20	0	0	999	
+1204	Dome of Arcane Warding	4	6	4	4	-1	0	1204	1	0	0	10	0	64	
+1205	Rigor Mortis	4	6	5	4	-1	0	1205	1	0	0	3	0	4	
+1206	Reanimate Archers	4	6	5	2	0	1	1206	10	0	0	5	0	535	
+1207	Ziz	4	6	5	3	1	2	1207	1	0	0	2	0	1388	
+1208	Hail of Serpent Fangs	4	6	6	4	-1	0	1208	1	0	0	2	0	1125899906842624	
+1209	Relief	4	6	6	5	-1	0	1209	1	0	0	1	0	84	
+1210	Forest Dome	4	6	6	5	-1	0	1210	1	0	0	10	0	66	
+1211	Foul Vapors	4	6	6	4	2	1	1211	1	0	0	2	0	45	
+1212	Steal Sight	4	6	7	1	-1	0	1212	1	100	20	0	0	4096	
+1213	Aura of Splendor	4	6	7	3	0	1	1213	1	0	40	0	0	36028797018963968	
+1214	Dome of Misdirection	4	6	7	5	-1	0	1214	1	0	0	20	0	67	
+1215	Hail of Burning Embers	4	7	0	4	-1	0	1215	1	0	0	2	0	8388608	
+1216	Dome of Flaming Death	4	7	0	4	-1	0	1216	1	0	0	8	0	60	
+1217	Mass Flight	4	7	1	4	-1	0	1217	1	0	0	1	0	131072	
+1218	Thetis' Blessing	4	7	2	5	-1	0	1218	1	0	0	50	0	59	
+1219	Ghost Ship Armada	4	7	2	5	5	3	1219	1	0	0	60	0	43	
+1220	Steel Slice Warriors	4	7	3	4	-1	0	1220	1	0	0	1	0	524288	
+1221	Lion Sentinels	4	7	3	5	-1	0	1221	1	0	0	30	0	105	
+1222	Earth Blood Deep Well	4	7	3	6	-1	0	1222	1	0	0	80	0	48	
+1223	Antimagic	4	7	4	3	-1	0	1223	1	0	0	2	0	67108864	
+1224	Solar Brilliance	4	7	4	5	-1	0	1224	1	0	0	3	0	21	
+1225	Stellar Focus	4	7	4	5	-1	0	1225	1	0	0	60	0	54	
+1226	Disenchantment	4	7	4	5	-1	0	1226	1	0	0	50	0	1	
+1227	Carrion Reanimation	4	7	5	3	-1	0	1227	200	0	0	10	0	-3	
+1228	Life after Death	4	7	5	4	-1	0	1228	1	0	0	4	0	2097152	
+1229	Ritual of Rebirth	4	7	5	4	-1	0	1229	1	0	0	15	0	398	
+1230	Leviathan	4	7	5	3	2	1	1230	1	0	0	10	0	1235	
+1231	Mass Regeneration	4	7	6	4	-1	0	1231	1	0	0	1	0	32	
+1232	Serpent's Blessing	4	7	6	4	-1	0	1232	1	0	0	2	0	16777216	
+1233	Awaken Treelord	4	7	6	5	-1	0	1233	1	0	0	35	0	11	
+1234	Gift of Health	4	7	6	6	-1	0	1234	1	0	0	50	0	30	
+1235	Aura of Bewilderment	4	7	7	4	-1	0	1235	1	0	0	1	0	16777216	
+1236	Veil of Perpetual Mists	4	7	7	5	-1	0	1236	1	0	0	30	0	114	
+1237	Nightmare Masks	4	7	7	4	5	1	1237	1	0	0	1	0	16	
+1238	Warriors of the Dawn	4	7	7	4	0	1	1238	1	0	0	1	0	36028797018963968	
+1239	Land of the Ever Young	4	7	7	5	6	1	1239	1	0	0	10	0	141	
+1240	Fire Fend	4	8	0	4	-1	0	1240	1	0	0	1	0	1024	
+1241	Frost Fend	4	8	2	4	-1	0	1241	1	0	0	1	0	4096	
+1242	Soaring Army	4	8	1	5	-1	0	1242	1	0	0	3	0	131072	
+1243	Thunder Fend	4	8	1	4	-1	0	1243	1	0	0	1	0	2048	
+1244	Wrath of the Sea	4	8	2	5	-1	0	1244	1	0	0	70	0	18	
+1245	Lichcraft	4	9	5	5	-1	0	1245	1	0	0	25	0	178	
+1246	Fields of the Dead	4	8	5	5	3	2	1246	1	0	0	2	0	96	
+1247	Void Pattern Labyrinth	4	8	4	4	7	3	1247	1	0	0	10	0	69	
+1248	Unraveling	4	8	4	6	-1	0	1248	1	0	0	6	0	256	
+1249	Army Regeneration	4	8	6	5	-1	0	1249	1	0	0	3	0	32	
+1250	Haunted Forest	4	8	6	5	5	1	1250	1	0	0	60	0	55	
+1251	Fata Morgana	4	8	7	7	-1	0	1251	1	0	0	90	0	53	
+1252	Mists of Deception	4	8	7	5	1	1	1252	1	0	0	2	0	72	
+1253	Earth Shatter Army	4	9	3	5	-1	0	1253	1	0	0	2	0	2251799813685248	
+1254	Demon Cleansing	4	9	2	5	-1	0	1254	1	0	0	1	0	83	
+1255	Dome of Seven Seals	4	9	4	4	3	4	1255	1	0	0	14	0	132	
+1256	Arcane Nexus	4	9	4	8	-1	0	1256	1	0	0	150	0	19	
+1257	Army of the Dead	4	9	5	5	-1	0	1257	5075	0	0	10	0	-2	
+1258	Gaia's Blessing	4	9	6	5	3	2	1258	1	0	0	3	0	16784384	
+1259	Gift of Nature's Bounty	4	9	6	7	-1	0	1259	1	0	0	70	0	27	
+1260	Desiccation	5	1	2	2	-1	0	1260	1	100	20	0	0	250	
+1261	Farstrike	5	1	3	2	4	1	1261	1	5	5	0	0	1015	
+1262	Blink	5	1	4	1	-1	0	1262	1	0	10	0	0	30	
+1263	Communion Master	5	1	4	1	-1	0	1263	1	0	20	0	0	144115188075855872	
+1264	Communion Slave	5	1	4	1	-1	0	1264	1	0	20	0	0	288230376151711744	
+1265	Horror Mark	5	1	4	2	-1	0	1265	1	100	20	0	0	261	
+1266	Dust to Dust	5	1	5	1	-1	0	1266	1	0	20	0	0	2020	
+1267	Decay	5	1	5	1	-1	0	1267	1	3	20	0	0	256	
+1268	Frighten	5	1	5	1	-1	0	1268	1	5	5	0	0	5	
+1269	Seven Year Fever	5	1	6	1	0	1	1269	1	2	30	0	0	1	
+1270	Fascination	5	1	7	1	-1	0	1270	1	100	20	0	0	100	
+1271	Personal Luck	5	1	7	1	-1	0	1271	1	0	20	0	0	2	
+1272	Curse	5	1	7	1	4	1	1272	1	100	30	0	0	2	
+1273	Bonds of Fire	5	2	0	1	-1	0	1273	1	3	20	0	0	65536	
+1274	Battle Fury	5	2	0	2	-1	0	1274	1	2	20	0	0	281474976710656	
+1275	Steal Breath	5	2	1	1	-1	0	1275	1	5	20	0	0	5035	
+1276	Calm Emotions	5	2	2	1	-1	0	1276	1	100	20	0	0	36028797018963968	
+1277	Scrying Pool	5	2	2	1	7	1	1277	1	0	0	2	0	36	
+1278	Returning	5	2	4	2	-1	0	1278	1	0	0	2	0	1	
+1279	Mind Burn	5	2	4	2	-1	0	1279	1	100	20	0	0	1010	
+1280	Beast Fury	5	2	6	1	-1	0	1280	1	2	20	0	0	281474976710656	
+1281	Sleep	5	2	7	2	-1	0	1281	1	100	20	0	0	1024	
+1282	Rage	5	3	0	2	-1	0	1282	1	100	20	0	0	128	
+1283	Augury	5	3	0	2	-1	0	1283	1	0	0	2	0	0	
+1284	Carrier Birds	5	3	1	2	-1	0	1284	1	0	0	2	0	15	
+1285	Carrier Eagle	5	3	1	2	-1	0	1285	1	0	0	3	0	1	
+1286	Sailors' Death	5	3	2	3	-1	0	1286	1	1	20	0	0	3005	
+1287	Iron Will	5	3	3	1	-1	0	1287	1	100	20	0	0	67108864	
+1288	Teleport Gems	5	3	4	3	-1	0	1288	1	0	0	2	0	10	
+1289	Haruspex	5	3	6	2	-1	0	1289	1	0	0	2	0	6	
+1290	Panic	5	3	6	2	-1	0	1290	1	1	20	0	0	1	
+1291	Whispers of the Wild	5	3	6	2	-1	0	1291	1	0	0	3	0	36	
+1292	Luck	5	3	7	1	-1	0	1292	1	2	20	0	0	2	
+1293	Despair	5	3	7	2	-1	0	1293	1	1	10	0	0	4	
+1294	Geas	5	3	7	2	-1	0	1294	1	100	20	0	0	18014398509481984	
+1295	Prison of Fire	5	4	0	3	-1	0	1295	1	2	30	0	0	65536	
+1296	Furious Warriors	5	4	0	2	-1	0	1296	1	2	40	0	0	281474976710656	
+1297	Auspex	5	4	1	2	-1	0	1297	1	0	0	2	0	1	
+1298	Curse of the Desert	5	4	2	3	-1	0	1298	1	100	30	0	0	250	
+1299	Gnome Lore	5	4	3	2	-1	0	1299	1	0	0	3	0	3	
+1300	Paralyze	5	4	4	2	-1	0	1300	1	100	20	0	0	9042	
+1301	Telestic Animation	5	4	4	2	-1	0	1301	1	0	0	5	0	473	
+1302	Astral Window	5	4	4	2	-1	0	1302	1	0	0	3	0	36	
+1303	Teleport	5	4	4	3	-1	0	1303	1	0	0	2	0	1	
+1304	Vengeance of the Dead	5	4	7	3	5	1	1304	1	0	0	3	0	999	
+1305	Terror	5	4	5	3	-1	0	1305	1	1	20	0	0	3	
+1306	Ferocity	5	4	6	2	-1	0	1306	1	2	20	0	0	281474976710656	
+1307	Touch of Madness	5	4	6	1	-1	0	1307	1	0	30	0	0	256	
+1308	Rage of the Cornered Rat	5	4	6	2	-1	0	1308	1	0	20	0	0	256	
+1309	Wildness	5	4	6	3	-1	0	1309	1	3	20	0	0	17179869184	
+1310	Cure Disease	5	4	6	4	-1	0	1310	1	0	0	5	0	1	
+1311	Slumber	5	4	7	2	-1	0	1311	1	100	20	0	0	1024	
+1312	Mind Blank	5	4	7	1	4	1	1312	1	0	20	0	0	140737488355328	
+1313	Visions of Death	5	4	7	3	-1	0	1313	1	100	20	0	0	5010	
+1314	Gift of the Furies	5	5	0	3	-1	0	1314	1	2	0	1	0	281474976710656	
+1315	Pyre of Catharsis	5	5	0	3	-1	0	1315	1	0	0	4	0	1	
+1316	Purifying Flames	-1	1	-1	0	-1	0	1316	1	0	0	0	0	20	
+1317	Raging Hearts	5	5	0	4	-1	0	1317	1	0	0	10	0	2	
+1318	Serenity	5	5	2	3	-1	0	1318	1	100	20	0	0	36028797018963968	
+1319	Earth Sense	5	5	3	4	-1	0	1319	1	0	0	6	0	121	
+1320	Teleport Item	5	5	4	2	-1	0	1320	1	0	0	3	0	1	
+1321	Soul Slay	5	5	4	3	-1	0	1321	1	100	20	0	0	999	
+1322	Leeching Darkness	5	5	5	3	-1	0	1322	1	1	20	0	0	134217728	
+1323	Control the Dead	5	5	5	2	-1	0	1323	1	0	20	0	0	999	
+1324	Charm Animal	5	5	6	2	-1	0	1324	1	100	20	0	0	999	
+1325	Pack Ferocity	5	5	6	2	-1	0	1325	1	2	0	1	0	281474976710656	
+1326	The Ravenous Swarm	5	5	6	3	-1	0	1326	1	0	0	1	0	92	
+1327	Gift of Reason	5	5	6	4	-1	0	1327	1	0	0	20	0	1	
+1328	Confusion	5	5	7	2	-1	0	1328	1	3	10	0	0	17179869184	
+1329	Group Luck	5	5	7	2	-1	0	1329	1	2	40	0	0	2	
+1330	Choleria	5	6	0	5	-1	0	1330	1	0	0	20	0	134	
+1331	Sanguinia	5	6	1	5	-1	0	1331	1	0	0	20	0	135	
+1332	Phlegmatia	5	6	2	5	-1	0	1332	1	0	0	20	0	136	
+1333	Melancholia	5	6	3	5	-1	0	1333	1	0	0	20	0	137	
+1334	Enslave Mind	5	6	4	4	-1	0	1334	1	100	20	0	0	999	
+1335	Imprint Souls	5	6	4	4	-1	0	1335	1	-1	0	15	0	2052	
+1336	Gateway	5	6	4	4	-1	0	1336	1	0	0	10	0	1	
+1337	Wither Bones	5	6	5	3	-1	0	1337	1	-1	50	0	0	2010	
+1338	Leprosy	5	6	5	5	-1	0	1338	1	-1	0	10	0	1	
+1339	Foul Air	5	6	5	5	1	1	1339	1	0	0	75	0	10	
+1340	Growing Fury	5	6	6	4	-1	0	1340	1	0	0	1	0	13	
+1341	Mirror Mind	5	6	7	2	4	1	1341	1	0	20	0	0	140737488355328	
+1342	Unending Nightmare	5	6	7	3	5	1	1342	1	100	20	0	0	17179870208	
+1343	Beckoning	5	6	7	4	6	2	1343	5055	0	0	20	0	999	
+1344	Sandman's Blessing	5	6	7	5	-1	0	1344	1	0	20	0	0	1024	
+1345	Forgotten Palace	5	6	7	5	-1	0	1345	1	0	0	15	0	111	
+1346	Purgatory	5	7	0	6	-1	0	1346	1	0	0	60	0	26	
+1347	Dark Skies	5	7	1	5	-1	0	1347	1	0	0	50	0	32	
+1348	Vengeful Water	5	7	2	7	-1	0	1348	1	0	0	70	0	93	
+1349	Divine Name	5	7	4	5	-1	0	1349	1	0	0	25	0	1	
+1350	Vortex of Returning	5	7	4	4	-1	0	1350	1	0	0	3	0	1	
+1351	Plague	5	7	5	4	-1	0	1351	1	0	0	1	0	8	
+1352	Burden of Time	5	7	5	7	-1	0	1352	1	0	0	70	0	29	
+1353	Fury of the Wild	5	7	6	4	-1	0	1353	1	2	0	2	0	281474976710656	
+1354	Charm	5	7	7	3	-1	0	1354	1	100	30	0	0	999	
+1355	Mass Confusion	5	7	7	3	-1	0	1355	1	3	10	0	0	17179869184	
+1356	Gates of Horn and Ivory	5	7	7	5	-1	0	1356	1	0	0	60	0	116	
+1357	Hydrophobia	5	8	0	2	-1	0	1357	1	100	0	1	0	128	
+1358	Ordeal by Fire	5	8	0	6	4	6	1358	1	0	0	70	0	131	
+1359	Gale Gate	5	8	1	5	-1	0	1359	1	0	0	60	0	49	
+1360	Lure of the Deep	5	8	7	5	2	2	1360	1	0	0	70	0	50	
+1361	Astral Travel	5	8	4	5	-1	0	1361	1	0	0	25	0	1	
+1362	Soul Drain	5	8	4	5	5	5	1362	1	0	0	5	0	5	
+1363	Stygian Paths	5	8	5	5	-1	0	1363	1	0	0	15	0	1	
+1364	Black Death	5	8	5	5	-1	0	1364	1	0	0	15	0	1	
+1365	Undead Mastery	5	8	5	7	-1	0	1365	1	0	0	7	0	999	
+1366	Call the Worm That Walks	5	8	6	5	-1	0	1366	1	0	0	30	0	2217	
+1367	Battle Fortune	5	8	7	4	-1	0	1367	1	5	0	2	0	2	
+1368	Winds of Arcane Drought	5	9	1	7	4	6	1368	1	0	0	90	0	133	
+1369	Elemental Dampening	5	9	3	7	4	3	1369	1	0	0	60	0	123	
+1370	Arcane Analysis	5	9	4	4	-1	0	1370	1	0	0	25	0	1	
+1371	Astral Disruption	5	9	4	6	-1	0	1371	1	0	0	60	0	1	
+1372	Master Enslave	5	9	4	8	-1	0	1372	1	0	0	8	0	999	
+1373	Nexus Gate	5	9	4	5	3	3	1373	1	0	0	40	0	1	
+1374	Remnants in the Depths	5	9	5	6	2	4	1374	1	0	0	90	0	124	
+1375	Beast Mastery	5	9	6	6	-1	0	1375	1	0	0	4	0	999	
+1376	Dreamwild Legion	5	9	7	5	-1	0	1376	1	0	0	4	0	2	
+1377	Legion's Demise	5	9	7	7	-1	0	1377	1	0	0	4	0	143	
+1378	Dreams of the Awakening God	5	9	7	8	-1	0	1378	1	0	0	90	0	125	
+1379	Blood Burst	6	1	8	1	-1	0	1379	1	5	0	2	0	1010	
+1380	Blood Heal	6	1	8	1	-1	0	1380	1	3	0	1	0	50	
+1381	Sabbath Master	6	1	8	1	-1	0	1381	1	0	0	1	0	576460752303423488	
+1382	Sabbath Slave	6	1	8	1	-1	0	1382	1	0	0	1	0	1152921504606846976	
+1383	Reinvigoration	6	1	8	1	-1	0	1383	1	0	0	1	0	200	
+1384	Bind Shadow Imp	6	1	8	1	-1	0	1384	1	0	0	4	0	2287	
+1385	Summon Imps	6	1	8	1	-1	0	1385	5	0	0	1	0	303	
+1386	Bind Fiery Imps	6	1	8	1	0	1	1386	505	0	0	5	0	2286	
+1387	Blood Boil	6	1	8	1	0	1	1387	1	100	50	0	0	1010	
+1388	Bowl of Blood	6	2	8	1	-1	0	1388	1	0	0	5	0	8	
+1389	Agony	6	2	8	2	-1	0	1389	1	2	0	1	0	1	
+1390	Banish Demon	6	2	8	1	-1	0	1390	1	100	0	1	0	999	
+1391	Bind Spine Devil	6	2	8	2	-1	0	1391	1	0	0	2	0	638	
+1392	Bind Fiend	6	2	8	2	-1	0	1392	1	-2	0	3	0	88	
+1393	Bind Bone Fiends	6	2	8	1	5	1	1393	505	0	0	5	0	433	
+1394	Hell Power	6	2	8	3	-1	0	1394	1	0	0	3	0	131072	
+1395	Leeching Touch	6	3	8	1	-1	0	1395	1	0	20	0	0	1014	
+1396	Pain Transfer	6	3	8	2	-1	0	1396	1	0	20	0	0	512	
+1397	Infernal Circle	6	3	8	5	-1	0	1397	1	0	0	5	0	89	
+1398	Bind Devil	6	3	8	2	0	2	1398	1	0	0	5	0	304	
+1399	Bind Frost Fiend	6	3	8	2	2	2	1399	1	0	0	7	0	449	
+1400	Cross Breeding	6	3	8	1	6	1	1400	1029	0	0	15	0	1	
+1401	Blood Feast	6	3	8	2	-1	0	1401	1	0	0	5	0	50	
+1402	Bind Serpent Fiends	6	4	8	1	-1	0	1402	3	0	0	4	0	526	
+1403	Blood Lust	6	4	8	2	-1	0	1403	1	0	0	1	0	128	
+1404	Hell Ride	6	4	8	3	-1	0	1404	1	0	0	10	0	1	
+1405	Hellfire	6	4	8	1	0	2	1405	2	0	0	1	0	1008	
+1406	Bind Storm Demon	6	4	8	2	1	2	1406	1	0	0	10	0	632	
+1407	Call Lesser Horror	6	4	8	2	4	2	1407	1	-2	0	2	0	-6	
+1408	Blood Fecundity	6	4	8	2	6	2	1408	1	0	0	10	0	94	
+1409	Hellbind Heart	6	5	8	2	-1	0	1409	1	100	0	1	0	999	
+1410	Horde from Hell	6	5	8	4	-1	0	1410	40	0	0	44	0	303	
+1411	Bloodletting	6	5	8	4	-1	0	1411	1	0	0	4	0	1	
+1412	Bind Succubus	6	5	8	4	7	1	1412	1	-2	0	66	0	811	
+1413	Wrath of Pazuzu	6	5	8	1	1	3	1413	1	0	0	15	0	14	
+1414	Bind Demon Knight	6	5	8	2	3	2	1414	1	-2	0	15	0	489	
+1415	Awaken Dark Vines	6	5	8	1	6	3	1415	2	0	0	12	0	330	
+1416	Send Lesser Horror	6	5	8	3	4	3	1416	1	0	0	14	0	-6	
+1417	Summon Illearth	6	5	8	2	3	2	1417	1	0	0	2	0	3756	
+1418	Rain of Toads	6	5	8	3	6	1	1418	1	0	0	20	0	6	
+1419	Harm	6	6	8	2	-1	0	1419	1	5	0	1	0	1000	
+1420	Rejuvenate	6	6	8	1	-1	0	1420	1	0	0	10	0	-10	
+1421	Blood Rain	6	6	8	3	-1	0	1421	1	0	0	3	0	112	
+1422	Infernal Disease	6	6	8	5	-1	0	1422	1	0	0	5	0	1662	
+1423	Ritual of Five Gates	6	6	8	5	-1	0	1423	1	0	0	33	0	88	
+1424	Bind Ice Devil	6	6	8	3	2	3	1424	1	-2	0	88	0	1	
+1425	Blood Rite	6	6	8	2	5	2	1425	1	-2	0	11	0	405	
+1426	Call Horror	6	6	8	3	4	3	1426	1	-2	0	3	0	-7	
+1427	Leech	6	7	8	1	-1	0	1427	1	25	0	1	0	1024	
+1428	Plague of Locusts	6	7	8	5	-1	0	1428	11	0	0	88	0	2794	
+1429	Bind Arch Devil	6	7	8	4	0	2	1429	1	0	0	99	0	2	
+1430	Father Illearth	6	7	8	3	3	4	1430	1	0	0	105	0	5	
+1431	Send Dream Horror	6	7	8	3	4	4	1431	1	0	0	15	0	12	
+1432	Dome of Corruption	6	7	8	4	4	4	1432	1	0	0	20	0	68	
+1433	Blood Moon	6	7	8	7	4	5	1433	1	0	0	90	0	128	
+1434	Purify Blood	6	7	8	4	6	1	1434	1	0	0	3	0	288230376151711744	
+1435	Damage Reversal	6	8	8	1	-1	0	1435	1	0	0	1	0	1064	
+1436	Rush of Strength	6	8	8	3	-1	0	1436	1	0	0	1	0	128	
+1437	Life for a Life	6	8	8	3	-1	0	1437	1	100	99	1	0	5025	
+1438	Bind Heliophagus	6	8	8	5	-1	0	1438	1	0	0	111	0	3	
+1439	Three Red Seconds	6	8	8	5	-1	0	1439	1	0	0	120	0	25	
+1440	Blood Vortex	6	8	8	7	-1	0	1440	1	0	0	166	0	87	
+1441	Infernal Prison	6	8	8	3	0	1	1441	1	100	0	2	0	-12	
+1442	Claws of Kokytos	6	8	8	3	2	1	1442	1	100	0	2	0	-13	
+1443	Horror Seed	6	8	8	3	4	4	1443	1	0	0	25	0	9	
+1444	Curse of Blood	6	8	8	3	5	4	1444	1	0	0	96	0	404	
+1445	Improved Cross Breeding	6	8	8	2	6	2	1445	3034	0	0	20	0	1	
+1446	Infernal Fumes	6	9	8	4	3	3	1446	1	0	0	40	0	1006	
+1447	farkill: Infernal Fumes	-1	1	3	4	8	3	1447	1	0	0	0	0	1006	
+1448	Forces of Darkness	6	9	8	6	-1	0	1448	1016	0	0	50	0	88	
+1449	The Looming Hell	6	9	8	8	-1	0	1449	1	0	0	150	0	42	
+1450	Bind Demon Lord	6	9	8	8	-1	0	1450	1	0	0	150	0	10	
+1451	Infernal Forces	6	9	8	5	0	2	1451	1013	0	0	50	0	304	
+1452	Infernal Tempest	6	9	8	5	1	2	1452	1007	0	0	50	0	632	
+1453	Forces of Ice	6	9	8	5	2	2	1453	1010	0	0	50	0	449	
+1454	Infernal Crusade	6	9	8	5	3	2	1454	1005	0	0	50	0	489	
+1455	Send Horror	6	9	8	4	4	4	1455	1	0	0	30	0	-7	
+1456	Astral Corruption	6	9	8	6	4	6	1456	1	0	0	166	0	57	

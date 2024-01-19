@@ -1,1 +1,0 @@
-Fire dmg: 9 AP fire dmg (increased by +1 per extra mage level, reduced by weapon length)

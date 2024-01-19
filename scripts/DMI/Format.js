@@ -19,6 +19,7 @@ preload( "images/magicicons/Path_S.png" );
 preload( "images/magicicons/Path_N.png" );
 preload( "images/magicicons/Path_D.png" );
 preload( "images/magicicons/Path_B.png" );
+preload( "images/magicicons/Path_G.png" );
 
 preload( "images/magicicons/Path_H.png" );
 preload( "images/magicicons/Path_U.png" );
@@ -32,6 +33,7 @@ preload( "images/magicicons/Gem_S.png" );
 preload( "images/magicicons/Gem_N.png" );
 preload( "images/magicicons/Gem_D.png" );
 preload( "images/magicicons/Gem_B.png" );
+preload( "images/magicicons/Gem_G.png" );
 
 preload( "scripts/slickgrid/images/sort-asc.gif" );
 preload( "scripts/slickgrid/images/sort-desc.gif" );

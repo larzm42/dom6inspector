@@ -1,1 +1,0 @@
-Unrest +40, misfortune +3, disease chance 4%. Reported as a random event.

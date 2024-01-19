@@ -124,7 +124,7 @@
 			<button id="unit-page-button"  class="page-button" value="units">Unit</button>
 			<button id="site-page-button"  class="page-button" value="sites">Site</button>
 			<button id="merc-page-button"  class="page-button" value="mercs">Merc</button>
-			<button id="event-page-button"  class="page-button" value="event">Event</button>
+			<!--button id="event-page-button"  class="page-button" value="event">Event</button-->
             <button id="wpn-page-button"  class="page-button hidden-inline" value="wpns">Wp</button>
             <button id="armor-page-button"  class="page-button hidden-inline" value="armor">Ar</button>
 		</div>
@@ -463,6 +463,9 @@
 			<label for="pathN"><input class="toggle-path" type='checkbox' value='N' id="pathN" 
 			/><img alt="N" class="Path_N pathicon" src="images/magicicons/Path_N.png" /></label>
 			
+			<label for="pathG"><input class="toggle-path" type='checkbox' value='G' id="pathG" 
+			/><img alt="G" class="Path_G pathicon" src="images/magicicons/Path_G.png" /></label>
+
 			<label for="pathB"><input class="toggle-path" type='checkbox' value='B' id="pathB" 
 			/><img alt="B" class="Path_B pathicon" src="images/magicicons/Path_B.png" /></label>
 		
@@ -496,6 +499,9 @@
 			<label for="pathN"><input class="toggle-path" type='checkbox' value='N' id="pathN"
 			/><img alt="N" class="Path_N pathicon" src="images/magicicons/Path_N.png" /></label>
 
+			<label for="pathG"><input class="toggle-path" type='checkbox' value='G' id="pathG" 
+			/><img alt="G" class="Path_G pathicon" src="images/magicicons/Path_G.png" /></label>
+
 			<label for="pathB"><input class="toggle-path" type='checkbox' value='B' id="pathB"
 			/><img alt="B" class="Path_B pathicon" src="images/magicicons/Path_B.png" /></label>
 		</div>
@@ -526,6 +532,9 @@
 			<label for="pathN"><input class="toggle-path" type='checkbox' value='N' id="pathN"
 			/><img alt="N" class="Gem_N pathicon" src="images/magicicons/Gem_N.png" /></label>
 
+			<label for="pathG"><input class="toggle-path" type='checkbox' value='G' id="pathG"
+			/><img alt="G" class="Gem_G pathicon" src="images/magicicons/Gem_G.png" /></label>
+
 			<label for="pathB"><input class="toggle-path" type='checkbox' value='B' id="pathB"
 			/><img alt="B" class="Gem_B pathicon" src="images/magicicons/Gem_B.png" /></label>
 		</div>
@@ -545,7 +554,7 @@
 			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
 
 			<select class="type" id="itemtype">
-				<option class="default" value="misc,1-h wpn,2-h wpn,helm,armor,shield,boots,crown"
+				<option class="default" value="misc,1-h wpn,2-h wpn,helm,armor,shield,boots,crown,barding"
 					> all item types </option>
 				<option disabled="disabled"> -------------- </option>
 				<option value="misc"> Miscellaneous </option>
@@ -556,6 +565,7 @@
 				<option value="boots"> Boots </option>
 				<option value="1-h wpn"> 1-h weapons </option>
 				<option value="2-h wpn"> 2-h weapons </option>
+				<option value="barding"> Barding </option>
 				<option disabled="disabled"> -------------- </option>
 				<option value="melee"> All melee weaps </option>
 				<option value="missile"> All missile weaps </option>

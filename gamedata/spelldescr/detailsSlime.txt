@@ -1,1 +1,0 @@
-Slimed targets have their att/def/combat speed halved.

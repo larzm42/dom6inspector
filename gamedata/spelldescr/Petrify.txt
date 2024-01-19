@@ -1,1 +1,0 @@
-The caster transforms some targets into stone. The target might end up dead when the petrification ends.

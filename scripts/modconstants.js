@@ -69,7 +69,7 @@ DMI.modconstants = {
 	eracodes: { 1:'EA', 2:'MA', 3:'LA' },
 	eranames: { 1:'early era', 2:'middle era', 3:'late era' },
 	
-	pathkeys: ['F', 'A', 'W', 'E', 'S', 'D', 'N', 'B', 'H'],
+	pathkeys: ['F', 'A', 'W', 'E', 'S', 'D', 'N', 'G', 'B', 'H'],
 	pathkeynames: { 
 		A:'Air', 
 		B:'Blood', 
@@ -80,6 +80,7 @@ DMI.modconstants = {
 		S:'Astral', 
 		W:'Water', 
 		H:'Priest',
+		G:'Glamour',
 		
 		U:'Random',
 		FAWE:'Elemental',
@@ -95,8 +96,9 @@ DMI.modconstants = {
 		4: 'S',
 		5: 'D',
 		6: 'N',
-		7: 'B',
-		8: 'H',
+		7: 'G',
+		8: 'B',
+		9: 'H',
 		
 		50: 'U',
 		51: 'FAWE',
@@ -114,8 +116,9 @@ DMI.modconstants = {
 		2048: 'S',
 		4096: 'D',
 		8192: 'N',
-		16384: 'B',
-		32768: 'H'
+		16384: 'G',
+		32768: 'B',
+		65536: 'H'
 	},
 	
 	
@@ -144,8 +147,9 @@ DMI.modconstants = {
 		4: 'S',
 		5: 'D',
 		6: 'N',
-		7: 'B',
-		8: 'H',
+		7: 'G',
+		8: 'B',
+		9: 'H',
 		255: ''
 	},
 	
@@ -159,8 +163,9 @@ DMI.modconstants = {
 		4: 'Astral',
 		5: 'Death',
 		6: 'Nature',
-		7: 'Blood',
-		8: 'Holy',
+		7: 'Glamour',
+		8: 'Blood',
+		9: 'Holy',
 		255: ''
 	},
 	
@@ -174,7 +179,8 @@ DMI.modconstants = {
 		6: "helm",
 		7: "boots",
 		8: "misc",
-		9: "crown"
+		9: "crown",
+		10: "barding"
 	},
 	
 	//spell effects

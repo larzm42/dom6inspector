@@ -1,1 +1,0 @@
-The spell afflicts enemies with rabies. Affected units become rabid and will attack anything nearby, even friends. Only living targets can be affected by the disease.

@@ -26,7 +26,7 @@ MSpell.nationList = function (o) {
 	for (var oi=0, attr; attr = modctx.attributes_by_spell[oi];  oi++) {
 		if (attr.spell_number == o.id) {
 			if (attr.attribute == "278") {
-				o.nations.push(parseInt(attr.raw_value-100));
+				o.nations.push(parseInt(attr.raw_value));
 			}
 		}
 	}
