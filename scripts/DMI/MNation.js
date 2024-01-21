@@ -234,7 +234,7 @@ MNation.prepareData_PostMod = function() {
 
 		for (var oj=0, attr; attr = modctx.attributes_by_nation[oj];  oj++) {
 			if (parseInt(attr.nation_number) == o.id) {
-				if (attr.attribute == "52" || attr.attribute == "100") {
+				if (attr.attribute == "52" || attr.attribute == "100" || attr.attribute == "25") {
 					o.sites.push(parseInt(attr.raw_value));
 				}
 				if (attr.attribute == "631") {
