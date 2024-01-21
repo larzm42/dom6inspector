@@ -33,7 +33,7 @@ bit_value	bit_name	test
 2147483648	Damage Bonus on 1st Attack {Wpn: #charge}
 4294967296	Beam/Breath {Wpn: #beam}
 8589934592	Used in melee too {#usedinmelee}
-17179869184	50% chance to be used in melee too {Wpn: #range050}
+17179869184	False Damage
 34359738368	Bypasses mirror image, internally added to spells with aoe 1+ {Wpn: #hasaoe}
 68719476736	Higher charge bonus cap {Wpn: #heavyweapon}
 137438953472	Cannot be used for repelling {Wpn: #norepel}
