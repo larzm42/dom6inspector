@@ -408,14 +408,14 @@ MSpell.prepareData_PostMod = function() {
 					u.summonedby = u.summonedby || [];
 					u.summonedby.push( o );
 					// Marverni gets Iron Boar
-					if (parseInt(o.id) == 672) {
+					if (parseInt(o.id) == 859) {
 						var ironBoar = modctx.unitlookup[1808];
 						o.summonsunits.push(ironBoar);
 						ironBoar.summonedby = ironBoar.summonedby || [];
 						ironBoar.summonedby.push( o );
-						var marv = modctx.nationlookup[8];
+						var marv = modctx.nationlookup[12];
 						ironBoar.nations = ironBoar.nations || {};
-						ironBoar.nations[8] = marv;
+						ironBoar.nations[12] = marv;
 						ironBoar.eracodes = ironBoar.eracodes || {};
 						ironBoar.eracodes[o.eracode] = true;
 					}

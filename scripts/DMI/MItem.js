@@ -728,6 +728,7 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'farsail', 'sailing distance increase',
 	'stormimmune', 'storm immunity',
 	'lesserhorrorattackchance', 'attack by lesser horrors', Format.Percent,
+	'falsesupplies', 'false supplies',
 	'eatforyouth', 'eat for youth', function(v,o){
 		return '-' + v +' years';
 	}

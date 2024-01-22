@@ -125,7 +125,7 @@ function show_summon(unit, count, pathlevel1, spellid) {
 	}
 	// Marverni gets Iron Boars
 	if (parseInt(unit) == 924) {
-		ref = ref + '<br/>(' + Utils.unitRef(1808) + ' x ' + String(spellBonus(count, pathlevel1)) + ' for ' + Utils.nationRef(8) + ')';
+		ref = ref + '<br/>(' + Utils.unitRef(1808) + ' x ' + String(spellBonus(count, pathlevel1)) + ' for ' + Utils.nationRef(12) + ')';
 	}
 	return ref;
 }

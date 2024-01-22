@@ -1109,31 +1109,30 @@ MUnit.prepareForRender = function(o) {
 		var n;
 		var isldr = is(o.leader);
 		if (n= parseInt(o.A)) {
-			if (isldr) bonus('air magic', 'magicleader', n*5);
+			if (isldr) bonus('air magic', 'magicleader', n*10);
 			if (_isCmdr) bonus('air magic', 'shockres', n > 2 ? n*2-1:0);
 		}
 		if (n= parseInt(o.B)) {
-			if (isldr) bonus('blood magic', 'magicleader', n*5);
-			if (isldr) bonus('blood magic', 'undeadleader', n*5);
+			if (isldr) bonus('blood magic', 'magicleader', n*10);
+			if (isldr) bonus('blood magic', 'undeadleader', n*10);
 		}
 		if (n= parseInt(o.D)) {
-			//if (isldr) bonus('death magic', 'magicleader', n*5);
-			if (isldr) bonus('death magic', 'undeadleader', n*30);
+			if (isldr) bonus('death magic', 'undeadleader', n*50);
 			if (o.fear)
 				bonus('death magic', 'fear', n);
 			else if (n >= 5)
 				bonus('death magic', 'fear', n-5);
 		}
 		if (n= parseInt(o.S)) {
-			if (isldr) bonus('astral magic', 'magicleader', n*10);
+			if (isldr) bonus('astral magic', 'magicleader', n*20);
 		}
 		if (n= parseInt(o.E)) {
-			if (isldr) bonus('earth magic', 'magicleader', n*5);
+			if (isldr) bonus('earth magic', 'magicleader', n*10);
 			if (n > 2) bonus('earth magic', 'prot', n);
 		}
 		if (n= parseInt(o.F)) {
-			if (isldr) bonus('fire magic', 'leader', n*5);
-			if (isldr) bonus('fire magic', 'magicleader', n*5);
+			if (isldr) bonus('fire magic', 'leader', n*10);
+			if (isldr) bonus('fire magic', 'magicleader', n*10);
 			if (_isCmdr) bonus('fire magic', 'fireres', n > 2 ? n*2-1:0);
 
 			if (is(o.fireshield))
@@ -1142,15 +1141,18 @@ MUnit.prepareForRender = function(o) {
 				bonus('fire magic', 'heat', n);
 		}
 		if (n= parseInt(o.N)) {
-			if (isldr) bonus('nature magic', 'magicleader', n*5);
+			if (isldr) bonus('nature magic', 'magicleader', n*10);
 			bonus('nature magic', 'supplybonus', n*10);
 			if (_isCmdr) bonus('nature magic', 'poisonres', n > 2 ? n*2-1:0);
 		}
 		if (n= parseInt(o.W)) {
-			if (isldr) bonus('water magic', 'magicleader', n*5);
+			if (isldr) bonus('water magic', 'magicleader', n*10);
 			if (is(o.cold))
 				bonus('water magic', 'cold', n);
 			if (_isCmdr) bonus('water magic', 'coldres', n > 2 ? n*2-1:0);
+		}
+		if (n= parseInt(o.G)) {
+			if (isldr) bonus('glamour magic', 'magicleader', n*10);
 		}
 
 		if (o.command) {
@@ -1182,7 +1184,7 @@ MUnit.prepareForRender = function(o) {
 				t = String(n) + ' '+ slotorder[j+1];
 			if (t == 'foot')
 				t = 'feet';
-			if (j==2 && o.crownonly) {
+			if (j==4 && o.crownonly) {
 				t=t+'(crown only)';
 			}
 			slotwords.push(t);
@@ -1754,6 +1756,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'coldres',	'resist cold',
 	'poisonres',	'resist poison',
 	'shockres',	'resist shock',
+	'acidres',	'resist acid',
 	'diseaseres',	'resist disease',	Format.Percent,
 
 	'darkvision',	'dark vision',	Format.Percent,
@@ -1799,7 +1802,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'animalawe',	'animal awe',	Format.SignedZero,
 	'event',	'causes events',	Format.Percent,
 	'reform',	'chance to reform when killed',	Format.Percent,
-
+	'smartmount',	'smart mount',
 	'reanimator',	'passive corpse reanimation',
 	'preanimator',	'priest reanimation',
 	'dreanimator',	'death reanimation',
@@ -2061,6 +2064,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'deathattuned', 'bonus death magic', Format.Percent,
 	'natureattuned', 'bonus nature magic', Format.Percent,
 	'bloodattuned', 'bonus blood magic', Format.Percent,
+	'reformingflesh', 'reforming flesh', Format.Percent,
 
 	'events', 'triggered events', list_events,
 	'recruitedby', 'recruited from', list_sites,
@@ -2199,7 +2203,7 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'defiler', 'defiler',
 	'mountedbeserk', 'mounted beserk',
 	'lanceok', 'lance ok',
-	
+	'truesight', 'true sight',
 	'trample',	'trample',
 	'trampswallow',	'swallow',
 	'spy',		'spy',
@@ -2209,6 +2213,8 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'taxcollector',		'tax collector',
 	'gold',		'gold',
 	'divineins',	'divinely inspired',
+	'mobilearcher', 'mobile archer',
+	'fearoftheflood', 'fear of the flood',
 
 	'coldblood',	'cold blooded',
 	'amphibian',	'amphibious',
