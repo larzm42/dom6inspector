@@ -511,6 +511,7 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 
 	'barkskin',	'barkskin',		{1: '10 protection (+1 if already 10 or higher)'},
 	'fireres',	'resist fire', 		Format.Signed,
+	'acidres',	'resist acid', 		Format.Signed,
 
 	'stoneskin',	'stoneskin',		{1: '15 protection (+2 if already 14 or higher)'},
 	'coldres',	'resist cold', 		Format.Signed,
