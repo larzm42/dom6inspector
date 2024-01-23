@@ -839,7 +839,7 @@ var modderkeys = Utils.cutDisplayOrder(aliases, formats,
 ]);
 var ignorekeys = {
 	modded:1,
-	path:1, level:1,
+	path:1, level:1, scalesheader:1,
 	n_sum1:1, n_sum2:1, n_sum3:1, n_sum4:1,
 	A:1, B:1, D:1, E:1, F:1, N:1, S:1, W:1, G:1, H:1,
 	A2:1, B2:1, D2:1, E2:1, F2:1, N2:1, S2:1, W2:1, G2:1, H2:1,
