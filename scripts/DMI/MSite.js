@@ -24,6 +24,7 @@ MSite.initSite = function(o) {
 	o.suml4 = [];
 	o.provdef = [];
 	o.scales = [];
+	o.scalesheader = [];
 	o.rit = '';
 }
 MSite.prepareData_PreMod = function() {
@@ -38,6 +39,7 @@ MSite.prepareData_PreMod = function() {
 		o.suml4 = [];
 		o.provdef = [];
 		o.scales = [];
+		o.scalesheader = [];
 		var capunit = Utils.keyListToTable(o, 'hmon');
 		for (var oj=0, cap; cap = capunit[oj]; oj++) {
 			o.hmon.push(cap);
@@ -58,10 +60,10 @@ MSite.prepareData_PreMod = function() {
 		for (var oj=0, cap; cap = com[oj]; oj++) {
 			o.com.push(cap);
 		}
-		var summons = Utils.keyListToTable(o, 'sum');
-		for (var oj=0, cap; cap = summons[oj]; oj++) {
-			o.sum.push(cap);
-		}
+//		var summons = Utils.keyListToTable(o, 'sum');
+//		for (var oj=0, cap; cap = summons[oj]; oj++) {
+//			o.sum.push(cap);
+//		}
 		var provdef = Utils.keyListToTable(o, 'provdef');
 		for (var oj=0, cap; cap = provdef[oj]; oj++) {
 			o.provdef.push(cap);
@@ -134,12 +136,17 @@ MSite.prepareData_PostMod = function() {
 
 		if (o.scale1) {
 			o.scales.push(o.scale1);
+			o.scalesheader.push(o.scale1.substring(0, o.scale1.length-7));
 		}
 		if (o.scale2) {
 			o.scales.push(o.scale2);
+			o.scalesheader.push(o.scale2.substring(0, o.scale2.length-7));
 		}
 		if (o.scales.length === 0) {
 			delete o.scales;
+		}
+		if (o.scalesheader.length === 0) {
+			delete o.scalesheader;
 		}
 
 
@@ -410,7 +417,7 @@ MSite.CGrid = Utils.Class( DMI.CGrid, function() {
 		{ id: "level",     width: 40, name: "Level", field: "level", sortable: true },
 		{ id: "rarirt",     width: 40, name: "Rarity", field: "rarity", sortable: true },
 		{ id: "path",      width: 50, name: "Path", field: "path", sortable: true },
-		{ id: "scales",      width: 50, name: "Scale", field: "scales", sortable: true, formatter: formatScale  },
+		{ id: "scalesheader",      width: 50, name: "Scale", field: "scalesheader", sortable: true, formatter: formatScale  },
 		//{ id: "scale1",      width: 50, name: "Scale", field: "scale1sort", sortable: true, formatter: formatScale  },
 		//{ id: "scale2",      width: 50, name: "Scale", field: "scale2sort", sortable: true, formatter: formatScale },
 		{ id: "listed_gempath",    width: 120, name: "Gems", field: "listed_gempath", sortable: true, formatter: DMI.GridFormat.OrderedGems },
@@ -469,7 +476,7 @@ MSite.CGrid = Utils.Class( DMI.CGrid, function() {
 			return false;
 
 		//site scale
-		if (args.sitescale && (!o.scales || !o.scales.includes(args.sitescale)))
+		if (args.sitescale && (!o.scalesheader || !o.scalesheader.includes(args.sitescale)))
 			return false;
 
 		//site terrain
@@ -775,18 +782,19 @@ var displayorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'mon',	'units',	function(v,o){
 		return list_units(v, o);
 	},
-	'sum',	'summon',	function(v,o){
-		return list_units(v, o);
+	'sum1',	'summon',	function(v,o){
+		return o.path + " Mage " + Utils.unitRef(v)+' x '+o.n_sum1;
 	},
-	'suml2',	'summon (lvl 2)',	function(v,o){
-		return list_units(v, o);
+	'sum2',	'summon',	function(v,o){
+		return o.path + " Mage " + Utils.unitRef(v)+' x '+o.n_sum2;
 	},
-	'suml3',	'summon (lvl 3)',	function(v,o){
-		return list_units(v, o);
+	'sum3',	'summon',	function(v,o){
+		return o.path + " Mage " + Utils.unitRef(v)+' x '+o.n_sum3;
 	},
-	'suml4',	'summon (lvl 4)',	function(v,o){
-		return list_units(v, o);
+	'sum4',	'summon',	function(v,o){
+		return o.path + " Mage " + Utils.unitRef(v)+' x '+o.n_sum4;
 	},
+	 
 	'provdefcom',	'extra PD (commander)',	Utils.unitRef,
 	'provdef',	'extra PD (unit)',	function(v,o){
 		return list_units(v, o);

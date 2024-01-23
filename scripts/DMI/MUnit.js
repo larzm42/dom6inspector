@@ -2248,6 +2248,7 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 
 	'inquisitor',		'inquisitor',
 	'spiritsight', 'spirit sight',
+	'spiritform', 'spiritform',
 	'blessbers', 'berserk when blessed',
 	'combatcaster', 'combat caster',
 	'aisinglerec', 'ai single recruit',
