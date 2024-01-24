@@ -1,0 +1,2 @@
+Enemy morale lowered by 1 for each point of dominion. Slight darkness in battles.
+Cave and deep sea provinces are not affected.

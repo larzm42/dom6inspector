@@ -1,0 +1,2 @@
+Patrol strength +50 patrol vs enemy units.
+Duration: 1 month + 3 months per extra gems.

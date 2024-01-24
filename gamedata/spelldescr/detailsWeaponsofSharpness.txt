@@ -1,0 +1,1 @@
+Targets' slash or piercing melee attacks deal AP damage.

@@ -1,0 +1,1 @@
+The caster summons a troop of winged monkeys and sends them away to fetch a commander from a distant land. The monkeys will try to grab and fly away with the helpless commander, but will attack if the target is too heavy. The monkeys are afraid of mages and will never try to snatch a mage from the ground. The monkeys leave after they have accomplished their mission.

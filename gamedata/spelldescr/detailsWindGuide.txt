@@ -1,0 +1,2 @@
+Grants Prec +2
+Halves precision penalty and negates the 50% firing chance from Storm.

@@ -1,0 +1,2 @@
+One coastal province is drowned. 50% of the population dies.
+Units have a chance to escape depending on map move (50% at map move 10).

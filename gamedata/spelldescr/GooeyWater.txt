@@ -1,0 +1,1 @@
+The caster turns a patch of water into sticky slime. Units stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance.

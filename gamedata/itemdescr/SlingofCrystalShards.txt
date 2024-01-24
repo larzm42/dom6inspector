@@ -1,0 +1,1 @@
+This magic sling throws a large number of crystal shards towards the enemy. Anyone wounded by a shard will be affected by the magic inside the crystal. The stored magic will harness the fear generated from being wounded and use it to create an illusion that will start to fight the enemies. Mindless units are immune to the effects of this sling.

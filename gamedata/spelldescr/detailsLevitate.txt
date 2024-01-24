@@ -1,0 +1,2 @@
+Floating units cannot be targeted by some spells like earth grip or earthquakes.
+Movement: -50%

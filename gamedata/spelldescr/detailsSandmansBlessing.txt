@@ -1,0 +1,1 @@
+Sleeping units will not take actions nor defend themselves against melee attacks. Sleeping units wake up if wounded.

@@ -1,0 +1,1 @@
+The caster reconstructs the crumbling walls of a besieged castle. The Defence of the walls will increase by 100 points. Each skill level above 3 increases the effect by 25 additional points. The caster must be defending the castle in order to cast the spell.

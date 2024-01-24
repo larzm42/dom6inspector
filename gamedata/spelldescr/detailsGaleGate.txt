@@ -1,0 +1,3 @@
+Generates 20 Air gems each month.
+Air Elemental size +1
+Creates a random amount of hurricanes. Caster has air magic skill*10% chance of directing each hurricane to a safe province.

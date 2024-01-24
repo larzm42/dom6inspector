@@ -1,0 +1,1 @@
+Explosion damage: 10 AP fire dmg, explosion area 50, fatigue upon death: 30+d20.

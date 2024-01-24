@@ -1,0 +1,1 @@
+Confused 50% of combat rounds. Confused targets may stand still and stare, or try to move in a random direction, attacking anyone standing in their way, be it friend or foe.

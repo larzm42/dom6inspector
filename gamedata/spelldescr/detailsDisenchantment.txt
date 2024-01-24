@@ -1,0 +1,2 @@
+Destroys a global enchantment if cast with enough power.
+Lowers the overcast level of a global enchantment by half the overcast level of Disenchantment.

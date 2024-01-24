@@ -1,0 +1,1 @@
+This jar contains fire that can be used instead of a Fire gem to power one Fire combat spell per battle. The power of the fire is too short-lived to be used for rituals.

@@ -1,0 +1,1 @@
+Grants magic boost +2, Att +4, Def +4, Str +4, Prec +4, Morale +4, MR +2, Protection +4

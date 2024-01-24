@@ -1,0 +1,1 @@
+Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3.

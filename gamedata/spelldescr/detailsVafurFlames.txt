@@ -1,0 +1,1 @@
+Enemies walking through: 10 AP fire dmg. Enemies flying through: 5 AP fire dmg. Enchantments lasts 1 turn + 3 turns / extra gem.

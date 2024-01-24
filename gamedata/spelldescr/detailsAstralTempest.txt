@@ -1,0 +1,2 @@
+Continuously targets the battlefield with 1 AN dmg (MR negates).
+Does not affect mindless beings.

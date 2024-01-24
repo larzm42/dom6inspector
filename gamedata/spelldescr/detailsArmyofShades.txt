@@ -1,0 +1,1 @@
+Attacking units have their attack skill reduced by 2. Attackers with true sight or spirit sight ignore the Blurred condition as do blind ones.

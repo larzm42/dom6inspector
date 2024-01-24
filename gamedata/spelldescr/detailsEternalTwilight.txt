@@ -1,0 +1,1 @@
+All provinces get +1 magic scale and all battles have the Twilight effect. Lands that are hostile or outside dominion get -10% income and -20% resources. Hostile units risk getting tricked and die (morale + MR check), this risk is lower in densely populated provinces.

@@ -1,0 +1,1 @@
+New hostile global enchantments and dispels have their might reduced by half of the arcane decree's might.

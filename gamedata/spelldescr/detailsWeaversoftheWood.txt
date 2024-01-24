@@ -1,0 +1,2 @@
+Patrol strength +100 vs enemy units. Able to detect invisible beings as well. Spiders will aid patrolling forces in combat.
+Duration: 1 month + 3 months per extra gems.

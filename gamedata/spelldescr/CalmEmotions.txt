@@ -1,0 +1,1 @@
+The caster afflicts the target with phlegmatic humors quenching his raging emotions. If cast on a berserker, the target will calm down and eventually lose his berserker rage. If cast on a less aggressive unit, it will simply become a bit less inclined to continue fighting.

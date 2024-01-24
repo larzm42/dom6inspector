@@ -1,0 +1,1 @@
+Lure chance: 20% + dominion * 20%. Enemy dominion prevents the Lure. Easy MR check to avoid drowning.

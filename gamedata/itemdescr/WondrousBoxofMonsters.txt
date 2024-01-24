@@ -1,0 +1,1 @@
+When opened in battle, random monsters will start to appear and attack the owner's enemies. In rare cases the box may malfunction and pop a few monsters that try to kill the wrong side.

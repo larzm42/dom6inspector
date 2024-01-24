@@ -1,0 +1,1 @@
+Chance of elemental attacking: 5% + dominion * 2%.

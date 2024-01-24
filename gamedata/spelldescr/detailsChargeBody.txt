@@ -1,0 +1,2 @@
+Damage on attacker: 20 AN shock
+Damage on mage: 5 AN shock

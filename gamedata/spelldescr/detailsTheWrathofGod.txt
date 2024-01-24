@@ -1,0 +1,1 @@
+Hit chance per month: 2% + 2% * dominion + turmoil (minimum 1% chance). Damage: 9 AN

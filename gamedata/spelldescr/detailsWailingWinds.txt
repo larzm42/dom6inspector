@@ -1,0 +1,1 @@
+Continuously target all enemies with Fear 1 (morale check negates) (max -10 morale loss)

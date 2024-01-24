@@ -1,0 +1,1 @@
+The caster projects a ray that will affect a small number of nearby enemies. Those who fail to resist will instantly fall into an enchanted slumber.

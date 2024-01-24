@@ -1,0 +1,1 @@
+This bolt passes straight through armor and damages the target's soul directly. If the target is slain he will be filled by the energies from this spell and rise as a soulless warrior.

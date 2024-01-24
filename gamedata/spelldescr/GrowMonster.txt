@@ -1,0 +1,1 @@
+Creates a random monster that is friendly most of the times.

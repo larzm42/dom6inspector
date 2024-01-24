@@ -1,0 +1,2 @@
+All forests (including cave forests) under neutral or enemy dominion spread dominion as if they were temples of the caster's pretender.
+Forests with friendly dominion will spontaneously spawn attacks in the province or enemy controlled neighboring provinces. A strong dominion and high Growth scale helps the effectiveness of the attacks. Wastelands are never attacked.

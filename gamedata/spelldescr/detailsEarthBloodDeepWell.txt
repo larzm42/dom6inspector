@@ -1,0 +1,1 @@
+Generates 17 Earth gems each month (+5 if in a cave).

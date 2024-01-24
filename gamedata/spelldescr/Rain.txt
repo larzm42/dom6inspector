@@ -1,0 +1,1 @@
+This spell creates a heavy rain upon the battlefield. This makes it harder to fly, fires will be put out quicker and any cloud effects will dissipate faster than usual. Fire magic is more difficult to use during heavy rain. If it is cold the rain will become snow instead. Snow does not increase the fatigue for fire spells, but it still puts out fires and dissipates clouds.

@@ -1,0 +1,1 @@
+Explosion: 15 AN MR dmg (undeads and demons only), 35 AoE

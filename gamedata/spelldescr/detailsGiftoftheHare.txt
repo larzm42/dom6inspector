@@ -1,0 +1,1 @@
+Combat speed is doubled.

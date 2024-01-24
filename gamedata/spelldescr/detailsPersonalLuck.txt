@@ -1,0 +1,2 @@
+A lucky unit has a 75% chance of escaping an otherwise deadly blow or spell.
+Luck does not affect undead or inanimate creatures.

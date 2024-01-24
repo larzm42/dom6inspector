@@ -1,0 +1,2 @@
+Wall integrity increase: 500*cold scale points
+Walls are magic and ethereal units cannot pass through

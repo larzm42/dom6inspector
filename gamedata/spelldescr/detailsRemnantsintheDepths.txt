@@ -1,0 +1,2 @@
+Increases death in seas by +1/month. Increases death in coastal provinces by +1/month, but max +2.
+Sea provinces with +5 death spreads disease to units and kill 4% population/month.

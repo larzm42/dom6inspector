@@ -1,0 +1,2 @@
+Vessel gets astral power of the Aboleth (levels over 5 are halved).
+Vessel dies if Aboleth dies.

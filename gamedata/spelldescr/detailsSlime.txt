@@ -1,0 +1,1 @@
+Slimed units are slowed and suffers an additional -2 att/def penalty.

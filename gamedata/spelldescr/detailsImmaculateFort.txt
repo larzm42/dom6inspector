@@ -1,0 +1,3 @@
+Unrest Reduction: 5 / month
+Wall breakdown resistance: 50%
+Walls are magic and ethereal units cannot pass through

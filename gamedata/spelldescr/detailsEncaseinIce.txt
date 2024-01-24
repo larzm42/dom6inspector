@@ -1,0 +1,1 @@
+Target is encased in ice for 10 points. Each point grants +1 prot. Str roll vs 12 reduces the number of encase points. Target gets 5 cold fatigue dmg each turn while encased.

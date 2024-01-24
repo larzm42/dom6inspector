@@ -1,0 +1,1 @@
+Herne targets powerful enemy priests in forest provinces (including cave forests). Up to 4 lesser hunts will target any enemy sacred commanders located in forest provinces. Sneaking reduces chance of being targeted by the lesser hunts.

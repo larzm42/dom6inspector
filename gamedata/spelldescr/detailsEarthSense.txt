@@ -1,0 +1,2 @@
+Patrol strength +100 vs enemy units. Able to detect invisible units as well.
+Duration: 1 month + 3 months per extra gems.

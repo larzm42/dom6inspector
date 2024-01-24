@@ -1,0 +1,2 @@
+Defense skill +2, morale +2, Magic Resistance +2.
+The spell only affects animal mounts.

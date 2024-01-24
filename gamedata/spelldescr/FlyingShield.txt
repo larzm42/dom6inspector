@@ -1,0 +1,1 @@
+The mage animates a shield to protect himself from incoming attacks. The shield will randomly block about half of the attacks against his person.

@@ -1,0 +1,1 @@
+The caster channels vast amounts of Fire Arcana against all active Global Water Enchantments to simultaneously dispel them. The gems spent, in excess of the cost to cast the spell, is compared to the gems used to overcast each of the Global Enchantments. If the Opposition matches any of the Globals, that Global is dispelled.

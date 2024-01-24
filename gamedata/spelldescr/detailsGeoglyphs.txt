@@ -1,0 +1,1 @@
+Magic scale +2, MR for enemies in province -2, ritual range +1

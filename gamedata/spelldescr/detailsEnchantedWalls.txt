@@ -1,0 +1,2 @@
+Wall integrity increase: 100
+Walls are magic and ethereal units cannot pass through

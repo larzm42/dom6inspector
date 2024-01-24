@@ -1,0 +1,2 @@
+Changes Twilight into darkness.
+Darkness: -3 att/def/prec.

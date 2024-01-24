@@ -1,0 +1,1 @@
+The caster drains life force from the target, adding it to his own health and endurance.

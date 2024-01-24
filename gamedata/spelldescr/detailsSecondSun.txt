@@ -1,0 +1,1 @@
+Each turn increases heat scales throughout the world. Cave provinces will only get up to 1 step hotter.

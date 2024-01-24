@@ -1,0 +1,1 @@
+Fire spells that cannot be cast underwater have their fatigue cost increased by 50%. All clouds dissipate 25% faster. Flying incurs double fatigue.

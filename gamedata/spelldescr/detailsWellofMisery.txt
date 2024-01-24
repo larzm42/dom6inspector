@@ -1,0 +1,4 @@
+Generates 21 Death gems each month.
+Increases growth worldwide by +2
+Growth scale is increased by +5 in the province where the spell was cast.
+The spell is broken if the province where it was cast is lost.

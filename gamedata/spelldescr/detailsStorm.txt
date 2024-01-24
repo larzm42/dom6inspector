@@ -1,0 +1,1 @@
+Precision reduced by half, 50% of missiles lost, clouds dissipate twice as fast, fire magic costs 50% more fatigue (only rain storm).

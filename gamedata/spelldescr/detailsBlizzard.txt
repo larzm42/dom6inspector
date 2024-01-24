@@ -1,0 +1,2 @@
+Temperature -2. Precision reduced by half, 50% of missiles lost, clouds dissipate twice as fast.
+Cannot be cast in hot provinces.

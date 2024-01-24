@@ -1,0 +1,1 @@
+Dome misdirection chance 70%. Friendly spells will also be misdirected.

@@ -1,0 +1,1 @@
+This ritual is a more powerful Dispel. If cast at sufficient power it will destroy an active global enchantment, but if it fails it will still reduce the power of the targeted enchantment.

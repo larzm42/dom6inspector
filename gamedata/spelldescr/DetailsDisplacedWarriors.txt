@@ -1,0 +1,2 @@
+The first attack against a displaced unit will most likely fail. Thereafter, attacking units have their attack skill reduced by 5. Attackers with true sight or spirit sight ignore the Displaced condition as do blind ones.
+The effect doesn't stack with 'Blur' or invisibility.

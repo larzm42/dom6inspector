@@ -1,0 +1,1 @@
+All units without Swamp Survival suffer -1 Att, -1 Def, +2 Enc and -20% combat speed.

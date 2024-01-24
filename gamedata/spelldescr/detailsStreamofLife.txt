@@ -1,0 +1,1 @@
+Death chance: 40% +5% per additional caster level.

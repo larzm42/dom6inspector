@@ -1,0 +1,1 @@
+Blunt and slash melee attacks will stun on hit (size or str can negate).

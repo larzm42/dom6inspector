@@ -1,0 +1,1 @@
+This shield is enchanted with spells of flight, durability and protection. The shield has a 50% chance of blocking any incoming attack, including spells and area attacks, reducing its damage. However armor negating attacks will completely ignore the shield.

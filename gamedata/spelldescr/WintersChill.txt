@@ -1,0 +1,1 @@
+The caster freezes several enemy soldiers. Frozen units are slowed and suffer from fatigue each turn. The spell only lowers the temperature of the soldiers themselves. There is no lingering cold.

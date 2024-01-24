@@ -1,0 +1,1 @@
+This battle enchantment reduces the fatigue of all friendly units on the battlefield. It lasts until the battle ends or the caster is killed.

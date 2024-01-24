@@ -1,0 +1,1 @@
+Paralysis strength: 12 + astral mage level (reduced by weapon length, magic resistance negates)

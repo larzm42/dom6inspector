@@ -1,0 +1,4 @@
+Destroys all global enchantments if cast with enough power.
+Destroys all local enchantments.
+Increases magic and horror marks in entire world.
+Might increase maximum number of global enchantment slots if cast with much power.

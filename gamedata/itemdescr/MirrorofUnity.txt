@@ -1,0 +1,1 @@
+This mirror distorts the images of those around it so that everybody appears the same. Enemy scouts thus cannot distinguish different unit types from each other. As a side effect it can be difficult to give orders without written commands because no one knows for certain who is giving the order.

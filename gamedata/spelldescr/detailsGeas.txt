@@ -1,0 +1,2 @@
+Victim will attack anyone nearby.
+ Ends by passing a very difficult (+8) morale check (results in a permanent curse).

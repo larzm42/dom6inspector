@@ -1,0 +1,1 @@
+The mage's image appears beside his actual location and is very difficult to hit in melee. The first attack against the displaced unit will almost always miss as the enemy will swing straight at the false image.

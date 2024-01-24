@@ -1,0 +1,3 @@
+All units have prec -2 (unless they have Darkvision or True Sight).
+All glamour mages get +1 glamour skill.
+Twilight has no effect unless cast in normal daylight. Night, darkness and unnatural brightness causes the enchantment to lose its effect.

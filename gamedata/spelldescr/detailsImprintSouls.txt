@@ -1,0 +1,1 @@
+Souls imprinted = 120 + extra level * 4. Success imprint chance: 12% + penetration strength * 6%, Death chance: 50%
