@@ -679,8 +679,11 @@ var displayorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'rarity', 'rarity',
 	'gold', 'generates gold',
 	'bringgold', 'brings gold per turn (mine)',
+	'bringres', 'produce resources (mine)',
+	'provinc', 'province income', Format.Signed,
 	'res', 'generates resources',
 	'sup', 'supply bonus',
+	'recpoints', 'recuitment points',
 	'unr', 'unrest',
 	'exp', 'enter to gain xp',
 	'fort', 'creates fort',
@@ -702,7 +705,7 @@ var displayorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'scry', 'enter to scry',
 	'adventure', 'adventure', Format.Percent,
 	'domspread', 'spreads dominion',
-	'domconflict', 'dominion conflict bonus',
+	'domconflict', 'dominion conflict bonus', Format.Signed,
 	'scorch', 'scorching desert', function(v,o) {
 		return '(' + v + ' AN fire damage)';
 	},
@@ -765,6 +768,12 @@ var displayorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'airshield', 'air shield',
 	'hp', 'hit points',
 	'mr', 'magic resistance',
+	'pdconscript', 'dominion pd conscription', Format.Signed,
+	
+	'recpointpercent', 'recruitment points', Format.Percent,
+	'recpointpercentcmd' , 'commander recruitment points', Format.Percent,
+	'agingpercent', 'aging rate', Format.Percent,
+	
 	'reveal', 'reveals', {0: 'mundane score graphs', 3: 'magic score graphs', 5: 'dominion score graphs', 999: 'all score graphs'},
 	'rit', 'ritual range', function(v,o){
 		return Format.Booster(v) + ' +' + o.ritrng;
@@ -783,16 +792,16 @@ var displayorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 		return list_units(v, o);
 	},
 	'sum1',	'summon',	function(v,o){
-		return o.path + " Mage " + Utils.unitRef(v)+' x '+o.n_sum1;
+		return o.path + " Mage 1-" + o.n_sum1 + ' ' + Utils.unitRef(v);
 	},
 	'sum2',	'summon',	function(v,o){
-		return o.path + " Mage " + Utils.unitRef(v)+' x '+o.n_sum2;
+		return o.path + " Mage 1-" + o.n_sum2 + ' ' + + Utils.unitRef(v);
 	},
 	'sum3',	'summon',	function(v,o){
-		return o.path + " Mage " + Utils.unitRef(v)+' x '+o.n_sum3;
+		return o.path + " Mage 1-" + o.n_sum3 + ' ' + + Utils.unitRef(v);
 	},
 	'sum4',	'summon',	function(v,o){
-		return o.path + " Mage " + Utils.unitRef(v)+' x '+o.n_sum4;
+		return o.path + " Mage 1-"  +o.n_sum4 + ' ' + + Utils.unitRef(v);
 	},
 	 
 	'provdefcom',	'extra PD (commander)',	Utils.unitRef,
@@ -828,7 +837,9 @@ var flagorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 [
 //	dbase key	displayed key		function/dict to format value
 		'lab',	'generates lab',
-		'temple',	'generates temple'
+		'temple',	'generates temple',
+		'unaging', 'unaging'
+		
 ]);
 var hiddenkeys = DMI.Utils.cutDisplayOrder(aliases, formats,
 [
