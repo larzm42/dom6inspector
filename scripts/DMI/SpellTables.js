@@ -423,6 +423,8 @@ MSpell.effectlookup = {
 			return show_summon(effect.raw_argument, 2, spell.pathlevel1);
 		},
 		142:	damage,
+		147:	damage,
+		153:	damage,
 		160:	damage,
 		161:	damage,
 }

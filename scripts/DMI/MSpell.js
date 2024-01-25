@@ -326,7 +326,7 @@ MSpell.prepareData_PostMod = function() {
 				if (attr.attribute == "700") {
 					o.provrange = attr.raw_value;
 				}
-				if (attr.attribute == "723") {
+				if (attr.attribute == "787") {
 					o.casttime = attr.raw_value;
 				}
 			}
@@ -793,7 +793,7 @@ var ignorekeys = {
 	modded:1,
 	path1:1, pathlevel1:1, path2:1, pathlevel2:1,
 	school:1,
-	researchlevel:1,research:1,sortschool:1,
+	researchlevel:1,research:1,sortschool:1, casttime:1,
 
 	damagemon:1,
 	descr:1, details:1,
@@ -913,7 +913,7 @@ MSpell.renderSpellTable = function(o, original_effect) {
 			if (attr.spell_number == o.id) {
 				if (attr.attribute != "278" &&
 						attr.attribute != "700" &&
-						attr.attribute != "723") {
+						attr.attribute != "787") {
 					var specflags = modctx.attribute_keys_lookup[attr.attribute].name;
 
 					var val;
@@ -934,7 +934,7 @@ MSpell.renderSpellTable = function(o, original_effect) {
 					} else if (attr.attribute == '722') {
 						var special = {'-1': 'Non-specialized', 0: 'Fire', 1: 'Air', 2:'Water', 3:'Earth', 4:'Astral', 5:'Death', 6:'Nature', 7:'Glamour', 8:'Blood'};
 						val = special[attr.raw_value];				
-					} else if (attr.attribute == "703" || attr.attribute == "724") {
+					} else if (attr.attribute == "703" || attr.attribute == "704" || attr.attribute == "724") {
 						val = Utils.renderFlags(MSpell.bitfieldValues(attr.raw_value, modctx.map_terrain_types_lookup));
 					} else if (attr.attribute == '731') {
 						val = Utils.unitRef(attr.raw_value);

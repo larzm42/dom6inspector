@@ -174,8 +174,8 @@ number	name	test
 700	Map Range {Spl: #provrange}
 701	Destination Terrain {Spl: #onlygeodst}
 702	Source Terrain {Spl: #onlygeosrc}
-703	Cannot target geo mask {Spl: #nogeodst}
-704	<Unknown Attribute>
+703	Cannot cast from terrain {Spl: #nogeosrc}
+704	Cannot target terrain {Spl: #nogeodst}
 705	Cannot trace range through seas {Spl: #nowatertrace}
 706	No Path over Land {Spl: #nolandtrace}
 707	<Unknown Attribute>
@@ -192,7 +192,7 @@ number	name	test
 720	Projectile falls vertically
 721	Sound file played on projectile impact
 722	God Path Restriction {Spl: #godpathspell}
-723	Casting Time {Spl: #casttime}
+723	<Unknown Attribute>
 724	Extra effect in geo {Spl: #extraeffectgeo}
 725	Can't target same province more than once/turn {Spl: #uniquetarget}
 726	Override percent of units affected in target province
@@ -256,7 +256,7 @@ number	name	test
 784	<Unknown Attribute>
 785	<Unknown Attribute>
 786	<Unknown Attribute>
-787	<Unknown Attribute>
+787	Casting Time {Spl: #casttime}
 788	<Unknown Attribute>
 789	<Unknown Attribute>
 790	<Unknown Attribute>
