@@ -22,9 +22,11 @@ var g_data = {
 
 	local_mods_to_load: [],
 	local_data: {},
+	local_data_path: {},
 
 	upload_mods_to_load: [],
-	upload_data: {}
+	upload_data: {},
+	upload_data_path: {}
 }
 
 DMI.continueLoading = function() {
@@ -133,7 +135,8 @@ function loadModList( g_data ) {
 			DMI.continueLoading();
 		},
 		error: function(wtf, textStatus, errorThrown) {
-			DMI.Utils.error(  "Error reading mod dir: " + mod_dir);
+			//DMI.Utils.error(  "Error reading mod dir: " + mod_dir);
+			DMI.continueLoading();
 		}
 	}));
 }
@@ -149,6 +152,7 @@ function loadLocalMods( g_data ) {
 		var mod = LocalDataStore.get(modname);
 		if (mod) {
 			g_data.local_data[modname] = mod;
+			g_data.local_data_path[modname] = LocalDataStore.get(modname+"path");
 
 			//remove duplicate (server version)
 			if (Utils.inArray(modname, g_data.server_mods_to_load))
@@ -222,6 +226,7 @@ function selectMods( g_data ) {
 				if (e && e.target && e.target.result) {
 					g_data.upload_mods_to_load.push(f.name);
 					g_data.upload_data[f.name] = e.target.result;
+					g_data.upload_data_path[f.name] = f.path.substr(0, f.path.length-f.name.length);
 					$('ul#custom-mod-list li[title=\''+f.name+'\']').remove();
 					$('ul#custom-mod-list').show().append('<li title="'+f.name+'">'+f.name+'</li>');
 					$('#clear-custom-mods-btn').css('visibility', 'visible');
@@ -809,7 +814,7 @@ function parseData( g_data ) {
 			for (var i=0, modname; modname =g_data.upload_mods_to_load[i]; i++) {
 				var mod =  g_data.upload_data[modname];
 				if (mod) {
-					modctx.parseMod( mod, i+1, modname );
+					modctx.parseMod( mod, i+1, modname, g_data.upload_data_path[modname] );
 					DMI.loaded_local_mod_files.push(modname);
 				}
 				else
