@@ -1,8 +1,10 @@
 //namespace scope
 (function( DMI, $, undefined ){
-
+		
 var Utils = DMI.Utils;
 var modconstants = DMI.modconstants;
+
+var data_path = "";
 
 
 //basic helpers for setting values
@@ -16,8 +18,8 @@ function argtrim(a) {
 	if (a.n1) throw "unexpected argument (number)";
 	return $.trim(a.s);
 }
-function _str(c,a,t) {
-	modctx[t][c] = argstr(a);
+function _str(c,a,t) { 
+	modctx[t][c] = argstr(a); 
 }
 
 function argnum(a) {
@@ -60,7 +62,7 @@ function _num_div_10(c,a,t) {
 function _num_times_10(c,a,t) {
 	modctx[t][c] = argnum(a) * 10;
 }
-function _str_num(c,a,t) {
+function _str_num(c,a,t) { 
 	if (!a.n1 && !a.s) throw "argument missing (number or string expected)";
 	modctx[t][c] = (a.n1 || a.s);
 }
@@ -81,7 +83,7 @@ function _ref_optional(c,a,t) {
 }
 function _bool(c,a,t) {
 	if (a.n1 || a.s) throw "unexpected argument (none expected)";
-	modctx[t][c] = '1';
+	modctx[t][c] = '1'; 
 }
 function _ignore(c,a,t) {  }
 
@@ -89,7 +91,7 @@ function _ignore(c,a,t) {  }
 //truncates name till it is found in object. returns found value
 function lookupTruncation(longname, object, minlen) {
 	if (!minlen) minlen = 1;
-	while (longname.length > minlen) {
+	while (longname.length > minlen) { 
 		longname = longname.substr(0, longname.length-1);
 		if (object[longname])
 			return longname;
@@ -100,7 +102,7 @@ function lookupTruncation(longname, object, minlen) {
 //is this a valid command?
 function validCmdContexts(cmd) {
 	var ctxs = [];
-	var types = ['unit', 'spell', 'wpn', 'item', 'armor', 'nation', 'site'];
+	var types = ['unit', 'spell', 'wpn', 'item', 'armor', 'nation', 'site'];		
 	for (var j=0, type; type=types[j]; j++) {
 		var cmdlookup = modctx[type+'commands'];
 		var fn = cmdlookup[cmd];
@@ -115,7 +117,7 @@ var modctx = DMI.modctx = {
 	//main mod command switch
 	processCommand: function(cmd, args, warningFn) {
 		var fullcmd = cmd;
-
+		
 		var types = ['unit', 'spell', 'wpn', 'item', 'armor', 'nation', 'site', 'event', 'nametype', 'merc'];
 		for (var j=0, type; type=types[j]; j++) {
 			if (modctx[type]) {
@@ -137,7 +139,7 @@ var modctx = DMI.modctx = {
 				}
 				//still not found.. abort
 				if (!fn) throw 'command not found for ' + type + (modctx.commands[fullcmd] ? ' (missing #end ?)' : '');
-
+			
 				//process cmd
 				fn(cmd, args, type, warningFn);
 				return;
@@ -145,12 +147,12 @@ var modctx = DMI.modctx = {
 		}
 		//no open context
 		var fn = modctx.commands[cmd];
-
+		
 		//not found.. lookup shortened command
 		if (!fn) {
 			fn = modctx.commands[cmd = lookupTruncation(cmd, modctx.commands, 3)];
 			if (fn) warningFn('unrecognised cmd.. assuming you meant: #'+cmd)
-		}
+		}			
 		//still not found.. abort
 		if (!fn) {
 			var ctxs = validCmdContexts(fullcmd)
@@ -158,7 +160,7 @@ var modctx = DMI.modctx = {
 				throw ('command out of context ('+(ctxs.join('/'))+' not open)');
 			else
 				throw 'unrecognised command';
-		}
+		}			
 		//process cmd
 		fn(cmd, args, null, warningFn);
 	},
@@ -174,17 +176,17 @@ var modctx = DMI.modctx = {
 	},
 	_select: function(cmd, args, tname, fnwarn) {
 		modctx._checkContextClosed(fnwarn);
-
+		
 		var o;
 		if (args.s)
 			o = modctx[tname+'lookup'][$.trim(args.s.toLowerCase())];
 		else if (args.n1)
 			o = modctx[tname+'lookup'][args.n1];
 		else throw 'missing argument (id/name expected)';
-
+		
 		if (!o) throw 'data not found';
 		modctx[tname] = o;
-	},
+	},      
 	_new: function(cmd, args, tname, fnwarn) {
 		modctx._checkContextClosed(fnwarn);
 		if (!args.n1) {
@@ -206,7 +208,7 @@ var modctx = DMI.modctx = {
 	},
 	// _select_or_new: function(cmd, args, tname, fnwarn) {
 	// 	try {
-	// 		modctx._select(cmd, args, tname, fnwarn)
+	// 		modctx._select(cmd, args, tname, fnwarn)			
 	// 	}
 	// 	catch(e) {
 	// 		if (e == 'data not found' && args.n1)
@@ -225,7 +227,7 @@ var modctx = DMI.modctx = {
 		icon: _ignore,
 		version: _ignore,
 		domversion: _ignore,
-
+		
 		//general modding
 		poppergold: _ignore,
 		resourcemult: _ignore,
@@ -250,35 +252,35 @@ var modctx = DMI.modctx = {
 		},
 
 		end: function(c,a,t,fnw) { fnw('no open object'); },
-
+				
 		//nation modding
-		indepflag: _ignore,
-
+		indepflag: _ignore,	
+		
 		//commands opening a context
 		newitem:    function(c,a,t,fnw){
 			//get first unused id
 			var id = modctx.itemdata.length;
 			while (modctx.itemlookup[id]) id++;
-
+			
 			modctx._new(c, {n1:id} ,'item', fnw);
 			DMI.MItem.initItem(modctx.item);
 		},
-		selectitem: function(c,a,t,fnw){
+		selectitem: function(c,a,t,fnw){ 
 			if (a.n1>499 && a.n1<1000)  {
 				modctx._new(c, a,'item', fnw);
 				DMI.MItem.initItem(modctx.item);
 			} else {
-				modctx._select(c,a,'item',fnw);
+				modctx._select(c,a,'item',fnw); 
 			}
 		},
-
+		
 		newarmor: function(c,a,t,fnw) {
-			modctx._new(c,a ,'armor',fnw);
+			modctx._new(c,a ,'armor',fnw);			
 			DMI.MArmor.initArmor(modctx.armor);
 
 			//if (a.n1<250 || a.n1>999) throw 'invalid id';
 		},
-		selectarmor: function(c,a,t,fnw){
+		selectarmor: function(c,a,t,fnw){ 
 			try {
 				modctx._select(c,a,'armor',fnw)
 			}
@@ -290,14 +292,14 @@ var modctx = DMI.modctx = {
 			}
 		},
 		//selectarmor: function(c,a,t,fnw){ modctx._select(c,a,'armor',fnw); },
-
+		
 		newweapon: function(c,a,t,fnw) {
-			modctx._new(c,a ,'wpn',fnw);
+			modctx._new(c,a ,'wpn',fnw);			
 			DMI.MWpn.initWpn(modctx.wpn);
 
 			//if (a.n1<700 || a.n1>1999) throw 'invalid id';
 		},
-		selectweapon: function(c,a,t,fnw){
+		selectweapon: function(c,a,t,fnw){ 
 			try {
 				modctx._select(c,a,'wpn',fnw)
 			}
@@ -315,58 +317,47 @@ var modctx = DMI.modctx = {
 				while (modctx.unitlookup[id]) id++;
 				a.n1 = id;
 			}
-			modctx._new(c,a ,'unit',fnw);
+			modctx._new(c,a ,'unit',fnw); 
 
 			// Utils.merge( modctx.unit, {
 			// 		weapons: [],
 			// 		armor:[],
 			// 		randompaths:[],
-
+					
 			// 		hand: '2',
 			// 		head: '1',
 			// 		body: '1',
 			// 		foot: '1',
 			// 		misc: '2',
-
+					
 			// 		leader: '40',
 			// 		sprite: { unitid: a.n1 }
 			// });
 			DMI.MUnit.initUnit(modctx.unit);
-
+			
 			//if (a.n1<3001 || a.n1>6999) throw 'invalid id';
 		},
 		selectmonster: function(c,a,t,fnw){ modctx._select(c,a,'unit',fnw); },
-
+		
 		newspell: function(c,a,t,fnw) {
 			//get first unused id
 			var id = modctx.spelldata.length;
 			while (modctx.spelllookup[id]) id++;
-
+				
 			modctx._new(c, {n1:id} ,'spell',fnw);
 			DMI.MSpell.initSpell(modctx.spell);
 		},
-		selectspell: function(c,a,t,fnw){ 
-			try {
-				modctx._select(c,a,'spell',fnw);
-			}
-			catch(e) {
-				if (e == 'data not found' && a.n1) {
-					modctx._new(c,a,'spell',fnw);
-					DMI.MSpell.initSpell(modctx.spell);
-				}
-				else throw e;
-			}
-		},
-
+		selectspell: function(c,a,t,fnw){ modctx._select(c,a,'spell',fnw); },
+		
 		newnation: function(c,a,t,fnw) {
 			//get first unused id
 			var id = modctx.nationdata.length;
 			while (modctx.nationlookup[id]) id++;
-
+				
 			modctx._new(c, {n1:id} ,'nation',fnw);
 			DMI.MNation.initNation(modctx.nation);
 		},
-
+		
 		selectnation: function(c,a,t,fnw){ //modctx._select(c,a,'nation')
 			try {
 				modctx._select(c,a,'nation',fnw)
@@ -374,12 +365,12 @@ var modctx = DMI.modctx = {
 			catch(e) {
 				if (e == 'data not found' && a.n1) {
 					modctx._new(c,a,'nation',fnw);
-					DMI.MNation.initNation(modctx.nation);
+					DMI.MNation.initNation(modctx.nation);	
 				}
 				else throw e;
 			}
 		},
-
+		
 		newsite: function(c,a,t,fnw) {
 			if (a.n1 == '' || a.n1 == '0') {
 				//get first unused id
@@ -437,7 +428,7 @@ var modctx = DMI.modctx = {
 		},
 		descr: 		_str, //function(a,t,c){  modctx[t][c] = a.s;  },
 		type: 		function(c,a,t){ modctx[t][c] = modconstants['19'][argnum(a)]; },
-
+		
 		weapon: 	_ref,
 		armor:		_ref,
 		constlevel: 	_num,
@@ -446,7 +437,7 @@ var modctx = DMI.modctx = {
 		mainlevel: 	_num,
 		secondarylevel: _num,
 		copyspr: 	_ref,
-
+		
 		spr: 		_str,
 		spell: 		_str,
 		autospell: 	_str,
@@ -660,7 +651,7 @@ var modctx = DMI.modctx = {
 		batstartsum3d6:	function(c,a,t){ modctx[t]['batstartsum'] = argref(a);  modctx[t]['n_batstartsum'] = '3d6' },
 		batstartsum4d6:	function(c,a,t){ modctx[t]['batstartsum'] = argref(a);  modctx[t]['n_batstartsum'] = '4d6' },
 		batstartsum5d6:	function(c,a,t){ modctx[t]['batstartsum'] = argref(a);  modctx[t]['n_batstartsum'] = '5d6' },
-
+		
 		ethereal: _bool,
 		nomounted: _bool,
 		nocoldblood: _bool,
@@ -767,7 +758,7 @@ var modctx = DMI.modctx = {
 			var pstr = modconstants[10][argnum(a)];
 			if (!Utils.inArray(pstr, modconstants.pathkeys))
 				pstr = 'all';
-
+			
 			modctx.item[pstr] = a.n2;
 		},
 		
@@ -796,7 +787,7 @@ var modctx = DMI.modctx = {
 	//weapon selected
 	wpncommands: {
 		end: function(c,a,t){
-			var name = modctx.wpn.name;
+			var name = modctx.wpn.name; 
 			modctx[t] = null;
 			if (!name) throw 'unnamed weapon';
 		},
@@ -841,24 +832,24 @@ var modctx = DMI.modctx = {
 
 		def: 		_num,
 		rcost: 		_num,
-
+		
 		dmg: 		_num,
 		nratt: 		_num,
 		att: 		_num,
 		len: 		_num,
 		range: 		_num,
 		ammo: 		_num,
-
+		
 		twohanded:	_bool,
 		armorpiercing:	_bool,
 		armornegating:	_bool,
 		magic:		_bool,
-
+		
 		slash:		_bool,
 		pierce:		_bool,
 		blunt:		_bool,
 		acid:		_bool,
-
+		
 		dt_normal:	_bool,
 		dt_stun:	_bool,
 		dt_paralyze:	_bool,
@@ -872,7 +863,7 @@ var modctx = DMI.modctx = {
 		dt_large:	_bool,
 		dt_constructonly:_bool,
 		dt_raise:	_bool,
-
+		
 		mind:		_bool,
 		cold:		_bool,
 		fire:		_bool,
@@ -908,7 +899,7 @@ var modctx = DMI.modctx = {
 		flyspr:		_ignore,
 		explspr:	_ignore,
 		sound:		_ignore,
-
+		
 		//advanced weapon modding
 		aoe:		_num,
 		bonus:		_bool,
@@ -923,7 +914,7 @@ var modctx = DMI.modctx = {
 		woodenweapon:	_bool,
 		iceweapon:		_bool,
 		uwok:		_bool,
-
+		
 		secondaryeffect:	_ref,
 		secondaryeffectalways:	_ref,
 
@@ -938,7 +929,7 @@ var modctx = DMI.modctx = {
 	//armor selected
 	armorcommands: {
 		end: function(c,a,t){
-			var name = modctx.armor.name;
+			var name = modctx.armor.name; 
 			modctx[t] = null;
 			if (!name) throw 'unnamed armor';
 		},
@@ -993,7 +984,7 @@ var modctx = DMI.modctx = {
 	//unit selected
 	unitcommands: {
 		end: function(c,a,t){
-			var name = modctx.unit.name;
+			var name = modctx.unit.name; 
 			modctx[t] = null;
 			if (!name) throw 'unnamed unit';
 		},
@@ -1014,47 +1005,47 @@ var modctx = DMI.modctx = {
 			};
 			for (var k in o)
 				if (!keepstats[k]) delete o[k];
-
+			
 			o.armor = [];
 			o.weapons = [];
 			o.randompaths = [];
 		},
 		clearweapons: function(c,a,t){ modctx.unit.weapons = []; },
 		cleararmor: function(c,a,t){ modctx.unit.armor = []; },
-		clearspec: function(c,a,t){
+		clearspec: function(c,a,t){ 
 			var o = modctx.unit;
 			var deletestats = {
 			//CLEAR
 				female:1, mounted:1, holy:1, animal:1, undead:1, demon:1, magic:1, stonebeing:1, inanimate:1, coldblood:1, immortal:1, blind:1, unique:1, shatteredsoul:1,
 				immobile:1, aquatic:1, amphibian:1, pooramphibian:1, flying:1, stormimmune:1, sailing:1, forestsurvival:1, mountainsurvival:1, swampsurvival:1, wastesurvival:1,
-				coldres:1, fireres:1, poisonres:1, shockres:1, darkvision:1,
+				coldres:1, fireres:1, poisonres:1, shockres:1, darkvision:1, 
 				stealthy:1, illusion:1, spy:1, assassin:1, seduce:1, succubus:1, beckon:1,
-				startage:1, maxage:1, older:1, healer:1, heal:1, noheal:1,
-				startaff:1, supplybonus:1, neednoteat:1, uwdamage:1, homesick:1,
-				coldpower:1, firepower:1, stormpower:1, darkpower:1,
-				springpower:1, summerpower:1, fallpower:1, winterpower:1,
-				ambidextrous:1, banefireshield:1, berserk:1,
-				ethereal:1, standard:1,
-				animalawe:1, awe:1, fear:1, regeneration:1, reinvigoration:1,
-				fireshield:1, heat:1, cold:1, iceprot:1,
-				trample:1, entangle:1, eyeloss:1,
-				horrormark:1, poisonarmor:1, poisoncloud:1, diseasecloud:1, bloodvengeance:1, castledef:1, siegebonus:1, patrolbonus:1, pillagebonus:1,
+				startage:1, maxage:1, older:1, healer:1, heal:1, noheal:1, 
+				startaff:1, supplybonus:1, neednoteat:1, uwdamage:1, homesick:1, 
+				coldpower:1, firepower:1, stormpower:1, darkpower:1, 
+				springpower:1, summerpower:1, fallpower:1, winterpower:1, 
+				ambidextrous:1, banefireshield:1, berserk:1, 
+				ethereal:1, standard:1, 
+				animalawe:1, awe:1, fear:1, regeneration:1, reinvigoration:1, 
+				fireshield:1, heat:1, cold:1, iceprot:1, 
+				trample:1, entangle:1, eyeloss:1, 
+				horrormark:1, poisonarmor:1, poisoncloud:1, diseasecloud:1, bloodvengeance:1, castledef:1, siegebonus:1, patrolbonus:1, pillagebonus:1, 
 				researchbonus:1, forgebonus:1, douse:1, nobadevents:1, incunrest:1, spreaddom:1, leper:1, popkill:1, inquisitor:1, heretic:1
 			};
 			for (var k in deletestats)
 				if (o[k]) delete o[k];
 		},
-		clearmagic: function(c,a,t){
+		clearmagic: function(c,a,t){ 
 			var o = modctx.unit;
 			var deletestats = {
 			//CLEAR
-				F:1, A:1, W:1, E:1, S:1, D:1, N:1, B:1, H:1,
+				F:1, A:1, W:1, E:1, S:1, D:1, N:1, B:1, H:1, 
 				magicbonus:1
 				//researchbonus:1,  //???
 			};
 			for (var k in deletestats)
 				if (o[k]) delete o[k];
-
+			
 			o.randompaths = [];
 		},
 		copystats: function(c,a,t){
@@ -1073,11 +1064,11 @@ var modctx = DMI.modctx = {
 			var to = modctx.unit;
 			for (var k in to)   if (!ignorestats[k]) delete to[k];
 			for (var k in from) if (!ignorestats[k]) to[k] = from[k];
-
+				
 			//deep copy arrays
 			to.weapons = [];
 			for (var i=0, m; m= from.weapons[i]; i++) to.weapons[i] = m;
-
+			
 			to.armor = [];
 			for (var i=0, m; m= from.armor[i]; i++) to.armor[i] = m;
 
@@ -1090,18 +1081,30 @@ var modctx = DMI.modctx = {
 		copyspr: function(c,a,t){
 			var from = modctx.unitlookup[a.n1] || modctx.unitlookup[$.trim((a.s || '-1').toLowerCase())];
 			if (!from) throw 'original unit not found';
-
-			modctx.unit.sprite = from.sprite;
+			
+			modctx.unit.sprite = from.sprite; 
 		},
 		descr: _str,
 
 		//fx
-		spr1:	function(c,a,t){ modctx[t].sprite.spr1 = a.s; },
-		spr2:	function(c,a,t){ modctx[t].sprite.spr2 = a.s; },
-		unmountedspr1:	function(c,a,t){ modctx[t].sprite.unmountedspr1 = a.s; },
-		unmountedspr2:	function(c,a,t){ modctx[t].sprite.unmountedspr2 = a.s; },
+		spr1:	function(c,a,t){ 
+			modctx[t].sprite.spr1 = a.s; 
+			modctx[t].sprite.data_path = data_path; 
+		},
+		spr2:	function(c,a,t){ 
+			modctx[t].sprite.spr2 = a.s; 
+			modctx[t].sprite.data_path = data_path; 
+		},
+		unmountedspr1:	function(c,a,t){ 
+			modctx[t].sprite.unmountedspr1 = a.s; 
+			modctx[t].sprite.data_path = data_path; 
+		},
+		unmountedspr2:	function(c,a,t){ 
+			modctx[t].sprite.unmountedspr2 = a.s; 
+			modctx[t].sprite.data_path = data_path; 
+		},
 		speciallook: _ignore,
-
+		
 		ap:	_num,
 		mapmove:_num,
 		hp:	_num,
@@ -1117,7 +1120,7 @@ var modctx = DMI.modctx = {
 		mor:	_num,
 		gcost:	_num,
 		rcost:	_num,
-
+		
 		weapon:	function(c,a,t){ modctx[t]['weapons'].push(argref(a)); }, //deferr lookups
 		armor:	function(c,a,t){ modctx[t]['armor'].push(argref(a)); }, //deferr lookups
 		startitem:	function(c,a,t){ 
@@ -1128,7 +1131,7 @@ var modctx = DMI.modctx = {
 			}, //deferr lookups
 
 		eyes:	_num,
-
+		
 		//these should turn unit into a pretender.. right?
 		pathcost: function(c,a,t){
 			var o = modctx[t];
@@ -1188,7 +1191,7 @@ var modctx = DMI.modctx = {
 		unique:		_bool,
 		shatteredsoul:	_num,
 		blessbers: _bool,
-
+	
 		immobile:	_bool,
 		aquatic:	_bool,
 		amphibian:	_bool,
@@ -1204,7 +1207,7 @@ var modctx = DMI.modctx = {
 		mountainsurvival:_bool,
 		swampsurvival:	_bool,
 		wastesurvival:	_bool,
-
+		
 		coldres:	_num,
 		fireres:	_num,
 		poisonres:	_num,
@@ -1212,7 +1215,7 @@ var modctx = DMI.modctx = {
 		diseaseres: 	_num,
 		darkvision:	_num,
 		startingaff: 	_num,
-
+	
 		stealthy:	function(c,a,t) {
 			var n = a.n1 ? a.n1 : 0;
 			modctx[t][c] = parseInt(n) + 40;
@@ -1236,7 +1239,7 @@ var modctx = DMI.modctx = {
 		healer:		_num,
 		heal:		_bool,
 		noheal:		_bool,
-
+		
 		startaff:	_num,
 		startmajoraff:	_num,
 		supplybonus:	_num,
@@ -1263,10 +1266,10 @@ var modctx = DMI.modctx = {
 		ambidextrous:	_num,
 		banefireshield:	_num,
 		berserk:	_num,
-
+		
 		ethereal:	_bool,
 		standard:	_num,
-
+		
 		animalawe:	_num,
 		awe:		_num,
 		fear:		_num,
@@ -1274,17 +1277,17 @@ var modctx = DMI.modctx = {
 		undregen:	_num,
 		uwregen:	_num,
 		reinvigoration:	_num,
-
+		
 		fireshield:	_num,
 		uwfireshield:	_num,
 		heat:		_num_def(3),
 		cold:		_num_def(3),
 		iceprot:	_num,
-
+		
 		trample:	_bool,
 		entangle:	_bool,
 		eyeloss:	_bool,
-
+		
 		horrormark:	_bool,
 		poisonarmor:	_bool,
 		poisoncloud:	_num,
@@ -1317,17 +1320,17 @@ var modctx = DMI.modctx = {
 			var bitfield = parseInt(argnum(a));
 			var slotmasks = {
 				2: 'hand',	4: 'hand',	8: 'hand',	16: 'hand',	32: 'hand',	64: 'hand',
-				128: 'head',	256: 'head',	512: 'head',
-				1024: 'body',
-				2048: 'foot',
+				128: 'head',	256: 'head',	512: 'head',	
+				1024: 'body',	
+				2048: 'foot',		
 				4096: 'misc',	8192: 'misc',	16384: 'misc',	32768: 'misc',	65536: 'misc',	131072: 'misc'
 			};
 			var o = modctx.unit;
 			o.hand = o.head = o.body = o.foot = o.misc = '0';
-			//if (! (bitfield & 1)) {
+			//if (! (bitfield & 1)) { 
 				for (var k in slotmasks) {
 					if (bitfield & parseInt(k)) {
-						var slot = slotmasks[k];
+						var slot = slotmasks[k]; 
 						o[slot] = Utils.sum( o[slot], 1 );
 					}
 				}
@@ -1335,18 +1338,18 @@ var modctx = DMI.modctx = {
 		},
 		noitem:	function(c,a,t){
 			var o = modctx.unit;
-			o.hand = '0';
+			o.hand = '0'; 
 			o.head = '0';
-			o.body = '0';
+			o.body = '0'; 
 			o.foot = '0';
 			//just leaves misc
 		},
-
+		
 		//magic
 		magicskill: function(c,a,t){
 			var pstr = modconstants[10][argnum(a)];
 			if (!pstr) throw 'invalid magic index';
-
+			
 			for (var i=0, p; p= pstr.charAt(i); i++) {
 				modctx.unit[p] = a.n2;
 			}
@@ -1358,13 +1361,13 @@ var modctx = DMI.modctx = {
 			// #magicboost 3 1 --E+1
 			// #magicboost 53 1 --all+1
 			// = E+2
-
+			
 			var pstr = modconstants[10][argnum(a)];
 			if (!Utils.inArray(pstr, modconstants.pathkeys))
 				pstr = 'all';
-
+			
 			modctx.unit['magicboost_'+pstr] = a.n2;
-
+			
 			// if (pstr == 'FAWESDNBH') pstr = '';
 			// modctx.unit['magicboost'] = DMI.Format.Signed(a.n2) + pstr;
 			// for (var i=0, p; p= pstr.charAt(i); i++) {
@@ -1375,12 +1378,12 @@ var modctx = DMI.modctx = {
 		custommagic: function(c,a,t){
 			var bitfield = parseInt(argnum(a)),  chance = parseInt(argnum2(a));
 			var pmasks = modconstants[11];
-			var pstr = '', levels = 1;
-
+			var pstr = '', levels = 1; 
+			
 			//bitfield to path string
 			for (var k in pmasks)
 				if (parseInt(k) & bitfield)  pstr += pmasks[k];
-
+			
 			//linked random
 			while( chance > 100 ) {
 				chance = chance - 100;
@@ -1392,7 +1395,7 @@ var modctx = DMI.modctx = {
 		gemprod: function(c,a,t){
 			var pstr = modconstants[10][argnum(a)];
 			if (!pstr) throw 'invalid magic index';
-
+			
 			for (var i=0, p; p= pstr.charAt(i); i++) {
 				modctx.unit['gemprod'] ? modctx.unit['gemprod'] += p+argnum2(a) : modctx.unit['gemprod'] = p+argnum2(a);
 			}
@@ -1410,25 +1413,25 @@ var modctx = DMI.modctx = {
 		forestshape:	_ref,
 		plainshape:	_ref,
 		xpshape: _num,
-
+		
 		domsummon:	function(c,a,t){ modctx[t]['domsummon'] = argref(a);  modctx[t]['n_domsummon'] = 'DRN' },
 		domsummon2:	function(c,a,t){ modctx[t]['domsummon'] = argref(a);  modctx[t]['n_domsummon'] = 'DRN/2' },
 		domsummon5:	function(c,a,t){ modctx[t]['domsummon'] = argref(a);  modctx[t]['n_domsummon'] = 'DRN/5' },
 		domsummon10:	function(c,a,t){ modctx[t]['domsummon'] = argref(a);  modctx[t]['n_domsummon'] = 'DRN/10' },
 		domsummon20:	function(c,a,t){ modctx[t]['domsummon'] = argref(a);  modctx[t]['n_domsummon'] = 'DRN/20' },
-
+		
 		makemonsters1:	function(c,a,t){ modctx[t]['summon'] = argref(a);  modctx[t]['n_summon'] = '1' },
 		makemonsters2:	function(c,a,t){ modctx[t]['summon'] = argref(a);  modctx[t]['n_summon'] = '2' },
 		makemonsters3:	function(c,a,t){ modctx[t]['summon'] = argref(a);  modctx[t]['n_summon'] = '3' },
 		makemonsters4:	function(c,a,t){ modctx[t]['summon'] = argref(a);  modctx[t]['n_summon'] = '4' },
 		makemonsters5:	function(c,a,t){ modctx[t]['summon'] = argref(a);  modctx[t]['n_summon'] = '5' },
-
+		
 		summon1:	function(c,a,t){ modctx[t]['autosum'] = argref(a);  modctx[t]['n_autosum'] = '1' },
 		summon2:	function(c,a,t){ modctx[t]['autosum'] = argref(a);  modctx[t]['n_autosum'] = '2' },
 		summon3:	function(c,a,t){ modctx[t]['autosum'] = argref(a);  modctx[t]['n_autosum'] = '3' },
 		summon4:	function(c,a,t){ modctx[t]['autosum'] = argref(a);  modctx[t]['n_autosum'] = '4' },
 		summon5:	function(c,a,t){ modctx[t]['autosum'] = argref(a);  modctx[t]['n_autosum'] = '5' },
-
+	
 		nametype:	_num,
 
 		noleader:	function(c,a,t){ modctx[t]['leader'] = 0; },
@@ -1438,7 +1441,7 @@ var modctx = DMI.modctx = {
 		expertleader:	function(c,a,t){ modctx[t]['leader'] = 120; },
 		superiorleader:	function(c,a,t){ modctx[t]['leader'] = 160; },
 		command:		_num,
-
+		
 		nomagicleader:		function(c,a,t){ modctx[t]['magicleader'] = 0; },
 		poormagicleader:	function(c,a,t){ modctx[t]['magicleader'] = 10; },
 		okmagicleader:		function(c,a,t){ modctx[t]['magicleader'] = 40; },
@@ -1704,7 +1707,7 @@ var modctx = DMI.modctx = {
 	//spell selected
 	spellcommands: {
 		end: function(c,a,t){
-			var name = modctx.spell.name;
+			var name = modctx.spell.name; 
 			modctx[t] = null;
 			if (!name) throw 'unnamed spell';
 		},
@@ -1742,7 +1745,7 @@ var modctx = DMI.modctx = {
 			var to = modctx.spell;
 			for (var k in to)   if (!ignorestats[k]) delete to[k];
 			for (var k in from) if (!ignorestats[k]) to[k] = from[k];
-
+				
 			//deep copy arrays
 			to.nations = [];
 			for (var i=0, m; m= from.nations[i]; i++) to.nations[i] = m;
@@ -1759,7 +1762,7 @@ var modctx = DMI.modctx = {
 			if (argnum(a) == '0') index = 'path1';
 			else if (argnum(a) == '1') index = 'path2';
 			else throw "invalid reqnr (expected 0 or 1)";
-
+			
 			if (argnum2(a) == '-1') {
 				delete modctx[t][index];
 				return;
@@ -1773,7 +1776,7 @@ var modctx = DMI.modctx = {
 			if (argnum(a) == '0') index = 'pathlevel1';
 			else if (argnum(a) == '1') index = 'pathlevel2';
 			else throw "invalid reqnr (expected 0 or 1)";
-
+			
 			modctx[t][index] = argnum2(a);
 		},
 		aoe:		_num,
@@ -1790,7 +1793,7 @@ var modctx = DMI.modctx = {
 		notfornation: function(c,a,t){ modctx.spell.notnations.push(argref(a)); },
 
 		damagemon: 		_str,
-
+				
 		provrange:		_num,
 		onlygeosrc:		_num,
 		nogeosrc:		_num,
@@ -1835,10 +1838,10 @@ var modctx = DMI.modctx = {
 				units:1,
 				commanders:1
 				//~ uwunits:1,
-				//~ uwcom:1,
+				//~ uwcom:1, 
 				//~ heroes:1,
 				//~ multiheroes:1,
-				//~ defcom1:1, defunit1:1, defmult1:1, defunit1b:1, defmult1b:1,
+				//~ defcom1:1, defunit1:1, defmult1:1, defunit1b:1, defmult1b:1, 
 				//~ defcom2:1, defunit2:1, defmult2:1, defunit2b:1, defmult2b:1,
 
 				//sites
@@ -1909,7 +1912,7 @@ var modctx = DMI.modctx = {
 		defmult1: _ignore,//_ref,
 		defunit1b: _ignore,//_ref,
 		defmult1b: _ignore,//_ref,
-
+ 
 		defcom2: _ignore,//_ref,
 		defunit2: _ignore,//_ref,
 		defmult2: _ignore,//_ref,
@@ -1929,49 +1932,49 @@ var modctx = DMI.modctx = {
 		templepic: _ignore, //Table 26 for some pic nbr values.
 		mapbackground: _ignore, // "<imgfile>"
 		secondarycolor: _ignore,
-
+		
 		labcost: _ignore,//_num,
 		templecost: _ignore,//_num,
 
 		clearsites: function(c,a,t){ modctx[t]['sites'] = [] },
 		startsite:  function(c,a,t){ modctx[t]['sites'].push(argref(a)); },
-
+		
 		uwnation: _bool,
 		bloodnation: _ignore, //Hint to AI player
 		coastnation: _ignore, //Hint to AI player
 		cavenation: _ignore, //Hint to AI player
-
+		
 		nopreach: _ignore,//_bool, //mictlan
 		dyingdom: _ignore,//_bool, //mictlan
 		sacrificedom: _ignore,//_bool, //mictlan
-
+		
 		nodeathsupply: _ignore,//_bool, //Abysia
 		idealcold: _ignore,//_num,
 		castleprod: _ignore,//_num, //MA Ulm: 25
 		domkill: _ignore,//_num, //LA Ermor
 		domunrest: _ignore,//_num,
 		autoundead: _ignore,//_num, //LA Ermor
-
+		
 		zombiereanim: _ignore,//_bool, //LA Ermor
-//~ Priests can reanimate ghouls, soulless and
-//~ longdead infantry and gain 15 points of undead
+//~ Priests can reanimate ghouls, soulless and 
+//~ longdead infantry and gain 15 points of undead 
 //~ leadership per holy magic level.
 
 		horsereanim: _ignore,//_bool, //LA Ermor
-//~ Priests with holy magic of level 3 or higher can
-//~ reanimate longdead horsemen. Broken Empire
+//~ Priests with holy magic of level 3 or higher can 
+//~ reanimate longdead horsemen. Broken Empire 
 //~ Ermor has this attribute.
 		wightreanim: _ignore,//_bool, //LA Ermor
-//~ Priests with holy magic of level 4 or higher can
-//~ reanimate undead Lictors. Ashen Empire Ermor
+//~ Priests with holy magic of level 4 or higher can 
+//~ reanimate undead Lictors. Ashen Empire Ermor 
 //~ has this attribute.
 		manikinreanim: _ignore,//_bool, //LA Pangaean
-//~ Priests can reanimate carrion beasts, manikins
+//~ Priests can reanimate carrion beasts, manikins 
 //~ and other Pangaean undead.
 //~ Nbr Site Effect
 		tombwyrmreanim: _ignore,//_bool, //C'tis
-//~ Priests can reanimate soulless of C'tis, longdead
-//~ of C'tis, tomb wyrms and other special C'tissian
+//~ Priests can reanimate soulless of C'tis, longdead 
+//~ of C'tis, tomb wyrms and other special C'tissian 
 //~ undead. Desert Tombs C'tis has this attribute.
 
 		//startfort: _ignore,//_num,// Table 28 for a list of fort numbers
@@ -2053,7 +2056,7 @@ var modctx = DMI.modctx = {
 	//site selected
 	sitecommands: {
 		end: function(c,a,t){
-			var name = modctx[t].name;
+			var name = modctx[t].name; 
 			modctx[t] = null;
 			if (!name) throw 'unnamed '+t;
 		},
@@ -2062,7 +2065,7 @@ var modctx = DMI.modctx = {
 			modctx.site.name = argtrim(a);
 			modctx.sitelookup[$.trim(a.s.toLowerCase())] = modctx.site;
 		},
-
+		
 		clear: function(c,a,t) {
 			var o = modctx.site;
 			var keepstats = {
@@ -2087,10 +2090,10 @@ var modctx = DMI.modctx = {
 				modctx[t][p] = a.n2;
 			}
 		},
-
+		
 		path: function(c,a,t){ modctx[t][c] = modconstants['pathnames'][a.n1] },
 		level: _num,
-
+		
 		rarity: _num,
 		loc: _num,
 
@@ -2104,7 +2107,7 @@ var modctx = DMI.modctx = {
 		res: _num,
 		incscale: function(c,a,t){ modctx[t]['scales'].push(Utils.getScale(argnum(a))); },
 		decscale: function(c,a,t){ modctx[t]['scales'].push(Utils.getScaleInverted(argnum(a))); },
-
+		
 		lab: _bool,
 		heal: _num,
 		curse: _num,
@@ -2120,7 +2123,7 @@ var modctx = DMI.modctx = {
 		enchcost: function(c,a,t){ modctx[t]['ench'] = argnum(a); },
 		thaucost: function(c,a,t){ modctx[t]['thau'] = argnum(a); },
 		bloodcost: function(c,a,t){ modctx[t]['blood'] = argnum(a); },
-
+		
 		decunrest: function(c,a,t){ modctx[t]['unr'] = -argnum(a); },
 		supply: function(c,a,t){ modctx[t]['sup'] = argnum(a); },
 		voidgate: _num,
@@ -2476,20 +2479,20 @@ var modctx = DMI.modctx = {
 
 	//member data
 	loadedmods: [],
-
+	
 	//will be filled before we parse mod
 	itemdata: undefined,
 	itemlookup: undefined,
 	item: null,
-
+	
 	armordata: undefined,
 	armorlookup: undefined,
 	armor: null,
-
+	
 	wpndata: undefined,
 	wpnlookup: undefined,
 	wpn: null,
-
+	
 	spelldata: undefined,
 	spelllookup: undefined,
 	spell: null,
@@ -2497,11 +2500,11 @@ var modctx = DMI.modctx = {
 	unitdata: undefined,
 	unitlookup: undefined,
 	unit: null,
-
+	
 	nationdata: undefined,
 	nationlookup: undefined,
 	nation: null,
-
+	
 	sitedata: undefined,
 	sitelookup: undefined,
 	site: null,
@@ -2532,14 +2535,14 @@ var modctx = DMI.modctx = {
 	//duplicates unit. each unit has a duplicate for each nation it belongs to
 	cloneUnit: function(o) {
 		o.dupes = o.dupes || [o];
-
+		
 		var newo = {};
 		for (k in o) { newo[k] = o[k]; }
 		newo.id = o.id + (o.dupes.length * 0.01);
 
 		o.dupes.push(newo);
 		this.unitdata.push(newo);
-
+		
 		return newo;
 	},
 	getUnitOfType: function(o, type) {
@@ -2568,7 +2571,8 @@ var modcom_re_multistr = /#(\w+)\s*"([^"]+)\r?$/;
 var modcom_re_strcont  = /([^"]*)("|)/;
 var modcom_re = /^\s*#(\w+)\s*("([^"]+)"|)(-?\d+\.?\d*|)\s*(-?\d+\.?\d*|)\s*(-?\d+\.?\d*|)\s*/;
 
-modctx.parseMod = function(str, modnum, modname) {
+modctx.parseMod = function(str, modnum, modname, path) {
+	data_path = path;
 	var lines = str.split('\n');
 	for (var i=0; i<lines.length; i++) {
 		var cstr = lines[i], linenum = i+1;
@@ -2582,24 +2586,24 @@ modctx.parseMod = function(str, modnum, modname) {
 		if (a) {
 			cmd = a[1];
 			args = { s: a[2] }
-
+			
 			//continue multi line string
 			while(1) {
 				i++;
 				cstr += '\n' + lines[i];
-
+				
 				var a = modcom_re_strcont.exec(lines[i]);
 				args.s += ' ' + a[1];
 				//ended?
 				if (a[2] == '"')
 					break;
 			}
-
+			
 		} else {
 			//check single line commmand
 			var a = modcom_re.exec(lines[i]);
 			if (!a) continue;
-
+			
 			cmd = a[1];
 			args = {
 				s: a[3],
@@ -2608,48 +2612,48 @@ modctx.parseMod = function(str, modnum, modname) {
 				n3: a[6]
 			};
 		}
-
+		
 		function modCmdWarning(msg) {
 			emsg = "WARNING: " + msg;
 			emsg += '\n'+modname+ ':' +linenum + '   ' + cstr;
 			console.log(emsg);
 		}
-
+		
 		//process command
 		if (cmd) {
 			var emsg = '';
-
+			
 			try {
 				modctx.processCommand(cmd, args, modCmdWarning);
 			}
 			catch(err) {
-				//rethrowing error loses stack trace so..
+				//rethrowing error loses stack trace so.. 
 				//fuckit, just do it again
-				if (typeof(err) != 'string') {
+				if (typeof(err) != 'string') { 
 					//throw(err);
 					modctx.processCommand(cmd, args, function(_){});
-				}
+				}					
 				emsg = "ERROR: " + err;
 				emsg += '\n'+modname+ ':' +linenum + '   ' + cstr;
-				//emsg += '\n'+cstr;
+				//emsg += '\n'+cstr;  
 				console.log(emsg);
 			}
-
+			
 			//debug.. attaches relevant mod commands to data (will show on details pane)
 			if (cmd) {
 				if (cmd == 'descr')
 					cstr = cstr.substr(0,30)+'...';
 				var types =  ['unit', 'spell', 'wpn', 'item', 'armor', 'nation', 'site'];
 				var ignorecmds = { selectmonster:1, selectspell:1, selectweapon:1, selectitem:1, selectarmor:1, selectnation:1 }
-
+				
 				for (var j=0, type; type=types[j]; j++) {
 					if (modctx[type] && !ignorecmds[cmd]) {
 						if (emsg)
 							modctx[type].modded += emsg.split('\n')[0] +'<br />!! ';
 
-						if (!modctx[type].modded)
+						if (!modctx[type].modded) 
 							modctx[type].modded = "";
-
+						
 						modctx[type].modded += modnum + ':' + linenum +'&nbsp;&nbsp;'+cstr+'<br />';
 						//modctx.item.cmds += JSON.stringify(args)+'<br />';
 					}
