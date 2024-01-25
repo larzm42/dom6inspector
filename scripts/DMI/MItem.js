@@ -163,6 +163,14 @@ MItem.prepareData_PostMod = function() {
 			else w.used_by.push( Utils.itemRef(o.id) + ' (item)' );
 			o.weapon = w;
 		}
+		//lookup dancing weapon
+		if (o.dancingweapon) {
+			w = modctx.wpnlookup[o.dancingweapon];
+			if (!w) console.log( 'weapon "'+o.dancingweapon+'" not found (item '+o.id+')');
+			//backlink on wpn
+			else w.used_by.push( Utils.itemRef(o.id) + ' (item)' );
+			o.dancingweapon = w;
+		}
 		//set weapon class (ranged or melee)
 		if (o.type == '1-h wpn' || o.type == '2-h wpn') {
 			var w = o.weapon;
@@ -541,7 +549,10 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'deathrange',	'death ritual range bonus',	Format.Signed,
 	'naturerange',	'nature ritual range bonus',	Format.Signed,
 	'bloodrange',	'blood ritual range bonus',	Format.Signed,
-
+	'strrequired', 'strength required',
+	'warning',	'warning',	Format.Percent,
+	'beauty', 'beauty', Format.Signed,
+	
 	'batstartsum',	'summons in battle',	function(v,o){
 		return Utils.is(o.n_batstartsum) ?  Utils.unitRef(v)+' x '+o.n_batstartsum  :  Utils.unitRef(v);
 	},
@@ -562,6 +573,9 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'diseasecloud',	'disease cloud',
 	'alch', 'alchemy bonus', Format.Percent,
 	'nobadevents',	'fortune teller',	Format.Percent,
+	'nightmareaura', 'nightmare aura',
+	'undreaming', 'undreaming',
+	'magerestriction', ' can only be used by mage',  {'-1': 'Non-specialized', 0: 'Fire', 1: 'Air', 2:'Water', 3:'Earth', 4:'Astral', 5:'Death', 6:'Nature', 7:'Galmour', 8:'Blood'},
 
 	'ivylord',		'ivy lord',
 	'corpselord',		'corpse lord',		function(v){ return '+'+v+' '+Utils.unitRef(534)+' construction'; },
@@ -642,7 +656,7 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'incorporate', 'incorporate',
 	'disbelieve', 'disbelieve',
 	
-	'noforgebonus', 'noforgebonus',
+	'noforgebonus', 'no forge bonus',
 	'hpbonus', 'hp bonus',
 	'nationrebate', 'national discount', function(v,o)
 	{
@@ -691,8 +705,9 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 		return Utils.unitRef(v)+' x 5d6';
 	},
 	'goldgen', 'gold production',
-
-	'damagereversal', 'damagereversal',
+	'strikes', 'strikes per round',
+	
+	'damagereversal', 'damage reversal', function(v,o){ return parseInt(v) + 11 + ' vs MR'; },
 	'mustfightinarena', 'mustfightinarena',
 	'inquisitor', 'inquisitor',
 	'assassin', 'assassin',
@@ -748,7 +763,7 @@ var flagorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'trample',	'trample',
 	'fly',		'flying',
 	'quick',	'quickness',
-	'bers',		'gone berserk',
+	'bers',		'instant berserk',
 	'disease',	'diseases bearer',
 	'reaper',	'spreads disease',
 	'crossbreeder',	'crossbreeding bonus',
@@ -805,7 +820,8 @@ var flagorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'limitedenlargement', 'limited enlargement',
 	'antimagic', 'wearer gets resist magic effect',
 	'soulvortex', 'provides soul vortex',
-	
+	'glamourman', 'glamour manipulator',
+	'nomindless', 'cannot be used by mindless',
 	'islance', 'is a lance',
 	
 	'champprize', 'Arena championship prize'
@@ -824,7 +840,7 @@ var ignorekeys = {
 	modded:1,
 	mpath:1,
 	type:1,
-	weapon:1,
+	weapon:1, dancingweapon:1,
 	armor:1,
 	constlevel:1,
 	mainpath:1, mainlevel:1, secondarypath:1, secondarylevel:1,
@@ -909,6 +925,10 @@ MItem.renderOverlay = function(o) {
 	if (o.weapon ){//&& modctx.wpnlookup[o.weapon]) {
 		var isImplicitWpn = (o.type == '1-h wpn' || o.type == '2-h wpn');
 		h+= DMI.MWpn.renderWpnTable(o.weapon, isImplicitWpn, true);
+	}
+	if (o.dancingweapon ){//&& modctx.wpnlookup[o.weapon]) {
+		var isImplicitWpn = (o.type == '1-h wpn' || o.type == '2-h wpn');
+		h+= DMI.MWpn.renderWpnTable(o.dancingweapon, isImplicitWpn, true);
 	}
 	h+='	</div>';
 

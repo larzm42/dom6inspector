@@ -932,7 +932,7 @@ MSpell.renderSpellTable = function(o, original_effect) {
 							val = attr.raw_value;
 						}
 					} else if (attr.attribute == '722') {
-						var special = {'-1': 'Non-specialized', 0: 'Fire', 1: 'Air', 2:'Water', 3:'Earth', 4:'Astral', 5:'Death', 6:'Nature', 7:'Blood'};
+						var special = {'-1': 'Non-specialized', 0: 'Fire', 1: 'Air', 2:'Water', 3:'Earth', 4:'Astral', 5:'Death', 6:'Nature', 7:'Glamour', 8:'Blood'};
 						val = special[attr.raw_value];				
 					} else if (attr.attribute == "703" || attr.attribute == "724") {
 						val = Utils.renderFlags(MSpell.bitfieldValues(attr.raw_value, modctx.map_terrain_types_lookup));
