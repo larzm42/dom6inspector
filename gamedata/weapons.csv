@@ -860,3 +860,5 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 859	Infected Bite	859	0	-1	-1	1	0	890	0	0	859	
 860	Disease	860	0	0	1	1	0	0	0	0	860	
 861	Ice Hammer	861	1	-1	1	1	0	0	0	2	861	
+862	Spectral Great Sword	862	1	2	2	1	0	0	0	0	862	
+863	Spectral Great Club	863	0	1	2	1	0	0	0	0	863	

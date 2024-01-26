@@ -26,7 +26,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 24	Area Feeble Mind	-1	1	-1	0	-1	0	24	1	0	0	0	0	33554432	
 25	10 Trolls	-1	1	-1	0	-1	0	25	10	0	0	0	60	518	
 26	40 imps	-1	1	-1	0	-1	0	26	40	0	0	0	0	303	
-27	Strength, Barkskin and Regeneration	-1	1	-1	0	-1	0	27	1	0	0	0	0	176	
+27	"Strength, Barkskin and Regeneration"	-1	1	-1	0	-1	0	27	1	0	0	0	0	176	
 28	Court of Gnomes	-1	1	-1	0	-1	0	28	15	0	0	0	0	561	
 29	Court of Sylphs	-1	1	-1	0	-1	0	29	15	0	0	0	0	562	
 30	Archer Illusions	-1	1	-1	0	-1	0	30	40	0	0	0	0	3233	
