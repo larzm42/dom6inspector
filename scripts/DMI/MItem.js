@@ -182,6 +182,10 @@ MItem.prepareData_PostMod = function() {
 
 		if (o.boosters && o.boosters != "")
 			o.boosters = '+'+o.boosters;
+			
+		if (o.boosters)
+			o.boosterssort = o.boosters;
+		else o.boosterssort = '';
 
 //		if (o.spell) {
 //			var spell = DMI.modctx.spelllookup[o.spell];
@@ -226,7 +230,7 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 		{ id: "type",     width: 60, name: "Type", field: "type", sortable: true, sortCmp: 'text' },
 		{ id: "constlevel",      width: 70, name: "Research", field: "constlevel", sortable: true, formatter: itemConFormatter },
 		{ id: "mpath",    width: 70, name: "Path req", field: "mpath", sortable: true, formatter: DMI.GridFormat.Paths, sortCmp: 'text' },
-		{ id: "boosters", width: 165, name: "Boosters", field: "boosters", sortable: true, formatter: DMI.GridFormat.Booster }
+		{ id: "boosterssort", width: 165, name: "Boosters", field: "boosterssort", sortable: true, formatter: DMI.GridFormat.Booster }
 	];
 
 	this.superClass.call(this, 'item', modctx.itemdata, columns); //superconstructor
@@ -368,7 +372,7 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 
 		//the actual callback
 		return function(e, args) {
-			if (args.sortCol.field == 'boosters') {
+			if (args.sortCol.field == 'boosterssort') {
 				//rotate booster priority
 				// if (isSortedOnBoosters)
 				// 	boosterSortPriority.unshift(boosterSortPriority.pop());
@@ -392,20 +396,20 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 					//push last priority to end
 					var regex = new RegExp('^.('+pL+'+)(.*)$');
 					for (var i=0; i<data.length; i++) {
-						var b = data[i].boosters;
+						var b = data[i].boosterssort;
 						if (b && b.indexOf(pL)!=-1)
-							data[i].boosters = b.replace(regex, "+$2$1");
+							data[i].boosterssort = b.replace(regex, "+$2$1");
 					}
 				}
 				var L = boosterSortPriority[0];
 
 				//set first character to number of instances of L
 				for (var i=0; i<data.length; i++) {
-					var b = data[i].boosters;
+					var b = data[i].boosterssort;
 					if (b && b.indexOf(L)!=-1)
-						data[i].boosters =  String(b.split(L).length-1) + b.substr(1);
+						data[i].boosterssort =  String(b.split(L).length-1) + b.substr(1);
 					if (!b) {
-						data[i].boosters = '0';
+						data[i].boosterssort = '0';
 					}
 				}
 				//switch sort column header icon
@@ -415,7 +419,7 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 				     .length==0 )
 				{
 					//add icon if not exists yet
-					$(".slick-header-column[id*=boosters]")
+					$(".slick-header-column[id*=boosterssort]")
 					.append('<img id="itemboosterordericon" alt="'+L+'" class="pathicon Path_'+L+'" src="images/magicicons/Path_'+L+'.png" />')
 					.find(".slick-sort-indicator").css('visibility','hidden');
 				}
@@ -837,7 +841,7 @@ var modderkeys = Utils.cutDisplayOrder(aliases, formats,
 ]);
 var ignorekeys = {
 	modded:1,
-	mpath:1,
+	mpath:1, boosterssort:1,
 	type:1,
 	weapon:1, dancingweapon:1,
 	armor:1,
