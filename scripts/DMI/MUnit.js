@@ -549,9 +549,9 @@ MUnit.autocalc = function (o) {
 				75: 30,
 				80: 60,
 				100: 60,
-				120: 100,
-				150: 150,
-				160: 150,
+				120: 80,
+				150: 100,
+				160: 100,
 				200: 150
 		}
 
@@ -631,21 +631,21 @@ MUnit.autocalc = function (o) {
 				}
 			}
 		}
-//		if (paths_cost > 0 && o.adept_research) {
-//			paths_cost = paths_cost + parseInt(o.adept_research) * 5;
-//		}
-//		if (o.inept_research) {
-//			paths_cost = paths_cost - 5;
-//		}
-//		if (o.fixforgebonus) {
-//			paths_cost = paths_cost + paths_cost*(parseInt(o.fixforgebonus)/100);
-//		}
+		if (paths_cost > 0 && o.adept_research) {
+			paths_cost = paths_cost + parseInt(o.adept_research) * 5;
+		}
+		if (o.inept_research) {
+			paths_cost = paths_cost - 5;
+		}
+		if (o.fixforgebonus) {
+			paths_cost = paths_cost + paths_cost*(parseInt(o.fixforgebonus)/100);
+		}
 
 		// Priest cost
 		var priest = {
 				1: 20,
 				2: 40,
-				3: 80,
+				3: 100,
 				4: 140
 		}
 		var priest_cost = 0;
@@ -688,9 +688,9 @@ MUnit.autocalc = function (o) {
 		if (o.autodishealer && parseInt(o.autodishealer) > 0 && o.type != 'u') {
 			special_cost = special_cost + 20;
 		}
-		if (o.mounted && parseInt(o.mounted) > 0) {
-			special_cost = special_cost + 10;
-		}
+//		if (o.mounted && parseInt(o.mounted) > 0) {
+//			special_cost = special_cost + 10;
+//		}
 
 		o.goldcost = parseInt(cost + special_cost);
 		o.goldcost = o.goldcost + parseInt(o.basecost) - 10000;
@@ -703,7 +703,12 @@ MUnit.autocalc = function (o) {
 		if (o.type == 'u') {
 			o.goldcost = MUnit.roundIfNeeded(o.goldcost);
 		} else {
-			o.goldcost = MUnit.round(o.goldcost*1.4);
+			if (o.mountmnr) {
+				o.goldcost = MUnit.round(o.goldcost*1.4);
+				o.goldcost = MUnit.roundUp(o.goldcost*1.01);
+			} else {
+				o.goldcost = MUnit.round(o.goldcost*1.4);
+			}
 		}
 	} else {
 		o.goldcost = MUnit.roundIfNeeded(o.basecost);
@@ -719,6 +724,9 @@ MUnit.roundIfNeeded = function (num) {
 
 MUnit.round = function (num) {
 	return 5*(Math.floor(num/5));
+}
+MUnit.roundUp = function (num) {
+	return 5*(Math.ceil(num/5));
 }
 
 MUnit.hasRandom = function (o) {
