@@ -303,8 +303,9 @@ MSpell.effectlookup = {
 				4: Format.Gems('S')	,
 				5: Format.Gems('D')	,
 				6: Format.Gems('N')	,
-				7: Format.Gems('B')	,
-				8: Format.Gems('H')	,
+				7: Format.Gems('G')	,
+				8: Format.Gems('B')	,
+				9: Format.Gems('H')	,
 				51: Format.Gems('FAWE')	,
 				55: Format.Gems('FAWESDNBH'),
 				5760: Format.Gems('EFWD')

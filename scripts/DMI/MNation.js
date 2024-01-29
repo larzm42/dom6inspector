@@ -570,11 +570,23 @@ MNation.prepareData_PostMod = function() {
 					if (!u.type || u.type == 'c') {
 						u.type = 'u';
 						MUnit.autocalc(u);
+						if (u.mountmnr && parseInt(u.mountmnr) > 0) {
+		   					mount = modctx.unitlookup[u.mountmnr];
+							// Add goldcost of mount
+	   	   					u.goldcost = u.goldcost + parseInt(mount.basecost) - 10000;
+							u.goldcost = MUnit.roundIfNeeded(u.goldcost);
+	   	   				}
 					}
 				} else {
 					if (!u.type || u.type == 'u') {
 						u.type = 'c';
 						MUnit.autocalc(u);
+						if (u.mountmnr && parseInt(u.mountmnr) > 0) {
+		   					mount = modctx.unitlookup[u.mountmnr];
+							// Add goldcost of mount
+	   	   					u.goldcost = u.goldcost + parseInt(mount.basecost) - 10000;
+							u.goldcost = MUnit.round(u.goldcost);
+	   	   				}
 					}
 				}
 				u.nations = u.nations || {};

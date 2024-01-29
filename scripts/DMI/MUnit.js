@@ -465,8 +465,8 @@ MUnit.prepareData_PostMod = function() {
 		//resource costs
 		o.rcost = parseInt(o.rcost || 1);
 		o.rcostsort = parseInt(o.rcost || 1);
-		o.ressize = parseInt(o.ressize) || 2; //{1:0.5,  2:1,  3:1.5,  4:2,  5:2.5,  6:3}[o.ressize || '2'];
-
+		o.ressize = parseInt(o.ressize) || 3; //{1:0.5,  2:1,  3:1.5,  4:2,  5:2.5,  6:3}[o.ressize || '2'];
+		
 		//filter out weapons we cant find
 		var weapons = [];
 		for (var i=0, wid, w;  wid= o.weapons[i];  i++) {
@@ -480,7 +480,7 @@ MUnit.prepareData_PostMod = function() {
 			Utils.joinArray( Utils.unitRef(o.id), w.used_by )
 
 			//add resource cost to unit
-			o.rcostsort += parseInt(w.rcost || '0') * o.ressize / 2;
+			o.rcostsort += parseInt(w.rcost || '0') * o.ressize / 3;
 		}
 		o.weapons = weapons;
 
@@ -502,10 +502,10 @@ MUnit.prepareData_PostMod = function() {
 			a.used_by.push( Utils.unitRef(o.id) );
 
 			//add resource cost to unit
-			o.rcostsort += parseInt(a.rcost || '0') * o.ressize / 2;
+			o.rcostsort += parseInt(a.rcost || '0') * o.ressize / 3;
 		}
 		o.armor = armor;
-
+		
 		if (o.rcostsort > 60000)	o.rcostsort = 1; //gladiators
 
 		//numeric gold costs (for sorting)
@@ -515,8 +515,24 @@ MUnit.prepareData_PostMod = function() {
 			o.rcostsort = 0;
 		else
 			o.rcostsort = Math.floor(o.rcostsort || 1);
-
 	}
+	
+	for (var oi=0, o;  o= modctx.unitdata[oi];  oi++) {
+		if (o.mountmnr && parseInt(o.mountmnr) > 0) {
+		   mount = modctx.unitlookup[o.mountmnr];
+		   // Add rcost of mount
+		   o.rcost += parseInt(mount.rcostsort);
+		   o.rcostsort += parseInt(mount.rcostsort);
+		   // Add goldcost of mount
+	   	   o.goldcost = MUnit.round(o.goldcost + parseInt(mount.basecost) - 10000);
+	   	   if (o.type == 'u') {
+			  o.goldcost = MUnit.roundIfNeeded(o.goldcost);
+		   } else {
+			  o.goldcost = MUnit.round(o.goldcost);
+		   }
+		}
+	}
+	
 }
 
 MUnit.autocalc = function (o) {
@@ -526,19 +542,23 @@ MUnit.autocalc = function (o) {
 				0:	10,
 				10:	15,
 				20: 20,
-				30: 55,
+				30: 20,
 				40: 30,
+				50: 30,
 				60: 30,
+				75: 30,
 				80: 60,
-				100: 80,
+				100: 60,
 				120: 100,
-				160: 150
+				150: 150,
+				160: 150,
+				200: 150
 		}
 
 		//Leader cost
 		var ldr_cost = 0;
 		if (o.leader) {
-			ldr_cost = parseInt(leadership[o.leader]);
+			ldr_cost = ldr_cost + parseInt(leadership[o.leader]);
 		}
 		if (o.inspirational) {
 			ldr_cost = ldr_cost + 10*parseInt(o.inspirational);
@@ -565,7 +585,7 @@ MUnit.autocalc = function (o) {
 		// Paths cost
 		var paths_cost = 0;
 		var arr = [];
-		var baseM = [o.F, o.A, o.W, o.E, o.S, o.D, o.N, o.B];
+		var baseM = [o.F, o.A, o.W, o.E, o.S, o.D, o.N, o.G, o.B];
 		if (MUnit.hasRandom(o)) {
 			MUnit.buildRandomArrays(o, 0, arr, baseM);
 			for (var rand1=0; rand1 < arr.length; rand1++) {
@@ -611,15 +631,15 @@ MUnit.autocalc = function (o) {
 				}
 			}
 		}
-		if (paths_cost > 0 && o.adept_research) {
-			paths_cost = paths_cost + parseInt(o.adept_research) * 5;
-		}
-		if (o.inept_research) {
-			paths_cost = paths_cost - 5;
-		}
-		if (o.fixforgebonus) {
-			paths_cost = paths_cost + paths_cost*(parseInt(o.fixforgebonus)/100);
-		}
+//		if (paths_cost > 0 && o.adept_research) {
+//			paths_cost = paths_cost + parseInt(o.adept_research) * 5;
+//		}
+//		if (o.inept_research) {
+//			paths_cost = paths_cost - 5;
+//		}
+//		if (o.fixforgebonus) {
+//			paths_cost = paths_cost + paths_cost*(parseInt(o.fixforgebonus)/100);
+//		}
 
 		// Priest cost
 		var priest = {
@@ -683,7 +703,7 @@ MUnit.autocalc = function (o) {
 		if (o.type == 'u') {
 			o.goldcost = MUnit.roundIfNeeded(o.goldcost);
 		} else {
-			o.goldcost = MUnit.round(o.goldcost);
+			o.goldcost = MUnit.round(o.goldcost*1.4);
 		}
 	} else {
 		o.goldcost = MUnit.roundIfNeeded(o.basecost);
@@ -2089,7 +2109,9 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'appetite', 'supply size',
 	'astralfetters', 'astral fetters',
 	'foreignmagicboost', 'foreign magic boost',
-	'templetrainer', 'temple summon', Utils.unitRef,
+	'templetrainer', 'temple summon', function(v,o){
+		return Utils.unitRef('1859');
+	},
 	'addrandomage', 'add random age',
 	'unsurr', 'unsurroundable',
 	'speciallook', 'speciallook',
@@ -2243,7 +2265,8 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 
 	'female',	'female',
 	'stonebeing',	'stone being',
-
+	'tightrein',	'tight rein',
+	
 	'petrify',	'petrifies attackers',
 	'eyeloss',	Utils.afflictionRef('Eyeloss')+' on attackers',
 
