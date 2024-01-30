@@ -573,7 +573,11 @@ MNation.prepareData_PostMod = function() {
 						if (u.mountmnr && parseInt(u.mountmnr) > 0) {
 		   					mount = modctx.unitlookup[u.mountmnr];
 							// Add goldcost of mount
-	   	   					u.goldcost = u.goldcost + parseInt(mount.basecost) - 10000;
+						    if (parseInt(mount.basecost) > 1000) {
+		   	                    u.goldcost = MUnit.round(u.goldcost + parseInt(mount.basecost) - 10000);
+		   					} else {
+		   	   					u.goldcost = MUnit.round(u.goldcost + parseInt(mount.basecost));
+		   					}
 							u.goldcost = MUnit.roundIfNeeded(u.goldcost);
 	   	   				}
 					}
@@ -584,7 +588,11 @@ MNation.prepareData_PostMod = function() {
 						if (u.mountmnr && parseInt(u.mountmnr) > 0) {
 		   					mount = modctx.unitlookup[u.mountmnr];
 							// Add goldcost of mount
-	   	   					u.goldcost = u.goldcost + parseInt(mount.basecost) - 10000;
+						    if (parseInt(mount.basecost) > 1000) {
+		   	                    u.goldcost = MUnit.round(u.goldcost + parseInt(mount.basecost) - 10000);
+		   					} else {
+		   	   					u.goldcost = MUnit.round(u.goldcost + parseInt(mount.basecost));
+		   					}
 							u.goldcost = MUnit.round(u.goldcost);
 	   	   				}
 					}

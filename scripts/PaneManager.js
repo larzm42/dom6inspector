@@ -165,8 +165,13 @@ PM.openPane = function(ref, position) {
 	var $p = $('<div class="overlay popup">'+html+'</div>').css('zIndex', ++maxZIndex);
 	
 	//explicit position
-	if (position)
+	if (position) {
+		if (position.top < 0) {
+		    position.top = 0;
+		    position.left += 50;
+		}
 		$p.css(position);	
+	}
 	else {
 		//concertina if previous overlay has not been moved
 		if ($lastPane) $p.css({

@@ -524,7 +524,11 @@ MUnit.prepareData_PostMod = function() {
 		   o.rcost += parseInt(mount.rcostsort);
 		   o.rcostsort += parseInt(mount.rcostsort);
 		   // Add goldcost of mount
-	   	   o.goldcost = MUnit.round(o.goldcost + parseInt(mount.basecost) - 10000);
+		   if (parseInt(mount.basecost) > 1000) {
+		   	   o.goldcost = MUnit.round(o.goldcost + parseInt(mount.basecost) - 10000);
+		   } else {
+		   	   o.goldcost = MUnit.round(o.goldcost + parseInt(mount.basecost));
+		   }
 	   	   if (o.type == 'u') {
 			  o.goldcost = MUnit.roundIfNeeded(o.goldcost);
 		   } else {
@@ -1765,7 +1769,7 @@ var displayorder_pret = Utils.cutDisplayOrder(aliases, formats,
 var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 [
 	'gcost', 'basecost',
-
+	'holycost', 'holy cost',
 	'reclimit',		'recruitment limit',	Format.PerTurn,
 	'gemprod',	'generates gems',	function(v){ return v!='0' && Format.PerTurn(Format.Gems(v)); },
 	'tmpfiregems',	'temp gems', function(v){ return v!='0' && Format.PerBattle(Format.Gems('F' + v)); },
@@ -1845,7 +1849,8 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'incprovdef',	'defence organizer',
 	'adept_research',	'adept researcher',
 	'inept_research',	'inept researcher',
-
+	'corpsestitcher', 'corpse stitcher',
+	
 	'makepearls','pearl cultivator',
 	'sailingshipsize',	'sailing ship size',
 	'sailingmaxunitsize',	'sailing max unit size',
@@ -1874,6 +1879,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'masterrit',	'ritual pathboost',
 	'disbelieve',	'disbelieve illusions',
 	'powerofdeath',	'power of death',
+	'glamourman', 'glamour manipulator',
 
 	'supplybonus',	'supply bonus',		Format.Signed,
 	'siegebonus',	'siege bonus',		Format.Signed,
@@ -2062,11 +2068,25 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'mountmnr',	'mount',	function(v,o){
 		return Utils.unitRef(v);
 	},
+	'coridermnr',	'co-rider',	function(v,o){
+		coriders = 0;
+		if (o.nofriders) {
+			coriders = parseInt(o.nofriders) - 1;
+		}
+		return (coriders > 1) ?  Utils.unitRef(v)+' x '+coriders  :  Utils.unitRef(v);
+	},
 	'skilledrider', 'skilled rider',
+	'lich',	'lich shape',	function(v,o){
+		return Utils.unitRef(v);
+	},
+	'animatemnr',	'animated shape',	function(v,o){
+		return Utils.unitRef(v);
+	},
 
 	'heretic',		'heretic',
 	'shatteredsoul',	'shattered soul', 	Format.Percent, //tartarian
 	'insane',	'insane',		Format.Percent,
+	'reconstruction', 'reconstruction', Format.Percent,
 
 	'voidsanity',		'void sanity',
 	'voidsum',		'void summoning',	Format.Signed, //rl'yeh
@@ -2151,6 +2171,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'graphicsize','graphic size alteration', Format.Percent,
 	
 	'horrormark',	'horror mark melee attackers',
+	'fearoftheflood', 'fear of the flood',
 	
 	'enchrebate50',	'50 gold cheaper when active', function(v) { return modctx.enchantments_lookup[v].name;},
 	'enchrebate10',	'10 gold cheaper when active', function(v) { return modctx.enchantments_lookup[v].name;},
@@ -2213,7 +2234,7 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'magicbeing',	'magic being',
 	'inanimate',	'inanimate',
 	'ethereal',	'ethereal',
-	'illusion',	'glamour',
+	'illusion',	'illusion',
 	'flying',	'flying',
 	'teleport',	'teleporter',
 	'unteleportable', 'not teleportable',
@@ -2245,7 +2266,6 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'gold',		'gold',
 	'divineins',	'divinely inspired',
 	'mobilearcher', 'mobile archer',
-	'fearoftheflood', 'fear of the flood',
 
 	'coldblood',	'cold blooded',
 	'amphibian',	'amphibious',
@@ -2376,6 +2396,7 @@ var ignorekeys = {
 	isashah:1,
 	isayazad:1,
 	isadaeva:1,
+	nofriders:1,
 	
 	//common fields
 	name:1,linkname:1,descr:1,
