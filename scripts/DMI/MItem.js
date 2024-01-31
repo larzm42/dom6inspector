@@ -22,9 +22,12 @@ MItem.initItem = function(o) {
 MItem.prepareData_PreMod = function() {
 	for (var oi=0, o;  o= modctx.itemdata[oi];  oi++) {
 		o.restricted = [];
+		o.eracodes = [];
 		var nations = Utils.keyListToTable(o, 'restricted');
 		for (var oj=0, nation; nation = nations[oj]; oj++) {
 			o.restricted.push(nation);
+			n= modctx.nationlookup[nation]
+			o.eracodes.push(modconstants.eracodes[n.era]);
 		}
 		o.nationrebate = [];
 		var nations2 = Utils.keyListToTable(o, 'nationrebate');
@@ -281,6 +284,12 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 
 
 		if ($.isEmptyObject(args.type)) delete args.type;
+		
+		//whole era
+		if (args.nation == 'EA' || args.nation == 'MA' || args.nation == 'LA') {
+			args.eracode = args.nation;
+			delete args.nation;
+		}
 
 		//create string of mpaths from checkboxes
 		$(that.domselp+' .toggle-path:checked').each(function() {
@@ -332,6 +341,12 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 		//generic (generic units only)
 		if (args.generic && o.restricted)
 			return false;
+			
+		//era
+		if (args.national && args.eracode && o.eracodes) {
+			if (!o.eracodes.includes(args.eracode))
+				return false;
+		}
 
 		//nation
 		if (args.nation && o.restricted) {
@@ -851,6 +866,7 @@ var ignorekeys = {
 	mainpath:1, mainlevel:1, secondarypath:1, secondarylevel:1,
 	A:1, B:1, D:1, E:1, F:1, N:1, S:1, W:1, H:1, G:1,
 	animalawe2:1,iceprot2:1,
+	eracodes:1,
 
 	gemcost:1,
 	wpnclass:1,
