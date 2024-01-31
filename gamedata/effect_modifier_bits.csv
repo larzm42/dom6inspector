@@ -32,8 +32,8 @@ bit_value	bit_name	test
 1073741824	Internally added to all spells {Wpn: #1073741824}
 2147483648	Damage Bonus on 1st Attack {Wpn: #charge}
 4294967296	Beam/Breath {Wpn: #beam}
-8589934592	Used in melee too {#usedinmelee}
-17179869184	False Damage
+8589934592	Used in melee too {Wpn: #usedinmelee}
+17179869184	False Damage {Wpn: #falsedamage}
 34359738368	Bypasses mirror image, internally added to spells with aoe 1+ {Wpn: #hasaoe}
 68719476736	Higher charge bonus cap {Wpn: #heavyweapon}
 137438953472	Cannot be used for repelling {Wpn: #norepel}
@@ -48,7 +48,7 @@ bit_value	bit_name	test
 70368744177664	No Effect on Fliers/Floaters {Wpn: #flyingimmune}
 140737488355328	Does not affect user unless hitting x% of battlefield {Wpn: #userimmune}
 281474976710656	Affects Animals Only {Wpn: #animalonly}
-562949953421312	More likely to hit head {#hithead}
+562949953421312	More likely to hit head {Wpn: #hithead}
 1125899906842624	Size negates (bugged, is never checked) {Wpn: #fivegates}
 2251799813685248	? Adds fire particles (weapon projectiles only) {Wpn: #fireparticles}
 4503599627370496	Creatures with Void Sanity immune {Wpn: #voidsanityimmune}
