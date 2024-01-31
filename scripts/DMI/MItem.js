@@ -493,6 +493,7 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'gs',		'generates astral gems',	function(v){ return Format.PerTurn(Format.Gems(v+'S')); },
 	'gn',		'generates nature gems',	function(v){ return Format.PerTurn(Format.Gems(v+'N')); },
 	'gw',		'generates water gems',		function(v){ return Format.PerTurn(Format.Gems(v+'W')); },
+	'gg',		'generates glamour gems',		function(v){ return Format.PerTurn(Format.Gems(v+'G')); },
 
 	'tmpairgems',		'temporary air gems',		function(v){ return Format.Gems(v+'A'); },
 	'tmpbloodslaves',		'temporary blood slaves',	function(v){ return Format.Gems(v+'B'); },
@@ -502,6 +503,7 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'tmpastralgems',		'temporary astral gems',	function(v){ return Format.Gems(v+'S'); },
 	'tmpnaturegems',		'temporary nature gems',	function(v){ return Format.Gems(v+'N'); },
 	'tmpwatergems',		'temporary water gems',		function(v){ return Format.Gems(v+'W'); },
+	'tmpglamourgems',		'temporary glamour gems',		function(v){ return Format.Gems(v+'G'); },
 
 	'str',		'strength',		Format.Signed,
 	'reinvigoration',		'reinvigoration',
@@ -878,11 +880,11 @@ var formatItemType = {	'2-h wpn':'two handed weapon',
 			'armor':'armor',
 			'boots':'boots'
 		};
-var formatItemCon = {	0:'(lvl 0)',
-			2:'(lvl 2)',
-			4:'(lvl 4)',
-			6:'(lvl 6)',
-			8:'(lvl 8 - unique)',
+var formatItemCon = {	1:'(lvl 1)',
+			3:'(lvl 3)',
+			5:'(lvl 5)',
+			7:'(lvl 7)',
+			9:'(lvl 9 - unique)',
 			12:''
 		};
 
