@@ -1019,6 +1019,10 @@ MUnit.prepareForRender = function(o) {
 		} else {
 			o.sprite.url1 = 'images/sprites/' + Utils.paddedNum(o.sprite.unitid,4)+'_1.png';
 			o.sprite.url2 = 'images/sprites/' + Utils.paddedNum(o.sprite.unitid,4)+'_2.png';
+			if (o.riderspr) {
+				o.sprite.url3 = 'images/sprites/' + Utils.paddedNum(o.sprite.unitid,4)+'_rider_1.png';
+				o.sprite.url4 = 'images/sprites/' + Utils.paddedNum(o.sprite.unitid,4)+'_rider_2.png';
+			}
 		}
 
 		//local helper: apply bonus to stat and add it to tooltip
@@ -2470,7 +2474,7 @@ var ignorekeys = {
 	isashah:1,
 	isayazad:1,
 	isadaeva:1,
-	nofriders:1, nofmounts:1,
+	nofriders:1, nofmounts:1, riderspr:1,
 	
 	//common fields
 	name:1,linkname:1,descr:1,
@@ -2518,6 +2522,9 @@ MUnit.renderOverlay = function(o, isPopup) {
 	h+=' 		</table> ';
 
 	h+='	<img style="float:right; clear:right; vertical-align:top; margin-right:25px" title="Toggle attack sprite" src="'+o.sprite.url1+'" onmouseover="this.style.cursor=\'pointer\'" onclick="if (this.src.indexOf(\''+o.sprite.url1+'\') != -1) {this.src = \''+o.sprite.url2+'\';} else { this.src = \''+o.sprite.url1+'\';}"/>';
+	if (o.riderspr) {
+	h+='	<img style="float:right; clear:right; vertical-align:top; margin-right:25px" title="Toggle rider sprite" src="'+o.sprite.url3+'" onmouseover="this.style.cursor=\'pointer\'" onclick="if (this.src.indexOf(\''+o.sprite.url3+'\') != -1) {this.src = \''+o.sprite.url4+'\';} else { this.src = \''+o.sprite.url3+'\';}"/>';
+	}	
 
 	h+='		<table class="overlay-table"><tr><td>';
 	//h+='	<div style="float:right; clear:right; max-width:50%;">';
