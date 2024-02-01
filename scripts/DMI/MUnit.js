@@ -2066,6 +2066,9 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 		return Utils.unitRef(v);
 	},
 	'mountmnr',	'mount',	function(v,o){
+		if (o.nofmounts) {
+			return Utils.unitRef(v) + ' x ' + o.nofmounts;
+		}
 		return Utils.unitRef(v);
 	},
 	'coridermnr',	'co-rider',	function(v,o){
@@ -2206,7 +2209,69 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'uncurableaffliction',	'uncurable affliction', {4096: 'Blind', 524288: 'Lost an eye', 262144:'Limp'},
 	'wintersummon1d3', 'summons every winter',	function(v,o){
 		return Utils.unitRef(v) + ' x 1d3';
-	}
+	},
+	'erastartageincrease', 'start age increase',
+	'moreorder', 'scale limit', function(v,o){
+		val = parseInt(v);
+		if (val < 0) {
+			return 'Turmoil scale limit +' + Math.abs(val);
+		} else {
+			return 'Order scale limit +' + val;
+		}
+	},
+	'moreprod', 'scale limit', function(v,o){
+		val = parseInt(v);
+		if (val < 0) {
+			return 'Sloth scale limit +' + Math.abs(val);
+		} else {
+			return 'Productivity scale limit +' + val;
+		}
+	},
+	'moreheat', 'scale limit', function(v,o){
+		val = parseInt(v);
+		if (val < 0) {
+			return 'Cold scale limit +' + Math.abs(val);
+		} else {
+			return 'Heat scale limit +' + val;
+		}
+	},
+	'moregrowth', 'scale limit', function(v,o){
+		val = parseInt(v);
+		if (val < 0) {
+			return 'Death scale limit +' + Math.abs(val);
+		} else {
+			return 'Growth scale limit +' + val;
+		}
+	},
+	'moreluck', 'scale limit', function(v,o){
+		val = parseInt(v);
+		if (val < 0) {
+			return 'Misfortune scale limit +' + Math.abs(val);
+		} else {
+			return 'Luck scale limit +' + val;
+		}
+	},
+	'moremagic', 'scale limit', function(v,o){
+		val = parseInt(v);
+		if (val < 0) {
+			return 'Drain scale limit +' + Math.abs(val);
+		} else {
+			return 'Magic scale limit +' + val;
+		}
+	},
+	'falsedamagerecovery', 'false damage recovery',
+	'uwpathboost', 'underwater path boost',
+	'randomitems', 'random items',
+	'fireempower', 'fire elemental empowerment', Format.Signed,
+	'airempower', 'air elemental empowerment', Format.Signed,
+	'waterempower', 'water elemental empowerment', Format.Signed,
+	'earthempower', 'earth elemental empowerment', Format.Signed,
+	'drawsize', 'draw size', Format.Percent,
+	'petrificationimmune', 'petrification immune', Format.Percent,
+	'scarsouls', 'scar souls', Format.Percent,
+	'spikebarbs', 'spike barbs',
+	'pretenderstartsite', 'pretender start site', Utils.siteRef, 
+	'offscriptresearch', 'off script research level',
 ]);
 var flagorder = Utils.cutDisplayOrder(aliases, formats,
 [
@@ -2220,6 +2285,10 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'isold',	'old age',
 	'holy',		'sacred',
 	'mounted',	'mounted',
+	'nofalldmg', 'no fall damage',
+	'regainmount', 'regain mount',
+	'mountiscom', 'mount is commander',
+	'nothrowoff', 'no throw off',
 	'immobile',	'immobile',
 	'undisciplined',	'undisciplined',
 	'pooramphibian','poor amphibian',
@@ -2227,7 +2296,7 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'bluntres',	'blunt resistant',
 	'pierceres',	'pierce resistant',
 	'cleanshape',	'heals afflictions when shapechanging',
-
+	'divinebeing', 'divine being',
 	'animal',	'animal',
 	'drake',	'drake',
 	'undead',	'undead',
@@ -2242,6 +2311,7 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'noriverpass',	'cannot cross river',
 	'slave',	'slave',
 	'bug',	'bug',
+	'bird', 'bird',
 	'uwbug',	'underwater bug',
 	'lesserhorror', 'lesser horror',
 	'greaterhorror', 'greater horror',
@@ -2266,7 +2336,8 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'gold',		'gold',
 	'divineins',	'divinely inspired',
 	'mobilearcher', 'mobile archer',
-
+	'popspy', 'population spy',
+	'capitalhome', 'home provionce capital',
 	'coldblood',	'cold blooded',
 	'amphibian',	'amphibious',
 	'aquatic',		'aquatic',
@@ -2281,7 +2352,10 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'spreaddeath',	'spreads death',
 	'spreadorder',	'spreads order',
 	'spreadgrowth',	'spreads growth',
-
+	'deathslimeexpl', 'slime explosion on death',
+	'deathpoisonexpl', 'poison explosion on death',
+	'deathshockexpl', 'shock explosion on death',
+	'decayres', 'decay resistant',
 	'wastesurvival',	'wasteland survival',
 	'mountainsurvival',	'mountain survival',
 	'swampsurvival',	'swamp survival',
@@ -2290,14 +2364,14 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'swimming',			'swimming',
 	'stupid',			'stupid',
 	'heal',		'recuperation',
-
+	'nobarding', 'no barding',
+	
 	'female',	'female',
 	'stonebeing',	'stone being',
 	'tightrein',	'tight rein',
-	
+	'clumsy', 'clumsy',
 	'petrify',	'petrifies attackers',
 	'eyeloss',	Utils.afflictionRef('Eyeloss')+' on attackers',
-
 	'inquisitor',		'inquisitor',
 	'spiritsight', 'spirit sight',
 	'spiritform', 'spiritform',
@@ -2396,7 +2470,7 @@ var ignorekeys = {
 	isashah:1,
 	isayazad:1,
 	isadaeva:1,
-	nofriders:1,
+	nofriders:1, nofmounts:1,
 	
 	//common fields
 	name:1,linkname:1,descr:1,

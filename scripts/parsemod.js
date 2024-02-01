@@ -387,7 +387,7 @@ var modctx = DMI.modctx = {
 				while (modctx.sitelookup[id]) id++;
 				a.n1 = id;
 			} else {
-				if (a.n1<1500 || a.n1>1999) throw 'invalid id';
+				//if (a.n1<1500 || a.n1>1999) throw 'invalid id';
 			}
 
 			modctx._new(c,a ,'site',fnw);
