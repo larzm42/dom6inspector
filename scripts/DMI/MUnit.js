@@ -744,6 +744,91 @@ MUnit.hasRandom = function (o) {
 	return false;
 }
 
+MUnit.getWpnLen = function (o, w) {
+	if (o.weapons[w].wpnclass == 'melee') {
+		if (parseInt(o.size) > 5 && !o.weapons[w].bonus) {
+			return parseInt(o.weapons[w].len)+1;
+		}
+		len = parseInt(o.weapons[w].len);
+		if (len < 0) {
+			len = 0;
+		}
+	    return len;
+	}
+	if (o.weapons[w].wpnclass == 'missile') {
+		rng = parseInt(o.weapons[w].range);
+		if (rng == -1) {
+			rng = o.str;
+		} else if (rng == -2) {
+			rng = parseInt(o.str)/2;
+		} else if (rng == -3) {
+			rng = parseInt(o.str)/3;
+		} else if (rng == -4) {
+			rng = parseInt(o.str)/4;
+		} else if (rng == -5) {
+			rng = parseInt(o.str)/5;
+		} else if (rng == 1) {
+			rng = 0;
+		}
+		
+	    return 'r' + Math.floor(rng);
+	}
+}
+MUnit.getWpnAtt = function (o, w) {
+	if (o.weapons[w].wpnclass == 'melee') {
+		return Utils.sum(Utils.sum(o.att, o.watt), o.weapons[w].att);
+	}
+	if (o.weapons[w].wpnclass == 'missile') {
+		return Utils.sum(o.prec, o.weapons[w].prec);
+	}
+}
+MUnit.getWpnDmg = function (o, w) {
+	if (o.weapons[w].wpnclass == 'melee') {
+		if (o.weapons[w].nostr) {
+			return o.weapons[w].dmg;
+		}
+		str = parseInt(o.str);
+		if (o.weapons[w].twohanded) {
+			str = str * 1.25;
+		}
+		return Utils.sum(o.weapons[w].dmg, Math.floor(str));
+	}
+	if (o.weapons[w].wpnclass == 'missile') {
+		if (o.weapons[w].nostr) {
+			return o.weapons[w].dmg;
+		}
+		if (o.weapons[w].bowstr) {
+			str = parseInt(o.str)/3;
+			return Utils.sum(o.weapons[w].dmg, Math.floor(str));
+		}
+		if (o.weapons[w].halfstr) {
+			str = parseInt(o.str)/2;
+			return Utils.sum(o.weapons[w].dmg, Math.floor(str));
+		}
+		return Utils.sum(o.weapons[w].dmg, o.str);
+	}
+}
+
+MUnit.getArmorProt = function (o, a) {
+	if (o.armor[a].protbody)
+		return o.armor[a].protbody;
+
+	if (o.armor[a].prothead)
+		return o.armor[a].prothead;
+
+	if (o.armor[a].general)
+		return o.armor[a].general;
+
+	if (o.armor[a].protshield)
+		return o.armor[a].protshield;
+	return "";
+}
+
+MUnit.getArmorParry = function (o, a) {
+	if (o.armor[a].parry) return o.armor[a].parry;
+	return "";
+}
+
 MUnit.buildRandomArrays = function (o, i, arr, baseM) {
 	var r = o.randompaths[i];
 	if (r.chance != 100) {
@@ -1019,11 +1104,21 @@ MUnit.prepareForRender = function(o) {
 		} else {
 			o.sprite.url1 = 'images/sprites/' + Utils.paddedNum(o.sprite.unitid,4)+'_1.png';
 			o.sprite.url2 = 'images/sprites/' + Utils.paddedNum(o.sprite.unitid,4)+'_2.png';
-			if (o.riderspr) {
-				o.sprite.url3 = 'images/sprites/' + Utils.paddedNum(o.sprite.unitid,4)+'_rider_1.png';
-				o.sprite.url4 = 'images/sprites/' + Utils.paddedNum(o.sprite.unitid,4)+'_rider_2.png';
+		}
+		
+		//set unmounted sprite
+		if (o.sprite.unmountedspr1) {
+			o.sprite.unmountedspr1 = 'mods/' + o.sprite.unmountedspr1.replace('.tga', '.png').replace(/^.\//, '');
+		    if (o.sprite.unmountedspr2) {
+		    	o.sprite.unmountedspr2 = 'mods/' + o.sprite.unmountedspr2.replace('.tga', '.png').replace(/^.\//, '');
+		    }
+		} else {
+			if (o.unmountedspr) {
+				o.sprite.unmountedspr1 = 'images/sprites/' + Utils.paddedNum(o.sprite.unitid,4)+'_rider_1.png';
+				o.sprite.unmountedspr2 = 'images/sprites/' + Utils.paddedNum(o.sprite.unitid,4)+'_rider_2.png';
 			}
 		}
+		
 
 		//local helper: apply bonus to stat and add it to tooltip
 		o.titles = {};
@@ -2474,7 +2569,7 @@ var ignorekeys = {
 	isashah:1,
 	isayazad:1,
 	isadaeva:1,
-	nofriders:1, nofmounts:1, riderspr:1,
+	nofriders:1, nofmounts:1, unmountedspr:1,
 	
 	//common fields
 	name:1,linkname:1,descr:1,
@@ -2522,27 +2617,30 @@ MUnit.renderOverlay = function(o, isPopup) {
 	h+=' 		</table> ';
 
 	h+='	<img style="float:right; clear:right; vertical-align:top; margin-right:25px" title="Toggle attack sprite" src="'+o.sprite.url1+'" onmouseover="this.style.cursor=\'pointer\'" onclick="if (this.src.indexOf(\''+o.sprite.url1+'\') != -1) {this.src = \''+o.sprite.url2+'\';} else { this.src = \''+o.sprite.url1+'\';}"/>';
-	if (o.riderspr) {
-	h+='	<img style="float:right; clear:right; vertical-align:top; margin-right:25px" title="Toggle rider sprite" src="'+o.sprite.url3+'" onmouseover="this.style.cursor=\'pointer\'" onclick="if (this.src.indexOf(\''+o.sprite.url3+'\') != -1) {this.src = \''+o.sprite.url4+'\';} else { this.src = \''+o.sprite.url3+'\';}"/>';
+	if (o.unmountedspr) {
+	h+='	<img style="float:right; clear:right; vertical-align:top; margin-right:25px" title="Toggle rider sprite" src="'+o.sprite.unmountedspr1+'" onmouseover="this.style.cursor=\'pointer\'" onclick="if (this.src.indexOf(\''+o.sprite.unmountedspr1+'\') != -1) {this.src = \''+o.sprite.unmountedspr2+'\';} else { this.src = \''+o.sprite.unmountedspr1+'\';}"/>';
 	}	
 
-	h+='		<table class="overlay-table"><tr><td>';
-	//h+='	<div style="float:right; clear:right; max-width:50%;">';
+
 	var tags = [];
 	for (var i=0; i<o.weapons.length; i++)
 		tags.push(Utils.wpnRef(o.weapons[i].id));
-	if (tags.length)
-		h+='	<p style="margin-top: 0;">Weapons<span class="internal-inline"> [weapon]</span>:<br />'+ tags.join('<br /> ') +'</p>';
-	h+='		</td><td>';
+	if (tags.length > 0)
+	h+='		<table class="overlay-table"><tr style="background: #c7b7a5;"><td>Weapon</td><td>Len</td><td>Att</td><td>Dmg</td></tr>';
+	for (var w=0; w<tags.length; w++)
+		h+='<tr style="background: #e5e0cc;"><td>'+tags[w]+'</td><td>'+MUnit.getWpnLen(o,w)+'</td><td>'+MUnit.getWpnAtt(o,w)+'</td><td>'+MUnit.getWpnDmg(o,w)+'</td></tr>';
+
+	h+=' 		</table> ';
 
 	var tags = [];
 	for (var i=0; i<o.armor.length; i++)
 		tags.push(Utils.armorRef(o.armor[i].id));
-	if (tags.length)
-		h+='	<p style="margin-top: 0;">Armor<span class="internal-inline"> [armor]</span>:<br />'+ tags.join('<br /> ') +'</p>';
-	//h+='	</div>';
+	if (tags.length > 0)
+	h+='		<table class="overlay-table"><tr style="background: #c7b7a5;"><td>Armor</td><td>Prt</td><td>Def</td><td>Par</td><td>Enc</td></tr>';
+	for (var a=0; a<tags.length; a++)
+		h+='<tr style="background: #e5e0cc;"><td>'+tags[a]+'</td><td>'+MUnit.getArmorProt(o,a)+'</td><td>'+o.armor[a].def+'</td><td>'+MUnit.getArmorParry(o,a)+'</td><td>'+o.armor[a].enc+'</td></tr>';
 
-	h+=' 		</td></tr></table> ';
+	h+=' 		</table> ';
 
 	h+='		<table class="overlay-table" style="margin-top:0px"> ';
 	h+= 			Utils.renderDetailsRows(o, displayorder_other, aliases, formats);

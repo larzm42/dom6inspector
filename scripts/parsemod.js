@@ -1098,6 +1098,8 @@ var modctx = DMI.modctx = {
 		//fx
 		spr1:	function(c,a,t){ modctx[t].sprite.spr1 = a.s; },
 		spr2:	function(c,a,t){ modctx[t].sprite.spr2 = a.s; },
+		unmountedspr1:	function(c,a,t){ modctx[t].sprite.unmountedspr1 = a.s; },
+		unmountedspr2:	function(c,a,t){ modctx[t].sprite.unmountedspr2 = a.s; },
 		speciallook: _ignore,
 
 		ap:	_num,

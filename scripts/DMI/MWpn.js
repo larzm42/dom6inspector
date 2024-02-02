@@ -53,6 +53,8 @@ MWpn.prepareData_PostMod = function() {
 				} else {
 					o.dmg = "Unknown plane " + effects.raw_argument;
 				}
+			} else if (effects.effect_number == "146") {
+				o.dmg = "Cloud";
 			} else if (parseInt(effects.effect_number) >= 500 && parseInt(effects.effect_number) <= 699) {
 				if (modctx.unit_effects_lookup[effects.raw_argument])
 				{
@@ -410,6 +412,8 @@ MWpn.renderWpnTable = function(o, isImplicitWpn, changeKey) {
 MWpn.bitfieldValues = function(bitfield, masks_dict, o) {
 	var magic = true;
 	var nostr = true;
+	var halfstr = false;
+	var bowstr = false;
 	var newValues=[];
 	var values = bitfields.bitfieldValues(bitfield, masks_dict);
 	for (var value in values) {
@@ -418,6 +422,11 @@ MWpn.bitfieldValues = function(bitfield, masks_dict, o) {
 		} else if (values[value].indexOf("Adds Strength of Wielder") != -1) {
 			nostr = false;
 		} else {
+			if (values[value].indexOf("Half Strength added") != -1) {
+				halfstr = true;
+			} else if (values[value].indexOf("One Third Strength added") != -1) {
+				bowstr = true;
+			}
 			var flag = "none";
 			var flagIndex = values[value].indexOf("Wpn: #");
 			if (flagIndex != -1) {
@@ -431,7 +440,7 @@ MWpn.bitfieldValues = function(bitfield, masks_dict, o) {
 		newValues.push(["Magic weapon", "magic"]);
 	}
 	if (nostr == true) {
-		if (!o.halfstr && !o.bowstr) {
+		if (halfstr==false && bowstr==false) {
 			newValues.push(["Strength not added to damage", "nostr"]);
 		}
 	}
@@ -492,9 +501,9 @@ MWpn.getEffect = function(weapon) {
 	if (weapon.twohanded) {
 		effect.modifiers_mask = bitfields.longOr(effect.modifiers_mask, "2");
 	}
-	if (weapon.flail) {
-		effect.modifiers_mask = bitfields.longOr(effect.modifiers_mask, "4");
-	}
+	//if (weapon.flail) {
+	//	effect.modifiers_mask = bitfields.longOr(effect.modifiers_mask, "4");
+	//}
 	if (weapon.demononly) {
 		effect.modifiers_mask = bitfields.longOr(effect.modifiers_mask, "8");
 	}
