@@ -116,6 +116,12 @@ Format.SignedPercent = function(v) {
 	if (v.charAt(0)=='-') return v+ '%';
 	return '+' +v+ '%';
 };
+Format.SignedPercentDiv = function(v) {
+	v = String(v);
+	if (v=='0') return v;
+	if (v.charAt(0)=='-') return parseInt(v)/100 + '%';
+	return '+' +parseInt(v)/100+ '%';
+};
 Format.PerTurn = function(v) {
 	v = String(v);
 	if (v=='0') return v;

@@ -890,6 +890,8 @@ var ignorekeys = {
 var formatItemType = {	'2-h wpn':'two handed weapon',
 			'1-h wpn':'one handed weapon',
 			'misc':'miscellaneous',
+			'missile':'missile',
+			'barding':'barding',
 			'helm':'helmet',
 			'crown':'crown',
 			'shield':'shield',

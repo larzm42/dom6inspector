@@ -1,7 +1,7 @@
 bit_value	bit_name	test
 1	Adds Strength of Wielder {Wpn: not #nostr}
 2	Requires Two Hands {Wpn: #twohanded}
-4	+2 Attack vs Shields {Wpn: #flail}
+4	Doesn't affect illusions or spiritforms {Wpn: #noillusion}
 8	Affects Demons and Undead {Wpn: #demonundead}
 16	Affects Magic Beings Only {Wpn: #magiconly}
 32	Heat/Fire {Wpn: #fire}
@@ -9,7 +9,7 @@ bit_value	bit_name	test
 128	Armor Negating {Wpn: #armornegating}
 256	Soul Slaying {Wpn: #soulslaying}
 512	Chill/Cold {Wpn: #cold}
-1024	? Unknown Modifier {Wpn: #1024}
+1024	Unknown Modifier {Wpn: #1024}
 2048	Shock {Wpn: #shock}
 4096	Magic Resistance Negates {Wpn: #mrnegates}
 8192	Poison {Wpn: #poison}
@@ -25,7 +25,7 @@ bit_value	bit_name	test
 8388608	May Use Underwater {Wpn: #uwok}
 16777216	Magic Resistance Negates Easily {Wpn: #mrnegateseasily}
 33554432	Use Underwater Only {Wpn: #uwonly}
-67108864	Iron Attack {Wpn: #ironweapon}
+67108864	Made of Iron {Wpn: #ironweapon}
 134217728	Intrinsic Weapon {Wpn: #bonus}
 268435456	No effect on Demons {Wpn: #demonimmune}
 536870912	No effect on Inanimate {Wpn: #inanimateimmune}
@@ -42,7 +42,7 @@ bit_value	bit_name	test
 1099511627776	Slashing Damage {Wpn: #slash}
 2199023255552	Acid Damage {Wpn: #acid}
 4398046511104	Size or Strength negates {Wpn: #sizeresist}
-8796093022208	Only 50% chance of this being used {Wpn: #melee50}
+8796093022208	Only a chance of this being used {Wpn: #melee50}
 17592186044416	Magic Resistance Hard to Negate {Wpn: #hardmrneg}
 35184372088832	Cannot be repelled {Wpn: #unrepel}
 70368744177664	No Effect on Fliers/Floaters {Wpn: #flyingimmune}

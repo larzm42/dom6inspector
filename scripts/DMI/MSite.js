@@ -769,6 +769,7 @@ var displayorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'hp', 'hit points',
 	'mr', 'magic resistance',
 	'pdconscript', 'dominion pd conscription', Format.Signed,
+	'popgrowth', 'population growth', Format.SignedPercentDiv,
 	
 	'recpointpercent', 'recruitment points', Format.Percent,
 	'recpointpercentcmd' , 'commander recruitment points', Format.Percent,
