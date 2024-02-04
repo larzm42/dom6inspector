@@ -202,7 +202,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 201	Magic Spear	201	2	0	4	1	0	0	0	0	201	
 202	Magic Sword	202	2	2	1	1	0	0	0	0	202	
 203	Barbed Tail	203	0	0	0	1	0	54	0	0	203	
-204	...	204	0	0	0	1	0	0	0	0	204	
+204	Venomous Claw	204	0	0	-1	1	0	50	0	0	204	
 205	Sword of Injustice	205	3	2	1	1	0	0	774	0	205	
 206	Ballista	206	-2	0	0	-3	10	0	0	0	206	
 207	Venomous Claw	207	0	0	-1	1	0	50	0	0	207	

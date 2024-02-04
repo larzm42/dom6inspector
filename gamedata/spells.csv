@@ -812,7 +812,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 810	Wolven Winter	1	4	2	3	-1	0	810	1	0	0	5	0	3	
 811	Mistform	1	4	1	2	-1	0	811	1	0	20	0	0	65536	
 812	Stoneskin	1	4	3	2	-1	0	812	1	0	20	0	0	65536	
-813	Temper Flesh	1	4	3	1	-1	0	813	1	0	20	0	0	481036338180	
+813	Temper Flesh	1	4	3	1	-1	0	813	1	0	20	0	0	481036338176	
 814	Destruction	1	4	3	3	-1	0	814	1	3	40	0	0	5	
 815	Curse of Stones	1	4	3	3	-1	0	815	1	0	0	3	0	32	
 816	Blight	1	4	3	2	5	1	816	1	0	0	5	0	9	
@@ -1352,7 +1352,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 1350	Vortex of Returning	5	7	4	4	-1	0	1350	1	0	0	3	0	1	
 1351	Plague	5	7	5	4	-1	0	1351	1	0	0	1	0	8	
 1352	Burden of Time	5	7	5	7	-1	0	1352	1	0	0	70	0	29	
-1353	Fury of the Wild	5	7	6	4	-1	0	1353	1	2	0	2	0	281474976710656	
+1353	Fury of the Wild	5	7	6	4	-1	0	1353	1	0	0	2	0	281474976710656	
 1354	Charm	5	7	7	3	-1	0	1354	1	100	30	0	0	999	
 1355	Mass Confusion	5	7	7	3	-1	0	1355	1	3	10	0	0	17179869184	
 1356	Gates of Horn and Ivory	5	7	7	5	-1	0	1356	1	0	0	60	0	116	
