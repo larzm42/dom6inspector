@@ -1348,7 +1348,7 @@ MUnit.prepareForRender = function(o) {
 		}
 
 		//mounted def bonus
-		if (is(o.mounted))
+		if (is(o.mountmnr))
 			bonus('mounted', 'def', 3);
 
 		//weapons
@@ -1356,7 +1356,7 @@ MUnit.prepareForRender = function(o) {
 		var rcost_wpns = 0;
 		for (var i=0, w;  w= o.weapons[i];  i++) {
 			def_wpns += parseInt(w.def || '0');
-			rcost_wpns += parseInt(w.rcost || '0') * o.ressize / 2;
+			rcost_wpns += parseInt(w.rcost || '0') * o.ressize / 3;
 		}
 		bonus('weapons', 'def', def_wpns);
 		bonus('weapons', 'rcost', rcost_wpns);
@@ -1425,7 +1425,7 @@ MUnit.prepareForRender = function(o) {
 					bonus(a.name, 'prot', p_inc);
 				}
 			}
-			rcost_armor += parseInt(a.rcost || '0') * o.ressize / 2;
+			rcost_armor += parseInt(a.rcost || '0') * o.ressize / 3;
 
 		}
 		bonus('armor', 'def', def_armor);
@@ -1496,7 +1496,7 @@ MUnit.prepareForRender = function(o) {
  function formatGold(_,__,v){ return v || ''; }
  function formatRes(_,__,v){ return v || ''; }
  function formatType(_,__,v,___,o){ return o.typechar; }
- function formatHoly(_,__,v,___,o){  return v=='1' ?  Format.AbilityIcon('holy', 'sacred')  :  ''; }
+ function formatHoly(_,__,v,___,o){  return (v=='1' ?  Format.AbilityIcon('holy', 'sacred')  :  '') + (o.holycost ? 'x2':''); }
 
 MUnit.CGrid = Utils.Class( DMI.CGrid, function() {
 
