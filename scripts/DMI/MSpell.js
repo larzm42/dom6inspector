@@ -329,6 +329,24 @@ MSpell.prepareData_PostMod = function() {
 				if (attr.attribute == "787") {
 					o.casttime = attr.raw_value;
 				}
+				if (attr.attribute == "1700" ||
+				    attr.attribute == "1701") {
+					var u = modctx.unitlookup[attr.raw_value];
+
+					//add to list of summoned units (to be attached to nations later)
+					o.summonsunits = o.summonsunits || [];
+					o.summonsunits.push(u);
+
+					//attach spell to unit
+					u.summonedby = u.summonedby || [];
+					u.summonedby.push( o );
+					if (_effects.effect_number == "1") {
+						u.typechar = 'unit (Summon)';
+						u.sorttype = MUnit.unitSortableTypes[u.typechar];
+					} else {
+						u.typechar = 'cmdr (Summon)';
+					}
+				}
 			}
 		}
 
@@ -940,6 +958,10 @@ MSpell.renderSpellTable = function(o, original_effect) {
 						val = Utils.unitRef(attr.raw_value);
 					} else if (attr.attribute == '746') {
 						val = modctx.enchantments_lookup[attr.raw_value].name;
+					} else if (attr.attribute == '1700') {
+						val = Utils.unitRef(attr.raw_value);
+					} else if (attr.attribute == '1701') {
+						val = Utils.unitRef(attr.raw_value);
 					} else {
 						val = attr.raw_value;
 					}
