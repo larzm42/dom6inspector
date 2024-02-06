@@ -123,8 +123,8 @@ MNation.prepareData_PostMod = function() {
 		o.renderOverlay = MNation.renderOverlay;
 
 		o.eracode = modconstants.eracodes[o.era];
-		o.shortname = o.eracode+'  '+o.name;
-		o.fullname = o.eracode+'  '+o.name+'  -  '+o.epithet;
+		o.shortname = o.eracode+' '+o.name;
+		o.fullname = o.eracode+' '+o.name+' - '+o.epithet;
 
 		// Get realms of nation
 		var realms = [];

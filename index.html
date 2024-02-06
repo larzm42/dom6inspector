@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="scripts/slickgrid/css/smoothness/jquery-ui-1.8.16.custom.css" />
 	<link rel="stylesheet" type="text/css" href="scripts/slickgrid/examples/examples.css" />
 	<link rel="stylesheet" type="text/css" href="scripts/master.css?v=30"  />
+	<link rel="stylesheet" type="text/css" href="scripts/select2/select2.min.css"  />
 	
 </head>
 <body>
@@ -27,6 +28,7 @@
 	<script type="text/javascript" src="scripts/slickgrid/lib/jquery-1.7.min.js"></script>
 	<script type="text/javascript" src="scripts/slickgrid/lib/jquery-ui-1.8.16.custom.min.js"></script>
 	<script type="text/javascript" src="scripts/slickgrid/lib/jquery.event.drag-2.2.js"></script>
+	<script type="text/javascript" src="scripts/select2/select2.min.js"></script>
 	
 	<!-- % SCRIPTS TO COMPILE % -->
 	<script type="text/javascript" src="scripts/slickgrid/slick.core.js"></script>
@@ -59,8 +61,23 @@
 	<script type="text/javascript" src="scripts/main.js?v=30"></script>
 	<!-- /% SCRIPTS TO COMPILE % -->
 
-
 	<script>
+	$(document).ready(function() {
+		$("#nation").select2({
+		    placeholder: 'any nation'
+		});
+		
+		var newOption = new Option("any nation", "any nation", true, true);
+        $('#nation').append(newOption).trigger('change');
+		var eaOption = new Option("Early era", "EA", false, false);
+        $('#nation').append(eaOption).trigger('change');
+		var maOption = new Option("Middle era", "MA", false, false);
+        $('#nation').append(maOption).trigger('change');
+		var laOption = new Option("Late era", "LA", false, false);
+        $('#nation').append(laOption).trigger('change');
+        
+	});
+	
 	function insertParam(key, value)
 	{
 		key = encodeURI(key); value = encodeURI(value);
@@ -392,16 +409,10 @@
 
         
         <!-- SELECT NATION -->
-		<div class="filters-nation  panel itemview unitview spellview">
-			<input type="button" value="X" class="clear-filters-btn" title="clear filters" />
-
-			<select class="nation" id="nation">
-				<option class="default" selected="selected" value="">any nation</option>
-				<option disabled=disabled>------------------</option>
-				<option value="EA">Early era</option>
-				<option value="MA">Middle era</option>
-				<option value="LA">Late era</option>
-				<!-- list of nations filled dynamically -->
+        <div class="filters-nation  panel itemview unitview spellview">
+            <input type="button" value="X" class="clear-filters-btn" title="clear filters" />
+			<select class="nation" id="nation" style="width:300px;">
+			<!-- Dropdown List Option -->
 			</select>
 		</div>
         <!-- /SELECT NATION -->
@@ -748,9 +759,9 @@
 				<option value="16384"> Unique </option>
 			</select>
 			<select class="sitetype" id="sitetypeid">
-				<option value=""> all types </option>
+				<option class="default" value=""> all types </option>
 				<option disabled="disabled"> -------------- </option>
-				<option class="default" value="Normal"> Normal </option>
+				<option value="Normal"> Normal </option>
 				<option value="Capitals"> Capitals </option>
 				<option value="Thrones"> Thrones </option>
 			</select>

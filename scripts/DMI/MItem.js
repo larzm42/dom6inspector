@@ -247,7 +247,7 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 	//selecting a nation
 	$(that.domselp+" select.nation").bind('change', function(e) {
 		//clicked a nation? (or era.. but not "any")
-		if (! $(that.domselp+" select.nation option.default").prop('selected')) {
+		if (! ($(that.domselp+" select.nation").find(":selected")[0] && $(that.domselp+" select.nation").find(":selected")[0].text == "any nation")) {
 			//currently showing "all units"?
 			if ( $(that.domselp+" select.typechar option.default").prop('selected')) {
 				//show only national units
@@ -290,6 +290,7 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 			args.eracode = args.nation;
 			delete args.nation;
 		}
+		else args.nation = modctx.nationlookup[ args.nation ];
 
 		//create string of mpaths from checkboxes
 		$(that.domselp+' .toggle-path:checked').each(function() {
@@ -350,10 +351,10 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 
 		//nation
 		if (args.nation && o.restricted) {
-			if (!o.restricted.includes(args.nation))
+			if (!o.restricted.includes(args.nation.id+''))
 				return false;
 		}
-
+		
 		//properties
 		//each is comprised of key =~ val
 		if (args.properties) {

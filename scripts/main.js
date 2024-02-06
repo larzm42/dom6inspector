@@ -473,6 +473,7 @@ DMI.initGrids = function() {
 
 	//load state from cookie/url
 	DMI.Utils.loadState();
+	$('#nation').trigger('change');
 
 	//process loaded state
 	showOrHideIds();

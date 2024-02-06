@@ -167,7 +167,8 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 			if ($property.find(" input[type=text]:[value^='']").length
 				|| $property.find(" textarea:[value^='']").length
 				|| $property.find(" input[type=checkbox]:checked").length
-				|| $property.find(" option:not(.default):selected").length
+				|| ($property.find(" option:not(.default):selected").length && !($property.find(" select.nation").length))
+				|| ($property.find(":selected")[0] && $property.find(":selected")[0].text != "any nation" && $property.find(" select.nation").length)
 			)
 				$property.find("input.clear-filters-btn").show();
 			else
@@ -177,7 +178,8 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 			if ($panel.find(" input[type=text]:[value^='']").length
 				|| $panel.find(" textarea:[value^='']").length
 				|| $panel.find(" input[type=checkbox]:checked").length
-				|| $panel.find(" option:not(.default):selected").length
+				|| ($panel.find(" option:not(.default):selected").length && !($panel.find(" select.nation").length))
+				|| ($panel.find(":selected")[0] && $panel.find(":selected")[0].text != "any nation" && $panel.find(" select.nation").length)
 			)
 				$panel.find("input.clear-filters-btn").show();
 			else
@@ -216,6 +218,7 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 		$panel.find(" textarea").val('').saveState();
 		$panel.find(" input[type=checkbox]:checked:not(#loadEvents)").prop("checked", false).saveState();
 		$panel.find(" option.default").attr('selected', true).parent().saveState();
+		$panel.find('#nation').val(null).trigger('change');
 		$(this).hide();
 
 		checkGlobalClearFilters();
