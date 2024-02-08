@@ -624,7 +624,7 @@ MSpell.CGrid = DMI.Utils.Class( DMI.CGrid, function() {
 			var oo = o;
 			//check recurring nextspell
 			while(oo) {
-				if (oo.effect == String(args.effect) || oo.effect == String(10000 + args.effect)) {
+				if (oo.effect_number == String(args.effect) || oo.effect_number == String(10000 + args.effect)) {
 					//check masks on damage
 					if (!args.effect_mask || parseInt(oo.damage) & args.effect_mask)
 						//return true;
@@ -642,7 +642,7 @@ MSpell.CGrid = DMI.Utils.Class( DMI.CGrid, function() {
 			var oo = o;
 			//check recurring nextspell
 			while(oo) {
-				if (parseInt(oo.spec_original) & args.special_mask)
+				if (parseInt(oo.spec) & parseInt(args.special_mask))
 					//return true;
 					break skip;
 				oo = oo.nextspell;
@@ -780,7 +780,6 @@ var moddingkeys = Utils.cutDisplayOrder(aliases, formats,
 [
 	'effect',	'effect',
 	'nextspell',	'nextspell',	function(v,o){ return v.id; },
-	'spec_original',	'special',
 	'effect_number',	'effect number',
 	'damage',	'damage',
 	'spec',	'spec',
