@@ -397,7 +397,7 @@ MWpn.renderWpnTable = function(o, isImplicitWpn, changeKey) {
 		}
 	}
 	else if (o.secondaryeffect && secondaryeffect && secondaryeffect.id != 0) {
-		h+=' <h4>Extra effect on hit: '+secondaryeffect.name+'</h4>';
+		h+=' <h4>Extra effect on damage: '+secondaryeffect.name+'</h4>';
 		//detect recursion
 		if (secondaryeffect == o){
 			//throw 'Error, weapon 2nd effect as itself: '+o.id+': '+o.name;
