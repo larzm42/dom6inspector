@@ -585,17 +585,17 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 583	Summon Daitya	6	8	8	5	-1	0	583	3	0	0	75	0	3663	
 584	Host of Ganas	0	2	5	1	-1	0	584	20	0	0	12	0	1764	
 585	Summon Vetalas	0	5	5	2	-1	0	585	10	0	0	10	0	1765	
-586	Summon Ko-Oni	0	1	5	1	-1	0	586	505	0	0	7	0	1260	
-587	Summon Kappa	0	1	2	1	6	1	587	3	0	0	3	0	1482	
-588	Summon Ao-Oni	0	2	2	1	5	1	588	505	0	0	10	0	1264	
-589	Summon Karasu Tengus	0	2	6	1	1	1	589	3	0	0	3	0	1478	
-590	Summon Aka-Oni	0	3	0	1	5	1	590	505	0	0	10	0	1266	
-591	Summon Konoha Tengus	0	3	1	1	3	1	591	505	0	0	5	0	1479	
+586	Summon Ko-Oni	0	1	5	1	-1	0	586	505	0	0	4	0	1260	
+587	Summon Kappa	0	1	2	1	6	1	587	5	0	0	3	0	1482	
+588	Summon Ao-Oni	0	2	2	1	5	1	588	505	0	0	7	0	1264	
+589	Summon Karasu Tengus	0	2	6	1	1	1	589	3	0	0	2	0	1478	
+590	Summon Aka-Oni	0	3	0	1	5	1	590	505	0	0	7	0	1266	
+591	Summon Konoha Tengus	0	3	1	1	3	1	591	505	0	0	3	0	1479	
 592	Ghost General	0	4	5	3	-1	0	592	1	0	0	10	0	1256	
-593	Summon Oni	0	4	3	1	5	1	593	505	0	0	12	0	1272	
+593	Summon Oni	0	4	3	1	5	1	593	505	0	0	8	0	1272	
 594	Contact Dai Tengu	0	5	1	2	3	1	594	1	0	0	55	77	1480	
 595	Contact Nushi	0	5	2	2	6	1	595	1	0	0	25	0	1431	
-596	Summon Kuro-Oni	0	5	5	2	0	1	596	4	0	0	10	0	1274	
+596	Summon Kuro-Oni	0	5	5	2	0	1	596	505	0	0	9	0	1274	
 597	Summon Oni General	0	6	5	2	0	1	597	1	0	0	20	0	1276	
 598	Contact Kitsune	0	6	6	2	-1	0	598	1	0	0	30	0	1434	
 599	Summon Dai Oni	0	8	5	4	0	1	599	1	0	0	45	0	1316	
@@ -681,7 +681,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 679	Acid Rain	2	4	2	3	0	1	679	1	-1	30	0	13	12	
 680	Blade Wind	2	4	3	3	-1	0	680	3041	0	80	0	0	14	
 681	Nether Bolt	2	4	4	1	5	1	681	1	2	15	0	24	1019	
-682	Bolt of Unlife	2	4	5	2	-1	0	682	1	1	20	0	0	1018	
+682	Bolt of Unlife	2	4	5	2	-1	0	682	1	1	20	0	0	1013	
 683	Bane Fire Dart	2	4	5	1	0	1	683	1	4	20	0	11	2013	
 684	Breath of the Dragon	2	4	6	2	-1	0	684	1	-1	20	0	0	2003	
 685	Ephemeral Blast	2	4	7	3	-1	0	685	1	2	10	0	0	2001	
@@ -713,7 +713,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 711	Mind Hunt	2	6	4	4	-1	0	711	1	0	0	2	0	999	
 712	Astral Fires	2	6	4	4	0	1	712	1	100	20	0	118	10	
 713	The Wrath of God	2	6	4	5	1	3	713	1	0	0	70	0	14	
-714	Blast of Unlife	2	6	5	3	-1	0	714	1	0	20	0	0	1012	
+714	Blast of Unlife	2	6	5	3	-1	0	714	1	0	20	0	0	1017	
 715	Bane Fire	2	6	5	3	0	1	715	1	1	20	0	117	1052	
 716	Stream of Life	2	6	6	3	-1	0	716	1	2	20	0	0	5025	
 717	False Horror	2	6	7	3	-1	0	717	1	0	10	0	0	448	
@@ -1044,7 +1044,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 1042	Locust Swarms	0	6	6	3	-1	0	1042	1	0	0	8	0	8	
 1043	Contact Lamia Queen	0	6	6	5	5	2	1043	1	0	0	25	0	609	
 1044	Summon Fay Prince	0	6	7	4	6	1	1044	1	0	0	30	0	3904	
-1045	Summon Gnome	0	6	7	2	3	2	1045	1	0	0	30	0	345	
+1045	Summon Gnome	0	6	7	3	3	2	1045	1	0	0	35	0	345	
 1046	Living Fire	0	7	0	4	-1	0	1046	1000	0	0	2	0	3717	
 1047	Living Clouds	0	7	1	4	-1	0	1047	1000	0	0	2	0	3725	
 1048	Summon Asp Turtle	0	7	2	3	-1	0	1048	1	0	0	10	0	1234	

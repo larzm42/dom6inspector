@@ -1,4 +1,9 @@
 id	name	epithet	abbreviation	file_name_base	era	end
+0	Independents	Independents	ind	ind0	0	
+1	Special Monsters	Special Monsters	sm	ind1	0	
+2	Special Monsters	Special Monsters	sm	ind2	0	
+3	Special Monsters	Special Monsters	sm	ind3	0	
+4	Special Monsters	Special Monsters	sm	ind4	0	
 5	Arcoscephale	Golden Era	Arc	early_arcoscephale	1	
 6	Mekone	Brazen Giants	Mek	early_mekone	1	
 7	Pangaea	Age of Revelry	Pa	early_pangaea	1	
@@ -29,11 +34,21 @@ id	name	epithet	abbreviation	file_name_base	era	end
 32	Rus	Sons of Heaven	Rus	early_bogarus	1	
 33	Niefelheim	Sons of Winter	Ni	early_niefelheim	1	
 34	Muspelheim	Sons of Fire	Mu	early_muspelheim	1	
+35	nation_35			nation_35	0	
+36	nation_36			nation_36	0	
+37	nation_37			nation_37	0	
+38	nation_38			nation_38	0	
+39	nation_39			nation_39	0	
 40	Pelagia	Pearl Kings	Pe	early_pelagia	1	
 41	Oceania	Coming of the Capricorns	Oc	early_oceania	1	
 42	Therodos	Telkhine Spectre	Ther	early_therodos	1	
 43	Atlantis	Emergence of the Deep Ones	Atl	early_atlantis	1	
 44	R'lyeh	Time of Aboleths	Rl	early_rlyeh	1	
+45	nation_45			nation_45	0	
+46	nation_46			nation_46	0	
+47	nation_47			nation_47	0	
+48	nation_48			nation_48	0	
+49	nation_49			nation_49	0	
 50	Arcoscephale	The Old Kingdom	Arc	mid_arcoscephale	2	
 51	Phlegra	Deformed Giants	Phl	mid_phlegra	2	
 52	Pangaea	Age of Bronze	Pa	mid_pangaea	2	
@@ -66,11 +81,19 @@ id	name	epithet	abbreviation	file_name_base	era	end
 79	Vanarus	Land of the Chuds	Rus	mid_rus	2	
 80	Jotunheim	Iron Woods	Jo	mid_jotunheim	2	
 81	Nidavangr	"Bear, Wolf and Crow"	Nid	mid_nid	2	
+82	nation_82			nation_82	0	
+83	nation_83			nation_83	0	
+84	nation_84			nation_84	0	
 85	Ys	Morgen Queens	Ys	mid_ys	2	
 86	Pelagia	Triton Kings	Pe	mid_pelagia	2	
 87	Oceania	Mermidons	Oc	mid_oceania	2	
 88	Atlantis	Kings of the Deep	Atl	mid_atlantis	2	
 89	R'lyeh	Fallen Star	Rl	mid_rlyeh	2	
+90	nation_90			nation_90	0	
+91	nation_91			nation_91	0	
+92	nation_92			nation_92	0	
+93	nation_93			nation_93	0	
+94	nation_94			nation_94	0	
 95	Arcoscephale	Sibylline Guidance	Arc	late_arcoscephale	3	
 96	Phlegra	Sleeping Giants	Phl	late_phlegra	3	
 97	Pangaea	New Era	NE	late_pangaea	3	
@@ -90,6 +113,7 @@ id	name	epithet	abbreviation	file_name_base	era	end
 111	Mictlan	Blood and Rain	Mi	late_mictlan	3	
 112	Xibalba	Return of the Zotz	Xi	late_xibalba	3	
 113	C'tis	Desert Tombs	DT	late_ctis	3	
+114	Machaka xxxx		M3	late_machaka	0	
 115	Midgård	Age of Men	Mid	late_midgard	3	
 116	Bogarus	Age of Heroes	Bog	late_rus	3	
 117	Utgård	Well of Urd	Ut	late_utgard	3	
@@ -103,3 +127,10 @@ id	name	epithet	abbreviation	file_name_base	era	end
 125	Erytheia	Kingdom of Two Worlds	Ery	late_erytheia	3	
 126	Atlantis	Frozen Sea	Atl	late_atlantis	3	
 127	R'lyeh	Dreamlands	Rl	late_rlyeh	3	
+128	late_oceania			late_oceania	0	
+129	nation_129			nation_129	0	
+130	nation_130			nation_130	0	
+131	nation_131			nation_131	0	
+132	nation_132			nation_132	0	
+133	nation_133			nation_133	0	
+134	nation_134			nation_134	0	

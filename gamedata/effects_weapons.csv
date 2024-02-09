@@ -226,7 +226,7 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 225	2			Weapon	-2	275012124673	0			0			
 226	7			Weapon	35	8320	0			0			
 227	24			Weapon	5	96	0			0			
-228	3			Weapon	100	274877911168	35			0			
+228	3			Weapon	100	275414782080	35			0			
 229	2			Weapon	0	137573171297	0			1			
 230	2			Weapon	13	1099647942656	0			0			
 231	2			Weapon	-2	549755813889	0			0			
@@ -373,7 +373,7 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 372	2			Weapon	8	288230651031715842	40			0			
 373	2			Weapon	2	274880004097	0			0			
 374	2			Weapon	8	1099511627777	0			0			
-375	2			Weapon	11	1099647942656	0			0			
+375	2			Weapon	11	1099645845504	0			0			
 376	2			Weapon	4	274947112963	0			0			
 377	2			Weapon	5	1374458740737	0			0			
 378	2			Weapon	6	1374458740739	0			0			
@@ -793,7 +793,7 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 792	3			Weapon	25	135296	0			1			
 793	109			Weapon	1	549755813889	0			0			
 794	2			Weapon	0	17179873409	0			0			
-795	2			Weapon	2	274877906945	0			0			
+795	2			Weapon	2	275012124673	0			0			
 796	123			Weapon	-2	136314880	0			0			
 797	2			Weapon	2	2097155	0			0			
 798	128			Weapon	100	4398046511104	0			0			
@@ -845,7 +845,7 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 844	2			Weapon	2	549755813889	0			0			
 845	2			Weapon	1	17314091136	0			0			
 846	2			Weapon	1	17314091136	0			0			
-847	2			Weapon	-5	136314945	0			0			
+847	2			Weapon	-5	549892128833	0			0			
 848	134			Weapon	5	8724154496	0			1			
 849	103			Weapon	999	35321945395584	0			1			
 850	134			Weapon	2	8589953152			2	0			
@@ -862,3 +862,6 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 861	2			Weapon	6	824633720833	0			0			
 862	2			Weapon	9	2305844108725321729	0			0			
 863	2			Weapon	7	2305843558969507841	0			0			
+864	109			Weapon	-2	549892128769	0			0			
+865	128			Weapon	100	4398046511104	0			0			
+866	109			Weapon	-2	549890031681	0			0			
