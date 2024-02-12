@@ -673,6 +673,7 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'reform',	'chance to reform when killed',	Format.Percent,
 	'haltheretic',	'fatigue sacreds',		Format.SignedZero,
 	'raiseshape', 'raises unit',	Utils.unitRef,
+	'reconst', 'reconstruction', Format.Percent,
 
 	'digest', 'digest',
 	'aciddigest', 'acid digest',
@@ -845,6 +846,9 @@ var flagorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'glamourman', 'glamour manipulator',
 	'nomindless', 'cannot be used by mindless',
 	'islance', 'is a lance',
+	'proudsteed', 'proud steed',
+	'scalewalls', 'scale walls',
+	'nononsleeper', 'cannot be used by non-sleeper',
 	
 	'champprize', 'Arena championship prize'
 ]);

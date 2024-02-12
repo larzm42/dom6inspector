@@ -412,8 +412,8 @@ number	name	test
 939	<Unknown Attribute>
 940	<Unknown Attribute>
 941	<Unknown Attribute>
-942	<Unknown Attribute>
-943	<Unknown Attribute>
+942	Can only be used when mounted {Wpn: #notdismounted} 
+943	Can only be used when dismounted {Wpn: #dismounted} 
 944	<Unknown Attribute>
 945	<Unknown Attribute>
 946	<Unknown Attribute>

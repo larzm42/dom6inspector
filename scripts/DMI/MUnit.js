@@ -515,6 +515,17 @@ MUnit.prepareData_PostMod = function() {
 			o.rcostsort = 0;
 		else
 			o.rcostsort = Math.floor(o.rcostsort || 1);
+			
+		// sacred sort
+		if (o.holy) {
+		    if (o.holycost) {
+		    	o.sacredsort = 2;
+		    } else {
+		    	o.sacredsort = 1;
+		    }
+		} else {
+		    o.sacredsort = 0;
+		}
 	}
 	
 	for (var oi=0, o;  o= modctx.unitdata[oi];  oi++) {
@@ -534,6 +545,10 @@ MUnit.prepareData_PostMod = function() {
 		   } else {
 			  o.goldcost = MUnit.round(o.goldcost);
 		   }
+		   
+		   // Add backlink to rider
+		   mount.riders = mount.riders || [];
+		   mount.riders.push(o)
 		}
 	}
 	
@@ -1496,7 +1511,7 @@ MUnit.prepareForRender = function(o) {
  function formatGold(_,__,v){ return v || ''; }
  function formatRes(_,__,v){ return v || ''; }
  function formatType(_,__,v,___,o){ return o.typechar; }
- function formatHoly(_,__,v,___,o){  return (v=='1' ?  Format.AbilityIcon('holy', 'sacred')  :  '') + (o.holycost ? 'x2':''); }
+ function formatHoly(_,__,v,___,o){  return (v ?  Format.AbilityIcon('holy', 'sacred')  :  '') + (o.holycost ? 'x2':''); }
 
 MUnit.CGrid = Utils.Class( DMI.CGrid, function() {
 
@@ -1509,7 +1524,7 @@ MUnit.CGrid = Utils.Class( DMI.CGrid, function() {
 //		{ id: "gcom",     width: 32, name: "gcom", field: "gcom", sortable: true, cssClass: "numeric", formatter: formatGold },
 //		{ id: "diff",     width: 32, name: "diff", field: "diffsort", sortable: true, cssClass: "numeric", formatter: formatGold },
 		{ id: "rcostsort",     width: 30, name: "Res", field: "rcostsort", sortable: true, cssClass: "numeric", formatter: formatRes },
-		{ id: "sacred",     width: 30, name: "Sac", field: "holy", sortable: true, formatter: formatHoly },
+		{ id: "sacredsort",     width: 30, name: "Sac", field: "sacredsort", sortable: true, formatter: formatHoly },
 		{ id: "listed_mpath",     width: 120, name: "Magic", field: "listed_mpath", sortable: true, formatter: DMI.GridFormat.OrderedPaths }
 	];
 
@@ -1817,7 +1832,13 @@ var displayorder = Utils.cutDisplayOrder(aliases, formats,
 	//	dbase key	displayed key		function/dict to format value
 	'goldcost',	'gold',	{'0':'0 '},
 	'hp',	'hit points',
-	'size', 'size',
+	'size', 'size', function(v,o) {
+		if (o.mountmnr) {
+			mount = modctx.unitlookup[o.mountmnr];
+			return o.size + '(' + mount.size + ')';
+		}
+		return o.size;
+	},
 	'prot',	'protection',	{'0':'0 '},
 	'mr',	'magic res',	{'0':'0 '},
 	'mor',	'morale',	{'0':'0 '},
@@ -2039,6 +2060,9 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'ironvul', 'iron vulnerability',
 	'saltvul', 'salt vulnerability',
 	'landenc', 'land encumbrance',
+	'exhaustion', 'exhaustion', function(v,o){
+		return '('+v+', max to 150)';
+	},
 	'startitem',	'starts with',	function(v,o){
 		return Utils.itemRef(v);
 	},
@@ -2464,7 +2488,7 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'stupid',			'stupid',
 	'heal',		'recuperation',
 	'nobarding', 'no barding',
-	
+	'cubmother', 'cub-mother',
 	'female',	'female',
 	'stonebeing',	'stone being',
 	'tightrein',	'tight rein',
@@ -2553,12 +2577,12 @@ var ignorekeys = {
 	magicboost_A:1, magicboost_B:1, magicboost_D:1, magicboost_E:1, magicboost_F:1, magicboost_N:1, magicboost_S:1, magicboost_W:1, magicboost_H:1,
 	magicboost_all:1,
 
-	rcostsort:1,
+	rcostsort:1, sacredsort:1,
 
 	weapons:1, armor:1, helmet:1, shield:1, wpn1:1, wpn2:1, wpn3:1, wpn4:1, wpn5:1, wpn6:1,
 
 	eracodes:1, nations:1, nation:1, nationname:1,
-	summonedby:1, createdby:1,
+	summonedby:1, createdby:1, riders:1,
 
 	triplegod:1,
 	triplegodmag:1,
@@ -2680,13 +2704,47 @@ MUnit.renderOverlay = function(o, isPopup) {
 		h+= ' Dominion<span class="internal-inline"> [startdom]</span>: '+(o.startdom ? o.startdom : '1');
 		h+='</p>';
 	}
-	else if ((!o.typechar) || o.typechar=="special") {
-		if (o.createdby) {
-			for (var i=0, refarr=[], s; s= o.createdby[i]; i++)
-				refarr.push(Utils.unitRef(s.id));
+	h+='	<div class="modding-block">';
+	
+	if (o.createdby) {
+		for (var i=0, refarr=[], s; s= o.createdby[i]; i++)
+			refarr.push(Utils.unitRef(s.id));
+		if (o.createdby.length > 8) {
+			//hide uberlong list
+			h+='	<p class="firstline">';
+			h+='		created by: '+o.createdby.length+' things ';
+
+			//button to reveal
+			var codereveal = "$(this).parent('p').hide().parent('div').find('.full-list').show()"
+			h+='<input class="inline-button" style="padding:none" type="button" value="show" onclick="'+codereveal+'"/>';
+			h+='	</p>';
+
+			//the actual list
+			h+='	<p class="firstline full-list" style="display:none">created by '+refarr.join(', ')+'</p>';
+		} else {
 			h+='	<p class="firstline">created by '+refarr.join(', ')+'</p>';
 		}
 	}
+	if (o.riders) {
+		for (var i=0, refarr=[], s; s= o.riders[i]; i++)
+			refarr.push(Utils.unitRef(s.id));
+		if (o.riders.length > 8) {
+			//hide uberlong list
+			h+='	<p class="firstline">';
+			h+='		ridden by: '+o.riders.length+' things ';
+
+			//button to reveal
+			var codereveal = "$(this).parent('p').hide().parent('div').find('.full-list').show()"
+			h+='<input class="inline-button" style="padding:none" type="button" value="show" onclick="'+codereveal+'"/>';
+			h+='	</p>';
+
+			//the actual list
+			h+='	<p class="firstline full-list" style="display:none">ridden by '+refarr.join(', ')+'</p>';
+		} else {
+		h+='	<p class="firstline">ridden by '+refarr.join(', ')+'</p>';
+		}
+	}
+	h+='	</div>';
 
 	//descr
 	var uid = 'c'+(Math.random());
