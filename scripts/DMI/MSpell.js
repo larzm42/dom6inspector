@@ -940,8 +940,6 @@ MSpell.renderSpellTable = function(o, original_effect) {
 						val = Utils.renderFlags(MSpell.bitfieldValues(attr.raw_value, modctx.map_terrain_types_lookup), 1);
 					} else if (attr.attribute == '711') {
 						val = Utils.siteRef(attr.raw_value);
-					} else if (attr.attribute == '716') {
-						val = Utils.unitRef(attr.raw_value);
 					} else if (attr.attribute == '719') {
 						if (modctx.unit_effects_lookup[attr.raw_value]) {
 							val = modctx.unit_effects_lookup[attr.raw_value].name
@@ -957,6 +955,8 @@ MSpell.renderSpellTable = function(o, original_effect) {
 						val = Utils.unitRef(attr.raw_value);
 					} else if (attr.attribute == '746') {
 						val = modctx.enchantments_lookup[attr.raw_value].name;
+					} else if (attr.attribute == '790') {
+						val = Utils.unitRef(attr.raw_value);
 					} else if (attr.attribute == '1700') {
 						val = Utils.unitRef(attr.raw_value);
 					} else if (attr.attribute == '1701') {

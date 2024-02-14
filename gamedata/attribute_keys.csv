@@ -186,7 +186,7 @@ number	name	test
 711	Site Required
 713	Only cast at coast {Spl: #onlycoastsrc}
 715	Caster must be flying
-716	Remote summon commander {Spl: #farsumcom}
+716	<Unknown Attribute>
 717	Record global enchantment cast location
 718	Requires specific unit ability to cast
 719	Specific unit ability prevents casting
@@ -260,7 +260,7 @@ number	name	test
 787	Casting Time {Spl: #casttime}
 788	<Unknown Attribute>
 789	<Unknown Attribute>
-790	<Unknown Attribute>
+790	Remote summon commander {Spl: #farsumcom}
 791	<Unknown Attribute>
 792	<Unknown Attribute>
 793	<Unknown Attribute>
