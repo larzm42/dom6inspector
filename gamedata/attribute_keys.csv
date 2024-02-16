@@ -181,7 +181,7 @@ number	name	test
 706	No Path over Land {Spl: #nolandtrace}
 707	<Unknown Attribute>
 708	Hidden Enchantment {Spl: #hiddenench}
-709	<Unknown Attribute>
+709	Duration 1 month+
 710	Does not affect floating commanders
 711	Site Required
 713	Only cast at coast {Spl: #onlycoastsrc}
@@ -192,7 +192,7 @@ number	name	test
 719	Specific unit ability prevents casting
 720	Projectile falls vertically
 721	Sound file played on projectile impact
-722	God Path Restriction {Spl: #godpathspell}
+722	<Unknown Attribute>
 723	<Unknown Attribute>
 724	Extra effect in geo {Spl: #extraeffectgeo}
 725	Can't target same province more than once/turn {Spl: #uniquetarget}
@@ -210,7 +210,7 @@ number	name	test
 737	Opens target prompt, can only target a unit of type
 738	Only target friendly provinces {Spl: #onlyowndst}
 739	Do not anticipate target's movement regardless of flysprite
-740	<Unknown Attribute>
+740	Change Dominion
 741	Requires sun presence
 742	AInocast
 743	<Unknown Attribute>
@@ -220,10 +220,10 @@ number	name	test
 747	Cost is multiplied by size
 748	Percent to horror mark caster
 749	<Unknown Attribute>
-750	<Unknown Attribute>
+750	God Path Restriction {Spl: #godpathspell}
 751	<Unknown Attribute>
 752	<Unknown Attribute>
-753	<Unknown Attribute>
+753	Anonymous
 754	<Unknown Attribute>
 755	<Unknown Attribute>
 756	<Unknown Attribute>
@@ -232,13 +232,13 @@ number	name	test
 759	<Unknown Attribute>
 760	<Unknown Attribute>
 761	<Unknown Attribute>
-762	<Unknown Attribute>
-763	<Unknown Attribute>
-764	<Unknown Attribute>
-765	<Unknown Attribute>
-766	<Unknown Attribute>
-767	<Unknown Attribute>
-768	<Unknown Attribute>
+762	Turmoil scale
+763	Sloth scale
+764	Cold scale
+765	Death scale
+766	Misfortune
+767	Drain scale
+768	Dispel darkness
 769	<Unknown Attribute>
 770	<Unknown Attribute>
 771	<Unknown Attribute>
@@ -380,7 +380,7 @@ number	name	test
 907	<Unknown Attribute>
 908	<Unknown Attribute>
 909	<Unknown Attribute>
-910	<Unknown Attribute>
+910	Extra poison damage
 911	<Unknown Attribute>
 912	<Unknown Attribute>
 913	<Unknown Attribute>
@@ -393,7 +393,7 @@ number	name	test
 920	<Unknown Attribute>
 921	<Unknown Attribute>
 922	<Unknown Attribute>
-923	<Unknown Attribute>
+923	Lingering cloud area
 924	<Unknown Attribute>
 925	<Unknown Attribute>
 926	<Unknown Attribute>
