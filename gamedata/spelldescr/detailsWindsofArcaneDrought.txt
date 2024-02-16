@@ -1,2 +1,2 @@
-All sites with a range of 6 provinces have their elemental gem output reduced (air -100%, water/fire -50%, earth -25%). The stolen gems will be gained as air gems (1/2 conversion ratio, except for air). Affects non yet found magic sites as well. Underwater and cave provinces are not affected.
+All sites within a range of 6 provinces have their elemental gem output reduced (air -100%, water/fire -50%, earth -25%). The stolen gems will be gained as air gems (1/2 conversion ratio, except for air). Affects non yet found magic sites as well. Underwater and cave provinces are not affected.
 Worldwide +1 drain, in range +3 drain, origin +5 drain scale.

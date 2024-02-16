@@ -300,9 +300,9 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 298	Meditation Sign	7	0	9	1	2	1	298	1	0	0	0	0	15	
 299	Summon Okami	0	3	6	1	-1	0	299	1009	0	0	6	0	3264	
 300	Contact Bakeneko	0	3	6	2	-1	0	300	1	0	0	8	0	3268	
-301	Summon Shikome	0	4	5	2	-1	0	301	8	0	0	8	0	2100	
+301	Summon Shikome	0	4	5	2	-1	0	301	10	0	0	5	0	2100	
 302	Contact Jigami	0	4	6	1	-1	0	302	1	0	0	10	0	2089	
-303	Summon Omukade	0	4	3	2	5	1	303	1	0	0	6	0	3269	
+303	Summon Omukade	0	4	3	2	5	1	303	1	0	0	5	0	3269	
 304	Contact Mori-no-kami	0	5	6	3	-1	0	304	1	0	0	21	0	2093	
 305	Summon Ujigami	0	5	3	1	4	1	305	1	0	0	8	0	2095	
 306	Contact Kaijin	0	5	2	3	-1	0	306	1	0	0	25	0	2106	
@@ -310,20 +310,20 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 308	Contact Tanuki	0	5	6	2	-1	0	308	1	0	0	26	0	3266	
 309	Contact Tatsu	0	6	3	3	-1	0	309	1	0	0	19	0	2099	
 310	Summon Kenzoku	0	6	4	1	3	1	310	1	0	0	9	0	2096	
-311	Summon Gozu Mezu	0	6	5	3	-1	0	311	1	0	0	7	92	2091	
+311	Summon Gozu Mezu	0	6	5	3	-1	0	311	1	0	0	6	92	2091	
 312	Contact Jorogumo	0	6	6	2	5	1	312	1	0	0	32	0	3263	
 313	Summon Araburu-kami	0	7	5	1	0	1	313	1	0	0	5	0	3270	
 314	Contact Yama-no-kami	0	7	3	4	-1	0	314	1	0	0	28	0	2097	
-315	Summon Abysian Ancestors	0	2	5	1	0	1	315	5	0	0	5	0	1971	
+315	Summon Abysian Ancestors	0	2	5	1	0	1	315	7	0	0	5	0	1971	
 316	Reawaken Fossil	4	5	3	2	5	1	316	505	0	0	10	0	1977	
-317	Summon Spectral Infantry	0	2	5	1	0	1	317	5	0	0	5	0	1656	
+317	Summon Spectral Infantry	0	2	5	1	0	1	317	7	0	0	5	0	1656	
 318	Contact Scorpion Man	0	8	3	1	0	1	318	1	0	0	12	0	1649	
 319	Inner Furnace	4	5	0	3	-1	0	319	1	0	0	1	0	16384	
-320	Infernal Breeding	6	3	8	2	-1	0	320	1009	0	0	25	0	1	
+320	Infernal Breeding	6	3	8	2	-1	0	320	1014	0	0	25	0	1	
 321	Summon Bears	0	3	6	1	9	1	321	15	0	0	8	0	3003	
 322	Summon Simargl	0	2	1	1	-1	0	322	1	0	0	1	0	1947	
 323	Summon Firebird	0	3	0	1	4	1	323	1	0	0	2	0	1946	
-324	Send Lady Midday	0	5	1	1	5	1	324	1	0	0	10	0	1956	
+324	Send Lady Midday	0	5	1	3	5	1	324	1	0	0	5	0	1956	
 325	Contact Sirin	0	3	4	2	-1	0	325	1	0	0	8	0	1945	
 326	Send Vodyanoy	0	4	2	2	-1	0	326	1	0	0	20	0	1953	
 327	Summon Rusalka	0	4	2	1	5	1	327	1	0	0	16	0	1954	
@@ -338,7 +338,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 336	Contact Leshiy	0	8	6	6	-1	0	336	1	0	0	60	0	1949	
 337	Grow Fortress	1	0	6	4	-1	0	337	1	0	0	35	0	10	
 338	Fort of the Ancients	1	5	6	4	-1	0	338	1	0	0	35	0	10	
-339	Sacred Crocodile	0	4	6	2	2	2	339	1	0	0	3	0	2186	
+339	Sacred Crocodile	0	4	6	2	2	2	339	1	0	0	1	0	2186	
 340	Herd of Elephants	0	3	6	2	-1	0	340	505	0	0	20	0	2398	
 341	God Brood	0	4	6	2	5	1	341	6	0	0	12	0	888	
 342	xxx	-1	4	7	2	5	1	342	10	0	0	12	0	3980	
@@ -357,11 +357,11 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 355	Call Ophan	0	8	4	5	0	2	355	1	0	0	49	0	2051	
 356	Call Merkavah	0	9	4	7	0	3	356	1	0	0	222	0	2052	
 357	Release Lord of Civilization	6	9	8	8	-1	0	357	1	0	0	177	85	14	
-358	Summon Mazzikim	0	3	6	1	-1	0	358	8	0	0	3	0	2072	
+358	Summon Mazzikim	0	3	6	1	-1	0	358	10	0	0	3	0	2072	
 359	Summon Lilot	0	5	6	4	-1	0	359	1	0	0	15	0	2071	
-360	Summon Kusarikkus	0	4	3	1	-1	0	360	2	0	0	6	0	3068	
+360	Summon Kusarikkus	0	4	3	1	-1	0	360	2	0	0	4	0	3068	
 361	Summon Ugallu	0	5	1	3	-1	0	361	1	0	0	24	0	3095	
-362	Call Anzu	0	7	2	2	3	2	362	1	0	0	4	0	3064	
+362	Call Anzus	0	7	2	2	3	2	362	2	0	0	4	0	3064	
 363	Call Apkallu	0	8	4	5	-1	0	363	1	0	0	60	0	2966	
 364	Call Ephor	0	0	5	1	-1	0	364	1	0	0	7	0	2845	
 365	Call Spectral Philosopher	0	0	5	1	-1	0	365	1	0	0	11	0	2846	
@@ -458,7 +458,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 456	Tempering the Will	5	5	3	3	-1	0	456	1	100	20	0	0	67108864	
 457	Gift of the Moon	4	4	4	1	-1	0	457	1	100	20	0	0	1099511627776	
 458	Sanguine Heritage	6	0	8	3	5	3	458	1	0	0	44	0	19	
-459	Summon Monster Toads	0	5	6	2	-1	0	459	3	0	0	8	0	1358	
+459	Summon Monster Toads	0	5	6	2	-1	0	459	3	0	0	5	0	1358	
 460	Contact Couatl	0	7	6	1	4	1	460	1	0	0	40	0	525	
 461	Parting of the Soul	5	6	5	1	1	1	461	1	100	40	0	111	5010	
 462	Call Ahurani	0	5	4	2	2	1	462	1	-2	0	12	0	2637	
@@ -505,8 +505,8 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 503	Command Draugar	0	4	5	2	-1	0	503	4	0	0	12	0	2190	
 504	Summon Jaguar Toads	0	1	6	1	9	1	504	3	0	0	2	0	1359	
 505	Summon Jaguars	0	3	6	2	9	1	505	25	0	0	20	0	859	
-506	Summon Jade Serpent	0	4	2	2	-1	0	506	1	0	0	3	0	1889	
-507	Summon Monster Toad	0	5	6	2	-1	0	507	1	0	0	2	0	1358	
+506	Summon Jade Serpents	0	4	2	2	-1	0	506	2	0	0	3	0	1889	
+507	Summon Monster Toad	0	5	6	2	-1	0	507	1	0	0	1	0	1358	
 508	Contact Couatl	0	6	6	1	4	1	508	1	0	0	40	0	525	
 509	Summon Tlaloque	0	7	2	4	-1	0	509	1	0	0	60	0	13	
 510	Bind Beast Bats	6	2	8	1	-1	0	510	3	0	0	8	0	1357	
@@ -554,15 +554,15 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 552	Summon Ghulah	6	5	8	1	-1	0	552	1	0	0	31	0	3481	
 553	Summon Binn	0	6	2	1	1	1	553	505	0	0	4	0	3476	
 554	Summon Si'lat	0	6	1	2	-1	0	554	1	0	0	21	0	3483	
-555	Summon Angiri	0	3	0	2	-1	0	555	3	0	0	5	0	3666	
-556	Summon Nagas	0	3	2	2	3	1	556	6	0	0	15	0	1319	
-557	Summon Apsaras	0	3	4	2	-1	0	557	3	0	0	2	0	1332	
+555	Summon Angiri	0	3	0	2	-1	0	555	505	0	0	5	0	3666	
+556	Summon Nagas	0	3	2	2	3	1	556	9	0	0	15	0	1319	
+557	Summon Apsaras	0	3	4	2	-1	0	557	505	0	0	3	0	1332	
 558	Summon Vidyadhara	0	4	4	2	-1	0	558	1	0	0	15	0	3668	
 559	Contact Yaksha	0	4	6	2	3	1	559	1	0	0	25	0	1329	
 560	Contact Yakshini	0	4	6	2	2	1	560	1	0	0	25	0	1330	
 561	Contact Nagini	0	4	2	2	3	1	561	1	0	0	25	0	1322	
-562	Summon Gandharvas	0	5	4	2	-1	0	562	6	0	0	18	0	1335	
-563	Summon Kimpurushas	0	5	6	2	4	1	563	6	0	0	18	0	3665	
+562	Summon Gandharvas	0	5	4	2	-1	0	562	6	0	0	15	0	1335	
+563	Summon Kimpurushas	0	5	6	2	4	1	563	6	0	0	15	0	3665	
 564	Contact Nagaraja	0	5	2	2	3	1	564	1	0	0	30	0	1320	
 565	Summon Garudas	0	6	4	2	-1	0	565	6	0	0	21	0	3664	
 566	Summon Maruts	0	6	4	2	-1	0	566	3	0	0	18	0	3667	
@@ -574,8 +574,8 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 572	Summon Rudra	0	9	4	5	-1	0	572	1	0	0	55	0	1906	
 573	Celestial Music	5	6	4	3	-1	0	573	1	0	0	1	0	262144	
 574	Summon Rakshasas	6	1	8	1	-1	0	574	3	0	0	10	0	1736	
-575	Feast of Flesh	6	2	8	1	6	1	575	15	0	0	50	0	1742	
-576	Summon Asrapas	6	3	8	2	-1	0	576	3	0	0	11	0	1741	
+575	Feast of Flesh	6	2	8	1	6	1	575	18	0	0	50	0	1742	
+576	Summon Asrapas	6	3	8	2	-1	0	576	3	0	0	8	0	1741	
 577	Summon Rakshasa Warriors	6	4	8	2	-1	0	577	5	0	0	25	0	1737	
 578	Summon Sandhyabalas	6	5	8	2	5	1	578	3	0	0	30	0	1743	
 579	Summon Dakini	6	6	8	4	1	1	579	1	0	0	81	0	1714	
@@ -583,8 +583,8 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 581	Summon Mandeha	6	8	8	5	5	2	581	1	0	0	133	0	20	
 582	Summon Danavas	6	8	8	5	-1	0	582	3	0	0	75	0	1767	
 583	Summon Daitya	6	8	8	5	-1	0	583	3	0	0	75	0	3663	
-584	Host of Ganas	0	2	5	1	-1	0	584	20	0	0	12	0	1764	
-585	Summon Vetalas	0	5	5	2	-1	0	585	10	0	0	10	0	1765	
+584	Host of Ganas	0	2	5	1	-1	0	584	2018	0	0	10	0	1764	
+585	Summon Vetalas	0	5	5	2	-1	0	585	15	0	0	10	0	1765	
 586	Summon Ko-Oni	0	1	5	1	-1	0	586	505	0	0	4	0	1260	
 587	Summon Kappa	0	1	2	1	6	1	587	5	0	0	3	0	1482	
 588	Summon Ao-Oni	0	2	2	1	5	1	588	505	0	0	7	0	1264	

@@ -17,7 +17,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 16	Flail	16	1	-2	2	2	0	0	0	3	16	
 17	Axe	17	0	-1	1	1	0	0	0	1	17	
 18	Battleaxe	18	1	0	2	1	0	0	0	3	18	
-19	...	19	0	0	0	1	0	0	0	0	19	
+19	...	19	0	0	-1	1	0	0	0	0	19	
 20	Bite	20	0	-1	-1	1	0	0	0	0	20	
 21	Javelin	21	-2	0	0	1	2	0	0	1	21	
 22	Sling	22	-2	0	0	1	15	0	0	0	22	
@@ -415,7 +415,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 414	Disease	414	0	0	1	1	0	0	0	0	414	
 415	Astral Hooks	415	0	0	0	3	0	367	0	0	415	
 416	False Fetters	416	0	0	0	1	0	0	0	0	416	
-417	...	417	0	0	0	1	0	0	0	0	417	
+417	Ice Fist	417	0	0	-1	1	0	0	0	0	417	
 418	Horror Claw	418	0	0	-1	1	0	0	0	0	418	
 419	Lightning Strike	419	0	0	0	1	1	0	704	0	419	
 420	Koppo	420	-2	0	0	1	0	421	0	0	420	
@@ -445,7 +445,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 444	Infernal Sword	444	4	4	2	1	0	441	0	0	444	
 445	Spear of the Dragon King	445	2	1	4	1	0	0	0	0	445	
 446	Sceptre	446	0	0	1	1	0	0	0	1	446	
-447	...	447	0	0	0	1	0	50	0	0	447	
+447	Crystal Fist	447	0	0	-1	1	0	0	0	0	447	
 448	Death Blessing	448	0	0	5	1	0	143	0	0	448	
 449	Life Drain	449	5	0	0	1	0	0	0	0	449	
 450	Tiny Bite	450	0	0	-1	1	0	0	0	0	450	
@@ -492,7 +492,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 491	Lesser Heads	491	0	0	0	2	0	50	0	0	491	
 492	Rainbow	492	2	0	0	1	10	0	333	0	492	
 493	Sickle Staff	493	0	1	3	1	0	0	0	2	493	
-494	...	494	0	0	0	1	0	53	0	0	494	
+494	Lightning	494	3	0	0	1	1005	0	704	0	494	
 495	Poisonous Bite	495	0	-1	-1	1	0	53	0	0	495	
 496	Sacred Pitcher	496	0	0	1	1	1	0	497	0	496	
 497	Sacred Water	497	0	0	0	1	0	0	0	0	497	
