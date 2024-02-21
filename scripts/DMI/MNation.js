@@ -240,7 +240,7 @@ MNation.prepareData_PostMod = function() {
 				if (attr.attribute == "631") {
 					o.futuresites.push(parseInt(attr.raw_value));
 				}
-				if (attr.attribute == "158" || attr.attribute == "159") {
+				if (attr.attribute == "158" || attr.attribute == "159" || attr.attribute == "739") {   // 739 = coastal forts
 					var unit = modctx.unitlookup[attr.raw_value];
 					if (unit.landshape) {
 						o.coastcom.push(parseInt(unit.landshape));
@@ -248,7 +248,7 @@ MNation.prepareData_PostMod = function() {
 						o.coastcom.push(parseInt(attr.raw_value));
 					}
 				}
-				if (attr.attribute == "160" || attr.attribute == "161" || attr.attribute == "162") {
+				if (attr.attribute == "160" || attr.attribute == "161" || attr.attribute == "162" || attr.attribute == "738") {  // 738 = coastal forts
 					var unit = modctx.unitlookup[attr.raw_value];
 					if (unit.landshape) {
 						o.coastrec.push(parseInt(unit.landshape));
@@ -329,6 +329,12 @@ MNation.prepareData_PostMod = function() {
 					attr.attribute == "149") {
 					o.multiheroes.push(parseInt(attr.raw_value));
 				}
+                                if (attr.attribute == "689") {  // this is for Muspelheim
+					o.commanders.push(parseInt(attr.raw_value));
+                                }
+                                if (attr.attribute == "688") {  // this is for Muspelheim
+					o.units.push(parseInt(attr.raw_value));
+                                }
 			}
 		}
 
