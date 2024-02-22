@@ -283,8 +283,9 @@ MEvent.formatMagicPath = function(v,o) {
 	case 4: ret = 'Astral'; break;
 	case 5: ret = 'Death'; break;
 	case 6: ret = 'Nature'; break;
-	case 7: ret = 'Blood'; break;
-	case 8: ret = 'Holy'; break;
+	case 7: ret = 'Glamour'; break;
+	case 8: ret = 'Blood'; break;
+	case 9: ret = 'Holy'; break;
 	}
 	return ret;
 }

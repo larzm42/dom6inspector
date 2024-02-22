@@ -530,7 +530,7 @@ MUnit.prepareData_PostMod = function() {
 	
 	for (var oi=0, o;  o= modctx.unitdata[oi];  oi++) {
 		if (o.mountmnr && parseInt(o.mountmnr) > 0) {
-		   mount = modctx.unitlookup[o.mountmnr];
+		   var mount = modctx.unitlookup[o.mountmnr];
 		   // Add rcost of mount
 		   o.rcost += parseInt(mount.rcostsort);
 		   o.rcostsort += parseInt(mount.rcostsort);
@@ -1485,13 +1485,14 @@ MUnit.prepareForRender = function(o) {
 			//casting encumbrance (double armor)
 			o.casting_enc = parseInt(o.enc) + (enc_armor*2);
 
-			//mounted ignore armor
-			if (!is(o.mounted)) {
-				//for enc 0 (undead) armor only affects speed
-				bonus('armor', 'ap', -enc_armor);
-				if (o.enc!='0')
-					bonus('armor', 'enc', enc_armor);
+			//mounted get half encumbrance from armor
+			if (o.mountmnr && parseInt(o.mountmnr) > 0) {
+				enc_armor = Math.round(enc_armor/2);
 			}
+			//for enc 0 (undead) armor only affects speed
+			bonus('armor', 'ap', -enc_armor);
+			if (o.enc!='0')
+				bonus('armor', 'enc', enc_armor);
 
 			//is caster?
 			if (o.mpath) {
