@@ -340,7 +340,8 @@ MSpell.prepareData_PostMod = function() {
 					//attach spell to unit
 					u.summonedby = u.summonedby || [];
 					u.summonedby.push( o );
-					if (_effects.effect_number == "1") {
+					if (_effects.effect_number == "1" ||
+   					    _effects.effect_number == "37") {
 						u.typechar = 'unit (Summon)';
 						u.sorttype = MUnit.unitSortableTypes[u.typechar];
 					} else {
@@ -402,7 +403,8 @@ MSpell.prepareData_PostMod = function() {
 						//attach spell to unit
 						u.summonedby = u.summonedby || [];
 						u.summonedby.push( o );
-						if (_effects.effect_number == "1") {
+						if (_effects.effect_number == "1" ||
+    					    _effects.effect_number == "37") {
 							u.typechar = 'unit (Summon)';
 							u.sorttype = MUnit.unitSortableTypes[u.typechar];
 						} else {
@@ -437,7 +439,8 @@ MSpell.prepareData_PostMod = function() {
 						ironBoar.eracodes = ironBoar.eracodes || {};
 						ironBoar.eracodes[o.eracode] = true;
 					}
-					if (_effects.effect_number == "1") {
+					if (_effects.effect_number == "1" ||
+   					    _effects.effect_number == "37") {
 						u.typechar = 'unit (Summon)';
 						u.sorttype = MUnit.unitSortableTypes[u.typechar];
 					} else {
@@ -480,7 +483,8 @@ MSpell.prepareData_PostMod = function() {
                         //attach spell to unit
                         u.summonedby = u.summonedby || [];
                         u.summonedby.push( o );
-    					if (_effects.effect_number == "1") {
+    					if (_effects.effect_number == "1" ||
+    					    _effects.effect_number == "37") {
     						u.typechar = 'unit (Summon)';
     						u.sorttype = MUnit.unitSortableTypes[u.typechar];
     					} else  {
