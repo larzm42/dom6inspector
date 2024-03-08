@@ -79,7 +79,7 @@ id	name	type	def	enc	rcost	end
 78	Krupp's Bracers	8	4	0	0	
 79	Spirit Helmet	6	0	0	0	
 80	Flame Helmet	6	0	0	0	
-81	Chain Mail of Displacement	5	3	2	0	
+81	Chain Mail of Displacement	5	-2	2	0	
 82	Flesh Ward	5	0	0	0	
 83	Starshine Skullcap	6	0	0	0	
 84	Amber Hauberk	5	-2	3	20	

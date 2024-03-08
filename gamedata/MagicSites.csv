@@ -76,9 +76,9 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 76	Temple Sanguine	5	0	0	Blood																																																																					1967																																87																														
 77	Temple of the Shroud	5	0	0	Holy	3				3																																		1108																														3691	1111																															91																														
 78	The Lotus Gardens	5	0	0	Nature					3		2																																1141																														1144																																57																														
-79	The Carrion Grove	5	0	0	Nature						1	4										Growth(max 4)																						787																																																														58																														
-80	The Carrion Grove	5	0	0	Nature						1	6										Growth(max 4)																						787																																																														58																														
-81	The Carrion Grove	5	0	0	Nature						1	9										Growth(max 4)																						787																																																														58																														
+79	The Carrion Grove	5	0	0	Nature						1	4										Growth(max 4)																						787	4026																																																													58																														
+80	The Carrion Grove	5	0	0	Nature						1	6										Growth(max 4)																						787	4026																																																													58																														
+81	The Carrion Grove	5	0	0	Nature						1	9										Growth(max 4)																						787	4026																																																													58																														
 82	The Wheel of Pain	5	0	0	Earth																																							1157																																																														31																														
 83	Irminsul	5	0	0	Nature				3		1	2																																																														1161																																61																														
 84	The Great Cauldron	5	0	0	Blood									2																														1183	1176																													1177	1178																															86																														
@@ -327,7 +327,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 482	Tower of the Silver Order	2	223	1	Air		3			2										lab																																																																100																						13																														
 483	Tower of the Silver Order	2	223	1	Air		2			3										lab																																																																100																						13																														
 484	Tower of the Silver Order	2	223	1	Air		2			2										lab																																																																100																						13																														
-485	Academy of Magics	2	223	1	Air		1													lab																																																																3496	3492																					13																														
+485	Academy of Magic	2	223	1	Air		1													lab																																																																3496	3492																					13																														
 486	Academy of High Magics	2	16607	2	Air		2			1										lab																																																																3505	3496	3492																				13																														
 487	Cloud Abode	2	223	2	Air		2													lab																																																																93	92																					12																														
 488	Stone Spires	2	8	1	Air		2																																			A	2																																																															13																														
@@ -466,7 +466,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 621	Academy of High Magics	2	16607	2	Earth	1			2											lab																																																																3503	3494	3492																				32																														
 622	Twice Walled Tower	2	223	1	Earth				1	1																																																																										344																						32																														
 623	Archaic Fortress	2	223	1	Earth																3																																																																																					32																														
-624	Lost Vale of the Elders	2	4	2	Earth				1			1																																																																								3982																						31																														
+624	Lost Vale of the Elders	2	4	2	Earth				1			1																																																																								411																						31																														
 625	Troll Pit	2	735	2	Earth																																																																										518																											35																														
 626	Troglodyte Den	2	735	3	Earth				1																																																																						447																											35																														
 627	Runaway Pit	2	735	3	Earth				1	2																																																																																																35																														

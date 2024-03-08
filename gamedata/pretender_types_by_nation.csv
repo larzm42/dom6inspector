@@ -34,6 +34,8 @@ monster_number	nation_number	end
 2788	7	
 2958	7	
 2961	7	
+4024	7	
+4025	7	
 215	8	
 250	8	
 606	8	
@@ -412,6 +414,8 @@ monster_number	nation_number	end
 2958	52	
 2961	52	
 2977	52	
+4024	52	
+4025	52	
 250	53	
 606	53	
 657	53	
@@ -422,6 +426,9 @@ monster_number	nation_number	end
 2449	53	
 2786	53	
 2788	53	
+4024	53	
+4025	53	
+4032	53	
 250	54	
 2138	54	
 250	55	
@@ -822,6 +829,8 @@ monster_number	nation_number	end
 2788	97	
 2958	97	
 2977	97	
+4024	97	
+4025	97	
 215	98	
 250	98	
 874	98	

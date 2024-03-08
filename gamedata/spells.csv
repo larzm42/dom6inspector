@@ -100,8 +100,8 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 98	Grow Monster	-1	1	-1	0	-1	0	98	1	0	0	0	0	-5	
 99	15 Forest Trolls	-1	1	-1	0	-1	0	99	15	0	0	0	0	2219	
 100	earth grip	-1	1	-1	0	-1	0	100	1	0	0	0	0	16384	
-101	Disease	-1	1	-1	0	-1	0	101	1	0	0	0	0	1	
-102	Disease All Friendly	-1	1	-1	0	-1	0	102	1	0	0	0	0	1	
+101	Disease	-1	1	-1	5	-1	0	101	1	0	0	0	0	1	
+102	Disease All Friendly	-1	1	5	0	-1	0	102	1	0	0	0	0	1	
 103	Cripple	-1	1	-1	0	-1	0	103	1	0	0	0	0	16777216	
 104	Earthquake Knockdown Stun	-1	1	-1	0	-1	0	104	1	0	0	0	0	0	
 105	Entrancement	-1	1	7	1	-1	0	105	1	100	0	0	0	100	
@@ -126,9 +126,9 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 124	Fay Folk Court	-1	1	-1	0	-1	0	124	10	0	0	0	125	-26	
 125	Fay Folk Court Soldiers	-1	1	-1	0	-1	0	125	3	0	0	0	126	3903	
 126	Fay Folk Court Knights	-1	1	-1	0	-1	0	126	2	0	0	0	0	3901	
-127	...	-1	1	-1	0	-1	0	127	1	0	0	0	0	0	
-128	...	-1	1	-1	0	-1	0	128	1	0	0	0	0	0	
-129	...	-1	1	-1	0	-1	0	129	1	0	0	0	0	0	
+127	Vine Fatigue	-1	1	6	1	-1	0	127	1	0	0	0	0	33	
+128	Carrion Poison	-1	1	6	1	-1	0	128	1	0	0	0	129	2008	
+129	Carrion Seed	-1	1	-1	0	-1	0	129	1	0	0	0	0	144115188075855872	
 130	...	-1	1	-1	0	-1	0	130	1	0	0	0	0	0	
 131	...	-1	1	-1	0	-1	0	131	1	0	0	0	0	0	
 132	...	-1	1	-1	0	-1	0	132	1	0	0	0	0	0	
@@ -298,7 +298,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 296	Welcome Sign	7	0	9	1	0	1	296	1	100	0	0	0	999	
 297	Earth-touching Sign	7	0	9	1	3	1	297	1	100	0	0	0	999	
 298	Meditation Sign	7	0	9	1	2	1	298	1	0	0	0	0	15	
-299	Summon Okami	0	3	6	1	-1	0	299	1009	0	0	6	0	3264	
+299	Summon Okami	0	3	6	1	-1	0	299	1009	0	0	4	0	3264	
 300	Contact Bakeneko	0	3	6	2	-1	0	300	1	0	0	8	0	3268	
 301	Summon Shikome	0	4	5	2	-1	0	301	10	0	0	5	0	2100	
 302	Contact Jigami	0	4	6	1	-1	0	302	1	0	0	10	0	2089	
@@ -435,8 +435,8 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 433	Puppet Mastery	4	0	9	3	-1	0	433	1	100	0	0	0	4	
 434	Carrion Growth	4	0	9	4	-1	0	434	1	100	0	0	0	536870912	
 435	Dark Slumber	4	4	6	4	5	2	435	1	0	0	15	0	17	
-436	...	-1	1	-1	0	-1	0	436	1	0	0	0	0	0	
-437	...	-1	1	-1	0	-1	0	437	1	0	0	0	0	0	
+436	Sleep Vines	0	3	6	1	7	1	436	1	2	20	0	127	64	
+437	Vengeful Vines	0	4	6	1	5	1	437	1	2	20	0	128	64	
 438	Summon Black Dogs	0	2	5	2	-1	0	438	20	0	0	5	0	1769	
 439	Summon Cu Sidhe	0	3	7	2	-1	0	439	10	0	0	5	0	1770	
 440	Summon Barghests	0	4	5	2	-1	0	440	14	0	0	7	0	1768	
@@ -529,17 +529,17 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 527	Summon Balam	0	7	6	4	-1	0	527	1	0	0	60	0	17	
 528	Summon Chaac	0	8	1	4	-1	0	528	1	0	0	75	0	18	
 529	Celestial Servant	0	1	3	1	4	1	529	1	0	0	1	0	903	
-530	Heavenly Rivers	0	3	2	1	4	1	530	3	0	0	12	0	904	
-531	Celestial Hounds	0	4	1	1	4	1	531	2	0	0	4	0	1338	
-532	Heavenly Fires	0	5	0	1	4	1	532	3	0	0	6	0	926	
-533	Call Celestial Soldiers	0	6	1	2	4	1	533	5	0	0	15	0	902	
+530	Heavenly Rivers	0	3	2	1	4	1	530	3	0	0	9	0	904	
+531	Celestial Hounds	0	4	1	1	4	1	531	2	0	0	2	0	1338	
+532	Heavenly Fires	0	5	0	1	4	1	532	3	0	0	4	0	926	
+533	Call Celestial Soldiers	0	6	1	2	4	1	533	6	0	0	15	0	902	
 534	Call Ancestor	0	1	5	1	-1	0	534	1	0	20	0	0	1363	
 535	Wrath of the Ancestors	0	7	5	1	-1	0	535	2018	0	0	1	0	1363	
-536	Call Cyclops Tribe	0	3	3	2	-1	0	536	505	0	0	12	0	3381	
-537	Call the Birds of Splendor	0	6	0	2	6	1	537	1	0	0	9	0	3382	
+536	Call Cyclops Tribe	0	3	3	2	-1	0	536	505	0	0	9	0	3381	
+537	Call the Birds of Splendor	0	6	0	2	6	1	537	1	0	0	7	0	3382	
 538	Deceive the Decree of the Lost	5	6	7	3	4	1	538	1	0	0	45	121	3879	
 539	Contact Jinn	0	4	0	2	1	1	539	1	0	0	18	0	3353	
-540	Summon Jinn Warriors	0	5	0	2	1	1	540	3	0	0	18	0	3354	
+540	Summon Jinn Warriors	0	5	0	2	1	1	540	3	0	0	13	0	3354	
 541	Contact Houri	0	6	1	2	7	1	541	1	0	0	26	0	3375	
 542	Summon Hinn	0	6	1	1	0	1	542	505	0	0	4	0	3367	
 543	Summon Ifrit	6	5	8	1	0	3	543	1	0	0	58	0	3372	
@@ -550,7 +550,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 548	Smokeless Flame	2	6	0	3	1	1	548	1	1	30	0	0	1042	
 549	Large Area Combustion	-1	1	-1	0	-1	0	549	1	0	0	0	0	512	
 550	Awaken Jinn Block	5	5	3	1	9	1	550	1	0	0	5	0	3389	
-551	Feast for Ghuls	6	4	8	1	-1	0	551	505	0	0	21	0	3479	
+551	Feast for Ghuls	6	4	8	1	-1	0	551	505	0	0	16	0	3479	
 552	Summon Ghulah	6	5	8	1	-1	0	552	1	0	0	31	0	3481	
 553	Summon Binn	0	6	2	1	1	1	553	505	0	0	4	0	3476	
 554	Summon Si'lat	0	6	1	2	-1	0	554	1	0	0	21	0	3483	
@@ -573,17 +573,17 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 571	Summon Devala	0	9	4	5	-1	0	571	1	0	0	55	0	1713	
 572	Summon Rudra	0	9	4	5	-1	0	572	1	0	0	55	0	1906	
 573	Celestial Music	5	6	4	3	-1	0	573	1	0	0	1	0	262144	
-574	Summon Rakshasas	6	1	8	1	-1	0	574	3	0	0	10	0	1736	
+574	Summon Rakshasas	6	1	8	1	-1	0	574	3	0	0	8	0	1736	
 575	Feast of Flesh	6	2	8	1	6	1	575	18	0	0	50	0	1742	
 576	Summon Asrapas	6	3	8	2	-1	0	576	3	0	0	8	0	1741	
-577	Summon Rakshasa Warriors	6	4	8	2	-1	0	577	5	0	0	25	0	1737	
-578	Summon Sandhyabalas	6	5	8	2	5	1	578	3	0	0	30	0	1743	
+577	Summon Rakshasa Warriors	6	4	8	2	-1	0	577	5	0	0	21	0	1737	
+578	Summon Sandhyabalas	6	5	8	2	5	1	578	3	0	0	25	0	1743	
 579	Summon Dakini	6	6	8	4	1	1	579	1	0	0	81	0	1714	
 580	Summon Samanishada	6	7	8	3	5	1	580	1	0	0	35	0	1744	
 581	Summon Mandeha	6	8	8	5	5	2	581	1	0	0	133	0	20	
-582	Summon Danavas	6	8	8	5	-1	0	582	3	0	0	75	0	1767	
-583	Summon Daitya	6	8	8	5	-1	0	583	3	0	0	75	0	3663	
-584	Host of Ganas	0	2	5	1	-1	0	584	2018	0	0	10	0	1764	
+582	Summon Danavas	6	8	8	5	-1	0	582	3	0	0	70	0	1767	
+583	Summon Daitya	6	8	8	5	-1	0	583	3	0	0	45	0	3663	
+584	Host of Ganas	0	2	5	1	-1	0	584	2018	0	0	9	0	1764	
 585	Summon Vetalas	0	5	5	2	-1	0	585	15	0	0	10	0	1765	
 586	Summon Ko-Oni	0	1	5	1	-1	0	586	505	0	0	4	0	1260	
 587	Summon Kappa	0	1	2	1	6	1	587	5	0	0	3	0	1482	
@@ -628,7 +628,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 626	Iron Marionettes	1	5	3	3	-1	0	626	1	100	0	1	0	33554432	
 627	Contact Void Spectre	0	6	4	3	-1	0	627	1	0	0	25	0	1562	
 628	Mind Vessel	5	3	4	3	-1	0	628	1	0	0	15	0	100	
-629	Enslave Sea Trolls	5	5	4	3	2	2	629	505	0	0	15	0	1529	
+629	Enslave Sea Trolls	5	5	4	3	2	2	629	505	0	0	10	0	1529	
 630	Dreams of R'lyeh	5	6	4	3	7	1	630	1	-1	0	4	0	2052	
 631	...	-1	1	-1	0	-1	0	631	1	0	0	0	0	0	
 632	...	-1	1	-1	0	-1	0	632	1	0	0	0	0	0	
@@ -696,7 +696,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 694	Falling Frost	2	5	2	3	-1	0	694	1	-2	20	0	0	1007	
 695	Orb Lightning	2	5	1	2	-1	0	695	1	0	20	0	0	5	
 696	Earthquake	2	5	3	4	-1	0	696	1	0	0	3	104	8	
-697	Cave Collapse	0	0	-1	0	-1	0	697	1	0	0	0	0	20	
+697	Cave Collapse	0	0	-1	0	-1	0	697	1	0	0	0	104	20	
 698	Gifts from Heaven	2	5	3	3	4	1	698	3	-3	50	0	107	150	
 699	Stellar Cascades	2	5	4	2	-1	0	699	1	100	20	0	0	25	
 700	Astral Geyser	2	5	4	3	-1	0	700	1	0	20	0	83	261	
@@ -718,13 +718,13 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 716	Stream of Life	2	6	6	3	-1	0	716	1	2	20	0	0	5025	
 717	False Horror	2	6	7	3	-1	0	717	1	0	10	0	0	448	
 718	Fire Storm	2	7	0	5	-1	0	718	1	0	0	3	0	25	
-719	Elemental Opposition of Water	2	7	0	5	-1	0	719	1	0	0	60	0	1	
+719	Elemental Opposition of Water	2	7	0	5	-1	0	719	1	0	0	60	0	2	
 720	Thunderstorm	2	7	1	4	-1	0	720	5020	0	0	30	0	2020	
 721	farkill: Thunderstorm	-1	1	1	4	-1	0	721	1	0	0	0	5	2020	
-722	Elemental Opposition of Earth	2	7	1	5	-1	0	722	1	0	0	60	0	1	
+722	Elemental Opposition of Earth	2	7	1	5	-1	0	722	1	0	0	60	0	3	
 723	Ice Strike	2	7	2	2	-1	0	723	1	1	20	0	0	18	
 724	Murdering Winter	2	7	2	5	-1	0	724	1	0	0	40	0	8	
-725	Elemental Opposition of Fire	2	7	2	5	-1	0	725	1	0	0	60	0	1	
+725	Elemental Opposition of Fire	2	7	2	5	-1	0	725	1	0	0	60	0	0	
 726	Acid Storm	2	7	2	4	0	1	726	1	0	0	3	0	11	
 727	Elemental Opposition of Air	2	7	3	5	-1	0	727	1	0	0	60	0	1	
 728	Rain of Stones	2	7	3	3	1	1	728	1	0	0	1	0	102	
@@ -917,7 +917,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 915	Wish	1	9	4	9	-1	0	915	1	0	0	100	0	0	
 916	Utterdark	1	9	5	9	-1	0	916	1	0	0	100	0	56	
 917	Army of Rats	1	9	6	5	-1	0	917	1	0	0	4	0	4297064448	
-918	Awaken Forest	1	9	6	5	-1	0	918	1	100	0	1	0	361	
+918	Awaken Forest	1	9	6	5	-1	0	918	1	100	0	2	0	361	
 919	Summon Cave Grubs	0	1	3	1	-1	0	919	510	0	0	5	0	2526	
 920	Tangle Vines	0	1	6	1	-1	0	920	1	2	20	0	0	64	
 921	Summon Animals	0	1	6	2	-1	0	921	2026	0	0	10	0	403	
@@ -1456,3 +1456,5 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 1454	Infernal Crusade	6	9	8	5	3	2	1454	1005	0	0	50	0	489	
 1455	Send Horror	6	9	8	4	4	4	1455	1	0	0	30	0	-7	
 1456	Astral Corruption	6	9	8	6	4	6	1456	1	0	0	166	0	57	
+1457	Tangle Thicket	0	4	6	2	-1	0	1457	1	2	30	0	0	64	
+1458	Carrion Fortress	1	0	6	3	5	2	1458	1	0	0	35	0	10	

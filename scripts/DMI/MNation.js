@@ -329,12 +329,12 @@ MNation.prepareData_PostMod = function() {
 					attr.attribute == "149") {
 					o.multiheroes.push(parseInt(attr.raw_value));
 				}
-                                if (attr.attribute == "689") {  // this is for Muspelheim
+                if (attr.attribute == "689") {  // this is for Muspelheim
 					o.commanders.push(parseInt(attr.raw_value));
-                                }
-                                if (attr.attribute == "688") {  // this is for Muspelheim
+                }
+                if (attr.attribute == "688") {  // this is for Muspelheim
 					o.units.push(parseInt(attr.raw_value));
-                                }
+                }
 			}
 		}
 

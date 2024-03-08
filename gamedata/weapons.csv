@@ -512,7 +512,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 511	Stump	511	-2	-1	0	1	0	0	0	0	511	
 512	Fossilized Sword	512	0	1	1	1	0	0	0	2	512	
 513	Kopesh	513	0	0	1	1	0	0	0	2	513	
-514	Vitriol Breath	514	0	0	0	1	1007	0	515	0	514	
+514	Vitriol Breath	514	0	0	0	1	1007	0	0	0	514	
 515	Corrosion	515	0	0	0	1	0	0	0	0	515	
 516	Censer	516	-1	-1	1	1	0	0	517	2	516	
 517	Incense	517	0	0	0	1	0	0	0	0	517	
@@ -767,7 +767,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 766	Phantasmal Bite	766	0	0	-1	1	0	0	0	0	766	
 767	Phantasmal Claw	767	0	0	0	1	0	0	0	0	767	
 768	Phantasmal Great Weapon	768	0	0	2	1	0	0	0	0	768	
-769	Phantasmal Lance	769	0	0	3	1	0	0	0	0	769	
+769	Phantasmal Lance	769	0	0	3	1	1	0	0	0	769	
 770	Phantasmal Weapon	770	0	0	1	1	0	0	0	0	770	
 771	Phantasmal Weapon	771	0	0	1	1	0	0	0	0	771	
 772	Death Globe	772	5	0	3	1	0	0	0	0	772	
@@ -865,3 +865,10 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 864	Stunning Strike	864	0	0	-1	1	0	865	0	0	864	
 865	Stun	865	0	0	0	1	0	0	0	0	865	
 866	Spirit Strike	866	0	0	-1	1	0	865	0	0	866	
+867	Skull Club	867	1	0	2	1	0	868	0	7	867	
+868	Dark Slumber	868	0	0	0	1	0	0	0	0	868	
+869	Carrion Bow	869	0	0	0	1	12	0	870	0	869	
+870	Entanglement	870	0	0	0	1	0	0	871	0	870	
+871	Carrion Seed	871	0	0	0	1	0	0	0	0	871	
+872	Meteorite Dagger	872	1	0	0	1	0	0	0	0	872	
+873	Carrion Vine	873	0	0	3	1	0	0	871	0	873	
