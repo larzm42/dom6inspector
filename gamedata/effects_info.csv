@@ -28,6 +28,7 @@ number	name	test
 32	Damage (x3 vs Large Creatures) {Wpn: #dt_large}
 33	Damage (x2 vs Small Creatures) {Wpn: #dt_small}
 35	Cross Breeding
+36	Disintegrate
 37	Remote Summon (Permanent Units)
 38	Remote Summon (Temporary units)
 39	Gift of Reason
