@@ -740,6 +740,10 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'flyingmaxtotalsize', 'flyingmaxtotalsize',
 	'flyingmapmove', 'flyingmapmove',
 	'arenareward', 'arenareward',
+	'fireempower', 'fire elemental empowerment', Format.Signed,
+	'airempower', 'air elemental empowerment', Format.Signed,
+	'waterempower', 'water elemental empowerment', Format.Signed,
+	'earthempower', 'earth elemental empowerment', Format.Signed,
 	
 	'swiftness', 'swiftness',
 	'leper', 'reaper',
@@ -849,6 +853,8 @@ var flagorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'proudsteed', 'proud steed',
 	'scalewalls', 'scale walls',
 	'nononsleeper', 'cannot be used by non-sleeper',
+	'blur', 'blur',
+	'heavy', 'heavy',
 	
 	'champprize', 'Arena championship prize'
 ]);
