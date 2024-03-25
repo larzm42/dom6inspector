@@ -1,1 +1,1 @@
-The caster conjures a mighty blizzard. The temperature drops by 2 steps and a storm covers the battlefield. The spell can not be cast in hot provinces.
+The caster conjures an unexpected blizzard. The blizzard spell can only be cast in regions of neutral or slight heat. When cast the temperature drops suddenly and a snowstorm covers the battlefield.

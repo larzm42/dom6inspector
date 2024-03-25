@@ -103,7 +103,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 102	Faithful	102	2	4	1	1	0	0	0	0	102	
 103	Stone Sword	103	4	7	2	1	0	0	104	0	103	
 104	Area Petrification	104	0	0	0	1	0	0	0	0	104	
-105	Staff of Storms	105	2	4	3	1	0	0	232	0	105	
+105	Staff of Storms	105	2	4	3	1	0	0	0	0	105	
 106	Sword of Swiftness	106	2	4	1	2	0	0	0	0	106	
 107	Halberd of Might	107	2	3	3	1	0	0	0	0	107	
 108	Greatsword of Sharpness	108	4	4	2	1	0	0	0	0	108	
@@ -229,7 +229,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 228	Elf Shot	228	0	0	0	1	20	0	0	0	228	
 229	Flame Strike	229	0	0	2	1	0	0	0	0	229	
 230	Owl	230	0	0	5	1	0	0	0	0	230	
-231	Thunder Fist	231	0	0	-1	1	0	0	232	0	231	
+231	Thunder Fist	231	0	0	-1	1	0	0	0	0	231	
 232	Shock	232	0	0	0	1	0	0	0	0	232	
 233	Rune Smasher	233	2	1	1	1	0	0	0	0	233	
 234	Jotun Spear	234	0	0	3	1	0	0	0	1	234	
@@ -276,7 +276,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 275	Sun Sword	275	3	3	1	1	0	0	276	0	275	
 276	Small Area Holyfire	276	0	0	0	1	0	0	0	0	276	
 277	Demon Whip	277	4	0	4	1	0	0	237	0	277	
-278	Lightning Spear	278	2	2	3	1	0	0	232	0	278	
+278	Lightning Spear	278	2	2	3	1	0	0	0	0	278	
 279	Spectral Javelin	279	-2	0	0	1	2	0	0	0	279	
 280	Spectral Spear	280	0	0	3	1	0	0	0	0	280	
 281	Spectral Sword	281	0	1	1	1	0	0	0	0	281	
@@ -557,7 +557,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 556	Belly Maw	556	0	0	0	1	0	0	0	0	556	
 557	Stinger	557	0	0	2	1	0	52	0	0	557	
 558	Distorted Claw	558	0	0	-1	1	0	0	0	0	558	
-559	Brass Claw	559	0	0	-1	1	0	0	232	0	559	
+559	Brass Claw	559	0	0	-1	1	0	0	0	0	559	
 560	Venomous Bite	560	0	-1	-1	1	0	51	0	0	560	
 561	Gore Tide	561	0	0	0	1	0	0	0	0	561	
 562	Stone Fist	562	-1	-1	-1	1	0	0	0	0	562	
@@ -624,7 +624,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 623	Poisoned Obsidian Blade	623	1	0	1	1	0	624	0	7	623	
 624	Paralyzing Poison	624	0	0	0	1	0	0	0	0	624	
 625	Obsidian Blade	625	1	0	1	1	0	0	0	7	625	
-626	Thunder Axe	626	2	0	1	1	0	0	232	0	626	
+626	Thunder Axe	626	2	0	1	1	0	0	0	0	626	
 627	Death Blessing Disease	627	0	0	5	1	0	0	0	0	627	
 628	Tentacle	628	0	0	0	1	0	0	0	0	628	
 629	Sting	629	-3	0	0	1	0	834	0	0	629	
@@ -679,7 +679,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 678	Bow of the Titans	678	100	0	0	-2	10	0	0	0	678	
 679	Short Trident	679	-1	0	3	1	0	0	0	2	679	
 680	Short Bronze Trident	680	-1	0	3	1	0	0	0	3	680	
-681	Burning Blade	681	3	1	1	1	0	0	684	0	681	
+681	Burning Blade	681	3	1	1	1	0	0	0	0	681	
 682	Mace of Eruption	682	1	0	1	1	0	683	0	1	682	
 683	Flame Eruption	683	0	0	0	1	0	0	0	0	683	
 684	Flames	684	0	0	0	1	0	0	0	0	684	
@@ -703,7 +703,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 702	Gore	702	1	-1	0	1	0	0	0	0	702	
 703	Claw	703	0	0	-1	1	0	0	0	0	703	
 704	Small Area Shock	704	0	0	0	1	0	0	0	0	704	
-705	Vajra	705	2	0	0	1	0	0	232	0	705	
+705	Vajra	705	2	0	0	1	0	0	0	0	705	
 706	Gastraphetes	706	2	0	0	-2	12	0	0	3	706	
 707	Hand Axe	707	0	0	0	1	0	0	0	1	707	
 708	Stone Lance	708	0	0	3	1	0	0	0	1	708	
@@ -753,8 +753,8 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 752	Frost Breath	752	0	0	0	1	1003	0	0	0	752	
 753	Dive attack	753	4	0	0	1	1	0	0	0	753	
 754	Razor Wings	754	0	0	0	1	0	0	0	0	754	
-755	Burning Beak	755	0	0	-1	1	0	0	221	0	755	
-756	Burning Claw	756	0	0	-1	1	0	0	221	0	756	
+755	Burning Beak	755	0	0	-1	1	0	0	0	0	755	
+756	Burning Claw	756	0	0	-1	1	0	0	0	0	756	
 757	Bronze Scimitar	757	1	0	1	1	0	0	0	5	757	
 758	Silver Horns	758	-1	-1	1	1	0	0	0	0	758	
 759	XXX - Crossbow	759	2	0	0	-2	12	0	0	3	759	

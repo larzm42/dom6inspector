@@ -851,7 +851,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 849	Blindness	1	6	0	1	-1	0	849	1	100	20	0	0	4096	
 850	Hellscape	1	6	0	4	-1	0	850	1	0	0	10	0	16	
 851	Boil	1	6	0	3	2	1	851	1	100	20	0	0	1006	
-852	Blizzard	1	6	1	4	2	3	852	1	0	0	1	0	1	
+852	Blizzard	1	6	1	4	2	3	852	1	0	0	1	0	81	
 853	Frozen Heart	1	6	2	1	-1	0	853	1	100	20	0	0	2008	
 854	Manifest Vitriol	1	6	2	2	0	1	854	1	0	0	3	0	1983	
 855	Group Ironskin	1	6	3	3	-1	0	855	1	2	60	0	0	268435456	
