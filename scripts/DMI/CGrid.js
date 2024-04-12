@@ -167,6 +167,7 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 			if ($property.find(" input[type=text]:[value^='']").length
 				|| $property.find(" textarea:[value^='']").length
 				|| $property.find(" input[type=checkbox]:checked").length
+				|| $property.find(" input[type=number]:[value!='9']").length
 				|| ($property.find(" option:not(.default):selected").length && !($property.find(" select.nation").length))
 				|| ($property.find(":selected")[0] && $property.find(":selected")[0].text != "any nation" && $property.find(" select.nation").length)
 			)
@@ -178,6 +179,7 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 			if ($panel.find(" input[type=text]:[value^='']").length
 				|| $panel.find(" textarea:[value^='']").length
 				|| $panel.find(" input[type=checkbox]:checked").length
+				|| $panel.find(" input[type=number]:[value!='9']").length
 				|| ($panel.find(" option:not(.default):selected").length && !($panel.find(" select.nation").length))
 				|| ($panel.find(":selected")[0] && $panel.find(":selected")[0].text != "any nation" && $panel.find(" select.nation").length)
 			)
@@ -206,6 +208,7 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 		checkClearFilters.call(this);
 	});
 	$(that.domselp+" input[type=checkbox]").bind('change click', 	function(e) { that.doSearch(); $(this).saveState(); checkClearFilters.call(this); });
+	$(that.domselp+" input[type=number]").bind('change click', 	function(e) { that.doSearch(); $(this).saveState(); checkClearFilters.call(this); });
 	$(that.domselp+" select").bind('change', 			function(e) { that.doSearch(); $(this).saveState(); checkClearFilters.call(this); });
 	$(that.domselp+" input.clear-filters-btn").click(function(e) {
 		$panel = $(this).parents('.panel');
@@ -216,11 +219,23 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 		//clear inputs and select default options
 		$panel.find(" input[type=text]").val('').saveState();
 		$panel.find(" textarea").val('').saveState();
+		$panel.find(" input.level-path").val('9').saveState();
 		$panel.find(" input[type=checkbox]:checked:not(#loadEvents)").prop("checked", false).saveState();
 		$panel.find(" option.default").attr('selected', true).parent().saveState();
 		$panel.find('#nation').val(null).trigger('change');
 		$(this).hide();
 
+		checkGlobalClearFilters();
+		that.doSearch();
+
+		$panel.find(" input[type=text]").first().focus();
+	});
+	$(that.domselp+" input.zero-levels-btn").click(function(e) {
+		$panel = $(this).parents('.panel');
+
+		$(that.domselp+" input.level-path").val('0').saveState();
+
+		checkClearFilters.call(this);
 		checkGlobalClearFilters();
 		that.doSearch();
 
