@@ -597,6 +597,7 @@ MSpell.CGrid = DMI.Utils.Class( DMI.CGrid, function() {
 
 			aquatic: $(that.domselp+" select.aquatic").val(),
 
+			mlevels: {},
 			mpaths: ''
 		};
 		args.properties = Utils.propertiesWithKeys(args.properties);
@@ -613,6 +614,10 @@ MSpell.CGrid = DMI.Utils.Class( DMI.CGrid, function() {
 		//create string of mpaths from checkboxes
 		$(that.domselp+' .toggle-path:checked').each(function() {
 			args.mpaths += this.value;
+		});
+
+		$(that.domselp+' .level-path').each(function() {
+			args.mlevels[this.name] = this.value;
 		});
 		return args;
 	}
@@ -697,6 +702,14 @@ MSpell.CGrid = DMI.Utils.Class( DMI.CGrid, function() {
 		//search string
 		if (args.str && o.searchable.indexOf(args.str) == -1)
 			return false;
+
+		//magic levels
+		if (args.mlevels) {
+			if(args.mlevels[o.path1] < o.pathlevel1)
+				return false;
+			if(o.path2 && args.mlevels[o.path2] < o.pathlevel2)
+				return false;
+		}
 
 		//magic paths
 		if (args.mpaths) {

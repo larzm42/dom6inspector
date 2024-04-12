@@ -278,6 +278,7 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 			nation: $(that.domselp+" select.nation").val(),
 			generic: $(that.domselp+" input.generic:checked").val(),
 			national: $(that.domselp+" input.national:checked").val(),
+			mlevels: {},
 			mpaths: ''
 		};
 		args.properties = Utils.propertiesWithKeys(args.properties);
@@ -296,6 +297,10 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 		$(that.domselp+' .toggle-path:checked').each(function() {
 			args.mpaths += this.value;
 		});
+
+		$(that.domselp+' .level-path').each(function() {
+			args.mlevels[this.name] = this.value;
+		});
 		return args;
 	}
 	//apply search
@@ -312,6 +317,14 @@ MItem.CGrid = Utils.Class( DMI.CGrid, function() {
 		//search string
 		if (args.str && o.searchable.indexOf(args.str) == -1)
 			return false;
+
+		//magic levels
+		if (args.mlevels) {
+			if(args.mlevels[o.mainpath] < o.mainlevel)
+				return false;
+			if(o.secondarypath && args.mlevels[o.secondarypath] < o.secondarylevel)
+				return false;
+		}
 
 		//magic paths
 		if (args.mpaths) {

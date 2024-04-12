@@ -288,6 +288,18 @@ input.clear-filters-btn, #global-clear-filters-btn{
 	clear:right;
 }
 
+input.zero-levels-btn{
+	font-weight:bold;
+	font-size: 8pt;
+	padding:0px;
+	width: 18px;
+	height:18px;
+
+	display:block;
+	float:right;
+	clear:right;
+}
+
 /****************************************
 	filter buttons 
 ****************************************/
@@ -320,6 +332,24 @@ input.clear-filters-btn, #global-clear-filters-btn{
 	position:relative;
 	left: -5px;
 	
+	margin-right:-5px;
+}
+
+.level-path {
+	width:30px;
+	/*height:10px;*/
+	vertical-align: middle;
+	padding:0px; margin:0px;
+	margin-left:0px;
+}
+.level-path + label {
+	padding:0px; margin:0px;
+}
+.level-path + label img {
+	padding:0px; margin:0px;
+	position:relative;
+	left: -5px;
+
 	margin-right:-5px;
 }
 
