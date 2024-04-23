@@ -17,8 +17,8 @@ number	name	test
 21	Summon Commander
 22	Fate of Oedipus
 23	Bless/Buff (Type II)
-24	Damage (x3 vs Undead/Demon) {Wpn: #dt_holy}
-25	Wish
+24	Damage (x2 vs Undead/Demon) {Wpn: #dt_holy}
+25	Damage (x3 vs Undead/Demon) {Wpn: #dt_holy}
 26	Ritual of Rebirth
 27	Magic Duel
 28	Enslave

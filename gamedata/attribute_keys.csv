@@ -60,7 +60,7 @@ number	name	test
 160	Coastal Fort Troop {Ntn: #coastunit1}
 161	Coastal Fort Troop {Ntn: #coastunit2}
 162	Coastal Fort Troop {Ntn: #coastunit3}
-163	Non-Coastal Land Troop
+163	<Unknown Attribute>
 167	<Unknown Attribute>
 168	<Unknown Attribute>
 169	<Unknown Attribute>
@@ -475,3 +475,7 @@ number	name	test
 1700	Underwater summon
 1701	Cold summon
 1702	<Unknown Attribute>
+1703	<Unknown Attribute>
+1704	<Unknown Attribute>
+1705	<Unknown Attribute>
+1706	<Unknown Attribute>

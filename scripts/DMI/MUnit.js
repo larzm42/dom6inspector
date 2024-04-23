@@ -555,7 +555,7 @@ MUnit.prepareData_PostMod = function() {
 }
 
 MUnit.autocalc = function (o) {
-	if (parseInt(o.basecost) > 1000) {
+	if (parseInt(o.basecost) > 9000) {
 		// Autocalc
 		var leadership = {
 				0:	10,
@@ -2030,7 +2030,9 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 
 	'leper',	'reaper',		Format.Percent,
 	'popkill',	'kills population',	function(v,o){ return Format.PerTurn( parseInt(v) ) },
-	'corpseeater', 'corpse eater',
+	'corpseeater', 'eats corpses',
+	'deadhp', 'bonus HP per corpse',
+	'maxdeadhp', 'max corpse bonus HP',
 	'plaguedoctor', 'plague doctor',
 	'homesick',	'homesick',		Format.Percent,
 	'deserter',	'deserter',		Format.Percent,
@@ -2261,7 +2263,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'boartattoo', 'magic boar tattoo',
 	'sleepaura', 'sleep aura',
 	'snaketattoo', 'magic snake tattoo',
-	'appetite', 'supply size',
+	'appetite', 'extra supply size',
 	'astralfetters', 'astral fetters',
 	'foreignmagicboost', 'foreign magic boost',
 	'templetrainer', 'temple summon', function(v,o){
@@ -2487,6 +2489,7 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'snowmove',			'snow move',
 	'swimming',			'swimming',
 	'stupid',			'stupid',
+	'verystupid',		'very stupid',
 	'heal',		'recuperation',
 	'nobarding', 'no barding',
 	'cubmother', 'cub-mother',

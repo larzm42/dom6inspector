@@ -488,8 +488,16 @@ MSite.CGrid = Utils.Class( DMI.CGrid, function() {
 			return false;
 
 		//site scale
-		if (args.sitescale && (!o.scalesheader || !o.scalesheader.includes(args.sitescale)))
-			return false;
+		if (args.sitescale) {
+		    if (args.sitescale == "noscales") {
+		        if (!o.scalesheader) {
+		        } else {
+		            return false;
+		        }
+		    } else if (!o.scalesheader || !o.scalesheader.includes(args.sitescale)) {
+		        return false;
+		    }
+		}
 
 		//site terrain
 		if (args.siteterrain && args.siteterrain > 0 && !(o.loc & args.siteterrain))
