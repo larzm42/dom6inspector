@@ -184,6 +184,7 @@ number	name	test
 709	Duration 1 month+
 710	Does not affect floating commanders
 711	Site Required
+712	<Unknown Attribute>
 713	Only cast at coast {Spl: #onlycoastsrc}
 715	Caster must be flying
 716	<Unknown Attribute>
@@ -479,3 +480,4 @@ number	name	test
 1704	<Unknown Attribute>
 1705	<Unknown Attribute>
 1706	<Unknown Attribute>
+1707	<Unknown Attribute>

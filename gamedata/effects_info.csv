@@ -27,6 +27,7 @@ number	name	test
 31	Call Horror
 32	Damage (x3 vs Large Creatures) {Wpn: #dt_large}
 33	Damage (x2 vs Small Creatures) {Wpn: #dt_small}
+34	Unknown
 35	Cross Breeding
 36	Disintegrate
 37	Remote Summon (Permanent Units)
