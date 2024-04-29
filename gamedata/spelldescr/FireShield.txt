@@ -1,1 +1,1 @@
-A wall of fire surrounds the mage. Anyone trying to strike the mage in melee combat will be burned by the Fire Shield first. Attackers with long weapons such as spears and pikes will not suffer as severe burns as an attacker with a dagger or fist.
+A wall of fire surrounds the mage. Anyone trying to strike the mage in melee combat will be burned by the Fire Shield immediately after attacking. Attackers with long weapons such as spears and pikes will not suffer as severe burns as an attacker with a shortsword or a dagger.

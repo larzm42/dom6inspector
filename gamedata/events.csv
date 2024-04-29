@@ -439,7 +439,7 @@ id	name	rarity	description	requirements	effects	end
 438	Carnivorous apes are causing u	1	Carnivorous apes are causing unrest in the region.	fornation 20|8100 30|land 1	unrest 20	
 439	A little known sect of carnivo	1	A little known sect of carnivorous apes are sacrificing humans in the woods.	fornation 20|turn 15|8100 35|land 1	kill 1|unrest 5|incdom 1	
 440	Humans have disappeared at nig	1	Humans have disappeared at night, never to return.	fornation 20|turn 1|8100 50|land 1	kill 1|unrest 5	
-441	A malevolent conjurer, jealous	2	A malevolent conjurer, jealous of your power, sent a demon to slay one of your commanders.	fornation 68|turn 30|commander 1|magic 0	assassin 1738	
+441	A malevolent conjurer, jealous	2	A malevolent conjurer, jealous of your power, sent a demon to slay one of your commanders.	fornation 68|turn 30|commander 1|magic 5|lab 0	assassin 1738	
 442	A mob of monkeys has beaten th	1	A mob of monkeys has beaten the local human sheriff to death.	fornation 20|turn 25|land 1|minpop 50	unrest 20	
 443	Humans have been killed or dri	1	Humans have been killed or driven from the province in large numbers. 	fornation 20|turn 25|land 1|minpop 50	kill 10	
 444	A demon summoned by local bloo	2	A demon summoned by local blood-cultists has run amok.	fornation 20|turn 25|land 1	nation 0|com 1714	
@@ -613,8 +613,8 @@ id	name	rarity	description	requirements	effects	end
 612	Creatures have emerged from th	1	Creatures have emerged from the magical woods! [Twisting Woods]	site 1	com 453|com 453|2d6units 455|1d6units 468|2d6units 455	
 613	Magical beings from the forest	1	Magical beings from the forest are trying to reclaim what was taken. [Forest of the Dead]	pop0ok 1|site 1	com 714|com 714|1d6units 313|1d6units 313|1d6units 313	
 614	A pack of animals have been en	-1	A pack of animals have been enthralled by the Animist.	monster 552|land 1	nation -2|2d6units 549|1d6units 463	
-615	A cult is growing. They worshi	1	A cult is growing. They worship Fire and do not pay heed to the priests of ##godname##. [Magus Temple]	hiddensite 1|minpop 10	incdom -3|decscale Cold	
-616	A cult is growing. They worshi	-2	A cult is growing. They worship Fire and do not pay heed to the priests of ##godname##. Their leader is a powerful mage. [Magus Temple]	hiddensite 1|minpop 10	incdom -3|decscale Cold|nation -2|com 480	
+615	A cult is growing. They worshi	1	A cult is growing. They worship Fire and do not pay heed to the priests of ##godname##. [Magus Temple]	hiddensite 1|minpop 10|mydominion 1	incdom -3|decscale Cold	
+616	A cult is growing. They worshi	-2	A cult is growing. They worship Fire and do not pay heed to the priests of ##godname##. Their leader is a powerful mage. [Magus Temple]	hiddensite 1|minpop 10|mydominion 1	incdom -3|decscale Cold|nation -2|com 480	
 617	A winter solstice, an abundanc	-1	A winter solstice, an abundance of magical gems were found in the Solar Circle. [Solar Circle]	foundsite 1|season 3|pop0ok 1	3d6vis F	
 618	A summer solstice, an abundanc	-1	A summer solstice, an abundance of magical gems were found in the Solar Circle. [Solar Circle]	foundsite 1|season 1|pop0ok 1		
 619	There are rumors of a hidden s	2	There are rumors of a hidden site of mystical power.	9600 1|unluck 0	decscale Cold|nation 0	
@@ -1983,7 +1983,7 @@ id	name	rarity	description	requirements	effects	end
 1982	Plague is spreading among the 	2	Plague is spreading among the populace.	turn 15|noseason 3|code 0	code -16|kill 2|unrest 15	
 1983	There are rumors of plague in 	0	There are rumors of plague in a neighboring province. People are suspicious of foreigners and trade has been hampered. Armed men could probably seal the borders, but this would further decrease commerce.	9600 25|code 0|nearbycode -16	code -17|taxboost -25|unrest 15	
 1984	Plague is spreading among the 	0	Plague is spreading among the populace.	9600 50|code -17	code -16|kill 3|unrest 15	
-1985	The rumors of plague seems to 	0	The rumors of plague seems to have been false. People praise your mercy and pay offerings of thanks at the altars!	9600 50|code -17	code 0|taxboost 100|incdom 3|unrest -15	
+1985	The rumors of plague seems to 	0	The rumors of plague seems to have been false. People praise your mercy and pay offerings of thanks at the altars!	9600 50|code -17|mydominion 1	code 0|taxboost 100|incdom 3|unrest -15	
 1986	The plague has subsided.	0	The plague has subsided.	9600 25|code -16	code 0|unrest -5	
 1987	The plague is still reaping bo	0	The plague is still reaping both young and old. Prayers for mercy are whispered at your shrines!	9600 20|code -16	code 0|kill 2|incdom 1|unrest 5	
 1988	The plague is still reaping bo	0	The plague is still reaping both young and old. Your priests preach that only more offerings and prayers can bring an end to suffering.	9600 25|pathholy 1|code -16	taxboost 20|kill 2|incdom 1|unrest 5	
@@ -2168,7 +2168,7 @@ id	name	rarity	description	requirements	effects	end
 2167	Traveling into the ancient woo	0	Traveling into the ancient woods, an enclave of bloodhenge druids have been encountered and a battle to the death ensued.	mintroops 10|monster 2327|code -31	code -32|4com 122|addequip 1|4com 122|AB00 -12	
 2168	The bloodhenge druids have bee	0	The bloodhenge druids have been defeated, their treasures stolen and the prisoner released!	nomonster 122|code -32	code 0|nation -2|com 2332|1d6vis N|magicitem 2	
 2169	One of your mages has traveled	-1	One of your mages has traveled deep into the forest to seek wisdom and returned with deeper knowledge of the arts.	pathnature 1|forest 1|growth 1|code -26	code 0|pathboost 6	
-2170	The hoburgers have proliferate	0	The hoburgers have proliferated.	9600 5|monster 273|code -26	nation -2|A300 273|2d6units 283	
+2170	The hoburgers have proliferate	0	The hoburgers have proliferated.	9600 5|monster 273|code -26	nation -2|2d6units 273|A400 483|A100 271	
 2171	One of your priests has held s	0	One of your priests has held service at the Grove of Revelry. The ritual has given deepened knowledge of the mysteries. Faith has increased. [Grove of Revelry]	unique 3|9600 20|dominion 2|growth 0|anycode -25|foundsite 1	pathboost 9|incdom 3	
 2172	One of your priests has held s	0	One of your priests has held service at the Grove of Revelry. The ritual deepened his knowledge of the mysteries and faith has increased. [Grove of Revelry]	foundsite 1|unique 2|9600 30|dominion 2|growth 0|code -26	pathboost 9|incdom 3	
 2173	Some trees in the forest have 	-1	Some trees in the forest have sprouted leaves in the midst of winter! The place has been blessed by Gaia and is now used for offerings. [Grove of Fertility]	season 3|forest 1|freesites 1|code -26	code 0|newsite -1	
@@ -2250,7 +2250,7 @@ id	name	rarity	description	requirements	effects	end
 2249	A fire has destroyed the arcan	0	A fire has destroyed the arcane laboratory.	pop0ok 1|9600 3|lab 1|heat -1|turn 10|code -7	code 0|lab 0	
 2250	An enormous earthquake has str	0	An enormous earthquake has struck! Later, when the earth settled, horrible monsters appeared from the cracks in the ground.	pop0ok 1|9600 1|turn 10|code -7	code 0|com 447|6d6units 447|kill 25	
 2251	A heatwave has struck the land	0	A heatwave has struck the land. Drought is expected.	9600 2|code -7	code 0|decscale3 Cold	
-2252	A hailstorm has devastated the	0	A hailstorm has devastated the countryside, killing cattle and shepherds.	9600 2|code -7	code 0|kill 2|unrest 5|gold -80	
+2252	A hailstorm has devastated the	0	A hailstorm has devastated the countryside, killing cattle and shepherds.	9600 2|cave 0|code -7	code 0|kill 2|unrest 5|gold -80	
 2253	Storms at sea have taken many 	0	Storms at sea have taken many ships lately, diminishing trade.	9600 10|coast 1|heat 0|code -7	code 0|landgold -10	
 2254	Heavy snowfalls have blocked i	0	Heavy snowfalls have blocked important trade routes.	9600 8|season 3|cold 0|code -7	code 0|gold -200	
 2255	The harsh winter has killed ma	0	The harsh winter has killed many poor folks.	9600 8|season 3|cold 0|code -7	code 0|kill 4	
@@ -2997,11 +2997,11 @@ id	name	rarity	description	requirements	effects	end
 2996	First Gate appears, for testin	0	First Gate appears, for testing, will happen only if forced. [The First Gate]	9600 0|code 0	4200 -1	
 2997	Oh, no! The Queen of the Garne	0	Oh, no! The Queen of the Garnet Amazon tribe has ambitions of conquest! HIDDEN [Oasis]	freesites 1|8100 1|9600 15|4700 1|poptype 41|unique 1|code 0|capital 0|land 1|story 2	code 275|notext 1|newsite -1	
 2998	The Land of the Garnet Queen h	0	The Land of the Garnet Queen has been conquered and her palace claimed! Unfortunately, it seems most of the fabled riches of her abode have been squandered on wine and debauchery! As compensation, her slaves and virgin followers were taken. 	unique 1|code 275	code 0|resetcode 276|resetcode 276|resetcode 276|gold 80|3d6vis B	
-2999	The Garnet Queen comes to powe	0	The Garnet Queen comes to power. HIDDEN	4700 1|unique 1|code 275	com 350|10d6units 351|4d6units 612|2com 349|addequip 1	
-3000	The Garnet Queen is crowned. H	0	The Garnet Queen is crowned. HIDDEN	4700 1|mnr 350|unique 1|code 275	fireboost 350|fireboost 350|holyboost 350|addequip 1|gainaff 0	
-3001	The Garnet Queen is fitted wit	0	The Garnet Queen is fitted with garments. HIDDEN [Blood Thorn]	4700 1|E500 0|mnr 350|unique 1|code 275	addequip 9|holyboost 350|addequip 9	
+2999	The Garnet Queen comes to powe	0	The Garnet Queen comes to power. HIDDEN	4700 1|unique 1|code 275	com 350|10d6units 351|4d6units 612|2com 349|addequip 1|notext 1	
+3000	The Garnet Queen is crowned. H	0	The Garnet Queen is crowned. HIDDEN	4700 1|mnr 350|unique 1|code 275	fireboost 350|fireboost 350|holyboost 350|addequip 1|gainaff 0|notext 1	
+3001	The Garnet Queen is fitted wit	0	The Garnet Queen is fitted with garments. HIDDEN [Blood Thorn]	4700 1|E500 0|mnr 350|unique 1|code 275	addequip 9|holyboost 350|addequip 9|notext 1	
 3002	The queen replenishes her slav	0	The queen replenishes her slaves.	9600 10|turn 30|E500 0|mnr 350|4700 1|unique 3	addequip 1	
-3003	The Garnet Queen is fitted wit	0	The Garnet Queen is fitted with garments. HIDDEN [Lifelong Protection]	9600 20|E500 0|mnr 350|unique 1|code 275|4700 1	addequip 9	
+3003	The Garnet Queen is fitted wit	0	The Garnet Queen is fitted with garments. HIDDEN [Lifelong Protection]	9600 20|E500 0|mnr 350|unique 1|code 275|4700 1	addequip 9|notext 1	
 3004	Gryphon riders have been sight	0	Gryphon riders have been sighted flying over the land.	9600 10|5C00 275|nearbycode 275|capital 0|land 1|code 0|4700 1|unique 8	code 276	
 3005	People speak in fear of the Qu	0	People speak in fear of the Queen of the garnet amazon that has come to power in a neighboring land. She is rumored to be unsurpassed in both beauty and cruelty!	9600 10|nearbycode 275|5C00 275|capital 0|land 1|code 0|4700 1	code 276	
 3006	Ferocious amazons have attacke	0	Ferocious amazons have attacked!	9600 50|anycode 275|4700 1|unique 9|code 276	code 277|2com 349|addequip 1|6d6units 351|2d6units 612	
@@ -3230,7 +3230,7 @@ id	name	rarity	description	requirements	effects	end
 3231	One of the Yllerions has died 	0	One of the Yllerions has died and his partner was seen flying east with a great host of lamenting birds. When she reached the sea she plunged herself into the waves and drowned herself. Soon afterwards the flaming eggs in their nest cracked open and two new Yllerion birds were hatched. The abbot sages has declared that it is time to once more call the Birds of Splendour.	9600 50|nomnr 3382|monster 3383	killcom 3383	
 3232	One of the Yllerions has died 	0	One of the Yllerions has died and her partner was seen flying east with a great host of lamenting birds. When he reached the sea he plunged himself into the waves and drowned hirself. Soon afterwards the flaming eggs in their nest cracked open and two new Yllerion birds were hatched. The abbot sages has declared that it is time to once more call the Birds of Splendour.	9600 50|nomnr 3383|monster 3382	killcom 3382	
 3233	Bilqis, known in foreign lands	-1	Bilqis, known in foreign lands as the Queen of Na'Ba, has established contacts with a foreign king. Praising him for his widsom and giving him extraordinary gifts from the Vault of Incense and Marvels she was in return showered in gold and gems.	fornation 65|nomnr 3385|capital 1	gold 250|1d6vis -1	
-3234	A hurricane has struck the lan	0	A hurricane has struck the land, devastating the countryside.	pop0ok 1|9600 10|7600 25|land 1	unrest 25|kill 3	
+3234	A hurricane has struck the lan	0	A hurricane has struck the land, devastating the countryside.	pop0ok 1|9600 10|land 1|7600 25	unrest 25|kill 3	
 3235	The dwarves holding up the sky	13	The dwarves holding up the sky are not doing their job properly. The sky has fallen, the entire world is covered in permanent darkness and violent storms are raging.	monster 3425|6100 3426|6100 3426|6100 3426	worlddarkness 1|9100 1	
 3236	A new gold vein has been found	-1	A new gold vein has been found in a Gold Mine! [Hidden Gold Mine]	foundsite 1	gold 400	
 3237	A new vein has been found in a	-1	A new vein has been found in a Silver Mine! [Silver Mine]	foundsite 1	gold 250	
@@ -3265,8 +3265,8 @@ id	name	rarity	description	requirements	effects	end
 3266	The Throne of the Sun has been	13	The Throne of the Sun has been claimed. Suddenly it feel like something missing has returned to the world. [The Throne of the Sun]	claimedthrone 1|site 1|unique 1	worlddecscale Turmoil	
 3267	The Throne of Creation has bee	13	The Throne of Creation has been claimed. People are filled with creativity and willingness to work hard. [The Throne of Creation]	claimedthrone 1|site 1|unique 1	worldunrest -10|worlddecscale Sloth	
 3268	The Throne of Destiny has been	13	The Throne of Destiny has been claimed. This must surely be an omen for great things to come. [The Throne of Destiny]	claimedthrone 1|site 1|unique 1	worlddecscale Misfortune	
-3269	##targname## was ambushed in a	0	##targname## was ambushed in a house while performing his duties of examining a young girl living there.	9600 8|9B00 10|land 1|targorder 8|targpath4 0|EF00 0	2700 5|0400 3822|e3 3823|assassin 3823	
-3270	##targname## was ambushed in a	0	##targname## was ambushed in a house while performing his duties of examining two young girls living there.	9600 4|9B00 10|land 1|targorder 8|targpath4 0|EF00 0	2700 5|0400 3821|0400 3821|assassin 3823	
+3269	##targname## was ambushed in a	0	##targname## was ambushed in a house while performing ##targhis## duties of examining a young girl living there.	9600 8|9B00 10|land 1|targorder 8|targpath4 0|EF00 0	2700 5|0400 3822|e3 3823|assassin 3823	
+3270	##targname## was ambushed in a	0	##targname## was ambushed in a house while performing ##targhis## duties of examining two young girls living there.	9600 4|9B00 10|land 1|targorder 8|targpath4 0|EF00 0	2700 5|0400 3821|0400 3821|assassin 3823	
 3271	On top of a distored cube ther	-1	On top of a distored cube there was a perfect circle of pearls.	9D00 1|magic 3	2d6vis S	
 3272	This is a strange place. Sudde	-1	This is a strange place. Suddenly there were pearls on top of the small pyramids.	9D00 1|magic 3	2d6vis S	
 3273	What a strange shape. Looks li	-2	What a strange shape. Looks like it is made up of perfect gems.	9D00 1|magic 3	1400 3	
@@ -3282,3 +3282,10 @@ id	name	rarity	description	requirements	effects	end
 3283	A huge horde of cavemen has un	1	A huge horde of cavemen has unexpectedly attacked and pillaged the province.	capital 0|land 1|cave 0|unluck 3|turn 10|land 1	nation 4|com 1616|10d6units 1615|com 1616|A400 1615|kill 20	
 3284	Suddenly a giant rat attacked 	1	Suddenly a giant rat attacked one of your commanders!	land 1|farm 1|commander 1	assassin 410	
 3285	Suddenly a pack of giant rats 	2	Suddenly a pack of giant rats attacked one of your commanders!	land 1|commander 1	0600 410|assassin 410	
+3286	The rumors of plague seems to 	0	The rumors of plague seems to have been false. People praise the mercy of their false god!	9600 50|code -17|maxdominion -1	code 0|taxboost 100|incdom 3|unrest -15	
+3287	The Succubus has collected eno	0	The Succubus has collected enough semen to spawn a cambion progeny. Her offspring was born fully aware with magical abilities and reached adulthood within weeks.	9600 10|land 1|mnr 811|0601 3	D100 -10|nation -2|com 4054	
+3288	The Succubus has collected eno	0	The Succubus has collected enough semen to spawn a cambion progeny. Her offspring was born fully aware with magical abilities and reached adulthood within weeks.	9600 10|land 1|mnr 811|0601 3	D100 -10|nation -2|com 4055	
+3289	The Incubus has sired a cambio	0	The Incubus has sired a cambion progeny. His offspring was born fully aware with magical abilities and reached adulthood within weeks.	9600 25|land 1|mnr 4053|0601 1	D100 -10|nation -2|com 4054	
+3290	The Incubus has sired a cambio	0	The Incubus has sired a cambion progeny. His offspring was born fully aware with magical abilities and reached adulthood within weeks.	9600 25|land 1|mnr 4053|0601 1	D100 -10|nation -2|com 4055	
+3291	The Red Mistress has collected	0	The Red Mistress has collected enough semen to spawn a cambion progeny. Her offspring was born fully aware with magical abilities and reached adulthood within weeks.	9600 20|land 1|mnr 4059|0601 3	D100 -10|nation -2|com 4054	
+3292	The Red Mistress has collected	0	The Red Mistress has collected enough semen to spawn a cambion progeny. Her offspring was born fully aware with magical abilities and reached adulthood within weeks.	9600 20|land 1|mnr 4059|0601 3	D100 -10|nation -2|com 4055	

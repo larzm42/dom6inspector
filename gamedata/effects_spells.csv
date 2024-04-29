@@ -450,8 +450,8 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 448	25		0	Spell	1005	96	30	5	0	3	10		
 449	50		1	Spell	3629	0	0	0	0	0	0		
 450	0		0	Spell	0	0	0	0	0	0	0		
-451	0		0	Spell	0	0	0	0	0	0	0		
-452	0		0	Spell	0	0	0	0	0	0	0		
+451	21		1	Spell	4053	0	0	0	0	0	0		
+452	21		1	Spell	811	0	0	0	0	0	0		
 453	73		0	Spell	13	274945015872	40	0	0	0	0		
 454	73		0	Spell	10	274945015872	30	0	0	0	0		
 455	21		1	Spell	1975	0	0	0	0	0	0		
@@ -859,7 +859,7 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 857	11		0	Spell	2199023255552	8388608	0	0	0	0	0	100	
 858	99		0	Spell	999	8388740	30	0	0	1	0		
 859	1		1	Spell	924	0	0	0	0	0	0		
-860	23		0	Spell	1	549994496	15	0	0	16	1		
+860	23		0	Spell	1	12599296	15	0	0	16	1		
 861	28		0	Spell	999	8409232	25	0	0	0	0		
 862	10		0	Spell	274877906944	140737500954624	0	0	0	0	0	100	
 863	23		0	Spell	2048	8404992	0	0	0	0	0		
@@ -883,7 +883,7 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 881	10		0	Spell	65536	12582916	15	0	0	17	1		
 882	82		1	Spell	113	8388608	0	0	0	0	0		
 883	11		0	Spell	2	8650752	0	0	0	0	0	100	
-884	23		0	Spell	1	549978112	0	0	0	0	0	100	
+884	23		0	Spell	1	12582912	0	0	0	0	0	100	
 885	82		1	Spell	142	8388608	0	0	0	0	0		
 886	2		0	Spell	3	10485888	0	0	0	0	0	100	
 887	54		0	Spell	2222	546197508	25	0	0	0	0		
@@ -1236,7 +1236,7 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 1234	81		1	Spell	30	8388608	0	0	0	0	0		
 1235	23		0	Spell	16777216	8405120	15	0	0	1	1		
 1236	82		1	Spell	114	0	0	0	0	0	0		
-1237	23		0	Spell	16	8405120	15	0	0	1	1		
+1237	23		0	Spell	16	12599424	15	0	0	1	1		
 1238	23		0	Spell	36028797018963968	8405120	20	0	0	16	1		
 1239	82		1	Spell	141	0	0	0	0	0	0		
 1240	10		0	Spell	1024	12582912	0	0	0	0	0	100	
@@ -1458,3 +1458,6 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 1456	81		1	Spell	57	0	0	0	0	0	0		
 1457	11		0	Spell	64	8404992	20	0	0	1	1		
 1458	63		1	Spell	10	8388608	0	0	0	0	0		
+1459	21		1	Spell	4053	0	0	0	0	0	0		
+1460	29		0	Spell	999	1152947892886061184	20	0	0	0	0		
+1461	10		0	Spell	1073741824	4294983808	0	0	0	0	0		

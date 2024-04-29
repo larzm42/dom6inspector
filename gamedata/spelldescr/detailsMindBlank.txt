@@ -1,1 +1,1 @@
-75% chance of +10 MR vs the next mind affecting spell. 75% chance of protecting if targeted by magic duel.
+75% chance of +10 MR vs the next mind affecting spell. 75% chance of granting a MR check in order to negate a magic duel.
