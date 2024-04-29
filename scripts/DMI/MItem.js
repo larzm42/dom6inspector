@@ -785,6 +785,7 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'stormimmune', 'storm immunity',
 	'lesserhorrorattackchance', 'attack by lesser horrors', Format.Percent,
 	'falsesupplies', 'false supplies',
+	'dreamenhancer', 'dream enhancer', Format.Signed,
 	'eatforyouth', 'eat for youth', function(v,o){
 		return '-' + v +' years';
 	}
