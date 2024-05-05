@@ -102,6 +102,7 @@ DMI.initGrids = function() {
 		showOrHideModdingInfo();
 		showOrHideKeys();
 		showOrHideModCmds();
+		showOrHideDescriptions();
 	}
 	$('#showids').click( function(){setTimeout(showOrHideIds,0);} ); //asynchronous call as its a bit sluggish
 
@@ -152,6 +153,18 @@ DMI.initGrids = function() {
 	}
 	$('#showmodcmds').click( function(){setTimeout(showOrHideModCmds,0);} );  //asynchronous call as its a bit sluggish
 
+	function showOrHideDescriptions() {
+		if ($('#hidedescriptions').saveState().is(':checked')) {
+			$( "<style>.overlay-descr { display:none !important; }</style>" ).appendTo( "head" );
+
+			DMI.Options['Show descriptions'] = 0;
+		}
+		else {
+			$( "<style>.overlay-descr { display:block !important; }</style>" ).appendTo( "head" );
+			DMI.Options['Show descriptions'] = 1;
+		}
+	}
+	$('#hidedescriptions').click( function(){setTimeout(showOrHideDescriptions,0);} );  //asynchronous call as its a bit sluggish
 
 
 	//jquery plugin. no shit
