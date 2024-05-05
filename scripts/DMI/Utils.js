@@ -8,6 +8,7 @@ Options['Show database keys'] = 0;
 Options['Show ids'] = 0;
 Options['Show popup refs'] = 1;
 Options['Show internal keys'] = 1;
+Options['Show descriptions'] = 1;
 
 //loaded from query string
 Options['Show mod cmds'] = null;
