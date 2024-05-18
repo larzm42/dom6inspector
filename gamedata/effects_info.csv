@@ -100,7 +100,7 @@ number	name	test
 118	Blood Feast
 119	Remote Summon Stealthy Commander
 120	Unleash Imprisoned Ones
-121	Swallow (Size 1 and 2 only)
+121	Swallow if not Greater than Size/2
 122	Swallow if Smaller, else Damage
 123	Damage Armor (can destroy magic items)
 125	Mind Vessel
