@@ -465,8 +465,8 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 463	Call Celestial Yazad	0	6	4	4	-1	0	463	1	0	0	40	0	-16	
 464	Call Fravashi	0	7	4	3	-1	0	464	1	0	0	30	0	2563	
 465	Call Amesha Spenta	0	8	4	5	-1	0	465	1	0	0	60	0	12	
-466	Summon Yazatas	0	5	4	2	-1	0	466	6	0	0	15	0	1607	
-467	Call Daevas	0	5	5	2	0	1	467	6	0	0	15	0	2630	
+466	Summon Yazatas	0	5	4	2	-1	0	466	6	0	0	12	0	1607	
+467	Call Daevas	0	5	5	2	0	1	467	6	0	0	12	0	2630	
 468	Call Jahi	0	5	5	3	0	1	468	1	-2	0	15	0	2631	
 469	Call Yata	0	6	5	3	0	2	469	1	0	0	40	0	-17	
 470	Call of the Drugvant	5	7	5	4	0	1	470	1	0	0	15	0	15	

@@ -1,2 +1,2 @@
-Performing rituals, forging and empowerment results in two d(gems spent / 2) AN fire attack. Damage underwater is halved.
+Performing rituals, forging and empowerment results in two d(gems spent / 2) AN fire attacks. Damage underwater is halved.
 Using magic gems in combat results in catching fire.

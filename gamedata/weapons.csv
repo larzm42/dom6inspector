@@ -855,7 +855,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 854	Chain Shock	854	0	0	0	1	0	0	0	0	854	
 855	Incineration	855	0	0	0	1	0	0	0	0	855	
 856	Fire Flare	856	0	0	0	1	0	0	0	0	856	
-857	Katana	857	2	1	1	1	0	0	0	7	857	
+857	Katana	857	2	1	1	1	0	0	0	0	857	
 858	Katana	858	3	2	1	1	0	0	0	7	858	
 859	Infected Bite	859	0	-1	-1	1	0	860	0	0	859	
 860	Disease	860	0	0	1	1	0	0	0	0	860	

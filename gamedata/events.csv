@@ -339,7 +339,7 @@ id	name	rarity	description	requirements	effects	end
 338	For a few days the animals see	2	For a few days the animals seemed determined to cause bad luck. Snakes and rabbits were crossing peoples paths all the time.	growth -2|land 1	incscale3 Misfortune	
 339	Locust swarms are eating the c	2	Locust swarms are eating the crops and causing widespread panic.	growth 0|land 1	id 8|unrest 20|taxboost -50	
 340	Hordes of peasants have left t	2	Hordes of peasants have left their homes in search of a better place to live.	7200 12|chaos 0	emigration 30	
-341	A hurricane has struck the lan	2	A hurricane has struck the land, devastating the countryside.	land 1|chaos 1|turn 10	id 7|unrest 25|kill 3	
+341	A hurricane has struck the lan	2	A hurricane has struck the land, devastating the countryside.	land 1|cave 0|chaos 1|turn 10	id 7|unrest 25|kill 3	
 342	A horrible tempest has struck 	2	A horrible tempest has struck the land. The servants of Pazuzu could be heard bellowing in the storm. Unrest has increased	land 1|cave 0|chaos 3|unluck 2	id 14|unrest 35|kill 4	
 343	A plague has struck the land. 	2	A plague has struck the land. Empty cabins and rotting corpses litter the landscape.	death 1|turn 15|unluck -1	kill 50|unrest 10	
 344	A blizzard has struck the prov	2	A blizzard has struck the province, killing animals and young. The heavy snowfalls hampered trade and production.	cold 2|land 1|cave 0|turn 10	kill 5|unrest 5|gold -150	
@@ -2257,8 +2257,8 @@ id	name	rarity	description	requirements	effects	end
 2256	The wolves are hungry this win	0	The wolves are hungry this winter and locals are being attacked and killed by the score.	9600 8|season 3|code -7	com 1224|1d6units 1224|A600 284|kill 2|unrest 10	
 2257	The weather is getting increas	0	The weather is getting increasingly colder and an unseasonal winter is expected.	pop0ok 1|9600 8|season 2|code -7	code 0|incscale3 Cold	
 2258	The temperature has dropped co	0	The temperature has dropped considerably and blizzards have devastated the land. Many have died from starvation.	9600 3|cold 1|code -7	code 0|incscale3 Cold|kill 4	
-2259	A hurricane has struck the lan	0	A hurricane has struck the land, devastating the countryside.	pop0ok 1|9600 3|code -7	code 0|unrest 25|kill 3	
-2260	A blizzard has struck the prov	0	A blizzard has struck the province, killing animals and young. The heavy snowfalls hampered trade and production.	9600 3|cold 2|code -7	code 0|kill 2|unrest 5|gold -150	
+2259	A hurricane has struck the lan	0	A hurricane has struck the land, devastating the countryside.	cave 0|pop0ok 1|9600 3|code -7	code 0|unrest 25|kill 3	
+2260	A blizzard has struck the prov	0	A blizzard has struck the province, killing animals and young. The heavy snowfalls hampered trade and production.	cave 0|9600 3|cold 2|code -7	code 0|kill 2|unrest 5|gold -150	
 2261	Insect swarms are eating the c	0	Insect swarms are eating the crops and annoying the populace.	9600 3|growth -2|code -7	code 0|unrest 10|gold -50	
 2262	Disease is spreading.	2	Disease is spreading.	land 1|minpop 20|turn 10|code 0	code -36|disease 1|kill 1	
 2263	The recent plague has hampered	0	The recent plague has hampered trade. Hopefully this will also contain the disease.	9600 7|code -36	code 0|taxboost -80|kill 1	
@@ -2815,7 +2815,7 @@ id	name	rarity	description	requirements	effects	end
 2814	Several water elementals have 	0	Several water elementals have been bound! [Lake of Living Water]	luck 1|9600 10|unique 1|foundsite 1|targpath2 2|targorder 108|code 226	nation -2|2d6units 3735	
 2815	Your cunning mage has managed 	0	Your cunning mage has managed to trap one of the elementals from the Lake. [Bottle of Living Water]	9600 15|unique 3|targpath2 2|targorder 108|code 226	magicitem 9	
 2816	Insights have been gained from	0	Insights have been gained from prodding the depths of the Lake of Living Water.  [Lake of Living Water]	9600 6|unique 1|foundsite 1|targpath2 2|targorder 108|code 226	pathboost 2	
-2817	A whisper of falsehood and wic	0	A whisper of falsehood and wickedness has swept across the land. The Druj, People of the Lie, those of evil intentions, are called forth to spread the will of the destructive spirit. Rebellions, murder and thefts cause unrest and strife across the province. In its wake came the Daevas, demonic beings that thrive on destruction, and slaughter begun.	9600 0|land 1	id 15|unrest 50|nation 2|com 1912|A600 482|7700 1|com 1912|2d6units 2630|kill 5	
+2817	A whisper of falsehood and wic	0	A whisper of falsehood and wickedness has swept across the land. The Druj, People of the Lie, those of evil intentions, are called forth to spread the will of the destructive spirit. Rebellions, murder and thefts cause unrest and strife across the province. In its wake came the Daevas, demonic beings that thrive on destruction, and slaughter begun.	9600 0|land 1	id 15|unrest 50|nation 2|com 1912|AB00 482|7700 1|com 1912|A400 2630|kill 5	
 2818	A pack of werewolves have been	0	A pack of werewolves have been summoned to serve the Lord of Beasts.	9600 10|code -21|land 1	code 0|nation -2|2d6units 633	
 2819	A vengeful sea hag has cursed 	1	A vengeful sea hag has cursed this province.	growth -2|land 0	incscale3 Misfortune|curse 10	
 2820	A pack of sea dogs is roving t	1	A pack of sea dogs is roving the coastal lands.	coast 1|noseason 3|noseason 3|turn 10|unique 4	2com 1064|6d6units 1064	
@@ -3185,6 +3185,7 @@ id	name	rarity	description	requirements	effects	end
 3184	A dormant decree of the Pantok	13	A dormant decree of the Pantokrator was activated when His Throne was disturbed. The decree has brought chaos to the world, people are terrified and faith in the Pretender Gods has decreased. [The Throne of the Pantokrator]	claimedthrone 1|9600 25|site 1|unique 1	worldincscale2 Turmoil|worldincdom -1	
 3185	The Throne of Eternal Sufferin	13	The Throne of Eternal Suffering has reminded people of the importance of piety. Faith and order has increased worldwide. [The Throne of Eternal Suffering]	claimedthrone 1|site 1|unique 1	worlddecscale Turmoil|worldincdom 1	
 3186	One night the moon was red as 	12	One night the moon was red as blood, the next night it was blue as water and on the third night it was gone. Then on the seventh night the moon appeared once again, this time it was white.		worldunrest 10|worlddecscale Drain|worldincscale Misfortune	
+3187	...	-9	...			
 3188	People have died from a strang	-2	People have died from a strange disease and soon after dark gems formed upon the corpses.	death 1|magic 1	0700 25|3d6vis D	
 3189	A forgotten curse suddenly too	2	A forgotten curse suddenly took effect and turned an entire village into Vine Men. The mindless apparitions are now spreading over the rest of the province.	magic 2|growth 1|turn 8|forest 1	com 362|4d6units 361|com 362|2d6units 361|kill 10	
 3190	Autumn come, the Ephoroi of th	0	Autumn come, the Ephoroi of the city have declared war upon the helote population.	fornation 6|6500 5|fort 1|monster 3115|code 0|siege 0	code 133|unrest 15	
@@ -3230,7 +3231,7 @@ id	name	rarity	description	requirements	effects	end
 3231	One of the Yllerions has died 	0	One of the Yllerions has died and his partner was seen flying east with a great host of lamenting birds. When she reached the sea she plunged herself into the waves and drowned herself. Soon afterwards the flaming eggs in their nest cracked open and two new Yllerion birds were hatched. The abbot sages has declared that it is time to once more call the Birds of Splendour.	9600 50|nomnr 3382|monster 3383	killcom 3383	
 3232	One of the Yllerions has died 	0	One of the Yllerions has died and her partner was seen flying east with a great host of lamenting birds. When he reached the sea he plunged himself into the waves and drowned hirself. Soon afterwards the flaming eggs in their nest cracked open and two new Yllerion birds were hatched. The abbot sages has declared that it is time to once more call the Birds of Splendour.	9600 50|nomnr 3383|monster 3382	killcom 3382	
 3233	Bilqis, known in foreign lands	-1	Bilqis, known in foreign lands as the Queen of Na'Ba, has established contacts with a foreign king. Praising him for his widsom and giving him extraordinary gifts from the Vault of Incense and Marvels she was in return showered in gold and gems.	fornation 65|nomnr 3385|capital 1	gold 250|1d6vis -1	
-3234	A hurricane has struck the lan	0	A hurricane has struck the land, devastating the countryside.	pop0ok 1|9600 10|land 1|7600 25	unrest 25|kill 3	
+3234	A hurricane has struck the lan	0	A hurricane has struck the land, devastating the countryside.	pop0ok 1|9600 10|land 1|cave 0|7600 25	unrest 25|kill 3	
 3235	The dwarves holding up the sky	13	The dwarves holding up the sky are not doing their job properly. The sky has fallen, the entire world is covered in permanent darkness and violent storms are raging.	monster 3425|6100 3426|6100 3426|6100 3426	worlddarkness 1|9100 1	
 3236	A new gold vein has been found	-1	A new gold vein has been found in a Gold Mine! [Hidden Gold Mine]	foundsite 1	gold 400	
 3237	A new vein has been found in a	-1	A new vein has been found in a Silver Mine! [Silver Mine]	foundsite 1	gold 250	
