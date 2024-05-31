@@ -909,6 +909,31 @@ MSpell.renderOverlay = function(o) {
 		Utils.loadContent( url, 'div.'+uid );
 	}
 
+	var codereveal = "$(this).parent('p').parent('div').parent('div').find('.full-list').show()"
+	var uid1 = 'd'+(Math.random());	
+	uid1 = uid1.replace('.','');
+	
+	h+='	<div class="'+uid1+'" style="display:none"><p class="firstline">';
+	h+='	</p></div>';
+	
+	//the actual list
+	h+='	<p>';
+	var uid2 = 'd'+(Math.random());
+	uid2 = uid2.replace('.','');
+ 	h+='		<div class="full-list" style="display:none"><div class="'+uid2+'"></div></div>';
+	h+='	</p>';
+	var url = descrpath + Utils.descrFilename('portent'+o.name);
+	Utils.loadContentWithHtml( url, '<p>Dire Portent <input class="inline-button" style="padding:none" type="button" value="show" onclick="'+codereveal+'"/></p>', 'div.'+uid2, 'div.'+uid1);
+
+	//the actual list
+	h+='	<p>';
+	var uid3 = 'd'+(Math.random());
+	uid3 = uid3.replace('.','');
+ 	h+='		<div class="full-list" style="display:none"><div class="'+uid3+'"></div></div>';
+	h+='	</p>';
+	var url = descrpath + Utils.descrFilename('cure'+o.name);
+	Utils.loadContent( url, 'div.'+uid3);
+
 	h+='	</div> ';
 	h+='</div> ';
 	

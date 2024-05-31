@@ -706,6 +706,25 @@ Utils.loadContent = function(url, domsel) {
 	else
 		$.get(url, onLoadContent, 'text');
 }
+Utils.loadContentWithHtml = function(url, html, domsel, domsel2) {
+	//enclosed declarations
+	var url = url;
+	var domsel = domsel;
+	var h_interval = null;
+
+	//called on success
+	function onLoadContent(txt) {
+		g_contentCache[url] = txt;
+		$(domsel).html(txt).hide().slideDown();
+		$(domsel2).html(html).hide().slideDown();
+	}
+
+	//check cache
+	if (g_contentCache[url])
+		setTimeout(function(){ onLoadContent(g_contentCache[url]) }, 10); //target may not exist yet
+	else
+		$.get(url, onLoadContent, 'text');
+}
 //mirrors loadContent visually but for known html (rather than a url to load)
 //also asyncronous
 Utils.insertContent = function(html, domsel) {

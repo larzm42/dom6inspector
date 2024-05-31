@@ -670,6 +670,8 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 
 	'sumauto',		'auto summoned unit',	Utils.unitRef,
 	'retinue', 		'retinue', 		Utils.unitRef,
+	'summoner1d6', 		'summoner 1d6', 		Utils.unitRef,
+	'summoner2d6', 		'summoner 2d6', 		Utils.unitRef,
 
 	'affliction',		'afflicts bearer',	Utils.afflictionRef,
 	'cannotwear',		'restriction',		{2:'cannot be worn by mounted units', 536870912:'can only be worn by coldblooded units', 1073741824:'cannot be worn by inanimate units'},

@@ -2397,6 +2397,8 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'spikebarbs', 'spike barbs',
 	'pretenderstartsite', 'pretender start site', Utils.siteRef, 
 	'offscriptresearch', 'off script research level',
+	'overcharged', 'overcharged',
+	
 ]);
 var flagorder = Utils.cutDisplayOrder(aliases, formats,
 [
@@ -2519,7 +2521,6 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'autocompete', 'must fight in arena',
 	'adventurers', 'adventurer',
 	'horrormarked', 'horror marked',
-	'corpseconstruct', 'corpse construct',
 	'commaster', 'communion master',
 	'comslave', 'communion slave',
 	'chorusmaster', 'chorus master',
