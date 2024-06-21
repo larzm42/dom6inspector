@@ -324,7 +324,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 477	Thunder Stones	1	223	1	Air		1		1																																																																																																	11																														
 478	Cloud Pillars	1	223	1	Air		1			1																																																																																																12																														
 479	Singing Stones	1	262879	1	Air				1				1																																																																																													11																														
-480	Lake of Perpetual Mists	1	223	2	Air		1	2																																																																												341																						11																														
+480	Lake of Perpetual Mists	1	223	2	Glamour			2					1																																																																							341																						69																														
 481	Dragon Cliff	2	223	1	Air		1																																																	20%																																																		10																														
 482	Tower of the Silver Order	2	223	1	Air		3			2										lab																																																																100																						13																														
 483	Tower of the Silver Order	2	223	1	Air		2			3										lab																																																																100																						13																														
@@ -451,7 +451,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 604	Great Gold Mine	0	516	0	Earth																																																																																																					29										150																				
 605	Great Silver Mine	0	516	0	Earth																																																																																																					29										100																				
 606	Hidden Gold Mine	0	516	1	Earth																																																																																																					29										150																				
-607	Gem Deposits	0	262879	1	Earth																																																																																																					29																							125							
+607	Gem Deposits	0	262879	1	Earth																																																																																																					29										125																				
 608	Gorge	0	516	1	Earth				1																																																																																																	33																														
 609	Magma Cave	0	516	1	Earth	1			1																																																																																																	35																														
 610	Standing Stones	1	262367	1	Earth		1		1																																																																																																	30																														

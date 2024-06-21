@@ -76,8 +76,8 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 74	Gate Summon Ice	-1	1	-1	0	-1	0	74	1	0	0	0	75	449	
 75	Gate Summon Storm	-1	1	-1	0	-1	0	75	1	0	0	0	76	632	
 76	Gate Summon Iron	-1	1	-1	0	-1	0	76	1	0	0	0	0	489	
-77	10 Tengu Warriors	-1	1	-1	0	-1	0	77	10	0	0	0	78	1481	
-78	15 Karasu Tengus	-1	1	-1	0	-1	0	78	15	0	0	0	0	1478	
+77	10 Tengu Warriors	-1	1	-1	0	-1	0	77	13	0	0	0	78	1481	
+78	15 Karasu Tengus	-1	1	-1	0	-1	0	78	20	0	0	0	0	1478	
 79	Natural Rain	-1	1	2	0	-1	0	79	1	0	0	0	0	7	
 80	Open Soul Trap	-1	1	-1	0	-1	0	80	4	0	0	0	0	-18	
 81	area10 cold dmg3	-1	1	-1	0	-1	0	81	1	0	0	0	0	3	
@@ -877,7 +877,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 875	Fog Warriors	1	7	1	4	-1	0	875	1	0	0	1	0	65536	
 876	Prison of Sedna	1	7	2	3	-1	0	876	1	100	0	1	0	299	
 877	Crawl	1	7	2	3	-1	0	877	1	100	0	1	0	68719476736	
-878	Wave Warriors	1	7	2	3	-1	0	878	1	0	0	1	0	2680059592708	
+878	Wave Warriors	1	7	2	3	-1	0	878	1	0	0	1	0	2680059592704	
 879	Ice Walls	1	7	2	5	-1	0	879	1	0	0	15	0	129	
 880	Sea of Ice	1	7	2	6	-1	0	880	1	0	0	80	0	28	
 881	Marble Warriors	1	7	3	3	-1	0	881	1	0	0	1	0	65536	
@@ -901,7 +901,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 899	Iron Warriors	1	8	3	4	-1	0	899	1	2	0	2	0	268435456	
 900	Marble Army	1	8	3	4	-1	0	900	1	0	0	3	0	65536	
 901	Wizard's Tower	1	8	3	4	-1	0	901	1	0	0	50	0	24	
-902	Crumble	1	6	3	5	-1	0	902	1	0	0	20	0	-25175	
+902	Crumble	1	6	3	5	-1	0	902	1	0	0	20	0	-50150	
 903	Ground Army	1	8	3	4	-1	0	903	1	0	0	2	0	2048	
 904	Arcane Domination	1	8	4	7	-1	0	904	1	0	0	7	0	999	
 905	Disintegrate	1	8	5	2	-1	0	905	1	100	10	0	0	999	

@@ -866,7 +866,7 @@ record_id	effect_number	duration	ritual	object_type	raw_argument	modifiers_mask	
 865	128			Weapon	100	4398046511104	0			0			
 866	109			Weapon	-2	549890031681	0			0			
 867	2			Weapon	9	549755813891	0			0			
-868	46			Weapon	20	129	0			0			
+868	46			Weapon	20	128	0			0			
 869	2			Weapon	5	288230651029618690	35			0			
 870	11			Weapon	64	0	0			0			
 871	11			Weapon	0	536875008	0			0			
