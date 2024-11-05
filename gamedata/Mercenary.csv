@@ -34,8 +34,8 @@ id	name	bossname	com	unit	nrunits	level	minmen	minpay	xp	randequip	recrate	item1
 33	The Wet Ones	Napa Tua	1637	1635	50	0	15	250	15	1	100			7	
 34	Melkorka's Green Men	Melkorka	2905	2903	50	0	10	250	15	1	100			7	
 35	Swimming Men	Pau Pau	577	577	50	0	15	250	15	1	100			7	
-36	"Dagan, the Renegade Sage"	Dagan	478	287	0	0	5	60	10	1	0			7	
-37	"Obscuro, the Hidden Master"	Obscuro	341	287	0	0	5	75	10	1	0			7	
+36	"Dagan, the Renegade Sage"	Dagan	478	0	0	0	0	60	10	1	0			7	
+37	"Obscuro, the Hidden Master"	Obscuro	341	0	0	0	0	75	10	1	0			7	
 38	Madam Fortuna	Madam Fortuna	1011	50	10	0	5	60	10	2	100	Pendant of Luck		4	
 39	The Lions	Louis	291	285	75	1	25	500	50	1	100			7	
 40	Hornets	Mortada	293	288	75	1	20	500	50	1	100			4	

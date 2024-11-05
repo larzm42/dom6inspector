@@ -76,8 +76,8 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 74	Gate Summon Ice	-1	1	-1	0	-1	0	74	1	0	0	0	75	449	
 75	Gate Summon Storm	-1	1	-1	0	-1	0	75	1	0	0	0	76	632	
 76	Gate Summon Iron	-1	1	-1	0	-1	0	76	1	0	0	0	0	489	
-77	10 Tengu Warriors	-1	1	-1	0	-1	0	77	13	0	0	0	78	1481	
-78	15 Karasu Tengus	-1	1	-1	0	-1	0	78	20	0	0	0	0	1478	
+77	13 Tengu Warriors	-1	1	-1	0	-1	0	77	13	0	0	0	78	1481	
+78	20 Karasu Tengus	-1	1	-1	0	-1	0	78	20	0	0	0	0	1478	
 79	Natural Rain	-1	1	2	0	-1	0	79	1	0	0	0	0	7	
 80	Open Soul Trap	-1	1	-1	0	-1	0	80	4	0	0	0	0	-18	
 81	area10 cold dmg3	-1	1	-1	0	-1	0	81	1	0	0	0	0	3	
