@@ -395,7 +395,35 @@ var modctx = DMI.modctx = {
 		},
 
 		selectsite: function(c,a,t,fnw){
-			modctx._select(c,a,'site',fnw);
+			try {
+				// First, try to select an existing site
+				modctx._select(c,a,'site',fnw);
+			}
+			catch(e) {
+				// Create a new site if it doesn't exist
+				if (e == 'data not found' && a.n1) {
+					// If no specific ID is given, find the first unused ID
+					if (a.n1 == '' || a.n1 == '0') {
+						var id = modctx.sitedata.length;
+						while (modctx.sitelookup[id]) id++;
+						a.n1 = id;
+					} else {
+						// If a specific ID is given, only increment if it's already in use
+						var id = parseInt(a.n1);
+						if (modctx.sitelookup[id]) {
+							while (modctx.sitelookup[id]) {
+								id++;
+							}
+							a.n1 = id;
+						}
+					}
+
+					// Create a new site
+					modctx._new(c, a, 'site', fnw);
+					DMI.MSite.initSite(modctx.site);
+				}
+				else throw e;
+			}
 		},
 
 		newevent: function(c,a,t,fnw) {
