@@ -239,6 +239,8 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 239	The Shrine Serene	5	0	0	Holy																																							3974																														3975																																91																														
 240	The Cambion Estates	5	0	0	Blood								1	2																														4050																														4048	4051																															85																														
 241	Cathedral of the Crimson Emerald	5	0	0	Holy	1			1																																																																																																	99																														
+242	The Moonwood	5	0	0	Nature							2	1																															400	2352																																																													61																														
+243	Fort Vendun	5	0	0	Earth				1																																			738																														1161	1237																															32																														
 300	The Cave of Storms	5	0	0	Earth		1																																																																																																			35																														
 301	The Healing Spring	5	0	0	Water							1																																																			10%																																											23																														
 302	The Sacred Mountain	5	0	0	Earth				1																																																																																																	29																														
@@ -1230,7 +1232,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1383	The Throne of Splendour	13	214015	0	Holy																			3																																																																																		95																														
 1384	The Throne of the Pantokrator	13	214015	0	Holy																			7																																																																																	2	95						2		2																						
 1385	The Throne of Abundance	13	214015	0	Holy	1	1	1	1	1	1	1	1		500									3		2																																																																																95																														
-1386	The Throne of Eternal Suffering	13	214015	0	Holy																			3	-1	-1			1																																																																													95												1																		
+1386	The Throne of Eternal Suffering	13	214015	0	Holy																			3	-1	-1			1								2																																																																					95												1																		
 1387	The Throne of the Sun	13	214015	0	Holy	5																		5	-1		-1	-1			5																																																																											95				4																										
 1388	The Throne of Sorcery	13	214015	0	Holy					1	1	1	1									Magic(max 2)		3																		SDNGB	2																		30%																																													95																														
 1389	The Throne of Elements	13	214015	0	Holy	1	1	1	1															3																		FAWE	2															30%																																																95					1																									
@@ -1239,3 +1241,6 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1392	The Throne of Destiny	13	214015	0	Holy																			3	-1				-2																																																																													95																														
 1393	The Throne of Power	13	214015	0	Holy					6														3																		FAWESDNGB	2																																																											2				95																														
 1394	The Throne of Time	13	214015	0	Holy					5												Magic(max 3)		3						-1																																																																												95																									100	100	100	75		
+1395	The Throne of Lies	11	214015	0	Holy								3									Turmoil(max 2)		1	1																																																																																	95												1																		
+1396	The Throne of Vitality	11	214015	0	Holy							1										Growth(max 2)		1																																																																																		95																														
+1397	The Throne of Gates and Conjunctions	12	16607	0	Holy					2												Magic(max 2)		2																																					20%																																													95																														

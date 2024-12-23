@@ -28,7 +28,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 27	Boulder	27	0	0	0	1	2	0	0	0	27	
 28	Long Spear	28	0	-1	4	1	0	0	0	2	28	
 29	Claw	29	0	0	-1	1	0	0	0	0	29	
-30	Venomous Bite	30	0	-1	-1	3	0	51	0	0	30	
+30	Venomous Fangs	30	0	-1	-1	3	0	51	0	0	30	
 31	Coral Spear	31	0	0	3	1	0	50	0	1	31	
 32	Coral Knife	32	0	0	0	1	0	50	0	0	32	
 33	Claws	33	0	0	-1	2	0	0	0	0	33	
@@ -45,7 +45,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 44	Ice Mace	44	2	0	1	1	0	0	0	2	44	
 45	Coral Club	45	0	0	1	1	0	50	0	1	45	
 46	Coral Glaive	46	-1	1	3	1	0	50	0	4	46	
-47	Lobster Claw	47	-4	0	0	1	0	0	0	0	47	
+47	Lobster Claw	47	-4	0	-1	1	0	0	0	0	47	
 48	Fire Flare	48	0	0	0	1	1015	0	0	0	48	
 49	Iron Prod	49	-2	-1	2	1	0	0	0	4	49	
 50	Weak Poison	50	0	0	0	1	0	0	0	0	50	
@@ -53,8 +53,8 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 52	Death Poison	52	0	0	0	1	0	0	0	0	52	
 53	Debilitative Poison	53	0	0	0	1	0	0	0	0	53	
 54	Paralyzing Poison	54	0	0	0	1	0	0	0	0	54	
-55	Hoof	55	0	0	0	1	0	0	0	0	55	
-56	Hoof	56	0	0	0	1	0	0	0	0	56	
+55	Hoof	55	0	0	-1	1	0	0	0	0	55	
+56	Hoof	56	0	0	-1	1	0	0	0	0	56	
 57	Sickle	57	0	0	1	1	0	0	0	2	57	
 58	Wail	58	10	0	5	1	0	0	60	0	58	
 59	Rod of Death	59	3	0	1	1	0	0	0	0	59	
@@ -63,7 +63,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 62	Bile	62	0	0	0	1	5	0	0	0	62	
 63	Life Drain	63	0	0	0	1	0	0	0	0	63	
 64	Decay	64	0	0	0	1	0	0	0	0	64	
-65	Venomous Fangs	65	0	-1	0	1	0	52	0	0	65	
+65	Venomous Fangs	65	0	-1	-1	1	0	52	0	0	65	
 66	Jotun Axe	66	0	-1	1	1	0	0	0	1	66	
 67	Phantasmal Weapon	67	0	0	0	1	0	0	0	0	67	
 68	Barbed Tail	68	-1	0	0	1	0	54	0	0	68	
@@ -173,7 +173,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 172	Magic Sceptre	172	1	0	1	1	0	0	0	0	172	
 173	Star of Heroes	173	4	-2	1	1	0	174	0	0	173	
 174	Break Armor	174	0	0	0	1	0	0	0	0	174	
-175	Chi Kick	175	0	0	0	1	0	0	0	0	175	
+175	Chi Kick	175	0	0	-1	1	0	0	0	0	175	
 176	Stone Bird	176	0	0	3	1	0	0	0	0	176	
 177	Astral Serpent	177	5	0	0	1	0	52	0	0	177	
 178	Summer Sword	178	1	2	1	1	0	0	0	0	178	
@@ -237,7 +237,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 236	Claw	236	0	0	-1	1	0	0	0	0	236	
 237	Bonds of Fire	237	0	0	0	1	0	0	0	0	237	
 238	Magic Staff	238	2	4	3	1	0	0	0	0	238	
-239	Venomous Fangs	239	0	-1	0	1	0	51	0	0	239	
+239	Venomous Fangs	239	0	-1	-1	1	0	51	0	0	239	
 240	Branch	240	0	0	0	1	0	0	0	0	240	
 241	Hell Sword	241	5	1	2	1	0	0	0	0	241	
 242	Hunter's Knife	242	2	1	0	1	0	0	0	0	242	
@@ -249,7 +249,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 248	Venomous Claw	248	0	0	-1	1	0	50	0	0	248	
 249	Venomous Claw	249	0	0	-1	1	0	51	0	0	249	
 250	Poisoned Claw	250	0	0	-1	1	0	53	0	0	250	
-251	Venomous Fangs	251	0	-1	0	1	0	54	0	0	251	
+251	Venomous Fangs	251	0	-1	-1	1	0	54	0	0	251	
 252	Club	252	0	0	1	1	0	0	0	0	252	
 253	Hatchet	253	1	0	1	1	0	0	0	1	253	
 254	Plague Breath	254	0	0	0	1	1009	0	255	0	254	
@@ -298,7 +298,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 297	Serpent Kryss	297	2	1	0	1	0	52	0	0	297	
 298	Tartarian Chains	298	3	-2	4	1	0	0	0	0	298	
 299	Enchanted Sickle	299	2	1	1	1	0	0	0	0	299	
-300	Head Butt	300	1	-1	0	1	0	0	0	0	300	
+300	Head Butt	300	-1	-1	0	1	0	0	0	0	300	
 301	Fire Bola	301	2	0	0	1	50	0	302	0	301	
 302	Fire Bonds	302	0	0	0	1	0	0	0	0	302	
 303	Vine Bow	303	0	0	0	1	12	0	137	0	303	
@@ -323,7 +323,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 322	Bite	322	0	-1	-1	1	0	0	0	0	322	
 323	Venomous Bite	323	0	-1	-1	1	0	50	0	0	323	
 324	Poison Spit	324	0	0	0	1	5	0	0	0	324	
-325	Venomous Fangs	325	0	-1	0	1	0	51	0	0	325	
+325	Venomous Fangs	325	0	-1	-1	1	0	51	0	0	325	
 326	Iron Crutch	326	-1	-1	2	1	0	0	0	2	326	
 327	Smasher	327	2	0	1	1	0	0	328	0	327	
 328	Shatter	328	0	0	0	1	0	0	0	0	328	
@@ -336,7 +336,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 335	Armloss	335	0	0	0	1	0	0	0	0	335	
 336	The Sharpest Tooth	336	2	0	0	1	0	337	0	0	336	
 337	The Deadliest Poison	337	0	0	0	1	0	0	0	0	337	
-338	Hoof	338	0	0	0	1	0	0	0	0	338	
+338	Hoof	338	0	0	-1	1	0	0	0	0	338	
 339	Cornucopia	339	0	0	2	1	0	0	0	0	339	
 340	Procas's Axe of Rulership	340	3	-2	1	1	0	0	335	0	340	
 341	Picus's Axe of Rulership	341	5	-2	1	1	0	0	335	0	341	
@@ -344,15 +344,15 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 343	Blade Hand	343	0	0	1	1	0	0	0	0	343	
 344	Demon-Slayer	344	2	2	1	1	0	0	0	0	344	
 345	Fly Whisk	345	0	0	1	1	0	0	0	0	345	
-346	Useless Kick	346	-4	-2	0	1	0	0	0	0	346	
+346	Useless Kick	346	-4	-2	-1	1	0	0	0	0	346	
 347	Flail	347	1	-2	2	2	0	0	0	3	347	
 348	Banefire Strike	348	0	0	0	1	0	0	349	0	348	
 349	Powerful Decay	349	0	0	0	1	0	0	0	0	349	
 350	Fire Flare	350	0	0	2	1	1002	0	0	0	350	
 351	Pitchfork	351	-1	-1	3	1	0	0	0	1	351	
-352	Gore	352	1	-1	1	1	0	0	0	0	352	
-353	Moose Kick	353	0	0	1	1	0	0	0	0	353	
-354	Antlers	354	-1	0	0	1	0	0	0	0	354	
+352	Gore	352	-1	-1	-1	1	0	0	0	0	352	
+353	Moose Kick	353	0	0	-1	1	0	0	0	0	353	
+354	Antlers	354	-1	0	1	1	0	0	0	0	354	
 355	Sting	355	0	0	0	1	0	50	0	0	355	
 356	Fire Composite Bow	356	1	0	0	1	12	0	216	0	356	
 357	Light Lance	357	0	0	3	1	0	0	0	1	357	
@@ -395,9 +395,9 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 394	Curse of Tisiphone	394	0	0	0	1	0	0	0	0	394	
 395	Shadow Brand	395	4	1	1	1	0	0	396	0	395	
 396	Leeching Darkness	396	0	0	0	1	0	0	0	0	396	
-397	Kick	397	0	0	0	1	0	0	0	0	397	
-398	Venomous Fangs	398	0	-1	0	1	0	52	0	0	398	
-399	Gore	399	1	-1	0	1	0	0	0	0	399	
+397	Kick	397	0	0	-1	1	0	0	0	0	397	
+398	Venomous Fangs	398	0	-1	-1	1	0	52	0	0	398	
+399	Gore	399	-1	-1	0	1	0	0	0	0	399	
 400	Devour Soul	400	0	-1	0	1	0	401	0	0	400	
 401	Soul Death	401	0	0	0	1	0	0	0	0	401	
 402	Holy Scourge	402	5	-2	2	2	0	0	0	3	402	
@@ -486,10 +486,10 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 485	Fomorian Bronze Spear	485	0	0	3	1	0	0	0	1	485	
 486	Gae Assail	486	0	1	5	1	0	0	171	0	486	
 487	Spear of the Morrigan	487	3	2	3	1	0	64	0	5	487	
-488	Great Head	488	1	0	0	1	0	51	0	0	488	
-489	Immortal Head	489	1	0	0	1	0	52	0	0	489	
-490	Lesser Head	490	0	0	0	1	0	50	0	0	490	
-491	Lesser Heads	491	0	0	0	2	0	50	0	0	491	
+488	Great Head	488	1	0	-1	1	0	51	0	0	488	
+489	Immortal Head	489	1	0	-1	1	0	52	0	0	489	
+490	Lesser Head	490	0	0	-1	1	0	50	0	0	490	
+491	Lesser Heads	491	0	0	-1	2	0	50	0	0	491	
 492	Rainbow	492	2	0	0	1	10	0	333	0	492	
 493	Sickle Staff	493	0	1	3	1	0	0	0	2	493	
 494	Lightning	494	3	0	0	1	1005	0	704	0	494	
@@ -502,7 +502,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 501	Bamboo Rod	501	1	2	1	1	0	0	0	0	501	
 502	Yak Tail Fly Whisk	502	0	0	1	1	0	0	0	1	502	
 503	Theft of Strength	503	100	0	0	1	30	0	285	0	503	
-504	Phantasmal Hoof	504	0	0	0	1	0	0	0	0	504	
+504	Phantasmal Hoof	504	0	0	-1	1	0	0	0	0	504	
 505	Devour	505	0	0	0	1	0	0	0	0	505	
 506	Plague Scythe	506	1	-2	3	1	0	143	0	0	506	
 507	Giant Pestle	507	-1	-1	0	1	0	0	0	0	507	
@@ -520,7 +520,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 519	Poison Tipped Spear	519	0	0	3	1	0	51	0	4	519	
 520	Dawn Blade	520	2	2	1	1	0	0	0	8	520	
 521	The First Sword	521	7	7	2	1	0	0	0	0	521	
-522	Golden Horns	522	-1	-1	1	1	0	0	0	0	522	
+522	Golden Horns	522	-1	-1	0	1	0	0	0	0	522	
 523	Golden Sickle	523	2	2	1	1	0	0	0	2	523	
 524	Pillar of Laws	524	-3	-5	2	1	0	0	411	0	524	
 525	Large Area Fire	525	0	0	0	1	0	0	0	0	525	
@@ -581,7 +581,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 580	Coral Long Spear	580	0	-1	4	1	0	50	0	2	580	
 581	Bident	581	0	1	3	1	0	0	0	2	581	
 582	Snake Skirt	582	-2	0	0	5	0	50	0	0	582	
-583	Taloned Kick	583	0	0	0	1	0	0	0	0	583	
+583	Taloned Kick	583	0	0	-1	1	0	0	0	0	583	
 584	Lightning	584	5	0	0	1	3	0	704	0	584	
 585	Serpent Club	585	2	0	1	1	0	50	0	0	585	
 586	Reanimating Bite	586	0	-1	-1	1	0	0	0	0	586	
@@ -613,7 +613,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 612	Ice Blade	612	1	2	1	1	0	0	0	4	612	
 613	Enchanted Bow	613	2	0	0	1	12	0	0	0	613	
 614	Tusk	614	0	0	0	1	0	0	0	0	614	
-615	Hoof	615	0	0	0	1	0	0	0	0	615	
+615	Hoof	615	0	0	-1	1	0	0	0	0	615	
 616	The Bloody Mace	616	5	0	2	1	0	564	0	0	616	
 617	Sun Mace	617	1	0	1	1	0	0	0	1	617	
 618	Sun Spear	618	0	2	3	1	0	0	0	0	618	
@@ -692,7 +692,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 691	Blacksteel Sword	691	2	2	1	1	0	0	0	0	691	
 692	Hardwood Club	692	1	1	1	1	0	0	0	0	692	
 693	Ice Lance	693	1	2	3	1	0	0	0	2	693	
-694	Curse	694	0	0	0	1	0	0	366	0	694	
+694	Curse	694	0	0	0	1	0	0	0	0	694	
 695	Belch Flames	695	0	0	2	1	0	0	0	0	695	
 696	Petrifying Gas	696	0	0	0	1	1007	0	0	0	696	
 697	Sling of Accuracy	697	5	0	0	1	15	0	0	0	697	
@@ -700,7 +700,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 699	Small Area Stun	699	0	0	0	1	0	0	0	0	699	
 700	Sword of the Five Elements	700	3	4	1	1	0	0	0	0	700	
 701	Shillelagh	701	1	1	1	1	0	0	0	0	701	
-702	Gore	702	1	-1	0	1	0	0	0	0	702	
+702	Gore	702	-1	-1	0	1	0	0	0	0	702	
 703	Claw	703	0	0	-1	1	0	0	0	0	703	
 704	Small Area Shock	704	0	0	0	1	0	0	0	0	704	
 705	Vajra	705	2	0	0	1	0	0	0	0	705	
@@ -723,14 +723,14 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 722	God-Slayer Spear	722	2	0	3	1	0	0	509	7	722	
 723	Bronze Discus	723	-3	0	0	1	4	0	0	3	723	
 724	Orichalcum Sword	724	1	2	1	1	0	0	0	2	724	
-725	Brass Hoof	725	0	0	0	1	0	0	0	0	725	
+725	Brass Hoof	725	0	0	-1	1	0	0	0	0	725	
 726	Brass Horns	726	-1	-1	1	1	0	0	0	0	726	
 727	Fiery Breath	727	0	0	0	1	1008	0	0	0	727	
 728	Double Axe	728	1	0	2	1	0	0	0	4	728	
 729	Banefire Torch	729	1	0	1	1	0	0	730	2	729	
 730	Banefire	730	0	0	0	1	0	0	64	0	730	
 731	Key to Every Entrance	731	1	0	1	1	0	0	0	0	731	
-732	Head Butt	732	0	0	0	1	0	0	0	0	732	
+732	Head Butt	732	-1	-1	0	1	0	0	0	0	732	
 733	Cyclope Spear	733	1	0	3	1	0	0	0	4	733	
 734	Cyclope Sword	734	1	1	1	1	0	0	0	6	734	
 735	Serpent Leg	735	-1	0	0	1	0	51	0	0	735	
@@ -756,7 +756,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 755	Burning Beak	755	0	0	-1	1	0	0	0	0	755	
 756	Burning Claw	756	0	0	-1	1	0	0	0	0	756	
 757	Bronze Scimitar	757	1	0	1	1	0	0	0	5	757	
-758	Silver Horns	758	-1	-1	1	1	0	0	0	0	758	
+758	Silver Horns	758	-1	-1	0	1	0	0	0	0	758	
 759	XXX - Crossbow	759	2	0	0	-2	12	0	0	3	759	
 760	Scourge of Power	760	2	0	1	2	0	0	0	2	760	
 761	Throw Salt	761	0	0	5	1	0	0	0	1	761	
@@ -825,11 +825,11 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 824	Claw	824	0	0	-1	1	0	0	0	0	824	
 825	Beak	825	-1	-1	-1	1	0	0	0	0	825	
 826	Talons	826	0	0	-1	1	0	0	0	0	826	
-827	Venomous Fangs	827	0	-1	0	1	0	52	0	0	827	
-828	Head Butt	828	1	-1	0	1	0	0	0	0	828	
+827	Venomous Fangs	827	0	-1	-1	1	0	52	0	0	827	
+828	Head Butt	828	-1	-1	0	1	0	0	0	0	828	
 829	Antlers	829	-1	0	1	1	0	0	0	0	829	
 830	Gore	830	-1	-1	0	1	0	0	0	0	830	
-831	Hoof	831	0	0	0	1	0	0	0	0	831	
+831	Hoof	831	0	0	-1	1	0	0	0	0	831	
 832	Stinger	832	5	0	2	1	0	52	0	0	832	
 833	Flick Barbs	833	-4	0	0	6	3	51	0	1	833	
 834	Acid	834	0	0	0	1	0	0	0	0	834	

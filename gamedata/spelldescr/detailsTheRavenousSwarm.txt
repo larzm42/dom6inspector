@@ -1,1 +1,1 @@
-One undead target gets 7 AN holy dmg each combat round. If the target dies a new undead target is randomly chosen.
+The square with the current target in it gets 7 AN holy dmg attack each combat round. If the targeted dies a new undead target is randomly chosen.

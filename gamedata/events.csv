@@ -3278,8 +3278,8 @@ id	name	rarity	description	requirements	effects	end
 3278	An enormous group of fish-peop	1	An enormous group of fish-people has unexpectedly attacked the province in an attempt to take control.	coast 1|unluck 4|turn 10	com 2804|4d6units 974|9A00 975|com 2804|4d6units 974|com 2804|6d6units 974|com 2804|6d6units 974	
 3279	An enormous group of fish-peop	1	An enormous group of fish-people has unexpectedly attacked the province in an attempt to take control.	land 0|unluck 4|turn 10	com 2804|4d6units 974|9A00 975|com 2804|4d6units 974|com 2804|6d6units 974|com 2804|6d6units 974	
 3280	Swarms of grubs are eating cro	1	Swarms of grubs are eating crops as well as houses and are causing widespread panic.	growth 0|cave 1	unrest 20|taxboost -50	
-3281	A horde of cavemen has unexpec	1	A horde of cavemen has unexpectedly attacked and pillaged our province.	land 1|cave 0|unluck 1|turn 8	nation 4|com 1616|A400 1615|com 1616|A400 1615|kill 10	
-3282	A huge horde of cavemen has un	1	A huge horde of cavemen has unexpectedly attacked and pillaged the province.	capital 0|land 1|cave 0|unluck 3|turn 10|land 1	nation 4|com 1616|10d6units 1615|com 1616|A400 1615|kill 20	
+3281	A horde of cavemen has unexpec	1	A horde of cavemen has unexpectedly attacked and pillaged our province.	land 1|cave 1|unluck 1|turn 8	nation 4|com 1616|A400 1615|com 1616|A400 1615|kill 10	
+3282	A huge horde of cavemen has un	1	A huge horde of cavemen has unexpectedly attacked and pillaged the province.	capital 0|land 1|cave 1|unluck 3|turn 10|land 1	nation 4|com 1616|10d6units 1615|com 1616|A400 1615|kill 20	
 3283	Suddenly a giant rat attacked 	1	Suddenly a giant rat attacked one of your commanders!	land 1|farm 1|commander 1	assassin 410	
 3284	Suddenly a pack of giant rats 	2	Suddenly a pack of giant rats attacked one of your commanders!	land 1|commander 1	0600 410|assassin 410	
 3285	The rumors of plague seems to 	0	The rumors of plague seems to have been false. People praise the mercy of their false god!	9600 50|code -17|maxdominion -1	code 0|taxboost 100|incdom 3|unrest -15	

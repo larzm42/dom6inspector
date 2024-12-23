@@ -182,7 +182,7 @@ id	name	type	def	enc	rcost	end
 181	Golden Hoplon	4	7	1	0	
 182	Immaculate Shield	4	8	1	0	
 183	Linen Cuirass	5	0	0	1	
-184	Kithaironic Lion Pelt	5	-1	1	10	
+184	Kithaironic Lion Pelt	5	-1	1	15	
 185	Brightmail Haubergeon	5	0	0	0	
 186	Shademail Haubergeon	5	0	0	0	
 187	Wooden Mask	6	-1	0	0	
@@ -291,3 +291,5 @@ id	name	type	def	enc	rcost	end
 290	King's Barding	5	0	1	15	
 291	Icicle Dress	5	0	0	1	
 292	Storm Armor	5	-2	3	0	
+293	Lion Pelt	5	-1	1	1	
+294	Lion Cloak	5	-1	1	1	

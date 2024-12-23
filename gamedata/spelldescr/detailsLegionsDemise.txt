@@ -1,1 +1,1 @@
-All enemies take about 5 points of false damage per round (MR negates).
+All enemies take about 2 points of false damage per round (MR negates).

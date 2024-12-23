@@ -1457,7 +1457,9 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 1455	Send Horror	6	9	8	4	4	4	1455	1	0	0	30	0	-7	
 1456	Astral Corruption	6	9	8	6	4	6	1456	1	0	0	166	0	57	
 1457	Tangle Thicket	0	4	6	2	-1	0	1457	1	2	30	0	0	64	
-1458	Carrion Fortress	1	0	6	3	5	2	1458	1	0	0	35	0	10	
+1458	Carrion Fortress	1	0	6	3	5	2	1458	1	0	0	45	0	10	
 1459	Bind Incubus	6	5	8	4	7	1	1459	1	-2	0	66	0	4053	
 1460	Soul Transaction	6	6	8	1	7	1	1460	1	100	0	1	0	999	
 1461	Infernal Invisibility	-1	1	-1	0	-1	0	1461	1	0	0	0	0	1073741824	
+1462	Featherweight Army	4	7	1	4	-1	0	1462	1	0	0	2	0	4503599627370496	
+1463	Army of Immaculate Mounts	4	7	6	4	-1	0	1463	1	0	0	2	0	536870912	

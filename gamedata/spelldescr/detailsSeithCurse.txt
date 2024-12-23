@@ -1,0 +1,1 @@
+Curses a random non-cursed enemy commander in the targeted province (hard MR check to resist) as well as a random friendly non-cursed commander (hard MR check to resist).
