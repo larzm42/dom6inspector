@@ -131,6 +131,11 @@ MSite.prepareData_PostMod = function() {
 			o.rarity = parseInt(o.rarity);
 		}
 
+		// if o_name is missing, use the site id as the name
+		if (!o.name || o.name == '') {
+			o.name = 'site_' + o.id;
+		}
+
 		//searchable string
 		o.searchable = o.name.toLowerCase();
 
