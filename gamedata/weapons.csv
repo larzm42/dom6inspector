@@ -56,7 +56,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 55	Hoof	55	0	0	-1	1	0	0	0	0	55	
 56	Hoof	56	0	0	-1	1	0	0	0	0	56	
 57	Sickle	57	0	0	1	1	0	0	0	2	57	
-58	Wail	58	10	0	5	1	0	0	60	0	58	
+58	Wail	58	0	0	5	1	1015	0	60	0	58	
 59	Rod of Death	59	3	0	1	1	0	0	0	0	59	
 60	Fear	60	0	0	0	1	0	0	0	0	60	
 61	Dancing Shard	61	-2	0	2	1	0	0	0	0	61	
@@ -872,3 +872,5 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 871	Carrion Seed	871	0	0	0	1	0	0	0	0	871	
 872	Meteorite Dagger	872	1	0	0	1	0	0	0	0	872	
 873	Carrion Vine	873	0	0	3	1	0	0	871	0	873	
+874	Pillar of Truths	874	-2	-5	2	1	0	0	875	0	874	
+875	Truths	875	0	0	0	1	0	0	0	0	875	
