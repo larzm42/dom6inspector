@@ -871,6 +871,7 @@ var flagorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'nononsleeper', 'cannot be used by non-sleeper',
 	'blur', 'blur',
 	'heavy', 'heavy',
+	'unseen', 'unseen',
 	
 	'champprize', 'Arena championship prize'
 ]);

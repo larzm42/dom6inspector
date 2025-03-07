@@ -362,9 +362,13 @@ MWpn.renderWpnTable = function(o, isImplicitWpn, changeKey) {
 	// Attributes
 	for (var oi=0, attr; attr = modctx.attributes_by_weapon[oi];  oi++) {
 		if (attr.weapon_number == o.id) {
-			if (attr.attribute != "302") {
+			if (attr.attribute != "302" && attr.attribute != "933") {
 				var specflags = modctx.attribute_keys_lookup[attr.attribute].name;
-				h+= '<tr class="'+attr.attribute+'"><th>'+modctx.attribute_keys_lookup[attr.attribute].name.replace(/{(.*?)}|<|>/g, "")+'</th></tr>'
+				h+= '<tr class="'+attr.attribute+'"><td class="widecell" colspan="2">'+modctx.attribute_keys_lookup[attr.attribute].name.replace(/{(.*?)}|<|>/g, "")+'</td></tr>'
+			}
+			if (attr.attribute == "933") {
+				var specflags = modctx.attribute_keys_lookup[attr.attribute].name;
+				h+= '<tr class="'+attr.attribute+'"><td class="widecell" colspan="2">'+attr.raw_value+' '+modctx.attribute_keys_lookup[attr.attribute].name.replace(/{(.*?)}|<|>/g, "")+'</td></tr>'
 			}
 		}
 	}
