@@ -239,7 +239,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 239	The Shrine Serene	5	0	0	Holy																																							3974																														3975																																91																														
 240	The Cambion Estates	5	0	0	Blood								1	2																														4050																														4048	4051																															85																														
 241	Cathedral of the Crimson Emerald	5	0	0	Holy	1			1																																																																																																	99																														
-242	The Moonwood	5	0	0	Nature							2	1																															400	2352																																																													61																														
+242	The Moonwood	5	0	0	Nature							2	1																															4075	4077																																																													61																														
 243	Fort Vendun	5	0	0	Earth				1																																			738																														1161	1237																															32																														
 300	The Cave of Storms	5	0	0	Earth		1																																																																																																			35																														
 301	The Healing Spring	5	0	0	Water							1																																																			10%																																											23																														
@@ -1241,6 +1241,13 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1392	The Throne of Destiny	13	214015	0	Holy																			3	-1				-2																																																																													95																														
 1393	The Throne of Power	13	214015	0	Holy					6														3																		FAWESDNGB	2																																																											2				95																														
 1394	The Throne of Time	13	214015	0	Holy					5												Magic(max 3)		3						-1																																																																												95																									100	100	100	75		
-1395	The Throne of Lies	11	214015	0	Holy								3									Turmoil(max 2)		1	1																																																																																	95												1																		
+1395	The Throne of Lies	11	214015	0	Holy								1									Turmoil(max 2)		1	1																																																																																	95												1																		
 1396	The Throne of Vitality	11	214015	0	Holy							1										Growth(max 2)		1																																																																																		95																														
 1397	The Throne of Gates and Conjunctions	12	16607	0	Holy					2												Magic(max 2)		2																																					20%																																													95																														
+1398	The Throne of the Fool	11	214015	0	Holy								3									Turmoil(max 2)		1													-1																																																																					95																														
+1399	The Throne of Pride	11	214015	0	Holy	1																		1													1																																																																					95																														
+1400	The White Throne	11	214015	0	Holy							1												1																																							20%																																											95				5																										
+1401	The Black Throne	11	214015	0	Holy						3													1																																								10%																																										95				5																										
+1402	The Throne of Deeper Fires	11	16896	0	Holy	1			1															1																																																																																		95																														
+1403	The Throne of Deeper Waters	11	16896	0	Holy			1	1															1																																																																																		95																														
+1404	The Throne of Secrets	12	214015	0	Holy					1			1	2								Magic(max 2)		2																																																																	3																	95																														

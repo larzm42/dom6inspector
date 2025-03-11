@@ -286,7 +286,7 @@ id	name	type	def	enc	rcost	end
 285	Gossamer Shield	4	4	0	6	
 286	Bone Mask	6	-1	0	0	
 287	Cat Barding	5	-1	1	10	
-288	Charred Shield	4	4	1	0	
+288	Charred Shield	4	4	1	7	
 289	Lizard Barding	5	-1	2	12	
 290	King's Barding	5	0	1	15	
 291	Icicle Dress	5	0	0	1	

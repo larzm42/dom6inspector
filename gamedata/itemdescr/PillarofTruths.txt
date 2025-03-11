@@ -1,0 +1,3 @@
+When the Pantokrator wanted a battle to be without magic and illusions, the Pillar of Truth was brought to the battle. Once this pillar is present, all units on the battlefield will be able to see through illusions and withstand magic better. If swung in battle, the pillar will strike truths of the Pantokrator into the enemies, paralyzing those who dare defy them.
+
+All units: MR +2, disbelieve 2, true sight

@@ -838,7 +838,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 837	Paralyze	837	0	0	0	1	0	0	0	0	837	
 838	Pincer	838	0	0	0	1	0	0	0	0	838	
 839	Mind Blast	839	100	0	0	1	1001	293	0	0	839	
-840	Flame Blade	840	2	1	1	1	0	0	841	0	840	
+840	Flame Blade	840	2	1	1	1	0	0	841	6	840	
 841	Small Area Fire	841	0	0	0	1	0	0	0	0	841	
 842	Withering Horn	842	0	0	1	1	0	64	0	0	842	
 843	Sceptre of Corruption	843	2	0	1	1	0	0	64	0	843	
