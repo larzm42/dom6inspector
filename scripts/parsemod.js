@@ -1136,8 +1136,22 @@ var modctx = DMI.modctx = {
 		mapmove:_num,
 		hp:	_num,
 		prot:	_num,
-		size:	_num,
-		ressize:_num,
+		size: function(c, a, t) {
+		    // Set the regular size property
+		    modctx[t][c] = argnum(a);
+		    
+		    // Only update ressize if it hasn't been explicitly set
+		    if (!modctx[t]['_ressizeExplicitlySet']) {
+		        modctx[t]['ressize'] = argnum(a);
+		    }
+		},
+		ressize: function(c, a, t) {
+		    // Mark that ressize has been explicitly set
+		    modctx[t]['_ressizeExplicitlySet'] = true;
+		    
+		    // Then perform the regular number assignment
+		    modctx[t][c] = argnum(a);
+		},
 		str:	_num,
 		enc:	_num,
 		att:	_num,
