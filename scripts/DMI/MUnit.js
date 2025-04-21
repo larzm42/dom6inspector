@@ -154,6 +154,14 @@ MUnit.prepareData_PreMod = function() {
 		o.nationname = '';
 		o.weapons = Utils.keyListToTable(o, 'wpn');
 
+		// Check if size and ressize are different
+        	// If they are, we mark ressize as explicitly set
+	        if (o.size && o.ressize && parseInt(o.size) !== parseInt(o.ressize)) {
+	            o._ressizeExplicitlySet = true;
+	        } else {
+	            o._ressizeExplicitlySet = false;
+	        }
+
 		if (!o.startitem) {
 			o.startitem = [];
 		} else {
