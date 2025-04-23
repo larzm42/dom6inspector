@@ -157,19 +157,20 @@
 				
 			<hr style="clear:both; padding-top:0.8em" />
 			
-			<p>
-			<input type="button" value="X" id="clear-custom-mods-btn" class="clear-filters-btn" title="clear selection" style="float:left;"/>
-				&nbsp;&nbsp;
-				<b>Local filesystem:</b>
-				<input type="file" id="load-custom-mod" name="file" multiple="multiple" />
-				(use ctrl to select multiple files)
-			</p>
-			<ul id="custom-mod-list" style="display:none; color:#AA0000; font-weight:bold;"></ul>
-	
+			<div id="drop-zone" style="border: 2px dashed #ccc; padding: 10px; margin-bottom: 10px;">
+				<p>
+					<b>Local filesystem:</b>
+					<input type="file" id="load-custom-mod" name="file" multiple="multiple" />
+					<p style="margin-left: 15px;">(use ctrl to select multiple files, or drag and drop files anywhere in this area)</p>
+				</p>
+				<input type="button" value="X" id="clear-custom-mods-btn" class="clear-filters-btn" title="clear selection" style="float:left;"/>
+				<ul id="custom-mod-list" style="display:none; color:#AA0000; font-weight:bold; margin-left: 10px;"></ul>
+			</div>
+			
 			<hr style="clear:both;" />
 			
 			<p><input type="submit" id="submit-mod-selection" value=" LOAD " name="submit" /></p>
-		</form>	
+		</form>
 
         	<!-- TEXT SEARCH -->
 		<div class="filters-text  panel itemview">
