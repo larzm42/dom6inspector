@@ -2267,7 +2267,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'astralfetters', 'astral fetters',
 	'foreignmagicboost', 'foreign magic boost',
 	'templetrainer', 'temple summon', function(v,o){
-		return Utils.unitRef('1859');
+		return Utils.unitRef(v);
 	},
 	'addrandomage', 'add random age',
 	'unsurr', 'unsurroundable',
