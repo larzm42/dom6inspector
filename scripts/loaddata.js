@@ -172,8 +172,7 @@ function selectMods( g_data ) {
 	var numcols = DMI.Options['Select mod columns'];//Math.sqrt(g_data.server_mod_list.length);
 	var numrows = Math.ceil( g_data.server_mod_list.length / numcols );
 
-	html+='<div style="float:left;">';
-	var html = '';
+	var html = '<div style="float:left;">';
 	for (var mod, i=0; mod=g_data.server_mod_list[i]; i++) {
 		//new column
 		if (i % numrows == 0)
@@ -214,26 +213,15 @@ function selectMods( g_data ) {
 		});
 	});
 
-	//load local mod files
-	function handleFileSelect(evt) {
-		if (! (evt && evt.target && evt.target.files)) {
-			Utils.error('Not supported in this browser.');
-			return;
-		}
-		var files = evt.target.files; // FileList object
-		//$('ul#custom-mod-list').hide().html('');
-
-		// Loop through the FileList
+	//process uploaded files
+	function processFiles(files) {
 		for (var i = 0, f; f = files[i]; i++) {
 			var reader = new FileReader();
-
-			//callback in closure with file details
 			reader.onload = (function(f) {
 			return function(e) {
 				if (e && e.target && e.target.result) {
 					g_data.upload_mods_to_load.push(f.name);
 					g_data.upload_data[f.name] = e.target.result;
-
 					$('ul#custom-mod-list li[title=\''+f.name+'\']').remove();
 					$('ul#custom-mod-list').show().append('<li title="'+f.name+'">'+f.name+'</li>');
 					$('#clear-custom-mods-btn').css('visibility', 'visible');
@@ -242,11 +230,61 @@ function selectMods( g_data ) {
 				}
 			};
 			})(f);
-			// Read in the file as a data URL.
 			reader.readAsText(f);
 		}
 	}
+
+	//file input handler
+	function handleFileSelect(evt) {
+		if (! (evt && evt.target && evt.target.files)) {
+			Utils.error('Not supported in this browser.');
+			return;
+		}
+		processFiles(evt.target.files);
+	}
+	
+	//setup drag and drop functionality
+	function setupDragAndDrop() {
+		var dropZone = document.getElementById('drop-zone');
+		if (!dropZone) return;
+		
+		//prevent default behavior to allow drop
+		['dragenter', 'dragover', 'dragleave', 'drop'].forEach(function(eventName) {
+			dropZone.addEventListener(eventName, function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+			}, false);
+		});
+	
+		//highlight drop zone when item is dragged over it
+		['dragenter', 'dragover'].forEach(function(eventName) {
+			dropZone.addEventListener(eventName, function() {
+				dropZone.style.backgroundColor = '#f0f7ff';
+				dropZone.style.borderColor = '#6699cc';
+			}, false);
+		});
+	
+		//remove highlight when item is dragged out or dropped
+		['dragleave', 'drop'].forEach(function(eventName) {
+			dropZone.addEventListener(eventName, function() {
+				dropZone.style.backgroundColor = '';
+				dropZone.style.borderColor = '#ccc';
+			}, false);
+		});
+	
+		//handle dropped files
+		dropZone.addEventListener('drop', function(e) {
+			var files = e.dataTransfer.files;
+			if (files.length > 0) {
+				processFiles(files);
+			}
+		}, false);
+	}
+	
+	//set up file input and drag/drop
 	$('#load-custom-mod').bind('change', handleFileSelect);
+	setupDragAndDrop();
+	
 	$('#clear-custom-mods-btn').click(function(){
 		g_data.local_mods_to_load = [];
 		g_data.upload_mods_to_load =   [];
