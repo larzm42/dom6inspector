@@ -2612,7 +2612,9 @@ var ignorekeys = {
 	
 	//common fields
 	name:1,linkname:1,descr:1,
-	searchable:1, renderOverlay:1, matchProperty:1
+	searchable:1, renderOverlay:1, matchProperty:1,
+
+	_ressizeExplicitlySet:1
 };
 
 MUnit.renderOverlay = function(o, isPopup) {
