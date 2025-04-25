@@ -34,7 +34,34 @@ MSpell.nationList = function (o) {
 	return o.nations;
 }
 
+MSpell.ensureAttributeExists = function (attributeId, name) {
+	if (!modctx.attribute_keys_lookup[attributeId]) {
+		// console.log("Adding missing attribute to lookup: " + attributeId + " - " + name);
+		// Create a placeholder entry in the lookup
+		modctx.attribute_keys_lookup[attributeId] = {
+			number: attributeId,
+			name: name || "Unknown Attribute (" + attributeId + ")"
+		};
+	}
+}
+
+MSpell.initializeMissingAttributes = function () {
+	// First, we collect all attribute IDs used in the game
+	var usedAttributes = {};
+
+	for (var i = 0, attr; attr = modctx.attributes_by_spell[i]; i++) {
+		usedAttributes[attr.attribute] = true;
+	}
+
+	// Then ensure each used attribute exists in the lookup
+	for (var attrId in usedAttributes) {
+		MSpell.ensureAttributeExists(attrId);
+	}
+}
+
+
 MSpell.prepareData_PreMod = function() {
+	MSpell.initializeMissingAttributes();
 	for (var oi=0, o;  o= modctx.spelldata[oi];  oi++) {
 
 		o.path1  = modconstants[16][o.path1];
