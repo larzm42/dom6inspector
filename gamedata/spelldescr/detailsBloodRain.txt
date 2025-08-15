@@ -1,1 +1,1 @@
-Continuously target all enemies with Frighten 1 (max -5 morale loss)
+Continuously target all units with Frighten 1 (max -5 morale loss)

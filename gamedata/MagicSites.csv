@@ -1242,12 +1242,12 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1393	The Throne of Power	13	214015	0	Holy					6														3																		FAWESDNGB	2																																																											2				95																														
 1394	The Throne of Time	13	214015	0	Holy					5												Magic(max 3)		3						-1																																																																												95																									100	100	100	75		
 1395	The Throne of Lies	11	214015	0	Holy								1									Turmoil(max 2)		1	1																																																																																	95												1																		
-1396	The Throne of Vitality	11	214015	0	Holy							1										Growth(max 2)		1																																																																																		95																														
+1396	The Throne of Vitality	11	214015	0	Holy							1										Growth(max 2)		1																																																																																		95					1																									
 1397	The Throne of Gates and Conjunctions	12	16607	0	Holy					2												Magic(max 2)		2																																					20%																																													95																														
 1398	The Throne of the Fool	11	214015	0	Holy								3									Turmoil(max 2)		1													-1																																																																					95																														
 1399	The Throne of Pride	11	214015	0	Holy	1																		1													1																																																																					95																														
 1400	The White Throne	11	214015	0	Holy							1												1																																							20%																																											95				5																										
-1401	The Black Throne	11	214015	0	Holy						3													1																																								10%																																										95				5																										
+1401	The Black Throne	11	214015	0	Holy						3													1																																								10%																																										95				5								1																		
 1402	The Throne of Deeper Fires	11	16896	0	Holy	1			1															1																																																																																		95																														
 1403	The Throne of Deeper Waters	11	16896	0	Holy			1	1															1																																																																																		95																														
 1404	The Throne of Secrets	12	214015	0	Holy					1			1	2								Magic(max 2)		2																																																																	3																	95																														
