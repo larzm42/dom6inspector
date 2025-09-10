@@ -24,7 +24,12 @@ const isUserUsingMobile = () => {
 
 	// Touch events method
 	if (!isMobile) {
-    	isMobile = (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
+        isMobile = ('ontouchstart' in window);
+	}
+
+	if (!isMobile) {
+        try{ document.createEvent("TouchEvent"); isMobile = true; }
+        catch(e) { isMobile = false; }
 	}
 
 	// CSS media queries method
