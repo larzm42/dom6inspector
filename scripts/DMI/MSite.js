@@ -827,6 +827,13 @@ var displayorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'mon',	'units',	function(v,o){
 		return list_units(v, o);
 	},
+	'sum',	'summon',	function(v,o){
+		var summon_counts = v.reduce((acc, summon_id) => {
+			acc[summon_id] = acc[summon_id] ? acc[summon_id]+1 : 1;
+			return acc
+		}, {});
+		return o.path + " Mage " + Object.entries(summon_counts).map(([summon_id, count]) => (count > 1 ? count + ' ' : '') + Utils.unitRef(summon_id)).join(', ');
+	},
 	'sum1',	'summon',	function(v,o){
 		return o.path + " Mage 1-" + o.n_sum1 + ' ' + Utils.unitRef(v);
 	},
