@@ -241,6 +241,11 @@ MEvent.formatMagicEquip = function(v, o) {
 		}
 		break;
 	}
+	if (ret == 'Unknown') { // if looking up by const level fails, just look up by ID
+		var temp = Utils.itemRef(parseInt(v))
+		if (temp)
+			ret = temp;
+	}
 	return ret;
 }
 MEvent.formatNewSite = function(v,o) {
@@ -505,6 +510,7 @@ var displayorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'req_gem', 'gem in lab', {'0': 'Fire', '1': 'Air', '2': 'Water', '3': 'Earth', '4': 'Astral', '5': 'Death', '6': 'Nature', '7': 'Blood slave'},
 	'req_monster',	'monster present', MEvent.monsterArr,
 	'req_nomonster',	'monster not present', MEvent.monsterArr,
+	'req_noworlditem', 'item not in world', MEvent.magicEquipArr,
 	'req_nomnr', 'does not exist', MEvent.monsterArr,
 	'req_mnr', 'exists', MEvent.monsterArr,
 	'req_nation', 'nation in play', MEvent.nationArr,
@@ -550,6 +556,10 @@ var displayorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'req_targpath2', 'level 2+ mage', MEvent.magicPathArr,
 	'req_targpath3', 'level 3+ mage', MEvent.magicPathArr,
 	'req_targpath4', 'level 4+ mage', MEvent.magicPathArr,
+	'req_targnopath1', 'level 0 mage', MEvent.magicPathArr,
+	'req_targnopath2', 'level 0-1 mage', MEvent.magicPathArr,
+	'req_targnopath3', 'level 0-2 mage', MEvent.magicPathArr,
+	'req_targnopath4', 'level 0-3 mage', MEvent.magicPathArr,
 	'req_targmnr', 'target monster', MEvent.monsterArr,
 	'req_foundsite', 'found site', MEvent.formatReqSite,
 	'req_hiddensite', 'hidden site', MEvent.formatReqSite,
@@ -687,8 +697,11 @@ var effectkeys = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'1unit',	'unit', 	function(v,o){ return MEvent.monsterArr(v, o); },
 	'1d3units',	'units', 	function(v,o){ return MEvent.monsterArr(v, o, ' x 1d3'); },
 	'1d6units',	'units', 	function(v,o){ return MEvent.monsterArr(v, o, ' x 1d6'); },
+	'2d3units',	'units', 	function(v,o){ return MEvent.monsterArr(v, o, ' x 2d3'); },
 	'2d6units',	'units', 	function(v,o){ return MEvent.monsterArr(v, o, ' x 2d6'); },
+	'3d3units',	'units', 	function(v,o){ return MEvent.monsterArr(v, o, ' x 3d3'); },
 	'3d6units',	'units', 	function(v,o){ return MEvent.monsterArr(v, o, ' x 3d6'); },
+	'4d3units',	'units', 	function(v,o){ return MEvent.monsterArr(v, o, ' x 4d3'); },
 	'4d6units',	'units', 	function(v,o){ return MEvent.monsterArr(v, o, ' x 4d6'); },
 	'5d6units',	'units', 	function(v,o){ return MEvent.monsterArr(v, o, ' x 5d6'); },
 	'6d6units',	'units', 	function(v,o){ return MEvent.monsterArr(v, o, ' x 6d6'); },
