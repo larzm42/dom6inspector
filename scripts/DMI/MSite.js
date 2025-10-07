@@ -374,6 +374,16 @@ MSite.prepareData_PostMod = function() {
 						}
 						found = true;
 					}
+					else if (/[^0-9.]/.test(uid) && !found && (unit = modctx.unitlookup[uid])) {
+						// allow unit references by name instead of id
+						o.mon[cc] = unit.id;
+						unit.recruitedby = unit.recruitedby || [];
+						unit.recruitedby.push( o );
+						if (!unit.typechar || unit.typechar == 'Unit') {
+							unit.typechar = 'Unit (Magic site)';
+						}
+						found = true;
+					}
 				}
 				if (!found) {
 					for (var cc=0; uid=o.mon[cc]; cc++) {
