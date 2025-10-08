@@ -1765,6 +1765,7 @@ var modctx = DMI.modctx = {
         invisible: _bool,
         templetrainer: _num,
 		twiceborn: _num,
+		lich: _num,
 		snow: _bool,
 		bringeroffortune: _num,
 
@@ -1792,6 +1793,7 @@ var modctx = DMI.modctx = {
 		glamour: _bool,
 		grandcom: _num,
 		icenatprot: _num,
+		mountmnr: _num,
 		nightmareaura: _num,
 		noreqlab: _bool,
 		praise: _num,
@@ -1908,6 +1910,7 @@ var modctx = DMI.modctx = {
 		onlygeodst:		_num,
 		onlyfriendlydst:_num,
 		onlyowndst:		_num,
+		onlycoastsrc: 	_num,
 		nowatertrace:	_num,
 		nolandtrace:	_num,
 		walkable:		_num,
@@ -2015,17 +2018,38 @@ var modctx = DMI.modctx = {
 		multihero1: function(c,a,t){ modctx[t]['multiheroes'][1] = argref(a); },
 		multihero2: function(c,a,t){ modctx[t]['multiheroes'][2] = argref(a); },
 
+		// PD commands
+		defmult1d: _ignore,
+
 		defcom1: _ignore,//_ref,
 		defunit1: _ignore,//_ref,
 		defmult1: _ignore,//_ref,
 		defunit1b: _ignore,//_ref,
 		defmult1b: _ignore,//_ref,
+		defmult1c: _ignore,
+		defunit1c: _ignore,
+		defunit1d: _ignore,
 
 		defcom2: _ignore,//_ref,
 		defunit2: _ignore,//_ref,
+
 		defmult2: _ignore,//_ref,
 		defunit2b: _ignore,//_ref,
 		defmult2b: _ignore,//_ref,
+
+		wallcom: _ignore,
+		guardcom: _ignore,
+		guardunit: _ignore,
+		guardmult: _ignore,
+		foreignwallcom: _ignore,
+		foreignwallunit: _ignore,
+		foreignwallmult: _ignore,
+		foreignguardcom: _ignore,
+		foreignguardunit: _ignore,
+		foreignguardmult: _ignore,
+		badindpd: _ignore,
+		wallmult: _ignore,
+		wallunit: _ignore,
 
 		name: _str,
 		epithet: _str,
@@ -2110,6 +2134,14 @@ var modctx = DMI.modctx = {
 		spreaddeath: _ignore,
 		golemhp: _ignore,
 		tradecoast: _ignore,
+		homefort: _ignore,
+		buildfort: _ignore,
+		moreorder: _ignore,
+		moreprod: _ignore,
+		moreheat: _ignore,
+		moregrowth: _ignore,
+		moreluck: _ignore,
+		moremagic: _ignore,
 
 		godrebirth: _ignore,
 
@@ -2212,6 +2244,7 @@ var modctx = DMI.modctx = {
 				modctx[t][p] = a.n2;
 			}
 		},
+		look: _ignore,
 
 		path: function(c,a,t){ modctx[t][c] = modconstants['pathnames'][a.n1] },
 		level: _num,
@@ -2413,8 +2446,17 @@ var modctx = DMI.modctx = {
 		req_nopathholy : _num,
 		req_nopathall : _num,
 		req_targmnr : _str_num, //lookup
+		req_targnomnr: _str_num,
+		req_targrealmnr: _str_num,
+		req_targnorealmnr: _str_num,
+		req_targmanygems: _num,
 		req_targgod : _num,
+		req_targprophet : _num,
 		req_targhumanoid : _num,
+		req_targimmobile : _num,
+		req_targmindless : _num,
+		req_targsight : _num,
+		req_targanimal : _num,
 		req_targmale : _num,
 		req_targpath1 : _num, //lookup
 		req_targpath2 : _num, //lookup
@@ -2438,6 +2480,7 @@ var modctx = DMI.modctx = {
 		req_hostileench : _num, //lookup
 		req_enchdom : _num, //lookup
 		req_targitem: _num, //lookup
+		req_targnoitem: _num, //lookup
 		req_gold: _num,
 		req_mnr: _num,
 		req_notanycode: _num, 
@@ -2451,6 +2494,21 @@ var modctx = DMI.modctx = {
 		req_5monsters: _num,  
 		req_thronesite: _num,
 		req_noworlditem: _num,
+		req_targnoaff: _num,
+		req_targowner: _num,
+		req_targnotowner: _num,
+		req_targforeignok: _bool,
+		req_targminsize: _num,
+		req_targmaxsize: _num,
+		req_targinsane: _num,
+		req_targnoorder: _num,
+		req_targminmorale: _num,
+		req_targmaxorale: _num,
+		req_targally: _num,
+		req_targnotally: _num,
+		req_targseductions: _num,
+		req_targminkills: _num,
+		req_targmaxkills: _num,
 
 		xp: _num,
 		

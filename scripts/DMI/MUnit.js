@@ -340,8 +340,7 @@ MUnit.prepareData_PostMod = function() {
 		var mult = Utils.mult;
 		var is = Utils.is;
 		var normalise = Utils.normalise;
-
-		if (o.rt == 2 || o.slowrec) {
+		if ((o.rt == 2 || o.slowrec) && !o.noslowrec) {
 			o.slow_to_recruit = 1;
 		}
 
@@ -2603,6 +2602,7 @@ var ignorekeys = {
 	gcom:1,
 	watt:1,
 	slowrec:1,
+	noslowrec:1,
 	sprite:1,
 	ressize:1,
 	command:1,
