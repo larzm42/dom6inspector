@@ -340,8 +340,7 @@ MUnit.prepareData_PostMod = function() {
 		var mult = Utils.mult;
 		var is = Utils.is;
 		var normalise = Utils.normalise;
-
-		if (o.rt == 2 || o.slowrec) {
+		if ((o.rt == 2 || o.slowrec) && !o.noslowrec) {
 			o.slow_to_recruit = 1;
 		}
 
@@ -1901,6 +1900,8 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'holycost', 'holy cost',
 	'reclimit',		'recruitment limit',	Format.PerTurn,
 	'gemprod',	'generates gems',	function(v){ return v!='0' && Format.PerTurn(Format.Gems(v)); },
+	'elementgems',	'generates random gems',
+	'sorcerygems',	'generates random sorcery gems',
 	'tmpfiregems',	'temp gems', function(v){ return v!='0' && Format.PerBattle(Format.Gems('F' + v)); },
 	'tmpairgems',	'temp gems', function(v){ return v!='0' && Format.PerBattle(Format.Gems('A' + v)); },
 	'tmpwatergems',	'temp gems', function(v){ return v!='0' && Format.PerBattle(Format.Gems('W' + v)); },
@@ -1913,12 +1914,14 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'onebattlespell','casts each battle',		Utils.spellRef,
 
 	'regeneration',	'regeneration',	Format.Percent,
+	'enchantedblood', 'enchanted blood', function(v) { return String(v) + ' ';},
 	'fireres',	'resist fire',
 	'coldres',	'resist cold',
 	'poisonres',	'resist poison',
 	'shockres',	'resist shock',
 	'acidres',	'resist acid',
 	'diseaseres',	'resist disease',	Format.Percent,
+	'sleepres', 'resist sleep',
 
 	'darkvision',	'dark vision',	Format.Percent,
 	'stealthy',	'stealthy',	Format.SignedZero,//{0:'+0'},
@@ -1928,7 +1931,6 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'deathrec',	'death recruit',
 	'heatrec',	'heat recruit', function(v) { return String(v) + ' ';},
 	'coldrec',	'cold recruit', function(v) { return String(v) + ' ';},
-	'enchrebate50p', '50% cheaper if active', function(v) { return modctx.enchantments_lookup[v].name;},
 
 	'cold',		'cold aura',
 	'heat',		'heat aura',
@@ -1941,6 +1943,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'adeptsacr',		'adept blood sacrificer',
 
 	'iceprot',	'ice protection',
+	'icenatprot', 'ice natural protection',
 	'iceforging',	'ice forging',
 	'firepower',	'fire power',
 	'stormpower',	'storm power',
@@ -1948,6 +1951,9 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'darkpower',	'dark power',
 	'chaospower',	'chaos power',
 	'magicpower',	'magic power',
+	'growthpower', 	'growth power',
+	'slothpower ', 	'sloth power',
+	'dompower', 	'dominion power',
 	'waterbreathing',	'waterbreathing',
 	'giftofwater',	'gift of waterbreathing',
 	'uwregen',	'uw regeneration',	Format.Percent,
@@ -1959,6 +1965,8 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 
 	'fear',		'fear',		Format.SignedZero,
 	'awe',		'awe',		Format.SignedZero,
+	'dread',		'dread',		Format.SignedZero,
+	'nightmareaura',	'nightmare aura',	Format.SignedZero,
 	'haltheretic',	'halt heretic',	Format.SignedZero,
 	'animalawe',	'animal awe',	Format.SignedZero,
 	'event',	'causes events',	Format.Percent,
@@ -1979,6 +1987,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'adept_research',	'adept researcher',
 	'inept_research',	'inept researcher',
 	'corpsestitcher', 'corpse stitcher',
+	'autocorpsehealer', 'corpse stitcher',
 	
 	'makepearls','pearl cultivator',
 	'sailingshipsize',	'sailing ship size',
@@ -2004,6 +2013,8 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'bloodrange',	'blood ritual range',
 	'elementrange',	'elemental ritual range',
 	'sorceryrange',	'sorcery ritual range',
+	'glamourrange',	'glamour ritual range',
+	'holyrange',	'holy range',
 	'allrange',	'ritual range',
 	'masterrit',	'ritual pathboost',
 	'disbelieve',	'disbelieve illusions',
@@ -2032,6 +2043,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'seduce',	'seduction',	function(v){ if (v=='0') return '0'; return 'morale vs '+v; },
 	'succubus',	'dream seduction',	function(v){ if (v=='0') return '0'; return 'morale vs '+v; },
 	'corrupt',	'capture cmdr (corruption)',	function(v){ if (v=='0') return '0'; return 'morale vs '+v; },
+	'corruptor',	'capture cmdr (corruption)',	function(v){ if (v=='0') return '0'; return 'morale vs '+v; },
 	'beckon',	'lure cmdr into sea',		function(v){ if (v=='0') return '0'; return 'morale vs '+v; },
 	'startaff',	'starting affliction chance',	Format.Percent,
 	'startingaff', 'affliction', {4096: 'Blind', 524288: 'Lost an eye', 262144:'Limp'},
@@ -2068,6 +2080,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'deathfire',	'explode on death',
 	'transformation', 'transformation', {'-1': 'bad result', '0': 'disabled', '1': 'good result' },
 	'guardspiritbonus', 'guardian spirit',
+	'guardspirit', 'guardian spirit',Utils.unitRef,
 	'ironvul', 'iron vulnerability',
 	'saltvul', 'salt vulnerability',
 	'landenc', 'land encumbrance',
@@ -2109,7 +2122,10 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'plainshape',	'normal shape',	function(v,o){	return twinUnitRef(o, 'plainshape', 'forestshape');	},
 	'prophetshape',	'prophet shape',	function(v,o){	return chainedUnitRef(o, 'prophetshape', []);	},
 	'xpshape',		'experienced shape',function(v,o){
-		return v + ' (' + Utils.unitRef(o.id+1) + ')';
+		return v + ' (' + (o.xpshapemon ? Utils.unitRef(o.xpshapemon) : Utils.unitRef(o.id+1)) + ')';
+	},
+	'labxpshape',		'experienced shape (lab)',function(v,o){
+		return v + ' (' + (o.xpshapemon ? Utils.unitRef(o.xpshapemon) : Utils.unitRef(o.id+1)) + ')';
 	},
 	'twiceborn',	'twiceborn',	function(v,o){
 		return Utils.unitRef(v);
@@ -2172,6 +2188,15 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'battlesum5',	'summons in battle',	function(v,o){
 		return Utils.unitRef(v)+' x 5/turn';
 	},
+	'battlesumwarm', 'summons in battle', function(v,o) {
+		return Utils.unitRef(v)+' x 1d4/turn (warm scales only)';
+	},
+	'battlesum1d2',	'summons in battle',	function(v,o){
+		return Utils.unitRef(v)+' x 1d2/turn';
+	},
+	'battlesum1d3',	'summons in battle',	function(v,o){
+		return Utils.unitRef(v)+' x 1d3/turn';
+	},
 	'batstartsum1d3',	'summons in battle',	function(v,o){
 		return Utils.unitRef(v)+' x 1d3';
 	},
@@ -2192,6 +2217,15 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	},
 	'batstartsum6d6',	'summons in battle',	function(v,o){
 		return Utils.unitRef(v)+' x 6d6';
+	},
+	'batstartsum7d6',	'summons in battle',	function(v,o){
+		return Utils.unitRef(v)+' x 7d6';
+	},
+	'batstartsum8d6',	'summons in battle',	function(v,o){
+		return Utils.unitRef(v)+' x 8d6';
+	},
+	'batstartsum9d6',	'summons in battle',	function(v,o){
+		return Utils.unitRef(v)+' x 9d6';
 	},
 	'ownsmonrec',	'recruit when player owns',	function(v,o){ //TODO: reverse lookup
 		return Utils.unitRef(v);
@@ -2224,11 +2258,13 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'shatteredsoul',	'shattered soul', 	Format.Percent, //tartarian
 	'insane',	'insane',		Format.Percent,
 	'reconstruction', 'reconstruction', Format.Percent,
+	'reconst', 'reconstruction', Format.Percent,
 
 	'voidsanity',		'void sanity',
 	'voidsum',		'void summoning',	Format.Signed, //rl'yeh
 
 	'xploss',	'lose XP on transform',	Format.Percent,
+	'xpshapeloss', 'lose XP on transform', Format.Percent,
 	'incscale',	'increase scale', function(v,o){ return Utils.getScale(v); },
 	'decscale',	'increase scale', function(v,o){ return Utils.getScaleInverted(v); },
 	'domrec',	'domrec (?)',
@@ -2308,9 +2344,15 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	
 	'horrormark',	'horror mark melee attackers',
 	'fearoftheflood', 'fear of the flood',
+	'fearofflood', 'fear of the flood',
 	
-	'enchrebate50',	'50 gold cheaper when active', function(v) { return modctx.enchantments_lookup[v].name;},
 	'enchrebate10',	'10 gold cheaper when active', function(v) { return modctx.enchantments_lookup[v].name;},
+	'enchrebate20',	'20 gold cheaper when active', function(v) { return modctx.enchantments_lookup[v].name;},
+	'enchrebate50',	'50 gold cheaper when active', function(v) { return modctx.enchantments_lookup[v].name;},
+	'enchrebate75',	'75 gold cheaper when active', function(v) { return modctx.enchantments_lookup[v].name;},
+	'enchrebate100','100 gold cheaper when active', function(v) { return modctx.enchantments_lookup[v].name;},
+	'enchrebate25p','25% cheaper when active', function(v) { return modctx.enchantments_lookup[v].name;},
+	'enchrebate50p','50% cheaper when active', function(v) { return modctx.enchantments_lookup[v].name;},
 	'allret',	'all plane returning',
 	'percentpathreduction',	'percentage path reduction',	Format.Percent,
 	'slaverbonus',	'slaver bonus',
@@ -2396,17 +2438,39 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'uwpathboost', 'underwater path boost',
 	'randomitems', 'random items',
 	'fireempower', 'fire elemental empowerment', Format.Signed,
+	'fireelementals', 'fire elemental empowerment', Format.Signed,
 	'airempower', 'air elemental empowerment', Format.Signed,
+	'airelementals', 'air elemental empowerment', Format.Signed,
 	'waterempower', 'water elemental empowerment', Format.Signed,
+	'waterelementals', 'water elemental empowerment', Format.Signed,
 	'earthempower', 'earth elemental empowerment', Format.Signed,
+	'earthelementals', 'earth elemental empowerment', Format.Signed,
 	'drawsize', 'draw size', Format.Percent,
 	'petrificationimmune', 'petrification immune', Format.Percent,
 	'scarsouls', 'scar souls', Format.Percent,
 	'spikebarbs', 'spike barbs',
 	'pretenderstartsite', 'pretender start site', Utils.siteRef, 
+	'godsite', 'pretender start site', Utils.siteRef,
 	'offscriptresearch', 'off script research level',
 	'overcharged', 'overcharged',
-	
+	'praise', 'praise',
+	'battleshape', 'battle shape', Utils.unitRef,
+	'worldshape', 'world shape', Utils.unitRef,
+	'bravemount', 'brave mount', Format.Percent,
+	'bugshape', 'soul bug shape', Utils.unitRef,
+	'bugswarmshape', 'bug swarm', Utils.unitRef,
+	'bugswarmuwshape', 'bug swarm (underwater)', Utils.unitRef,
+	'buguwshape', 'soul bug shape (underwater)', Utils.unitRef,
+	'chaosrecscale', 'required chaos scale',
+	'coldrecscale', 'required cold scale',
+	'deathrecscale', 'required death scale',
+	'growthrecscale', 'required growth scale',
+	'heatrecscale', 'required heat scale',
+	'orderrecscale', 'required order scale',
+	'extralives', 'extra lives = dominion *', Format.Percent,
+	'falseregen', 'false damage regeneration / turn',
+	'falsesupply', 'false supplies',
+	'spikes', 'spiked barbs',
 ]);
 var flagorder = Utils.cutDisplayOrder(aliases, formats,
 [
@@ -2414,6 +2478,8 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'slow_to_recruit',	'slow to recruit',
 	'reqtemple', 'requires temple',
 	'reqlab', 'requires lab',
+	'noreqlab', 'doesn\'t require lab',
+	'noreqtemple', 'doesn\'t require temple',
 	'unique',	'unique',
 	'immortal',	'immortal',
 	'domimmortal',	'dominion immortality',
@@ -2489,9 +2555,13 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'spreadorder',	'spreads order',
 	'spreadgrowth',	'spreads growth',
 	'deathslimeexpl', 'slime explosion on death',
+	'deathslime', 'slime explosion on death',
 	'deathpoisonexpl', 'poison explosion on death',
+	'deathpoison', 'poison explosion on death',
 	'deathshockexpl', 'shock explosion on death',
+	'deathshock', 'shock explosion on death',
 	'deathdiseaseexpl', 'disease explosion on death',
+	'deathgrab', 'earth grip explosion on death',
 	'decayres', 'decay resistant',
 	'wastesurvival',	'wasteland survival',
 	'mountainsurvival',	'mountain survival',
@@ -2507,6 +2577,7 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'female',	'female',
 	'stonebeing',	'stone being',
 	'tightrein',	'tight rein',
+	'undisleader', 'tight reign',
 	'clumsy', 'clumsy',
 	'ownblood', 'use own blood',
 	'petrify',	'petrifies attackers',
@@ -2515,6 +2586,7 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'spiritsight', 'spirit sight',
 	'spiritform', 'spiritform',
 	'blessbers', 'berserk when blessed',
+	'autoberserk', 'autoberserk',
 	'combatcaster', 'combat caster',
 	'aisinglerec', 'ai single recruit',
 	'nowish', 'no wish',
@@ -2533,6 +2605,8 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'comslave', 'communion slave',
 	'chorusmaster', 'chorus master',
 	'chorusslave', 'chorus slave',
+	'grandcom', 'grand communicant',
+	'sabbathslave', 'sabbath slave',
 	'unseen', 'unseen',
 	'indepstay',	'stops upon reaching throne',
 	'polyimmune',	'polymorph immunity',
@@ -2540,7 +2614,11 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'norange', 'does-not-stop-to-fire',
 	'nohof', 'no-hall-of-fame',
 	'autoblessed', 'autoblessed',
-	'almostundead', 'part undead/demon'
+	'almostundead', 'part undead/demon',
+	'glamourmanip', 'glamour manipulator',
+	'statbreak', 'can break siege',
+	'statstorm', 'can storm fort',
+	'twistfate', 'twist fate',
 	]);
 var hiddenkeys = Utils.cutDisplayOrder(aliases, formats,
 [
@@ -2576,6 +2654,7 @@ var ignorekeys = {
 	gcom:1,
 	watt:1,
 	slowrec:1,
+	noslowrec:1,
 	sprite:1,
 	ressize:1,
 	command:1,
@@ -2614,7 +2693,9 @@ var ignorekeys = {
 	name:1,linkname:1,descr:1,
 	searchable:1, renderOverlay:1, matchProperty:1,
 
-	_ressizeExplicitlySet:1
+	_ressizeExplicitlySet:1,
+	xpshapemon:1,
+	noremount:1,
 };
 
 MUnit.renderOverlay = function(o, isPopup) {

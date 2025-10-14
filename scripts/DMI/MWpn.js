@@ -247,6 +247,7 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 	'friendlyimmune',	'friendly units immune',
 	'mind',	'mindless units immune',
 	'hardmrneg',	'hard mr negate',
+	'morroll', 'morale roll negates',
 ]);
 
 var ignorekeys = {

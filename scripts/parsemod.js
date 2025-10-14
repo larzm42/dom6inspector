@@ -434,6 +434,18 @@ var modctx = DMI.modctx = {
 
 			DMI.MEvent.initEvent(modctx.event);
 		},
+		selectevent: function(c,a,t,fnw) {
+			try {
+				modctx._select(c,a,'event',fnw)
+			}
+			catch(e) {
+				if (e == 'data not found' && a.n1) {
+					modctx._new(c,a,'event',fnw);
+					DMI.MEvent.initEvent(modctx.event);
+				}
+				else throw e;
+			}
+        },
 
         selectnametype: function(c,a,t,fnw) {
             modctx._select(c,a,'nametype',fnw);
@@ -491,6 +503,7 @@ var modctx = DMI.modctx = {
 		coldres: 	_num,
 		shockres: 	_num,
 		poisonres: 	_num,
+		acidres: 	_num,
 		restricted: function(c,a,t){ modctx.item.restricted.push(argref(a)); }, //deferr lookups
 		pen: 	_num,
 		autospellrepeat: 	_num,
@@ -915,6 +928,7 @@ var modctx = DMI.modctx = {
 		dt_aff:		_bool,
 		sacredonly:		_bool,
 		hardmrneg:		_bool,
+		morroll: 		_bool,
 		sizeresist:		_bool,
 		undeadimmune:		_bool,
 		inanimateimmune:		_bool,
@@ -1220,6 +1234,7 @@ var modctx = DMI.modctx = {
 		magicbeing:	_bool,
 		stonebeing:	_bool,
 		inanimate: 	_bool,
+		spiritform: _bool,
 		dungeon: 	_bool,
 		coldblood:	_bool,
 		immortal:	_bool,
@@ -1252,8 +1267,10 @@ var modctx = DMI.modctx = {
 		coldres:	_num,
 		fireres:	_num,
 		poisonres:	_num,
+		acidres:	_num,
 		shockres:	_num,
 		diseaseres: 	_num,
+		sleepres: 	_num,
 		darkvision:	_num,
 		startingaff: 	_num,
 
@@ -1303,6 +1320,8 @@ var modctx = DMI.modctx = {
 		magicpower: _num,
 		slothpower: _num,
 		dompower: _num,
+		growthpower: _num,
+		powerofdeath: _num,
 
 		ambidextrous:	_num,
 		banefireshield:	_num,
@@ -1313,6 +1332,7 @@ var modctx = DMI.modctx = {
 
 		animalawe:	_num,
 		awe:		_num,
+		sunawe: 	_num,
 		fear:		_num,
 		regeneration:	_num,
 		undregen:	_num,
@@ -1639,6 +1659,8 @@ var modctx = DMI.modctx = {
 		slave:			_bool,
 		undisciplined:	_bool,
 		magicimmune:	_bool,
+		polyimmune: 	_bool,
+		stunimmunity: 	_bool,
 		comslave:		_bool,
 		indepspells:	_num,
 		fastcast:		_num,
@@ -1649,6 +1671,9 @@ var modctx = DMI.modctx = {
 		battlesum3:	_ref,
 		battlesum4:	_ref,
 		battlesum5:	_ref,
+		battlesumwarm: _ref,
+		battlesum1d2:	_ref,
+		battlesum1d3:	_ref,
 		batstartsum1:	_ref,
 		batstartsum2:	_ref,
 		batstartsum3:	_ref,
@@ -1660,6 +1685,10 @@ var modctx = DMI.modctx = {
 		batstartsum3d6:	_ref,
 		batstartsum4d6:	_ref,
 		batstartsum5d6:	_ref,
+		batstartsum6d6:	_ref,
+		batstartsum7d6:	_ref,
+		batstartsum8d6:	_ref,
+		batstartsum9d6:	_ref,
 
 		fixedresearch: _num,
 		slothresearch: _num,
@@ -1697,7 +1726,15 @@ var modctx = DMI.modctx = {
 		hpoverslow: _num,
 		corpseeater: _num,
 		deadhp: _num,
+		maxdeadhp: _num,
+		autocorpsehealer: _num,
+		enchrebate10: _ref,
+		enchrebate20: _ref,
 		enchrebate50: _ref,
+		enchrebate75: _ref,
+		enchrebate100: _ref,
+		enchrebate25p: _ref,
+		enchrebate50p: _ref,
 		mindslime: _num,
 		prophetshape: _str_num,
 
@@ -1737,12 +1774,120 @@ var modctx = DMI.modctx = {
         rpcost: _num,
         spiritsight: _bool,
         invisible: _bool,
-        humanoid: _bool,
         templetrainer: _num,
-        twiceborn: _num,
-        snow: _bool,
-        mountedhumanoid: _bool,
-        bringeroffortune: _num,
+		twiceborn: _num,
+		lich: _num,
+		snow: _bool,
+		bringeroffortune: _num,
+
+		humanoid: _bool,
+		mountedhumanoid: _bool,
+		quadruped: _ignore,
+		lizard: _ignore,
+		naga: _ignore,
+		snake: _ignore,
+		bird: _ignore,
+		djinn: _ignore,
+		troglodyte: _ignore,
+		miscshape: _ignore,
+
+		animated: _ignore,
+		appetite: _num,
+		assencloc: _ignore,
+		autoberserk: _num,
+		battleshape: _num,
+		bravemount: _num,
+		bugshape: _str_num,
+		bugswarmshape: _str_num,
+		bugswarmuwshape: _str_num,
+		buguwshape: _str_num,
+		chaosrecscale: _num,
+		chorusmaster: _bool,
+		chorusslave: _bool,
+		clumsy: _num,
+		coldrecscale: _num,
+		coridermnr: _ignore,
+		corruptor: _num,
+		deathgrab: _num,
+		deathpoison: _num,
+		deathrecscale: _num,
+		deathshock: _num,
+		deathslime: _num,
+		decayres: _num,
+		divinebeing: _bool,
+		doheal: _ignore,
+		dread: _num,
+		elementgems: _num,
+		enchantedblood: _num,
+		extralives: _num,
+		falseregen: _num,
+		falsesupply: _num,
+		fearofflood: _num,
+		godsite: _ref,
+		glamour: _bool,
+		glamourmanip: _num,
+		glamourrange: _num,
+		grandcom: _num,
+		growthrecscale: _num,
+		guardspirit: _str_num,
+		heatrecscale: _num,
+		holycost: _num,
+		holyrange: _num,
+		icenatprot: _num,
+		labxpshape: _num,
+		mindcollar: _num,
+		mindvessel: _num,
+		mobilearcher: _num,
+		mountiscom: _num,
+		mountmnr: _num,
+		nightmareaura: _num,
+		nobarding: _bool,
+		nofalldmg: _bool,
+		nofmounts: _num,
+		nofriders: _num,
+		noremount: _bool,
+		noreqlab: _bool,
+		noreqtemple: _bool,
+		nospiritform: function(c,a,t){ delete modctx[t]['spiritform']; },
+		nothrowoff: _ignore,
+		noweapon: _ignore,
+		orderrecscale: _num,
+		plaguedoctor: _num,
+		praise: _num,
+		reconst: _num,
+		regainmount: _num,
+		sabbathslave: _bool,
+		skilledrider: _num,
+		smartmount: _num,
+		sorcerygems: _num,
+		spikes: _num,
+		statbreak: _num,
+		statstorm: _num,
+		triple3mon: _ignore,
+		truesight: _bool,
+		twistfate: _bool,
+		undisleader: _num,
+		unseen: _bool,
+		worldshape: _str_num,
+		xpshapeloss: _num,
+		xpshapemon: _ref,
+		xspr1: _ignore,
+		xspr2: _ignore,
+		yearturn: _num,
+
+		fireelementals: _num,
+		airelementals : _num,
+		earthelementals: _num,
+		waterelementals: _num,
+
+		moreorder: 	_num,
+		moreprod: 	_num,
+		moreheat:	_num,
+		moregrowth:	_num,
+		moreluck: 	_num,
+		moremagic: 	_num,
+
+		drawsize: _ignore,
 	},
 
 	//spell selected
@@ -1841,6 +1986,7 @@ var modctx = DMI.modctx = {
 		onlygeodst:		_num,
 		onlyfriendlydst:_num,
 		onlyowndst:		_num,
+		onlycoastsrc: 	_num,
 		nowatertrace:	_num,
 		nolandtrace:	_num,
 		walkable:		_num,
@@ -1948,17 +2094,38 @@ var modctx = DMI.modctx = {
 		multihero1: function(c,a,t){ modctx[t]['multiheroes'][1] = argref(a); },
 		multihero2: function(c,a,t){ modctx[t]['multiheroes'][2] = argref(a); },
 
+		// PD commands
+		defmult1d: _ignore,
+
 		defcom1: _ignore,//_ref,
 		defunit1: _ignore,//_ref,
 		defmult1: _ignore,//_ref,
 		defunit1b: _ignore,//_ref,
 		defmult1b: _ignore,//_ref,
+		defmult1c: _ignore,
+		defunit1c: _ignore,
+		defunit1d: _ignore,
 
 		defcom2: _ignore,//_ref,
 		defunit2: _ignore,//_ref,
+
 		defmult2: _ignore,//_ref,
 		defunit2b: _ignore,//_ref,
 		defmult2b: _ignore,//_ref,
+
+		wallcom: _ignore,
+		guardcom: _ignore,
+		guardunit: _ignore,
+		guardmult: _ignore,
+		foreignwallcom: _ignore,
+		foreignwallunit: _ignore,
+		foreignwallmult: _ignore,
+		foreignguardcom: _ignore,
+		foreignguardunit: _ignore,
+		foreignguardmult: _ignore,
+		badindpd: _ignore,
+		wallmult: _ignore,
+		wallunit: _ignore,
 
 		name: _str,
 		epithet: _str,
@@ -2043,6 +2210,14 @@ var modctx = DMI.modctx = {
 		spreaddeath: _ignore,
 		golemhp: _ignore,
 		tradecoast: _ignore,
+		homefort: _ignore,
+		buildfort: _ignore,
+		moreorder: _ignore,
+		moreprod: _ignore,
+		moreheat: _ignore,
+		moregrowth: _ignore,
+		moreluck: _ignore,
+		moremagic: _ignore,
 
 		godrebirth: _ignore,
 
@@ -2122,6 +2297,20 @@ var modctx = DMI.modctx = {
 				}
 			}
 		},
+		copysite: function(c,a,t){
+			var id = parseInt(a.n1);
+			var from = modctx.sitelookup[id];
+			if (!from) throw 'original site not found';
+			var ignorestats = {
+			//IGNORE
+				modded:1,
+				id:1,
+				name:1,
+			};
+			var to = modctx.site;
+			for (var k in to)   if (!ignorestats[k]) delete to[k];
+			for (var k in from) if (!ignorestats[k]) to[k] = from[k];
+		},
 		gems: function(c,a,t){
 			var pstr = modconstants[10][argnum(a)];
 			if (!pstr) throw 'invalid magic index';
@@ -2131,6 +2320,7 @@ var modctx = DMI.modctx = {
 				modctx[t][p] = a.n2;
 			}
 		},
+		look: _ignore,
 
 		path: function(c,a,t){ modctx[t][c] = modconstants['pathnames'][a.n1] },
 		level: _num,
@@ -2138,6 +2328,7 @@ var modctx = DMI.modctx = {
 		rarity: _num,
 		loc: _num,
 
+		homemon: function(c,a,t){ modctx[t]['hmon'].push(argref(a)); },
 		homemon: function(c,a,t){ modctx[t]['hmon'].push(argref(a)); },
 		homecom: function(c,a,t){ modctx[t]['hcom'].push(argref(a)); },
 
@@ -2214,6 +2405,13 @@ var modctx = DMI.modctx = {
 		claim: _ignore,
 		evil: _ignore,
 		wild: _ignore,
+		recallgod: _num,
+		domwar: _num,
+		defcom: _ignore,
+		defunit :_ignore,
+		popgrowth: _num,
+		incunrest: function(c,a,t){ modctx[t]['unr'] = argnum(a) / 10; },
+		defmult: _ignore,//_num,
 
 		summon: function(c,a,t){ modctx[t]['sum'].push(argref(a)); },
 		summonlvl2: function(c,a,t){ modctx[t]['suml2'].push(argref(a)); },
@@ -2325,13 +2523,26 @@ var modctx = DMI.modctx = {
 		req_nopathholy : _num,
 		req_nopathall : _num,
 		req_targmnr : _str_num, //lookup
+		req_targnomnr: _str_num,
+		req_targrealmnr: _str_num,
+		req_targnorealmnr: _str_num,
+		req_targmanygems: _num,
 		req_targgod : _num,
+		req_targprophet : _num,
 		req_targhumanoid : _num,
+		req_targimmobile : _num,
+		req_targmindless : _num,
+		req_targsight : _num,
+		req_targanimal : _num,
 		req_targmale : _num,
 		req_targpath1 : _num, //lookup
 		req_targpath2 : _num, //lookup
 		req_targpath3 : _num, //lookup
 		req_targpath4 : _num, //lookup
+		req_targnopath1 : _num, //lookup
+		req_targnopath2 : _num, //lookup
+		req_targnopath3 : _num, //lookup
+		req_targnopath4 : _num, //lookup
 		req_targaff : _num, //lookup
 		req_targorder : _num, //lookup
 		req_code : _num, // ideally lookup, would be really hard though
@@ -2346,6 +2557,7 @@ var modctx = DMI.modctx = {
 		req_hostileench : _num, //lookup
 		req_enchdom : _num, //lookup
 		req_targitem: _num, //lookup
+		req_targnoitem: _num, //lookup
 		req_gold: _num,
 		req_mnr: _num,
 		req_notanycode: _num, 
@@ -2358,6 +2570,22 @@ var modctx = DMI.modctx = {
 		req_targmagicbeing: _num, 
 		req_5monsters: _num,  
 		req_thronesite: _num,
+		req_noworlditem: _num,
+		req_targnoaff: _num,
+		req_targowner: _num,
+		req_targnotowner: _num,
+		req_targforeignok: _bool,
+		req_targminsize: _num,
+		req_targmaxsize: _num,
+		req_targinsane: _num,
+		req_targnoorder: _num,
+		req_targminmorale: _num,
+		req_targmaxorale: _num,
+		req_targally: _num,
+		req_targnotally: _num,
+		req_targseductions: _num,
+		req_targminkills: _num,
+		req_targmaxkills: _num,
 
 		xp: _num,
 		
@@ -2366,6 +2594,7 @@ var modctx = DMI.modctx = {
 		// Effects
 		nation: _num, //lookup
 		msg:	function(c,a,t){ modctx[t]['description'] = argref(a); modctx[t]['name'] = argref(a).substr(0,25); },
+		extramsg:	_num,
 
 		notext: _bool,
 		nolog: _bool,
@@ -2417,8 +2646,11 @@ var modctx = DMI.modctx = {
 		_1unit  : _str_num, //lookup
 		_1d3units  : _str_num, //lookup
 		_1d6units  : _str_num, //lookup
+		_2d3units  : _str_num, //lookup
 		_2d6units  : _str_num, //lookup
+		_3d3units  : _str_num, //lookup
 		_3d6units  : _str_num, //lookup
+		_4d3units  : _str_num, //lookup
 		_4d6units  : _str_num, //lookup
 		_5d6units  : _str_num, //lookup
 		_6d6units  : _str_num, //lookup
