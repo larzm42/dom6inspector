@@ -435,6 +435,18 @@ MSite.prepareData_PostMod = function() {
 
 }
 
+/**
+ * Reduce a flat array of unit IDs into a comma-separated string of unit references, including quantity of summoned units
+ * @param {array} summon_ids List of IDs of summonable units
+ **/
+function getSummonCounts(summon_ids) {
+	const summon_counts = summon_ids.reduce((acc, summon_id) => {
+		acc[summon_id] = acc[summon_id] ? acc[summon_id]+1 : 1;
+		return acc
+	}, {});
+	return Object.entries(summon_counts).map(([summon_id, count]) => (count > 1 ? count + ' ' : '') + Utils.unitRef(summon_id)).join(', ');
+}
+
 
 //////////////////////////////////////////////////////////////////////////
 // DEFINE GRID
@@ -832,23 +844,28 @@ var displayorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 		return list_units(v, o);
 	},
 	'sum',	'summon',	function(v,o){
-		var summon_counts = v.reduce((acc, summon_id) => {
-			acc[summon_id] = acc[summon_id] ? acc[summon_id]+1 : 1;
-			return acc
-		}, {});
-		return o.path + " Mage " + Object.entries(summon_counts).map(([summon_id, count]) => (count > 1 ? count + ' ' : '') + Utils.unitRef(summon_id)).join(', ');
+		return o.path + " Mage " + getSummonCounts(v);
 	},
 	'sum1',	'summon',	function(v,o){
-		return o.path + " Mage 1-" + o.n_sum1 + ' ' + Utils.unitRef(v);
+		return o.path + " Mage " + (o.n_sum1 > 1 ? '1-' + o.n_sum1 + ' ': '') + Utils.unitRef(v);
 	},
 	'sum2',	'summon',	function(v,o){
-		return o.path + " Mage 1-" + o.n_sum2 + ' ' + + Utils.unitRef(v);
+		return o.path + " Mage " + (o.n_sum2 > 1 ? '1-' + o.n_sum2 + ' ': '') + Utils.unitRef(v);
 	},
 	'sum3',	'summon',	function(v,o){
-		return o.path + " Mage 1-" + o.n_sum3 + ' ' + + Utils.unitRef(v);
+		return o.path + " Mage " + (o.n_sum3 > 1 ? '1-' + o.n_sum3 + ' ': '') + Utils.unitRef(v);
 	},
 	'sum4',	'summon',	function(v,o){
-		return o.path + " Mage 1-"  +o.n_sum4 + ' ' + + Utils.unitRef(v);
+		return o.path + " Mage " + (o.n_sum4 > 1 ? '1-' + o.n_sum4 + ' ': '') + Utils.unitRef(v);
+	},
+	'suml2',	'summon',	function(v,o){
+		return o.path + " 2+ Mage " + getSummonCounts(v);
+	},
+	'suml3',	'summon',	function(v,o){
+		return o.path + " 3+ Mage " + getSummonCounts(v);
+	},
+	'suml4',	'summon',	function(v,o){
+		return o.path + " 4+ Mage " + getSummonCounts(v);
 	},
 	 
 	'provdefcom',	'extra PD (commander)',	Utils.unitRef,
