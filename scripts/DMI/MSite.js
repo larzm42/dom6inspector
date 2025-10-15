@@ -84,14 +84,16 @@ MSite.prepareData_PostMod = function() {
                         for (var ii=0,natid; natid=o.nations[ii]; ii++) {
                             if (unit.nations[natid] && !found) {
                                 unit.summonedfrom = unit.summonedfrom || [];
-                                unit.summonedfrom.push( o );
+								if (!unit.summonedfrom.includes(o))
+									unit.summonedfrom.push( o );
 								unit.typechar = 'unit (Summon)';
                                 found = true;
                             }
                         }
                     } else if (Math.round(unit.id) == uid && !found) {
                         unit.summonedfrom = unit.summonedfrom || [];
-                        unit.summonedfrom.push( o );
+						if (!unit.summonedfrom.includes(o))
+							unit.summonedfrom.push( o );
 						unit.typechar = 'unit (Summon)';
                         found = true;
                     }
@@ -101,7 +103,8 @@ MSite.prepareData_PostMod = function() {
                         for (var uniti=0, unit;  unit= modctx.unitdata[uniti];  uniti++) {
                             if (Math.round(unit.id) == uid && unit.nations && o.nations) {
                                 unit.summonedfrom = unit.summonedfrom || [];
-                                unit.summonedfrom.push( o );
+								if (!unit.summonedfrom.includes(o))
+									unit.summonedfrom.push( o );
 								unit.typechar = 'unit (Summon)';
                             }
                         }
@@ -378,7 +381,8 @@ MSite.prepareData_PostMod = function() {
 						// allow unit references by name instead of id
 						o.mon[cc] = unit.id;
 						unit.recruitedby = unit.recruitedby || [];
-						unit.recruitedby.push( o );
+						if (!unit.recruitedby.includes(o))
+							unit.recruitedby.push( o );
 						if (!unit.typechar || unit.typechar == 'Unit') {
 							unit.typechar = 'Unit (Magic site)';
 						}
