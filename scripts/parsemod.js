@@ -83,6 +83,10 @@ function _bool(c,a,t) {
 	if (a.n1 || a.s) throw "unexpected argument (none expected)";
 	modctx[t][c] = '1';
 }
+function _bool_num(c,a,t) {
+	if (!a.n1 || (a.n1 !== '0' && a.n1 !== '1')) throw "argument missing (0 or 1 expected)";
+	modctx[t][c] = '1';
+}
 function _ignore(c,a,t) {  }
 
 
@@ -446,6 +450,9 @@ var modctx = DMI.modctx = {
 				else throw e;
 			}
         },
+		clearallevents: function(c,a,t,fnw) {
+			modctx.eventdata = [];
+		},
 
         selectnametype: function(c,a,t,fnw) {
             modctx._select(c,a,'nametype',fnw);
@@ -2574,10 +2581,10 @@ var modctx = DMI.modctx = {
 		req_targnoaff: _num,
 		req_targowner: _num,
 		req_targnotowner: _num,
-		req_targforeignok: _bool,
+		req_targforeignok: _bool_num,
 		req_targminsize: _num,
 		req_targmaxsize: _num,
-		req_targinsane: _num,
+		_bool_num: _num,
 		req_targnoorder: _num,
 		req_targminmorale: _num,
 		req_targmaxorale: _num,
@@ -2586,6 +2593,61 @@ var modctx = DMI.modctx = {
 		req_targseductions: _num,
 		req_targminkills: _num,
 		req_targmaxkills: _num,
+		req_ai: _bool_num,
+		req_arenadone: _bool_num,
+		req_crystal: _bool_num,
+		req_deadmnr: _str_num,
+		req_deep: _bool_num,
+		req_drip: _bool_num,
+		req_enchnearby: _num,
+		req_enchtarget: _num,
+		req_forestcave: _bool_num,
+		req_fortid: _num,
+		req_godawake: _bool_num,
+		req_godismnr: function(c,a,t){
+			if(!modctx[t]['req_godismnr'])
+				modctx[t]['req_godismnr'] = [];
+			modctx[t]['req_godismnr'].push(argref(a));
+		},
+		req_godisnotmnr: _str_num,
+		req_gorge: _bool_num,
+		req_kelp: _bool_num,
+		req_maxcorpses: _num,
+		req_maxglobals: _num,
+		req_mincorpses: _num,
+		req_minglobals: _num,
+		req_minresearch: _num,
+		req_month: _num,
+		req_nativesoil: _bool,
+		req_nearbycapital: _bool_num,
+		req_nearbythrone: _bool_num,
+		req_nonation: _num,
+		req_nopathglamour: _num,
+		req_norealmnr: _num,
+		req_notcode: _num,
+		req_notforally: _num,
+		req_notpoptype: _num,
+		req_path: _num,
+		req_pathgems: _num,
+		req_plane: _num,
+		req_pregame: _ignore,
+		req_pretawake: _bool_num,
+		req_pretismnr: function(c,a,t){
+			if(!modctx[t]['req_pretismnr'])
+				modctx[t]['req_pretismnr'] = [];
+			modctx[t]['req_pretismnr'].push(argref(a));
+		},
+		req_realmnr: _str_num,
+		req_school: _num,
+		req_targhorrormark: _num,
+		req_turnrare: _num,
+		req_varneg: _ignore,
+		req_varone: _ignore,
+		req_varpos: _ignore,
+		req_varzero: _ignore,
+		req_void: _bool_num,
+		req_voidok: _bool_num,
+		req_worlditem: _str_num,
 
 		xp: _num,
 		
@@ -2593,7 +2655,7 @@ var modctx = DMI.modctx = {
 
 		// Effects
 		nation: _num, //lookup
-		msg:	function(c,a,t){ modctx[t]['description'] = argref(a); modctx[t]['name'] = argref(a).substr(0,25); },
+		msg:	function(c,a,t){ modctx[t]['description'] = argref(a); if (!modctx[t]['name']) modctx[t]['name'] = argref(a).substr(0,25); },
 		extramsg:	_num,
 
 		notext: _bool,
@@ -2608,6 +2670,8 @@ var modctx = DMI.modctx = {
 		_3d6vis: _num, //lookup
 		_4d6vis: _num, //lookup
 		gemloss : _num, //lookup
+		gemlosslarge : _num, //lookup
+		gemlosssmall : _num, //lookup
 		incscale : _num, //lookup
 		incscale2 : _num, //lookup
 		incscale3 : _num, //lookup
@@ -2672,6 +2736,7 @@ var modctx = DMI.modctx = {
 		disease: _num,
 		researchaff: _num, //lookup
 		gainaff: _num, //lookup
+		healaff: _num, //lookup
 		gainmark: _bool,
 		banished: _num, //lookup
 		addequip: _num, //lookup, maybe
@@ -2684,6 +2749,7 @@ var modctx = DMI.modctx = {
 		natureboost: _ref_optional, //lookup
 		bloodboost: _ref_optional, //lookup
 		holyboost: _ref_optional, //lookup
+		glamourboost: _ref_optional, //lookup
 		pathboost: _num, //lookup
 		worldincscale  : _num, //lookup
 		worldincscale2  : _num, //lookup
@@ -2715,7 +2781,52 @@ var modctx = DMI.modctx = {
 		purgedelayed  : _num,
 		transform: _str_num, //lookup
 		nationench: _num,
-		
+
+		addascension: _num,
+		addgeo: _num,
+		addkills: _num,
+		addseductions: _num,
+		arena: _bool,
+		assfollower1: _str_num,
+		assfollower1d3: _str_num,
+		assfollower2: _str_num,
+		assfollower3: _str_num,
+		assowner: _num,
+		assownerench: _num,
+		claimthrone: _bool,
+		clear: _ignore,
+		clearvar: _ignore,
+		codedelay: _ignore,
+		codedelay2: _ignore,
+		dec10var: _ignore,
+		decvar: _ignore,
+		delayskip: _ignore,
+		dispglobals: _num,
+		force1d3vis: _num,
+		force1d6vis: _num,
+		force2d4vis: _num,
+		force2d6vis: _num,
+		force3d6vis: _num,
+		force4d6vis: _num,
+		forcetransform: _str_num,
+		header: function(c,a,t) { modctx[t]['name'] = argref(a); },
+		inc10var: _ignore,
+		inccorpses: _num,
+		incvar: _ignore,
+		invvar: _ignore,
+		kill2d6mon: _str_num,
+		killtarg: _bool,
+		minascension: _num,
+		poison: _num,
+		remgeo: _num,
+		remount: _ignore,
+		resetcodedelay: _ignore,
+		resetcodedelay2: _ignore,
+		resolvearena1: _bool,
+		resolvearena2: _bool,
+		setpoptype: _num,
+		setxp: _num,
+		togglevar: _ignore,
 
 		id:	function(c,a,t){ modctx[t]['eff_id'] = argref(a); }
 	},
