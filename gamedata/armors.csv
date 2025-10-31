@@ -293,3 +293,5 @@ id	name	type	def	enc	rcost	end
 292	Storm Armor	5	-2	3	0	
 293	Lion Pelt	5	-1	1	1	
 294	Lion Cloak	5	-1	1	1	
+295	Invisible Clothes	5	0	0	0	
+296	Gossamer Gown	5	0	0	1	

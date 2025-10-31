@@ -401,7 +401,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 400	Devour Soul	400	0	-1	0	1	0	401	0	0	400	
 401	Soul Death	401	0	0	0	1	0	0	0	0	401	
 402	Holy Scourge	402	5	-2	2	2	0	0	0	3	402	
-403	Mesmerize	403	100	0	0	1	5	0	0	0	403	
+403	Mesmerize	403	100	0	0	1	1005	0	0	0	403	
 404	Beak	404	-1	-1	-1	1	0	0	0	0	404	
 405	Holy Fire	405	0	0	0	1	0	0	0	0	405	
 406	Fire Chakram	406	0	0	0	1	2	0	216	2	406	
@@ -874,3 +874,10 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 873	Carrion Vine	873	0	0	3	1	0	0	871	0	873	
 874	Pillar of Truths	874	-2	-5	2	1	0	0	875	0	874	
 875	Truths	875	0	0	0	1	0	0	0	0	875	
+876	Antlers	876	-1	0	1	1	0	0	0	0	876	
+877	Bronze Hayfork	877	-1	-1	3	1	0	0	0	1	877	
+878	Brass Instrument	878	-1	0	1	1	0	0	0	2	878	
+879	Morningstar of Waking Dreams	879	2	-1	1	1	0	0	880	2	879	
+880	Dreams	880	0	0	0	1	0	0	0	0	880	
+881	Fist	881	-1	-1	-1	1	0	0	0	0	881	
+882	Venomous Fangs	882	0	-1	-1	1	0	54	0	0	882	

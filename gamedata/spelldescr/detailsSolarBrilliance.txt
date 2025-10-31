@@ -1,1 +1,1 @@
-All units: Chance of being blinded (easy MR negates). All undead and demonic units: 5 AP dmg (easy MR negates)
+All units: Chance of being blinded (easy MR negates). All undead and demonic units: 5 AP dmg (MR negates)
