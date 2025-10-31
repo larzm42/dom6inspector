@@ -770,6 +770,8 @@ function parseData( g_data ) {
 			modctx.unit_effects = parseTextToTable(data);
 			modctx.unit_effects_lookup = createLookup(modctx.unit_effects, 'number');
 
+			modctx.school_lookup = DMI.modconstants[15];
+
 			//before applying mod (order is important!)
 			DMI.MWpn.prepareData_PreMod();
 			DMI.MArmor.prepareData_PreMod();
