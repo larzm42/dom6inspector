@@ -1,0 +1,1 @@
+Can only be cast in forests with cold +1 or more.

@@ -1466,3 +1466,9 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 1464	Summon Lauma	0	6	7	2	6	2	1464	1	0	0	35	0	4092	
 1465	Awaken the Dreamwild	4	5	7	4	6	2	1465	1	0	0	18	0	145	
 1466	Herd of Moose	0	3	6	2	-1	0	1466	1013	0	0	5	0	1084	
+1467	Summon Fay Archers	0	4	7	2	6	1	1467	505	0	0	10	0	4116	
+1468	Summon Unseelie Folk	0	3	7	2	2	1	1468	10	0	0	5	0	-26	
+1469	Summon Unseelie Soldiers	0	4	7	2	2	1	1469	505	0	0	12	0	3906	
+1470	Summon Unseelie Archers	0	4	7	2	2	1	1470	505	0	0	10	0	4117	
+1471	Summon Unseelie Knights	0	5	7	3	2	1	1471	3	0	0	15	0	3907	
+1472	Summon Unseelie Prince	0	6	7	4	6	1	1472	1	0	0	30	0	3909	

@@ -876,8 +876,11 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 875	Truths	875	0	0	0	1	0	0	0	0	875	
 876	Antlers	876	-1	0	1	1	0	0	0	0	876	
 877	Bronze Hayfork	877	-1	-1	3	1	0	0	0	1	877	
-878	Brass Instrument	878	-1	0	1	1	0	0	0	2	878	
+878	Brass Busine	878	-1	0	1	1	0	0	0	2	878	
 879	Morningstar of Waking Dreams	879	2	-1	1	1	0	0	880	2	879	
 880	Dreams	880	0	0	0	1	0	0	0	0	880	
 881	Fist	881	-1	-1	-1	1	0	0	0	0	881	
 882	Venomous Fangs	882	0	-1	-1	1	0	54	0	0	882	
+883	Fay Bow	883	1	0	0	1	12	0	0	0	883	
+884	Fay Dagger	884	2	0	1	1	0	0	0	0	884	
+885	Silver Busine	885	-1	0	1	1	0	0	0	2	885	
