@@ -1871,29 +1871,29 @@ id	name	rarity	description	requirements	effects	end
 1869	Bands of raiding northmen have	0	Bands of raiding northmen have killed and plundered in the borderlands! Virgins were spared and transported towards their main camp.	9600 40|nearbycode -14|unique 5|land 1|code 0|4700 1	code -72|kill 2|taxboost -40|unrest 15	
 1870	The sorcerous Idol of the Nort	13	The sorcerous Idol of the Northmen has been paid tribute in virgin blood! ItÂ´s burgeoning power can be felt emanating from ##landname##.	4700 1|unique 1|mnr 2449|code -14|anycode -72	resetcode -72|addequip 1|holyboost 1|revealprov 1	
 1871	The Idol of the Northmen has b	13	The Idol of the Northmen has been libated in virgin blood! It is growing in power.	4700 1|unique 5|mnr 2449|code -14|anycode -72	resetcode -72|addequip 1|deathboost 1|com 2532|holyboost 1	
-1872	The Idol has cast a powerful e	13	The Idol has cast a powerful enchantment! Reaching into the realm of the fallen warriors, it has summoned them back to fight alongside his mortal servants!	4700 1|story 3|unique 1|E000 5|mnr 2449|code -14	code -73|deathboost 1|com 2194|4d6units 915|4d6units 915|6F00 6	
+1872	The Idol has cast a powerful e	13	The Idol has cast a powerful enchantment! Reaching into the realm of the fallen warriors, it has summoned them back to fight alongside his mortal servants!	4700 1|story 3|unique 1|E000 5|mnr 2449|code -14	code -73|deathboost 1|com 2192|4d6units 915|4d6units 915|6F00 6	
 1873	The northmen attacks have decr	13	The northmen attacks have decreased in number. Instead, the Idol seems to be consolidating its power in ##landname##.	monster 2449|code -73	code -85|revealprov 1|4d6units 2531|2d6units 2533|A300 2190	
-1874	The idol consolidates its powe	0	The idol consolidates its power.	9600 25|unique 6|4700 1|code -85	2com 2194|4d6units 2531|2d6units 2533|2d6units 2533|2com 2194	
+1874	The idol consolidates its powe	0	The idol consolidates its power.	9600 25|unique 6|4700 1|code -85	2com 2192|4d6units 2531|2d6units 2533|2d6units 2533|2com 2192	
 1875	The idol grants its followers 	0	The idol grants its followers power.	9600 15|unique 5|4700 1|code -85	pathboost 5	
 1876	The idol grants its followers 	0	The idol grants its followers power.	9600 15|unique 5|4700 1|code -85	pathboost 8	
 1877	The idol grants its followers 	0	The idol grants its followers boons.	9600 15|unique 5|4700 1|E300 1|code -85	addequip 2	
 1878	The idol grants its followers 	0	The idol grants its followers boons.	9600 15|unique 5|4700 1|targpath1 1|code -85	addequip 1	
-1879	The idols host grows.	0	The idols host grows.	9600 10|unique 3|4700 1|code -85	2com 2194|2d6units 2531|1d6units 2533|1d6units 2533|2com 2194	
+1879	The idols host grows.	0	The idols host grows.	9600 10|unique 3|4700 1|code -85	2com 2192|2d6units 2531|1d6units 2533|1d6units 2533|2com 2192	
 1880	The idol gets gems and power.	0	The idol gets gems and power.	9600 7|unique 1|4700 1|mnr 2449|code -85	holyboost 1|addequip 1|1d6units 638	
 1881	The idol gets power.	0	The idol gets power.	9600 7|unique 2|4700 1|mnr 2449|code -85	astralboost 1|1d6units 638	
 1882	The idol gets gems and power.	0	The idol gets gems and power.	9600 7|unique 3|4700 1|mnr 2449|code -85	deathboost 1|addequip 1|1d6units 638	
 1883	Northmen are raiding the coast	0	Northmen are raiding the coast, but seem to avoid battle.	8000 28|9600 3|coast 1|maxdef 16|code -85	kill 1|unrest 10	
 1884	The Idol of the northmen is st	0	The Idol of the northmen is still unopposed! Now strong in magic, it has sent fiends of the nether realms to punish this province!	9600 1|land 1|maxdef 16|code -85	2com 638|2d6units 638	
-1885	The Northmen and their siniste	0	The Northmen and their sinister allies are claiming this land! [Hall of the Draugadrott]	site 0|9600 10|land 1|unique 2|code 0|nearbycode -85	code -86|2com 2194|4d6units 2531|4d6units 2531|4d6units 2531	
-1886	The northmen have been driven 	0	The northmen have been driven away! Some of their plunder was salvaged. People in the area are finding faith and hope anew! 	nomonster 2194|land 1|code -87|code -87	code 0|unrest -20|incdom 3|gold 300|magicitem 2	
-1887	The northmen settle. [Hall of 	0	The northmen settle. [Hall of the Draugadrott]	site 1|monster 2194|9600 25|4700 1|land 1|code -86|unique 1	code -87|A300 2531|A300 2531|2d6units 2190|newsite -1	
-1888	The northmen strengthen their 	0	The northmen strengthen their hold.	4700 1|mnr 2194|unique 4|9600 13|land 1|code -87	deathboost 1|addequip 1|A300 2531|A300 2531|2d6units 2190	
-1889	The Draugadrottir have come to	0	The Draugadrottir have come to claim a land to rule under the waves!	4700 1|9600 10|land 0|unique 1|code 0|nearbycode -85|8000 28	code -86|2com 2194|deathboost 1|A600 2190	
-1890	The draug settle. [Hall of the	0	The draug settle. [Hall of the Draugadrott]	monster 2194|9600 25|4700 1|land 0|code -86	code -87|newsite -1|2d6units 2190	
-1891	The draug strengthen their hol	0	The draug strengthen their hold.	4700 1|mnr 2194|unique 6|9600 13|land 0|code -87	deathboost 1|addequip 1|2d6units 2190	
-1892	The Draug have been driven awa	0	The Draug have been driven away! People find faith and hope anew! Some of their plunder was salvaged. People in the area are finding faith and hope anew! 	nomonster 2194|land 0|4700 1|code -87|code -87	code 0|unrest -20|incdom 3|gold 300|magicitem 2	
-1893	The draugadrott gain power.	0	The draugadrott gain power.	4700 1|unique 2|land 0|mnr 2194|code -87	deathboost 1|waterboost 1|addequip 1	
-1894	The draugadrott gain power.	0	The draugadrott gain power.	4700 1|unique 2|land 1|mnr 2194|code -87	deathboost 1|waterboost 1|addequip 1	
+1885	The Northmen and their siniste	0	The Northmen and their sinister allies are claiming this land! [Hall of the Draugadrott]	site 0|9600 10|land 1|unique 2|code 0|nearbycode -85	code -86|2com 2192|4d6units 2531|4d6units 2531|4d6units 2531	
+1886	The northmen have been driven 	0	The northmen have been driven away! Some of their plunder was salvaged. People in the area are finding faith and hope anew! 	nomonster 2192|land 1|code -87|code -87	code 0|unrest -20|incdom 3|gold 300|magicitem 2	
+1887	The northmen settle. [Hall of 	0	The northmen settle. [Hall of the Draugadrott]	site 1|monster 2192|9600 25|4700 1|land 1|code -86|unique 1	code -87|A300 2531|A300 2531|2d6units 2190|newsite -1	
+1888	The northmen strengthen their 	0	The northmen strengthen their hold.	4700 1|mnr 2192|unique 4|9600 13|land 1|code -87	deathboost 1|addequip 1|A300 2531|A300 2531|2d6units 2190	
+1889	The Draughersir have come to c	0	The Draughersir have come to claim a land to rule under the waves!	4700 1|9600 10|land 0|unique 1|code 0|nearbycode -85|8000 28	code -86|2com 2192|deathboost 1|A600 2190	
+1890	The draug settle. [Hall of the	0	The draug settle. [Hall of the Draugadrott]	monster 2192|9600 25|4700 1|land 0|code -86	code -87|newsite -1|2d6units 2190	
+1891	The draug strengthen their hol	0	The draug strengthen their hold.	4700 1|mnr 2192|unique 6|9600 13|land 0|code -87	deathboost 1|addequip 1|2d6units 2190	
+1892	The Draug have been driven awa	0	The Draug have been driven away! People find faith and hope anew! Some of their plunder was salvaged. People in the area are finding faith and hope anew! 	nomonster 2192|land 0|4700 1|code -87|code -87	code 0|unrest -20|incdom 3|gold 300|magicitem 2	
+1893	The draugherse gain power.	0	The draugherse gain power.	4700 1|unique 2|land 0|mnr 2192|code -87	deathboost 1|waterboost 1|addequip 1	
+1894	The draugherse gain power.	0	The draugherse gain power.	4700 1|unique 2|land 1|mnr 2192|code -87	deathboost 1|waterboost 1|addequip 1	
 1895	The Sorcerous Idol has sent a 	0	The Sorcerous Idol has sent a demon to slay one of your commanders.	9600 1|commander 1|anycode -85	assassin 638	
 1896	The Idol has cursed your advan	0	The Idol has cursed your advancing army!	9600 50|unique 2|mintroops 50|nearbycode -85	curse 20	
 1897	The Idol has quested out with 	1	The Idol has quested out with its powerful force of will and struck one of your mages!	targpath1 53|targpath4 0|anycode -85	gainaff 33554432	
@@ -1904,7 +1904,7 @@ id	name	rarity	description	requirements	effects	end
 1902	The idol grants its followers 	0	The idol grants its followers boons. [Ring of the Warrior]	9600 15|unique 2|4700 1|mnr 1|code -85	addequip 9	
 1903	The Sorcerous Idol has sent a 	0	The Sorcerous Idol has sent a demon to slay one of your commanders.	9600 55|commander 1|unique 4|mintroops 10|nearbycode -85	assassin 638	
 1904	Dead have risen to attack your	0	Dead have risen to attack your army! Surely, some sorcerous evil must be behind this.	9600 55|unique 2|mintroops 20|fort 0|nearbycode -85	4com -2|12d6units -2|12d6units -2	
-1905	The Idol raises fallen warrior	0	The Idol raises fallen warriors to serve once more.	4700 1|9600 30|unique 3|code -73	A300 915|com 2194|deathboost 1|addequip 1|2d6units 2190	
+1905	The Idol raises fallen warrior	0	The Idol raises fallen warriors to serve once more.	4700 1|9600 30|unique 3|code -73	A300 915|com 2192|deathboost 1|addequip 1|2d6units 2190	
 1906	The Idol is behung with offeri	0	The Idol is behung with offerings. [Wound Fend Amulet]	4700 1|9600 30|unique 1|mnr 2449|code -73	addequip 9	
 1907	A fleet of Dragon-headed ships	0	A fleet of Dragon-headed ships have been sighted at sea.	9600 3|coast 1|maxdef 19|anycode -73|code 0	code -74	
 1908	A fleet of Dragon-headed ships	0	A fleet of Dragon-headed ships have been sighted at sea.	9600 2|coast 1|maxdef 19|anycode -85|8000 28|code 0	code -74	
@@ -1914,7 +1914,7 @@ id	name	rarity	description	requirements	effects	end
 1912	Longships have been repelled f	0	Longships have been repelled from our shores by brave defenders! People praise their Lord!	9600 10|mindef 20|code -74	code 0|incdom 3	
 1913	Longships have been repelled f	0	Longships have been repelled from our shores by brave defenders! People praise their Lord!	9600 3|coast 1|mindef 20|anycode -73	incdom 3	
 1914	Lord save us from the wrath of	0	Lord save us from the wrath of the Northmen! Raiders have sailed up the river to pillage the poorly defended land. 	9600 7|freshwater 1|maxdef 10|noseason 3|anycode -73	com 2532|AB00 2531|4d6units 2533|2com 2533	
-1915	Lord save us from the wrath of	0	Lord save us from the wrath of the Northmen! A deadly cold rises from the sea when unhuman warriors come to slay the living, envious of their warmth.	9600 2|coast 1|maxdef 18|anycode -73	com 2194|A300 2190|6d6units 2119|2com 2190	
+1915	Lord save us from the wrath of	0	Lord save us from the wrath of the Northmen! A deadly cold rises from the sea when unhuman warriors come to slay the living, envious of their warmth.	9600 2|coast 1|maxdef 18|anycode -73	com 2192|A300 2190|6d6units 2119|2com 2190	
 1916	The Idol is behung with offeri	0	The Idol is behung with offerings. [Effigy of War]	9600 20|unique 1|mnr 2449|code -73	addequip 9	
 1917	The frozen seas have stopped t	13	The frozen seas have stopped the attacks from the northmen!	7F00 28|code -14	resetcode -14|resetcode -14|resetcode -14	
 1918	The frozen seas have stopped t	13	The frozen seas have stopped the attacks from the northmen, forcing the Idol to consolidate its power in ##landname##.	7F00 28|code -73	code -85|revealprov 1	
@@ -3232,7 +3232,7 @@ id	name	rarity	description	requirements	effects	end
 3231	One of the Yllerions has died 	0	One of the Yllerions has died and her partner was seen flying east with a great host of lamenting birds. When he reached the sea he plunged himself into the waves and drowned hirself. Soon afterwards the flaming eggs in their nest cracked open and two new Yllerion birds were hatched. The abbot sages has declared that it is time to once more call the Birds of Splendour.	9600 50|nomnr 3383|monster 3382	killcom 3382	
 3232	Bilqis, known in foreign lands	-1	Bilqis, known in foreign lands as the Queen of Na'Ba, has established contacts with a foreign king. Praising him for his widsom and giving him extraordinary gifts from the Vault of Incense and Marvels she was in return showered in gold and gems.	fornation 65|nomnr 3385|capital 1	gold 250|1d6vis -1	
 3233	A hurricane has struck the lan	0	A hurricane has struck the land, devastating the countryside.	pop0ok 1|9600 10|land 1|cave 0|7600 25	unrest 25|kill 3	
-3234	The dwarves holding up the sky	13	The dwarves holding up the sky are not doing their job properly. The sky has fallen, the entire world is covered in permanent darkness and violent storms are raging.	monster 3425|6100 3426|6100 3426|6100 3426	worlddarkness 1|9100 1	
+3234	The dwarves holding up the sky	13	The dwarves holding up the sky are not doing their job properly. The sky has fallen, the entire world is covered in permanent darkness and violent storms are raging.	BB00 3425|BA00 3426|BA00 3426|BA00 3426	worlddarkness 1|9100 1	
 3235	A new gold vein has been found	-1	A new gold vein has been found in a Gold Mine! [Hidden Gold Mine]	foundsite 1	gold 400	
 3236	A new vein has been found in a	-1	A new vein has been found in a Silver Mine! [Silver Mine]	foundsite 1	gold 250	
 3237	A new and rich gold vein has b	-2	A new and rich gold vein has been found in a Gold Mine! [Gold Mine]	foundsite 1|turn 5	gold 750	
