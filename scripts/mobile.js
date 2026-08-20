@@ -10,7 +10,7 @@
 		currentSavedIndex: 0,
 
 		isMobile: function() {
-			return window.innerWidth <= 768;
+			return !!window.isMobileDevice;
 		},
 
 		init: function() {

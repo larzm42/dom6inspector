@@ -1,4 +1,4 @@
-//IE workaround
+﻿//IE workaround
 if (!console) var console={ log:function(){} };
 
 //interrupt navigation away from page
@@ -202,7 +202,7 @@ DMI.initGrids = function() {
 		$("#item-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if ($(window).width() > 768) $("div.filters-text.itemview input.search-box").focus();
+		if (!window.isMobileDevice) $("div.filters-text.itemview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -227,7 +227,7 @@ DMI.initGrids = function() {
 		$("#site-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if ($(window).width() > 768) $("div.filters-text.siteview input.search-box").focus();
+		if (!window.isMobileDevice) $("div.filters-text.siteview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -252,7 +252,7 @@ DMI.initGrids = function() {
 		$("#merc-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if ($(window).width() > 768) $("div.filters-text.mercview input.search-box").focus();
+		if (!window.isMobileDevice) $("div.filters-text.mercview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -277,7 +277,7 @@ DMI.initGrids = function() {
 		$("#event-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if ($(window).width() > 768) $("div.filters-text.eventview input.search-box").focus();
+		if (!window.isMobileDevice) $("div.filters-text.eventview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -302,7 +302,7 @@ DMI.initGrids = function() {
 		$("#spell-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if ($(window).width() > 768) $("div.filters-text.spellview input.search-box").focus();
+		if (!window.isMobileDevice) $("div.filters-text.spellview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -327,7 +327,7 @@ DMI.initGrids = function() {
 		$("#unit-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if ($(window).width() > 768) $("div.filters-text.unitview input.search-box").focus();
+		if (!window.isMobileDevice) $("div.filters-text.unitview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -353,7 +353,7 @@ DMI.initGrids = function() {
 		$("#wpn-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if ($(window).width() > 768) $("div.filters-text.wpnview input.search-box").focus();
+		if (!window.isMobileDevice) $("div.filters-text.wpnview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -379,7 +379,7 @@ DMI.initGrids = function() {
 		$("#armor-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if ($(window).width() > 768) $("div.filters-text.armorview input.search-box").focus();
+		if (!window.isMobileDevice) $("div.filters-text.armorview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
