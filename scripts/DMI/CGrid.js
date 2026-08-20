@@ -1,4 +1,4 @@
-//namespace into private scope
+﻿//namespace into private scope
 (function( DMI, $, undefined ){
 
 //namespace children
@@ -55,7 +55,7 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 		enableAddRow: false,
 		enableCellNavigation: true,
 		enableColumnReorder: false,
-		forceFitColumns: (window.innerWidth > 768)
+		forceFitColumns: (!window.isMobileDevice)
 	};
 	if (options)
 		for (k in options) this.options[k] = options[k];
@@ -126,7 +126,7 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 	////////////////////////////////////////////////////////////////////////////
 	// create grid
 	////////////////////////////////////////////////////////////////////////////
-	if (window.innerWidth <= 768 && columns) {
+	if (window.isMobileDevice && columns) {
 		var mobileMinWidths = {
 			'name': 175,
 			'nation': 85,

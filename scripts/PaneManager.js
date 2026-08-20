@@ -1,4 +1,4 @@
-//namespace scope
+﻿//namespace scope
 (function( PaneManager, $, undefined ){
 		
 var PM = PaneManager;
@@ -164,7 +164,7 @@ PM.openPane = function(ref, position) {
 	//create dom element
 	var $p = $('<div class="overlay popup">'+html+'</div>').css('zIndex', ++maxZIndex);
 	
-	var isMobile = (window.innerWidth <= 768);
+	var isMobile = !!window.isMobileDevice;
 
 	//explicit position (desktop only)
 	if (!isMobile) {
