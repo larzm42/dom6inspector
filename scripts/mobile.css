@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    Dominions 6 Mod Inspector - Mobile Responsive Styles
    ========================================================================== */
 
@@ -228,7 +228,7 @@
 		position: static !important;
 		width: 0 !important;
 		height: 0 !important;
-		overflow: visible !important;
+		overflow-y: visible !important; overflow-x: auto !important;
 		border: none !important;
 		background: transparent !important;
 		pointer-events: none !important;
@@ -1145,7 +1145,7 @@
 		max-width: 100% !important;
 		height: auto !important;
 		max-height: none !important;
-		overflow: visible !important;
+		overflow-y: visible !important; overflow-x: auto !important;
 		box-sizing: border-box !important;
 	}
 
@@ -1220,7 +1220,6 @@
 	}
 
 	/* Dark container backgrounds for popups AND saved cards */
-	.mobile-card-theme,
 	.mobile-card-theme .overlay,
 	.mobile-card-theme .overlay-contents,
 	.mobile-card-theme .overlay-main,
@@ -1239,7 +1238,7 @@
 		max-width: 100% !important;
 		height: auto !important;
 		max-height: none !important;
-		overflow: visible !important;
+		overflow-y: visible !important; overflow-x: auto !important;
 		box-sizing: border-box !important;
 	}
 

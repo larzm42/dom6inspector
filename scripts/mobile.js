@@ -126,9 +126,9 @@
 				var $saveBtn = $p.find('.mobile-popup-top-btn.save-action');
 
 				if (saved) {
-					$saveBtn.addClass('is-saved').html('â˜… Saved');
+					$saveBtn.addClass('is-saved').html('★ Saved');
 				} else {
-					$saveBtn.removeClass('is-saved').html('ðŸ”– Save for Comparison');
+					$saveBtn.removeClass('is-saved').html('🔖 Save for Comparison');
 				}
 			});
 		},
@@ -145,9 +145,9 @@
 			if (!$topBar.length) {
 				$topBar = $(
 					'<div class="mobile-popup-topbar">' +
-						'<button type="button" class="mobile-popup-top-btn back-action" style="display:none;">â® Back</button>' +
-						'<button type="button" class="mobile-popup-top-btn save-action">ðŸ”– Save</button>' +
-						'<button type="button" class="mobile-popup-top-btn close-action">âœ• Close</button>' +
+						'<button type="button" class="mobile-popup-top-btn back-action" style="display:none;">❮ Back</button>' +
+						'<button type="button" class="mobile-popup-top-btn save-action">🔖 Save</button>' +
+						'<button type="button" class="mobile-popup-top-btn close-action">✕ Close</button>' +
 					'</div>'
 				);
 				$popup.prepend($topBar);
@@ -159,9 +159,9 @@
 			// Update Save button label & state
 			var $saveBtn = $topBar.find('.save-action');
 			if (isSaved) {
-				$saveBtn.addClass('is-saved').text('â˜… Saved');
+				$saveBtn.addClass('is-saved').text('★ Saved');
 			} else {
-				$saveBtn.removeClass('is-saved').text('ðŸ”– Save');
+				$saveBtn.removeClass('is-saved').text('🔖 Save');
 			}
 		},
 
@@ -191,9 +191,9 @@
 			if (count === 0) {
 				$('#mobile-saved-card-content').html(
 					'<div class="saved-empty-msg">' +
-					'  <div style="font-size: 32px; margin-bottom: 8px;">ðŸ”–</div>' +
+					'  <div style="font-size: 32px; margin-bottom: 8px;">🔖</div>' +
 					'  <strong>No saved items yet</strong><br>' +
-					'  Tap <strong>"ðŸ”– Save for Comparison"</strong> on any unit, spell, or item card while browsing to save them here for quick comparison!' +
+					'  Tap <strong>"🔖 Save for Comparison"</strong> on any unit, spell, or item card while browsing to save them here for quick comparison!' +
 					'</div>'
 				);
 				$('#mobile-saved-index-indicator').text('0 / 0');
@@ -719,10 +719,10 @@
 				html += '    <span class="col-badge">' + (isVisible ? activeW + 'px' : 'hidden') + '</span>';
 				html += '  </div>';
 				html += '  <div class="mobile-col-btn-row">';
-				html += '    <button type="button" class="col-btn-step col-btn-dec" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + ' title="Decrease width 25px">ï¼</button>';
-				html += '    <button type="button" class="col-btn-step col-btn-inc" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + ' title="Increase width 25px">ï¼‹</button>';
-				html += '    <button type="button" class="col-btn-fit" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + '>âš¡ Fit</button>';
-				html += '    <button type="button" class="col-btn-min" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + '>ðŸ¤ Min</button>';
+				html += '    <button type="button" class="col-btn-step col-btn-dec" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + ' title="Decrease width 25px">－</button>';
+				html += '    <button type="button" class="col-btn-step col-btn-inc" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + ' title="Increase width 25px">＋</button>';
+				html += '    <button type="button" class="col-btn-fit" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + '>⚡ Fit</button>';
+				html += '    <button type="button" class="col-btn-min" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + '>🤏 Min</button>';
 				html += '  </div>';
 				html += '</div>';
 			}
