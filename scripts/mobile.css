@@ -250,7 +250,11 @@
 		display: none !important; /* Replaced by #mobile-topbar and #mobile-bottombar */
 	}
 
+	
 	#primary-filters {
+		display: flex !important;
+		flex-direction: column !important;
+
 		display: block !important;
 		pointer-events: auto !important;
 		position: fixed !important;
@@ -400,8 +404,18 @@
 	/* --------------------------------------------------------------------------
 	   3c. Mobile Advanced Section & Property Filters at Drawer Bottom
 	   -------------------------------------------------------------------------- */
+	
+	#primary-filters .hidden-block,
+	#primary-filters .filters-text.properties {
+		order: 10 !important;
+	}
+	#primary-filters .modding-block {
+		order: 11 !important;
+	}
 	#mobile-advanced-section {
+		order: 12 !important;
 		margin-top: 20px !important;
+
 		padding-top: 14px !important;
 		border-top: 1px solid #4a3e35 !important;
 	}
@@ -568,26 +582,11 @@
 	}
 
 	/* Bright, high-contrast red for Show Keys on cards and panels */
-	div.overlay.popup .internal-row,
-	div.overlay.popup .internal-block,
-	div.overlay.popup .internal-inline,
-	div.overlay.popup .key,
-	div.overlay.popup span.key,
-	#mobile-saved-modal .internal-row,
-	#mobile-saved-modal .internal-block,
-	#mobile-saved-modal .internal-inline,
-	#mobile-saved-modal .key,
-	#mobile-saved-modal span.key,
-	.saved-card-detail-view .internal-row,
-	.saved-card-detail-view .internal-block,
-	.saved-card-detail-view .internal-inline,
-	.saved-card-detail-view .key,
-	.saved-card-detail-view span.key,
-	.overlay .internal-row,
-	.overlay .internal-block,
-	.overlay .internal-inline,
-	.overlay .key,
-	.overlay span.key {
+	.mobile-card-theme .internal-row,
+	.mobile-card-theme .internal-block,
+	.mobile-card-theme .internal-inline,
+	.mobile-card-theme .key,
+	.mobile-card-theme span.key {
 		color: #ff5252 !important; /* Vibrant, bright red */
 		font-family: Consolas, Monaco, monospace !important;
 		font-weight: 600 !important;
@@ -1221,23 +1220,19 @@
 	}
 
 	/* Dark container backgrounds for popups AND saved cards */
-	div.overlay.popup .overlay-contents,
-	div.overlay.popup .overlay-main,
-	#mobile-saved-modal .overlay-contents,
-	#mobile-saved-modal .overlay-main,
-	.saved-card-detail-view,
-	.saved-card-detail-view .overlay,
-	.saved-card-detail-view .overlay-contents,
-	.saved-card-detail-view .overlay-main,
-	.saved-card-detail-view div.unit,
-	.saved-card-detail-view div.spell,
-	.saved-card-detail-view div.item,
-	.saved-card-detail-view div.site,
-	.saved-card-detail-view div.merc,
-	.saved-card-detail-view div.event,
-	.saved-card-detail-view div.wpn,
-	.saved-card-detail-view div.armor,
-	.saved-card-detail-view div.pane-extension {
+	.mobile-card-theme,
+	.mobile-card-theme .overlay,
+	.mobile-card-theme .overlay-contents,
+	.mobile-card-theme .overlay-main,
+	.mobile-card-theme div.unit,
+	.mobile-card-theme div.spell,
+	.mobile-card-theme div.item,
+	.mobile-card-theme div.site,
+	.mobile-card-theme div.merc,
+	.mobile-card-theme div.event,
+	.mobile-card-theme div.wpn,
+	.mobile-card-theme div.armor,
+	.mobile-card-theme div.pane-extension {
 		background: #1e1915 !important;
 		color: #f0ece1 !important;
 		width: 100% !important;
@@ -1248,9 +1243,7 @@
 		box-sizing: border-box !important;
 	}
 
-	div.overlay.popup .overlay-header,
-	#mobile-saved-modal .overlay-header,
-	.saved-card-detail-view .overlay-header {
+	.mobile-card-theme .overlay-header {
 		position: relative;
 		padding: 6px 8px !important;
 		margin-bottom: 10px;
@@ -1359,17 +1352,14 @@
 		background: #4a3a2b;
 	}
 
-	div.overlay.popup .overlay-header .h2replace,
-	#mobile-saved-modal .overlay-header .h2replace,
-	.saved-card-detail-view .h2replace {
+	.mobile-card-theme .overlay-header .h2replace,
+	.mobile-card-theme .h2replace {
 		font-size: var(--mobile-card-h2, 18px) !important;
 		font-weight: bold;
 		color: #ffd700 !important;
 	}
 
-	div.overlay.popup .overlay-main,
-	#mobile-saved-modal .overlay-main,
-	.saved-card-detail-view .overlay-main {
+	.mobile-card-theme .overlay-main {
 		font-size: var(--mobile-card-font, 13px) !important;
 		line-height: 1.45 !important;
 		overflow-x: auto !important;
@@ -1383,9 +1373,7 @@
 	}
 
 	/* Stat Tables (Hit Points, Str, Att, Def, Map Move etc.) */
-	div.overlay.popup .overlay-main > table.overlay-table,
-	#mobile-saved-modal .overlay-main > table.overlay-table,
-	.saved-card-detail-view .overlay-main > table.overlay-table {
+	.mobile-card-theme .overlay-main > table.overlay-table {
 		width: max-content !important;
 		min-width: max-content !important;
 		max-width: none !important;
@@ -1395,39 +1383,23 @@
 		border-collapse: collapse !important;
 	}
 
-	div.overlay.popup table.overlay-table,
-	#mobile-saved-modal table.overlay-table,
-	.saved-card-detail-view table.overlay-table,
-	div.overlay.popup table.wpn-table,
-	#mobile-saved-modal table.wpn-table,
-	.saved-card-detail-view table.wpn-table,
-	div.overlay.popup table.armor-table,
-	#mobile-saved-modal table.armor-table,
-	.saved-card-detail-view table.armor-table {
+	.mobile-card-theme table.overlay-table,
+	.mobile-card-theme table.wpn-table,
+	.mobile-card-theme table.armor-table {
 		background: transparent !important;
 		border-collapse: collapse !important;
 	}
 
-	div.overlay.popup table.overlay-table tr,
-	#mobile-saved-modal table.overlay-table tr,
-	.saved-card-detail-view table.overlay-table tr {
+	.mobile-card-theme table.overlay-table tr {
 		background: transparent !important;
 	}
 
-	div.overlay.popup table.overlay-table td,
-	div.overlay.popup table.overlay-table th,
-	#mobile-saved-modal table.overlay-table td,
-	#mobile-saved-modal table.overlay-table th,
-	.saved-card-detail-view table.overlay-table td,
-	.saved-card-detail-view table.overlay-table th,
-	div.overlay.popup table.wpn-table td,
-	div.overlay.popup table.wpn-table th,
-	.saved-card-detail-view table.wpn-table td,
-	.saved-card-detail-view table.wpn-table th,
-	div.overlay.popup table.armor-table td,
-	div.overlay.popup table.armor-table th,
-	.saved-card-detail-view table.armor-table td,
-	.saved-card-detail-view table.armor-table th {
+	.mobile-card-theme table.overlay-table td,
+	.mobile-card-theme table.overlay-table th,
+	.mobile-card-theme table.wpn-table td,
+	.mobile-card-theme table.wpn-table th,
+	.mobile-card-theme table.armor-table td,
+	.mobile-card-theme table.armor-table th {
 		color: #f0ece1 !important;
 		background: transparent !important;
 		padding: 3px 6px !important;
@@ -1435,25 +1407,19 @@
 		white-space: nowrap !important;
 	}
 
-	div.overlay.popup tr[style*="background"],
-	div.overlay.popup td[style*="background"],
-	#mobile-saved-modal tr[style*="background"],
-	#mobile-saved-modal td[style*="background"],
-	.saved-card-detail-view tr[style*="background"],
-	.saved-card-detail-view td[style*="background"],
-	.saved-card-detail-view table.armor-table,
-	.saved-card-detail-view tr.protbody,
-	.saved-card-detail-view tr.prothead,
-	.saved-card-detail-view tr.protshield,
-	.saved-card-detail-view tr.enc,
-	.saved-card-detail-view tr.parry {
+	.mobile-card-theme tr[style*="background"],
+	.mobile-card-theme td[style*="background"],
+	.mobile-card-theme table.armor-table,
+	.mobile-card-theme tr.protbody,
+	.mobile-card-theme tr.prothead,
+	.mobile-card-theme tr.protshield,
+	.mobile-card-theme tr.enc,
+	.mobile-card-theme tr.parry {
 		background: #2a221b !important;
 		color: #ffd700 !important;
 	}
 
-	div.overlay.popup .overlay-descr,
-	#mobile-saved-modal .overlay-descr,
-	.saved-card-detail-view .overlay-descr {
+	.mobile-card-theme .overlay-descr {
 		background: #14110e !important;
 		color: #d0c7b5 !important;
 		border: 1px solid #3e342b !important;
@@ -1464,9 +1430,7 @@
 		font-size: var(--mobile-card-font, 13px) !important;
 	}
 
-	div.overlay.popup a.ref,
-	#mobile-saved-modal a.ref,
-	.saved-card-detail-view a.ref {
+	.mobile-card-theme a.ref {
 		color: #64b5f6 !important;
 		text-decoration: underline !important;
 		font-weight: bold !important;
@@ -1474,14 +1438,10 @@
 		display: inline-block;
 	}
 
-	div.overlay.popup .modded,
-	#mobile-saved-modal .modded,
-	.saved-card-detail-view .modded {
+	.mobile-card-theme .modded {
 		color: #81c784 !important;
 	}
-	div.overlay.popup .key,
-	#mobile-saved-modal .key,
-	.saved-card-detail-view .key {
+	.mobile-card-theme .key {
 		color: #ffb74d !important;
 	}
 

@@ -1,4 +1,4 @@
-// ==========================================================================
+﻿// ==========================================================================
 // Dominions 6 Mod Inspector - Mobile Controller
 // ==========================================================================
 
@@ -126,9 +126,9 @@
 				var $saveBtn = $p.find('.mobile-popup-top-btn.save-action');
 
 				if (saved) {
-					$saveBtn.addClass('is-saved').html('★ Saved');
+					$saveBtn.addClass('is-saved').html('â˜… Saved');
 				} else {
-					$saveBtn.removeClass('is-saved').html('🔖 Save for Comparison');
+					$saveBtn.removeClass('is-saved').html('ðŸ”– Save for Comparison');
 				}
 			});
 		},
@@ -145,9 +145,9 @@
 			if (!$topBar.length) {
 				$topBar = $(
 					'<div class="mobile-popup-topbar">' +
-						'<button type="button" class="mobile-popup-top-btn back-action" style="display:none;">❮ Back</button>' +
-						'<button type="button" class="mobile-popup-top-btn save-action">🔖 Save</button>' +
-						'<button type="button" class="mobile-popup-top-btn close-action">✕ Close</button>' +
+						'<button type="button" class="mobile-popup-top-btn back-action" style="display:none;">â® Back</button>' +
+						'<button type="button" class="mobile-popup-top-btn save-action">ðŸ”– Save</button>' +
+						'<button type="button" class="mobile-popup-top-btn close-action">âœ• Close</button>' +
 					'</div>'
 				);
 				$popup.prepend($topBar);
@@ -159,9 +159,9 @@
 			// Update Save button label & state
 			var $saveBtn = $topBar.find('.save-action');
 			if (isSaved) {
-				$saveBtn.addClass('is-saved').text('★ Saved');
+				$saveBtn.addClass('is-saved').text('â˜… Saved');
 			} else {
-				$saveBtn.removeClass('is-saved').text('🔖 Save');
+				$saveBtn.removeClass('is-saved').text('ðŸ”– Save');
 			}
 		},
 
@@ -191,9 +191,9 @@
 			if (count === 0) {
 				$('#mobile-saved-card-content').html(
 					'<div class="saved-empty-msg">' +
-					'  <div style="font-size: 32px; margin-bottom: 8px;">🔖</div>' +
+					'  <div style="font-size: 32px; margin-bottom: 8px;">ðŸ”–</div>' +
 					'  <strong>No saved items yet</strong><br>' +
-					'  Tap <strong>"🔖 Save for Comparison"</strong> on any unit, spell, or item card while browsing to save them here for quick comparison!' +
+					'  Tap <strong>"ðŸ”– Save for Comparison"</strong> on any unit, spell, or item card while browsing to save them here for quick comparison!' +
 					'</div>'
 				);
 				$('#mobile-saved-index-indicator').text('0 / 0');
@@ -215,7 +215,7 @@
 			try {
 				if (window.PaneManager && PaneManager.renderPane) {
 					var cardHtml = PaneManager.renderPane(activeItem.ref, false);
-					var $rendered = $('<div class="saved-card-detail-view">' + cardHtml + '</div>');
+					var $rendered = $('<div class="saved-card-detail-view mobile-card-theme">' + cardHtml + '</div>');
 					$rendered.attachRefClickEvents();
 					$('#mobile-saved-card-content').empty().append($rendered);
 				} else {
@@ -232,6 +232,7 @@
 			// Open Saved Modal via floating button
 			$(document).on('click', '#mobile-floating-saved-btn', function(e) {
 				e.preventDefault();
+				$('#mobile-saved-modal').addClass('mobile-card-theme');
 				self.renderSavedModal();
 				$('body').addClass('mobile-saved-open');
 			});
@@ -401,8 +402,6 @@
 				if (!$('#mobile-advanced-section').length) {
 					var $advSection = $(
 						'<div id="mobile-advanced-section">' +
-							'<div id="mobile-property-filters-slot" style="display:none;"></div>' +
-							'<div id="mobile-modding-filters-slot"></div>' +
 							'<div id="mobile-options-box">' +
 								'<label class="mobile-option-row">' +
 									'<input type="checkbox" id="mobile-toggle-advanced-filters" />' +
@@ -420,48 +419,42 @@
 						'</div>'
 					);
 
-					// Move all property filter blocks into the bottom property slot
-					$('#primary-filters .hidden-block .filters-text.properties').each(function() {
-						$advSection.find('#mobile-property-filters-slot').append($(this));
-					});
-
-					// Move spell modding info block below property filters
-					$('#primary-filters .modding-block').each(function() {
-						$advSection.find('#mobile-modding-filters-slot').append($(this));
-					});
-
 					$('#primary-filters').append($advSection);
 
 					// Sync initial checkbox states from desktop controls
 					var showKeysChecked = $('#showkeys').is(':checked');
 					var moreInfoChecked = $('#showids').is(':checked') || $('#showmoddinginfo').is(':checked');
-					var hasActivePropFilter = $advSection.find('.search-key').filter(function() { return $(this).val(); }).length > 0;
+					var hasActivePropFilter = $('#primary-filters .hidden-block .search-key').filter(function() { return $(this).val(); }).length > 0;
 
 					$('#mobile-toggle-show-keys').prop('checked', showKeysChecked);
 					$('#mobile-toggle-more-info').prop('checked', moreInfoChecked);
 					if (hasActivePropFilter) {
 						$('#mobile-toggle-advanced-filters').prop('checked', true);
-						$('#mobile-property-filters-slot').show();
+						$('#primary-filters .hidden-block:has(.filters-text.properties)').show();
+					} else {
+						$('#primary-filters .hidden-block:has(.filters-text.properties)').hide();
 					}
 
 					// Event: Toggle Advanced Property Filters
 					$('#mobile-toggle-advanced-filters').on('change', function() {
+						// On mobile, the active property filter is within a .hidden-block. We just toggle it directly.
+						var $propFilters = $('#primary-filters .hidden-block:has(.filters-text.properties)');
 						if ($(this).is(':checked')) {
-							$('#mobile-property-filters-slot').slideDown(150);
+							$propFilters.slideDown(150);
 						} else {
-							$('#mobile-property-filters-slot').slideUp(150);
-							$('#mobile-property-filters-slot input.clear-filters-btn').trigger('click');
+							$propFilters.slideUp(150);
+							$propFilters.find('input.clear-filters-btn').trigger('click');
 						}
 					});
 
-					// Event: Toggle Show Keys
+					// Event: Toggle Show Keys (proxies to desktop checkbox)
 					$('#mobile-toggle-show-keys').on('change', function() {
 						var checked = $(this).is(':checked');
 						$('#showkeys').prop('checked', checked).saveState();
 						if (window.showOrHideKeys) window.showOrHideKeys();
 					});
 
-					// Event: Toggle More Info
+					// Event: Toggle More Info (proxies to desktop checkboxes)
 					$('#mobile-toggle-more-info').on('change', function() {
 						var checked = $(this).is(':checked');
 						$('#showids').prop('checked', checked).saveState();
@@ -593,6 +586,9 @@
 						var $active = $popups.last();
 						$active.show();
 
+						// Apply mobile styling theme
+						$active.addClass('mobile-card-theme');
+
 						// Inject / refresh navigation and save buttons on the active popup
 						self.injectSaveButtonsToPopup($active);
 					} else {
@@ -723,10 +719,10 @@
 				html += '    <span class="col-badge">' + (isVisible ? activeW + 'px' : 'hidden') + '</span>';
 				html += '  </div>';
 				html += '  <div class="mobile-col-btn-row">';
-				html += '    <button type="button" class="col-btn-step col-btn-dec" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + ' title="Decrease width 25px">－</button>';
-				html += '    <button type="button" class="col-btn-step col-btn-inc" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + ' title="Increase width 25px">＋</button>';
-				html += '    <button type="button" class="col-btn-fit" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + '>⚡ Fit</button>';
-				html += '    <button type="button" class="col-btn-min" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + '>🤏 Min</button>';
+				html += '    <button type="button" class="col-btn-step col-btn-dec" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + ' title="Decrease width 25px">ï¼</button>';
+				html += '    <button type="button" class="col-btn-step col-btn-inc" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + ' title="Increase width 25px">ï¼‹</button>';
+				html += '    <button type="button" class="col-btn-fit" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + '>âš¡ Fit</button>';
+				html += '    <button type="button" class="col-btn-min" data-col-id="' + mCol.id + '" ' + (!isVisible ? 'disabled' : '') + '>ðŸ¤ Min</button>';
 				html += '  </div>';
 				html += '</div>';
 			}
