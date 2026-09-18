@@ -1,4 +1,4 @@
-﻿//IE workaround
+//IE workaround
 if (!console) var console={ log:function(){} };
 
 //interrupt navigation away from page
@@ -107,7 +107,7 @@ DMI.initGrids = function() {
 	$('#showids').click( function(){setTimeout(showOrHideIds,0);} ); //asynchronous call as its a bit sluggish
 
 	function showOrHideModdingInfo() {
-		if ($('#showmoddinginfo').saveState().is(':checked')) {
+		if ($('#showmoddinginfo').saveState().is(':checked') && DMI.Options['Show ids']) {
 			//add style
 			$( "<style>.modding-block { display:block; } tr.modding-row { display:table-row; } .modding-inline {display:inline; }</style>" ).appendTo( "head" );
 
@@ -122,12 +122,11 @@ DMI.initGrids = function() {
 			$("div.modding-block div.panel input.clear-filters-btn").trigger('click');
 		}
 	}
-	window.showOrHideModdingInfo = showOrHideModdingInfo;
 	$('#showmoddinginfo').click( function(){setTimeout(showOrHideModdingInfo,0);} ); //asynchronous call as its a bit sluggish
 
 
 	function showOrHideKeys() {
-		if ($('#showkeys').saveState().is(':checked')) {
+		if ($('#showkeys').saveState().is(':checked') && DMI.Options['Show ids']) {
 			//add style
 			$( "<style>.internal-block { display:block; } tr.internal-row { display:table-row; } .internal-inline {display:inline; }</style>" ).appendTo( "head" );
 
@@ -139,8 +138,6 @@ DMI.initGrids = function() {
 			DMI.Options['Show internal keys'] = 0;
 		}
 	}
-	window.showOrHideKeys = showOrHideKeys;
-	window.showOrHideIds = showOrHideIds;
 	$('#showkeys').click( function(){setTimeout(showOrHideKeys,0);} );  //asynchronous call as its a bit sluggish
 
 
@@ -202,7 +199,7 @@ DMI.initGrids = function() {
 		$("#item-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if (!window.isMobileDevice) $("div.filters-text.itemview input.search-box").focus();
+		$("div.filters-text.itemview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -227,7 +224,7 @@ DMI.initGrids = function() {
 		$("#site-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if (!window.isMobileDevice) $("div.filters-text.siteview input.search-box").focus();
+		$("div.filters-text.siteview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -252,7 +249,7 @@ DMI.initGrids = function() {
 		$("#merc-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if (!window.isMobileDevice) $("div.filters-text.mercview input.search-box").focus();
+		$("div.filters-text.mercview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -277,7 +274,7 @@ DMI.initGrids = function() {
 		$("#event-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if (!window.isMobileDevice) $("div.filters-text.eventview input.search-box").focus();
+		$("div.filters-text.eventview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -302,7 +299,7 @@ DMI.initGrids = function() {
 		$("#spell-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if (!window.isMobileDevice) $("div.filters-text.spellview input.search-box").focus();
+		$("div.filters-text.spellview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -327,7 +324,7 @@ DMI.initGrids = function() {
 		$("#unit-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if (!window.isMobileDevice) $("div.filters-text.unitview input.search-box").focus();
+		$("div.filters-text.unitview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -353,7 +350,7 @@ DMI.initGrids = function() {
 		$("#wpn-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if (!window.isMobileDevice) $("div.filters-text.wpnview input.search-box").focus();
+		$("div.filters-text.wpnview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
@@ -379,7 +376,7 @@ DMI.initGrids = function() {
 		$("#armor-page-button").prop('disabled', true).addClass('disabled');
 
 		//focus search box
-		if (!window.isMobileDevice) $("div.filters-text.armorview input.search-box").focus();
+		$("div.filters-text.armorview input.search-box").focus();
 
 		DMI.Utils.saveState();
 	});
