@@ -88,6 +88,17 @@ function _bool_num(c,a,t) {
 	modctx[t][c] = '1';
 }
 function _ignore(c,a,t) {  }
+function _num_pair(c,a,t) {
+	if (a.s) throw "unexpected argument (string)";
+	if (!a.n1) throw "argument missing (number expected)";
+	modctx[t][c] = a.n2 ? (a.n1 + ' ' + a.n2) : a.n1;
+}
+function _open_ignored(tname) {
+	return function(c,a,t,fnw) {
+		modctx._checkContextClosed(fnw);
+		modctx[tname] = { id: (a.n1 || a.s || 0) };
+	}
+}
 
 
 //truncates name till it is found in object. returns found value
@@ -120,7 +131,7 @@ var modctx = DMI.modctx = {
 	processCommand: function(cmd, args, warningFn) {
 		var fullcmd = cmd;
 
-		var types = ['unit', 'spell', 'wpn', 'item', 'armor', 'nation', 'site', 'event', 'nametype', 'merc'];
+		var types = ['unit', 'spell', 'wpn', 'item', 'armor', 'nation', 'site', 'event', 'nametype', 'merc', 'bless', 'sound', 'template', 'poptype'];
 		for (var j=0, type; type=types[j]; j++) {
 			if (modctx[type]) {
 				//lookup cmd for open object
@@ -170,9 +181,10 @@ var modctx = DMI.modctx = {
 	//helpers
 	_checkContextClosed: function(fnwarn) {
 		if (modctx.item || modctx.armor || modctx.wpn || modctx.unit || modctx.spell ||
-			modctx.nation || modctx.site || modctx.merc || modctx.event || modctx.nametype ) {
+			modctx.nation || modctx.site || modctx.merc || modctx.event || modctx.nametype ||
+			modctx.bless || modctx.sound || modctx.template || modctx.poptype ) {
 			modctx.item = modctx.armor = modctx.wpn = modctx.unit = modctx.spell = modctx.nation = modctx.site =
-				modctx.merc = modctx.event = modctx.nametype = null;
+				modctx.merc = modctx.event = modctx.nametype = modctx.bless = modctx.sound = modctx.template = modctx.poptype = null;
 			fnwarn('missing #end');
 		}
 	},
@@ -254,6 +266,31 @@ var modctx = DMI.modctx = {
 		},
 
 		end: function(c,a,t,fnw) { fnw('no open object'); },
+
+		arenagems: _ignore,
+		arenagold: _ignore,
+		gemlongevity: _ignore,
+		startresearch: _ignore,
+		tempscalecap: _ignore,
+		clearallitems: function(c,a,t,fnw) {
+			modctx._checkContextClosed(fnw);
+			modctx.itemdata.length = 0;
+			for (var k in modctx.itemlookup) delete modctx.itemlookup[k];
+		},
+		clearallspells: function(c,a,t,fnw) {
+			modctx._checkContextClosed(fnw);
+			modctx.spelldata.length = 0;
+			for (var k in modctx.spelllookup) delete modctx.spelllookup[k];
+		},
+		clearmercs: function(c,a,t,fnw) {
+			modctx._checkContextClosed(fnw);
+			modctx.mercdata.length = 0;
+			for (var k in modctx.merclookup) delete modctx.merclookup[k];
+		},
+		selectbless: _open_ignored('bless'),
+		selectsound: _open_ignored('sound'),
+		newtemplate: _open_ignored('template'),
+		selectpoptype: _open_ignored('poptype'),
 
 		//nation modding
 		indepflag: _ignore,
@@ -838,6 +875,80 @@ var modctx = DMI.modctx = {
 		unique: _bool,
 		reanimpriest: _bool,
 
+
+		airelementals: _num,
+		assassin: _bool,
+		autoberserk: _num,
+		battlesum1d2: _ref,
+		battlesum1d3: _ref,
+		battlesumwarm: _ref,
+		beauty: _num,
+		bestowtomount: _bool,
+		bravemount: _num,
+		chorusmaster: _bool,
+		chorusslave: _bool,
+		clear: _ignore,
+		clumsy: _num,
+		corpsehealer: _num,
+		corruptor: _num,
+		dancenof: _num,
+		dancenratt: _num,
+		dancesize: _num,
+		dancespr: _num,
+		danceweapon: _num,
+		deathgrab: _num,
+		deathshock: _num,
+		deathslime: _num,
+		decayres: _num,
+		dread: _num,
+		earthelementals: _num,
+		elementgems: _num,
+		enchantedblood: _num,
+		falseregen: _num,
+		falsesupply: _num,
+		faysummon: _num,
+		fearofflood: _num,
+		fireelementals: _num,
+		forestsurv: _bool,
+		gemprod: _num_pair,
+		glamourmanip: _num,
+		glamourrange: _num,
+		grandcom: _num,
+		growthpower: _num,
+		heavyitem: _num,
+		holyrange: _num,
+		icenatprot: _num,
+		maxdeadhp: _num,
+		mindcollar: _num,
+		mobilearcher: _num,
+		mountsurv: _bool,
+		nightmareaura: _num,
+		notfornation: _ref,
+		onlysleepers: _bool,
+		patience: _num,
+		plaguedoctor: _num,
+		powerofdeath: _num,
+		praise: _num,
+		reconst: _num,
+		regainmount: _num,
+		sabbathmaster: _bool,
+		sabbathslave: _bool,
+		skilledrider: _num,
+		sleepres: _ref,
+		smartmount: _num,
+		sorcerygems: _num,
+		spikes: _num,
+		statsiege: _num,
+		statstorm: _num,
+		swampsurv: _bool,
+		swimming: _bool,
+		truesight: _bool,
+		twistfate: _bool,
+		undisleader: _num,
+		unseen: _bool,
+		wastesurv: _bool,
+		waterelementals: _num,
+		xpgain: _num,
 	},
 
 
@@ -980,8 +1091,36 @@ var modctx = DMI.modctx = {
 		internal: _bool,
 		ferrous: _bool,
 		flammable: _bool,
-		dt_realstun: _bool
+		dt_realstun: _bool,
 
+
+		aftercloud: _num_pair,
+		aftercloudarea: _num,
+		coldifhit: _num,
+		defroll: _bool,
+		dt_bouncekill: _bool,
+		dt_interrupt: _bool,
+		false: _bool,
+		fireifhit: _num,
+		fullstr: _bool,
+		holyifhit: _num,
+		holystunifhit: _num,
+		illusionsimmune: _bool,
+		killdemonifhit: _num,
+		killmagicifhit: _num,
+		magiconly: _bool,
+		mrhalf: _bool,
+		notdismounted: _bool,
+		notmounted: _num,
+		nouw: _bool,
+		petrifyifhit: _num,
+		poisonifdmg: _num,
+		sample: _str,
+		shockifhit: _num,
+		soulslaying: _bool,
+		speedmult: _num,
+		spiritformimmune: _bool,
+		thirdstr: _bool,
 	},
 
 	//armor selected
@@ -1037,6 +1176,8 @@ var modctx = DMI.modctx = {
 		magicarmor: _bool,
 		ironarmor: _bool,
 		woodenarmor: _bool,
+
+		protparts: _num_pair,
 	},
 
 	//unit selected
@@ -1895,6 +2036,19 @@ var modctx = DMI.modctx = {
 		moremagic: 	_num,
 
 		drawsize: _ignore,
+
+		_3castbattlespell: _ref,
+		beauty: _num,
+		faysummon: _num,
+		forcess: _bool,
+		glamourattuned: _num,
+		notsacred: _bool,
+		sabbathmaster: _bool,
+		saltvul: _num,
+		shapechance: _num,
+		statsiege: _num,
+		tolerateund: _bool,
+		xpgain: _num,
 	},
 
 	//spell selected
@@ -2007,7 +2161,48 @@ var modctx = DMI.modctx = {
 		flightspr:	_ignore,
 		explspr:	_ignore,
 		sound:		_ignore,
-		sample:		_ignore
+		sample:		_ignore,
+
+		aiassmod: _num,
+		aibadlvl: _num,
+		cure: _str,
+		dispimmune: _num,
+		friendlyench: _num,
+		globallook: _num,
+		godpathspell: _num,
+		hiddenench: _num,
+		homerealm: _num,
+		localglobal: _num,
+		makecrater: _num,
+		maxbounces: _num,
+		napbreakrit: _num,
+		nextingeo: _num,
+		nocastmindless: _num,
+		nogeodst: _num,
+		notindoors: _num,
+		notmnr: _ref,
+		onlymnr: _ref,
+		onlysitedst: _ref,
+		polygetmagic: _num,
+		portent: _str,
+		reqnoplant: _bool,
+		reqnoseduce: _bool,
+		reqnospellsinger: _bool,
+		reqnotaskmaster: _bool,
+		reqplant: _bool,
+		reqseduce: _bool,
+		reqspellsinger: _bool,
+		reqsun: _num,
+		reqtaskmaster: _bool,
+		sethome: _bool,
+		sizecost: _num,
+		spec2: _num,
+		speedmult: _num,
+		spellreqfly: _num,
+		strikesound: _num,
+		sumhealaffs: _num,
+		twiceborncost: _num,
+		worldvisible: _num,
 	},
 
 	//nation selected
@@ -2272,8 +2467,141 @@ var modctx = DMI.modctx = {
 		disableoldnations: _bool,
 		cleargods: _bool,
 		addgod: function(c,a,t){ modctx[t]['addgod'].push(argref(a)); },
-		delgod: function(c,a,t){ modctx[t]['delgod'].push(argref(a)); }
+		delgod: function(c,a,t){ modctx[t]['delgod'].push(argref(a)); },
 
+
+		aicheapholy: _bool,
+		aiglamournation: _bool,
+		aiheavyrec: _num,
+		aiholyranged: _bool,
+		aimagerec: _num,
+		airblessbonus: _num,
+		astralblessbonus: _num,
+		blessbonus: _num,
+		bloodblessbonus: _num,
+		buildcoastfort: _num,
+		builduwfort: _num,
+		cavefortcom: _ref,
+		cavefortrec: _ref,
+		caveinc: _num,
+		cavelabcost: _num,
+		caverecpt: _num,
+		caveres: _num,
+		cavetemplecost: _num,
+		coastcom: _ref,
+		coastfortcom: _ref,
+		coastfortrec: _ref,
+		coastrec: _ref,
+		deathblessbonus: _num,
+		deepcom: _ref,
+		deeprec: _ref,
+		defchaos: _num,
+		defdeath: _num,
+		defdrain: _num,
+		defmisfortune: _num,
+		defsloth: _num,
+		disbless: _ref,
+		domdeathsense: _bool,
+		domsail: _bool,
+		domwar: _num,
+		dripcom: _ref,
+		dripfortcom: _ref,
+		dripfortrec: _ref,
+		driprec: _ref,
+		earthblessbonus: _num,
+		farmcom: _ref,
+		farmfortcom: _ref,
+		farmfortrec: _ref,
+		farmrec: _ref,
+		fireblessbonus: _num,
+		foreignfortcom: _ref,
+		foreignfortrec: _ref,
+		forestfortcom: _ref,
+		forestfortrec: _ref,
+		forestlabcost: _num,
+		foresttemplecost: _num,
+		fortcoldscaleres: _num,
+		fortheatscaleres: _num,
+		fortunrest: _num,
+		futuresite: _ref,
+		ghostreanim: _bool,
+		glamourblessbonus: _num,
+		greekreanim: _bool,
+		halfdeathinc: _bool,
+		halfdeathpop: _bool,
+		hero10: _ref,
+		hero7: _ref,
+		hero8: _ref,
+		hero9: _ref,
+		hidedom: _num,
+		homecoldscaleres: _num,
+		homeheatscaleres: _num,
+		indepflag: _str,
+		islandnation: _bool,
+		islandsite: _ref,
+		kelpcom: _ref,
+		kelprec: _ref,
+		maxprison: _num,
+		minprison: _num,
+		mountainfortcom: _ref,
+		mountainfortrec: _ref,
+		mountlabcost: _num,
+		mounttemplecost: _num,
+		multihero3: _ref,
+		multihero4: _ref,
+		multihero5: _ref,
+		multihero6: _ref,
+		multihero7: _ref,
+		nametype: _num,
+		nationinc: _num,
+		natureblessbonus: _num,
+		noundeadgods: _bool,
+		plaincom: _ref,
+		plainfortcom: _ref,
+		plainfortrec: _ref,
+		plainrec: _ref,
+		priestreanim: _bool,
+		recallgod: _num,
+		riverstart: _bool,
+		seacom: _ref,
+		searec: _ref,
+		seatrace: _bool,
+		startunitnbrs3: _num,
+		startunittype3: _ref,
+		supayareanim: _bool,
+		swampfortcom: _ref,
+		swampfortrec: _ref,
+		swamplabcost: _num,
+		swamptemplecost: _num,
+		syncretism: _num,
+		templeholypoints: _num,
+		undeadreanim: _bool,
+		uwcom: _ref,
+		uwdefcom1: _ref,
+		uwdefcom2: _ref,
+		uwdefmult1: _num,
+		uwdefmult1b: _num,
+		uwdefmult1c: _num,
+		uwdefmult1d: _num,
+		uwdefmult2: _num,
+		uwdefmult2b: _num,
+		uwdefunit1: _ref,
+		uwdefunit1b: _ref,
+		uwdefunit1c: _ref,
+		uwdefunit1d: _ref,
+		uwdefunit2: _ref,
+		uwdefunit2b: _ref,
+		uwrec: _ref,
+		uwwallcom: _ref,
+		uwwallmult: _num,
+		uwwallunit: _ref,
+		viewallbat: _bool,
+		viewallprov: _bool,
+		wastefortcom: _ref,
+		wastefortrec: _ref,
+		wastelabcost: _num,
+		wastetemplecost: _num,
+		waterblessbonus: _num,
 	},
 
 	//site selected
@@ -2423,8 +2751,18 @@ var modctx = DMI.modctx = {
 		summon: function(c,a,t){ modctx[t]['sum'].push(argref(a)); },
 		summonlvl2: function(c,a,t){ modctx[t]['suml2'].push(argref(a)); },
 		summonlvl3: function(c,a,t){ modctx[t]['suml3'].push(argref(a)); },
-		summonlvl4: function(c,a,t){ modctx[t]['suml4'].push(argref(a)); }
+		summonlvl4: function(c,a,t){ modctx[t]['suml4'].push(argref(a)); },
 
+
+		glamourrange: _num,
+		minegold: _num,
+		nat: _ref,
+		natcom: _ref,
+		natmon: _ref,
+		scryrange: _num,
+		wallcom: _ref,
+		wallmult: _num,
+		wallunit: _ref,
 	},
 
 	//event selected
@@ -2828,7 +3166,26 @@ var modctx = DMI.modctx = {
 		setxp: _num,
 		togglevar: _ignore,
 
-		id:	function(c,a,t){ modctx[t]['eff_id'] = argref(a); }
+		id:	function(c,a,t){ modctx[t]['eff_id'] = argref(a); },
+
+		arena1: _bool,
+		arena2: _bool,
+		cleartarg: _bool,
+		forceexactgold: _num,
+		forcegold: _num,
+		gainaffmount: _num,
+		healaffmount: _num,
+		maybeaddsite: _num,
+		maybehiddensite: _num,
+		remnbor: _num,
+		req_caveforest: _num,
+		req_deepsea: _num,
+		req_mnrbs: _ref,
+		req_monsterbs: _ref,
+		req_pathglamour: _num,
+		req_provnbr: _num,
+		req_targmaxsize: _num,
+		var0units: _ref,
 	},
 
     //nametype selected
@@ -2860,6 +3217,67 @@ var modctx = DMI.modctx = {
         item: _ref,
         eramask: _num
     },
+
+	//bless selected
+	blesscommands: {
+		end: function(c,a,t){ modctx[t] = null; },
+		chaosscale: _ignore,
+		clearfx: _ignore,
+		clearscales: _ignore,
+		coldscale: _ignore,
+		cost0: _ignore,
+		cost1: _ignore,
+		deathscale: _ignore,
+		drainscale: _ignore,
+		growthscale: _ignore,
+		heatscale: _ignore,
+		luckscale: _ignore,
+		magicscale: _ignore,
+		misfortscale: _ignore,
+		name: _ignore,
+		orderscale: _ignore,
+		path0: _ignore,
+		path1: _ignore,
+		prodscale: _ignore,
+		slothscale: _ignore
+	},
+
+	//sound selected
+	soundcommands: {
+		end: function(c,a,t){ modctx[t] = null; },
+		loop: _ignore,
+		sample: _ignore,
+		smpmode: _ignore
+	},
+
+	//template selected
+	templatecommands: {
+		end: function(c,a,t){ modctx[t] = null; },
+		bless: _ignore,
+		domstr: _ignore,
+		favrit: _ignore,
+		form: _ignore,
+		magic: _ignore,
+		prison: _ignore,
+		researchgoal: _ignore,
+		scale: _ignore
+	},
+
+	//poptype selected
+	poptypecommands: {
+		end: function(c,a,t){ modctx[t] = null; },
+		addreccom: _ignore,
+		addrecunit: _ignore,
+		cleardef: _ignore,
+		clearrec: _ignore,
+		defcom1: _ignore,
+		defmult1: _ignore,
+		defmult1b: _ignore,
+		defmult1c: _ignore,
+		defunit1: _ignore,
+		defunit1b: _ignore,
+		defunit1c: _ignore
+	},
 
 	//member data
 	loadedmods: [],
@@ -2904,6 +3322,11 @@ var modctx = DMI.modctx = {
     nametypedata: undefined,
     nametypelookup: undefined,
     nametype: null,
+
+	bless: null,
+	sound: null,
+	template: null,
+	poptype: null,
 
 
     // setWpnDamageType: function(key) {
@@ -3045,8 +3468,6 @@ modctx.parseMod = function(str, modnum, modname) {
 		}
 	}
 }
-
-
 
 
 //namespace args
