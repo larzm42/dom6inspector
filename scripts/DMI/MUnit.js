@@ -538,11 +538,21 @@ MUnit.prepareData_PostMod = function() {
 	for (var oi=0, o;  o= modctx.unitdata[oi];  oi++) {
 		if (o.mountmnr && parseInt(o.mountmnr) > 0) {
 		   var mount = modctx.unitlookup[o.mountmnr];
-		   if (!mount) continue;
-		   // Add rcost of mount (the gold is added in MUnit.autocalc)
+		   // Add rcost of mount
 		   o.rcost += parseInt(mount.rcostsort);
 		   o.rcostsort += parseInt(mount.rcostsort);
-
+		   // Add goldcost of mount
+		   if (parseInt(mount.basecost) > 1000) {
+		   	   o.goldcost = MUnit.round(o.goldcost + parseInt(mount.basecost) - 10000);
+		   } else {
+		   	   o.goldcost = MUnit.round(o.goldcost + parseInt(mount.basecost));
+		   }
+	   	   if (o.type == 'u') {
+			  o.goldcost = MUnit.roundIfNeeded(o.goldcost);
+		   } else {
+			  o.goldcost = MUnit.round(o.goldcost);
+		   }
+		   
 		   // Add backlink to rider
 		   mount.riders = mount.riders || [];
 		   mount.riders.push(o)
@@ -551,195 +561,209 @@ MUnit.prepareData_PostMod = function() {
 	
 }
 
-// parseInt that treats a missing value as 0
-function intval(v) {
-	var n = parseInt(v);
-	return isNaN(n) ? 0 : n;
-}
-
-// integer division the way C does it (towards zero)
-function truncate(x) {
-	return x < 0 ? Math.ceil(x) : Math.floor(x);
-}
-
 MUnit.autocalc = function (o) {
-	o.goldcost = MUnit.goldCost(o, o.type == 'c');
-}
-
-// Price shown in the recruitment screen. Extra riders and the mount are added at their unit price. The
-// total is rounded down to a multiple of 5.
-MUnit.goldCost = function (o, isCommander) {
-	var gold = MUnit.monsterGoldCost(o, isCommander, 'worst');
-	if (isCommander) {
-		var best = MUnit.monsterGoldCost(o, isCommander, 'best');
-		gold = truncate((gold + 3*best) / 4);
-	}
-
-	// extra riders (#nofriders)
-	var riders = intval(o.nofriders);
-	if (riders > 1) {
-		var rider = o;
-		if (intval(o.coridermnr) > 0) rider = modctx.unitlookup[o.coridermnr];
-		if (rider) gold += MUnit.monsterGoldCost(rider, false, 'worst') * (riders - 1);
-	}
-
-	// mount
-	if (intval(o.mountmnr) > 0) {
-		var mount = modctx.unitlookup[o.mountmnr];
-		if (mount) gold += MUnit.monsterGoldCost(mount, false, 'worst') + intval(o.mountgoldcost);
-	}
-
-	if (isCommander || gold > 30) gold = MUnit.round(gold);
-	return gold;
-}
-
-// Cost of one monster, without mount or extra riders.
-MUnit.monsterGoldCost = function (o, isCommander, randomCase) {
-	// #shapechange: if the other shape has a lower monster number, that shape's cost is used
-	while (intval(o.shapechange) > 0 && intval(o.shapechange) < intval(o.id) && modctx.unitlookup[o.shapechange]) {
-		o = modctx.unitlookup[o.shapechange];
-	}
-
-	// fixed cost
-	if (intval(o.basecost) < 5000) {
-		return intval(o.basecost);
-	}
-
-	// #gcost of 10000 or more means autocalc; the amount above 10000 is the starting cost
-	var cost = intval(o.basecost) - 10000;
-	var priest_cost = 0;
-
-	if (isCommander) {
-		//Leader cost
+	if (parseInt(o.basecost) > 9000) {
+		// Autocalc
 		var leadership = {
-				0:	10,		// #noleader
-				10:	15,		// poor
-				50:	30,		// normal
-				100: 60,	// good
-				150: 100,	// expert
-				200: 150	// superior
+				0:	10,
+				10:	15,
+				20: 20,
+				30: 20,
+				40: 30,
+				50: 30,
+				60: 30,
+				75: 30,
+				80: 60,
+				100: 60,
+				120: 80,
+				150: 100,
+				160: 100,
+				200: 150
 		}
-		// the displayed leadership includes the #command bonus; take it off to get the class
-		var leaderclass = intval(o.leader) - intval(o.leaderbonus);
-		var ldr_cost = 10;
-		if (leaderclass > 0) {
-			ldr_cost = leadership[leaderclass] || 30;
-			ldr_cost += Math.max(intval(o.inspirational), -2) * 10;
+
+		//Leader cost
+		var ldr_cost = 0;
+		if (o.leader) {
+			ldr_cost = ldr_cost + parseInt(leadership[o.leader]);
 		}
-		if (intval(o.sailingshipsize) > 0) {
-			ldr_cost += truncate(ldr_cost / 2);
+		if (o.inspirational) {
+			ldr_cost = ldr_cost + 10*parseInt(o.inspirational);
+		}
+		if (o.sailingshipsize && parseInt(o.sailingshipsize) > 0) {
+			ldr_cost = ldr_cost + .5 * ldr_cost;
+		}
+		
+		var path1 = {
+				1: 30,
+				2: 90,
+				3: 150,
+				4: 210,
+				5: 270
+		}
+		var path2 = {
+				1: 20,
+				2: 60,
+				3: 100,
+				4: 140,
+				5: 180
 		}
 
 		// Paths cost
-		// levels are counted in half levels, so a 50% random pick can add half a level
-		var levels = MUnit.magicHalfLevels(o, randomCase);
-		var path1 = [0, 15, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300];	// the highest path
-		var path2 = [0, 10, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200];	// every other path
-		var highest = -1;
-		for (var i=0; i<9; i++) {	// F A W E S D N G B, holy is priced separately
-			if (levels[i] > 0 && (highest == -1 || levels[i] > levels[highest])) {
-				highest = i;
+		var paths_cost = 0;
+		var arr = [];
+		var baseM = [o.F, o.A, o.W, o.E, o.S, o.D, o.N, o.G, o.B];
+		if (MUnit.hasRandom(o)) {
+			MUnit.buildRandomArrays(o, 0, arr, baseM);
+			for (var rand1=0; rand1 < arr.length; rand1++) {
+				arr[rand1].sort(function(a,b){return b-a});
+			}
+			var largest = 0;
+			var smallest = 0;
+			for (var rand2=0; rand2 < arr.length; rand2++) {
+				var tempPathCost = 0;
+				for (var rand3=0, valrand; valrand = arr[rand2][rand3];  rand3++) {
+					if (rand3 == 0) {
+						tempPathCost = path1[valrand];
+					} else {
+						tempPathCost = tempPathCost + path2[valrand];
+					}
+				}
+				if (largest == 0) {
+					largest = tempPathCost;
+					smallest = tempPathCost;
+				} else {
+					if (tempPathCost > largest) {
+						largest = tempPathCost;
+					} else if (tempPathCost < smallest) {
+						smallest = tempPathCost;
+					}
+				}
+			}
+			paths_cost = (largest * .75) + (smallest *.25);
+
+		} else {
+			var sortedArr = [];
+			for (var oj=0; oj<baseM.length; oj++) {
+				if (parseInt(baseM[oj]) > 0) {
+					sortedArr.push(parseInt(baseM[oj]));
+				}
+			}
+			sortedArr.sort(function(a,b){return b-a});
+			for (var ok=0, val2; val2 = sortedArr[ok];  ok++) {
+				if (ok == 0) {
+					paths_cost = path1[val2];
+				} else {
+					paths_cost = paths_cost + path2[val2];
+				}
 			}
 		}
-		var paths_cost = 0;
-		if (highest != -1) {
-			for (var i=0; i<9; i++) {
-				var lvl = Math.min(levels[i], 11);
-				paths_cost += (i == highest) ? path1[lvl] : path2[lvl];
-			}
-			if (intval(o.forgebonus) > 0) {
-				paths_cost += truncate(paths_cost * intval(o.forgebonus) / 100);
-			}
-			if (paths_cost > 0) {
-				paths_cost += Math.max(intval(o.researchbonus), -1) * 5;
-			}
+		if (paths_cost > 0 && o.adept_research) {
+			paths_cost = paths_cost + parseInt(o.adept_research) * 5;
+		}
+		if (o.inept_research) {
+			paths_cost = paths_cost - 5;
+		}
+		if (o.fixforgebonus) {
+			paths_cost = paths_cost + paths_cost*(parseInt(o.fixforgebonus)/100);
 		}
 
 		// Priest cost
-		var priest = [0, 10, 20, 30, 40, 60, 100, 100, 140, 160];	// per half level of H
-		priest_cost = priest[Math.min(levels[9], 9)];
+		var priest = {
+				1: 20,
+				2: 40,
+				3: 100,
+				4: 140
+		}
+		var priest_cost = 0;
+		if (o.H) {
+			priest_cost = parseInt(priest[o.H]);
+		}
 
 		// Spy cost
 		var spy_cost = 0;
-		if (intval(o.assassin) > 0) spy_cost += 40;
-		if (intval(o.spy) > 0) spy_cost += 40;
-		if (intval(o.seduce) > 0) spy_cost += 60;
+		if ((o.spy && parseInt(o.spy) > 0)) {
+			spy_cost = spy_cost + 40;
+		}
+		if ((o.assassin && parseInt(o.assassin) > 0)) {
+			spy_cost = spy_cost + 40;
+		}
+		if (o.seduce && parseInt(o.seduce) > 0) {
+			spy_cost = spy_cost + 60;
+		} else if (o.succubus && parseInt(o.succubus) > 0) {
+			spy_cost = spy_cost + 60;
+		}
 
-		// the largest of the four counts in full, the others count half
 		var cost_array = [ldr_cost, paths_cost, priest_cost, spy_cost];
 		cost_array.sort(function(a,b){return b-a});
-		cost += cost_array[0] + truncate(cost_array[1]/2) + truncate(cost_array[2]/2) + truncate(cost_array[3]/2);
+
+		var cost;
+		if (o.type == 'c') {
+			cost = cost_array[0] + cost_array[1]/2 + cost_array[2]/2 + cost_array[3]/2;
+		} else {
+			cost = 0;
+		}
 
 		// Special costs
-		if (intval(o.autohealer) > 0) {
-			cost += Math.min((intval(o.autohealer) + 2) * 10, 60);
+		var special_cost = 0;
+		if (o.stealthy && parseInt(o.stealthy) > 0 && o.type != 'u') {
+			special_cost = special_cost + 5;
 		}
-		if (intval(o.autodishealer) > 0) {
-			cost += Math.min((intval(o.autodishealer) + 3) * 5, 30);
+		if (o.autohealer && parseInt(o.autohealer) > 0 && o.type != 'u') {
+			special_cost = special_cost + 50;
 		}
-	}
-
-	// modifiers, for units and commanders alike
-	if (isCommander && intval(o.stealthy) >= 40) {
-		cost += 5;
-	}
-	if (intval(o.mounted) > 0) {
-		cost += 10;
-	}
-	if (intval(o.holy) > 0 || priest_cost > 0) {
-		cost = truncate(cost * 130 / 100);		// sacred, or any priest level
-	}
-	var slow_to_recruit = intval(o.rt) == 2 || (intval(o.rpcost) >= 4 && intval(o.rpcost) <= 6);
-	if (slow_to_recruit) {
-		cost = truncate(cost * 90 / 100);
-	}
-	if (isCommander) {
-		cost = truncate(cost * 140 / 100);
-	}
-	return Math.max(cost, 0);
-}
-
-// Magic levels counted in half levels, in the order F A W E S D N G B H, so a
-// fixed skill level is worth 2. A random pick adds (chance + 25) / 50 to one of
-// its paths: 100% is a whole level, 50% is half a level, 24% or less adds nothing.
-// With randomCase 'worst' the pick lands on the lowest of its paths, with 'best'
-// on the highest. Ties go to the first path in the order above.
-MUnit.magicHalfLevels = function (o, randomCase) {
-	var paths = ['F','A','W','E','S','D','N','G','B','H'];
-	var levels = [];
-	for (var i=0; i<paths.length; i++) {
-		levels[i] = 2 * intval(o[paths[i]]);
-	}
-
-	for (var r=0, rp; rp = o.randompaths[r]; r++) {
-		var chance = intval(rp.chance);
-		if (chance == 100) {
-			chance = 100 * Math.max(intval(rp.levels), 1);	// a 2-level pick is stored by the game as chance 200
+		if (o.autodishealer && parseInt(o.autodishealer) > 0 && o.type != 'u') {
+			special_cost = special_cost + 20;
 		}
-		if (chance <= 24) continue;
-		// The game does not price magic table entries of type 50 (Random).
-		if (rp.paths == 'FAWESDNG') continue;
+//		if (o.mounted && parseInt(o.mounted) > 0) {
+//			special_cost = special_cost + 10;
+//		}
 
-		var pick = -1;
-		for (var i=0; i<paths.length; i++) {
-			if (rp.paths.indexOf(paths[i]) == -1) continue;
-			if (pick == -1) {
-				pick = i;
-			} else if (randomCase == 'best' && levels[i] > levels[pick]) {
-				pick = i;
-			} else if (randomCase == 'worst' && levels[i] < levels[pick]) {
-				pick = i;
+		o.goldcost = parseInt(cost + special_cost);
+		o.goldcost = o.goldcost + parseInt(o.basecost) - 10000;
+		if (o.slow_to_recruit && parseInt(o.slow_to_recruit) > 0 && o.type != 'u') {
+			o.goldcost = o.goldcost * 0.9;
+		}
+		if (o.holy && parseInt(o.holy) > 0) {
+			o.goldcost = o.goldcost * 1.3;
+		}
+		if (o.type == 'u') {
+			o.goldcost = MUnit.roundIfNeeded(o.goldcost);
+		} else {
+			if (o.mountmnr) {
+				o.goldcost = MUnit.round(o.goldcost*1.4);
+				o.goldcost = MUnit.roundUp(o.goldcost*1.01);
+			} else {
+				o.goldcost = MUnit.round(o.goldcost*1.4);
 			}
 		}
-		if (pick != -1) {
-			levels[pick] += Math.floor((chance + 25) / 50);
-		}
+	} else {
+		o.goldcost = MUnit.roundIfNeeded(o.basecost);
 	}
-	return levels;
+}
+
+MUnit.roundIfNeeded = function (num) {
+	if (parseInt(num) > 30) {
+		return MUnit.round(num);
+	}
+	return Math.floor(num);
 }
 
 MUnit.round = function (num) {
 	return 5*(Math.floor(num/5));
+}
+MUnit.roundUp = function (num) {
+	return 5*(Math.ceil(num/5));
+}
+
+MUnit.hasRandom = function (o) {
+	if (o.randompaths.length) {
+		for (var i=0, r; r= o.randompaths[i]; i++) {
+			if (r.chance == 100) {
+				return true;
+			}
+		}
+	}
+	return false;
 }
 
 MUnit.getWpnLen = function (o, w) {
@@ -827,6 +851,118 @@ MUnit.getArmorParry = function (o, a) {
 	return "";
 }
 
+MUnit.buildRandomArrays = function (o, i, arr, baseM) {
+	var r = o.randompaths[i];
+	if (r.chance != 100) {
+		i++;
+		if (i == o.randompaths.length) {
+			return false;
+		}
+		r = o.randompaths[i];
+		if (r.chance != 100) {
+			i++;
+			if (i == o.randompaths.length) {
+				return false;
+			}
+			r = o.randompaths[i];
+			if (r.chance != 100) {
+				i++;
+				if (i == o.randompaths.length) {
+					return false;
+				}
+				r = o.randompaths[i];
+				if (r.chance != 100) {
+					i++;
+					if (i == o.randompaths.length) {
+						return false;
+					}
+				}
+			}
+		}
+	}
+	if (r.chance == 100) {
+		for (var step = 0, letter; letter = r.paths.charAt(step); step++) {
+			var newM = baseM.slice(0);
+			if (letter.indexOf('F') != -1) {
+				if (newM[0]) {
+					newM[0] = parseInt(newM[0])+parseInt(r.levels);
+				} else {
+					newM[0] = parseInt(r.levels);
+				}
+			}
+			if (letter.indexOf('A') != -1) {
+				if (newM[1]) {
+					newM[1] = parseInt(newM[1])+parseInt(r.levels);
+				} else {
+					newM[1] = parseInt(r.levels);
+				}
+			}
+			if (letter.indexOf('W') != -1) {
+				if (newM[2]) {
+					newM[2] = parseInt(newM[2])+parseInt(r.levels);
+				} else {
+					newM[2] = parseInt(r.levels);
+				}
+			}
+			if (letter.indexOf('E') != -1) {
+				if (newM[3]) {
+					newM[3] = parseInt(newM[3])+parseInt(r.levels);
+				} else {
+					newM[3] = parseInt(r.levels);
+				}
+			}
+			if (letter.indexOf('S') != -1) {
+				if (newM[4]) {
+					newM[4] = parseInt(newM[4])+parseInt(r.levels);
+				} else {
+					newM[4] = parseInt(r.levels);
+				}
+			}
+			if (letter.indexOf('D') != -1) {
+				if (newM[5]) {
+					newM[5] = parseInt(newM[5])+parseInt(r.levels);
+				} else {
+					newM[5] = parseInt(r.levels);
+				}
+			}
+			if (letter.indexOf('N') != -1) {
+				if (newM[6]) {
+					newM[6] = parseInt(newM[6])+parseInt(r.levels);
+				} else {
+					newM[6] = parseInt(r.levels);
+				}
+			}
+			if (letter.indexOf('G') != -1) {
+				if (newM[7]) {
+					newM[7] = parseInt(newM[7])+parseInt(r.levels);
+				} else {
+					newM[7] = parseInt(r.levels);
+				}
+			}
+			if (letter.indexOf('B') != -1) {
+				if (newM[8]) {
+					newM[8] = parseInt(newM[8])+parseInt(r.levels);
+				} else {
+					newM[8] = parseInt(r.levels);
+				}
+			}
+			if (o.randompaths.length > i+1) {
+				i++;
+				if (!MUnit.buildRandomArrays(o, i, arr, newM)) {
+					arr.push(newM);
+				}
+				i--;
+			} else {
+				arr.push(newM);
+			}
+		}
+	} else {
+		return false;
+	}
+	return true;
+}
+
+//stuff that depends on unit type must come after parsing nation data
 MUnit.prepareData_PostSiteData = function(o) {
 	for (var oi=0, o;  o= modctx.unitdata[oi];  oi++) {
 
@@ -1776,10 +1912,6 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'tmpbloodslaves',	'temp gems', function(v){ return v!='0' && Format.PerBattle(Format.Gems('B' + v)); },
 
 	'onebattlespell','casts each battle',		Utils.spellRef,
-	'3castbattlespell','casts each battle when 3+ present',	Utils.spellRef,
-	'addupkeep',	'upkeep as if gold cost were higher by',
-	'faysummon',	'extra fay folk when summoning',
-	'assencloc',	'assassinations take place',	{'0':'random suitable location', '1':'in a tavern', '2':'in a courtyard', '3':'outside', '4':'in a bedroom', '5':'in a library', '6':'in a sturdy house', '7':'in a summoning circle', '8':'in a ritual chamber', '9':'in old ruins'},
 
 	'regeneration',	'regeneration',	Format.Percent,
 	'enchantedblood', 'enchanted blood', function(v) { return String(v) + ' ';},
@@ -2344,9 +2476,6 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 [
 //	dbase key	displayed key		function/dict to format value
 	'slow_to_recruit',	'slow to recruit',
-	'noweapon',	'no fist attack when unarmed',
-	'tolerateund',	'tolerates undead in squad',
-	'forcess',	'always changes to second shape when killed',
 	'reqtemple', 'requires temple',
 	'reqlab', 'requires lab',
 	'noreqlab', 'doesn\'t require lab',
@@ -2503,8 +2632,6 @@ var modderkeys = Utils.cutDisplayOrder(aliases, formats,
 ]);
 var ignorekeys = {
 	modded:1,
-	leaderbonus:1,	// part of leader
-	mountgoldcost:1,	// part of goldcost
 	dupes:1,
 	sorttype:1,
 	typechar:1,
