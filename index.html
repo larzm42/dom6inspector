@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="en">
  <head>
    <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -11,18 +11,15 @@
      gtag('config', 'UA-51174963-1');
    </script>
    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
    <title>Dom6 Mod Inspector</title>
 
    <!-- ?v=30 -->
    
    	<link rel="shortcut icon" href="favicon.ico" />
-   	<link rel="manifest" href="manifest.json" />
    	<link rel="stylesheet" type="text/css" href="scripts/slickgrid/slick.grid.css" />
 	<link rel="stylesheet" type="text/css" href="scripts/slickgrid/css/smoothness/jquery-ui-1.8.16.custom.css" />
 	<link rel="stylesheet" type="text/css" href="scripts/slickgrid/examples/examples.css" />
 	<link rel="stylesheet" type="text/css" href="scripts/master.css?v=30"  />
-<script>window.isMobileDevice = (window.matchMedia && window.matchMedia("(pointer: coarse)").matches) || /Mobi|Android|iPhone|iPod/i.test(navigator.userAgent); if (window.isMobileDevice) { document.write('<link rel="stylesheet" type="text/css" href="scripts/mobile.css?v=30" />'); }</script>
 	<link rel="stylesheet" type="text/css" href="scripts/select2/select2.min.css"  />
 	
 </head>
@@ -35,7 +32,7 @@
 	
 	<!-- % SCRIPTS TO COMPILE % -->
 	<script type="text/javascript" src="scripts/slickgrid/slick.core.js"></script>
-	<script type="text/javascript" src="scripts/slickgrid/slick.grid.js?v=30"></script>
+	<script type="text/javascript" src="scripts/slickgrid/slick.grid.js?v=2"></script>
 	<script type="text/javascript" src="scripts/slickgrid/slick.dataview.js"></script>
 	<script type="text/javascript" src="scripts/ParsedQueryString.js"></script>
 	<script type="text/javascript" src="scripts/jquery.cookie.js"></script>
@@ -62,7 +59,6 @@
 	<script type="text/javascript" src="scripts/DMI/bitfields.js?v=30"></script>
 	
 	<script type="text/javascript" src="scripts/main.js?v=30"></script>
-	<script type="text/javascript" src="scripts/mobile.js?v=30"></script>
 	<!-- /% SCRIPTS TO COMPILE % -->
 
 	<script>
@@ -115,63 +111,6 @@
 	}
 	</script>
 
-	<!-- MOBILE TOP BAR & BACKDROP -->
-	<div id="mobile-topbar">
-		<button id="mobile-filter-btn" type="button"><span class="filter-icon">⚙️</span> Filters</button>
-		<input id="mobile-quick-search" type="text" placeholder="Search name or ID..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
-		<div id="mobile-topbar-actions">
-			<button id="mobile-columns-btn" type="button" title="Manage table columns">📐</button>
-			<button id="mobile-clear-btn" type="button" title="Clear all filters">✕</button>
-		</div>
-	</div>
-	<div id="mobile-backdrop"></div>
-
-	<!-- MOBILE COLUMNS MODAL -->
-	<div id="mobile-columns-modal" class="mobile-bottom-sheet">
-		<div class="mobile-sheet-header">
-			<h3>📐 Table Columns</h3>
-			<button id="mobile-columns-close" type="button">✕ Done</button>
-		</div>
-		<div class="mobile-sheet-toolbar">
-			<button id="mobile-cols-fit-screen" type="button" class="sheet-action-btn">📱 Fit Screen</button>
-			<button id="mobile-cols-fit-all" type="button" class="sheet-action-btn">⚡ Fit Text</button>
-		</div>
-		<div id="mobile-columns-list" class="mobile-sheet-body"></div>
-		<div class="mobile-sheet-footer-section">
-			<div class="scale-section-header">
-				<span class="scale-title">🔤 Text Size (Grid & Cards)</span>
-			</div>
-			<div class="scale-step-group">
-				<button type="button" class="scale-step-btn" data-scale="80">80%</button>
-				<button type="button" class="scale-step-btn active" data-scale="100">100%</button>
-				<button type="button" class="scale-step-btn" data-scale="120">120%</button>
-				<button type="button" class="scale-step-btn" data-scale="140">140%</button>
-				<button type="button" class="scale-step-btn" data-scale="160">160%</button>
-			</div>
-		</div>
-	</div>
-
-	<!-- MOBILE SAVED ITEMS (CAROUSEL / COMPARISON) MODAL -->
-	<div id="mobile-saved-modal" class="mobile-bottom-sheet">
-		<div class="mobile-sheet-header">
-			<h3>🔖 Saved</h3>
-			<div class="saved-header-actions">
-				<button id="mobile-saved-remove-current" type="button" class="saved-header-btn remove" title="Remove current item">🗑️ Del</button>
-				<button id="mobile-saved-clear-all" type="button" class="saved-header-btn clear" title="Clear all saved items">Clear All</button>
-				<button id="mobile-saved-close" type="button" class="saved-header-btn done">✕ Done</button>
-			</div>
-		</div>
-		<div id="mobile-saved-pills-bar" class="saved-pills-bar"></div>
-		<div id="mobile-saved-card-container" class="saved-card-container">
-			<div id="mobile-saved-card-content" class="saved-card-content"></div>
-		</div>
-		<div id="mobile-saved-controls" class="saved-nav-bar">
-			<button id="mobile-saved-prev" type="button" class="saved-nav-btn">◀ Prev</button>
-			<span id="mobile-saved-index-indicator">0 / 0</span>
-			<button id="mobile-saved-next" type="button" class="saved-nav-btn">Next ▶</button>
-		</div>
-	</div>
-
 	<!-- SHARED -->
 	<div id="primary-details">
 	<div id="primary-header">
@@ -209,11 +148,6 @@
         <!-- /PAGE TABS -->
 	</div>
 	<div id="primary-filters">
-		<!-- MOBILE DRAWER HEADER -->
-		<div id="mobile-drawer-header">
-			<h3>Filters & Options</h3>
-			<button id="mobile-drawer-close" type="button">✓ Done</button>
-		</div>
 	
 		<!-- STARTUP MOD SELECTION -->
 		<form id="mod-selection" action="" style="display:none;">
@@ -1047,23 +981,6 @@
 	<textarea id="modtext" style="display:none;">
 	</textarea>
 	
-	
-	<!-- MOBILE FLOATING SAVED ITEMS BUTTON -->
-	<button id="mobile-floating-saved-btn" type="button" style="display:none;" title="Open Saved Items Comparison">
-		<span class="saved-float-icon">🔖</span>
-		<span class="saved-float-text">Saved <span id="mobile-saved-badge">0</span></span>
-		<span class="saved-float-arrow">❯</span>
-	</button>
-
-	<!-- MOBILE BOTTOM NAVIGATION -->
-	<div id="mobile-bottombar">
-		<button class="mobile-nav-btn" data-page="unit" type="button"><span class="nav-icon">⚔️</span>Units</button>
-		<button class="mobile-nav-btn" data-page="spell" type="button"><span class="nav-icon">✨</span>Spells</button>
-		<button class="mobile-nav-btn active" data-page="item" type="button"><span class="nav-icon">🛡️</span>Items</button>
-		<button class="mobile-nav-btn" data-page="site" type="button"><span class="nav-icon">🏛️</span>Sites</button>
-		<button class="mobile-nav-btn" data-page="merc" type="button"><span class="nav-icon">💰</span>Mercs</button>
-		<button class="mobile-nav-btn" data-page="event" type="button"><span class="nav-icon">📜</span>Events</button>
-	</div>
 	
 	<!-- TAIL -->
 	<p id="page-tail">

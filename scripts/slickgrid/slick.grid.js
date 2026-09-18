@@ -591,15 +591,8 @@ if (typeof Slick === "undefined") {
       }
     }
 
-    var lastSortClickTime = 0;
     function setupColumnSort() {
       $headers.click(function (e) {
-        var now = Date.now ? Date.now() : +new Date();
-        if (now - lastSortClickTime < 300) {
-          return;
-        }
-        lastSortClickTime = now;
-
         // temporary workaround for a bug in jQuery 1.7.1 (http://bugs.jquery.com/ticket/11328)
         e.metaKey = e.metaKey || e.ctrlKey;
 
@@ -915,7 +908,7 @@ if (typeof Slick === "undefined") {
         "." + uid + " .slick-header-column { left: 1000px; }",
         "." + uid + " .slick-top-panel { height:" + options.topPanelHeight + "px; }",
         "." + uid + " .slick-headerrow-columns { height:" + options.headerRowHeight + "px; }",
-        "." + uid + " .slick-cell { height:" + rowHeight + "px; line-height:" + rowHeight + "px; }",
+        "." + uid + " .slick-cell { height:" + rowHeight + "px; }",
         "." + uid + " .slick-row { height:" + options.rowHeight + "px; }"
       ];
 
@@ -1231,23 +1224,8 @@ if (typeof Slick === "undefined") {
         invalidateRow(getDataLength());
       }
 
-      var rowHeightChanged = (args.rowHeight && args.rowHeight !== options.rowHeight);
       options = $.extend(options, args);
       validateAndEnforceOptions();
-
-      if (rowHeightChanged) {
-        measureCellPaddingAndBorder();
-        if ($style) {
-          $style.remove();
-          stylesheet = null;
-          createCssRules();
-          applyColumnWidths();
-        }
-        applyColumnHeaderWidths();
-        invalidateAllRows();
-        updateRowCount();
-        resizeCanvas();
-      }
 
       $viewport.css("overflow-y", options.autoHeight ? "hidden" : "auto");
       render();

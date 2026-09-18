@@ -1,4 +1,4 @@
-﻿//namespace scope
+//namespace scope
 (function( PaneManager, $, undefined ){
 		
 var PM = PaneManager;
@@ -164,26 +164,22 @@ PM.openPane = function(ref, position) {
 	//create dom element
 	var $p = $('<div class="overlay popup">'+html+'</div>').css('zIndex', ++maxZIndex);
 	
-	var isMobile = !!window.isMobileDevice;
-
-	//explicit position (desktop only)
-	if (!isMobile) {
-		if (position) {
-			if (position.top < 0) {
-			    position.top = 0;
-			    position.left += 50;
-			}
-			$p.css(position);	
+	//explicit position
+	if (position) {
+		if (position.top < 0) {
+		    position.top = 0;
+		    position.left += 50;
 		}
-		else {
-			//concertina if previous overlay has not been moved
-			if ($lastPane) $p.css({
-				  top: parseInt($lastPane.css('top').replace('px','')) + 20,
-				  right: parseInt($lastPane.css('right').replace('px','')) + 20
-			});
-			$lastPane = $p;
-		}
+		$p.css(position);	
 	}
+	else {
+		//concertina if previous overlay has not been moved
+		if ($lastPane) $p.css({
+			  top: parseInt($lastPane.css('top').replace('px','')) + 20,
+			  right: parseInt($lastPane.css('right').replace('px','')) + 20
+		});
+		$lastPane = $p;
+	}	
 	//append to body
 	$('body').append($p);
 	
@@ -197,30 +193,26 @@ PM.openPane = function(ref, position) {
 		$p.css('zIndex', ++maxZIndex);
 		triggerCallbacks();
 		
-		if (!isMobile) {
-			if (e.ctrlKey) //disable dragging if ctrl key down
-				$p.draggable({cancel: '.overlay'});
-			else
-				$p.draggable({cancel: false});
-		}
+		if (e.ctrlKey) //disable dragging if ctrl key down
+			$p.draggable({cancel: '.overlay'});
+		else
+			$p.draggable({cancel: false});
+			
 	})
 	.bind('mousemove keydown', function(e){
 		if (e.ctrlKey || e.keycode==17)
 			$p.css({ cursor: 'text' }); //text selection cursor
 		else
 			$p.css({ cursor: 'default' }); //arrow
+	})
+	.draggable({
+		drag: function( ev, dd ){
+			if ($p.is($lastPane)) $lastPane = null;
+		},
+		stop: function() {
+			triggerCallbacks();
+		}
 	});
-
-	if (!isMobile) {
-		$p.draggable({
-			drag: function( ev, dd ){
-				if ($p.is($lastPane)) $lastPane = null;
-			},
-			stop: function() {
-				triggerCallbacks();
-			}
-		});
-	}
 	
 	//close button events
 	$p.find('.overlay-pin').show().click(function(e) {
