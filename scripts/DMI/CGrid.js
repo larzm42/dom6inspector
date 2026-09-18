@@ -1,4 +1,4 @@
-//namespace into private scope
+﻿//namespace into private scope
 (function( DMI, $, undefined ){
 
 //namespace children
@@ -55,7 +55,7 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 		enableAddRow: false,
 		enableCellNavigation: true,
 		enableColumnReorder: false,
-		forceFitColumns: true
+		forceFitColumns: (!window.isMobileDevice)
 	};
 	if (options)
 		for (k in options) this.options[k] = options[k];
@@ -126,8 +126,38 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 	////////////////////////////////////////////////////////////////////////////
 	// create grid
 	////////////////////////////////////////////////////////////////////////////
+	if (window.isMobileDevice && columns) {
+		var mobileMinWidths = {
+			'name': 175,
+			'nation': 85,
+			'nationname': 85,
+			'type': 85,
+			'sorttype': 85,
+			'research': 90,
+			'school': 90,
+			'mpath': 85,
+			'listed_mpath': 130,
+			'boosterssort': 160,
+			'constlevel': 85,
+			'goldcost': 50,
+			'rcostsort': 45,
+			'sacredsort': 40,
+			'gemcost': 45,
+			'fatiguecost': 45
+		};
+		for (var ci = 0; ci < columns.length; ci++) {
+			var col = columns[ci];
+			var minW = mobileMinWidths[col.id] || mobileMinWidths[col.field];
+			if (minW && (!col.width || col.width < minW)) {
+				col.width = minW;
+			}
+		}
+	}
+
 	this.dataView = new Slick.Data.DataView({ inlineFilters: true });
 	this.grid = new Slick.Grid(this.domsel+' .grid-container', this.dataView, columns, this.options);
+	$(this.domsel+' .grid-container').data('slickgrid', this.grid);
+	$(this.domsel+' .grid-container').data('cgrid', this);
 
 
 	////////////////////////////////////////////////////////////////////////////
@@ -334,17 +364,14 @@ DMI.CGrid = Utils.Class(function( domname, data, columns, options) {
 	//click event on grid opens new overlay
 	this.grid.onClick.subscribe( function (e) {
 		var rc = that.grid.getCellFromEvent(e);
+		if (!rc) return;
 		var o = that.grid.getData().getItem(rc.row);
+		if (!o) return;
 
 		if (PaneManager.getOpenPanes(domname+' '+o.id).focusAndHighlight().length)
 			return;
 
-		if (isUserUsingMobile())
-		{
-			// The viewport is less than 768 pixels wide
-		} else {
-			PaneManager.openPane( domname+' '+o.id );
-		}
+		PaneManager.openPane( domname+' '+o.id );
 	});
 	
 	
