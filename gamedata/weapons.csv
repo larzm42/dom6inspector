@@ -552,7 +552,7 @@ id	name	effect_record_id	att	def	len	nratt	ammo	secondaryeffect	secondaryeffecta
 551	Soul Rending Claw	551	0	0	-1	1	0	0	552	0	551	
 552	Soul Rend	552	0	0	0	1	0	367	0	0	552	
 553	Rock	553	-1	-1	0	1	0	0	0	0	553	
-554	Lictor Axe	554	2	0	1	1	0	460	0	8	554	
+554	Lictor Axe	554	2	0	2	1	0	460	0	8	554	
 555	Dawn Fang	555	3	3	2	1	0	0	0	0	555	
 556	Belly Maw	556	0	0	0	1	0	0	0	0	556	
 557	Stinger	557	0	0	2	1	0	52	0	0	557	
