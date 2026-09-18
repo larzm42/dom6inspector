@@ -788,6 +788,20 @@ var displayorder2 = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'lesserhorrorattackchance', 'attack by lesser horrors', Format.Percent,
 	'falsesupplies', 'false supplies',
 	'dreamenhancer', 'dream enhancer', Format.Signed,
+	'elementgems',	'elemental gems per month',
+	'homesick',	'homesickness',	Format.Percent,
+	'sleepaura',	'sleep aura',
+	'battlesumwarm',	'summons in battle (warm lands)',	Utils.unitRef,
+	'battlesum1d2',	'summons 1d2 in battle',	Utils.unitRef,
+	'battlesum1d3',	'summons 1d3 in battle',	Utils.unitRef,
+	'batstartsum1d6',	'summons 1d6 at battle start',	Utils.unitRef,
+	'meleeguardian',	'summons a guardian in melee',	Utils.unitRef,
+	'roundeffect',	'area effect each round',
+	'roundeffectarea',	'squares affected each round',
+	'domestrbonus',	'dome strength bonus',
+	'extrabodyguards',	'extra bodyguards',
+	'corpsehealer',	'corpse stitcher',
+	'loseeye',	'costs eyes',
 	'eatforyouth', 'eat for youth', function(v,o){
 		return '-' + v +' years';
 	}
@@ -872,6 +886,10 @@ var flagorder = DMI.Utils.cutDisplayOrder(aliases, formats,
 	'blur', 'blur',
 	'heavy', 'heavy',
 	'unseen', 'unseen',
+	'pairedartifact',	'paired artifact',
+	'autobless',	'auto bless',
+	'unique',	'unique',
+	'flagstomount',	'special abilities affect mount too',
 	
 	'champprize', 'Arena championship prize'
 ]);
