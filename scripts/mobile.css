@@ -2,14 +2,6 @@
    Dominions 6 Mod Inspector - Mobile Responsive Styles
    ========================================================================== */
 
-/* Desktop defaults: mobile-only elements hidden */
-#mobile-topbar,
-#mobile-bottombar,
-#mobile-backdrop,
-#mobile-drawer-header {
-	display: none;
-}
-
 @media (max-width: 768px) {
 	html, body {
 		width: 100vw;
