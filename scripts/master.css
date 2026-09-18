@@ -1,14 +1,5 @@
 body {overflow:hidden;}
 
-/* Desktop defaults: mobile-only elements hidden */
-#mobile-topbar,
-#mobile-bottombar,
-#mobile-backdrop,
-#mobile-drawer-header {
-	display: none;
-}
-
-
 /****************************************
 	error 
 ****************************************/

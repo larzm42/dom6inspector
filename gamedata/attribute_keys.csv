@@ -1,33 +1,40 @@
 number	name	test
 1	<Unknown Attribute>
-35	<Unknown Attribute>
-36	<Unknown Attribute>
-41	<Unknown Attribute>
-43	<Unknown Attribute>
+23	Terrain mask excluding special recruitment
+35	Dominion population kill {Ntn: #domkill}
+36	Population rises as undead {Ntn: #autoundead}
+37	Dominion unrest {Ntn: #domunrest}
+41	Automatic inquisition preaching
+42	Dominion war effect {Ntn: #domwar}
+43	Golem body hit points {Ntn: #golemhp}
 46	<Unknown Attribute>
 47	<Unknown Attribute>
 52	Capital Magic Site {Ntn: #startsite}
 59	<Unknown Attribute>
 69	<Unknown Attribute>
 73	<Unknown Attribute>
-74	<Unknown Attribute>
-75	<Unknown Attribute>
-76	<Unknown Attribute>
-77	<Unknown Attribute>
-78	<Unknown Attribute>
-79	<Unknown Attribute>
-80	<Unknown Attribute>
-81	<Unknown Attribute>
-82	<Unknown Attribute>
-83	<Unknown Attribute>
-84	<Unknown Attribute>
-85	<Unknown Attribute>
-90	<Unknown Attribute>
-91	<Unknown Attribute>
-92	<Unknown Attribute>
-93	<Unknown Attribute>
-94	<Unknown Attribute>
-95	<Unknown Attribute>
+74	Province defence commander {Ntn: #defcom1}
+75	Province defence commander (PD 20+) {Ntn: #defcom2}
+76	Province defence unit 1 {Ntn: #defunit1}
+77	Province defence unit 1b {Ntn: #defunit1b}
+78	Province defence bonus unit (PD 20+) {Ntn: #defunit2}
+79	Province defence bonus unit 2b (PD 20+) {Ntn: #defunit2b}
+80	Province defence unit 1 multiplier {Ntn: #defmult1}
+81	Province defence unit 1b multiplier {Ntn: #defmult1b}
+82	Province defence bonus unit multiplier {Ntn: #defmult2}
+83	Province defence bonus unit 2b multiplier {Ntn: #defmult2b}
+84	Province defence unit 1c {Ntn: #defunit1c}
+85	Province defence unit 1c multiplier {Ntn: #defmult1c}
+86	Province defence unit 1d {Ntn: #defunit1d}
+87	Province defence unit 1d multiplier {Ntn: #defmult1d}
+90	Starting commander {Ntn: #startcom}
+91	Starting squad 1 unit {Ntn: #startunittype1}
+92	Starting squad 1 size {Ntn: #startunitnbrs1}
+93	Starting squad 2 unit {Ntn: #startunittype2}
+94	Starting squad 2 size {Ntn: #startunitnbrs2}
+95	Starting squad 3 unit {Ntn: #startunittype3}
+96	Starting squad 3 size {Ntn: #startunitnbrs3}
+97	Starting scout {Ntn: #startscout}
 100	Capital Magic Site (Unholy?) {Ntn: #startsite}
 122	<Unknown Attribute>
 123	<Unknown Attribute>
@@ -39,11 +46,11 @@ number	name	test
 129	<Unknown Attribute>
 131	<Unknown Attribute>
 132	<Unknown Attribute>
-133	<Unknown Attribute>
-134	<Unknown Attribute>
-136	<Unknown Attribute>
-137	<Unknown Attribute>
-138	<Unknown Attribute>
+133	Temple cost {Ntn: #templecost}
+134	Laboratory cost {Ntn: #labcost}
+136	Fort resource bonus {Ntn: #castleprod}
+137	Free scrying of own provinces
+138	Temple image {Ntn: #templepic}
 139	National Unique Hero {Ntn: #hero1}
 140	National Unique Hero {Ntn: #hero2}
 141	National Unique Hero {Ntn: #hero3}
@@ -52,30 +59,30 @@ number	name	test
 144	National Unique Hero {Ntn: #hero6}
 145	National Generic Hero {Ntn: #multihero1}
 146	National Generic Hero {Ntn: #multihero2}
-149	<Unknown Attribute>
-156	<Unknown Attribute>
+149	Multihero 1 {Ntn: #multihero1}
+156	Restricted pretender magic paths
 157	<Unknown Attribute>
 158	Coastal Fort Commander {Ntn: #coastcom1}
 159	Coastal Fort Commander {Ntn: #coastcom2}
 160	Coastal Fort Troop {Ntn: #coastunit1}
 161	Coastal Fort Troop {Ntn: #coastunit2}
 162	Coastal Fort Troop {Ntn: #coastunit3}
-163	<Unknown Attribute>
-167	<Unknown Attribute>
-168	<Unknown Attribute>
-169	<Unknown Attribute>
-170	<Unknown Attribute>
-171	<Unknown Attribute>
+163	Magic path of attack {Wpn: attackpath}
+167	Dreamlands Fhtagn nation
+168	Fhtagn strength
+169	Cannot preach {Ntn: #nopreach}
+170	No death scale supply penalty {Ntn: #nodeathsupply}
+171	Underwater PD commander {Ntn: #uwdefcom1}
 172	Underwater Fort Commander {Ntn: #uwcom}
-173	<Unknown Attribute>
-174	<Unknown Attribute>
-175	<Unknown Attribute>
-176	<Unknown Attribute>
-177	<Unknown Attribute>
-178	<Unknown Attribute>
-179	<Unknown Attribute>
-180	<Unknown Attribute>
-185	<Unknown Attribute>
+173	Underwater PD unit 1 {Ntn: #uwdefunit1}
+174	Underwater PD unit 1b {Ntn: #uwdefunit1b}
+175	Underwater PD bonus unit (PD 20+) {Ntn: #uwdefunit2}
+176	Underwater PD bonus unit 2b (PD 20+) {Ntn: #uwdefunit2b}
+177	Underwater PD unit 1 multiplier {Ntn: #uwdefmult1}
+178	Underwater PD unit 1b multiplier {Ntn: #uwdefmult1b}
+179	Underwater PD bonus unit multiplier {Ntn: #uwdefmult2}
+180	Underwater PD bonus unit 2b multiplier {Ntn: #uwdefmult2b}
+185	Coastal capital {Ntn: #coastnation}
 186	Underwater Fort Commander {Ntn: #uwcom}
 187	Underwater Fort Commander {Ntn: #uwcom}
 188	Underwater Fort Commander {Ntn: #uwcom}
@@ -86,44 +93,48 @@ number	name	test
 194	<Unknown Attribute>
 195	<Unknown Attribute>
 196	<Unknown Attribute>
-197	<Unknown Attribute>
-198	<Unknown Attribute>
+197	Tomb chariot reanimation
+198	AI mage recruitment preference {Ntn: #aimagerec}
 199	<Unknown Attribute>
-200	<Unknown Attribute>
-205	<Unknown Attribute>
+200	AI hint: fire nation {Ntn: #aifirenation}
+203	AI hint: earth nation {Ntn: #aiearthnation}
+205	AI hint: death nation {Ntn: #aideathnation}
 207	<Unknown Attribute>
-210	<Unknown Attribute>
+208	AI hint: blood nation {Ntn: #aibloodnation}
+210	Undead nation
 211	<Unknown Attribute>
 213	Underwater Fort Troop {Ntn: #uwunit}
 217	<Unknown Attribute>
-220	<Unknown Attribute>
-221	<Unknown Attribute>
-222	<Unknown Attribute>
-223	<Unknown Attribute>
+220	Free fort unit 1
+221	Free fort unit 1 count
+222	Free fort unit 2
+223	Free fort unit 2 count
+233	Cave province PD unit
+234	Cave province PD unit multiplier
 261	<Unknown Attribute>
 262	<Unknown Attribute>
 263	<Unknown Attribute>
-264	<Unknown Attribute>
+264	Sea race {Ntn: #seatrace}
 265	<Unknown Attribute>
 266	Material Composition: Ferrous
 267	Material Composition: Ferrous
 268	Material Composition: Flammable
 269	Material Composition: Flammable
-270	<Unknown Attribute>
-271	<Unknown Attribute>
-272	<Unknown Attribute>
+270	Preferred population type {Ntn: #likespop}
+271	Mercenary cost modifier {Ntn: #merccost}
+272	Mercenary modifier
 273	<Unknown Attribute>
-274	<Unknown Attribute>
-275	<Unknown Attribute>
+274	Cave start preference {Ntn: #cavenation}
+275	Can build underwater forts {Ntn: #uwbuild}
 278	Restrict to Nation {Spl: #restricted}
-279	<Unknown Attribute>
+279	Not for nation {Spl: #notfornation}
 280	<Unknown Attribute>
-281	<Unknown Attribute>
-287	<Unknown Attribute>
-288	<Unknown Attribute>
+281	Order scale modifier
+287	Nation scale modifier (slot 6)
+288	AI awake pretender chance {Ntn: #aiawake}
 289	Home Realm {Ntn: #homerealm}
-290	<Unknown Attribute>
-293	<Unknown Attribute>
+290	PD not limited by population
+293	Underwater nation {Ntn: #uwnation}
 294	Terrain-Specific Recruit: Forest {Ntn: #forestrec}
 295	Terrain-Specific Commander: Forest {Ntn: #forestcom}
 296	Terrain-Specific Recruit: Swamp {Ntn: #swamprec}
@@ -138,40 +149,167 @@ number	name	test
 305	<Unknown Attribute>
 306	<Unknown Attribute>
 307	<Unknown Attribute>
-308	<Unknown Attribute>
-309	<Unknown Attribute>
+308	Temple gem income {Ntn: #templegems}
+309	Half scale mismatch income penalty
 310	<Unknown Attribute>
-311	<Unknown Attribute>
-312	<Unknown Attribute>
-313	<Unknown Attribute>
+311	Cave fort income bonus {Ntn: #caveinc}
+312	Cave fort resource bonus {Ntn: #caveres}
+313	Guardian spirit {Ntn: #guardspirit}
 314	Cheap God 20 {Ntn: #cheapgod20}
 315	Cheap God 40 {Ntn: #cheapgod40}
 317	<Unknown Attribute>
 318	<Unknown Attribute>
-319	<Unknown Attribute>
-320	<Unknown Attribute>
-321	<Unknown Attribute>
-322	<Unknown Attribute>
-324	<Unknown Attribute>
+319	AI powerful bless chance {Ntn: #aigoodbless}
+320	AI required magic path {Ntn: #aimusthavemag}
+321	Capital population killed at start {Ntn: #killcappop}
+322	Order scale bonus in coastal provinces
+324	Friendly dominion bonus for living units
 325	<Unknown Attribute>
+329	Bless design point bonus {Ntn: #blessbonus}
+340	Permits restricted bless pick (bless attr 0xdc)
+345	Wall defender unit {Ntn: #wallunit}
+346	Wall defender multiplier {Ntn: #wallmult}
+347	Wall defender commander {Ntn: #wallcom}
+348	Gate guard unit {Ntn: #guardunit}
+349	Gate guard multiplier {Ntn: #guardmult}
+350	Gate guard commander {Ntn: #guardcom}
+351	Fort style era {Ntn: #fortera}
+352	Fort cost modifier {Ntn: #fortcost}
+353	Capital fort type {Ntn: #homefort}
+354	Buildable fort type {Ntn: #buildfort}
+356	Buildable coastal fort type {Ntn: #buildcoastfort}
+358	National income modifier {Ntn: #nationinc}
+359	Half death scale income penalty {Ntn: #halfdeathinc}
+360	Half death scale population loss {Ntn: #halfdeathpop}
+361	No undead pretenders {Ntn: #noundeadgods}
+363	Senses deaths in own dominion {Ntn: #domdeathsense}
+364	AI hint: sacred ranged units {Ntn: #aiholyranged}
+370	No national PD outside capital fort {Ntn: #badindpd}
+371	Minimum priest level for prophet
+372	Cave fort recruitment point bonus {Ntn: #caverecpt}
+378	Fort unrest {Ntn: #fortunrest}
+379	Accepts river start {Ntn: #riverstart}
+380	Prefers island start {Ntn: #islandnation}
+381	Dominion sailing {Ntn: #domsail}
+385	Island start site {Ntn: #islandsite}
+386	Extra god title level
+387	Forest laboratory cost {Ntn: #forestlabcost}
+388	Forest temple cost {Ntn: #foresttemplecost}
+393	Waste laboratory cost {Ntn: #wastelabcost}
+403	Hidden dominion {Ntn: #hidedom}
 404	Cannot be cast by mindless
 405	Only affects creatures with astral magic
+406	Terrain fort recruit (plain/farm, set 2)
+407	Terrain fort commander (plain/farm, set 2)
+408	Terrain fort recruit (cave/highland, set 1)
+409	Terrain fort commander (cave/highland, set 1)
+412	Terrain fort recruit (forest, set 1)
+413	Terrain fort commander (forest, set 1)
+416	Terrain fort recruit (waste, set 1)
+417	Terrain fort commander (waste, set 1)
 426	<Unknown Attribute>
-465	<Unknown Attribute>
-475	<Unknown Attribute>
+427	Temple holy point bonus {Ntn: #templeholypoints}
+428	Terrain fort PD commander (plain/farm, set 1)
+429	Terrain fort PD commander, PD 20+ (plain/farm, set 1)
+430	Terrain fort PD unit (plain/farm, set 1)
+431	Terrain fort PD unit, PD 20+ (plain/farm, set 1)
+432	Terrain fort PD unit multiplier (plain/farm, set 1)
+433	Terrain fort PD unit multiplier, PD 20+ (plain/farm, set 1)
+434	Terrain fort PD commander (plain/farm, set 2)
+435	Terrain fort PD commander, PD 20+ (plain/farm, set 2)
+436	Terrain fort PD unit (plain/farm, set 2)
+437	Terrain fort PD unit, PD 20+ (plain/farm, set 2)
+438	Terrain fort PD unit multiplier (plain/farm, set 2)
+439	Terrain fort PD unit multiplier, PD 20+ (plain/farm, set 2)
+440	Terrain fort PD commander (cave/highland, set 1)
+441	Terrain fort PD commander, PD 20+ (cave/highland, set 1)
+442	Terrain fort PD unit (cave/highland, set 1)
+443	Terrain fort PD unit, PD 20+ (cave/highland, set 1)
+444	Terrain fort PD unit multiplier (cave/highland, set 1)
+445	Terrain fort PD unit multiplier, PD 20+ (cave/highland, set 1)
+452	Terrain fort PD commander (forest, set 1)
+453	Terrain fort PD commander, PD 20+ (forest, set 1)
+454	Terrain fort PD unit (forest, set 1)
+455	Terrain fort PD unit, PD 20+ (forest, set 1)
+456	Terrain fort PD unit multiplier (forest, set 1)
+457	Terrain fort PD unit multiplier, PD 20+ (forest, set 1)
+464	Terrain fort PD commander (waste, set 1)
+465	Terrain fort PD commander, PD 20+ (waste, set 1)
+466	Terrain fort PD unit (waste, set 1)
+467	Terrain fort PD unit, PD 20+ (waste, set 1)
+468	Terrain fort PD unit multiplier (waste, set 1)
+469	Terrain fort PD unit multiplier, PD 20+ (waste, set 1)
+475	Lowers scale by 2 {Spl: lowerscale}
 477	Increase province magic scale by 3
 482	Not Effected by Fire Bless
+493	Default death scale {Ntn: #defdeath}
 495	<Unknown Attribute>
+498	Minimum pretender imprisonment {Ntn: #minprison}
 557	Magic
 579	Gifts from Heaven
 582	Map Move Penalty
+594	Non-capital fort gate guard unit {Ntn: #foreignguardunit}
+595	Non-capital fort gate guard multiplier {Ntn: #foreignguardmult}
+596	Non-capital fort gate guard commander {Ntn: #foreignguardcom}
+597	Non-capital fort wall defender unit {Ntn: #foreignwallunit}
+598	Non-capital fort wall defender multiplier {Ntn: #foreignwallmult}
 599	Soul Slay
+600	Terrain fort garrison unit (plain/farm, set 1)
+601	Terrain fort garrison multiplier (plain/farm, set 1)
 602	Restricted to Realm
-603	<Unknown Attribute>
+603	Underwater range {Wpn: uwrange}
+604	Terrain fort garrison multiplier (plain/farm, set 2)
+605	Terrain fort garrison commander (plain/farm, set 2)
+606	Terrain fort garrison unit (cave/highland, set 1)
+607	Terrain fort garrison multiplier (cave/highland, set 1)
+608	Terrain fort garrison commander (cave/highland, set 1)
 611	Weapon affected by penetration bonus
+612	Terrain fort garrison unit (forest, set 1)
+613	Terrain fort garrison multiplier (forest, set 1)
+614	Terrain fort garrison commander (forest, set 1)
 617	Number of chain lightning bounces {Spl: #maxbounces}
-619	<Unknown Attribute>
+618	Terrain fort garrison unit (waste, set 1)
+619	Does not affect blind {Wpn: noblind}
+620	Terrain fort garrison commander (waste, set 1)
+631	Future site (nation overview only) {Ntn: #futuresite}
+632	Pretender awakening modifier
+640	Order scale design range {Ntn: #moreorder}
+641	Production scale design range {Ntn: #moreprod}
+642	Heat scale design range {Ntn: #moreheat}
+643	Growth scale design range {Ntn: #moregrowth}
+644	Luck scale design range {Ntn: #moreluck}
+645	Magic scale design range {Ntn: #moremagic}
+650	Permits restricted bless pick (bless attr 0x13c)
+654	Reanimation unit
+656	Reanimation unit count
 657	<Unknown Attribute>
+660	Syncretism {Ntn: #syncretism}
+661	National reanimation commander
+662	AI hint: cheap sacred units {Ntn: #aicheapholy}
+663	Underwater wall defender unit {Ntn: #uwwallunit}
+664	Underwater wall defender multiplier {Ntn: #uwwallmult}
+665	Underwater wall defender commander {Ntn: #uwwallcom}
+666	Underwater gate guard unit
+667	Underwater gate guard multiplier
+668	Underwater gate guard commander
+680	Capital fort PD commander
+681	Capital fort PD commander, second group
+682	Capital fort PD unit
+683	Capital fort PD unit, second group
+684	Capital fort PD unit multiplier
+685	Capital fort PD unit multiplier, second group
+688	Non-capital fort recruit {Ntn: #foreignfortrec}
+689	Non-capital fort commander {Ntn: #foreignfortcom}
+690	Mountain fort recruit {Ntn: #mountainfortrec}
+691	Mountain fort commander {Ntn: #mountainfortcom}
+692	Forest fort recruit {Ntn: #forestfortrec}
+693	Forest fort commander {Ntn: #forestfortcom}
+694	Priest reanimation {Ntn: #priestreanim}
+695	Undead reanimation {Ntn: #undeadreanim}
+696	Manikin reanimation {Ntn: #manikinreanim}
+697	Tomb wyrm reanimation {Ntn: #tombwyrmreanim}
+698	Longdead horseman reanimation {Ntn: #horsereanim}
+699	Lictor reanimation {Ntn: #wightreanim}
 700	Map Range {Spl: #provrange}
 701	Destination Terrain {Spl: #onlygeodst}
 702	Source Terrain {Spl: #onlygeosrc}
@@ -179,26 +317,26 @@ number	name	test
 704	Cannot target terrain {Spl: #nogeodst}
 705	Cannot trace range through seas {Spl: #nowatertrace}
 706	No Path over Land {Spl: #nolandtrace}
-707	<Unknown Attribute>
+707	Needs walkable path {Spl: #walkable}
 708	Hidden Enchantment {Spl: #hiddenench}
 709	Duration 1 month+
 710	Does not affect floating commanders
 711	Site Required
-712	<Unknown Attribute>
+712	Only coastal targets {Spl: onlycoastdst}
 713	Only cast at coast {Spl: #onlycoastsrc}
 715	Caster must be flying
-716	<Unknown Attribute>
+716	Preferred start terrain {Ntn: #likesterr}
 717	Record global enchantment cast location
 718	Requires specific unit ability to cast
 719	Specific unit ability prevents casting
 720	Projectile falls vertically
 721	Sound file played on projectile impact
-722	<Unknown Attribute>
-723	<Unknown Attribute>
+722	Secondary impact sound {Spl: strikesound2}
+723	Faint impact sound {Spl: strikesound3}
 724	Extra effect in geo {Spl: #extraeffectgeo}
 725	Can't target same province more than once/turn {Spl: #uniquetarget}
 726	Override percent of units affected in target province
-727	<Unknown Attribute>
+727	Hidden effect details {Spl: hiddeneffect}
 728	Adds AN lingering heat {Spl: #anlingeringheat}
 729	Dispelled if province changes owners {Spl: #friendlyench}
 730	Only castable in forted province
@@ -222,17 +360,17 @@ number	name	test
 748	Percent to horror mark caster
 749	<Unknown Attribute>
 750	God Path Restriction {Spl: #godpathspell}
-751	<Unknown Attribute>
-752	<Unknown Attribute>
+751	Local global enchantment {Spl: #localglobal}
+752	Polymorphs target {Spl: polymorph}
 753	Anonymous
 754	<Unknown Attribute>
-755	<Unknown Attribute>
-756	<Unknown Attribute>
+755	Two extra units with global {Spl: extraunits2}
+756	Three extra units with global {Spl: extraunits3}
 757	<Unknown Attribute>
 758	<Unknown Attribute>
 759	<Unknown Attribute>
-760	<Unknown Attribute>
-761	<Unknown Attribute>
+760	Ends if caster leaves {Spl: endsifcasterleaves}
+761	Visible worldwide {Spl: #worldvisible}
 762	Turmoil scale
 763	Sloth scale
 764	Cold scale
@@ -241,57 +379,57 @@ number	name	test
 767	Drain scale
 768	Dispel darkness
 769	<Unknown Attribute>
-770	<Unknown Attribute>
-771	<Unknown Attribute>
-772	<Unknown Attribute>
-773	<Unknown Attribute>
-774	<Unknown Attribute>
-775	<Unknown Attribute>
-776	<Unknown Attribute>
+770	Affects each unit separately {Spl: perunit}
+771	Burns enemy lab {Spl: burnlab}
+772	Destroys lab {Spl: destroylab}
+773	Extra gems boost spell {Spl: gemboost}
+774	Ends without {Spl: endswithout}
+775	Province must have {Spl: reqprovince}
+776	Not on bless effects {Spl: nobless}
 777	<Unknown Attribute>
 778	<Unknown Attribute>
-779	<Unknown Attribute>
-780	<Unknown Attribute>
+779	Not castable by mindless {Spl: #nocastmindless}
+780	Stores unit for rebirth {Spl: storerebirth}
 781	<Unknown Attribute>
 782	<Unknown Attribute>
 783	<Unknown Attribute>
-784	<Unknown Attribute>
-785	<Unknown Attribute>
-786	<Unknown Attribute>
+784	Choose target commander {Spl: choosecommander}
+785	Choose magic item {Spl: chooseitem}
+786	Only own provinces {Spl: #onlyowndst}
 787	Casting Time {Spl: #casttime}
-788	<Unknown Attribute>
+788	Only own lab provinces {Spl: onlyownlabdst}
 789	<Unknown Attribute>
 790	Remote summon commander {Spl: #farsumcom}
-791	<Unknown Attribute>
+791	Summon group size {Spl: sumgroupsize}
 792	<Unknown Attribute>
-793	<Unknown Attribute>
-794	<Unknown Attribute>
-795	<Unknown Attribute>
-796	<Unknown Attribute>
-797	<Unknown Attribute>
+793	AI unit cap {Spl: aiunitcap}
+794	Choose fort type {Spl: choosefort}
+795	Only one active {Spl: onlyoneactive}
+796	Target must be prophet {Spl: reqprophet}
+797	Max caster size {Spl: maxcastersize}
 798	<Unknown Attribute>
 799	<Unknown Attribute>
-800	<Unknown Attribute>
-801	<Unknown Attribute>
-802	<Unknown Attribute>
-803	<Unknown Attribute>
-804	<Unknown Attribute>
-805	<Unknown Attribute>
-806	<Unknown Attribute>
-807	<Unknown Attribute>
-808	<Unknown Attribute>
+800	Terrain fort garrison unit (plain/farm, set 1)
+801	Terrain fort garrison multiplier (plain/farm, set 1)
+802	Terrain fort garrison commander (plain/farm, set 1)
+803	Terrain fort garrison unit (plain/farm, set 2)
+804	Terrain fort garrison multiplier (plain/farm, set 2)
+805	Terrain fort garrison commander (plain/farm, set 2)
+806	Terrain fort garrison unit (cave/highland, set 1)
+807	Terrain fort garrison multiplier (cave/highland, set 1)
+808	Terrain fort garrison commander (cave/highland, set 1)
 809	<Unknown Attribute>
 810	<Unknown Attribute>
 811	<Unknown Attribute>
-812	<Unknown Attribute>
-813	<Unknown Attribute>
-814	<Unknown Attribute>
+812	Terrain fort garrison unit (forest, set 1)
+813	Terrain fort garrison multiplier (forest, set 1)
+814	Terrain fort garrison commander (forest, set 1)
 815	<Unknown Attribute>
 816	<Unknown Attribute>
 817	<Unknown Attribute>
-818	<Unknown Attribute>
-819	<Unknown Attribute>
-820	<Unknown Attribute>
+818	Terrain fort garrison unit (waste, set 1)
+819	Terrain fort garrison multiplier (waste, set 1)
+820	Terrain fort garrison commander (waste, set 1)
 821	<Unknown Attribute>
 822	<Unknown Attribute>
 823	<Unknown Attribute>
@@ -371,7 +509,7 @@ number	name	test
 897	<Unknown Attribute>
 898	<Unknown Attribute>
 899	<Unknown Attribute>
-900	<Unknown Attribute>
+900	Skips next weapons {Wpn: #skip}
 901	<Unknown Attribute>
 902	<Unknown Attribute>
 903	<Unknown Attribute>
@@ -382,18 +520,18 @@ number	name	test
 908	<Unknown Attribute>
 909	<Unknown Attribute>
 910	Extra poison damage
-911	<Unknown Attribute>
-912	<Unknown Attribute>
-913	<Unknown Attribute>
+911	Fire damage if hit {Wpn: #fireifhit}
+912	Cold damage if hit {Wpn: #coldifhit}
+913	Shock damage if hit {Wpn: #shockifhit}
 914	<Unknown Attribute>
-915	<Unknown Attribute>
-916	<Unknown Attribute>
-917	<Unknown Attribute>
-918	<Unknown Attribute>
-919	<Unknown Attribute>
-920	<Unknown Attribute>
-921	<Unknown Attribute>
-922	<Unknown Attribute>
+915	Fatigue if hit {Spl: fatigueifhit}
+916	Cloud, strength 1 {Wpn: #aftercloud}
+917	Cloud, strength 2 {Wpn: #aftercloud}
+918	Cloud, strength 3 {Wpn: #aftercloud}
+919	Cloud, strength 4 {Wpn: #aftercloud}
+920	Cloud, strength 5 {Wpn: #aftercloud}
+921	Cloud, strength 6 {Wpn: #aftercloud}
+922	Cloud, strength 7 {Wpn: #aftercloud}
 923	Lingering cloud area
 924	<Unknown Attribute>
 925	<Unknown Attribute>
@@ -401,21 +539,21 @@ number	name	test
 927	<Unknown Attribute>
 928	<Unknown Attribute>
 929	<Unknown Attribute>
-930	<Unknown Attribute>
-931	<Unknown Attribute>
-932	<Unknown Attribute>
+930	Melee use chance {Wpn: #range050}
+931	Use chance {Wpn: #melee50}
+932	Invisible attack {Wpn: invisibleattack}
 933	AN damage that only affect demons and undeads {Wpn: #holyifhit}
-934	<Unknown Attribute>
+934	Anti-magic damage if hit {Wpn: #killmagicifhit}
 935	+2 Att vs shield {Wpn: #flail}
 936	<Unknown Attribute>
-937	<Unknown Attribute>
-938	<Unknown Attribute>
-939	<Unknown Attribute>
-940	<Unknown Attribute>
-941	<Unknown Attribute>
+937	Flat trajectory {Wpn: flattrajectory}
+938	Beam attack {Wpn: #beam}
+939	Anti-demon damage if hit {Wpn: #killdemonifhit}
+940	Holy stun if hit {Wpn: #holystunifhit}
+941	Petrifies if hit {Wpn: #petrifyifhit}
 942	Can only be used when mounted {Wpn: #notdismounted} 
 943	Can only be used when dismounted {Wpn: #dismounted} 
-944	<Unknown Attribute>
+944	Extra effect (always) {Wpn: alwayseffect}
 945	<Unknown Attribute>
 946	<Unknown Attribute>
 947	<Unknown Attribute>
@@ -475,10 +613,16 @@ number	name	test
 1125	<Unknown Attribute>
 1700	Underwater summon
 1701	Cold summon
-1702	<Unknown Attribute>
+1702	Ends in terrain {Spl: endsinterrain}
 1703	<Unknown Attribute>
-1704	<Unknown Attribute>
-1705	<Unknown Attribute>
-1706	<Unknown Attribute>
-1707	<Unknown Attribute>
-1714	<Unknown Attribute>
+1704	Not castable by immobile {Spl: nocastimmobile}
+1705	Min cold {Spl: mincold}
+1706	Max cold {Spl: maxcold}
+1707	Requires darkness {Spl: reqdarkness}
+1713	Heals summon afflictions {Spl: #sumhealaffs}
+1714	Makes crater {Spl: #makecrater}
+1715	Twiceborn cost per size {Spl: #twiceborncost}
+1716	Not indoors {Spl: #notindoors}
+1717	Traces through the void {Spl: voidtrace}
+1718	Starting strength bonus {Spl: enchstrbonus}
+1719	Ignores domes {Spl: ignoresdomes}
