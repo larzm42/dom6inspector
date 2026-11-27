@@ -274,10 +274,10 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 425	Academy of High Magics	2	16607	2	Fire	2				1										lab																																																																3502	3493	3492																				4																														
 426	Ashen Fields	2	9	1	Fire	1																																																		20%																																																		2																														
 427	Fountain of Fire	2	735	1	Fire	3																Heat(max 2)																																																																																				5																														
-428	The Steel Ovens	1	17119	0	Fire											125																																											20%																																															1																														
+428	The Steel Ovens	1	541407	0	Fire											125																																											20%																																															1																														
 429	High Temple of the Magii	1	16607	1	Fire	2				2										lab																																																																480	481																					4																														
-430	The Citadel of Pyriphlegeton	1	17119	2	Fire	4														lab																																																																98	99																					4																														
-431	The Fire Prison	1	279263	2	Fire	4																																																						20%																																														7																														
+430	The Citadel of Pyriphlegeton	1	541407	2	Fire	4														lab																																																																98	99																					4																														
+431	The Fire Prison	1	803551	2	Fire	4																																																						20%																																														7																														
 432	The Temple of the Raging God	1	16607	2	Fire	2																Turmoil(max 2)																																																														389	98	241																				6																														
 433	The Brass Door Hill	1	16607	3	Fire	2							1																																																																																													3																														
 434	Prison of the Desert Sun	2	16392	4	Fire	5																Heat(max 2)	Heat(max 2)																																																																																			6																														
@@ -378,13 +378,13 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 529	Lantern Fens	0	130	1	Water	1																																																																																																				21																														
 530	Geyser	1	223	1	Water	1		1																																																																																																		23																														
 531	Pearl Beach	1	64	1	Water					1																																																																																																19																							75							
-532	Waterfall	1	735	1	Water		1	1																																																																																																		20																														
+532	Waterfall	1	525023	1	Water		1	1																																																																																																		20																														
 533	Rockside Spring	0	4	1	Water			1	1																																																																																																	20																														
-534	Well of Yesterdays Waters	1	735	1	Water			1		1																																																																																																23																														
+534	Well of Yesterdays Waters	1	525023	1	Water			1		1																																																																																																23																														
 535	Corpse Candles' Marsh	0	130	1	Water			1			1																																																																																															21																														
 536	Overgrown Lake	1	223	1	Water			1				1																																																																																														21																														
 537	Glittering Stream	1	223	1	Water			1					1																																																																																													19																														
-538	Lifeless Lake	1	262879	1	Water						1																																																																																															19																														
+538	Lifeless Lake	1	787167	1	Water						1																																																																																															19																														
 539	River Fortress	2	223	1	Water			1													3																																																																																					22																														
 540	Bottomless Lake	2	735	1	Water			1																																																20%																																																		19																														
 541	Mist Swamps	1	130	1	Water		1	1																																																																																																		21																														
@@ -487,7 +487,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 638	The Cornerstone	2	278751	3	Earth				4	1												Order(max 2)																																																																																				34																														
 639	The Factory	2	278751	4	Earth				3																																									532	3																																																							32																														
 640	Castle Arcanum	1	16477	1	Earth	1			1												4																																																															312	875																					32																														
-641	Ancient Forge	2	262879	1	Earth				1																																																		20%																																															29																														
+641	Ancient Forge	2	787167	1	Earth				1																																																		20%																																															29																														
 642	Chamber of Changes	2	262879	1	Earth				1																																																20%																																																	35																														
 643	Circle of Standing Stones	2	262879	1	Earth				1																																																			20%																																														30																														
 644	Conjurer's Cave	2	516	3	Earth				1																																															30%																																																		35																														
@@ -498,7 +498,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 649	Forest of Golden Leaves	2	16386	0	Earth	1			1			1																																																																																														31																														
 650	The Vaults Beneath	2	16607	3	Earth				1							250																																																																																										35																														
 651	The Deepest Mine	2	16900	2	Earth				4																																																																																																	35																														
-652	The Sun Below	2	16904	4	Earth	4																																																																																																				35	26	2672																												
+652	The Sun Below	2	541192	4	Earth	4																																																																																																				35	26	2672																												
 653	Endless Caverns	2	516	2	Earth			1	1																																																																																																	35																														
 654	Glowing Caverns	2	516	2	Earth			1				1	1																																																																																													35																														
 655	The Mosaic Desert	2	16392	2	Earth	1	1		1				1																																																																							2245																						30																														
@@ -870,7 +870,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1021	Elusive Birdsong	2	215	2	Glamour		1						1																																																																																													69																														
 1022	Twin Bottom Lake	2	215	2	Glamour			1					1																																																																																													69																														
 1023	The Crystal Citadel	1	16607	2	Glamour				1				1							lab	29																																																															340																						73																														
-1024	The Inverted Tower	1	17119	3	Glamour								4							lab																																																																341																						71																														
+1024	The Inverted Tower	1	541407	3	Glamour								4							lab																																																																341																						71																														
 1025	The Rainbow Shroud	1	16607	3	Glamour			2					2																																																							20%																																						69																														
 1026	Birdsong Tower	2	17119	1	Glamour																																					G	2																																														0																	71																														
 1027	Hall of Horrible Memories	2	278751	1	Glamour								1					5																																																																																								68																														
@@ -879,7 +879,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1030	Memory Collector	2	278751	2	Glamour					1			1																																																																																													76																														
 1031	House of Lies	2	16607	3	Glamour								1																																																	20%																																												76																														
 1032	Twilight Academy	2	16607	3	Glamour						1		1							lab																																																																3683																						71																														
-1033	The Crystal Academy	2	17119	3	Glamour				1				1							lab																																																																340																						71																														
+1033	The Crystal Academy	2	541407	3	Glamour				1				1							lab																																																																340																						71																														
 1034	The Great Mirror of Maaki	2	16607	3	Glamour			1		1			1																													FAWESDNGB	1																																																															72																														
 1035	Palace of Dreams	2	278529	4	Glamour					1			4																																																																																													71																														
 1036	Arena	0	223	0	Blood																																																																																																					82																							40							
@@ -889,7 +889,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1040	Fields of Blood	1	1	1	Blood						1																																																																																															86																														
 1041	Blood Henge	2	223	1	Blood							1																																																																								122																						86																														
 1042	Ebony Tower	2	223	2	Blood					1	3									lab																																																																339																						85																														
-1043	Summoning Circle	2	735	3	Blood																																																									30%																																												86																														
+1043	Summoning Circle	2	525023	3	Blood																																																									30%																																												86																														
 1044	Gore Swamps	1	16512	1	Blood						1	1																																																																																														84																														
 1045	Mount Chaining	1	16607	1	Blood																																																									30%																																												83																														
 1046	The Vale of Infinite Horror	1	278751	1	Blood													5				Misfortune(max 2)																																												1%																																								83																														
@@ -919,15 +919,15 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1070	Bloodstone Mirror	2	223	2	Blood																																																								20%								1																																					86																														
 1071	Palace of Wicked Dreams	2	16	3	Blood								1	1																																																																																												85																														
 1072	Tower of the Devil's Bride	1	16607	1	Blood													5																																303	1	2286	1	2287	1																																																			85																														
-1073	Slave Market	1	735	0	Blood									3				2																																																																																								82																														
+1073	Slave Market	1	525023	0	Blood									3				2																																																																																								82																														
 1074	Forgotten Village	0	2	1	Blood									1																																																																																												82																														
 1075	Sacrificial Grove	1	18	1	Blood																																																									20%																																												84																														
 1076	Bleeding Tree	2	2	1	Blood							1																																																																																														84																														
 1077	Stained Altar	2	16607	1	Blood																																													1736	1											20%																																												86																														
 1078	Pentagram	1	223	2	Blood																																					B	2																																																															86																														
-1079	The First Gate	1	17119	1	Blood																																																									10%																																												88																														
-1080	The Second Gate	1	17119	2	Blood																																																									15%																																												88																														
-1081	The Third Gate	2	17119	4	Blood																																																									25%																																												88																														
+1079	The First Gate	1	541407	1	Blood																																																									10%																																												88																														
+1080	The Second Gate	1	541407	2	Blood																																																									15%																																												88																														
+1081	The Third Gate	2	541407	4	Blood																																																									25%																																												88																														
 1082	Tower of the Deformer	2	16607	2	Blood																																													468	2	460	2	455	2		20%																																																	85																														
 1083	House of Disfigurement	2	16607	2	Blood																																													460	3						20%																																																	82																														
 1084	Statue of Hideous Visage	5	223	1	Blood																																																								20%					4%																																								85																														
@@ -949,16 +949,16 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1100	Order of the Secret Light	2	17631	1	Holy					1																																																																					22					478	23					22																95																														
 1101	Order of the Undying	2	17631	1	Holy																																													189	6																																																							96																														
 1102	Shrine of the Outcast	1	735	1	Holy																																													456	2	459	2																																																					93																														
-1103	Temple of the Spider God	2	735	1	Holy																																													782	6	2223	10																																																					94	76	889	890																											
-1104	Temple of the Hidden Flame	2	735	2	Holy	1																																												527	2																																																							93																														
+1103	Temple of the Spider God	2	525023	1	Holy																																													782	6	2223	10																																																					94	76	889	890																											
+1104	Temple of the Hidden Flame	2	525023	2	Holy	1																																												527	2																																																							93																														
 1105	Temple of Flying Monkeys	2	16607	1	Holy																																													1199	2																																																							92																														
-1106	The Martyr's Grave	2	767	1	Holy																			1																																																																																		97																														
-1107	Cradle of Faith	2	262911	1	Holy																			2																																																																																		95																														
-1108	Pillar of Life	2	17151	1	Holy																																																															10%																																						95																														
-1109	The Prophet's Sigil	2	262911	1	Holy																																																																																				5																	95																														
-1110	Oracle's Lair	2	262911	1	Holy																																																																																				3																	97																														
+1106	The Martyr's Grave	2	197631	1	Holy																			1																																																																																		97																														
+1107	Cradle of Faith	2	459775	1	Holy																			2																																																																																		95																														
+1108	Pillar of Life	2	214015	1	Holy																																																															10%																																						95																														
+1109	The Prophet's Sigil	2	459775	1	Holy																																																																																				5																	95																														
+1110	Oracle's Lair	2	459775	1	Holy																																																																																				3																	97																														
 1111	Mountain of Revelation	2	4	1	Holy																																																																1																				0																	96																														
-1112	Place of Prophecy	2	767	1	Holy																																																																																				5																	96																														
+1112	Place of Prophecy	2	197631	1	Holy																																																																																				5																	96																														
 1113	Stele of Law	2	255	1	Holy													-10																																																																																								94																														
 1114	Temple of Life and Death	2	16607	1	Holy						1	1																																																																																														92																														
 1115	Garden of Longevity	2	16599	2	Holy																																																										7%																																											96																														
@@ -1164,9 +1164,9 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1315	Gorge of Silent Songs	2	512	2	Glamour								2																																																																																													73																														
 1316	Hidden Halls of Crystal	2	512	2	Glamour				1	1			2																																																																																													73																														
 1317	The Howling Abyss	1	16896	2	Glamour						2		2																																																																																													73																														
-1318	Nest of Bats	2	512	1	Blood						1																																							1357	2																																																							88																														
-1319	The Lesser Abyss	2	16896	1	Blood													10																																88	1																																																							88																														
-1320	Splattermaid Gorge	2	16896	2	Blood		1																																											1357	4																																																							88																														
+1318	Nest of Bats	2	524800	1	Blood						1																																							1357	2																																																							88																														
+1319	The Lesser Abyss	2	541184	1	Blood													10																																88	1																																																							88																														
+1320	Splattermaid Gorge	2	541184	2	Blood		1																																											1357	4																																																							88																														
 1321	Tomb of Seven Oracles	2	16896	3	Death				1		2																																							1501	1																																																							53																														
 1322	Infinite Cavern	2	16896	3	Earth				2																																															20%																																																		35																														
 1323	Riddle Dark	2	16896	3	Earth				2		2																																																																																															35																														
@@ -1248,7 +1248,7 @@ id	name	rarity	loc	level	path	F	A	W	E	S	D	N	G	B	gold	res	sup	unr	exp	lab	fort	sc
 1399	The Throne of Pride	11	214015	0	Holy	1																		1													1																																																																					95																														
 1400	The White Throne	11	214015	0	Holy							1												1																																							20%																																											95				5																										
 1401	The Black Throne	11	214015	0	Holy						3													1																																								10%																																										95				5								1																		
-1402	The Throne of Deeper Fires	11	16896	0	Holy	1			1															1																																																																																		95																														
+1402	The Throne of Deeper Fires	11	541184	0	Holy	1			1															1																																																																																		95																														
 1403	The Throne of Deeper Waters	11	16896	0	Holy			1	1															1																																																																																		95																														
 1404	The Throne of Secrets	12	214015	0	Holy					1			1	2								Magic(max 2)		2																																																																	3																	95																														
-1405	The Throne of Violence	11	214015	0	Holy													5						1											1			1																																																																				95																														
+1405	The Throne of Violence	11	214015	0	Holy													5						1											1			2																																																																				95																														
