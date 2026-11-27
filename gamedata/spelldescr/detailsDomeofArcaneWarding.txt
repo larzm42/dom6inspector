@@ -1,1 +1,1 @@
-Horror Protection: 60% (halved against doom horrors).
+Dome Protection: 50%. Friendly spells will also be blocked.
